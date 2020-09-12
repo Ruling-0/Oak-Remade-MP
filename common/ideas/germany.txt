@@ -155,9 +155,6 @@ ideas = {
 			research_bonus = { industry = -0.5 }
 		
 			modifier = {
-
-				production_factory_max_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.10
 				industrial_capacity_factory = -0.35
 			}
 		}
