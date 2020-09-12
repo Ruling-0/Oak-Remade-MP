@@ -1,0 +1,9 @@
+
+category = {
+ name = "Italian Speeches"
+ soundeffects = {
+	sp_ita_waronallies
+	sp_ita_surrender
+ 	sp_ita_ethiopia
+	}
+}

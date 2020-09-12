@@ -1,0 +1,26 @@
+
+##################
+#Italian Speeches#
+##################
+
+soundeffect = {
+	name = "sp_ita_waronallies"
+	sounds = {
+		sound = sp_ita_waronallies
+	}
+	volume = 1.4
+}
+soundeffect = {
+	name = "sp_ita_surrender"
+	sounds = {
+		sound = sp_ita_surrender
+	}
+	volume = 1.4
+}
+soundeffect = {
+	name = "sp_ita_ethiopia"
+	sounds = {
+		sound = sp_ita_ethiopia
+	}
+	volume = 1.0
+}

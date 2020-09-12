@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_event_picture_totalen_krieg"
+		texturefile = "gfx/event_pictures/news_event_totalen_krieg.dds"
+	}	
+	SpriteType = {
+		name = "GFX_event_picture_antonescu"
+		texturefile = "gfx/event_pictures/news_event_antonescu.dds"
+	}	
+
+}
