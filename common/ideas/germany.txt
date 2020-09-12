@@ -109,7 +109,7 @@ ideas = {
 		}
 		
 		##RK stuff ##
-		#blitz after poland for 180 days
+		#blitz after poland for 210 days
 		GER_blitzkrieg = {
 		
 			allowed = {
