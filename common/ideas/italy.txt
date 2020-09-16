@@ -185,15 +185,13 @@ ideas = {
 				special_forces_cap = 0.0075
 			}
 		}
-		German_coordination_between_sea_and_air = {  #starting
+		Good_coordination_between_sea_and_air = {  #starting
 
 			picture = generic_navy_bonus
 
 			available = {
 				original_tag = ITA
 			}
-
-			removal_cost = -1
 
 			modifier = {
 				air_nav_efficiency = 0.01

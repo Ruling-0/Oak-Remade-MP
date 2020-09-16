@@ -468,40 +468,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ITA_Navy_Airforce_Coordination
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = ITA_Modern_naval_bomber_effort }
-		x = 4
-		y = 5
-		cost = 5.8
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-		
-		available = {
-			has_war = yes
-			OR = {
-				AND = { 
-					has_air_experience > 120
-					has_navy_experience > 65
-				}
-				is_ai = yes
-			}
-		}
-		
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			air_experience = -120
-			navy_experience = -65
-			remove_ideas = poor_coordination_between_sea_and_air
-		}
-	}
-	
-	
-	focus = {
 		id = ITA_Regia_Aeronautica
 		icon = GFX_ITA_Regia_Aeronautica
 		prerequisite = { focus = ITA_victoryinETH }
