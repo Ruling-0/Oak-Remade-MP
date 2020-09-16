@@ -26,7 +26,6 @@ set_technology = { #player
 	tech_dig_1 = 1
 	tech_mountaineers = 1
 	tech_mountaineers2 = 1
-	tech_mountaineers3 = 1
 	############## support################
 	tech_support = 1		
 	tech_engineers = 1
