@@ -1168,7 +1168,10 @@ technologies = {
 	}
 	
 	marines3 = {
+	
 	enable_subunits = {
+	
+			commando_unit
 		}
 		marine = {
 			soft_attack = 0.05
@@ -1317,6 +1320,7 @@ technologies = {
 	}
 	tech_mountaineers3 = {
 	enable_subunits = {
+			commando_unit
 
 		}
 		mountaineers = {
@@ -1480,7 +1484,9 @@ technologies = {
 		}
 	}
 	paratroopers3 = {
+	
 	enable_subunits = {
+			commando_unit
 			light_armor_para
 		}
 		paratrooper = {
