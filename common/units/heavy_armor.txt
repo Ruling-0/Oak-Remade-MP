@@ -22,7 +22,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_equipment = 35
+			heavy_tank_equipment = 25
 		}
 
 		manpower = 550
@@ -40,10 +40,10 @@ sub_units = {
 			movement = -0.4
 		}
 		hills = {
-		    attack = -0.30
+		    attack = -0.20
 		}
 		mountain = 	{
-		    attack = -0.6
+		    attack = -0.3
 		}
 		jungle = {
 		    attack = -0.6

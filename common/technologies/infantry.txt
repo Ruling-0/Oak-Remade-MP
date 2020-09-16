@@ -1168,16 +1168,8 @@ technologies = {
 	}
 	
 	marines3 = {
-<<<<<<< HEAD
-<<<<<<< HEAD
         enable_subunits = {
 			commando_unit
-=======
->>>>>>> parent of 6760f9c... Update infantry.txt
-=======
-        enable_subunits = {
-			commando_unit
->>>>>>> parent of 6ff4bf6... Changes after 1st test game
 		}
 		marine = {
 			soft_attack = 0.05
@@ -1325,16 +1317,8 @@ technologies = {
 		}	
 	}
 	tech_mountaineers3 = {
-<<<<<<< HEAD
-<<<<<<< HEAD
         enable_subunits = {
 			commando_unit		
-=======
->>>>>>> parent of 6760f9c... Update infantry.txt
-=======
-        enable_subunits = {
-			commando_unit		
->>>>>>> parent of 6ff4bf6... Changes after 1st test game
 		}
 		mountaineers = {
 			soft_attack = 0.05
@@ -1497,16 +1481,8 @@ technologies = {
 		}
 	}
 	paratroopers3 = {
-<<<<<<< HEAD
-<<<<<<< HEAD
         enable_subunits = {
 			commando_unit
-=======
->>>>>>> parent of 6760f9c... Update infantry.txt
-=======
-        enable_subunits = {
-			commando_unit
->>>>>>> parent of 6ff4bf6... Changes after 1st test game
 			light_armor_para
 		}
 		paratrooper = {

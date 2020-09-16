@@ -2659,9 +2659,12 @@ focus_tree = {
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				technology = paratroopers
 				technology = paratroopers2
+				technology = paratroopers3
+				technology = paratroopers4
+				technology = paratroopers5
 			}
 			custom_effect_tooltip = ENG_paratroopers_tt
 			hidden_effect = {
