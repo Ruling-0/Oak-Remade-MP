@@ -106,7 +106,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = 150
 		}
 	}
 	
@@ -150,7 +150,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = -25
+			add_political_power = 250
 		}
 	}
 	
@@ -349,7 +349,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 30
-			add_political_power = 100
+			add_political_power = 200
 		}
 	}
 	
