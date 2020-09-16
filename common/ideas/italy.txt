@@ -185,7 +185,7 @@ ideas = {
 				special_forces_cap = 0.0075
 			}
 		}
-		poor_coordination_between_sea_and_air = {  #starting
+		German_coordination_between_sea_and_air = {  #starting
 
 			picture = generic_navy_bonus
 
@@ -196,9 +196,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				air_nav_efficiency = -0.1
-				spotting_chance = -0.05
-				sortie_efficiency = -0.1
+				air_nav_efficiency = 0.01
+				spotting_chance = 0.02
+				sortie_efficiency = 0.01
 			}
 		}
 		
