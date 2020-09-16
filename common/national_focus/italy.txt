@@ -190,10 +190,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -215,14 +215,14 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 4
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -234,10 +234,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 4
 						instant_build = yes
 					}
 				}				
@@ -343,13 +343,13 @@ focus_tree = {
 		navy_experience = 25
 			add_tech_bonus = {
 				name = radar_focus
-				bonus = 0.7
+				bonus = 1.0
 				uses = 1
 				category = radar_tech
 			}
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.8
+				bonus = 1.0
 				uses = 1
 				category = naval_doctrine
 			}
@@ -461,45 +461,11 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_Modern_naval_bomber_effort
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = naval_bomber
 			}
 		}
 	}
-	
-	focus = {
-		id = ITA_Navy_Airforce_Coordination
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = ITA_Modern_naval_bomber_effort }
-		x = 4
-		y = 5
-		cost = 5.8
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-		
-		available = {
-			has_war = yes
-			OR = {
-				AND = { 
-					has_air_experience > 120
-					has_navy_experience > 65
-				}
-				is_ai = yes
-			}
-		}
-		
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			air_experience = -120
-			navy_experience = -65
-			remove_ideas = poor_coordination_between_sea_and_air
-		}
-	}
-	
 	
 	focus = {
 		id = ITA_Regia_Aeronautica
@@ -518,7 +484,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.8
+				bonus = 1.0
 				uses = 2
 				category = air_doctrine
 			}
@@ -577,7 +543,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_fighter
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 			    technology = fighter_1940
 			}
@@ -627,7 +593,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 			    technology = tactical_bomber_1941
 				technology = tactical_bomber_1943
@@ -655,7 +621,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_CAS
-				bonus = 0.75
+				bonus = 1.0
 				uses = 2
 			        category = cas_bomber
 			}
@@ -871,7 +837,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = support_companies
-				Bonus = 0.5
+				Bonus = 1.5
 				uses = 2
 				category = support_tech
 			}
@@ -1160,7 +1126,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.5
 				uses = 2
 				category = cat_grand_battle_plan
 			}
@@ -1486,10 +1452,10 @@ focus_tree = {
 				prioritize = { 159 }
 					limit = {
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 			}
@@ -1497,17 +1463,17 @@ focus_tree = {
 				prioritize = { 158 }
 					limit = {
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 			}
 			
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = construction_tech
 			}
@@ -1528,7 +1494,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_research_slot = 1
+			add_research_slot = 2
 			
 		}
 	}
@@ -1551,23 +1517,23 @@ focus_tree = {
 				prioritize = { 156 }
 					limit = {
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 8
 						instant_build = yes
 					}
 					
 			}
 			add_resource = {
 				type = steel
-				amount = 15
+				amount = 30
 				state = 156
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 0.5
-				uses = 2
+				bonus = 1.0
+				uses = 5
 				technology = excavation1
 				technology = excavation2
 				technology = excavation3
@@ -1597,10 +1563,10 @@ focus_tree = {
 		completion_reward = {						
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 			}
@@ -1630,10 +1596,10 @@ focus_tree = {
 			add_ideas = navy_prioritised
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 			}
@@ -1746,10 +1712,10 @@ focus_tree = {
 		completion_reward = {			
 			random_owned_controlled_state = {
 				prioritize = { 157 }
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 6
 						add_building_construction = {
 							type = arms_factory
-							level = 3
+							level = 6
 							instant_build = yes
 					}
 			}
@@ -1768,10 +1734,10 @@ focus_tree = {
 		completion_reward = { 
 			random_owned_controlled_state = {
 				prioritize = { 161 }
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = arms_factory
-						level = 3
+						level = 6
 						instant_build = yes
 					}
 			}
@@ -1795,17 +1761,17 @@ focus_tree = {
 			army_experience = 100		
 			add_tech_bonus = {
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 			add_tech_bonus = {
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = industry
 			}
 		}
@@ -2194,19 +2160,19 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 7
+				amount = 48
 				state = 450
 			}
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 48
 				state = 662
 			}
 			450 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}	
@@ -2241,18 +2207,18 @@ focus_tree = {
 			451 = {
 				add_building_construction = {
 					type = air_base
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
 					province = 1130
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 						type = infrastructure
-						level = 3
+						level = 4
 						instant_build = yes
 					}
 			}
@@ -2260,7 +2226,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					province = 11954
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2494,10 +2460,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 8
 						add_building_construction = {
 							type = industrial_complex
-							level = 1
+							level = 8
 							instant_build = yes
 						}
 			}
