@@ -569,7 +569,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.8
+				bonus = 1.0
 				uses = 1
 			    technology = tactical_bomber_1937
 				technology = tactical_bomber_1939
@@ -644,7 +644,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_upgrade
-				bonus = 0.7
+				bonus = 1.0
 				uses = 2
 			    category = air_upgrade
 			}
@@ -718,16 +718,16 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 161 }
-					add_extra_state_shared_building_slots = 3 
+					add_extra_state_shared_building_slots = 8 
 						add_building_construction = {
 							type = arms_factory
-							level = 3 
+							level = 8 
 							instant_build = yes
 						}
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -752,7 +752,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = arty_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = artillery
 			}
@@ -799,16 +799,16 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1.5
 				uses = 2
 				category = industry
 			}
 			random_owned_controlled_state = {
 				prioritize = { 161 }
-					add_extra_state_shared_building_slots = 3 
+					add_extra_state_shared_building_slots = 9
 						add_building_construction = {
 							type = arms_factory
-							level = 3 
+							level = 9
 							instant_build = yes
 						}
 			}
@@ -837,7 +837,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = support_companies
-				Bonus = 0.5
+				Bonus = 1.0
 				uses = 2
 				category = support_tech
 			}
@@ -1126,7 +1126,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_grand_battle_plan
 			}
@@ -1342,7 +1342,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1352,7 +1352,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1362,7 +1362,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1372,7 +1372,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1382,7 +1382,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1392,7 +1392,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1402,7 +1402,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1412,7 +1412,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1422,7 +1422,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1452,10 +1452,10 @@ focus_tree = {
 				prioritize = { 159 }
 					limit = {
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 8
 						instant_build = yes
 					}
 			}
@@ -1463,10 +1463,10 @@ focus_tree = {
 				prioritize = { 158 }
 					limit = {
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 7
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 7
 						instant_build = yes
 					}
 			}
@@ -1517,23 +1517,23 @@ focus_tree = {
 				prioritize = { 156 }
 					limit = {
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 8
 						instant_build = yes
 					}
 					
 			}
 			add_resource = {
 				type = steel
-				amount = 15
+				amount = 45
 				state = 156
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 0.5
-				uses = 2
+				bonus = 1.5
+				uses = 5
 				technology = excavation1
 				technology = excavation2
 				technology = excavation3
@@ -1563,10 +1563,10 @@ focus_tree = {
 		completion_reward = {						
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 			}
@@ -1596,10 +1596,10 @@ focus_tree = {
 			add_ideas = navy_prioritised
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 			}
@@ -1627,7 +1627,7 @@ focus_tree = {
                 show_ideas_tooltip = ansaldo_tank
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.8
+				bonus = 1.0
 				uses = 2
 				category = armor
 			}
@@ -1734,10 +1734,10 @@ focus_tree = {
 		completion_reward = { 
 			random_owned_controlled_state = {
 				prioritize = { 161 }
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = arms_factory
-						level = 3
+						level = 6
 						instant_build = yes
 					}
 			}
@@ -2060,7 +2060,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = synth_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 4
 				category = synth_resources
 			}
 		}
@@ -2160,12 +2160,12 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 7
+				amount = 48
 				state = 450
 			}
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 48
 				state = 662
 			}
 			450 = {
@@ -2207,13 +2207,38 @@ focus_tree = {
 			451 = {
 				add_building_construction = {
 					type = air_base
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
 					province = 1130
-					level = 2
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+			}
+			450 = {
+				add_building_construction = {
+					type = naval_base
+					province = 11954
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+			}
+            663 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2222,35 +2247,10 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
-			450 = {
-				add_building_construction = {
-					type = naval_base
-					province = 11954
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-			}
-            663 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-			}
             164 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}	
@@ -2416,7 +2416,7 @@ focus_tree = {
 		add_stability = 0.05
 		add_timed_idea = { 
 		idea = trains_on_time
-		days = 365
+		days = 425
 		}
 	 }
 	}
@@ -2460,10 +2460,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 2 }
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 10
 						add_building_construction = {
 							type = industrial_complex
-							level = 4
+							level = 10
 							instant_build = yes
 						}
 			}
@@ -2511,7 +2511,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = steel
-				amount = 15
+				amount = 45
 				state = 159
 			}
 			GER = {
