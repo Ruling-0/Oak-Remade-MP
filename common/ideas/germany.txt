@@ -1571,7 +1571,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.02
 			}
             picture = can_wartime_prices_and_trade_board
 			targeted_modifier = {
@@ -1586,7 +1586,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.02
 			}
 			picture = can_wartime_prices_and_trade_board
 
