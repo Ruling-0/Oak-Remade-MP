@@ -1101,8 +1101,8 @@ on_actions = {
 						}
 						set_autonomy = {
 							target = FRA
-							autonomous_state = autonomy_puppet
-							freedom_level = 0.4
+							autonomous_state = autonomy_dominion
+							freedom_level = 0.3
 						}
 						else = {
 							puppet = FRA

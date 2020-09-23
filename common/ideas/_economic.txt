@@ -550,9 +550,16 @@ ideas = {
 		free_trade = {
 			
 		available = {
-			has_war = no
-			NOT = { has_government = fascism }
-			NOT = { has_government = communism }
+			OR = {
+			    tag = POR 
+			    tag = SWE
+			    tag = TUR
+				AND = {
+			        has_war = no
+			        NOT = { has_government = fascism }
+			        NOT = { has_government = communism }
+				}
+			}
 		}
 
 			cost = 150
@@ -577,6 +584,13 @@ ideas = {
 		
 		export_focus = {
 			
+			available = {
+				NOT = { 
+					tag = SWE
+					tag = TUR
+					tag = POR
+				}
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -602,6 +616,11 @@ ideas = {
 		limited_exports = {
 			
 			available = {
+				NOT = { 
+				    tag = POR 
+					tag = SWE
+					tag = TUR
+				}
 				OR = {
 					AND = {
 						has_government = democratic
@@ -647,6 +666,11 @@ ideas = {
 			
 			available = {
 				has_war = yes
+				NOT = { 
+				    tag = POR 
+					tag = SWE
+					tag = TUR
+				}
 				OR = { 
 					has_government = fascism
 					has_government = communism

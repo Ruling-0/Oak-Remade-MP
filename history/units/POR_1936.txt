@@ -5,15 +5,26 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 } 
-		artillery = { x = 0 y = 1 }  # Full howitzer regiment
-		engineer = { x = 1 y = 0 }   
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 }  
+		anti_air = { x = 2 y = 0 }  
 	}
 }
 division_template = {
@@ -25,6 +36,7 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
 	}
 }
 
@@ -36,7 +48,7 @@ units = {
 		location = 11805
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = { # "2a Brigada de Cavalaria"
@@ -47,7 +59,7 @@ units = {
 		location = 11805
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 
@@ -60,7 +72,7 @@ units = {
 		location = 9817
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = { # "Cavalaria do Porto"
@@ -71,7 +83,7 @@ units = {
 		location = 9817
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	# 2a Distrito Militar #
@@ -83,7 +95,7 @@ units = {
 		location = 3798
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	# 3a Distrito Militar #
@@ -95,7 +107,7 @@ units = {
 		location = 844
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 
@@ -108,7 +120,7 @@ units = {
 		location = 9869
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = { # "2a Brigada de Cavalaria"
@@ -119,7 +131,7 @@ units = {
 		location = 9869
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 }
@@ -142,7 +154,7 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "POR"
 		}
 		requested_factories = 1
@@ -157,6 +169,52 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.74
 		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 5
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 5
+	}
+    add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 15
 	}
 	
 		#################### stockpile 

@@ -194,7 +194,6 @@ focus_tree = {
 	focus = {
 		id = FRA_ratify_matignon
 		bypass = {
-			has_capitulated = yes
 			NOT = {
 				has_idea = FRA_matignon_agreements
 			}
@@ -313,8 +312,8 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
 
 		completion_reward = {
 			USA = { country_event = lar_arms_purchases.1 }
@@ -1096,6 +1095,7 @@ focus_tree = {
 		}
 
 		bypass = {
+		    has_capitulated = yes
 		}
 		
 		icon = GFX_goal_generic_consumer_goods
@@ -1794,6 +1794,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
+			add_popularity = { ideology = democratic popularity = 0.50 }
+			add_to_tech_sharing_group = commonwealth_research
 			772 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -2070,18 +2072,6 @@ focus_tree = {
 		relative_position_id = FRA_expand_the_colonial_army
 
 		available = {
-			any_country = {
-				OR = {
-					tag = FRA
-					is_in_faction_with = FRA
-				}
-				and = {
-					has_full_control_of_state = 461
-					has_full_control_of_state = 459
-					has_full_control_of_state = 460
-					has_full_control_of_state = 458
-				}
-			}
 		}
 
 		cost = 5

@@ -461,7 +461,7 @@ ideas = {
 				minimum_training_level = -0.2
 				experience_gain_factor = -0.2
 				supply_consumption_factor = -0.1
-				send_volunteer_size = 4
+				send_volunteer_size = 1
 			}
 		}
 
