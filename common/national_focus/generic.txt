@@ -1,4 +1,18 @@
-﻿focus_tree = {
+﻿search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+
+	
+ 
+	
+	
+	FOCUS_FILTER_RESEARCH = 522
+
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+}
+
+focus_tree = {
 	id = generic_focus
 	
 	country = {
@@ -8,21 +22,26 @@
 	default = yes
 	reset_on_civilwar = no
 
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
 		cost = 10
-
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.5
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -37,13 +56,15 @@
 		relative_position_id = army_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 2
-				uses = 3
+				bonus = 1.0
+				uses = 1
 				category = infantry_weapons
 				category = artillery
 			}
@@ -60,12 +81,14 @@
 		relative_position_id = army_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 2
+				bonus = 3.0
 				technology = motorised_infantry
 			}
 		}
@@ -80,14 +103,16 @@
 		relative_position_id = army_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -102,12 +127,14 @@
 		relative_position_id = equipment_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -123,13 +150,15 @@
 		y = 2
 		relative_position_id = motorization_effort
 		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				ahead_reduction = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = motorized_equipment
 			}
@@ -145,13 +174,15 @@
 		relative_position_id = doctrine_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -167,12 +198,14 @@
 		relative_position_id = equipment_effort_2
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				ahead_reduction = 1
+				ahead_reduction = 2
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -189,12 +222,14 @@
 		relative_position_id = mechanization_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 2
 				category = armor
 			}
@@ -212,14 +247,16 @@
 		relative_position_id = equipment_effort_3
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 1
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
 				technology = marines
@@ -236,6 +273,8 @@
 		x = 5
 		y = 0
 		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -251,7 +290,7 @@
 			}			
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}			
@@ -306,7 +345,7 @@
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -323,15 +362,22 @@
 		relative_position_id = aviation_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 2
-				category = light_fighter
-				category = cat_heavy_fighter
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
 			}
 		}
 	}
@@ -346,17 +392,18 @@
 		relative_position_id = aviation_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 2
-				technology = strategic_bomber_1937
-				technology = strategic_bomber_1939
-				technology = strategic_bomber_1941
-				technology = strategic_bomber_1943
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
 				category = tactical_bomber
 			}
 		}
@@ -371,6 +418,8 @@
 		relative_position_id = bomber_focus
 		cost = 10
 
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 
@@ -385,7 +434,7 @@
 			}
 			add_tech_bonus = {
 				name =  air_doc_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -442,7 +491,7 @@
 			}
 			add_tech_bonus = {
 				name =  air_doc_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -459,13 +508,15 @@
 		relative_position_id = aviation_effort_2
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
-				bonus = 1
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = cas_bomber
 			}
@@ -482,12 +533,14 @@
 		relative_position_id = aviation_effort_2
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = jet_rocket_bonus
-				ahead_reduction = 0.5
+				ahead_reduction = 2
 				uses = 2
 				category = rocketry
 				category = jet_technology
@@ -513,13 +566,15 @@
 		relative_position_id = aviation_effort_2
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
-				bonus = 1
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = naval_bomber
 			}
@@ -533,6 +588,8 @@
 		y = 0
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
 		available_if_capitulated = yes
 
 
@@ -545,10 +602,10 @@
 
 		complete_tooltip = {
 			navy_experience = 25
-			add_extra_state_shared_building_slots = 5
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = dockyard
-				level = 5
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -580,10 +637,10 @@
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 5
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -610,10 +667,10 @@
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 5
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -641,10 +698,10 @@
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 5
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -661,6 +718,8 @@
 		y = 1
 		relative_position_id = naval_effort
 		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -681,7 +740,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 2
 				technology = convoy_interdiction_ti
 				technology = unrestricted_submarine_warfare
@@ -701,6 +760,8 @@
 		y = 1
 		relative_position_id = naval_effort
 		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -721,7 +782,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 2
 				category = fleet_in_being_tree
 			}
@@ -736,7 +797,9 @@
 		y = 1
 		relative_position_id = flexible_navy
 		cost = 10
-
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 
@@ -756,12 +819,10 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 1
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
 		}
 	}
@@ -774,6 +835,8 @@
 		y = 1
 		relative_position_id = large_navy
 		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -794,13 +857,11 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
+				category = cl_tech
+				category = ca_tech
 			}
 		}
 	}
@@ -814,6 +875,8 @@
 		relative_position_id = submarine_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 
@@ -833,13 +896,10 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
-				technology = early_destroyer
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = advanced_destroyer
+				category = dd_tech
 			}
 		}
 	}
@@ -853,8 +913,9 @@
 		relative_position_id = cruiser_effort
 		cost = 10
 
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
-
 
 		ai_will_do = {
 			factor = 1
@@ -873,19 +934,12 @@
 			navy_experience = 25
 			add_tech_bonus = {
 				name = capital_ships_bonus
-				bonus = 1
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
 			}
 		}
 	}
@@ -897,20 +951,39 @@
 		y = 0
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = industry
 			}
 		}
 
 		ai_will_do = {
-			factor = 100
-			
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = { 
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC 
+					tag = YUN
+					tag = SHX
+					tag = XSM
+					tag = BEL
+					tag = LUX
+					tag = HOL
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 2
+				}				
+			}
 		}
 	}
 
@@ -923,12 +996,14 @@
 		relative_position_id = industrial_effort
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
 		available_if_capitulated = yes
 
 
 		
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -945,10 +1020,10 @@
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 1
 				instant_build = yes
 			}			
 		}
@@ -977,10 +1052,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -996,11 +1071,13 @@
 		relative_position_id = industrial_effort
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
 		available_if_capitulated = yes
 
 
 		ai_will_do = {
-			factor = 50			
+			factor = 2			
 		}
 
 		bypass = {
@@ -1017,10 +1094,10 @@
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 3
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -1049,10 +1126,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1068,11 +1145,13 @@
 		relative_position_id = construction_effort
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
 		available_if_capitulated = yes
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1089,10 +1168,10 @@
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -1121,10 +1200,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1139,12 +1218,14 @@
 		y = 1
 		relative_position_id = production_effort
 		cost = 10
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
 
 		available_if_capitulated = yes
 
 
 		ai_will_do = {
-			factor = 50
+			factor = 2
 		}
 
 		bypass = {
@@ -1161,10 +1242,10 @@
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 3
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -1193,10 +1274,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1212,10 +1293,9 @@
 		relative_position_id = construction_effort_2
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
 		available_if_capitulated = yes
-        ai_will_do = {
-			factor = 50
-		}
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1309,11 +1389,13 @@
 		relative_position_id = production_effort_2
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
 		available_if_capitulated = yes
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1330,10 +1412,10 @@
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 3
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -1362,10 +1444,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1381,10 +1463,9 @@
 		relative_position_id = infrastructure_effort
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
 		available_if_capitulated = yes
-        ai_will_do = {
-			factor = 50
-		}
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1478,11 +1559,13 @@
 		relative_position_id = infrastructure_effort
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
 		available_if_capitulated = yes
 
 
 		ai_will_do = {
-			factor = 100
+			factor = 2
 		}
 
 		bypass = {
@@ -1499,10 +1582,10 @@
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1531,10 +1614,10 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1549,13 +1632,15 @@
 		y = 1
 		relative_position_id = infrastructure_effort_2
 		cost = 10
+		
+		search_filters = { FOCUS_FILTER_RESEARCH } 
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				ahead_reduction = 0.5
+				ahead_reduction = 2
 				category = nuclear
 			}
 		}
@@ -1578,10 +1663,12 @@
 		relative_position_id = infrastructure_effort_2
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 2
+			add_research_slot = 1
 		}
 	}
 	
@@ -1599,10 +1686,12 @@
 		relative_position_id = extra_tech_slot
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 2
+			add_research_slot = 1
 		}
 	}	
 
@@ -1615,12 +1704,14 @@
 		relative_position_id = infrastructure_effort_2
 		cost = 10
 
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1
+				bonus = 1.0
 				uses = 4
 				category = electronics
 				category = nuclear
@@ -1643,7 +1734,9 @@
 		x = 19
 		y = 0
 		cost = 10
-
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1667,6 +1760,8 @@
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL   }
 
 		available_if_capitulated = yes
 
@@ -1683,11 +1778,10 @@
 					has_idea = neutrality_idea
 				}
 			}
-			
 		}
 
 		completion_reward = {
-			add_ideas = collectivist_ethos_focus
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 		}
 	}
 
@@ -1706,6 +1800,8 @@
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -1729,7 +1825,10 @@
 		}
 
 		completion_reward = {
-			add_ideas = nationalism
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+			}
 		}
 	}
 	
@@ -1754,6 +1853,8 @@
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -1777,7 +1878,10 @@
 		}
 
 		completion_reward = {
-			add_ideas = internationalism
+			add_timed_idea = {
+				idea = internationalism
+				days = 720
+			}
 		}
 	}	
 
@@ -1796,6 +1900,8 @@
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -1833,6 +1939,8 @@
 		y = 1
 		relative_position_id = nationalism_focus
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -1855,6 +1963,8 @@
 		y = 1
 		relative_position_id = internationalism_focus
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -1877,6 +1987,8 @@
 		y = 1
 		relative_position_id = liberty_ethos
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -1906,6 +2018,8 @@
 		y = 1
 		relative_position_id = liberty_ethos
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -1936,6 +2050,8 @@
 		y = 1
 		relative_position_id = militarism
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -1966,6 +2082,8 @@
 		y = 1
 		relative_position_id = neutrality_focus
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
 		available_if_capitulated = yes
 
@@ -1982,6 +2100,8 @@
 		y = 1
 		relative_position_id = interventionism_focus
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -1998,6 +2118,8 @@
 		y = 1
 		relative_position_id = military_youth
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -2014,6 +2136,8 @@
 		y = 1
 		relative_position_id = political_correctness
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -2031,6 +2155,8 @@
 		y = 1
 		relative_position_id = volunteer_corps
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -2056,6 +2182,8 @@
 		y = 1
 		relative_position_id = foreign_expeditions
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -2081,6 +2209,8 @@
 		y = 1
 		relative_position_id = indoctrination_focus
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
 
 		available_if_capitulated = yes
 
@@ -2112,6 +2242,8 @@
 		y = 1
 		relative_position_id = paramilitarism
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
@@ -2146,6 +2278,8 @@
 		y = 1
 		relative_position_id = ideological_fanaticism
 		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
 
@@ -2162,19 +2296,19 @@
 				}
 				add_tech_bonus = {
 					name = electronics_bonus
-					bonus = 1
+					bonus = 1.0
 					uses = 1
 					category = electronics
 				}
 				add_tech_bonus = {
 					name = industrial_bonus
-					bonus = 1
+					bonus = 1.0
 					uses = 1
 					category = industry
 				}	
 				add_tech_bonus = {
 					name = infantry_artillery_bonus #@#
-					bonus = 1
+					bonus = 1.0
 					uses = 1
 					category = infantry_weapons
 					category = artillery
