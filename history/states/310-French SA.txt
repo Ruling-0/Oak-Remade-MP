@@ -10,7 +10,7 @@ state={
 		owner = FRA
 		add_core_of = SEN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			12885 = {
 				naval_base = 1
 			}

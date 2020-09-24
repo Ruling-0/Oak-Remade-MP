@@ -1794,6 +1794,12 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
+			add_tech_bonus = {
+				name = FRA_appoint_new_supreme_commander
+				bonus = 3.0
+				uses = 2
+				category = land_doctrine
+			}
 			add_popularity = { ideology = democratic popularity = 0.50 }
 			add_to_tech_sharing_group = commonwealth_research
 			772 = {
@@ -2223,7 +2229,6 @@ focus_tree = {
 	focus = {
 		id = FRA_army_reform
 		available = {
-			threat > 0.15
 		}
 		prerequisite = { focus = FRA_appoint_new_supreme_commander }
 		icon = GFX_goal_generic_position_armies
