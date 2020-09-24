@@ -580,12 +580,6 @@ on_actions = {
 				POR = {
 					if = {
 						limit = {
-							has_idea = POR_volunteers_in_the_war_nationalist
-						}
-						remove_ideas = POR_volunteers_in_the_war_nationalist
-					}
-					else_if = {
-						limit = {
 							has_idea = POR_volunteers_in_the_war_republican
 						}
 						remove_ideas = POR_volunteers_in_the_war_republican

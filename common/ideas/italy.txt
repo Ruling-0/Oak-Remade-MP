@@ -380,8 +380,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05
-				send_volunteer_size = 1				
+				stability_factor = 0.05		
 			}
 		}
 		vittoria_mutilata = {			

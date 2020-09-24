@@ -1047,7 +1047,6 @@ ideas = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_agricultural_credit_bank
 				}
 			}
 			

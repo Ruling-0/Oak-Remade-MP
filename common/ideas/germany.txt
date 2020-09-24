@@ -1621,7 +1621,6 @@ ideas = {
 				root_out_resistance_effectiveness_factor = 0.1
 				political_power_gain = 0.2
 				fascism_drift = 0.2
-				send_volunteer_size = 1
 				operative_slot = 1
 			}
 
