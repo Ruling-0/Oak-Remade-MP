@@ -587,6 +587,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_luis_montes_de_oca
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 
@@ -749,6 +750,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_political_power = 200
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 
@@ -792,6 +794,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 
@@ -823,6 +826,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = MEX_caudillo_private_armies
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 
@@ -2660,6 +2664,11 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+				has_idea = MEX_church_power_3
+				has_idea = MEX_church_power_4
+				has_idea = MEX_church_power_5
+			}
 		}
 
 		bypass = {
@@ -2760,13 +2769,15 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_focus_knights_of_columbus
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
+			has_idea = MEX_church_power_5
+			democratic > 0.4
 			has_civil_war = no
 			NOT = { has_completed_focus = MEX_focus_party_of_the_revolution }
 			NOT = { has_completed_focus = MEX_focus_institutional_revolution }
@@ -3248,6 +3259,7 @@ focus_tree = {
 				remove_idea = MEX_politicised_army
 				add_idea = MEX_politicised_army_2
 			}
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 	
@@ -3417,6 +3429,7 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 	
@@ -3454,6 +3467,7 @@ focus_tree = {
 				add_logistics = 1
 			}
 			add_ideas = MEX_professional_army
+			MEX_decrease_cedillo_tension = yes
 		}
 	}
 
