@@ -406,15 +406,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
 		}
 
 		complete_tooltip = {

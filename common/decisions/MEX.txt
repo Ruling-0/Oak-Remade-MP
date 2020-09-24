@@ -65,7 +65,7 @@ MEX_category_military_issues = {
 			}
 		}
 
-		days_mission_timeout = 150
+		days_mission_timeout = 3000
 		#days_remove = 1
 
 		activation = {
@@ -141,7 +141,7 @@ MEX_category_military_issues = {
 			}
 		}
 
-		days_mission_timeout = 150
+		days_mission_timeout = 3000
 
 		activation = {
 			has_idea = MEX_church_power_1
@@ -207,7 +207,7 @@ MEX_category_military_issues = {
 			}
 		}
 
-		days_remove = 150
+		days_remove = 3000
 
 		visible = {
 			original_tag = MEX
@@ -261,7 +261,7 @@ MEX_category_military_issues = {
 			}
 		}
 
-		days_mission_timeout = 150
+		days_mission_timeout = 3000
 
 		activation = {
 			has_idea = MEX_church_power_5
@@ -327,7 +327,7 @@ MEX_category_military_issues = {
 			}
 		}
 
-		days_remove = 150
+		days_remove = 3000
 
 		visible = {
 			original_tag = MEX
