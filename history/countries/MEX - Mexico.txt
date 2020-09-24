@@ -61,7 +61,7 @@ if = {
 		MEX_church_power_2
 		MEX_oil_concessions
 		MEX_politicised_army
-		MEX_cedillo_tension_1
+		MEX_cedillo_tension_2
 	}
 }
 add_ideas = {
