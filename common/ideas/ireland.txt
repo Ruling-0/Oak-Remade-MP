@@ -1,4 +1,5 @@
 ideas = {
+
 	theorist_production = {	
 		IRE_sean_lemass = {
 
@@ -11,6 +12,393 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 	}
+		country = {
+	
+			IRE_offences_against_the_state_act_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = FRA_matignon_agreements
+
+					modifier = { stability_weekly = 0.002 }
+				
+				}
+			
+			IRE_unstable_republic = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = great_depression
+
+					modifier = { 
+					war_support_factor = -0.10
+					stability_factor = -0.10
+					political_power_cost = 0.25
+					}
+				
+				}
+				
+			IRE_trade_war = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_goods_red_bonus
+
+					modifier = { 
+					consumer_goods_factor = 0.10
+					production_speed_buildings_factor = -0.1
+					}
+				
+				}
+				
+				IRE_less_trade_war = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_goods_red_bonus
+
+					modifier = { 
+					consumer_goods_factor = 0.05
+					production_speed_buildings_factor = -0.1
+					}
+				
+				}
+				
+			IRE_incompetent_army = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = chi_incompetent_officers
+
+					modifier = { 
+						army_attack_factor = -0.1
+						army_defence_factor = -0.1
+						army_speed_factor = -0.1
+						army_org_factor = -0.1
+					}
+				
+				}
+				
+			IRE_british_investors_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_research_bonus
+
+					modifier = { 
+					production_speed_buildings_factor = 0.1
+					}
+				
+				}
+				
+			plan_w_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = fortification_focus
+
+					modifier = { 
+					production_speed_bunker_factor = 0.2
+					production_speed_coastal_bunker_factor = 0.2
+					production_speed_anti_air_building_factor = 0.2
+					production_speed_arms_factory_factor = 0.1
+					}
+				
+				}
+				
+				IRE_island_defences_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_wall_line
+
+					modifier = { 
+					army_core_defence_factor = 0.1
+					}
+				
+				}
+				
+				IRE_public_works_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_local_self_management
+
+					modifier = { 
+						production_speed_infrastructure_factor = 0.10
+					}
+				
+				}
+				
+				IRE_emergency_powers_act = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = HUN_treaty_of_triannon
+
+					modifier = { 
+						consumer_goods_factor = -0.05
+					}
+				
+				}
+				
+				IRE_fuel_rations_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_exploit_mines
+
+					modifier = { 
+						production_speed_synthetic_refinery_factor = 0.1
+					}
+				
+				}
+				
+				IRE_lessons_of_great_war_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_army_war_college
+
+					modifier = { 
+						army_leader_start_planning_level = 1
+						army_leader_start_logistics_level = 1
+					}
+				
+				}
+				
+				IRE_dublin_war_college_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_intel_bonus
+
+					modifier = { 
+						army_leader_start_level = 1
+						army_leader_start_attack_level = 1
+						army_leader_start_defense_level = 1
+					}
+				
+				}
+				
+				IRE_prepare_for_war = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_manpower_bonus
+
+					modifier = { 
+						conscription = +0.05
+					}
+				
+				}
+				
+		
+				
+				IRE_destroyer_production_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_naval_manufacturer_1
+
+					equipment_bonus = {
+							destroyer = {
+							instant = yes
+							build_cost_ic = -0.1
+							}
+						}
+				
+				}
+				
+				IRE_cruiser_production_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_sea_focused_navy
+
+					equipment_bonus = {
+							light_cruiser = {
+							instant = yes
+							build_cost_ic = -0.05
+							}
+							heavy_cruiser = {
+							instant = yes
+							build_cost_ic = -0.05
+							}
+						}
+				
+				}
+				
+				IRE_submarine_production_idea = {
+			
+		
+					allowed = {
+					always = no
+					}
+
+					allowed_civil_war = {
+					has_government = communism
+					}
+		
+					removal_cost = -1
+
+					picture = generic_coastal_navy
+
+					equipment_bonus = {
+							submarine = {
+							instant = yes
+							build_cost_ic = -0.1
+							}
+						}
+				
+				}
+				
+		} 
+
 	political_advisor = {
 
 		IRE_douglas_hyde = {
@@ -234,8 +622,28 @@ ideas = {
 		}
 
 	}
-
-
-	# TECHNOLOGY
-
+	
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		harland_wolffs = {
+		   
+		    picture = generic_naval_manufacturer_2
+			
+			available = {
+			    has_completed_focus = shipbuilding_grants
+			}
+						
+			allowed = {
+				original_tag = IRE
+			}
+		
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+	}
 }

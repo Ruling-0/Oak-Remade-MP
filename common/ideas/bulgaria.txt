@@ -1,5 +1,18 @@
 ideas = {
 	
+	theorist_production = {	
+		BUL_konstantin_muraviev = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BUL
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+	}	
+	
 	political_advisor = {
 
 		BUL_konstantin_muraviev = {

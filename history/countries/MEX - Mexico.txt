@@ -8,7 +8,7 @@ if = {
 		set_naval_oob = "MEX_1936_naval_legacy"
 	}
 }
-set_research_slots = 3
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
