@@ -593,7 +593,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		democratic_drift = 0.01
+		democratic_drift = 0.1
 		stability_factor = 0.15
 		
 		ai_will_do = {
