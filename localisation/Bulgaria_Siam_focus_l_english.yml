@@ -27,6 +27,7 @@
  GER_ITA_forgot_fuel: "Italy forgot to research fuel techs, help!"
  GDU_GER_always_italy: "It's always Italy, isn't it?"
  GDU_ITA_always_italy: "It's always Italy, isn't it?"
+ austerity_idea:0 "Austerity"
  
 # UK DDay Preparation Focuses (radar etc)
 

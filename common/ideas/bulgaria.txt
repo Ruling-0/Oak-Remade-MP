@@ -1,15 +1,37 @@
 ideas = {
+
+    country = {
+		austerity_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+			    political_power_gain = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
 	
 	theorist_production = {	
-		BUL_konstantin_muraviev = {
+		BUL_dobri_bozhilov = {
 
-			picture = generic_political_advisor_europe_1
-			
+			picture = generic_political_advisor_europe_2
+				
 			allowed = {
 				original_tag = BUL
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { captain_of_industry }
 		}
 	}	
 	
@@ -24,17 +46,6 @@ ideas = {
 			}
 			
 			traits = { compassionate_gentleman }
-		}
-
-		BUL_dobri_bozhilov = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = BUL
-			}
-			
-			traits = { captain_of_industry }
 		}
 
 		BUL_georgi_ivanov_kyoseivanov = {
