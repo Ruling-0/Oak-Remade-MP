@@ -1047,7 +1047,7 @@ focus_tree = {
 				has_tech = dispersed_industry2
 			} 
 		}
-		prerequisite = { focus = FRA_agricultural_board }
+		prerequisite = { focus = FRA_agricultural_board focus = FRA_expand_the_steel_mills }
 		icon = GFX_idea_renault
 		x = 0
 		y = 2
@@ -1071,7 +1071,7 @@ focus_tree = {
 				has_tech = dispersed_industry2
 			} 
 		}
-		prerequisite = { focus = FRA_expand_the_steel_mills }
+		prerequisite = { focus = FRA_expand_the_steel_mills focus = FRA_agricultural_board }
 		icon = GFX_idea_morane_saulnier
 		x = 0
 		y = 2
@@ -2196,7 +2196,6 @@ focus_tree = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = FRA_army_reform }
-		mutually_exclusive = { focus = FRA_aggressive_focus }
 		relative_position_id = FRA_army_reform
 		x = -1
 		y = 1
@@ -2237,11 +2236,11 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
-		id = FRA_aviatic_aspirations
+		id = FRA_modernize_the_air_fleet
 		prerequisite = { focus = FRA_protect_the_mainland }
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_goal_generic_air_production
 		x = 0
 		y = 2
 		relative_position_id = FRA_protect_the_mainland
@@ -2250,13 +2249,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = FRA_aviatic_aspirations
-				bonus = 1
-				uses = 2
-				category = air_doctrine
-			}
+			add_ideas = FRA_air_dominance
 		}
 	}
 
@@ -2305,7 +2298,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -2341,7 +2334,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = { special_forces }
@@ -2376,7 +2369,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2401,6 +2394,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_ideas = FRA_firepower
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_artillery_focus
@@ -2441,7 +2435,6 @@ focus_tree = {
 		id = FRA_aggressive_focus
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FRA_army_reform }
-		mutually_exclusive = { focus = FRA_defensive_focus }
 		relative_position_id = FRA_army_reform
 		x = 1
 		y = 1
@@ -2483,11 +2476,11 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
-		id = FRA_modernize_the_air_fleet
+		id = FRA_aviatic_aspirations
 		prerequisite = { focus = FRA_attack_their_mainland }
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_build_airforce
 		x = 0
 		y = 2
 		relative_position_id = FRA_attack_their_mainland
@@ -2496,7 +2489,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 365 }
+			air_experience = 25
+			add_tech_bonus = {
+				name = FRA_aviatic_aspirations
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 
