@@ -1818,7 +1818,7 @@ focus_tree = {
 		}
 		relative_position_id = FRA_free_france
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1852,7 +1852,7 @@ focus_tree = {
 		}
 		relative_position_id = FRA_free_france
 		
-		cost = 10
+		cost = 7.16
 		ai_will_do = {
 			factor = 1
 		}
@@ -1909,7 +1909,7 @@ focus_tree = {
 		}
 		relative_position_id = FRA_continue_the_fight
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1955,7 +1955,7 @@ focus_tree = {
 		}
 		relative_position_id = FRA_continue_the_fight
 		
-		cost = 10
+		cost = 7.16
 		ai_will_do = {
 			factor = 1
 		}
