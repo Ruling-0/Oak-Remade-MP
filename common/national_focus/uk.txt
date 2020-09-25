@@ -2906,71 +2906,7 @@ focus_tree = {
 				}
 			} 
 		}
-	}	
-
-	focus = {
-		id = ENG_anti_non_contact_committee
-		prerequisite = { focus = naval_rearmament_focus }
-		icon = GFX_goal_generic_occupy_states_coastal
-		x = 2
-		y = 1
-		relative_position_id = naval_rearmament_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-				
-		}		
-
-		completion_reward = {
-			add_to_variable = { var = british_money value = -25 }
-			custom_effect_tooltip = british_money_25_tt
-
-			if = { 
-				limit = { 
-					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
-				}
-				add_tech_bonus = {
-					name = ENG_anti_non_contact_committee
-					bonus = 1.0
-					uses = 1
-					category = naval_minelaying
-				}
-				add_tech_bonus = {
-					name = ENG_anti_non_contact_committee
-					bonus = 1.0
-					uses = 2
-					category = naval_minesweeping
-				}
-				add_mines = { region = 18 amount = 250 }	
-				add_mines = { region = 16 amount = 250 }
-			}
-			if = { 
-				limit = { 
-					check_variable = { var = focus_power value = 1 compare = greater_than_or_equals }
-				}
-				add_tech_bonus = {
-					name = ENG_anti_non_contact_committee
-					bonus = 2.0
-					uses = 1
-					category = naval_minelaying
-				}
-				add_tech_bonus = {
-					name = ENG_anti_non_contact_committee
-					bonus = 2.0
-					uses = 2
-					category = naval_minesweeping
-				}
-				add_mines = { region = 18 amount = 500 }	
-				add_mines = { region = 16 amount = 500 }
-			} 						
-		}
 	}
-
 	focus = {
 		id = uk_destroyer_focus
 		prerequisite = { focus = naval_rearmament_focus }
