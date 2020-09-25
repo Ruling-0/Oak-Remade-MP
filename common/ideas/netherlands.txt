@@ -341,7 +341,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				political_power_cost = 0.33
+				political_power_gain = 0.10
 			}
 		}
 
@@ -1953,16 +1953,6 @@ ideas = {
 			}
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = HOL_unity_through_democracy
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
 			}
 
 			traits = { democratic_reformer }
@@ -2166,12 +2156,6 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = { has_completed_focus = HOL_appoint_new_supreme_commander }
-				}
 			}
 			
 			traits = { army_chief_maneuver_2 }
@@ -2445,7 +2429,6 @@ ideas = {
 			picture = fokker
 
 			available = {
-				has_completed_focus = HOL_fokker
 			}
 			
 			allowed = {
@@ -2558,7 +2541,6 @@ ideas = {
 			picture = HOL_daf
 
 			available = {
-				has_completed_focus = HOL_daf
 			}
 
 			allowed = {
@@ -2582,7 +2564,6 @@ ideas = {
 			picture = artillerie_inrichtingen
 
 			available = {
-				has_completed_focus = HOL_expand_the_artillerieinrichtingen
 			}
 			
 			allowed = {
@@ -2634,7 +2615,6 @@ ideas = {
 		HOL_philips = {
 
 			available = {
-				has_completed_focus = HOL_philips_focus
 			}
 			
 			allowed = {
@@ -2658,7 +2638,6 @@ ideas = {
 		HOL_royal_dutch_shell = {
 
 			available = {
-				has_completed_focus = HOL_expand_curacao_oil_refineries
 			}
 			
 			allowed = {

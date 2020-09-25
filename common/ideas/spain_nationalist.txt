@@ -854,8 +854,9 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 5
+				send_volunteer_size = 12
 				send_volunteer_divisions_required = -1
+				air_volunteer_cap = 250
 			}
 		}
 

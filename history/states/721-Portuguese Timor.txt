@@ -8,10 +8,11 @@ state={
 
 	history={
 		owner = POR
+		add_core_of = NGA
 		buildings = {
 			infrastructure = 3
 			12190 ={
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 	}

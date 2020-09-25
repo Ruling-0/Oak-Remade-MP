@@ -567,10 +567,10 @@ leader_traits = {
 		}
 	}
 
-	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
+	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Specialist Army Attack
 		sprite = 12
 		army_org_factor = 0.12
-		communism_drift = 0.1
+		army_attack_factor = 0.05
 		
 		ai_will_do = {
 			factor = 2
@@ -583,6 +583,7 @@ leader_traits = {
 
 		neutrality_drift = 0.1
 		political_power_factor = 0.15
+		stability_weekly = 0.001
 		
 		ai_will_do = {
 			factor = 1
@@ -595,6 +596,7 @@ leader_traits = {
 
 		democratic_drift = 0.1
 		stability_factor = 0.15
+		stability_weekly = 0.001
 		
 		ai_will_do = {
 			factor = 1

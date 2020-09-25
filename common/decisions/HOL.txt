@@ -172,11 +172,11 @@ HOL_obtain_foreign_colonial_investments = {
 			HOL = { has_full_control_of_state = 695 }
 		}
 
-		cost = 30
+		cost = 20
 
 		fire_only_once = no
 
-		days_remove = 120
+		days_remove = 50
 
 		visible = {
 			tag = HOL
@@ -269,11 +269,11 @@ HOL_obtain_foreign_colonial_investments = {
 			}
 		}
 
-		cost = 50
+		cost = 10
 
 		fire_only_once = no
 
-		days_remove = 120
+		days_remove = 25
 
 		visible = {
 			
@@ -1139,7 +1139,7 @@ HOL_request_allied_favors = {
 			NOT = { controls_state = 35 }
 			NOT = { controls_state = 36 }
 			has_capitulated = yes
-			has_legitimacy > 40
+			has_legitimacy > 60
 		}
 
 		days_remove = 90
@@ -1177,8 +1177,7 @@ HOL_request_allied_favors = {
 		available = {
 			has_war = yes
 			has_capitulated = yes
-			num_of_naval_factories < 6
-			has_legitimacy > 80
+			has_legitimacy > 40
 		}
 
 		days_remove = 30
@@ -1223,7 +1222,7 @@ HOL_request_allied_favors = {
 		available = {
 			has_war = yes
 			has_capitulated = yes
-			has_legitimacy > 40
+			has_legitimacy > 60
 		}
 
 		days_remove = 45
@@ -1315,7 +1314,7 @@ HOL_request_allied_favors = {
 		available = {
 			has_war = yes
 			has_capitulated = yes
-			has_legitimacy > 80
+			has_legitimacy > 40
 		}
 
 		days_remove = 60

@@ -162,7 +162,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_resignation_of_leon_blum
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -181,7 +181,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_garuantee_czechoslovakia
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -334,7 +334,7 @@ focus_tree = {
 			focus = FRA_matignon_agreements
 		}
 		relative_position_id = FRA_matignon_agreements
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -347,7 +347,6 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
-			is_subject = no
 		}
 		
 		bypass = {
@@ -359,12 +358,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 10
+			army_experience = 20
 			FIN = {
 				add_manpower = 10000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 2500
+					amount = 5000
 					producer = FRA
 				}
 			}
@@ -1120,74 +1119,31 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_obtain_foreign_colonial_investments
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 677 }
-				add_extra_state_shared_building_slots = 1
+				prioritize = { 543 }
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {
-				prioritize = { 553 }
-				add_extra_state_shared_building_slots = 1				
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
-			}
-
-			random_owned_controlled_state = {
-				prioritize = { 554 }
-				add_extra_state_shared_building_slots = 1				
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			677 = {
-				add_building_construction = {
-					type = naval_base
-					province = 1088
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {
-				prioritize = { 680 }
-				add_extra_state_shared_building_slots = 1				
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = infrastructure
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
@@ -1292,10 +1248,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_country_leader = {
-				name = "Léon Blum"
-				ruling_only = yes
-			}
 		}
 		
 		bypass = {
@@ -1329,7 +1281,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_state_core = 459
@@ -1360,10 +1312,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_country_leader = {
-				name = "Léon Blum"
-				ruling_only = yes
-			}
 		}
 
 		bypass = {
@@ -1372,7 +1320,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = { FRA_expanded_citizenship }
@@ -1401,10 +1349,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_country_leader = {
-				name = "Léon Blum"
-				ruling_only = yes
-			}
 		}	
 
 		bypass = {
@@ -1413,7 +1357,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			swap_ideas = {
@@ -1457,10 +1401,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_country_leader = {
-				name = "Léon Blum"
-				ruling_only = yes
-			}
 		}
 		
 		bypass = {
@@ -1469,7 +1409,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			remove_worker_shortage_effect = yes
@@ -1492,7 +1432,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_obtain_foreign_colonial_investments
-		cost = 5
+		cost = 2
 
 		available_if_capitulated = yes
 
@@ -1523,7 +1463,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = FRA_obtain_foreign_colonial_investments
-		cost = 5
+		cost = 2
 
 		available_if_capitulated = yes
 
@@ -1749,7 +1689,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = FRA_obtain_foreign_colonial_investments
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1800,13 +1740,25 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+					NOT = {
+						is_on_continent = europe
+					}
+				}
+				add_compliance = 100
+			}
 			add_popularity = { ideology = democratic popularity = 0.50 }
 			add_to_tech_sharing_group = commonwealth_research
 			772 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1871,15 +1823,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 90
-			}
-			else = {
-				num_of_factories > 24
-			}
 		}
 		
 		bypass = {
@@ -1890,8 +1833,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_war_support = 0.1
-			add_stability = 0.1
+			add_war_support = 0.25
+			add_stability = 0.25
 		}
 	}
 
@@ -2054,10 +1997,12 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						state = 559
+						state = 774
 						state = 660
 						state = 773
 						state = 772
+						state = 539
+						state = 543
 					}
 				}
 				add_state_modifier = {

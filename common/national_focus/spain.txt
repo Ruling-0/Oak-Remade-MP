@@ -887,7 +887,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SPA_the_phalanx_ascendant
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -928,7 +928,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = SPA_the_phalanx_ascendant
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -978,7 +978,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_the_corpo_truppe_volontarie
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -1018,7 +1018,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_equipment_shipments
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -1051,7 +1051,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_equipment_shipments
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2689,35 +2689,11 @@ focus_tree = {
 	focus = {
 		id = SPA_join_the_axis
 		available = {
-			date > 1941.1.1
+			date > 1940.1.1
 			has_global_flag = scw_over
-			is_in_faction = no
-			OR = {
-				AND = {
-					GER = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					ITA = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-			}
-			NOT = { has_completed_focus = SPA_the_latin_bloc }
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
+			NOT = { has_completed_focus = SPA_join_the_allies }
 		}
 		bypass = {
-			OR = {
-				AND = {
-					NOT = { GER = { has_government = fascism } }
-					NOT = { ITA = { has_government = fascism } }
-				}
-				is_in_faction_with = GER
-				is_in_faction_with = ITA
-			}
 		}
 		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
 
@@ -2733,40 +2709,17 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SPA_the_national_syndicalist_state
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					GER = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				GER = { country_event = generic.2 }
-			}
-			if = {
-				limit = {
-					ITA = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				ITA = { country_event = generic.2 }
-			}
 		}
 	}
 
 	focus = {
 		id = SPA_fascist_economic_aid
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -2806,11 +2759,6 @@ focus_tree = {
 			has_full_control_of_state = 176
 			has_full_control_of_state = 792
 			has_full_control_of_state = 41
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -2898,11 +2846,6 @@ focus_tree = {
 	focus = {
 		id = SPA_improve_cross_country_railways
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -2942,11 +2885,6 @@ focus_tree = {
 	focus = {
 		id = SPA_support_the_war_industry
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -3035,7 +2973,6 @@ focus_tree = {
 	focus = {
 		id = SPA_italian_shipbuilding_expertise
 		available = {
-			is_in_faction_with = ITA
 		}
 		bypass = {
 		}
@@ -3045,7 +2982,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -3063,11 +3000,6 @@ focus_tree = {
 	focus = {
 		id = SPA_the_duty_to_work
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -3089,11 +3021,6 @@ focus_tree = {
 	focus = {
 		id = SPA_expand_the_war_industry
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -3225,9 +3152,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_idea = closed_economy }
+					NOT = { has_idea = free_economy }
 				}
-				add_ideas = closed_economy
+				add_ideas = free_economy
 			}
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_1
@@ -3241,7 +3168,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = HOL_expand_curacao_oil_refineries
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = synth_resources
 			}
@@ -3847,7 +3774,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_a_methodical_approach
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -3884,7 +3811,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_portuguese_aid
-		cost = 10
+		cost = 2
 
 		available_if_capitulated = yes
 
@@ -3899,7 +3826,6 @@ focus_tree = {
 		id = SPA_the_latin_bloc
 		available = {
 			has_global_flag = scw_over
-			NOT = { has_completed_focus = SPA_join_the_axis }
 		}
 		bypass = {
 		}
@@ -3909,7 +3835,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_iberian_pact
-		cost = 10
+		cost = 2
 
 		available_if_capitulated = yes
 
@@ -3933,7 +3859,6 @@ focus_tree = {
 						original_tag = CAT
 						original_tag = NAV
 						original_tag = GLC
-						original_tag = ITA
 					}
 					is_in_faction = no
 				}
@@ -4060,37 +3985,11 @@ focus_tree = {
 	focus = {
 		id = SPA_join_the_allies
 		available = {
+		    date > 1940.1.1	
 			has_global_flag = scw_over
-			is_in_faction = no
-			date > 1941.1.1	
-			OR = {
-				AND = {
-					ENG = {
-						has_government = democratic
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					USA = {
-						has_government = democratic
-						is_faction_leader = yes
-					}
-				}
-			}
-			NOT = { has_completed_focus = SPA_the_latin_bloc }
-			NOT = { has_government = fascism }
-			fascism < 0.4		
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
+			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
 		}
 		bypass = {
-			OR = {
-				AND = {
-					NOT = { USA = { has_government = democratic } }
-					NOT = { ENG = { has_government = democratic } }
-				}
-				is_in_faction_with = USA
-				is_in_faction_with = ENG
-			}
 		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
@@ -4106,26 +4005,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					ENG = { has_government = democratic }
-					is_faction_leader = yes
-				}
-				ENG = { country_event = { id = generic.2 hours = 6 } }
-			}
-			if = {
-				limit = {
-					USA = { has_government = democratic }
-					is_faction_leader = yes
-				}
-				USA = { country_event = { id = generic.2 hours = 6 } }
-			}
-			hidden_effect = { news_event = { id = lar_news.11 days = 1 } }
 		}
 	}
 
@@ -4133,10 +4017,6 @@ focus_tree = {
 		id = SPA_the_stabilization_plan
 		available = {
 			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
 		}
 		bypass = {
 		}
@@ -4190,10 +4070,6 @@ focus_tree = {
 	focus = {
 		id = SPA_expand_spanish_bases
 		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
 		}
 		bypass = {
 		}
@@ -4354,10 +4230,6 @@ focus_tree = {
 	focus = {
 		id = SPA_capitalist_economic_aid
 		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
 		}
 		bypass = {
 		}
@@ -4418,10 +4290,6 @@ focus_tree = {
 	focus = {
 		id = SPA_improve_living_standards
 		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
 		}
 		bypass = {
 		}
@@ -4476,10 +4344,6 @@ focus_tree = {
 	focus = {
 		id = SPA_domestic_industrial_developments
 		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
 		}
 		bypass = {
 		}
@@ -4532,10 +4396,6 @@ focus_tree = {
 	focus = {
 		id = SPA_the_spanish_miracle
 		available = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
 		}
 		bypass = {
 		}
@@ -4546,7 +4406,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_improve_living_standards
-		cost = 20
+		cost = 15
 
 		available_if_capitulated = yes
 
@@ -4799,7 +4659,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = SPA_dictator_for_life
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -4849,7 +4709,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_invest_in_naval_infrastructure
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -4916,7 +4776,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_expand_the_slipways
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -4950,7 +4810,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SPA_invest_in_naval_infrastructure
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5012,7 +4872,7 @@ focus_tree = {
 		id = SPA_the_tangiers_enclave
 		available = {
 			has_full_control_of_state = 290
-			date > 1941.1.1
+			date > 1945.1.1
 		}
 		bypass = {
 		}

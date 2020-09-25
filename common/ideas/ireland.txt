@@ -52,6 +52,7 @@ ideas = {
 					war_support_factor = -0.10
 					stability_factor = -0.10
 					political_power_cost = 0.25
+					consumer_goods_factor = 0.1
 					}
 				
 				}
@@ -72,7 +73,7 @@ ideas = {
 					picture = generic_goods_red_bonus
 
 					modifier = { 
-					consumer_goods_factor = 0.10
+					consumer_goods_factor = 0.05
 					production_speed_buildings_factor = -0.1
 					}
 				
@@ -95,7 +96,6 @@ ideas = {
 
 					modifier = { 
 					consumer_goods_factor = 0.05
-					production_speed_buildings_factor = -0.1
 					}
 				
 				}
@@ -114,11 +114,14 @@ ideas = {
 					removal_cost = -1
 
 					picture = chi_incompetent_officers
+					
+					research_bonus = {
+				        land_doctrine = -0.05
+			        }
 
 					modifier = { 
 						army_attack_factor = -0.1
 						army_defence_factor = -0.1
-						army_speed_factor = -0.1
 						army_org_factor = -0.1
 					}
 				
@@ -206,7 +209,7 @@ ideas = {
 					picture = generic_local_self_management
 
 					modifier = { 
-						production_speed_infrastructure_factor = 0.10
+						political_power_gain = 0.1
 					}
 				
 				}
@@ -227,7 +230,7 @@ ideas = {
 					picture = HUN_treaty_of_triannon
 
 					modifier = { 
-						consumer_goods_factor = -0.05
+						consumer_goods_factor = -0.1
 					}
 				
 				}
@@ -249,6 +252,9 @@ ideas = {
 
 					modifier = { 
 						production_speed_synthetic_refinery_factor = 0.1
+						production_speed_synthetic_rubber_refinery_factor = 0.1
+						fuel_gain_factor = 0.25
+		                fuel_gain_factor_from_states = 0.25
 					}
 				
 				}
@@ -269,8 +275,8 @@ ideas = {
 					picture = generic_army_war_college
 
 					modifier = { 
-						army_leader_start_planning_level = 1
-						army_leader_start_logistics_level = 1
+						army_leader_start_planning_level = 2
+						army_leader_start_logistics_level = 2
 					}
 				
 				}
@@ -291,9 +297,9 @@ ideas = {
 					picture = generic_intel_bonus
 
 					modifier = { 
-						army_leader_start_level = 1
-						army_leader_start_attack_level = 1
-						army_leader_start_defense_level = 1
+						army_leader_start_level = 2
+						army_leader_start_attack_level = 2
+						army_leader_start_defense_level = 2
 					}
 				
 				}

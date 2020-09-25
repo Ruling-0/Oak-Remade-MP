@@ -69,7 +69,7 @@ if = {
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
-	set_war_support = 0.15	
+	set_war_support = 0.60	
 	set_research_slots = 4
 
 	ENG = {
@@ -170,36 +170,36 @@ if = {
 	create_field_marshal = {
 		name = "José Vicente de Freitas"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-		traits = { old_guard politically_connected }
-		skill = 3
+		traits = { }
+		skill = 4
 	
 		attack_skill = 4
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 3
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
 	}
 	
 	create_corps_commander = {
 		name = "Luís Augusto Ferreira Martins"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-		traits = { infantry_officer }
+		traits = { panzer_leader }
 		skill = 3
 	
-		attack_skill = 2
-		defense_skill = 4
+		attack_skill = 3
+		defense_skill = 3
 		planning_skill = 3
-		logistics_skill = 4
+		logistics_skill = 3
 	}
 	
 	create_corps_commander = {
 		name = "Raul Augusto Esteves"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-		traits = { cavalry_officer }
+		traits = { infantry_leader naval_invader }
 		skill = 3
 	
-		attack_skill = 4
-		defense_skill = 2
-		planning_skill = 2
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
 		logistics_skill = 3
 	}
 	
@@ -208,8 +208,8 @@ if = {
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 		traits = { gentlemanly old_guard_navy }
 		skill = 4
-		attack_skill = 3
-		defense_skill = 2
+		attack_skill = 4
+		defense_skill = 4
 		maneuvering_skill = 4
 		coordination_skill = 4
 	}

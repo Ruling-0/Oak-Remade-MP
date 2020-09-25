@@ -24,7 +24,6 @@
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 }  
-		anti_air = { x = 2 y = 0 }  
 	}
 }
 division_template = {
@@ -48,18 +47,18 @@ units = {
 		location = 11805
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	division = { # "2a Brigada de Cavalaria"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 2
+				name_order = 6
 		}
 		location = 11805
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 
@@ -72,7 +71,7 @@ units = {
 		location = 9817
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	division = { # "Cavalaria do Porto"
@@ -83,7 +82,7 @@ units = {
 		location = 9817
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	# 2a Distrito Militar #
@@ -95,7 +94,7 @@ units = {
 		location = 3798
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	# 3a Distrito Militar #
@@ -107,7 +106,7 @@ units = {
 		location = 844
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 
@@ -120,7 +119,7 @@ units = {
 		location = 9869
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	division = { # "2a Brigada de Cavalaria"
@@ -131,7 +130,7 @@ units = {
 		location = 9869
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 }
@@ -139,14 +138,14 @@ units = {
 air_wings = {
 	112 = {
 		# Noite Esquadrão de Bombardeiro  -- Ju 52/3m bombers
-		tac_bomber_equipment_1934 = {
+		fighter_equipment_1934 = {
 			owner = "POR" 
-			amount = 30
+			amount = 100
 		}
 		# Dia Esquadrão de Bombardeiro  -- Vickers Valparaiso light bombers
 		tac_bomber_equipment_1934 = {
 			owner = "POR" 
-			amount = 30
+			amount = 50
 		}
 	}
 }
@@ -177,7 +176,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
@@ -186,7 +185,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	
 	add_equipment_production = {
@@ -196,7 +195,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
@@ -205,7 +204,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
     add_equipment_production = {
 		equipment = {
@@ -214,13 +213,26 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
 	}
 	
 		#################### stockpile 
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
 			amount = 1000
+			producer = POR
+		}
+		type = anti_air_equipment_1
+			amount = 60
 			producer = POR
 		}
 }

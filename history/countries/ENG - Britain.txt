@@ -188,6 +188,11 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
     
 	else = {
 		puppet = RAJ

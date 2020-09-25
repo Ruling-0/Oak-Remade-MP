@@ -4,21 +4,23 @@ state={
 	name="STATE_772" # Middle Congo (Brazzaville)
 	manpower = 746415
 	
-	state_category = pastoral
+	state_category = rural
 	resources={
-		rubber=1 # was: 1
+	    tungsten=50
+		steel=50
+		oil=50
 	}
 	history={
 		owner = FRA
 		add_core_of = SEN
 		victory_points = {
-			8193 2
+			8193 25
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			12975 = {
-				naval_base = 1
+				naval_base = 10
 			}
 		}
 

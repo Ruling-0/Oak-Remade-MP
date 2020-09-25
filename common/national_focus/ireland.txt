@@ -173,7 +173,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    threat > 0.10
+		    threat > 0.15
 		}
 	
 		bypass = {
@@ -297,12 +297,18 @@
 		completion_reward = {
 			add_timed_idea = {
 			idea = IRE_public_works_idea
-			days = 365 }
+			days = 180 }
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
 				category = industry }
 		}	
+		113 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes } 
+				}
 		ai_will_do = {
 		}
 		
@@ -404,10 +410,10 @@
 
 		completion_reward = {
 			134 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -481,8 +487,8 @@
 			}
 			add_resource = {
 				type = aluminium
-				amount = 12
-				state = 135
+				amount = 24
+				state = 113
 			}
 		}	
 		ai_will_do = {
@@ -490,7 +496,6 @@
 		
 		
 	}
-	
 	focus = {
 		id = coal_cattle_pact
 		icon = GFX_goal_generic_consumer_goods
@@ -505,7 +510,8 @@
 		}
 		
 		cost = 10
-		prerequisite = { focus = textile_industry focus = clare_aluminium_plants }	
+		prerequisite = { focus = textile_industry }	
+		prerequisite = { focus = clare_aluminium_plants }	
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -787,6 +793,18 @@
 				bonus = 1
 				uses = 1
 				category = industry }
+		134 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes } 
+				}
+		135 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes } 
+				}
 		}	
 		ai_will_do = {
 		}
@@ -802,7 +820,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-			ENG = { has_war = yes }
+		    threat > 0.10
 		}
 	
 		bypass = {
@@ -848,9 +866,14 @@
 
 		completion_reward = {
 			add_ideas = IRE_fuel_rations_idea
+			add_resource = {
+				type = oil
+				amount = 20
+				state = 113
+			}
 			add_tech_bonus = {
 			bonus = 1
-			uses = 1
+			uses = 2
 			category = synth_resources
 			}
 		}	
@@ -873,7 +896,7 @@
 		bypass = {
 		}
 		
-		cost = 5
+		cost = 10
 		prerequisite = { focus = fuel_rations }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1115,6 +1138,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
+		    date > 1939.11.1	
 		}
 	
 		bypass = {
@@ -1401,10 +1425,10 @@
 
 		completion_reward = {
 			113 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}

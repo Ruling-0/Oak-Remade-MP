@@ -552,8 +552,10 @@ ideas = {
 		available = {
 			OR = {
 			    tag = POR 
+				Tag = SPR
 			    tag = SWE
 			    tag = TUR
+				tag = HOL
 				AND = {
 			        has_war = no
 			        NOT = { has_government = fascism }

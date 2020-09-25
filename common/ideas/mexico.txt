@@ -1126,7 +1126,6 @@ ideas = {
 			cost = 75
 			
 			visible = {
-				has_global_flag = flag_mexico_invited_trotsky_to_government
 			}
 			
 			allowed = {
@@ -1134,18 +1133,6 @@ ideas = {
 			}
 			
 			available = {
-				OR = {
-					has_government = communism
-					has_government = neutrality
-				}
-				has_global_flag = flag_mexico_invited_trotsky_to_government
-				NOT = { 
-					OR = {
-						has_global_flag = trotsky_not_welcome_in_mexico
-						has_global_flag = flag_trotsky_dead
-						has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
-					} 
-				}
 			}
 			
 			traits = { red_army_organizer }
@@ -1342,7 +1329,7 @@ ideas = {
 				has_completed_focus = MEX_focus_purge_the_bureaucracy
 			}
 
-			traits = { army_cavalry_3 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
