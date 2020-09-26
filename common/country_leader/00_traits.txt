@@ -1797,10 +1797,10 @@ leader_traits = {
 	smooth_talking_charmer = {
 		random = yes
 		sprite = 13
-		trade_opinion_factor = 0.25
+		trade_opinion_factor = 0.2
 		consumer_goods_factor = -0.02
 		local_resources_factor = 0.10
-		min_export = 0.05
+		min_export = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1809,10 +1809,10 @@ leader_traits = {
 	smooth_talking_charmer_2 = {
 		random = yes
 		sprite = 13
-		trade_opinion_factor = 0.30
-		consumer_goods_factor = -0.01
-		local_resources_factor = 0.08
-		min_export = 0.10
+		trade_opinion_factor = 0.4
+		consumer_goods_factor = -0.04
+		local_resources_factor = 0.2
+		min_export = 0.2
 		
 		ai_will_do = {
 			factor = 1

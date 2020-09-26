@@ -956,7 +956,7 @@ ideas = {
 				original_tag = MEX
 			}
 			
-			traits = { smooth_talking_charmer }
+			traits = { smooth_talking_charmer_2 }
 		}
 
 		MEX_luis_montes_de_oca = {
@@ -1367,7 +1367,6 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_tank_workshops
 			}
 			
 			research_bonus = {
@@ -1388,7 +1387,6 @@ ideas = {
 			}
 			
 			available = {
-				is_in_faction_with = GER
 			}
 			
 			research_bonus = {
@@ -1409,7 +1407,6 @@ ideas = {
 			}
 			
 			available = {
-				is_in_faction_with = SOV
 			}
 			
 			research_bonus = {
@@ -1433,7 +1430,6 @@ ideas = {
 			}
 			
 			available = {
-				is_in_faction_with = USA
 			}
 			
 			research_bonus = {

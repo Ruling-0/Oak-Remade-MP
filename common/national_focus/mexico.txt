@@ -2551,7 +2551,7 @@ focus_tree = {
 								state = 485
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = arms_factory
 							level = 2
@@ -2991,7 +2991,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_knights_of_columbus
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -3227,7 +3227,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -3306,7 +3306,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_revolutionary_women
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -3377,7 +3377,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3393,7 +3393,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -3929,6 +3929,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = SPA_spanish_civil_war_commitments
+				days = 120
+			}
 			unlock_decision_tooltip = MEX_decision_support_spanish_fascists
 			add_tech_bonus = {
 				name = tooltip_falangist_veterans_doctrine_knowledge
@@ -4015,6 +4019,10 @@ focus_tree = {
 			unlock_decision_tooltip = MEX_decision_support_spanish_loyalists
 			add_war_support = 0.05
 			add_stability = 0.05
+			add_timed_idea = {
+				idea = SPA_spanish_civil_war_commitments
+				days = 120
+			}
 			
 			every_other_country = {
 				limit = {
@@ -5228,8 +5236,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_army_expansion_programme
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = MEX_focus_tank_workshops }
-		prerequisite = { focus = MEX_focus_military_aviation_specialists }
+		prerequisite = { focus = MEX_focus_tank_workshops focus = MEX_focus_military_aviation_specialists }
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_tank_workshops
