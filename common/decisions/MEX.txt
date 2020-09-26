@@ -507,7 +507,7 @@ MEX_category_military_issues = {
 
 		remove_effect = {
 			random_list = {
-				60 = { # Shipment gets through
+				95 = { # Shipment gets through
 					army_experience = 20
 					add_equipment_to_stockpile = {
 						type = convoy_1
@@ -521,7 +521,7 @@ MEX_category_military_issues = {
 						country_event = { id = mexico.50 }
 					}
 				}
-				40 = { # Sunk by loyalists
+				5 = { # Sunk by loyalists
 					navy_experience = 25
 					country_event = { id = mexico.51 }
 				}
