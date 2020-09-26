@@ -11,16 +11,6 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
-		IRE_sean_lemass = {
-
-			picture = generic_political_advisor_europe_4
-
-			allowed = {
-				original_tag = IRE
-			}
-			
-			traits = { war_industrialist }
-		}
 	}
 		country = {
 	
