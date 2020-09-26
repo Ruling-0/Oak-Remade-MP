@@ -59,9 +59,9 @@ ideas = {
 					picture = great_depression
 
 					modifier = { 
-					war_support_factor = -0.10
-					stability_factor = -0.10
-					political_power_cost = 0.25
+					war_support_factor = -0.20
+					stability_factor = -0.20
+					political_power_cost = 0.30
 					consumer_goods_factor = 0.1
 					}
 				
@@ -636,6 +636,22 @@ ideas = {
 			
 			traits = { air_warfare_theorist }
 		}
+		tom_phillips = {
+		
+		    ledger = navy
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IRE
+			}
+					
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
 
 	}
 	
@@ -656,7 +672,7 @@ ideas = {
 			}
 		
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }

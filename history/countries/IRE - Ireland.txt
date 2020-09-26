@@ -36,6 +36,8 @@ set_technology = {
 	################## aircraft ##############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
+	############### economy ############
+	starting_industry = 1
 }
 
 if = {
@@ -142,9 +144,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	fascism = 1
-	communism = 1
+	democratic = 100
 }
 
 1939.1.1 = {

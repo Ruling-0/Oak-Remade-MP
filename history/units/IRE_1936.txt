@@ -76,7 +76,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
@@ -85,7 +85,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	
 	add_equipment_production = {
@@ -95,7 +95,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
@@ -104,7 +104,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 5
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {

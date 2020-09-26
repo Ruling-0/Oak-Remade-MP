@@ -1073,7 +1073,7 @@ ideas = {
 				}
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_superior_firepower = 0.10

@@ -10,7 +10,7 @@ state={
 		owner = IRE
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 7
+			industrial_complex = 6
 			dockyard = 1
 			arms_factory = 3
 		}

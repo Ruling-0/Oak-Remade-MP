@@ -655,7 +655,6 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -675,7 +674,6 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -695,7 +693,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -715,7 +712,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -736,7 +732,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -757,7 +752,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -780,7 +774,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -1264,9 +1257,6 @@ ideas = {
 			available = {
 				NOT = {
 					has_completed_focus = SPA_no_compromise_on_carlist_ideals
-				}
-				NOT = {
-					has_completed_focus = SPA_banish_the_party_leaders
 				}
 				custom_trigger_tooltip = {
 					tooltip = SPA_not_republican_spain_tt

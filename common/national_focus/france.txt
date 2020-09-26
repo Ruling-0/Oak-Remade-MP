@@ -2180,7 +2180,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FRA_appoint_new_supreme_commander
-		cost = 7.16
+		cost = 5
 
 		cancel_if_invalid = no
 
@@ -2199,7 +2199,7 @@ focus_tree = {
 		relative_position_id = FRA_army_reform
 		x = -1
 		y = 1
-		cost = 7.16
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2438,7 +2438,7 @@ focus_tree = {
 		relative_position_id = FRA_army_reform
 		x = 1
 		y = 1
-		cost = 7.16
+		cost = 1
 
 		available_if_capitulated = yes
 

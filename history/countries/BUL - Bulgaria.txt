@@ -28,6 +28,8 @@ set_technology = { #player
 	axis_tech_armored_cars = 1
 	################## aircraft ##############
 	fighter_1934 = 1
+	############### economy ############
+	starting_industry = 1
 }
 
 set_convoys = 16
