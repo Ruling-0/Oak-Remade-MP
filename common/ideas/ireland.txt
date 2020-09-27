@@ -626,22 +626,6 @@ ideas = {
 			
 			traits = { air_warfare_theorist }
 		}
-		tom_phillips = {
-		
-		    ledger = navy
-			
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = IRE
-			}
-					
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
-			
-			traits = { naval_theorist }
-		}
 
 	}
 	
