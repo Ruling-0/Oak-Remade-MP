@@ -2804,16 +2804,17 @@ focus_tree = {
 					elections_allowed = yes
 				}
 			}
-			create_country_leader = {
-				name = "Luis María Martínez"
-				desc = "POLITICS_LUIS_MARIA_MARTINEZ_DESC"
-				picture = GFX_portrait_MEX_Luis_Maria_Martinez
-				expire = "1965.1.1"
-				ideology = socialism
-				traits = {
-					primate_of_mexico
-				}
-			}
+		    create_country_leader = {
+		    	name = "Leon Trotsky"
+		    	desc = "POLITICS_LEON_TROTSKY_DESC"
+		    	picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
+		    	expire = "1965.1.1"
+		    	ideology = socialism
+		    	traits = {
+			    	exiled_revolutionary
+			    	primate_of_mexico
+			    }
+		    }
 			
 			set_party_name = { ideology = democratic name = MEX_democratic_party_national_action_party_short long_name = MEX_democratic_party_national_action_party_long }
 			
