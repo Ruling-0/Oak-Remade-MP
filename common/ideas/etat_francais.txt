@@ -13,7 +13,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.01
 				army_org_Factor = 0.05
 				army_morale_factor = 0.05
 			}
@@ -32,7 +32,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.02
 				army_org_Factor = 0.10
 				army_morale_factor = 0.10
 			}
@@ -130,6 +130,8 @@ ideas = {
 			picture = generic_research_bonus
 		}
 		idea_EFR_STO = {
+		 
+		    Picture = HUN_strengthen_fascists
 
 			allowed = {
 				always = no
@@ -147,7 +149,7 @@ ideas = {
 		}
 		idea_EFR_STO2 = {
 
-			picture = idea_EFR_STO
+			picture = HUN_strengthen_fascists
 
 			allowed = {
 				always = no
@@ -165,7 +167,7 @@ ideas = {
 		}
 		idea_EFR_STO3 = {
 
-			picture = idea_EFR_STO
+			picture = HUN_strengthen_fascists
 
 			allowed = {
 				always = no
@@ -332,10 +334,10 @@ ideas = {
 				original_tag = EFR
 			}
 
-			cost = 250
+			cost = 150
 
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				land_doctrine = 0.10
 			}
 			picture = generic_army_europe_6
 			traits = { grand_battle_plan_expert }
@@ -356,8 +358,24 @@ ideas = {
 
 			picture = generic_army_europe_5
 
-			traits = { army_entrenchment_2 }
+			traits = { army_armored_1 }
 
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		jean_de_laborde = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -376,6 +394,19 @@ ideas = {
 				factor = 1
 			}
 		}
+		## Huntzinger before he died, while he was Secrétaire d’État à la Guerre so like minister of defense.
+		EFR_charles_huntziger = {
+
+			allowed = {
+				original_tag = EFR
+			}
+			picture = generic_army_europe_3
+			traits = { army_infantry_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	# MILITARY
 	army_chief = {
@@ -386,19 +417,6 @@ ideas = {
 			}
 			picture = generic_army_europe_2
 			traits = { army_chief_defensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		## Huntzinger before he died, while he was Secrétaire d’État à la Guerre so like minister of defense.
-		EFR_charles_huntziger = {
-
-			allowed = {
-				original_tag = EFR
-			}
-			picture = generic_army_europe_3
-			traits = { army_chief_organizational_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -455,7 +473,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 
-			traits = { navy_chief_maneuver_2 }
+			traits = { navy_chief_decisive_battle_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -478,5 +496,25 @@ ideas = {
 			}
 			traits = { war_industrialist }
 		}
+		FRA_paul_reynaud = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+
+			picture = generic_political_advisor_europe_3
+			
+			traits = { captain_of_industry }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 }

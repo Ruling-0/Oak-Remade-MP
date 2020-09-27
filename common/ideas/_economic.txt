@@ -551,6 +551,7 @@ ideas = {
 			
 		available = {
 			OR = {
+			    tag = EFR
 			    tag = POR 
 				Tag = SPR
 			    tag = SWE

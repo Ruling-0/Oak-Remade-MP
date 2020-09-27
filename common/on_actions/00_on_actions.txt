@@ -1273,15 +1273,13 @@ on_actions = {
 					HOL = { is_in_faction_with = ENG } 
 		            ENG = { has_capitulated = no }
 				}
+				ENG = {
+					set_autonomy = { target = HOL autonomy_state = autonomy_dominion freedom_level = 0.3 }
+				}
 				HOL = {
 					load_oob = HOL_ai
-					
-				}
-				ENG = {
-					set_autonomy = { target = INS autonomy_state = autonomy_colony }
-				}
-				ENG = {
-					set_autonomy = { target = HOL autonomy_state = autonomy_colony }
+					add_to_tech_sharing_group = commonwealth_research
+					add_popularity = { ideology = democratic popularity = 0.50 }
 				}
 			}
          	if = {

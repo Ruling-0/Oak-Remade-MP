@@ -17,7 +17,7 @@ ideas = {
 			picture = generic_navy_bonus
 			
 			modifier = {
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_dockyard = 0.1
 			}
 		}		
 		FRA_full_employment = {
@@ -2288,23 +2288,6 @@ ideas = {
 			}
 		}	
 		
-		jean_de_laborde = {
-			ledger = navy
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-
-			
-			traits = { navy_capital_ship_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
 		emile_muselier = {
 			ledger = navy
 			
@@ -2315,7 +2298,7 @@ ideas = {
 			
 
 			
-			traits = { navy_fleet_logistics_2 }
+			traits = { navy_capital_ship_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2858,27 +2841,6 @@ ideas = {
 			picture = advisor_generic_7
 			
 			traits = { armaments_organizer }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		FRA_paul_reynaud = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_political_advisor_europe_3
-			
-			traits = { quartermaster_general }
 	
 			on_add = {
 			}
