@@ -2,6 +2,9 @@
 
 oob = "IRE_1936"
 
+set_stability = 0.55
+set_war_support = 0.25
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "IRE_1936_naval_mtg"
