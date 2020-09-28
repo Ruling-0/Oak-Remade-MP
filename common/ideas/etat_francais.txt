@@ -396,6 +396,7 @@ ideas = {
 		}
 		## Huntzinger before he died, while he was Secrétaire d’État à la Guerre so like minister of defense.
 		EFR_charles_huntziger = {
+		    ledger = army
 
 			allowed = {
 				original_tag = EFR

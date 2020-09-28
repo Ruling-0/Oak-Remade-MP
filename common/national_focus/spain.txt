@@ -3152,9 +3152,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_idea = free_economy }
+					NOT = { has_idea = free_trade }
 				}
-				add_ideas = free_economy
+				add_ideas = free_trade
 			}
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_1
