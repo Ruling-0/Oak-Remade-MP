@@ -2377,7 +2377,8 @@ focus_tree = {
 
 	focus = {
 		id = POR_popular_front
-		available = {			
+		available = {		
+            date > 1945.1.1		
 		}
 
 		bypass = {		
@@ -3593,6 +3594,7 @@ focus_tree = {
 
 		available = {				
 			has_global_flag = scw_over
+			date > 1945.1.1
 			OR = {
 				has_government = democratic
 				has_government = communism
@@ -3777,6 +3779,7 @@ focus_tree = {
 	focus = {
 		id = POR_strict_neutrality_in_the_spanish_civil_war
 		available = {
+		    date > 1945.1.1
 			SPR_scw_in_progress = yes			
 		}
 
@@ -4123,7 +4126,7 @@ focus_tree = {
 		y = 2
 
 		relative_position_id = POR_allow_free_elections
-		cost = 10
+		cost = 5
 		completion_reward = { 	
 			if = {
 				limit = { 
@@ -4158,10 +4161,9 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_join_the_allies
-		cost = 10
+		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
-			ENG = { add_to_tech_sharing_group = commonwealth_research }
 			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
@@ -4180,6 +4182,7 @@ focus_tree = {
 		}
 
 		available = {
+            date > 1945.1.1
 			country_exists = GER
 			GER = {
 				has_government = fascism
@@ -4217,6 +4220,7 @@ focus_tree = {
 		id = POR_iberian_summit
 		available = {
 			has_global_flag = scw_over
+		    date > 1945.1.1
 			has_war = no
 			is_in_faction = no
 			NOT = { has_government = communism }
@@ -4548,6 +4552,7 @@ focus_tree = {
 
 		available = {	
 			has_global_flag = scw_over
+		    date > 1945.1.1
 			any_country = {
 				original_tag = SPR
 				NOT = { has_government = ROOT }
@@ -4644,28 +4649,6 @@ focus_tree = {
 		available = {	
 			owns_state = 112
 			has_war = no
-			OR = {
-				AND = {
-					ENG = { 
-						exists = yes
-						NOT = { has_war_with = ROOT }
-					}
-					any_country = {
-						is_major = yes
-						has_war_with = ENG
-					}
-				}
-				AND = {
-					GER = { 
-						exists = yes
-						NOT = { has_war_with = ROOT }
-					}
-					any_country = {
-						is_major = yes
-						has_war_with = GER
-					}
-				}
-			}
 		}
 
 		bypass = {		
@@ -4677,7 +4660,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_strengthen_the_regime
-		cost = 10
+		cost = 5
 		completion_reward = { 
 			add_ideas = POR_the_capital_of_espionage
 		}
@@ -4891,6 +4874,7 @@ focus_tree = {
 		}
 
 		available = {
+		    date > 1945.1.1
 			JAP = {
 				exists = yes
 				NOT = { has_war_with = ROOT }
@@ -4927,10 +4911,12 @@ focus_tree = {
 
 	focus = {
 		id = POR_national_syndicalism
-		available = {			
+		available = {	
+            date > 1945.1.1			
 		}
 
 		bypass = {		
+		     
 		}
 		prerequisite = { focus = POR_portuguese_legion }
 
@@ -5636,7 +5622,8 @@ focus_tree = {
 
 	focus = {
 		id = POR_a_royal_wedding
-		available = {			
+		available = {	
+            date > 1945.1.1			
 		}
 
 		bypass = {		
@@ -6492,6 +6479,7 @@ focus_tree = {
 		}
 
 		available = {
+            date > 1945.1.1
 			any_country = {
 				has_government = communism
 				NOT = { is_in_faction_with = ROOT }

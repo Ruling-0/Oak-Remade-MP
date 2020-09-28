@@ -621,6 +621,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_phalanx_ascendant
 		available = {
+            date > 1945.1.1
 			has_global_flag = spanish_civil_war
 			hidden_trigger = { always = no }
 		}
@@ -4974,6 +4975,7 @@ focus_tree = {
 	focus = {
 		id = SPA_restore_the_monarchy
 		available = {
+            date > 1945.1.1
 		}
 		bypass = {
 		}
@@ -5260,6 +5262,7 @@ focus_tree = {
 	focus = {
 		id = SPA_supremacy_of_the_communion
 		available = {
+            date > 1945.1.1
 			has_global_flag = spanish_civil_war
 			hidden_trigger = { always = no }
 		}
