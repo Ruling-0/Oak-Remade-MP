@@ -1,3 +1,9 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+	### METRPOLITAN FRANCE ###
+	fleet = {
 		name = "Amiral Nord"
 		naval_base = 9898 # Dunkerque
 		task_force = {				

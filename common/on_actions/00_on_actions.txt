@@ -1141,26 +1141,6 @@ on_actions = {
 					set_state_controller = 781
 					set_state_controller = 776		
 					set_state_controller = 777	
-						destroy_ships = {
-							type = ship_hull_light
-							count = all
-						}  
-						destroy_ships = {
-							type = ship_hull_cruiser
-							count = all
-						}
-						destroy_ships = {
-							type = ship_hull_heavy
-							count = all
-						}
-						destroy_ships = {
-							type = ship_hull_carrier
-							count = all
-						}
-						destroy_ships = {
-							type = ship_hull_submarine
-							count = all
-						} 
 				}
 				GER = {
 					set_state_controller = 28
