@@ -37,6 +37,7 @@ set_technology = {
 	motorised_infantry = 1
 	################## aircraft ##############
 	fighter_1934 = 1
+	fighter_1936 = 1
 	tactical_bomber_1934 = 1
 	############### economy ############
 	starting_industry = 1
@@ -70,7 +71,7 @@ if = {
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
-	set_war_support = 0.60	
+	set_war_support = 0.25
 	set_research_slots = 4
 
 	ENG = {

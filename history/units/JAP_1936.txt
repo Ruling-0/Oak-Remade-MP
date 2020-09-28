@@ -5,16 +5,21 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
 		
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
 	
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
 	    DIV_HQ = { x = 0 y = 0 }
@@ -22,24 +27,40 @@
 		recon = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 0 y = 2 }
+		pack_artillery = { x = 1 y = 2 }
 	}
 }
 division_template = {
 	name = "Dokuritsu Konsei Ryodan" 	# Independent Mixed Brigade: 5 infantry battalions (4k men total), 1 field artillery basttalion - abstracted into infantry,
 	division_names_group = JAP_IMB_01
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		pack_artillery_brigade = { x = 1 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
 		light_armor = { x= 2 y = 0 }
 		light_armor = { x= 2 y = 1 }
+		light_armor = { x= 2 y = 2 }
+		
+		light_armor = { x= 3 y = 0 }
+		light_armor = { x= 3 y = 1 }
+		light_armor = { x= 3 y = 2 }
+		
+		light_armor = { x= 4 y = 0 }
+		light_armor = { x= 4 y = 1 }
+		light_armor = { x= 4 y = 2 }
 	}
 	support = {
 	    DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
+		recon = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		pack_artillery = { x = 1 y = 2 }
 	}
 }
 division_template = {
@@ -68,17 +89,20 @@ division_template = {
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+		armored_car = { x = 2 y = 0 }
+		armored_car = { x = 2 y = 1 }
 		
 		armored_car = { x = 3 y = 0 }
 		armored_car = { x = 3 y = 1 }
 		armored_car = { x = 3 y = 2 }
 	}
 	support = {
-		DIV_HQ = { x = 0 y = 0 }
+	    DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon_ac = { x = 1 y = 0 }
+		recon = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		pack_artillery = { x = 1 y = 2 }
 	}
 }
 division_template = {
@@ -93,15 +117,24 @@ division_template = {
 		marine = { x = 1 y = 0 }
 		marine = { x = 1 y = 1 }
 		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
 		
 		marine = { x = 2 y = 0 }
 		marine = { x = 2 y = 1 }
 		marine = { x = 2 y = 2 }
+		marine = { x = 2 y = 3 }
+		
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
 	    DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		recon = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		pack_artillery = { x = 1 y = 2 }
 	}	
 	priority = 2
 }
@@ -144,14 +177,14 @@ units = {
 	division = {
 		name = "Ominato Kichi Kaiheidan"
 		location = 9859 #Ominato Naval Base
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 		
 	}
 	division = {
 		name = "Chishima Kichi Shubitai"
 		location = 1399 #Shumshu
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = { # "Karafuto Dokuritsu Konsei Ryodan"
@@ -186,14 +219,14 @@ units = {
 	division = {
 		name = "Osaka Kichi Kaiheidan"
 		location = 7072 #Osaka
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Yokusaka Tokubetsu Rikusentai"
 		location = 9998 #Yokosuka
 		division_template = "Rikusentai"
-		start_experience_factor = 0.3
+		start_experience_factor = 1.0
 	}
 
 	#Roppou Homengun - West Japan Army
@@ -209,13 +242,13 @@ units = {
 	division = {
 		name = "Kure Kichi Kaiheidan"
 		location = 1092 #Hiroshima
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1		
 	}
 	division = {
 		name = "Sasebo Kichi Kaiheidan"
 		location = 9950 #Sasebo/Nagasaki
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 
@@ -224,7 +257,7 @@ units = {
 	division = {
 		name = "Taiwan Kichi Shubitai"
 		location = 7186 #Taipei
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 
@@ -280,7 +313,7 @@ units = {
 	division = {
 		name = "Chinkai Kichi Kaiheidan"
 		location = 4056 #Pusan
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 
@@ -290,7 +323,7 @@ units = {
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 11932 #Naha
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 
@@ -299,13 +332,13 @@ units = {
 	division = {
 		name = "Saipan Kichi Shubitai"
 		location = 3995 #Saipan
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Iwoto Kichi Shubitai"
 		location = 13025 #Iwo Jima
-		division_template = "Chuton-chi Shidan"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -444,9 +477,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7697
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.2
+		location = 9998
+		division_template = "Rikusentai"
+		start_experience_factor = 1.0
 	}
 
 	# 5 Homengun - 5th Field Army
@@ -499,20 +532,18 @@ units = {
 			is_name_ordered = yes
 			name_order = 101
 		}
-		location = 12469
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
+		location = 9998
+		division_template = "Rikusentai"
+		start_experience_factor = 1.0
 	}
 	division = { # "2 Mouko Kiheishidan"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 102
 		}
-		location = 12469
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
+		location = 9998
+		division_template = "Rikusentai"
+		start_experience_factor = 0.1.0
 	}
 	division = { # "3 Mouko Kiheishidan"
 		division_name = {
@@ -529,10 +560,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 104
 		}
-		location = 7812
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
+		location = 9998
+		division_template = "Rikusentai"
+		start_experience_factor = 1.0
 	}
 	division = { # "5 Mouko Kiheishidan"
 		division_name = {
@@ -637,13 +667,22 @@ air_wings = {
 		fighter_equipment_1934 = {
 			owner = "JAP"
 			
-			amount = 200
+			amount = 100
 		}
 		fighter_equipment_1934 = {
 			owner = "JAP"
-			amount = 200 
+			
+			amount = 100
 		}
 		fighter_equipment_1934 = {
+			owner = "JAP"
+			amount = 100 
+		}
+		fighter_equipment_1934 = {
+			owner = "JAP"
+			amount = 100 
+		}
+		fighter_equipment_1936 = {
 			owner = "JAP"
 			amount = 100 
 		}
@@ -660,11 +699,11 @@ air_wings = {
 	# 2 Hikodan -- Dalian
 	716 = {
 		
-		fighter_equipment_1934 = {
+		fighter_equipment_1936 = {
 			owner = "JAP"
 			amount = 100
 		}
-		fighter_equipment_1934 = {
+		fighter_equipment_1936 = {
 			owner = "JAP"
 			
 			amount = 100
@@ -744,7 +783,7 @@ instant_effect = { #player
 		}
 		requested_factories = 12
 		progress = 0.1
-		efficiency = 20
+		efficiency = 35
 	}
 	
 	add_equipment_production = {
@@ -754,7 +793,7 @@ instant_effect = { #player
 		}
 		requested_factories = 5
 		progress = 0.3
-		efficiency = 20
+		efficiency = 35
 	}
 	
 	add_equipment_production = {
@@ -764,7 +803,7 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.3
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -773,7 +812,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -782,7 +821,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 20
+		efficiency = 35
 	}
 	
 	add_equipment_production = {
@@ -792,7 +831,7 @@ instant_effect = { #player
 		}
 		requested_factories = 4
 		progress = 0.3
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -801,7 +840,7 @@ instant_effect = { #player
 		}
 		requested_factories = 4
 		progress = 0.3
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -810,7 +849,7 @@ instant_effect = { #player
 		}
 		requested_factories = 4
 		progress = 0.4
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -819,16 +858,16 @@ instant_effect = { #player
 		}
 		requested_factories = 4
 		progress = 0.4
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = { 
 		equipment = {
-			type = light_tank_equipment_1934 
+			type = light_tank_equipment_1936
 			creator = "JAP" 
 		}
 		requested_factories = 2
 		progress = 0.8
-		efficiency = 20
+		efficiency = 35
 	} 
 	
 	add_equipment_production = {
@@ -838,7 +877,7 @@ instant_effect = { #player
 		}
 		requested_factories = 5
 		progress = 0.4
-		efficiency = 20 
+		efficiency = 35 
 	}
 	add_equipment_production = {
 		equipment = {
@@ -847,7 +886,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.5
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -856,7 +895,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.5
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -865,7 +904,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 20
+		efficiency = 35
 	}
 	add_equipment_production = {
 		equipment = {
@@ -874,7 +913,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 20
+		efficiency = 35
 	}
 	############# equipment stockpile ################
 	add_equipment_to_stockpile = {
@@ -903,8 +942,13 @@ instant_effect = { #player
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1934 
-			amount = 150
+		type = special_equipment_1
+			amount = 2000
+			producer = JAP
+		}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1936
+			amount = 450
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
@@ -918,13 +962,8 @@ instant_effect = { #player
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
-		type = armored_cars_equipment_1
-			amount  = 150 
-			producer = JAP
-    }
-	add_equipment_to_stockpile = {
 		type = armored_cars_equipment_2
-			amount  = 180 
+			amount  = 500
 			producer = JAP
      }
 }

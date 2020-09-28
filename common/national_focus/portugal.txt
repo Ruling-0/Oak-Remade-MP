@@ -38,7 +38,7 @@ focus_tree = {
 		x = 2
 		y = 0
 
-		cost = 10
+		cost = 5
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_ideas = POR_colonial_assimilation_policy
@@ -62,7 +62,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_colonial_assimilation_policy
-		cost = 10
+		cost = 5
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_ideas = POR_colonial_army
@@ -97,14 +97,13 @@ focus_tree = {
 		bypass = {		
 		}
 		prerequisite = { focus = POR_colonial_assimilation_policy }
-		mutually_exclusive = { focus = POR_limited_self_rule }
 			
 		icon = GFX_focus_por_luso_tropicalism
 		x = -2
 		y = 2
 
 		relative_position_id = POR_colonial_assimilation_policy
-		cost = 10
+		cost = 5
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
 			unlock_decision_tooltip = POR_mozambique_overseas_territory
@@ -147,7 +146,6 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = POR_colonial_army }
-		mutually_exclusive = { focus = POR_luso_tropicalism }
 			
 		icon = GFX_focus_por_limited_self_rule
 
@@ -155,73 +153,17 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_colonial_army
-		cost = 10
+		cost = 5
 		completion_reward = {
 			add_political_power = 120
 			add_manpower = 30000
-			ANG = {
-				if = {
-					limit = { 
-						POR = { has_full_control_of_state = 796 }
-					}
-					transfer_state = 796
-					POR = { set_country_flag = POR_released_angola_flag }
-				}
-				if = {
-					limit = { 
-						POR = { has_full_control_of_state = 540 }
-					}
-					transfer_state = 540
-					POR = { set_country_flag = POR_released_angola_flag }
-				}								
-			}
-
-			MZB = {
-				if = {
-					limit = { 
-						POR = { has_full_control_of_state = 544 }
-					}
-					transfer_state = 544
-					POR = { set_country_flag = POR_released_mozambique_flag }
-				}	
-			}
-
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Man the Guns"
-					}
-				}
-
-				POR = {
-					if = {
-						limit = { has_country_flag = POR_released_angola_flag }
-						set_autonomy = {
-						    target = ANG
-						    autonomy_state = autonomy_integrated_puppet
-						}
-					}
-					if = {
-						limit = { has_country_flag = POR_released_mozambique_flag }
-						set_autonomy = {
-						    target = MZB
-						    autonomy_state = autonomy_integrated_puppet
-						}
-					}
+			add_ideas = POR_the_portuguese_empire		
+			540 = {
+				add_resource = {
+					type = oil
+					amount = 25
 				}
 			}
-			else = {
-				if = {
-					limit = { has_country_flag = POR_released_angola_flag }
-					POR = { puppet = ANG }
-				}
-				if = {
-					limit = { has_country_flag = POR_released_mozambique_flag }
-					POR = { puppet = MZB }
-				}
-			}			
-
 			every_other_country = {
 				limit = { has_government = democratic }
 				add_opinion_modifier = {
@@ -260,7 +202,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = POR_limited_self_rule
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 
@@ -313,7 +255,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_infrastructure_in_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			796 = {
@@ -353,7 +295,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_develop_north_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			540 = {
@@ -375,11 +317,6 @@ focus_tree = {
 					level = 2
 					province = 8248
 					instant_build = yes
-				}
-
-				add_resource = {
-					type = steel
-					amount = 35
 				}
 
 				add_resource = {
@@ -420,7 +357,7 @@ focus_tree = {
 			540 = {
 				add_resource = {
 					type = oil
-					amount = 20
+					amount = 10
 				}
 			}
 		}
@@ -446,7 +383,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_develop_south_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			544 = {
@@ -796,7 +733,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_roads_bridges_and_dams
-		cost = 10
+		cost = 7
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 	
 			if = {
@@ -6199,7 +6136,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
 			remove_ideas = POR_unstable_monarchy
-			add_ideas = POR_the_portuguese_empire
 			if = {
 				limit = {
 					country_exists = BRA

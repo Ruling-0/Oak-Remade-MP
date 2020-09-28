@@ -42,7 +42,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -70,7 +70,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1937
 		folder = {
 			name = industry_folder
@@ -97,7 +97,7 @@ technologies = {
 			leads_to_tech = fuel_refining4 
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = industry_folder
@@ -123,7 +123,7 @@ technologies = {
 			leads_to_tech = fuel_refining5
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 1
 		start_year = 1941
 		folder = {
 			name = industry_folder
@@ -145,7 +145,7 @@ technologies = {
 		fuel_gain_factor = 0.1
 		fuel_gain_factor_from_states = 0.1
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1943
 		folder = {
 			name = industry_folder
@@ -3592,7 +3592,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = industry_folder

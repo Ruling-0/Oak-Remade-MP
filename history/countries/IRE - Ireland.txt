@@ -217,7 +217,6 @@ add_ideas = {
 	IRE_unstable_republic
 	IRE_trade_war
 	IRE_incompetent_army
-	refinery_idea
 }
 if = {
 	limit = {

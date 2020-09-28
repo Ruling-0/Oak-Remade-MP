@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Divisão de Infanteria"		# Infantry Division
-	division_names_group = POR_INF_01
+	division_names_group = POR_MNT_01
 	# Note: each regiment could also mobilize a 3rd battalion if called up
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,19 +23,88 @@
 		DIV_HQ = { x = 0 y = 0 } 
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Divisão de Montanha"		# Infantry Division
+	division_names_group = POR_INF_01
+	# Note: each regiment could also mobilize a 3rd battalion if called up
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 3 }	
+
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 }  
 	}
 }
+
+division_template = {
+	name = "Brigada de Tanka" 		# Tank Brigade
+	division_names_group = POR_LTARM_01
+	# Note: Cavalry regiments included about 5 squadrons/companies
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		light_armor = { x= 2 y = 0 }
+		light_armor = { x= 2 y = 1 }
+		light_armor = { x= 2 y = 2 }
+		
+		light_armor = { x= 3 y = 0 }
+		light_armor = { x= 3 y = 1 }
+		light_armor = { x= 3 y = 2 }
+		
+		light_armor = { x= 4 y = 0 }
+		light_armor = { x= 4 y = 1 }
+		light_armor = { x= 4 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 }  
+	}
+}
+
 division_template = {
 	name = "Brigada de Cavalaria" 		# Cavalry Brigade
 	division_names_group = POR_CAV_01
 	# Note: Cavalry regiments included about 5 squadrons/companies
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
+       	cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		
+        cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 2 y = 0 }
+	}
+	support = {
 	}
 }
 
@@ -47,105 +116,91 @@ units = {
 		location = 11805
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
 	}
-	division = { # "2a Brigada de Cavalaria"
+	division = { # "2a Divisão de Infanteria"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 6
+				name_order = 2
 		}
 		location = 11805
-		division_template = "Brigada de Cavalaria"
+		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
 	}
 
 	# 1a Distrito Militar #
 	division = { # "1a Divisão de Infanteria"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 9817
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
-	}
-	division = { # "Cavalaria do Porto"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 9817
-		division_template = "Brigada de Cavalaria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
-	}
-	# 2a Distrito Militar #
-	division = { # "2a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 3798
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
-	}
-	# 3a Distrito Militar #
-	division = { # "3a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 844
+		location = 9817
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
 	}
-
-	# 4a Distrito Militar #
-	division = { # "4a Divisão de Infanteria"
+	division = { # "3a Divisão de Infanteria"
 		division_name = {
-				is_name_ordered = yes
+				is_name_ordered = yDivisão de Infanteria
 				name_order = 4
 		}
-		location = 9869
+		location = 9817
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
 	}
-	division = { # "2a Brigada de Cavalaria"
+	# 2a Distrito Militar #
+	division = { # "2a Divisão de Montanha"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3798
+		division_template = "Divisão de Montanha"
+		start_experience_factor = 0.4
+	}
+	# 3a Distrito Militar #
+	division = { # "3a Divisão de Montanha"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 9869
-		division_template = "Brigada de Cavalaria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-
+		location = 844
+		division_template = "Divisão de Montanha"
+		start_experience_factor = 0.4
+	}
+	# 2a Distrito Militar #
+	division = { # "4a Brigada de Tanka"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3798
+		division_template = "Brigada de Tanka"
+		start_experience_factor = 0.4
+	}
+	# 3a Distrito Militar #
+	division = { # "5a Brigada de Tanka"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 844
+		division_template = "Brigada de Tanka"
+		start_experience_factor = 0.4
 	}
 }
 ### Aeronáutica Militar ###
 air_wings = {
 	112 = {
-		# Noite Esquadrão de Bombardeiro  -- Ju 52/3m bombers
-		fighter_equipment_1934 = {
+		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-		# Dia Esquadrão de Bombardeiro  -- Vickers Valparaiso light bombers
+		fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 100
+		}
 		tac_bomber_equipment_1934 = {
 			owner = "POR" 
-			amount = 50
+			amount = 100
 		}
 	}
 }
@@ -225,14 +280,80 @@ instant_effect = {
 		efficiency = 100
 	}
 	
+	add_equipment_production = { 
+		equipment = {
+			type = light_tank_equipment_1934
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1934
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	
+	add_equipment_production = { 
+		equipment = {
+			type = fighter_equipment_1936
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 100
+	}
+	
 		#################### stockpile 
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 1000
+			amount = 2500
 			producer = POR
 		}
+	add_equipment_to_stockpile = {
+		type = special_equipment_1
+			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
 		type = anti_air_equipment_1
-			amount = 60
+			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = pack_artillery_equipment_1
+			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = radio_equipment_1
+			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1934
+			amount = 50
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+			amount = 250
 			producer = POR
 		}
 }

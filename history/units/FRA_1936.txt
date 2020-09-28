@@ -1035,10 +1035,15 @@ instant_effect = { #player
 			amount = 4000
 			producer = FRA
 		}
-	
+	special_equipment_1
 	add_equipment_to_stockpile = {
 		type = support_equipment_1
 			amount = 3500
+			producer = FRA
+		}
+	add_equipment_to_stockpile = {
+		type = special_equipment_1
+			amount = 1500
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {

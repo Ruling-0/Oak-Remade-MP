@@ -25,6 +25,7 @@ set_technology = {
 	motorised_infantry = 1
 	light_tank_1936 = 1
 	fighter_1934 = 1
+    fighter_1936 = 1
 	tactical_bomber_1934 = 1
 	############# economy##############
 	starting_industry = 1
@@ -42,10 +43,8 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
+	democratic = 85
+	fascism = 15
 }
 
 create_country_leader = {

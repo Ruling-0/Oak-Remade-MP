@@ -2,6 +2,10 @@ state={
 	id=112
 	name="STATE_112"
 
+	resources={
+		steel=50
+	}
+
 	history={
 		owner = POR
 		victory_points = {
@@ -12,8 +16,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 8
-			industrial_complex = 7
+			arms_factory = 4
+			industrial_complex = 4
+			dockyard = 2
 			air_base = 5
 			11805 = {
 				naval_base = 8
