@@ -40,7 +40,7 @@ ideas = {
 				license_production_speed = 0.2
 				industrial_capacity_factory	= 0.1
 				production_factory_max_efficiency_factor = -0.1
-				consumer_goods_factor = 0.1			
+				consumer_goods_factor = 0.05	
 			}
 		}
 
@@ -61,7 +61,7 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				political_power_gain = -0.5
+				political_power_gain = -0.1
 				resistance_damage_to_garrison = -0.2
 				required_garrison_factor = -0.2
 				

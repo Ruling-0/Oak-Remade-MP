@@ -2328,7 +2328,7 @@ foreign_politics = {
 		}
 		
 
-		days_remove = 70
+		days_remove = 2
 
 		available = { 
 			owns_state = 69
@@ -2337,7 +2337,7 @@ foreign_politics = {
 				CZE = { is_puppet_of = GER }
 				CZE = { is_in_faction_with = GER }
 				has_army_manpower = { size > 949999 }
-				date > 1939.3.16
+				date > 1935.3.16
 			}
 			if = {
 				limit = {

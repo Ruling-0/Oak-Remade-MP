@@ -6540,6 +6540,7 @@ focus_tree = {
 	focus = {
 		id = SPR_regional_defense_council_of_aragon
 		available = {
+		    date > 1945.1.1
 			has_global_flag = spanish_civil_war
 			hidden_trigger = { always = no }
 		}
@@ -8311,6 +8312,7 @@ focus_tree = {
 		available = {
 			has_global_flag = spanish_civil_war
 			hidden_trigger = { always = no }
+			date > 1945.1.1
 		}
 		bypass = {
 		}

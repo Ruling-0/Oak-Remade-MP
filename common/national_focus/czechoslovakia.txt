@@ -107,7 +107,6 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
 		}
 
 		bypass = {
@@ -157,7 +156,6 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 69 }
 		}
 
 		bypass = {
@@ -314,7 +312,6 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 69 }
 		}
 
 		bypass = {
@@ -471,7 +468,6 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 69 }
 		}
 
 		bypass = {
@@ -1585,6 +1581,7 @@ focus_tree = {
 
 		completion_reward = {
 			#allow nazi leader
+            add_ideas = CZE_national_fascism_idea
 			every_other_country = {
 				limit = { 
 					has_government = fascism
@@ -1792,17 +1789,27 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 4
+				amount = 25
 				state = 75
 			}
 			add_resource = {
 				type = aluminium
-				amount = 12
+				amount = 25
+				state = 75
+			}
+			add_resource = {
+				type = chromium
+				amount = 25
 				state = 75
 			}
 			add_resource = {
 				type = steel
-				amount = 20
+				amount = 25
+				state = 75
+			}
+			add_resource = {
+				type = tungsten
+				amount = 25
 				state = 75
 			}
 			75 = {

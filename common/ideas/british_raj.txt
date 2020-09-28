@@ -575,6 +575,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.69
+				consumer_goods_factor = 0.03 
+				industrial_capacity_factory = -0.1
 			}
 		}		
 
@@ -594,6 +596,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.64
+				consumer_goods_factor = 0.03 
+				industrial_capacity_factory = -0.1
 			}
 		}		
 
@@ -613,7 +617,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.59
-				industrial_capacity_factory = 0.08
+				consumer_goods_factor = 0.03 
+				industrial_capacity_factory = -0.1
 			}
 		}		
 
@@ -1768,7 +1773,7 @@ ideas = {
 				original_tag = RAJ
 			}
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1816,7 +1821,7 @@ ideas = {
 				original_tag = RAJ
 			}
 			
-			traits = { army_commando_2 }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1853,7 +1858,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_defensive_2 }
+			traits = { army_chief_defensive_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1921,7 +1926,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_offensive_1 }
 			
 			ai_will_do = {
 				factor = 1

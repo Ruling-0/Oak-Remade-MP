@@ -3393,6 +3393,7 @@
 				remove_idea = ROM_reserve_divisions
 				add_idea = ROM_grand_army
 			}
+			remove_ideas = ROM_romanian_officers
 			add_tech_bonus = {
 				name = ROM_grand_army
 				bonus = 1.5

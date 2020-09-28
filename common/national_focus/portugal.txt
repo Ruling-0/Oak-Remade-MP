@@ -4726,6 +4726,7 @@ focus_tree = {
 	focus = {
 		id = POR_honor_anglo_portuguese_alliance
 		available = {
+		    date > 1945.1.1
 			is_in_faction = no
 			has_war = no
 			ENG = { 
@@ -4745,6 +4746,7 @@ focus_tree = {
 		}
 
 		bypass = {		
+		    is_in_faction_with = ENG
 		}
 
 		

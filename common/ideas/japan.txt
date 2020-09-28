@@ -1093,6 +1093,9 @@ ideas = {
 				infantry_weapons = 0.05
 				armor = 0.05
 			}
+			modifier = {
+			supply_consumption_factor = -0.1
+			}
 		}
 
 		JAP_superior_will = {
@@ -1112,6 +1115,7 @@ ideas = {
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
 			}
 		}
 
@@ -1129,7 +1133,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.02
+				special_forces_cap = 0.25
 			}
 		}
 
@@ -1915,7 +1919,7 @@ ideas = {
 		}
 		
 		tateo_kato = {
-			ledger = air
+			ledger = army
 			
 			
 			allowed = {
@@ -1924,7 +1928,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_combat_training_3 }
+			traits = { army_commando_2 }
 			
 			ai_will_do = {
 				factor = 0.8

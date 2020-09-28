@@ -191,8 +191,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			cancel = {
-				has_government = fascism			
+			cancel = {	
 			}
 
 			picture = free_trade
@@ -200,7 +199,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.03
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
@@ -214,15 +213,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			cancel = {
-				has_government = fascism			
+			cancel = {		
 			}
 			picture = free_trade
 			
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.07
+				consumer_goods_factor = -0.04
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.025
 			}
@@ -243,15 +241,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			cancel = {
-				has_government = fascism			
+			cancel = {		
 			}
 			picture = free_trade
 			
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.15
 				production_factory_max_efficiency_factor = 0.05
 			}
