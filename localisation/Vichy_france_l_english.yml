@@ -90,7 +90,7 @@ EFR_marechal_nous_voila:0 "Maréchal, Nous Voilà!"
 
  EFR_patrie_focus:0 "Patrie"
  EFR_armistice_army:0 "Armistice Army"
- EFR_armistice_army_tt:0 "Will gain Divisions in all the French territories"
+ EFR_armistice_army_tt:0 "Will gain Divisions in all the French territories and put equipment in production with efficiency"
  EFR_hide_military_equipment:0 "Improve Military Tactics"
  EFR_reform_tactics:0 "Reform Tactics"
  EFR_chantiers_de_la_jeunesse:0 "Chantiers de la Jeunesse"

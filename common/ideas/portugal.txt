@@ -90,7 +90,7 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_synthetic_rubber_refinery_factor = 0.1
 				local_resources_factor = 0.1
-				fuel_gain_factor = 0.2
+				fuel_gain_factor = 0.5
 			}
 		}
 
