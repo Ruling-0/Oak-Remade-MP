@@ -22,7 +22,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 
 		folder = {
 			name = land_doctrine_folder
@@ -727,7 +727,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 		
 		categories = {
 			land_doctrine
@@ -1340,7 +1340,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 		
 		categories = {
 			land_doctrine
@@ -1982,7 +1982,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 		
 		categories = {
 			land_doctrine

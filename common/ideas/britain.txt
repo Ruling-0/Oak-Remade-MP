@@ -357,10 +357,10 @@ ideas = {
 			}
 
 			modifier = {
-				political_advisor_cost_factor = -0.33
-				trade_laws_cost_factor = -0.33
-				mobilization_laws_cost_factor = -0.33
-				economy_cost_factor = -0.33
+				political_advisor_cost_factor = -0.2
+				trade_laws_cost_factor = -0.2
+				mobilization_laws_cost_factor = -0.2
+				economy_cost_factor = -0.2
 				stability_factor = 0.1 
 				political_power_factor = 0.1
 			}
@@ -949,6 +949,10 @@ ideas = {
 			targeted_modifier = {
 				tag = FRA
 				trade_cost_for_target_factor = -0.5
+			}	
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -0.1
 			}			
 		}
 		
@@ -2119,6 +2123,9 @@ ideas = {
 			}
 
 			on_add = {
+			    FRA = {
+				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
 				every_country = {
 					limit = {
 						is_subject_of = ENG
@@ -2128,6 +2135,9 @@ ideas = {
 			}
 
 			on_remove = {
+			    FRA = {
+				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
 				every_country = {
 					limit = {
 						AND = {

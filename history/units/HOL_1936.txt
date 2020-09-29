@@ -1,18 +1,28 @@
 ﻿division_template = {
 	name = "Infanterie Divisie"
 	division_names_group = HOL_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
-
-		artillery_brigade = { x = 1 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 } 
-		recon = { x = 0 y = 1 }
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 }   
 	}
 }
 division_template = {
@@ -27,6 +37,21 @@ division_template = {
 		garrison = { x = 1 y = 1 }
 	}
 	priority = 0
+}
+division_template = {
+	name = "Brigada de Cavalary" 		# Cavalry Brigade
+	division_names_group = POR_CAV_01
+	# Note: Cavalry regiments included about 5 squadrons/companies
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+       	cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	}
 }
 
 units = {
@@ -152,8 +177,35 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "HOL"
 		}
-		requested_factories = 4
-		progress = 0.58
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.5
 		efficiency = 100
 	}
 	
@@ -163,27 +215,35 @@ instant_effect = {
 			creator = "HOL" 
 		}
 		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "HOL"
-		}
-		requested_factories = 1
-		progress = 0.20
+		progress = 0.5
 		efficiency = 100
 	}
-	
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = pack_artillery_equipment_1
 			creator = "HOL" 
 		}
 		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
+		progress = 0.5
+		efficiency = 100
+	}
+    add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
 	}
 
 }

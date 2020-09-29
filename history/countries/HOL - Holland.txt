@@ -8,7 +8,7 @@ if = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
 }
-set_research_slots = 3
+set_research_slots = 4
 
 add_ideas = {	
 	HOL_wilhelmina
@@ -49,6 +49,7 @@ set_technology = {
 	motorised_infantry = 1
 	heavy_artillery1 = 1
 	bicycle_infantry = 1
+	interwar_antiair = 1
 	############## aircraft #############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1	

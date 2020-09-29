@@ -158,12 +158,6 @@ focus_tree = {
 			add_political_power = 120
 			add_manpower = 30000
 			add_ideas = POR_the_portuguese_empire		
-			540 = {
-				add_resource = {
-					type = oil
-					amount = 25
-				}
-			}
 			every_other_country = {
 				limit = { has_government = democratic }
 				add_opinion_modifier = {
@@ -357,7 +351,7 @@ focus_tree = {
 			540 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 15
 				}
 			}
 		}
@@ -1192,7 +1186,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_instituto_superior_tecnico
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_tech_bonus = {
@@ -1217,7 +1211,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_industrial_modernization
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 		   if = {

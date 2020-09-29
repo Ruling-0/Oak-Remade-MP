@@ -175,17 +175,7 @@ units = {
 		location = 3798
 		division_template = "Brigada de Tanka"
 		start_experience_factor = 0.4
-	}
-	# 3a Distrito Militar #
-	division = { # "5a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 844
-		division_template = "Brigada de Tanka"
-		start_experience_factor = 0.4
-	}
+	}}
 }
 ### Aeronáutica Militar ###
 air_wings = {

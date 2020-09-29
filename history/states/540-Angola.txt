@@ -1,6 +1,10 @@
 state={
 	id=540
 	name="STATE_540"
+	
+	resources={
+		oil=10
+	}
 
 	history={
 		owner = POR

@@ -1164,7 +1164,12 @@ on_actions = {
 					country_event = { days = 7 id = germany.107 }
 				}		
 				EFR = {
-					inherit_technology = FRA
+					every_state = {
+						limit = {
+							is_core_of = FRA
+						}
+						add_core_of = EFR
+					}
 					transfer_state = 26
 					transfer_state = 22
 					transfer_state = 31
@@ -1207,13 +1212,6 @@ on_actions = {
 					diplomatic_relation = { country = AST relation = non_aggression_pact }
 					diplomatic_relation = { country = NZL relation = non_aggression_pact }
 					diplomatic_relation = { country = GER relation = non_aggression_pact }					
-					every_state = {
-						limit = {
-							is_core_of = FRA
-							is_controlled_by = EFR
-						}
-						add_core_of = EFR
-					}
 					every_state = {
 						limit = {
 							NOT = {
