@@ -184,14 +184,17 @@ air_wings = {
 			owner = "POR" 
 			amount = 100
 		}
+		start_experience_factor = 0.25
 		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
+        start_experience_factor = 0.25
 		tac_bomber_equipment_1934 = {
 			owner = "POR" 
 			amount = 100
 		}
+		start_experience_factor = 0.25
 	}
 }
 ### Production ###
@@ -344,6 +347,16 @@ instant_effect = {
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_1
 			amount = 250
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_1936
+			amount = 25
+			producer = POR
+		}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_1934
+			amount = 25
 			producer = POR
 		}
 }

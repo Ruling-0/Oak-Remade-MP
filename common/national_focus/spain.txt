@@ -10684,7 +10684,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPR_maintain_the_second_republic
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -10708,7 +10708,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPR_new_leadership
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -10737,7 +10737,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPR_the_future_of_the_republic
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}

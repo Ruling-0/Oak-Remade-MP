@@ -3791,7 +3791,7 @@ focus_tree = {
 		y = 1
 		
 		relative_position_id = uk_empire_focus
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 25
 		}
@@ -5478,7 +5478,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 3
 		}
@@ -5499,14 +5499,40 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { var = british_money value = -50 }
 			custom_effect_tooltip = british_money_50_tt
-
-			add_ideas = ENG_british_commonwealth_air_training_plan
-			every_country = {
-				limit = {
-					is_subject_of = ROOT
+			
+			    FRA = {
+				    add_ideas = ENG_british_commonwealth_air_training_plan
 				}
-				add_ideas = ENG_british_commonwealth_air_training_plan
-			}
+			    HOL = {
+				    add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    MEX = {
+				    add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    RAJ = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    CAN = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    AST = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    SAF = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+				NZL = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    IRE = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+				POR = {
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
+			    ENG = {    
+					add_ideas = ENG_british_commonwealth_air_training_plan
+				}
 		}
 	}
 	
