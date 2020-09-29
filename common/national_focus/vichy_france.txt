@@ -24,6 +24,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 600
+	        add_offsite_building = { type = dockyard level = 5 }
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 3.00 
@@ -981,8 +982,7 @@ focus_tree = {
 	focus = {
 		id = EFR_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = EFR_aviation_effort_2 }
-		prerequisite = { focus = EFR_flexible_navy }
+		prerequisite = { focus = EFR_aviation_effort_2 focus = EFR_flexible_navy }
 		relative_position_id = EFR_aviation_effort
 		x = 1
 		y = 3
@@ -1154,16 +1154,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1.00 
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
+				add_tech_bonus = {
+					name = uk_waves_focus
+					bonus = 1.0
+					uses = 2
+					category = naval_doctrine
+				}
 		}
 	}
 
@@ -1194,12 +1190,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 1.00 
-				uses = 2
-				category = fleet_in_being_tree
-			}
+				add_tech_bonus = {
+					name = uk_waves_focus
+					bonus = 1.0
+					uses = 2
+					category = naval_doctrine
+				}
 		}
 	}
 

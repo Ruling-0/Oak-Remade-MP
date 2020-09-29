@@ -24,8 +24,6 @@ division_names_group = FRA_INF_01
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 }  
-		anti_tank = { x = 2 y = 0 }
-		anti_air = { x = 2 y = 1 }
 	}
 }
 
@@ -252,7 +250,7 @@ units = {
 instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_2
 			creator = "EFR" 
 		}
 		requested_factories = 1
@@ -262,7 +260,7 @@ instant_effect = { #player
 	
 	add_equipment_production = {
 		equipment = {
-			type = pack_artillery_equipment_1
+			type = pack_artillery_equipment_2
 			creator = "EFR" 
 		}
 		requested_factories = 1
@@ -310,7 +308,7 @@ instant_effect = { #player
 	
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = artillery_equipment_2
 			creator = "EFR" 
 		}
 		requested_factories = 1
@@ -326,16 +324,15 @@ instant_effect = { #player
 		progress = 0.9
 		efficiency = 100
 	}
-	add_equipment_production = {
+    add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1936
+			type = anti_air_equipment_2
 			creator = "EFR" 
 		}
 		requested_factories = 1
 		progress = 0.9
 		efficiency = 100
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -345,6 +342,26 @@ instant_effect = { #player
 		progress = 0.9
 		efficiency = 100
 	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1938
+			creator = "EFR" 
+		}
+		requested_factories = 1
+		progress = 0.9
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1939
+			creator = "EFR" 
+		}
+		requested_factories = 1
+		progress = 0.9
+		efficiency = 100
+	}
+	
 	
 	add_equipment_production = {
 		equipment = {
@@ -358,7 +375,7 @@ instant_effect = { #player
 	
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1936
+			type = fighter_equipment_1938
 			creator = "EFR" 
 		}
 		requested_factories = 1
@@ -367,7 +384,7 @@ instant_effect = { #player
 	}
 	add_equipment_production = {
 		equipment = {
-			type = tac_bomber_equipment_1934
+			type = tac_bomber_equipment_1937
 			creator = "EFR" 
 		}
 		requested_factories = 1
@@ -422,6 +439,11 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
+			amount = 1000
+			producer = EFR
+		}
+		add_equipment_to_stockpile = {
+		type = medium_tank_equipment_1939
 			amount = 1000
 			producer = EFR
 		}
