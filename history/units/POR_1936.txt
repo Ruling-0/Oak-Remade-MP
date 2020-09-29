@@ -175,7 +175,7 @@ units = {
 		location = 3798
 		division_template = "Brigada de Tanka"
 		start_experience_factor = 0.4
-	}}
+	}
 }
 ### Aeronáutica Militar ###
 air_wings = {
@@ -272,7 +272,7 @@ instant_effect = {
 	
 	add_equipment_production = { 
 		equipment = {
-			type = light_tank_equipment_1934
+			type = light_tank_equipment_1936
 			creator = "POR" 
 		}
 		requested_factories = 1
@@ -337,7 +337,7 @@ instant_effect = {
 			producer = POR
 		}
 	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1934
+		type = light_tank_equipment_1936
 			amount = 50
 			producer = POR
 		}

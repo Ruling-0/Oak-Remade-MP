@@ -156,8 +156,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_political_power = 120
-			add_manpower = 30000
-			add_ideas = POR_the_portuguese_empire		
+			add_manpower = 30000	
 			every_other_country = {
 				limit = { has_government = democratic }
 				add_opinion_modifier = {
@@ -4236,7 +4235,8 @@ focus_tree = {
 		relative_position_id = POR_popular_front
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
-		completion_reward = { 	
+		completion_reward = { 
+    	    add_ideas = POR_the_portuguese_empire			
 			add_ideas = POR_estado_novo
 			add_political_power = 100
 			custom_effect_tooltip = available_chief_of_army
@@ -4657,27 +4657,10 @@ focus_tree = {
 	focus = {
 		id = POR_honor_anglo_portuguese_alliance
 		available = {
-		    date > 1945.1.1
-			is_in_faction = no
-			has_war = no
-			ENG = { 
-				exists = yes
-				NOT = {
-					has_war_with = ROOT 
-					any_other_country = {
-						is_in_faction_with = ENG
-						has_war_with = ROOT
-					}
-				}
-			}
-			any_country = {
-				is_major = yes
-				has_war_with = ENG
-			}
+		    NOT = { 127 = { is_owned_and_controlled_by = ENG } }
 		}
 
 		bypass = {		
-		    is_in_faction_with = ENG
 		}
 
 		
