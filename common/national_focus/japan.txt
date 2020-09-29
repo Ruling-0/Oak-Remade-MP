@@ -2128,13 +2128,11 @@ focus_tree = {
 			605 = {
 				add_resource = {
 					type = aluminium
-					type = steel
 					amount = 20
 				}
 			}
 			325 = {
 				add_resource = {
-					type = aluminium
 					type = steel
 					amount = 20
 				}
