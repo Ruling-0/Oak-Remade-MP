@@ -3747,34 +3747,36 @@ focus_tree = {
 			add_to_variable = { var = british_money value -100 }
 			custom_effect_tooltip = british_money_100_tt
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-					}
+			    FRA = {
+				    add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
-				add_ideas = ENG_prepare_for_the_inevitable_idea  			
-			}
+			    HOL = {
+				    add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    MEX = {
+				    add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    RAJ = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    CAN = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    AST = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    SAF = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+				NZL = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    IRE = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
+			    ENG = {    
+					add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
 		}
 	}
 

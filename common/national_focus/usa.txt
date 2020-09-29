@@ -2546,17 +2546,42 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 100
-			every_country = {
-				limit = {
-					is_in_faction_with = ENG
-				}
-				add_ideas = USA_cash_and_carry_foreign_idea 
-			}
 			add_ideas = USA_cash_and_carry_idea
 
 			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
 		
 			USA_we_dont_want_to_send_our_boys_away = yes
+	
+			    FRA = {
+				    add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    HOL = {
+				    add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    MEX = {
+				    add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    RAJ = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    CAN = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    AST = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    SAF = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
+				NZL = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    IRE = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
+			    ENG = {    
+					add_ideas = USA_cash_and_carry_foreign_idea
+				}
 
 			hidden_effect = {
 				if = {

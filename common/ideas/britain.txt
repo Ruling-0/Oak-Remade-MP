@@ -2126,10 +2126,28 @@ ideas = {
 			    FRA = {
 				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
-				every_country = {
-					limit = {
-						is_subject_of = ENG
-					}
+			    HOL = {
+				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    MEX = {
+				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    RAJ = {    
+					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    CAN = {    
+					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    AST = {    
+					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    SAF = {    
+					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+				NZL = {    
+					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    IRE = {    
 					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
 			}
@@ -2138,13 +2156,28 @@ ideas = {
 			    FRA = {
 				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
-				every_country = {
-					limit = {
-						AND = {
-							is_subject_of = ENG
-							has_idea = ENG_idea_secretary_of_state_for_the_colonies
-						}
-					}
+				HOL = {
+				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    MEX = {
+				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    RAJ = {    
+					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    CAN = {    
+					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    AST = {    
+					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    SAF = {    
+					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+				NZL = {    
+					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
+				}
+			    IRE = {    
 					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
 			}

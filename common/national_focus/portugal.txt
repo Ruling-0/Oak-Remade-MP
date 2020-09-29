@@ -350,7 +350,7 @@ focus_tree = {
 			540 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 15
 				}
 			}
 		}
@@ -4579,7 +4579,6 @@ focus_tree = {
 		id = POR_the_capital_of_espionage
 		available = {	
 			owns_state = 112
-			has_war = no
 		}
 
 		bypass = {		
@@ -4669,9 +4668,11 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		x = -1
 		y = 1
+		
+		continue_if_invalid = yes
 
 		relative_position_id = POR_concordat_with_the_holy_see
-		cost = 10
+		cost = 5
 		completion_reward = { 
 			remove_ideas = POR_unstable_republic
 			if = {
