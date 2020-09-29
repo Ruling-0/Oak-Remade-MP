@@ -1392,7 +1392,7 @@ technologies = {
 		}
 		
 		#planning max bonus increase
-		max_planning = 0.20
+		max_planning = 0.30
 		supply_consumption_factor = -0.1
 
 		xp_research_type = army
