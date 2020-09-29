@@ -1126,15 +1126,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 543 }
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
 					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1708,6 +1703,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
+			add_offsite_building = { type = dockyard level = 4 }
 			add_tech_bonus = {
 				name = FRA_appoint_new_supreme_commander
 				bonus = 3.0
@@ -1733,11 +1729,6 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
 					instant_build = yes
 				}
 			}
@@ -2561,14 +2552,11 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 19 }
-				limit = {
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 4 
+				prioritize = { 539 }
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 4 
+					level = 5
 					instant_build = yes 
 				}
 			}
@@ -2702,14 +2690,12 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT 
-				}
-				add_extra_state_shared_building_slots = 4 
+				prioritize = { 539 }
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 4
-					instant_build = yes
+					level = 5
+					instant_build = yes 
 				}
 			}
 			add_war_support = 0.10
@@ -3176,14 +3162,6 @@ focus_tree = {
 			    }
 				set_state_flag = FRA_naval_rearmament_2NB
 			}
-			735 = {
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-			    }
-				set_state_flag = FRA_naval_rearmament_2NB
-			}
 		}
 	}
 
@@ -3280,7 +3258,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			31 = {
+			735 = {
 				add_building_construction = {
 					type = dockyard
 					level = 2

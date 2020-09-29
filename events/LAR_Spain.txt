@@ -9811,7 +9811,7 @@ country_event = {
 			}
 		}
 		add_political_power = -50
-		add_timed_idea = { idea = SPR_equipment_shipments days = 730 }
+		add_ideas = SPR_equipment_shipments
 		add_opinion_modifier = { target = FROM modifier = SPA_spanish_civil_war_commitments }
 		FROM = {
 			add_war_support = 0.15
