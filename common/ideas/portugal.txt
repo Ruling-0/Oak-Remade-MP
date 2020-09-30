@@ -54,6 +54,7 @@ ideas = {
 				political_power_gain = -0.5
 				stability_weekly = -0.005
 				production_speed_buildings_factor = -0.25	
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -87,8 +88,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.1
-				production_speed_synthetic_rubber_refinery_factor = 0.1
 				local_resources_factor = 0.1
 				fuel_gain_factor = 0.5
 			}
@@ -435,8 +434,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				trade_opinion_factor = 0.35
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
 				consumer_goods_factor = -0.01
 			}
 		}
@@ -454,7 +452,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.01
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
@@ -492,7 +490,7 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.002
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
 				political_power_gain = 0.1
 				drift_defence_factor = 0.15
 			}
@@ -513,7 +511,7 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.005
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
 				political_power_gain = 0.2
 				drift_defence_factor = 0.15
 			}
@@ -534,8 +532,8 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.005
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				political_power_gain = 0.3
 				drift_defence_factor = 0.15
 				war_support_factor = 0.1
@@ -570,7 +568,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.10
+				production_speed_buildings_factor = 0.05
 			}
 		}
 
@@ -588,10 +586,9 @@ ideas = {
 			
 			modifier = {
 				send_volunteer_divisions_required = -1
-				send_volunteer_size = 12
+				send_volunteer_size = 8
 				send_volunteers_tension = -1
 				lend_lease_tension = -1
-				air_volunteer_cap = 500
 			} 
 		}
 

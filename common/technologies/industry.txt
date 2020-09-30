@@ -62,8 +62,8 @@ technologies = {
 
 	fuel_refining2 = {
 		
-		fuel_gain_factor = 0.1
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
 
 		path = {
 			leads_to_tech = fuel_refining3 
@@ -90,8 +90,8 @@ technologies = {
 
 	fuel_refining3 = {
 		
-		fuel_gain_factor = 0.1
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
 
 		path = {
 			leads_to_tech = fuel_refining4 
@@ -116,8 +116,8 @@ technologies = {
 
 	fuel_refining4 = {
 		
-		fuel_gain_factor = 0.1
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
 
 		path = {
 			leads_to_tech = fuel_refining5
@@ -142,8 +142,8 @@ technologies = {
 
 	fuel_refining5 = {
 		
-		fuel_gain_factor = 0.1
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
 
 		research_cost = 1
 		start_year = 1943

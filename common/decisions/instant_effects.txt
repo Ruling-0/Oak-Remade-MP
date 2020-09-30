@@ -633,14 +633,8 @@ PAR_instant_effect_decisions = {
 		   tag = FIN
 		}
 	   available = {	
-		   FIN = { has_war_with = SOV }
-		   OR = {
-			   AND = {
-				  FIN = { surrender_progress > 0.25 }
-				  SOV = { has_full_control_of_state = 146 }
-			   }
-			   FIN = { surrender_progress > 0.5 }
-		   }
+		    FIN = { has_war_with = SOV }
+		    FIN = { surrender_progress > 0.3 }
 		}
         
 	    cost = 0
@@ -661,8 +655,7 @@ PAR_instant_effect_decisions = {
 		}
 		available = {	
 		   FIN = { has_war_with = SOV }
-		   FIN = { surrender_progress > 0.25 }
-		   SOV = { has_full_control_of_state = 146 }
+		   FIN = { surrender_progress > 0.3 }
 		   GER = { has_war_with = SOV }
 		   date > 1942.1.1
 		}

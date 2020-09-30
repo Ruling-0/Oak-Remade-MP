@@ -79,10 +79,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			rule = {
-				can_create_factions = no
-				can_join_factions = no 
-			}
 
 			removal_cost = -1
 
@@ -113,6 +109,8 @@ ideas = {
 			modifier = {
                 production_speed_infrastructure_factor = 0.10
 				production_speed_industrial_complex_factor = 0.10
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 				industry_repair_factor = 0.05
 			}
 		}
@@ -131,7 +129,7 @@ ideas = {
 		}
 		idea_EFR_STO = {
 		 
-		    Picture = HUN_strengthen_fascists
+		    picture = generic_manpower_bonus
 
 			allowed = {
 				always = no
@@ -149,7 +147,7 @@ ideas = {
 		}
 		idea_EFR_STO2 = {
 
-			picture = HUN_strengthen_fascists
+			picture = generic_manpower_bonus
 
 			allowed = {
 				always = no

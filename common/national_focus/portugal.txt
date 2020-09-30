@@ -350,7 +350,7 @@ focus_tree = {
 			540 = {
 				add_resource = {
 					type = oil
-					amount = 15
+					amount = 20
 				}
 			}
 		}
@@ -726,7 +726,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_roads_bridges_and_dams
-		cost = 7
+		cost = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 	
 			if = {
@@ -1982,7 +1982,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = POR_second_navy_reequipment
-		cost = 10
+		cost = 5
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = { 	
 			remove_ideas = POR_unreliable_army

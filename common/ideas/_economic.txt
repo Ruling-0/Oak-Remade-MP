@@ -555,7 +555,7 @@ ideas = {
 				Tag = SPR
 			    tag = SWE
 			    tag = TUR
-				tag = HOL
+				tag = FRA
 				AND = {
 			        has_war = no
 			        NOT = { has_government = fascism }
