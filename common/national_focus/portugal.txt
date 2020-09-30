@@ -1383,10 +1383,10 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 112 }
 				112 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard		
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1402,10 +1402,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1434,36 +1434,6 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 179 }
 				179 = { #Beja
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard		
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				random_owned_state = {
-					limit = {
-						is_controlled_by = ROOT
-						is_core_of = ROOT
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 180 }
-				180 = { #Porto
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard		
@@ -1683,10 +1653,10 @@ focus_tree = {
 			}
             add_ideas = POR_endless_sea
 			112 = { #Lisbon
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard		
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 
@@ -4656,6 +4626,7 @@ focus_tree = {
 	focus = {
 		id = POR_honor_anglo_portuguese_alliance
 		available = {
+		    date > 1945.1.1	
 		    NOT = { 127 = { is_owned_and_controlled_by = ENG } }
 		}
 
