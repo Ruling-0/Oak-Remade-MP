@@ -767,6 +767,7 @@ SOV_baltic_security_mission = {
         FIN = { country_event = finland.7 }
     }
 }
+
 	SOV_claims_on_baltic = {
 		icon = eng_trade_unions_support
 

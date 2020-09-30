@@ -31,7 +31,7 @@ ideas = {
 			    
 				army_defence_factor = 0.25
 				max_dig_in = 3
-				dig_in_speed_factor = 0.5
+				dig_in_speed_factor = 0.4
 			}
 		}
 		FIN_german_advisors = {
