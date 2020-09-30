@@ -735,6 +735,38 @@ SOV_gulag_economy = {
 }
 
 SOV_socialism_in_one_country = {
+SOV_baltic_security_mission = {
+
+    allowed = { tag = SOV } 
+
+    available = {
+        SOV = { has_war_with = FIN }
+        OR = {
+            AND = {
+                FIN = { surrender_progress > 0.25 }
+                SOV = { has_full_control_of_state = 146 }
+            }
+            FIN = { surrender_progress > 0.5 }
+        }
+    }
+
+    is_good = yes 
+
+    trigger = {
+        has_completed_focus = SOV_finnish_wargoal 
+    }
+
+    days_mission_timeout = 180 
+
+    timeout_effect = { 
+        stability_factor = -0.20
+        political_power = -200
+    }
+
+    complete_effect = {
+        FIN = { country_event = finland.7 }
+    }
+}
 
 	SOV_claims_on_baltic = {
 		icon = eng_trade_unions_support

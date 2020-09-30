@@ -624,51 +624,60 @@ PAR_instant_effect_decisions = {
 		}
 	}		
     FIN_loss = {
-	   
-	   icon = generic_megaphone
-	   
-	   fire_only_once = yes
-	      
-		allowed = {
-		   tag = FIN
-		}
-	   available = {	
-		    FIN = { has_war_with = SOV }
-		    FIN = { surrender_progress > 0.3 }
-		}
-        
-	    cost = 0
 
-		complete_effect = {
-			FIN = { country_event = finland.7 } 
-		}
-	    ai_will_do = {
-			base = 5000			
-		}
-	}		
-	FIN_loss_2 = {
-	   
-		icon = generic_megaphone
-	      
-		allowed = {
-		   tag = FIN
-		}
-		available = {	
-		   FIN = { has_war_with = SOV }
-		   FIN = { surrender_progress > 0.3 }
-		   GER = { has_war_with = SOV }
-		   date > 1942.1.1
-		}
-		fire_only_once = yes
-       
-	    cost = 0
+       icon = generic_megaphone
 
-		complete_effect = {
-			FIN = { country_event = finland.28 } 
-		}
-	    ai_will_do = {
-			base = 5000			
-		}
+       fire_only_once = yes
+
+        allowed = {
+           tag = FIN
+        }
+       available = {
+           FIN = { has_war_with = SOV }
+           OR = {
+               AND = {
+                  FIN = { surrender_progress > 0.25 }
+                  OR = {
+                    AND = {
+                  SOV = { has_full_control_of_state = 146 }
+               }
+           }
+        }
+
+        cost = 0
+
+        complete_effect = {
+            FIN = { country_event = finland.7 } 
+        }
+        ai_will_do = {
+            base = 5000
+        }
+    }
+    FIN_loss_2 = {
+
+        icon = generic_megaphone
+
+        allowed = {
+           tag = FIN
+        }
+        available = {
+        OR = {
+                    AND = {
+           FIN = { has_war_with = SOV }
+           OR = {
+                    AND = {
+           FIN = { surrender_progress > 0.25 }
+           OR = {
+                    AND = {
+           SOV = { has_full_control_of_state = 146 }
+           OR = {
+                    AND = {
+           GER = { has_war_with = SOV }
+           OR = {
+                    AND = {
+           date > 1942.1.1
+        }
+        fire_only_once = yes
 	}		
 	
 	PAR_CAN = {
