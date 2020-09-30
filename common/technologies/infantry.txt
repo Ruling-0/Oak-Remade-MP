@@ -20,12 +20,12 @@ technologies = {
 
 		
 		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.025				
+			breakthrough = 0.025		
 		}
 		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+			defense = 0.02				
+			breakthrough = 0.02
 		}
 		
 		path = {
@@ -53,12 +53,12 @@ technologies = {
 	support_weapons2 = {
 
 		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.1
+			defense = 0.025
+			breakthrough = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.08
+			defense = 0.02
+			breakthrough = 0.04
 		}
 		
 		path = {
@@ -87,12 +87,12 @@ technologies = {
 	support_weapons3 = {
 
 		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.1
+			defense = 0.025
+			breakthrough = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.08
+			defense = 0.02
+			breakthrough = 0.04
 		}
 		
 		path = {
@@ -121,12 +121,12 @@ technologies = {
 	support_weapons4 = {
 
 		category_all_infantry = {
-			defense = 0.1
-			breakthrough = 0.15
+			defense = 0.05
+			breakthrough = 0.075
 		}
 		category_light_infantry = {
-			defense = 0.08
-			breakthrough = 0.12
+			defense = 0.04
+			breakthrough = 0.06
 		}
 		
 		research_cost = 1.5
@@ -152,12 +152,12 @@ technologies = {
 	support_weapons5 = {
 
 		category_all_infantry = {
-			defense = 0.1
-			breakthrough = 0.15
+			defense = 0.05
+			breakthrough = 0.075
 		}
 		category_light_infantry = {
-			defense = 0.08
-			breakthrough = 0.12
+			defense = 0.04
+			breakthrough = 0.06
 		}
 		
 		research_cost = 1.5
@@ -248,10 +248,10 @@ technologies = {
 	infantry_weapons2 = {
 
 		category_all_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		category_light_infantry = {
-			soft_attack = 0.04
+			soft_attack = 0.02
 		}
 
 		path = {
@@ -309,12 +309,12 @@ technologies = {
 	improved_infantry_weapons_2 = {
 
 		category_all_infantry = {
-			soft_attack = 0.05
-			max_strength = 0.15
+			soft_attack = 0.025
+			max_strength = 0.075
 		}
 		category_light_infantry = {
-			soft_attack = 0.04
-			max_strength = 0.1
+			soft_attack = 0.02
+			max_strength = 0.05
 		}
 		
 		path = {
@@ -344,10 +344,10 @@ technologies = {
 			infantry_equipment_3
 		}	
 		category_all_infantry = {
-			max_strength = 0.15
+			max_strength = 0.075
 		}
 		category_light_infantry = {
-			max_strength = 0.1
+			max_strength = 0.05
 		}
 		
 		path = {
@@ -376,12 +376,12 @@ technologies = {
 	advanced_infantry_weapons2 = {
 
 		category_all_infantry = {
-			soft_attack = 0.1
-			breakthrough = 0.1
+			soft_attack = 0.05
+			breakthrough = 0.05
 		}
 		category_light_infantry = {
-			soft_attack = 0.08
-			breakthrough = 0.08
+			soft_attack = 0.04
+			breakthrough = 0.04
 		}
 		
 		category_army = {
@@ -414,7 +414,7 @@ technologies = {
 			infantry_equipment_4
 		}	
 		category_all_infantry = {
-			max_strength = 0.15
+			max_strength = 0.075
 		}
 		category_light_infantry = {
 			max_strength = 0.1
@@ -738,12 +738,12 @@ technologies = {
 		category_all_infantry = {
 			soft_attack = 0.05
 			defense = 0.03
-			max_strength = 0.15
+			max_strength = 0.075
 		}
 		category_light_infantry = {
-			soft_attack = 0.04
-			defense = 0.02
-			max_strength = 0.08
+			soft_attack = 0.02
+			defense = 0.01
+			max_strength = 0.04
 		} 
 		path = {
 			leads_to_tech = camo_upgrade_2
@@ -770,14 +770,14 @@ technologies = {
 	camo_upgrade_2  = {
 		
 		category_all_infantry = {
-			soft_attack = 0.06
-			defense = 0.03
-			max_strength = 0.15
+			soft_attack = 0.03
+			defense = 0.015
+			max_strength = 0.075
 		}
 		category_light_infantry = {
-			soft_attack = 0.04
-			defense = 0.02
-			max_strength = 0.08
+			soft_attack = 0.02
+			defense = 0.01
+			max_strength = 0.04
 		} 
 		
 		path = {
@@ -807,12 +807,12 @@ technologies = {
 	infantry_at = {
 
 		category_all_infantry = {
-			hard_attack = 0.07
-			ap_attack = 0.25
+			hard_attack = 0.045
+			ap_attack = 0.125
 		}
 		category_light_infantry = {
-			hard_attack = 0.05
-			ap_attack = 0.20
+			hard_attack = 0.025
+			ap_attack = 0.10
 		}
 		path = {
 			leads_to_tech = infantry_at2
@@ -839,12 +839,12 @@ technologies = {
 	infantry_at2 = {
 
 		category_all_infantry = {
-			hard_attack = 0.08
-			ap_attack = 0.25
+			hard_attack = 0.04
+			ap_attack = 0.125
 		}
 		category_light_infantry = {
-			hard_attack = 0.05
-			ap_attack = 0.20
+			hard_attack = 0.025
+			ap_attack = 0.10
 		}
 		path = {
 			leads_to_tech = infantry_at3
@@ -869,12 +869,12 @@ technologies = {
 	infantry_at3 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.5
+			hard_attack = 0.1
+			ap_attack = 0.25
 		}
 		category_light_infantry = {
-			hard_attack = 0.1
-			ap_attack = 0.3
+			hard_attack = 0.05
+			ap_attack = 0.15
 		}
 		
 		research_cost = 1.5
@@ -900,12 +900,12 @@ technologies = {
 	infantry_at4 = {
 
 		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
+			hard_attack = 0.125
+			ap_attack = .5
 		}
 		category_light_infantry = {
-			hard_attack = 0.2
-			ap_attack = 1
+			hard_attack = 0.1
+			ap_attack = .5
 		}
 		
 		research_cost = 1.5
@@ -931,10 +931,10 @@ technologies = {
 	tech_dig_1 = {
 		
 		category_all_infantry = {
-			defense = 0.05
+			defense = 0.025
 		}
 		category_light_infantry = {
-			defense = 0.04
+			defense = 0.02
 		}
 		max_dig_in = 1
 
@@ -960,10 +960,10 @@ technologies = {
 	tech_dig_2 = {
 		
 		category_all_infantry = {
-			defense = 0.05
+			defense = 0.025
 		}
 		category_light_infantry = {
-			defense = 0.04
+			defense = 0.02
 		}
 		max_dig_in = 1
         
@@ -989,10 +989,10 @@ technologies = {
 	tech_dig_3 = {
 		
 		category_all_infantry = {
-			defense = 0.05
+			defense = 0.025
 		}
 		category_light_infantry = {
-			defense = 0.04
+			defense = 0.02
 		}
 		max_dig_in = 1
 
@@ -1017,10 +1017,10 @@ technologies = {
 	tech_dig_4 = {
 		
 		category_all_infantry = {
-			defense = 0.05
+			defense = 0.025
 		}
 		category_light_infantry = {
-			defense = 0.04
+			defense = 0.02
 		}
 		max_dig_in = 1
 
@@ -1140,7 +1140,7 @@ technologies = {
 
 		marine = {
 			max_organisation = 2
-			soft_attack = 0.05
+			soft_attack = 0.01
 		}
 		
 		
@@ -1171,7 +1171,7 @@ technologies = {
         enable_subunits = {
 		}
 		marine = {
-			soft_attack = 0.05
+			soft_attack = 0.02
 			max_organisation = 2
 		}
 		path = {
@@ -1197,8 +1197,8 @@ technologies = {
 	marines4 = {
 
 		marine = {
-			hard_attack = 0.05
-			breakthrough = 0.05
+			hard_attack = 0.01
+			breakthrough = 0.025
 			max_organisation = 3
 		}
 		
@@ -1224,8 +1224,8 @@ technologies = {
 	marines5 = {
 
 		marine = {
-			hard_attack = 0.05
-			breakthrough = 0.05
+			hard_attack = 0.02
+			breakthrough = 0.025
 			max_organisation = 3
 		}
 		
@@ -1290,7 +1290,7 @@ technologies = {
 
 		mountaineers = {
 		    max_organisation = 2
-			soft_attack = 0.05
+			soft_attack = 0.04
 		}
 		
 		
@@ -1319,7 +1319,7 @@ technologies = {
         enable_subunits = {		
 		}
 		mountaineers = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 			max_organisation = 2
 		}
 		
@@ -1345,8 +1345,8 @@ technologies = {
     tech_mountaineers4 = {
 
 		mountaineers = {
-			hard_attack = 0.05
-			breakthrough = 0.05
+			hard_attack = 0.025
+			breakthrough = 0.025
 			max_organisation = 3
 		}
 		
@@ -1372,8 +1372,8 @@ technologies = {
 	tech_mountaineers5 = {
 
 		mountaineers = {
-			hard_attack = 0.05
-			breakthrough = 0.05
+			hard_attack = 0.010
+			breakthrough = 0.025
 			max_organisation = 3
 		}
 		
@@ -1454,7 +1454,7 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 2
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		
 		path = {
@@ -1509,8 +1509,8 @@ technologies = {
 	paratroopers4 = {
 
 		paratrooper = {
-			hard_attack = 0.05
-			breakthrough = 0.05
+			hard_attack = 0.025
+			breakthrough = 0.025
 			max_organisation = 3
 		}
 		path = {
@@ -1536,8 +1536,8 @@ technologies = {
 	paratroopers5 = {
 
 		paratrooper = {
-			hard_attack = 0.05
-			breakthrough = 0.05
+			hard_attack = 0.04
+			breakthrough = 0.04
 			max_organisation = 3
 		}
 		
