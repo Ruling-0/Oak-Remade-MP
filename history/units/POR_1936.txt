@@ -166,25 +166,10 @@ units = {
 		division_template = "Divisão de Montanha"
 		start_experience_factor = 0.4
 	}
-	# 2a Distrito Militar #
-	division = { # "4a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 3798
-		division_template = "Brigada de Tanka"
-		start_experience_factor = 0.4
-	}
 }
 ### Aeronáutica Militar ###
 air_wings = {
 	112 = {
-		fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 100
-		}
-		start_experience_factor = 0.25
 		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
