@@ -1880,10 +1880,7 @@ ideas = {
 			picture = reichswerke_hermann_goring 
 
 			allowed = {
-				OR = {
-					original_tag = GER	
-					is_reichskommissariat_ger = yes
-				}
+				original_tag = ROM
 			}
 
 			traits = { trait_industrial_concern }

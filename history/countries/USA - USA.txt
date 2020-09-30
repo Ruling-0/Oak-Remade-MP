@@ -164,6 +164,7 @@ give_guarantee = URG
 		volunteer_only
 		great_depression_3
 		new_deal
+		refinery_idea
 	}
 	remove_ideas = {
 		great_depression
@@ -298,6 +299,7 @@ add_ideas = {
 	USA_legislation_deadlock
 	USA_the_poor_command_post
 	USA_japan_trading
+	refinery_idea
 }
 
 set_autonomy = {

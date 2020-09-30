@@ -154,7 +154,6 @@ set_popularities = {
 add_ideas = {
     war_economy
 	free_trade
-	general_staff
 	GER_gestapo_idea2
 }
 

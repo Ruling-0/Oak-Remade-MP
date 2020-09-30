@@ -33,7 +33,9 @@ set_technology = {
 add_ideas = {
 	no_spies_idea
 }
-set_research_slots = 5
+set_research_slots = 4
+set_stability = 0.5
+set_war_support = 0.05
 
 set_politics = {
 	ruling_party = democratic
