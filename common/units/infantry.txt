@@ -111,7 +111,7 @@ sub_units = {
 			movement = 0.1
 		}
 		urban = {
-			defence = 0.25
+			
 		}
 		jungle = {
 			attack = 0.05
@@ -176,7 +176,7 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			defence = 0.25
+			
 			movement = -0.2
 		}
 		jungle = {
@@ -317,7 +317,7 @@ sub_units = {
 			movement = 0.1
 		}
 		urban = {
-			defence = 0.25
+			
 		}
 		jungle = {
 			attack = 0.05
@@ -383,7 +383,7 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			defence = 0.25
+			
 			movement = -0.2
 		}
 		jungle = {
@@ -987,7 +987,7 @@ sub_units = {
 			movement = 0.1
 		}
 		urban = {
-			defence = 0.25
+			
 		}
 		jungle = {
 			attack = 0.05
