@@ -7,7 +7,7 @@ units= {
 			location = 5139 # Gabon			
 			ship = { name = "Joffres" definition = carrier start_experience_factor = 0.3 equipment = { ship_hull_carrier_1 = { amount = 1 owner = FRA version_name = "Joffre Class" } } 
 				air_wings = {
-					cv_fighter_equipment_1 =  { owner = "FRA" amount = 60 }
+					cv_fighter_equipment_1936 =  { owner = "FRA" amount = 60 }
 				}
 			}
 			# Battleship Group 

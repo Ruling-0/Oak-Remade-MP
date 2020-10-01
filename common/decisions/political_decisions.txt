@@ -1708,7 +1708,7 @@ political_actions = {
 	
 		modifier = {
 			communism_drift = -0.05
-			stability_weekly = 0.007
+			stability_weekly = 0.01
 		}
 	
 		days_remove = 120

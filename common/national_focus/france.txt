@@ -3345,7 +3345,7 @@ focus_tree = {
 		relative_position_id = FRA_capital_ship_focus
 		cost = 5
 
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			if = {

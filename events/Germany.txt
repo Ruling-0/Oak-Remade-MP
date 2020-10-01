@@ -1332,7 +1332,6 @@ country_event = {
 	option = {
 		name = germany.52.a
 		72 = { add_core_of = POL }
-		POL = { transfer_state = 72 }
 	}
 }
 
@@ -1550,6 +1549,7 @@ country_event = {
 				add_ideas = GER_germanization
 				add_ideas = GER_reichswerke_HG
 				add_ideas = GER_german_administration
+				add_war_support = 0.50
 			}
 		}
 		puppet = CZE
@@ -1591,18 +1591,6 @@ country_event = {
 			set_compliance = 35
 		}
 		add_war_support = 0.1
-		if = {
-			limit = {
-				72 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-				country_exists = POL
-			}
-			POL = { transfer_state = 72 } # Give Poland Zaolzie
-		}
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
