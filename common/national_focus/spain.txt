@@ -10721,6 +10721,7 @@ focus_tree = {
 		id = SPR_petition_for_french_aid
 		available = {
 			NOT = { has_war_with = FRA }
+			date > 1945.1.1
 			NOT = { has_global_flag = scw_over }
 			FRA = {
 				OR = {
