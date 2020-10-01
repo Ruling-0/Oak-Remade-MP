@@ -743,7 +743,7 @@ SOV_socialism_in_one_country = {
 			tag = SOV 
 		} 
 
-		trigger = {
+		activation = {
 			has_completed_focus = SOV_finnish_wargoal 
 		}
 
