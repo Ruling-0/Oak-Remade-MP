@@ -39,8 +39,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns"}
 	set_technology = {
-		 = 1
-		
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1

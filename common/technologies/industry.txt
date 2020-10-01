@@ -1006,11 +1006,6 @@ technologies = {
 				special_equipment = -3
 			}
 		}
-		commando_unit = {
-			need = {
-			   	special_equipment = -5
-			}
-		}
 		artillery_brigade = {
 			need = {
 			   	artillery_equipment = -1
@@ -1413,11 +1408,6 @@ technologies = {
 				special_equipment = -3
 			}
 		}
-		commando_unit = {
-			need = {
-			   	special_equipment = -5
-			}
-		}
 		artillery_brigade = {
 			need = {
 			   	artillery_equipment = -1
@@ -1800,11 +1790,6 @@ technologies = {
 				special_equipment = -3
 			}
 		}
-		commando_unit = {
-			need = {
-			   	special_equipment = -5
-			}
-		}
 		artillery_brigade = {
 			need = {
 			   	artillery_equipment = -1
@@ -2181,11 +2166,6 @@ technologies = {
 			need = {
 			   	infantry_equipment = 5
 				special_equipment = 3
-			}
-		}
-		commando_unit = {
-			need = {
-			   	special_equipment = 5
 			}
 		}
 		artillery_brigade = {
@@ -2595,11 +2575,6 @@ technologies = {
 				special_equipment = 3
 			}
 		}
-		commando_unit = {
-			need = {
-			   	special_equipment = 5
-			}
-		}
 		artillery_brigade = {
 			need = {
 			   	artillery_equipment = 1
@@ -2982,11 +2957,6 @@ technologies = {
 			need = {
 			   	infantry_equipment = 5
 				special_equipment = 3
-			}
-		}
-		commando_unit = {
-			need = {
-			   	special_equipment = 5
 			}
 		}
 		artillery_brigade = {

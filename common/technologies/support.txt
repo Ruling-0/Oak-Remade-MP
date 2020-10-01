@@ -372,10 +372,6 @@ technologies = {
 			initiative = 0.05
 		}
 		
-		commando_unit = {
-			recon = 1
-		}		
-		
 		research_cost = 1
 		start_year = 1945
 		folder = {

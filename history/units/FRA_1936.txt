@@ -930,15 +930,6 @@ instant_effect = { #player
 	}
 	add_equipment_production = {
 		equipment = {
-			type = special_equipment_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 25
-	}
-	add_equipment_production = {
-		equipment = {
 			type = anti_air_equipment_1
 			creator = "FRA" 
 		}
@@ -1043,7 +1034,6 @@ instant_effect = { #player
 			amount = 4000
 			producer = FRA
 		}
-	special_equipment_1
 	add_equipment_to_stockpile = {
 		type = support_equipment_1
 			amount = 3500

@@ -901,11 +901,11 @@ technologies = {
 
 		category_all_infantry = {
 			hard_attack = 0.125
-			ap_attack = .5
+			ap_attack = 0.5
 		}
 		category_light_infantry = {
 			hard_attack = 0.1
-			ap_attack = .5
+			ap_attack = 0.5
 		}
 		
 		research_cost = 1.5

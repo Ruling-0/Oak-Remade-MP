@@ -738,36 +738,36 @@ SOV_socialism_in_one_country = {
 
 	SOV_baltic_security_mission = {
 		fire_only_once = yes
-		allowed = { tag = SOV } 
+
+		allowed = { 
+			tag = SOV 
+		} 
+
+		trigger = {
+			has_completed_focus = SOV_finnish_wargoal 
+		}
 
 		available = {
-        SOV = { has_war_with = FIN }
-        OR = {
-            AND = {
-                FIN = { surrender_progress > 0.25 }
-                SOV = { has_full_control_of_state = 146 }
-            }
-            FIN = { surrender_progress > 0.5 }
-        }
-    }
+			OR = {
+				AND = {
+					FIN = { surrender_progress > 0.25 }
+					SOV = { has_full_control_of_state = 146 }
+				}
+				FIN = { surrender_progress > 0.5 }
+			}
+		}
 
-    is_good = yes 
+		days_mission_timeout = 180 
 
-    trigger = {
-        has_completed_focus = SOV_finnish_wargoal 
-    }
+		timeout_effect = { 
+			add_stability = -0.20
+			add_political_power = -200
+		}
 
-    days_mission_timeout = 180 
-
-    timeout_effect = { 
-        stability_factor = -0.20
-        political_power = -200
-    }
-
-    complete_effect = {
-        FIN = { country_event = finland.7 }
-    }
-}
+		complete_effect = {
+			FIN = { country_event = finland.7 }
+		}
+	}
 
 	SOV_claims_on_baltic = {
 		icon = eng_trade_unions_support

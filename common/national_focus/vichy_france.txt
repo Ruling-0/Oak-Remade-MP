@@ -937,7 +937,7 @@ focus_tree = {
 				name = CAS_bonus
 				bonus = 1.00 
 				uses = 1
-				technology = CAS2
+				category = cas_bomber
 			}
 		}
 	}

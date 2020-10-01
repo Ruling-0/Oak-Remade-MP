@@ -43,7 +43,7 @@ sub_units = {
 		
 		forest = {
 			attack = 0.025
-			defense = 0.025
+			defence = 0.025
 			movement = 0.05
 		}
 		jungle = {
@@ -241,7 +241,7 @@ sub_units = {
 		
 		forest = {
 			attack = 0.025
-			defense = 0.025
+			defence = 0.025
 			movement = 0.05
 		}
 		jungle = {
@@ -443,7 +443,7 @@ sub_units = {
 		
 		forest = {
 			attack = 0.025
-			defense = 0.025
+			defence = 0.025
 			movement = 0.075
 		}
 		jungle = {
@@ -748,7 +748,7 @@ sub_units = {
        
 	   forest = {
 			attack = 0.025
-			defense = 0.025
+			defence = 0.025
 			movement = 0.05
 		}
 		jungle = {
@@ -823,7 +823,7 @@ sub_units = {
 
         forest = {
 			attack = 0.025
-			defense = 0.025
+			defence = 0.025
 			movement = 0.05
 		}
 		jungle = {
