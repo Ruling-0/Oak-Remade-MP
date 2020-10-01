@@ -1265,9 +1265,6 @@ focus_tree = {
 		}
 	
 		completion_reward = {
-
-			add_research_slot = 1 	
-
 			random_owned_controlled_state = {
 				prioritize = { 59 }
 					add_extra_state_shared_building_slots = 4
@@ -5836,6 +5833,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = blohm_und_voss
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = germaniawerft
+
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
@@ -6133,6 +6135,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+				
+
 			custom_effect_tooltip = GER_plan_z_tt
 			custom_effect_tooltip = GER_plan_z_tt_2
 			random_owned_controlled_state = {

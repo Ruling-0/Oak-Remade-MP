@@ -2704,10 +2704,16 @@ ideas = {
 					is_reichskommissariat_ger = yes
 				}
 			}
+
+			available = {
+				has_completed_focus = GER_prepare_the_kriegsmarine
+			}
 			
 			research_bonus = {
 				naval_equipment = -0.05
 			}
+
+			cost = 25 
 
 			ai_will_do = {
 				factor = 0
@@ -2729,6 +2735,12 @@ ideas = {
 				}
 			}
 			
+			available = {
+				has_completed_focus = GER_prepare_the_kriegsmarine
+			}
+
+			cost = 25 
+
 			research_bonus = {
 				naval_equipment = -0.05
 			}
@@ -2755,7 +2767,7 @@ ideas = {
 				}
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_trade_interdiction = 0.20
