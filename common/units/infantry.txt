@@ -42,20 +42,17 @@ sub_units = {
 		supply_consumption = 0.16
 		
 		forest = {
-			attack = 0.05
-			defence = 0.05 
+			attack = 0.025
+			defense = 0.025
 			movement = 0.05
 		}
-		urban = {
-			defence = 0.1
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
@@ -106,20 +103,17 @@ sub_units = {
 		breakthrough = -0.2
 		
 		forest = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1 
 			movement = 0.1
 		}
-		urban = {
-			
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1
 			movement = 0.1
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1
 			movement = 0.1
 		}
@@ -176,7 +170,6 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			
 			movement = -0.2
 		}
 		jungle = {
@@ -247,20 +240,17 @@ sub_units = {
 		
 		
 		forest = {
-			attack = 0.05
-			defence = 0.05 
+			attack = 0.025
+			defense = 0.025
 			movement = 0.05
 		}
-		urban = {
-			defence = 0.1
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
@@ -312,20 +302,17 @@ sub_units = {
 		breakthrough = -0.2
 		
 		forest = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1 
 			movement = 0.1
 		}
-		urban = {
-			
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1
 			movement = 0.1
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1
 			movement = 0.1
 		}
@@ -455,16 +442,16 @@ sub_units = {
 		
 		
 		forest = {
-			attack = 0.05
-			defence = 0.05 
+			attack = 0.025
+			defense = 0.025
 			movement = 0.075
 		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			movement = 0.1
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.1
 		}
@@ -475,10 +462,6 @@ sub_units = {
 			movement = 0.05
 		}
 		plains = {
-			movement = 0.1
-		}
-		urban = {
-		    defence = 0.1
 			movement = 0.1
 		}
 		desert = {
@@ -529,17 +512,17 @@ sub_units = {
 			infantry_equipment = 80
 			motorized_equipment = 45
 		}
-		defense = 0.05
-		soft_attack = 0.05
-		hard_attack = 0.05
+		defense = 0.025
+		soft_attack = 0.025
+		hard_attack = 0.025
 		breakthrough = 0.05
 		plains = {
-			attack = 0.05 
+			attack = 0.025 
 			defence = 0.0 
 			movement = 0.05 
 		}
 		desert = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.0 
 			movement = 0.05
 		}	
@@ -639,8 +622,8 @@ sub_units = {
 			attack = -0.1
 		}
 		urban = {
-			attack = -0.2
-			defence = -0.05
+			attack = 0.025
+			defence = 0.025
 		}
 		river = {
 			attack = -0.2
@@ -764,20 +747,17 @@ sub_units = {
 		}
        
 	   forest = {
-			attack = 0.05
-			defence = 0.05 
+			attack = 0.025
+			defense = 0.025
 			movement = 0.05
 		}
-		urban = {
-			defence = 0.2
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
@@ -791,7 +771,9 @@ sub_units = {
 			defence = 0.1
 			movement = 0.2
 		}
-		
+		urban = {
+			defence = 0.1
+		}
 	}
 	paratrooper = {
 		sprite = infantry
@@ -840,101 +822,22 @@ sub_units = {
 		}
 
         forest = {
-			attack = 0.05
-			defence = 0.05 
+			attack = 0.025
+			defense = 0.025
 			movement = 0.05
 		}
-		urban = {
-			defence = 0.2
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.05
 			movement = 0.05
 		}
-	}
-	commando_unit = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-		affects_speed = no
-		priority = 2
-		active = no
-
-		type = {
-			infantry
-			support
-		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_army
-			category_special_forces
-		}
-		
-		combat_width = 0
-		
-		#Size Definitions
-		max_strength = 2
-		max_organisation = 0.5
-		default_morale = 0.5
-		manpower = 250
-
-
-		#Misc Abilities
-		training_time = 200
-		weight = 0.2
-		supply_consumption = 0.1
-
-		recon = 1
-
-		can_be_parachuted = yes
-	
-		need = {
-			special_equipment = 100
-		}
-		
-		forest = {
-			attack = 0.05
-            movement = 0.05
-		}
-		hills = {
-			attack = 0.05
-            movement = 0.05
-		}
-		mountain = {
-			attack = 0.05
-            movement = 0.05
-		}
 		urban = {
-			attack = 0.05
-            movement = 0.05
-		}
-		jungle = {
-			attack = 0.05
-            movement = 0.05
-		}
-		marsh = {
-			attack = 0.05
-            movement = 0.05
-		}
-		amphibious = {
-			attack = 0.05
-            movement = 0.05
-		}
-		river = {
-			attack = 0.05
-			movement = 0.05
-		}
-		fort = {
-            attack = 0.05
+			defence = 0.1
 		}
 	}
 	infantry_spain = {
@@ -982,20 +885,17 @@ sub_units = {
 		breakthrough = -0.2
 		
 		forest = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1 
 			movement = 0.1
 		}
-		urban = {
-			
-		}
 		jungle = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1
 			movement = 0.1
 		}
 		marsh = {
-			attack = 0.05
+			attack = 0.025
 			defence = 0.1
 			movement = 0.1
 		}
