@@ -622,33 +622,7 @@ PAR_instant_effect_decisions = {
 	    ai_will_do = {
 			base = 5000			
 		}
-	}		
-    FIN_loss_2 = {
-
-        icon = generic_megaphone
-
-        allowed = {
-           tag = FIN
-        }
-        available = {
-        OR = {
-                    AND = {
-           FIN = { has_war_with = SOV }
-           OR = {
-                    AND = {
-           FIN = { surrender_progress > 0.25 }
-           OR = {
-                    AND = {
-           SOV = { has_full_control_of_state = 146 }
-           OR = {
-                    AND = {
-           GER = { has_war_with = SOV }
-           OR = {
-                    AND = {
-           date > 1942.1.1
-        }
-        fire_only_once = yes
-	}		
+	}			
 	
 	PAR_CAN = {
 
