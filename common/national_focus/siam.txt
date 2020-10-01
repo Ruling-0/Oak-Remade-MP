@@ -715,50 +715,45 @@ focus_tree = {
   }
   
   focus = {
-   id = SIA_strenghten_rel_ger
-   icon = GFX_goal_generic_major_war
-   prerequisite = { focus = SIA_fascism_support }
-   x = 12
-   y = 2
-   cost = 5
-    ai_will_do = {
+		id = SIA_strenghten_rel_ger
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = SIA_fascism_support }
+		x = 12
+		y = 2
+		cost = 5
+		ai_will_do = {
 			factor = 5
 		}
-    available_if_capitulated = yes
-	completion_reward = {
-	 add_opinion_modifier = { target = GER modifier = offered_support } 
-	}  
-  }
-  
-  focus = {
-      id= SIA_fascist_nation
-	  icon = GFX_goal_generic_political_pressure
-	  x = 11
-	  y = 3
-	  cost = 10
-	  ai_will_do = { factor = 5 }	
-	  prerequisite = { focus = SIA_strenghten_rel_jap }
-	  prerequisite = { focus = SIA_strenghten_rel_ger }
 		available_if_capitulated = yes
 		completion_reward = {
-				add_popularity = {
-					ideology = fascism
-					popularity = +0.3
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.1
-				}
-				add_popularity = {
-				 ideology = democratic
-				 popularity = -0.1
-				}
-			
-			add_ideas = fascist_leanings
+			add_opinion_modifier = { target = GER modifier = offered_support } 
+		}  
+	}
+  
+	focus = {
+		id = SIA_fascist_nation
+		icon = GFX_goal_generic_political_pressure
+		x = 11
+		y = 3
+		cost = 10
+		prerequisite = { focus = SIA_strenghten_rel_jap }
+		prerequisite = { focus = SIA_strenghten_rel_ger }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.3
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
 		}
-
-    }
-	
+	}
 	
 	focus = {
 		id = SIA_militarism
