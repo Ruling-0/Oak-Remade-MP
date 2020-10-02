@@ -6,12 +6,12 @@ division_template = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 0 y = 3 }
+		light_infantry = { x = 4 y = 0 }
 
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
-		light_infantry = { x = 1 y = 3 }
+		light_infantry = { x = 4 y = 1 }
 
 		bicycle_battalion = { x = 2 y = 0 }
 		bicycle_battalion = { x = 2 y = 1 }
@@ -20,7 +20,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		pack_artillery_brigade = { x = 3 y = 2 }
-		pack_artillery_brigade = { x = 3 y = 3 }
+		pack_artillery_brigade = { x = 4 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
