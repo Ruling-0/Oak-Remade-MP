@@ -5,12 +5,12 @@
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 0 y = 3 }
+		light_infantry = { x = 4 y = 0 }
 		
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
-		light_infantry = { x = 1 y = 3 }
+		light_infantry = { x = 4 y = 1 }
 		
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
@@ -19,13 +19,12 @@
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		anti_tank_brigade =  { x = 3 y = 3 }
+		anti_tank_brigade =  { x = 4 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		military_police = { x = 0 y = 3 }		
+		recon = { x = 0 y = 2 }		
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
@@ -53,7 +52,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		anti_tank_brigade =  { x = 3 y = 3 }
+		anti_tank_brigade =  { x = 4 y = 2 }
 		
 		artillery_heavy = { x = 4 y = 0 }
 		anti_air = { x = 4 y = 1 }
@@ -62,8 +61,7 @@ division_template = {
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		military_police = { x = 0 y = 3 }		
+		recon = { x = 0 y = 2 }		
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
@@ -85,7 +83,7 @@ division_template = {
 		cavalry = { x = 2 y = 0 }
 		cavalry = { x = 2 y = 1 }
 		artillery_brigade_mot = { x = 2 y = 2 }
-		artillery_brigade_mot = { x = 2 y = 3 }
+		artillery_brigade_mot = { x = 3 y = 0 }
 	}
 
 	support = {
@@ -102,12 +100,12 @@ division_template = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
-		garrison = { x = 0 y = 3 }
+		garrison = { x = 2 y = 2 }
 
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
-		garrison = { x = 1 y = 3 }
+		garrison = { x = 3 y = 1 }
 
 		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
