@@ -6,12 +6,12 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 0 }
 
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
+		infantry = { x = 4 y = 1 }
 
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
@@ -70,12 +70,12 @@ division_template = {
 		mountaineers = { x = 0 y = 0 }	
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }	
-		mountaineers = { x = 4 y = 1 }	
+		mountaineers = { x = 4 y = 0 }	
 
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 4 y = 2 }
+		mountaineers = { x = 4 y = 1 }
 
 		mountaineers = { x = 2 y = 0 }	
 		mountaineers = { x = 2 y = 1 }	
@@ -83,8 +83,8 @@ division_template = {
 
 		artillery_brigade_mot = { x = 3 y = 0 }
 		artillery_brigade_mot = { x = 3 y = 1 }
-		artillery_brigade_mot = { x = 4 y = 0 }
-		anti_tank_brigade =  { x = 5 y = 0 }
+		artillery_brigade_mot = { x = 3 y = 2 }
+		anti_tank_brigade =  { x = 4 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -117,12 +117,12 @@ division_template = {
 		heavy_armor = { x = 0 y = 0 }
 		heavy_armor = { x = 0 y = 1 }
 		heavy_armor = { x = 0 y = 2 }
-		heavy_armor = { x = 4 y = 1 }
+		heavy_armor = { x = 4 y = 0 }
 		
 		heavy_armor = { x = 1 y = 0 }
 		heavy_armor = { x = 1 y = 1 }
 		heavy_armor = { x = 1 y = 2 }
-		heavy_armor = { x = 4 y = 0 }
+		heavy_armor = { x = 4 y = 1 }
 
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
