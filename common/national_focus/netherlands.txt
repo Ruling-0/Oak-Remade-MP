@@ -2879,7 +2879,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 365 }
+			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 180 }
 			add_tech_bonus = {
 				name = HOL_aviatic_aspirations
 				bonus = 1
