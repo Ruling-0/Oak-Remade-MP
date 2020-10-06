@@ -1651,7 +1651,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			equipment_bonus = {
