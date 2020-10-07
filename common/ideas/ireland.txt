@@ -52,7 +52,7 @@ ideas = {
 					war_support_factor = -0.20
 					stability_factor = -0.20
 					political_power_cost = 0.30
-					consumer_goods_factor = 0.1
+					consumer_goods_factor = 0.05
 					}
 				
 				}
@@ -230,7 +230,7 @@ ideas = {
 					picture = HUN_treaty_of_triannon
 
 					modifier = { 
-						consumer_goods_factor = -0.1
+						consumer_goods_factor = -0.05
 					}
 				
 				}
