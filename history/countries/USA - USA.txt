@@ -358,10 +358,10 @@ create_field_marshal = {
 	traits = { logistics_wizard thorough_planner armor_officer }
 	skill = 3
 	id = 602
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
