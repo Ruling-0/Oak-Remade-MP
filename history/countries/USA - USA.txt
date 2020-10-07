@@ -572,6 +572,18 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
+create_corps_commander = {
+	name = "George S. Patton"
+	picture = "Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 5
+
+	attack_skill = 7 
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
 create_navy_leader = {
 	name = "Ernest King"
 		picture = "Portrait_USA_Earnest_King.dds"
