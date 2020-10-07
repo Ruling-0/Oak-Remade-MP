@@ -5961,7 +5961,6 @@ focus_tree = {
 	focus = {
 		id = GER_u_boat_effort
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
-		mutually_exclusive = { focus = GER_naval_expansion }
 		icon = GFX_goal_ger_donitz_plan
 		x = 1
 		y = 2
@@ -6122,7 +6121,6 @@ focus_tree = {
 	focus = {
 		id = GER_naval_expansion
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
-		mutually_exclusive = { focus = GER_u_boat_effort }
 		icon = GFX_goal_ger_raeder_plan
 		x = -1
 		y = 2
