@@ -12429,6 +12429,8 @@ news_event = { #Sealion
 			tag = USA 
 		}
 		add_ideas = USA_last_bastion_of_democracy
+		
+		
 		if = {
 			limit = {
 				NOT = {
@@ -12436,6 +12438,7 @@ news_event = { #Sealion
 				}
 			}
 			complete_national_focus = USA_join_the_allies
+			complete_national_focus = USA_lend_lease_act
 		}
 		add_to_variable = {
 			var = USA_popular_support_var
