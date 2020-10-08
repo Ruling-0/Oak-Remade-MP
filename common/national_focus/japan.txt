@@ -559,40 +559,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_supremacy_of_will
-		icon = GFX_goal_demand_sudetenland
-		x = 0
-		y = 1
-		relative_position_id = JAP_national_defense_state
-		prerequisite = { focus = JAP_national_defense_state }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = JAP_superior_will
-		}
-	}
-	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
 		relative_position_id = JAP_purge_the_kodoha_faction
@@ -1234,7 +1200,41 @@ focus_tree = {
 			add_ideas = infantry_production_jap
 		}
 	}
-		
+	focus = {
+		id = JAP_supremacy_of_will
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = JAP_army_expansion_law
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = JAP_superior_will
+			add_ideas = JAP_supremacy_of_technology
+			add_research_slot = 1
+		}
+	}		
 	focus = {
 		id = JAP_the_old_guard
 		icon = GFX_focus_generic_little_entente
@@ -1260,7 +1260,7 @@ focus_tree = {
 				name = land_doc_bonus
 				bonus = 1
 				uses = 3
-				category = cat_grand_battle_plan
+				category = land_doctrine
 			}
 		}
 	}
@@ -1288,7 +1288,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = JAP_modernize_equipment_tt
 			hidden_effect = {
-				add_stability -0.1 
+				add_stability -0.1
 			}
 		}
 	}
@@ -1466,7 +1466,7 @@ focus_tree = {
 				name = land_doc_bonus
 				bonus = 1.5
 				uses = 2
-				category = cat_mobile_warfare
+				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = armor_bonus
@@ -1476,45 +1476,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = JAP_supremacy_of_technology
-		icon = GFX_goal_generic_production
-		x = 0
-		y = 1
-		relative_position_id = JAP_national_mobilization_law
-
-		prerequisite = { focus = JAP_national_mobilization_law }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-
-		}
-
-		available = {
-			has_tech = computing_machine 
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = JAP_supremacy_of_technology
-			add_research_slot = 1
-		}
-	}
-
 	
 	focus = {
 		id = JAP_army_engineering_board
@@ -1649,9 +1610,9 @@ focus_tree = {
 		completion_reward = {
 
 			add_tech_bonus = {
-				uses = 2
+				uses = 1
 				bonus = 1
-				category = cat_mobile_warfare 
+				category = land_doctrine 
 			}
 			add_tech_bonus = {
 				uses = 1
@@ -1721,7 +1682,7 @@ focus_tree = {
 	focus = {
 		id = JAP_strengthen_the_kwantung_army
 		icon = GFX_focus_jap_manchurian_project
-		prerequisite = { focus = JAP_army_expansion_law }
+		prerequisite = { focus = JAP_supremacy_of_will }
 		relative_position_id = JAP_army_expansion_law
 		x = 0
 		y = 2
