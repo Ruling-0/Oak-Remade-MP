@@ -1092,6 +1092,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.05
 				armor = 0.05
+			}
 		}
 
 		JAP_superior_will = {
@@ -1111,7 +1112,7 @@ ideas = {
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.15
 			}
 		}
 
