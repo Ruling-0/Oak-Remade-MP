@@ -274,6 +274,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment;;
 4135;13228;impassable;-1;-1;-1;-1;-1;;gibraltar;;;;
 13234;13228;impassable;-1;-1;-1;-1;-1;;gibraltar;;;;
 13234;10094;impassable;-1;-1;-1;-1;-1;;gibraltar;;;;
+13234;7153;impassable;-1;-1;-1;-1;-1;;gibraltar;;;;
 2998;11156;impassable;-1;-1;-1;-1;-1;;Finland;;;;
 2998;6153;impassable;-1;-1;-1;-1;-1;;Finland;;;;
 2998;6210;impassable;-1;-1;-1;-1;-1;;Finland;;;;
