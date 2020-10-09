@@ -34,7 +34,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.10
 				conscription_factor = -0.20
-				army_defence_factor = -0.05
+				army_defence_factor = -0.10
 				army_attack_factor = -0.10					
 			}
 		}
@@ -452,7 +452,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.01
-				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
@@ -470,7 +469,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 0.15
 			}
 		}
@@ -490,7 +488,6 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.002
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.05
 				political_power_gain = 0.1
 				drift_defence_factor = 0.15
 			}
@@ -511,7 +508,6 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.005
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.05
 				political_power_gain = 0.2
 				drift_defence_factor = 0.15
 			}
@@ -532,9 +528,8 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.005
 				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				political_power_gain = 0.3
+				political_power_gain = 0.2
 				drift_defence_factor = 0.15
 				war_support_factor = 0.1
 			}
