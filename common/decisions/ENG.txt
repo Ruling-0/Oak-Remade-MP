@@ -119,13 +119,13 @@ ENG_budget_decisions = {
 
 			if = {
 				limit = { has_idea = free_trade }
-				multiply_variable = { var = resource_income value = 1.5 }
+				multiply_variable = { var = resource_income value = 1.75 }
 				multiply_variable = { var = resource_expenses value = 0.75 }
 			}
 
 			else_if = {
 				limit = { has_idea = export_focus }
-				multiply_variable = { var = resource_income value = 1.25 }
+				multiply_variable = { var = resource_income value = 1.5 }
 				multiply_variable = { var = resource_expenses value = 0.75 }
 			} 
 
@@ -187,7 +187,7 @@ ENG_budget_decisions = {
 			}
 			multiply_variable = {
 				var = budget_expenditure_2
-				value = 30
+				value = 19
 			}								
 
 			if = {
