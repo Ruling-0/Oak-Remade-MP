@@ -307,6 +307,11 @@ set_autonomy = {
 	autonomous_state =  autonomy_puppet
 }
 
+set_autonomy = {
+	target = MEX
+	autonomous_state =  autonomy_dominion
+}
+
 create_country_leader = {
 	name = "Franklin Delano Roosevelt"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"

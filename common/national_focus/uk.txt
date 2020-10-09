@@ -5527,9 +5527,6 @@ focus_tree = {
 			    IRE = {    
 					add_ideas = ENG_british_commonwealth_air_training_plan
 				}
-				POR = {
-					add_ideas = ENG_british_commonwealth_air_training_plan
-				}
 			    ENG = {    
 					add_ideas = ENG_british_commonwealth_air_training_plan
 				}

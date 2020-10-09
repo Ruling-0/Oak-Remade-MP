@@ -1778,10 +1778,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					tag = ENG
-					is_subject_of = ENG
-				}
 			}
 
 			allowed_civil_war = {

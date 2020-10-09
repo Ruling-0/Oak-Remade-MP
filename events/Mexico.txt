@@ -1455,7 +1455,6 @@ country_event = {
 					name = "Saturnino Cedillo"
 				}
 			}
-			has_government = neutrality
 		}
 
 		create_country_leader = {
@@ -1463,7 +1462,7 @@ country_event = {
 			desc = "POLITICS_SATURNINO_CEDILLO_DESC"
 			picture = "GFX_portrait_mex_saturnino_cedillo"
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 				strongman_of_san_luis_potosi
 			}
@@ -1782,19 +1781,6 @@ country_event = {
 		name = mexico.19.m
 		
 		trigger = {
-			NOT = {
-				has_country_leader = {
-					name = "Leon Trotsky"
-				}
-			}
-			NOT = { has_global_flag = flag_trotsky_dead }
-			NOT = {
-				SOV = {
-					has_country_leader = { name = "Leon Trotsky" }
-				}
-			}
-			has_government = communism
-			has_global_flag = flag_mexico_invited_trotsky_to_government
 		}
 
 		create_country_leader = {
@@ -1802,7 +1788,7 @@ country_event = {
 			desc = "POLITICS_LEON_TROTSKY_DESC"
 			picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
 			expire = "1965.1.1"
-			ideology = leninism
+			ideology = socialism
 			traits = {
 				exiled_revolutionary
 			}

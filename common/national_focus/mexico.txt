@@ -1104,29 +1104,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_focus_royal_dutch_shell
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			is_subject = no
 			NOT = {
 				has_war_with = ENG
 			}
 		}
 
 		bypass = {
-			OR = {
-				is_in_faction = yes
-				ENG = {
-					exists = no
-				}
-				ENG = {
-					is_subject = yes
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -1181,37 +1171,6 @@ focus_tree = {
 					modifier = anglo_mexican_diplomacy
 				}
 			}
-			if = {
-				limit = {
-					ENG = { is_faction_leader = yes }
-				}
-				ENG = {
-					country_event = {
-						id = mexico.8
-						days = 1
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					ENG = {
-						is_in_faction = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						is_in_faction_with = ENG
-					}
-					country_event = generic.2
-				}
-			}
-			else = {
-				create_faction = MEX_focus_community_of_nations
-				ENG = {
-					country_event = generic.5
-				}
-			}
 		}
 	}
 
@@ -1230,7 +1189,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
 			NOT = {
 				has_war_with = ENG
 			}
@@ -1812,7 +1770,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_compensation
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 100
@@ -1826,22 +1784,12 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
 			NOT = {
 				has_war_with = USA
 			}
 		}
 
 		bypass = {
-			OR = {
-				is_in_faction = yes
-				USA = {
-					exists = no
-				}
-				USA = {
-					is_subject = yes
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -1895,15 +1843,6 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = american_mexican_diplomacy
-				}
-				if = {
-					limit = {
-						is_in_faction = yes
-					}
-					country_event = {
-						id = mexico.8
-						days = 1
-					}
 				}
 			}
 		}
