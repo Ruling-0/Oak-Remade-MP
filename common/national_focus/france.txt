@@ -1705,7 +1705,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
-			add_offsite_building = { type = dockyard level = 4 }
+			add_offsite_building = { type = dockyard level = 2 }
 			add_tech_bonus = {
 				name = FRA_appoint_new_supreme_commander
 				bonus = 3.0
@@ -3159,7 +3159,7 @@ focus_tree = {
 			15 = {
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 			    }
 				set_state_flag = FRA_naval_rearmament_2NB
@@ -3224,7 +3224,7 @@ focus_tree = {
 			772 = {
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = FRA_colonial_dockyards
@@ -3232,7 +3232,7 @@ focus_tree = {
 			272 = {
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = FRA_colonial_dockyards
@@ -3240,7 +3240,7 @@ focus_tree = {
 			543 = {
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = FRA_colonial_dockyards
@@ -3263,7 +3263,7 @@ focus_tree = {
 			735 = {
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 			    }
 			}
@@ -3414,21 +3414,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = FRA_prioritize_the_joffre_tt
 				hidden_effect = {
-					create_equipment_variant = {
-						name = "Joffre Class"
-						type = ship_hull_carrier_1
-						name_group = FRA_CV_HISTORICAL
-						parent_version = 0
-						modules = {
-							fixed_ship_deck_slot_1 = ship_deck_space
-							fixed_ship_deck_slot_2 = ship_deck_space
-							fixed_ship_anti_air_slot = ship_anti_air_1
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_2
-							fixed_ship_secondaries_slot = dp_ship_secondaries
-							front_1_custom_slot = empty
-						}
-					}
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_carrier_1

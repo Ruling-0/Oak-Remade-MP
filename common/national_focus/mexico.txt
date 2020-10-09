@@ -201,8 +201,7 @@ focus_tree = {
 			
 		}
 
-		available = {
-            date > 1945.1.1			
+		available = {		
 		}
 
 		bypass = {
@@ -214,8 +213,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MEX_alberto_pani
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -233,7 +231,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			date > 1945.1.1
 		}
 
 		bypass = {
@@ -938,7 +936,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 20
+					amount = 10
 				}
 			}
 		}
@@ -1369,7 +1367,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 20
+					amount = 10
 				}
 			}
 			479 = {
@@ -1386,7 +1384,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 20
+					amount = 10
 				}
 			}
 		}
@@ -1413,11 +1411,7 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = GER
-			is_subject = no
-			NOT = {
-				has_war_with = GER
-			}
+			date > 1945.1.1
 		}
 
 		bypass = {
@@ -1573,7 +1567,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			date > 1945.1.1
 		}
 
 		bypass = {
@@ -2609,10 +2603,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_engineering_school
 
-		cost = 20
+		cost = 10
 
 		available = {
-			num_of_factories > 50
+			date > 1945.1.1	
 		}
 		
 		ai_will_do = {
@@ -3929,10 +3923,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = SPA_spanish_civil_war_commitments
-				days = 120
-			}
 			unlock_decision_tooltip = MEX_decision_support_spanish_fascists
 			add_tech_bonus = {
 				name = tooltip_falangist_veterans_doctrine_knowledge
@@ -4019,11 +4009,6 @@ focus_tree = {
 			unlock_decision_tooltip = MEX_decision_support_spanish_loyalists
 			add_war_support = 0.05
 			add_stability = 0.05
-			add_timed_idea = {
-				idea = SPA_spanish_civil_war_commitments
-				days = 120
-			}
-			
 			every_other_country = {
 				limit = {
 					original_tag = SPR

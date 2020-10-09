@@ -1563,8 +1563,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 50
-			is_subject = no
+			date > 1945.1.1
 		}
 		
 		bypass = {
@@ -2700,8 +2699,7 @@ focus_tree = {
 	focus = {
 		id = CAN_supply_the_empire
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_the_plan}
-		prerequisite = { focus = CAN_camp_x }
+		prerequisite = { focus = CAN_the_plan focus = CAN_camp_x}
 		x = 0
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties

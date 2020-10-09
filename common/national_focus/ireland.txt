@@ -1374,7 +1374,7 @@
 		113 = {
 			set_building_level = {
 				type = naval_base
-				level = 4
+				level = 10
 				province = 11293
 				}	
 			}

@@ -1263,7 +1263,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
+			date > 1945.1.1
 		}
 
 		bypass = {
@@ -1654,16 +1654,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
-			has_war = yes
-			is_in_faction = yes
-			OR = {
-				num_of_factories > 50
-				any_other_country = {
-					is_in_faction_with = ROOT
-					num_of_factories > 50
-				}
-			}
+			date > 1939.9.1
 		}
 
 		bypass = {
@@ -1915,7 +1906,6 @@ focus_tree = {
 		id = NZL_amend_the_maori_affairs_act
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = NZL_the_manpower_act }
-		mutually_exclusive = { focus = NZL_waitangi_tribunal }
 		x = -1
 		y = 3
 		relative_position_id = NZL_ratana_alliance
@@ -1957,7 +1947,6 @@ focus_tree = {
 		id = NZL_waitangi_tribunal
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = NZL_the_manpower_act }
-		mutually_exclusive = { focus = NZL_amend_the_maori_affairs_act }
 		x = 1
 		y = 3
 		relative_position_id = NZL_ratana_alliance

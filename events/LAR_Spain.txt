@@ -4465,7 +4465,7 @@ country_event = {
 	}
 	option = { # Option for Nationalists - Carlism
 		name = lar_spain.2.c
-		trigger = { has_completed_focus = SPA_a_great_spain }
+		trigger = { has_completed_focus = SPA_sin_paquito }
 		ai_chance = {
 			base = 30
 			modifier = {

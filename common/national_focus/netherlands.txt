@@ -1558,7 +1558,7 @@ focus_tree = {
 				uses = 2
 				category = jet_technology
 			}
-			HOL_domestic_jet_engine_designs_level_up = yes
+			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 180 }
 		}
 	}
 
@@ -2879,7 +2879,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 180 }
+			HOL_domestic_jet_engine_designs_level_up = yes
 			add_tech_bonus = {
 				name = HOL_aviatic_aspirations
 				bonus = 1
@@ -3228,12 +3228,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_gateway_to_europe }
 		mutually_exclusive = { focus = HOL_maintain_trade_neutrality focus = HOL_cave_to_the_british }
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = HOL_cave_to_the_germans2_tt
-			}
-			custom_trigger_tooltip = {
-				tooltip = HOL_cave_to_the_germans_tt
-			}
+			date > 1945.1.1	
 		}
 		ai_will_do = {
 			factor = 0
@@ -3297,14 +3292,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_gateway_to_europe }
 		mutually_exclusive = { focus = HOL_cave_to_the_germans focus = HOL_cave_to_the_british }
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = HOL_maintain_trade_neutrality2_tt
-			}
-			custom_trigger_tooltip = {
-				tooltip = HOL_maintain_trade_neutrality_tt
-			}
-			NOT = { has_war_with = ENG }
-			NOT = { has_war_with = GER }
+			date > 1945.1.1	
 		}
 		bypass = {
 			OR = {

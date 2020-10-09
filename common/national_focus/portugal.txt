@@ -4626,7 +4626,7 @@ focus_tree = {
 	focus = {
 		id = POR_honor_anglo_portuguese_alliance
 		available = {
-		    date > 1945.1.1	
+		    is_ai = no
 		    NOT = { 127 = { is_owned_and_controlled_by = ENG } }
 		}
 
@@ -4715,8 +4715,6 @@ focus_tree = {
 	focus = {
 		id = POR_proudly_alone
 		available = {	
-			has_government = neutrality
-			has_war = no
 			date > 1939.1.1	
 		}
 

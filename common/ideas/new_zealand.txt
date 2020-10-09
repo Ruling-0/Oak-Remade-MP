@@ -204,7 +204,7 @@ ideas = {
 
 			picture = generic_intel_bonus
 			modifier = {
-				conscription = 0.005
+				conscription = 0.01
 			}
 		}
 		NZL_import_restrictions = {
