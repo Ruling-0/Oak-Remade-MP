@@ -1203,6 +1203,7 @@ focus_tree = {
 	focus = {
 		id = JAP_supremacy_of_will
 		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = JAP_army_expansion_law }
 		relative_position_id = JAP_army_expansion_law
 		x = 0
 		y = 1
