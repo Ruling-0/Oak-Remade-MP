@@ -2338,7 +2338,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = -0.1
+				armor = -0.05
 			}
 			
 
@@ -2358,7 +2358,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = -0.1
+				armor = -0.05
 			}
 			
 
@@ -2377,7 +2377,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = -0.1
+				armor = -0.05
 			}
 			
 
@@ -2397,7 +2397,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = -0.1
+				armor = -0.05
 			}
 			
 
@@ -2417,7 +2417,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = -0.1
+				armor = -0.05
 			}
 			
 
@@ -2633,7 +2633,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			traits = { mediterranean_naval_manufacturer }
@@ -2645,7 +2645,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
@@ -2657,7 +2657,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
@@ -2669,7 +2669,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			traits = { raiding_fleet_naval_manufacturer }
@@ -2884,7 +2884,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				land_doctrine = 0.10
 			}
 
 			ai_will_do = {

@@ -29,7 +29,7 @@ focus_tree = {
 		x = 8
 		y = 0
 
-		cost = 10
+		cost = 0.1
 
 		ai_will_do = {
 			factor = 2
@@ -63,7 +63,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -104,7 +104,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -174,7 +174,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -251,7 +251,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -292,7 +292,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -332,7 +332,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -372,7 +372,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1446,9 +1446,9 @@ focus_tree = {
 			add_ideas = NZL_bob_semple_tank
 			add_tech_bonus = {
 				name = NZL_bob_semple_tank
-				bonus = 1
+				bonus = 1.0
 				uses = 1
-				technology = light_tank_1936
+				category = cat_light_armor
 			}
 		}
 	}
@@ -1551,9 +1551,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_schofield_tank
-				bonus = 1
+				bonus = 1.0
 				uses = 1
-				category = cat_light_armor
+				category = armor
 			}
 		}
 	}
@@ -1709,7 +1709,7 @@ focus_tree = {
 				name = NZL_big_bob_tank
 				bonus = 1
 				uses = 1
-				technology = heavy_tank_1934
+				category = cat_heavy_armor
 			}
 		}
 	}

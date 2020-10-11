@@ -73,7 +73,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = HOL_obtain_foreign_colonial_investments
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -499,7 +499,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_reinforce_java
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -759,6 +759,10 @@ focus_tree = {
 				}
 				set_capital = 335
 			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 150
+			}
 		}
 	}
 
@@ -846,7 +850,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_a_western_capital
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1021,7 +1025,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_colonial_shipbuilding
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1736,7 +1740,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = HOL_fokker
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1878,7 +1882,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1902,7 +1906,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
-		cost = 10
+		cost = 3
 
 		available_if_capitulated = yes
 
@@ -1935,7 +1939,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_prepare_the_inundation_lines
-		cost = 5
+		cost = 2
 
 		available_if_capitulated = yes
 
@@ -2131,7 +2135,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_prepare_the_inundation_lines
-		cost = 5
+		cost = 2
 
 		available_if_capitulated = yes
 
@@ -2272,8 +2276,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = HOL_protect_against_britain
-		cost = 10
-
+		cost = 5
 		cancel_if_invalid = no
 
 		available_if_capitulated = yes
@@ -2555,6 +2558,12 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			add_tech_bonus = {
+				name = NZL_schofield_tank
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
 			add_tech_bonus = {
 				name = HOL_lessons_from_the_last_war
 				bonus = 1.0
@@ -2909,7 +2918,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2955,7 +2964,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = HOL_prepare_naval_expansion
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2977,7 +2986,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HOL_prepare_naval_expansion
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2999,7 +3008,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_cornerstone_of_colonial_defense
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3021,7 +3030,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_cornerstone_of_colonial_defense
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3049,7 +3058,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_rely_on_submarines
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3093,7 +3102,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_the_battlecruiser_plan
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3114,7 +3123,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_the_battlecruiser_plan
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3204,10 +3213,6 @@ focus_tree = {
 		id = HOL_gateway_to_europe
 		prerequisite = { focus = HOL_form_new_government }
 		bypass = {
-			OR = {
-				has_war_with = GER
-				has_war_with = ENG
-			}
 		}
 		icon = GFX_focus_hol_gateway_to_europe
 		x = 0
@@ -3219,7 +3224,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			custom_effect_tooltip = HOL_gateway_to_europe_tt
 		}
 	}
 
@@ -5380,7 +5384,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HOL_the_singapore_conferences
 				bonus = 1.0
-				uses = 4
+				uses = 2
 				category = naval_doctrine
 			}
 		}
@@ -5435,6 +5439,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_to_tech_sharing_group = commonwealth_research
 			add_ideas = HOL_allied_technological_developments
 		}
 	}
@@ -5450,14 +5455,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_ship_a_day_sinking_quotas
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_faction_with = USA
+					is_in_faction_with = ENG
 				}
 				695 = {
 					add_building_construction = {
@@ -5491,24 +5496,32 @@ focus_tree = {
 					name = "American Garrison"
 					priority = 1
 					division_names_group = USA_INF_01
-					is_locked = yes
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
+						infantry = { x = 4 y = 0 }
+
 						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
+						infantry = { x = 4 y = 1 }
+
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
-						infantry = { x = 3 y = 0 }
-						infantry = { x = 3 y = 1 }
-						infantry = { x = 3 y = 2 }
+						infantry =  { x = 4 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
 					}
 					support = {
-					    artillery = { x = 0 y = 0 }
-					    engineer = { x = 0 y = 1 }
+						DIV_HQ = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+						pack_artillery = { x = 1 y = 0 }
+						anti_air_company = { x = 1 y = 1 }
 					}
 				}
 				695 = {
@@ -5524,18 +5537,8 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = USA }
-				}
-				custom_effect_tooltip = HOL_american_west_indies_protectorate_tt
-				effect_tooltip = {
-					USA = {
-						add_war_support = 0.1
-						give_guarantee = HOL
-					}
-				}
-				USA = { country_event = { id = mtg_netherlands.26 } }
+			USA = {
+				add_war_support = 0.1
 			}
 		}
 	}

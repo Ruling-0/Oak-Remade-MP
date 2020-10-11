@@ -4620,7 +4620,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -4686,7 +4686,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -4752,7 +4752,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_focus_pacific_coast_naval_yards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -4817,7 +4817,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_brown_water_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -4880,7 +4880,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_brown_water_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100

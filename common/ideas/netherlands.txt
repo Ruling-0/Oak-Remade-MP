@@ -341,7 +341,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				political_power_gain = 0.10
+				political_power_gain = -0.10
 			}
 		}
 
@@ -386,7 +386,7 @@ ideas = {
 						
 			modifier = {
 				training_time_factor = -0.1
-				non_core_manpower = 0.02
+				non_core_manpower = 0.1
 			}
 		}
 
@@ -2017,7 +2017,6 @@ ideas = {
 			}
 
 			available = {
-				has_government = fascism
 			}
 			
 			traits = { prince_of_terror }
@@ -2038,7 +2037,7 @@ ideas = {
 				}
 			}
 			
-			traits = { genial_anti_revolutionary }
+			traits = { silent_workhorse }
 		}
 
 		HOL_antonie_pannekoek = {
@@ -2214,7 +2213,6 @@ ideas = {
 			}
 		
 			available = {
-				has_government = fascism
 			}
 			
 			traits = { army_chief_offensive_2 }

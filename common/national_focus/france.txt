@@ -240,7 +240,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = partial_economic_mobilisation			 
-			ENG = { country_event = { id = britain.13 } }
 			FRA_remove_disjointed_government = yes 
 		}
 	}
@@ -1705,7 +1704,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
-			add_offsite_building = { type = dockyard level = 2 }
+			add_ideas = free_trade
+			add_ideas = war_economy
 			add_tech_bonus = {
 				name = FRA_appoint_new_supreme_commander
 				bonus = 3.0
@@ -1775,19 +1775,27 @@ focus_tree = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 10
-			}		
+			}	
+            add_offsite_building = { 
+			    type = dockyard 
+				level = 2 
+			}			
 			hidden_effect  {
 			create_navy_leader = {
 				name = "Émile Muselier"
 				picture = "Portrait_France_Emile_Muselier.dds"
 				traits = { bold superior_tactician fleet_protector blockade_runner spotter blue_water_expert }
 				skill = 5
-				attack_skill = 5
-				defense_skill = 5
- 			   maneuvering_skill = 3
- 			   coordination_skill = 3
+				attack_skill = 4
+				defense_skill = 4
+ 			    maneuvering_skill = 4
+ 			    coordination_skill = 4
 			}
 				load_oob = FRA_naval_oob
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
 			}			
 		}
 	}
@@ -1914,7 +1922,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 150
+				amount = 100
 			}		
 		}
 	}
