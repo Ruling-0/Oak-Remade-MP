@@ -1126,7 +1126,7 @@ focus_tree = {
 		x = 13
 		y = 0
 		relative_position_id = HOL_obtain_foreign_colonial_investments
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1206,7 +1206,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_continue_the_public_works
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1239,7 +1239,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_continue_the_public_works
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1920,7 +1920,7 @@ focus_tree = {
 	focus = {
 		id = HOL_protect_against_britain
 		available = {
-			threat > 0.1
+			threat > 0.15
 			has_full_control_of_state = 7
 			has_full_control_of_state = 36
 		}
@@ -1993,7 +1993,6 @@ focus_tree = {
 	focus = {
 		id = HOL_further_reinforce_the_ports
 		available = {
-			threat > 0.15
 			has_full_control_of_state = 7
 			has_full_control_of_state = 36
 		}
@@ -2053,7 +2052,6 @@ focus_tree = {
 	focus = {
 		id = HOL_southward_defenses
 		available = {
-			threat > 0.2
 			has_full_control_of_state = 7
 			has_full_control_of_state = 35
 			has_full_control_of_state = 36
@@ -2115,7 +2113,7 @@ focus_tree = {
 	focus = {
 		id = HOL_germany_is_the_greater_threat
 		available = {
-			threat > 0.1
+			threat > 0.15
 			has_full_control_of_state = 7
 			has_full_control_of_state = 35
 			has_full_control_of_state = 36
@@ -2179,7 +2177,6 @@ focus_tree = {
 	focus = {
 		id = HOL_fortress_holland
 		available = {
-			threat > 0.15
 			has_full_control_of_state = 7
 			has_full_control_of_state = 35
 		}
@@ -2237,7 +2234,6 @@ focus_tree = {
 	focus = {
 		id = HOL_modernize_the_grebbeline
 		available = {
-			threat > 0.2
 			has_full_control_of_state = 36
 		}
 		prerequisite = { focus = HOL_fortress_holland }
@@ -3069,28 +3065,38 @@ focus_tree = {
 					antiair2 = 1
 					improved_fire_control_system = 1
 					dp_secondary_battery = 1
+				    basic_heavy_battery = 1
+			        improved_airplane_launcher = 1
+					decimetric_radar = 1
 				}
 				create_equipment_variant = {
 					name = "Design 1047 Battlecruiser"
 					type = ship_hull_heavy_2
 					parent_version = 0
 					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_2
-						fixed_ship_secondaries_slot = dp_ship_secondaries
-						fixed_ship_armor_slot = ship_armor_bb_1
-						front_1_custom_slot = ship_heavy_battery_1
-						mid_1_custom_slot = ship_anti_air_2
-						mid_2_custom_slot = dp_ship_secondaries
-						rear_1_custom_slot = ship_heavy_battery_1
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_armor_slot = ship_armor_bc_2
+				front_1_custom_slot = ship_heavy_battery_2
+				mid_1_custom_slot = ship_heavy_battery_2
+				mid_2_custom_slot = ship_airplane_launcher_2
+				rear_1_custom_slot = dp_ship_secondaries
 					}
 				}
 			}
 			custom_effect_tooltip = HOL_the_battlecruiser_plan_tt
 			GER = { country_event = { id = mtg_netherlands.7 hours = 6 } }
+			GER = {
+			    add_resource = {
+			     	type = oil
+				    amount = 15
+				    state = 59
+			    }
+			}
 		}
 	}
 
@@ -3610,6 +3616,7 @@ focus_tree = {
 					else_if = {
 						limit = {
 							has_tech = ger_medium_tank_1936
+							NOT = { has_tech = ger_medium_tank_1938 }
 						}
 						create_production_license = {
 							target = HOL
@@ -5274,7 +5281,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_timed_idea = { idea = HOL_unity_through_democracy days = 1095 }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_willem_schermerhorn
+			add_ideas = HOL_willem_schermerhorn
 		}
 	}
 
@@ -5311,6 +5318,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = HOL_aloof_neutrality
+			add_to_tech_sharing_group = commonwealth_research
 			ENG = { country_event = { id = generic.2 hours = 6 } }
 		}
 	}
@@ -5363,10 +5371,6 @@ focus_tree = {
 			is_in_faction_with = ENG
 			is_in_faction_with = AST
 			NOT = { has_war_with = USA }
-			OR = {
-				MAL = { has_full_control_of_state = 336 }
-				ENG = { has_full_control_of_state = 336 }
-			}
 		}
 		bypass = {
 			has_war_with = JAP
@@ -5439,7 +5443,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_to_tech_sharing_group = commonwealth_research
 			add_ideas = HOL_allied_technological_developments
 		}
 	}
@@ -5674,8 +5677,7 @@ focus_tree = {
 	focus = {
 		id = HOL_lead_the_minor_democracies
 		available = {
-			has_war = no
-			is_in_faction = no
+			date > 1945.1.1	
 		}
 		prerequisite = { focus = HOL_unity_through_democracy }
 		mutually_exclusive = { focus = HOL_go_with_britain }

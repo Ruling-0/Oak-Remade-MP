@@ -199,27 +199,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = mexico.2.a
-		
-		add_political_power = -25
-		
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 10
-				FROM = {
-					has_government = ROOT
-				}
-			}
-			modifier = {
-				factor = 0.1
-				FROM = {
-					is_enemy_ideology = yes
-				}
-			}
-		}
-	}
-	option = {
 		name = mexico.2.b
 		
 		add_opinion_modifier = {
@@ -242,59 +221,6 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_government = communism
-				FROM = {
-					has_government = communism
-				}
-			}
-		}
-	}
-	option = {
-		name = mexico.2.c
-		
-		add_stability = -0.1
-		add_war_support = -0.1
-		
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = FROM
-		}
-		
-		add_opinion_modifier = {
-			target = FROM
-			modifier = embargo
-		}
-		
-		FROM = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = embargo
-			}
-			country_event = {
-				days = 1
-				id = mexico.3
-			}
-		}
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.4
-			}
-			modifier = {
-				factor = 0
-				has_war_support < 0.4
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
 			}
 			modifier = {
 				factor = 0
@@ -361,28 +287,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 80
-		}
-	}
-	option = {
-		name = mexico.4.b
-		
-		trigger = {
-			has_opinion_modifier = embargo
-		}
-		
-		add_political_power = -25
-		
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0.1
-				has_war = yes
-			}
-			modifier = {
-				factor = 0.5
-				tag = USA
-				is_historical_focus_on = yes
-			}
 		}
 	}
 }
@@ -1790,6 +1694,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = socialism
 			traits = {
+			    primate_of_mexico
 				exiled_revolutionary
 			}
 		}

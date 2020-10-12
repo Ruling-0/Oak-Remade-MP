@@ -1260,7 +1260,6 @@ on_actions = {
 				}
 				HOL = {
 					load_oob = HOL_ai
-					add_to_tech_sharing_group = commonwealth_research
 					add_popularity = { ideology = democratic popularity = 0.50 }
 				}
 			}

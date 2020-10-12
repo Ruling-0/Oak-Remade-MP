@@ -39,6 +39,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_to_tech_sharing_group = HOL_europe_research
+			USA = {
+				add_to_tech_sharing_group = HOL_europe_research
+			}
 		    add_political_power = 150
 			add_stability = 0.05
 		}
@@ -72,9 +76,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		MEX = {
+   			 modify_tech_sharing_bonus = {
+         			id = HOL_europe_research
+         			bonus = 0.1  # we get 20% higher bonus from this group
+    				}
+		}
 			remove_ideas = MEX_callistas
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MEX_bartolome_garcia_correa
+			add_ideas = MEX_bartolome_garcia_correa
 		}
 	}
 
@@ -135,12 +145,18 @@ focus_tree = {
 					}
 				}
 			}
+		MEX = {
+   			 modify_tech_sharing_bonus = {
+         			id = HOL_europe_research
+         			bonus = 0.1  # we get 20% higher bonus from this group
+    				}
+		}
 			swap_ideas = {
 				remove_idea = MEX_callistas
 				add_idea = MEX_plutarco_calles
 			}
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MEX_aaron_saenz
+			add_ideas = MEX_aaron_saenz
 			if = {
 				limit = {
 					NOT = {
@@ -2745,7 +2761,7 @@ focus_tree = {
 		    	ideology = socialism
 		    	traits = {
 			    	exiled_revolutionary
-			    	primate_of_mexico
+					protector_of_the_campesinos
 			    }
 		    }
 			

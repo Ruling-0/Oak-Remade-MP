@@ -6,6 +6,7 @@ ai_historical_focus_list_JAP = {
 		JAP_nationalize_war_industry
 		JAP_national_mobilization_law
 		JAP_army_expansion_law
+		JAP_supremacy_of_will
 		JAP_the_old_guard
 		JAP_strengthen_the_kwantung_army
 		JAP_liaison_conference
