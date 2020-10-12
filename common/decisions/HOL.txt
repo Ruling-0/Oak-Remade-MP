@@ -170,6 +170,7 @@ HOL_obtain_foreign_colonial_investments = {
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
 			HOL = { has_full_control_of_state = 695 }
+			has_war = no
 		}
 
 		cost = 20
@@ -238,6 +239,7 @@ HOL_obtain_foreign_colonial_investments = {
 				is_in_faction_with = USA
 				is_in_faction_with = ENG
 			}
+			has_war = no
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
 			335 = {
