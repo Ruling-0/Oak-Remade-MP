@@ -2039,7 +2039,7 @@ ideas = {
 				}
 			}
 			
-			traits = { silent_workhorse }
+			traits = { genial_anti_revolutionary }
 		}
 
 		HOL_antonie_pannekoek = {
