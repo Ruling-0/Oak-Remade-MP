@@ -1847,34 +1847,11 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
-	focus = {
-		id = HOL_make_use_of_our_riches
-		prerequisite = { focus = HOL_domestic_innovation }
-		icon = GFX_goal_generic_construction2
-		x = -1
-		y = 1
-		relative_position_id = HOL_domestic_innovation
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HOL_make_use_of_our_riches
-				bonus = 1.0
-				uses = 2
-				category = excavation_tech
-			}
-			add_ideas = HOL_make_use_of_our_riches
-		}
-	}
-
 	focus = {
 		id = HOL_the_ultimate_deterrent
 		prerequisite = { focus = HOL_domestic_innovation }
 		icon = GFX_focus_wonderweapons
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HOL_domestic_innovation
 		cost = 10
