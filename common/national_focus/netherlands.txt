@@ -62,7 +62,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HOL_obtain_foreign_colonial_investments
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
