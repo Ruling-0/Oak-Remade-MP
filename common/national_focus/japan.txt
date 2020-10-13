@@ -566,7 +566,7 @@ focus_tree = {
 		y = 0
 		
 		
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 10
@@ -779,7 +779,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1114,7 +1114,7 @@ focus_tree = {
 
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

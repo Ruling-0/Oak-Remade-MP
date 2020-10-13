@@ -2,8 +2,8 @@
 #player
 set_country_flag = JAP_puppet
 
-set_stability = 0.3
-set_war_support = 0.5
+set_stability = 0.5
+set_war_support = 0.75
 
 oob = "MAN_1936"
 
@@ -14,10 +14,13 @@ if = {
 	set_country_flag = MAN_western_bandits
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
+	add_ideas = MAN_low_legitimacy_1
+	add_ideas = limited_conscription
+	add_ideas = partial_economic_mobilisation
 }
 add_ideas = {
 	no_spies_idea
+	
 }
 set_research_slots = 4
 
@@ -50,7 +53,7 @@ set_technology = {
 	starting_industry = 1
 }
 
-set_convoys = 18
+set_convoys = 250
 
 set_politics = {
 	ruling_party = fascism
@@ -59,8 +62,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 80
-	neutrality = 20
+	fascism = 100
 }
 
 create_country_leader = {
@@ -70,6 +72,7 @@ create_country_leader = {
 	expire = "1960.1.1"
 	ideology = rexism
 	traits = {
+	    financial_expert
 		warrior_code
 	}
 }
@@ -89,24 +92,24 @@ create_corps_commander = {
 	name = "Zhang Haipeng"
 	GFX = "GFX_portrait_man_zhang_haipeng"
 	traits = {  }
-	skill = 2
+	skill = 4
 	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Zhang Jinghui"
 	GFX = "GFX_portrait_man_zhang_jinghui"
 	traits = { infantry_officer }
-	skill = 2
+	skill = 4
 	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -117,7 +120,7 @@ create_corps_commander = {
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 1
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -127,7 +130,7 @@ create_corps_commander = {
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 	female = yes
 }

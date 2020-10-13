@@ -50,6 +50,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FRA_matignon_agreements
+			add_ideas = FRA_global_investments
 			FRA_disjointed_government_level_up = yes
 			if = {
 				limit = {
@@ -1711,18 +1712,6 @@ focus_tree = {
 				bonus = 3.0
 				uses = 2
 				category = land_doctrine
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
-					NOT = {
-						is_on_continent = europe
-					}
-				}
-				add_compliance = 100
 			}
 			add_popularity = { ideology = democratic popularity = 0.50 }
 			add_to_tech_sharing_group = commonwealth_research

@@ -64,6 +64,7 @@ focus_tree = {
 		}
 
 		available = {
+		    date > 1945.1.1	
 			has_government = communism
 			OR = {
 				is_subject = no
@@ -352,19 +353,14 @@ focus_tree = {
 		y = 4
 		relative_position_id = PRC_agrarian_socialism
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
 		}
 
 		available = {
-			strength_ratio = {
-				tag = CHI
-				ratio > 0.5
-			}
-			num_of_factories > 49
-			NOT = { has_idea = PRC_the_long_march_1 }
+			date > 1938.4.1	
 		}
 
 		bypass = {
@@ -454,6 +450,7 @@ focus_tree = {
 		}
 
 		available = {
+		    date > 1945.1.1	
 			has_government = communism
 			OR = {
 				is_subject = no
@@ -1208,6 +1205,7 @@ focus_tree = {
 		}
 
 		available = {
+		    date > 1945.1.1	
 			OR = {
 				SHX = { can_ROOT_get_wargoal_on_THIS = yes }
 				XSM = { can_ROOT_get_wargoal_on_THIS = yes }
@@ -1513,8 +1511,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 34
-			amount_research_slots < 5
+			date > 1937.1.1	
 		}
 
 		bypass = {
@@ -1549,8 +1546,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 69
-			amount_research_slots < 5
+			date > 1938.7.1	
 		}
 
 		bypass = {
