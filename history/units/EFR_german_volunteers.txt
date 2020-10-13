@@ -26,8 +26,7 @@ division_names_group = FRA_INF_01
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 }  
-		anti_air_company = { x = 2 y = 0 }	  
-		anti_tank_company = { x = 2 y = 1 }	  
+		anti_air_company = { x = 0 y = 2 }	   
 	}
 }
 
@@ -35,7 +34,7 @@ units = {
 	##### armistice army #####
 	division= {
 		name = "1. French Volunteer"
-		location = 64  # Berlin
+		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
@@ -43,7 +42,7 @@ units = {
 
 	division= {
 		name = "2. French Volunteer"
-		location = 64  # Berlin
+		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
@@ -51,7 +50,7 @@ units = {
 
 	division= {
 		name = "3. French Volunteer"
-		location = 64  # Berlin
+		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
@@ -59,7 +58,7 @@ units = {
 
 	division= {
 		name = "4. French Volunteer"
-		location = 64  # Berlin
+		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
@@ -67,7 +66,7 @@ units = {
 
 	division= {
 		name = "5. French Volunteer"
-		location = 64  # Berlin
+		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
@@ -75,7 +74,7 @@ units = {
 
 	division= {
 		name = "6. French Volunteer"
-		location = 64  # Berlin
+		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
