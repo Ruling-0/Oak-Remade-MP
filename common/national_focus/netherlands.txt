@@ -776,7 +776,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_continue_the_war_in_batavia
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -850,7 +850,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_a_western_capital
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
