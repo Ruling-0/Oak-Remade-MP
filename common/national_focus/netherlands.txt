@@ -54,28 +54,6 @@ focus_tree = {
 			custom_effect_tooltip = HOL_obtain_foreign_colonial_investments_tt
 		}
 	}
-	
-	focus = {
-		id = HOL_make_use_of_our_riches
-		prerequisite = { focus = HOL_obtain_foreign_colonial_investments }
-		icon = GFX_goal_generic_construction2
-		x = 0
-		y = 1
-		relative_position_id = HOL_obtain_foreign_colonial_investments
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HOL_make_use_of_our_riches
-				bonus = 1.0
-				uses = 2
-				category = excavation_tech
-			}
-			add_ideas = HOL_make_use_of_our_riches
-		}
-	}
 
 #   # ###  ## ###     ### #  # ###  ### ###  ## 
 #   # #   #    #       #  ## # #  #  #  #   #   
@@ -1831,6 +1809,7 @@ focus_tree = {
 		id = HOL_domestic_innovation
 		prerequisite = { focus = HOL_the_east_indies_war_machine focus = HOL_fokker focus = HOL_daf }
 		available = {
+			num_of_factories > 50
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -1838,7 +1817,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = HOL_fokker
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1848,10 +1827,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = HOL_make_use_of_our_riches
+		prerequisite = { focus = HOL_domestic_innovation }
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		relative_position_id = HOL_domestic_innovation
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOL_make_use_of_our_riches
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
+			add_ideas = HOL_make_use_of_our_riches
+		}
+	}
+
+	focus = {
 		id = HOL_the_ultimate_deterrent
 		prerequisite = { focus = HOL_domestic_innovation }
 		icon = GFX_focus_wonderweapons
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = HOL_domestic_innovation
 		cost = 10
