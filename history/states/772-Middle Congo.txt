@@ -6,9 +6,9 @@ state={
 	
 	state_category = rural
 	resources={
-	    tungsten=20
-		steel=20
-		oil=20
+	    tungsten=25
+		steel=25
+		oil=25
 	}
 	history={
 		owner = FRA

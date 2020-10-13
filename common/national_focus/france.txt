@@ -50,6 +50,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FRA_matignon_agreements
+			add_ideas = FRA_global_investments
 			FRA_disjointed_government_level_up = yes
 			if = {
 				limit = {

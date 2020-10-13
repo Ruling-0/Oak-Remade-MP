@@ -28,9 +28,7 @@ division_template = {
 		engineer = { x = 0 y = 2 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-        anti_tank_company = { x = 0 y = 3 }
-        anti_tank = { x = 1 y = 3 }		
+		field_hospital = { x = 1 y = 2 }	
 	}
 }
 division_template = {
@@ -939,6 +937,15 @@ instant_effect = { #player
 		progress = 0.15
 		efficiency = 25
 	}	
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 25
+	}
     add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
