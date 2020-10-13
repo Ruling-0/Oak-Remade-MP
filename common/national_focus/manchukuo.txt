@@ -21,7 +21,7 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -276,7 +276,20 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 35
+			OR = {
+				num_of_factories > 35
+				all_state = {
+					OR = {
+						NOT = { is_core_of = CHI }
+						NOT = { is_core_of = PRC }
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_in_faction_with = ROOT }
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
 		}
 
 		bypass = {
@@ -440,14 +453,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
 		}
 
 		available = {
-           is_ai = no
+
 		}
 
 		bypass = {
@@ -463,10 +476,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_autonomy_ratio = {
-				value = 0.75
-				localization = MAN_the_two_emperors
-			}
+			add_stability = 0.1
 		}
 	}
 
@@ -1128,6 +1138,16 @@ focus_tree = {
 		available = {
 			is_subject_of = JAP
 			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
+			MAN = { 
+				ic_ratio = {
+					tag = JAP
+					ratio > 0.2
+				}
+			}
+			strength_ratio = {
+				tag = JAP
+				ratio > 0.25
+			}
 		}
 
 		bypass = {
@@ -1143,7 +1163,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.1
+			add_autonomy_ratio = {
+				value = 0.15
+				localization = MAN_the_two_emperors
+			}
 		}
 	}
 }

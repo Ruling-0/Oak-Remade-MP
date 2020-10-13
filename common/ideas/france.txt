@@ -159,8 +159,6 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
-				fuel_gain_factor = 0.5
-				compliance_gain = 1.00
 			}
 		}
 		FRA_womens_suffrage = {
