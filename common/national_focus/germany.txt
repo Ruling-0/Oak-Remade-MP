@@ -952,7 +952,7 @@ focus_tree = {
 		relative_position_id = GER_curtail_the_steel_barons
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -1250,7 +1250,7 @@ focus_tree = {
 		relative_position_id = GER_continue_the_new_plan
 		x = 6
 		y = 1
-		cost = 10
+		cost = 5
 		
 		ai_will_do = { 
 			factor = 5 
@@ -2063,7 +2063,7 @@ focus_tree = {
 		relative_position_id = GER_occupation_of_the_benelux
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -2966,7 +2966,7 @@ focus_tree = {
 		relative_position_id = GER_mobilize_the_reich
 		x = 0
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -3985,7 +3985,7 @@ focus_tree = {
 			# Balance research bonus to 2 techs in land_doctrine
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = ferdinand_schorner
-			army_experience = 20
+			army_experience = 20	
 			add_tech_bonus = {
 				name = equipment_bonus
 				bonus = 1
@@ -4212,7 +4212,7 @@ focus_tree = {
 		relative_position_id = GER_the_winter_of_1941
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4246,7 +4246,7 @@ focus_tree = {
 		relative_position_id = GER_festung_principle
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4287,7 +4287,7 @@ focus_tree = {
 		relative_position_id = GER_festung_principle
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4315,7 +4315,7 @@ focus_tree = {
 		relative_position_id = GER_festung_principle
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4351,7 +4351,7 @@ focus_tree = {
 		relative_position_id = GER_mobile_fortresses
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4389,7 +4389,7 @@ focus_tree = {
 		relative_position_id = GER_the_winter_of_1941
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4406,7 +4406,7 @@ focus_tree = {
 		relative_position_id = GER_the_winter_of_1941
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4446,7 +4446,7 @@ focus_tree = {
 		relative_position_id = GER_the_winter_of_1941
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4558,7 +4558,7 @@ focus_tree = {
 		relative_position_id = GER_the_winter_of_1941
 		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4589,7 +4589,7 @@ focus_tree = {
 		relative_position_id = GER_the_winter_of_1941
 		x = 3
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -5152,7 +5152,6 @@ focus_tree = {
 		id = GER_udets_strike_force
 		icon = GFX_GER_udets_strike_force
 		prerequisite = { focus = GER_air_innovation }
-		mutually_exclusive = { focus = GER_victory_through_airpower }
 		relative_position_id = GER_air_innovation 
 		x = -2
 		y = 1
@@ -5194,7 +5193,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
-				ahead_reduction = 1
+				ahead_reduction = .5
 				category = tactical_bomber
 			}
 			custom_effect_tooltip = available_theorist
@@ -5261,7 +5260,6 @@ focus_tree = {
 		id = GER_victory_through_airpower
 		icon = GFX_GER_victory_through_airpower
 		prerequisite = { focus = GER_air_innovation }
-		mutually_exclusive = { focus = GER_udets_strike_force }
 		relative_position_id = GER_air_innovation 
 		
 		x = 2
@@ -5626,7 +5624,7 @@ focus_tree = {
 		relative_position_id = GER_air_innovation_2
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5649,7 +5647,7 @@ focus_tree = {
 		relative_position_id = GER_expand_peenemuende_research_center
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5676,7 +5674,7 @@ focus_tree = {
 		relative_position_id = GER_expand_peenemuende_research_center
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5735,7 +5733,7 @@ focus_tree = {
 		relative_position_id = GER_expand_peenemuende_research_center
 		x = -1
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5762,7 +5760,7 @@ focus_tree = {
 		relative_position_id = GER_expand_peenemuende_research_center
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5798,7 +5796,7 @@ focus_tree = {
 		relative_position_id = GER_expand_peenemuende_research_center
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
