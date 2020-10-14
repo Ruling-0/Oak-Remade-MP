@@ -1883,10 +1883,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			450 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			448 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_resource = {
 				type = rubber
-				amount = 8
-				state = 271
+				amount = 12
+				state = 448
 			}
 		}
 	}
@@ -2089,12 +2105,12 @@ focus_tree = {
 				}
 				add_compliance = 10
 			}
-			662 = {
+			448 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -2122,7 +2138,7 @@ focus_tree = {
 				}
 				add_compliance = 10
 			}
-			448 = {
+			662 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -2148,7 +2164,7 @@ focus_tree = {
 		available = {
 			ITA = {
 				controls_state = 450
-				controls_state = 662
+				controls_state = 448
 			}
 		}
 		available_if_capitulated = yes
@@ -2166,16 +2182,24 @@ focus_tree = {
 			add_resource = {
 				type = oil
 				amount = 32
-				state = 662
+				state = 448
 			}
 			450 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 3
 					instant_build = yes
 				}
-			}	
+			}
+			448 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}			
 		}
 	}
 	focus = {

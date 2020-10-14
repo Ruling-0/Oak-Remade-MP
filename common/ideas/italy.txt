@@ -1283,10 +1283,10 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_operational_integrity = 0.15
+				air_doctrine = 0.1
 			}
 			
-			traits = { assault_avaition }
+			traits = { GERvictory_through_airpower }
 		}
 	}
 	industrial_concern = {
