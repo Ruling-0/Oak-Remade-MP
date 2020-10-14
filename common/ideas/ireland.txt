@@ -114,9 +114,6 @@ ideas = {
 
 					picture = chi_incompetent_officers
 					
-					research_bonus = {
-				        land_doctrine = -0.05
-			        }
 
 					modifier = { 
 						army_attack_factor = -0.1

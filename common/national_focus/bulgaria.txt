@@ -806,7 +806,6 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-		    add_ideas = austerity_idea
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
@@ -816,6 +815,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		    add_ideas = austerity_idea
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
