@@ -245,7 +245,6 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    num_of_factories > 50
 		}
 	
 		bypass = {
@@ -260,6 +259,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			IRE = {
+   			    modify_tech_sharing_bonus = {
+         			id = commonwealth_research
+         			bonus = 0.1  # we get 20% higher bonus from this group
+    			}
+			}
 			add_research_slot = 1
 		}	
 		ai_will_do = {
