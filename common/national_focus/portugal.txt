@@ -223,7 +223,11 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}					
-				add_extra_state_shared_building_slots = 1					
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = steel
+					amount = 20
+				}				
 			}				
 		}
 	}
@@ -4221,13 +4225,10 @@ focus_tree = {
 	focus = {
 		id = POR_support_the_spanish_nationalists
 		available = {	
-			SPR_scw_in_progress = yes
 			country_exists = SPA
-			NOT = { has_war_with = SPA }
 		}
 
 		bypass = {
-			has_global_flag = scw_over	
 		}
 		prerequisite = { focus = POR_estado_novo }
 		mutually_exclusive = { focus = POR_strict_neutrality_in_the_spanish_civil_war focus = POR_support_the_spanish_republic focus = POR_a_royal_wedding }
@@ -4236,7 +4237,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_estado_novo
-		cost = 5
+		cost = 3
 		completion_reward = { 	
 			SPA = {
 				add_opinion_modifier = {
@@ -4262,12 +4263,10 @@ focus_tree = {
 
 	focus = {
 		id = POR_portuguese_legion
-		available = {
-			SPR_scw_in_progress = yes				
+		available = {			
 		}
 
 		bypass = {
-			has_global_flag = scw_over
 		}
 		prerequisite = { focus = POR_support_the_spanish_nationalists }
 		icon = GFX_focus_por_portuguese_legion
@@ -4275,10 +4274,11 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_support_the_spanish_nationalists
-		cost = 5
+		cost = 2
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_ideas = por_portuguese_legion
+			add_ideas = low_economic_mobilisation
 		}
 	}
 
