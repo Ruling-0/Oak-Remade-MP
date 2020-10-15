@@ -2221,7 +2221,7 @@ leader_traits = {
 			fighter_equipment = {
 				instant = yes
 				reliability = 0.05
-				build_cost_ic = -0.10
+				build_cost_ic = -0.05
 			}
 			
 		}
