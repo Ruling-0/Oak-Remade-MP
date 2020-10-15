@@ -796,6 +796,7 @@ ideas = {
 		}
 		#POLIICAL
 		political_advisor = {
+
 			POR_alvaro_cunhal = {
 
 				name = POR_alvaro_cunhal
@@ -917,6 +918,10 @@ ideas = {
 				allowed = {
 					original_tag = POR
 					NOT = { has_dlc = "La Resistance" }
+				}
+				
+				available = {
+					has_completed_focus = POR_national_syndicalism				
 				}
 	
 				picture = generic_fascist_demagogue_western_european_2d 

@@ -198,47 +198,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.5
 	}
-
-	division = {
-		name = "Division de Marche d'Oran"
-		location = 7132  # Oran
-		division_template = "Division d'Infanterie Vichy"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-	}
-
-	division = {
-		name = "Division de Marche de Tunis"
-		location = 12051  # Tunis
-		division_template = "Division d'Infanterie Vichy"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-	}
-
-	#Syrie
-	division = {
-		name = "Division du Levant"
-		location = 4111  # Damas
-		division_template = "Division d'Infanterie Vichy"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-	}
-
-	division = {
-		name = "Division du Levant 2"
-		location = 4111  # Damas
-		division_template = "Division d'Infanterie Vichy"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-	}
-
-	division = {
-		name = "Division du Levant 3"
-		location = 4111  # Damas
-		division_template = "Division d'Infanterie Vichy"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-	}
 }
 
 #########################
@@ -406,18 +365,8 @@ instant_effect = { #player
 			producer = EFR
 		}
 	add_equipment_to_stockpile = {
-		type = medium_tank_equipment_1939
-			amount = 300
-			producer = EFR
-		}
-	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1938
 			amount = 600
-			producer = EFR
-		}
-	add_equipment_to_stockpile = {
-		type = fighter_equipment_1938
-			amount = 750
 			producer = EFR
 		}	
 }
