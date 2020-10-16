@@ -4211,7 +4211,6 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		completion_reward = { 
-		    set_rule = { can_send_volunteers = yes }
     	    add_ideas = POR_the_portuguese_empire			
 			add_ideas = POR_estado_novo
 			add_political_power = 100
