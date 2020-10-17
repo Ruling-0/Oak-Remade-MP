@@ -655,7 +655,7 @@ technologies = {
 	dive_bombing = {
 
 		# EFFECT ########
-		air_cas_efficiency = 0.20
+		air_cas_efficiency = 0.10
 		###########
 		
 		path = {
@@ -812,7 +812,7 @@ technologies = {
 	hunt_and_destroy = {
 
 		# EFFECT ########
-		air_cas_efficiency = 0.20
+		air_cas_efficiency = 0.10
 		###########
 		
 		path = {
