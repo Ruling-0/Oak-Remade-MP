@@ -2078,23 +2078,12 @@ focus_tree = {
 		}	
 		available_if_capitulated = yes
 		completion_reward = {
-			450  = {
+			448  = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-				}
-				add_compliance = 10
-			}
-			662 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -2122,7 +2111,7 @@ focus_tree = {
 				}
 				add_compliance = 10
 			}
-			448 = {
+			662 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {

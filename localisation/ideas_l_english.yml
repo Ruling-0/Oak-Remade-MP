@@ -6,6 +6,9 @@
  quantity3:0 "Mass Production III"
  
  refinery_idea:0 "No need to build refineries yet"
+ 
+ MAN_resource:0 "Resource Bitch"
+ MAN_resource_desc:0 "Guess what your job is"
 
  GER_economy_of_plunder_1:0 "Economy of Plunder: Light Plunder"
  GER_economy_of_plunder_1_desc:0 "The Nazis expected to cover their debt by plundering the wealth of conquered nations during the war. By extracting the wealth of occupied nations, the German economy can hopefully come back on its feet, although the price of such an extraction is payed in human life through extremely complicated bereaucracy and logistics."

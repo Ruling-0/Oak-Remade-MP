@@ -272,7 +272,9 @@ focus_tree = {
 			else = {
 				add_ideas = war_economy
 			}
-
+            MAN = {
+			    add_ideas = war_economy
+			}
 			swap_ideas = { 
 				remove_idea = JAP_militarism
 				add_idea = JAP_militarism_showa
@@ -551,6 +553,9 @@ focus_tree = {
 			}
 			else = {
 				add_ideas = tot_economic_mobilisation
+			}
+            MAN = {
+			    add_ideas = tot_economic_mobilisation
 			}
 			swap_ideas = { 
 				remove_idea = JAP_militarism
@@ -1029,7 +1034,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_japanese_settlement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1098,8 +1103,8 @@ focus_tree = {
 			annex_country = { target = MAN transfer_troops = yes }
 			every_state = {
 				limit = { is_core_of = MAN }
-				set_resistance = 5
-				set_compliance = 40
+				set_resistance = 0
+				set_compliance = 100
 			}
 		}
 	}
@@ -1196,7 +1201,9 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 80
-			
+			MAN = {
+			    add_ideas = infantry_production_jap
+			}
 			add_ideas = infantry_production_jap
 		}
 	}

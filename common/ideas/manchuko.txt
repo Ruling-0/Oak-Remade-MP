@@ -1,6 +1,30 @@
 ideas = {
 	
 	country = {
+	
+		MAN_resource = {
+			
+		
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+			    has_government = communism
+			}
+		
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = { 
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
+		        fuel_gain_factor = 0.15
+		        fuel_gain_factor_from_states = 0.15
+		    }
+				
+		}
 		MAN_exiled_imperial_family = {
 
 			allowed = {
@@ -16,9 +40,10 @@ ideas = {
 			picture = state_shintoism
 			
 			modifier = {
-				army_morale_factor = 0.1
-				stability_factor = 0.1
-				war_support_factor = 0.05
+			    political_power_gain = 0.1
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				stability_weekly = 0.001
 			}
 		}
 
@@ -231,9 +256,10 @@ ideas = {
 			picture = generic_war_preparation
 			
 			modifier = {
-				army_morale_factor = 0.05
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.2
+				supply_consumption_factor = -0.1
 			}
 		}
 
@@ -448,7 +474,7 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Waking the Tiger" }
-					has_completed_focus = MAN_invite_japanese_investors
+					has_completed_focus = MAN_pacify_the_countryside
 				}
 			}
 			
@@ -475,7 +501,7 @@ ideas = {
 				original_tag = MAN
 			}
 			
-			traits = { prince_of_terror }
+			traits = { technocrat }
 		}
 
 		MAN_nalan_kang_an = {
@@ -486,7 +512,7 @@ ideas = {
 				original_tag = MAN
 			}
 			
-			traits = { fortification_engineer }
+			traits = { smooth_talking_charmer }
 		}
 
 		

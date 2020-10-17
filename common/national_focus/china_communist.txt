@@ -875,7 +875,6 @@ focus_tree = {
 		id = PRC_protracted_warfare
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = PRC_provoke_japan }
-		mutually_exclusive = { focus = PRC_mobile_warfare }
 		x = -1
 		y = 1
 		relative_position_id = PRC_provoke_japan
@@ -911,7 +910,6 @@ focus_tree = {
 		id = PRC_mobile_warfare
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = PRC_provoke_japan }
-		mutually_exclusive = { focus = PRC_protracted_warfare }
 		x = 1
 		y = 1
 		relative_position_id = PRC_provoke_japan

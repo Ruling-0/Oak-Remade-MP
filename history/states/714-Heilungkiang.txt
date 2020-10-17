@@ -1,6 +1,12 @@
 state={
 	id=714
 	name="STATE_714"
+	
+	resources={
+		oil=15 
+		steel=15
+		aluminium=15
+	}
 
 	history={
 		owner = MAN
@@ -9,7 +15,7 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
-
+            industrial_complex = 2
 		}
 
 	}
