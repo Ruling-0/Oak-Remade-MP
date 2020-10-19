@@ -894,7 +894,7 @@ NMilitary = {
 	
 	UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
 		1.0, -- field marshal
-		1.0, -- corps commander
+		0.0, -- corps commander
 		1.0,  -- navy general
 		0.0, -- operative
 	}, 
@@ -1537,9 +1537,9 @@ NNavy = {
 	 
 	MIN_GUN_COOLDOWN = 0.1,											-- minimum cooldown for a gun	
 	BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
-		1.0,	-- big guns
+		6.0,	-- big guns
 		4.0,	-- torpedos
-		1.0,	-- small guns
+		3.0,	-- small guns
 	},
 	
 	BASE_JOIN_COMBAT_HOURS						= 8,				-- the taskforces that wants to join existing combats will wait for at least this amount
