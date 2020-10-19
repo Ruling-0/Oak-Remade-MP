@@ -2,24 +2,22 @@
 state={
 	id=498
 	name="STATE_498"
-	manpower = 7746000
+	manpower = 1
 
 	state_category = city
 
 	history={
-		owner = BRA
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 6
-			air_base = 2
+			infrastructure = 0
+			industrial_complex = 0
+			air_base = 0
 			5107 = {
-				naval_base = 3
+				naval_base = 0
 			}
 			5168 = {
-				naval_base = 1
+				naval_base = 0
 			}
 		}
-		add_core_of = BRA
 		victory_points = {
 			5107 3 
 		}
