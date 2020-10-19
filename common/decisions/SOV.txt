@@ -6492,12 +6492,12 @@ SOV_5_year_plan_decisions = {
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_1939
-					amount = 2500
+					amount = 1250
 					producer = SOV
 			}
 			add_equipment_to_stockpile = {
 				type = CAS_equipment_1941
-					amount = 1500
+					amount = 1000
 					producer = SOV
 			}
 		}	
@@ -6549,12 +6549,12 @@ SOV_5_year_plan_decisions = {
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_1939
-					amount = 2500
+					amount = 1500
 					producer = SOV
 				}
 			add_equipment_to_stockpile = {
 				type = strat_bomber_equipment_1941
-					amount = 500
+					amount = 250
 					producer = SOV
 				}
 		}	
