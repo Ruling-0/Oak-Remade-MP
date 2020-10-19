@@ -894,7 +894,7 @@ NMilitary = {
 	
 	UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
 		1.0, -- field marshal
-		0.0, -- corps commander
+		1.0, -- corps commander
 		1.0,  -- navy general
 		0.0, -- operative
 	}, 
