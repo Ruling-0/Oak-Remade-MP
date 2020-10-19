@@ -1701,20 +1701,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
-					NOT = {
-						is_on_continent = europe
-					}
-				}
-				add_compliance = 100
-			}
 			add_popularity = { ideology = democratic popularity = 0.50 }
-			add_to_tech_sharing_group = commonwealth_research
 			772 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -1770,6 +1757,56 @@ focus_tree = {
 				level = 2 
 			}			
 			hidden_effect  {
+			create_corps_commander = {
+				name = "Charles De Gaulle"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				traits = { skilled_staffer engineer trickster desert_fox panzer_leader }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_field_marshal = {
+				name = "Philippe Leclerc"
+				picture = "portrait_france_philippe_leclerc.dds"
+				traits = { agressive_assaulter logistics_wizard }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Marie-Pierre Koenig"
+				picture = "Portrait_France_Marie_Pierre_Koenig.dds"
+				traits = { skilled_staffer urban_assault_specialist naval_invader infantry_leader }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+            create_corps_commander = {
+	        	name = "Jean de Lattre de Tassigny"
+	        	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	        	traits = { skilled_staffer mountaineer desert_fox infantry_leader  }
+	        	skill = 4
+	        	attack_skill = 4
+	       		defense_skill = 4
+	        	planning_skill = 3
+	        	logistics_skill = 3
+            }
+			create_field_marshal = {
+				name = "Maurice Gamelin"
+				picture = "Portrait_France_Maurice_Gamelin.dds"
+				traits = { inflexible_strategist logistics_wizard }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
 			create_navy_leader = {
 				name = "Émile Muselier"
 				picture = "Portrait_France_Emile_Muselier.dds"
@@ -1784,7 +1821,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 100
+				amount = 150
 			}			
 		}
 	}
@@ -3148,11 +3185,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			navy_experience = 25	
 		}
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 150
 			15 = {
 				add_building_construction = {
 					type = dockyard
@@ -3171,7 +3207,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 5
+		cost = 3
 
 		available_if_capitulated = yes
 
@@ -3213,7 +3249,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = FRA_colonial_naval_bases
-		cost = 5
+		cost = 3
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3366,7 +3402,7 @@ focus_tree = {
 						version_name = "Richelieu Class"
 					}
 					requested_factories = 1
-					progress = 0.35
+					progress = 0.5
 					amount = 1
 				}
 			}
@@ -3418,7 +3454,7 @@ focus_tree = {
 							version_name = "Joffre Class"
 						}
 						requested_factories = 1
-						progress = 0.40
+						progress = 0.5
 						amount = 1
 					}
 				}	
@@ -3464,7 +3500,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_undersea_combat
 				bonus = 1.0
@@ -3486,7 +3521,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_surface_combat
 				bonus = 2.0
@@ -3508,7 +3542,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_improved_screen_ships
 				bonus = 2.0
