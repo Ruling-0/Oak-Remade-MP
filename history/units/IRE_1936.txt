@@ -109,6 +109,15 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = anti_air_equipment_1
+			creator = "IRE" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 25
+	}
+	add_equipment_production = {
+		equipment = {
 			type = motorized_equipment_1
 			creator = "IRE" 
 		}
