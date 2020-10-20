@@ -1893,6 +1893,26 @@ focus_tree = {
 				type = arms_factory
 				level = 4
 			}
+			create_corps_commander = {
+				name = "Marie-Pierre Koenig"
+				GFX = GFX_portrait_fra_marie_pierre_koenig
+				skill = 3
+				traits = {  }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Georges Catroux"
+				GFX = GFX_portrait_fra_georges_catroux
+				skill = 3
+				traits = {  }
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
 		}
 	}
 
