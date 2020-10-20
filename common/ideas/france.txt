@@ -1868,7 +1868,7 @@ ideas = {
 			visible = { has_dlc = "La Resistance" }
 			available = {
 			}
-			cost = 150
+			cost = 75 
 			traits = { propaganda_expert }
 
 			do_effect = {
