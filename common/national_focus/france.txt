@@ -154,8 +154,7 @@ focus_tree = {
 		available = {
 			or = {
 				threat > 0.25
-				GER = { has_full_control_of_state = 9 }
-				CZE = { is_puppet_of = GER }
+				GER = { has_full_control_of_state = 69 }
 			}
 		}
 		prerequisite = { focus = FRA_resignation_of_leon_blum }
