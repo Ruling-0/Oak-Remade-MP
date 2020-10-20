@@ -2248,15 +2248,6 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_netherlands.56.a
-		random_unit_leader = {
-			limit = {
-				has_id = 982
-			}
-			add_timed_unit_leader_trait = {
-				trait = wounded
-				days = 90
-			}
-		}
 		hidden_effect = {
 			country_event = { id = mtg_netherlands.44 days = 60 random_days = 60 }
 		}
