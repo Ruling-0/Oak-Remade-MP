@@ -113,8 +113,8 @@ instant_effect = {
 			creator = "IRE" 
 		}
 		requested_factories = 1
-		progress = 0.15
-		efficiency = 25
+		progress = 0.5
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
