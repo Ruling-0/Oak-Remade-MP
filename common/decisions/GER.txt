@@ -2829,17 +2829,6 @@ foreign_politics = {
 					type = annex_everything
 					target = LUX
 				}	
-				28 = {
-					set_building_level = {
-						type = bunker
-						level = 5
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 2
-						}
-					}
-				}
 			}
 			if = {
 				limit = { is_ai = yes }
