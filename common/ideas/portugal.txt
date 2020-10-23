@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-
+	
 		POR_german_trading = {
 			allowed = {
 				always = no
@@ -53,8 +53,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.5
 				stability_weekly = -0.005
-				production_speed_buildings_factor = -0.25	
-				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.20	
 			}
 		}
 
@@ -88,8 +87,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				local_resources_factor = 0.1
-				fuel_gain_factor = 0.5
+				political_power_gain = 0.2
+				weekly_manpower = 1000
+				war_support_weekly = 0.01
 			}
 		}
 
@@ -418,7 +418,7 @@ ideas = {
 				navy_intel_factor = 0.05
 				airforce_intel_factor = 0.05
 				enemy_operative_capture_chance_factor = 0.10
-				intelligence_agency_defense = -0.25
+				intelligence_agency_defense = 0.05
 			}
 		}
 
@@ -434,7 +434,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				trade_opinion_factor = 0.35
+				production_factory_efficiency_gain_factor = 0.1
 				consumer_goods_factor = -0.01
 			}
 		}
@@ -452,6 +453,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.01
+				production_speed_buildings_factor = 0.05
 			}
 		}
 
@@ -469,6 +471,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.1
 				drift_defence_factor = 0.15
 			}
 		}
@@ -486,10 +490,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = 0.002
 				consumer_goods_factor = -0.02
-				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.2
 				drift_defence_factor = 0.15
+				stability_weekly = 0.002
 			}
 		}
 
@@ -506,10 +511,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = 0.005
 				consumer_goods_factor = -0.02
-				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.3
 				drift_defence_factor = 0.15
+				stability_weekly = 0.005
 			}
 		}
 
@@ -526,12 +532,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = 0.005
 				consumer_goods_factor = -0.02
-				production_factory_max_efficiency_factor = 0.05
-				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				political_power_gain = 0.3
 				drift_defence_factor = 0.15
 				war_support_factor = 0.1
+				stability_weekly = 0.005
 			}
 		}
 
@@ -563,7 +570,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.10
 			}
 		}
 
@@ -588,44 +595,6 @@ ideas = {
 				send_volunteer_size = 8
 				send_volunteers_tension = -1
 				lend_lease_tension = -1
-			} 
-		}
-
-		POR_volunteers_in_the_war_republican = {
-			picture = por_volunteers_in_the_war2
-			name = POR_volunteers_in_the_war
-			allowed = {
-				original_tag = POR
-			}
-		
-			allowed_civil_war = {
-				tag = POR
-			}
-			removal_cost = -1
-			
-			modifier = {
-				send_volunteer_divisions_required = -0.75
-				send_volunteer_size = 3
-				send_volunteers_tension = -1
-			} 
-		}
-
-		POR_volunteers_in_the_war_carlist = {
-			picture = por_volunteers_in_the_war3
-			name = POR_volunteers_in_the_war
-			allowed = {
-				original_tag = POR
-			}
-		
-			allowed_civil_war = {
-				tag = POR
-			}
-			removal_cost = -1
-			
-			modifier = {
-				send_volunteer_divisions_required = -0.75
-				send_volunteer_size = 3
-				send_volunteers_tension = -1
 			} 
 		}
 
@@ -761,7 +730,7 @@ ideas = {
 			}
 		}
 	}
-
+	
 		theorist_production = {
 			POR_fernando_dos_santos_costa = {
 	
@@ -772,8 +741,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 	
-				available = {
-					NOT = { has_completed_focus = POR_popular_front }			
+				available = {		
 				}
 				
 				traits = { war_industrialist }
@@ -798,6 +766,8 @@ ideas = {
 				}
 			}
 		}
+
+
 		#POLIICAL
 		political_advisor = {
 
@@ -827,23 +797,6 @@ ideas = {
 				}
 				
 				traits = { communist_revolutionary }
-			}
-			POR_jaime_cortesao_2 = {
-	
-				picture = generic_political_advisor_europe_4
-				
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_allow_free_elections			
-				}
-
-				name = POR_jaime_cortesao
-				
-				traits = { compassionate_gentleman }
 			}
 	
 			POR_francisco_craveiro_lopes_2 = {
@@ -888,44 +841,12 @@ ideas = {
 					factor = 0
 				}
 			}
-	
-			POR_jose_hipolito_raposo_2 = {
-
-				name = POR_jose_hipolito_raposo
-				
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_national_syndicalism				
-				}
-	
-				picture = por_jose_hipolito_raposo 
-				
-				traits = { fascist_demagogue } 
-			
-				do_effect = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-			
-				ai_will_do = {
-					factor = 0
-				}
-			}
 
 			POR_jose_hipolito_raposo = {
 				
 				allowed = {
 					original_tag = POR
 					NOT = { has_dlc = "La Resistance" }
-				}
-				
-				available = {
-					has_completed_focus = POR_national_syndicalism				
 				}
 	
 				picture = generic_fascist_demagogue_western_european_2d 
@@ -951,53 +872,6 @@ ideas = {
 					original_tag = POR
 					has_dlc = "La Resistance"
 				}
-	
-				available = {
-					NOT = { has_completed_focus = POR_popular_front }			
-				}
-				
-				traits = { financial_expert }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-			POR_francisco_da_cunha_leal = {
-	
-				picture = generic_political_advisor_europe_5
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					OR = { 
-						has_completed_focus = POR_limited_self_rule
-						has_completed_focus = POR_allow_free_elections
-					}				
-				}
-				
-				traits = { silent_workhorse }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-			POR_bento_de_jesus_caraca = {
-	
-				picture = generic_political_advisor_europe_4
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_reorganization_of_the_communist_party			
-				}
 				
 				traits = { financial_expert }
 				
@@ -1014,25 +888,25 @@ ideas = {
 					original_tag = POR
 					has_dlc = "La Resistance"
 				}
-	
-				available = {
-					has_completed_focus = POR_national_syndicalism				
-				}
 				
 				traits = { national_integralist }
 				
 				ai_will_do = {
 					factor = 1
 				}
-			}		
+			}
 	
 			POR_alfredo_da_silva = {
 	
-				picture = generic_political_advisor_europe_1
+				picture = generic_political_advisor_europe_2
 			
 				allowed = {
 					original_tag = POR
 					has_dlc = "La Resistance"
+				}
+	
+				available = {
+			
 				}
 				
 				traits = { technocrat }
@@ -1042,25 +916,6 @@ ideas = {
 				}
 			}
 	
-			POR_maria_lamas = {
-	
-				picture = generic_political_advisor_female_europe
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_popular_front				
-				}
-				
-				traits = { liberal_journalist }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
 	
 			POR_joao_francisco_de_barbosa_azevedo = {
 	
@@ -1072,10 +927,7 @@ ideas = {
 				}
 	
 				available = {
-					OR = {
-						has_completed_focus = POR_appease_monarchists
-						has_completed_focus = POR_a_royal_wedding
-					}
+				has_completed_focus = POR_appease_monarchists
 				}
 	
 				traits = { traditionalist_theorist }
@@ -1095,10 +947,7 @@ ideas = {
 				}
 	
 				available = {
-					OR = {
-						has_completed_focus = POR_appease_monarchists
-						has_completed_focus = POR_a_royal_wedding
-					}			
+				has_completed_focus = POR_appease_monarchists			
 				}
 	
 				traits = { fortification_engineer }
@@ -1196,8 +1045,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 	
-				available = {
-					has_completed_focus = POR_allow_free_elections			
+				available = {	
 				}
 
 				name = POR_jose_manuel_sarmento_de_beires
@@ -1296,10 +1144,7 @@ ideas = {
 				
 				available = {
 					NOT = { 
-						OR = { 
-							has_completed_focus = POR_popular_front
-							has_completed_focus = POR_strengthen_the_regime
-						}
+						has_completed_focus = POR_strengthen_the_regime
 					}			
 				}
 				
