@@ -132,7 +132,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = POR_luso_tropicalism
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 
@@ -200,7 +200,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_infrastructure_in_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			796 = {
@@ -240,7 +240,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_develop_north_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			540 = {
@@ -324,7 +324,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_develop_south_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			544 = {
@@ -1132,10 +1132,9 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_instituto_superior_tecnico
-		cost = 5
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			add_ideas = POR_a_new_industry		
+		completion_reward = { 	
 			add_tech_bonus = {
 				name = POR_industrial_modernization
 			    bonus = 1.0
@@ -1158,9 +1157,10 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_industrial_modernization
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
+		   add_ideas = POR_a_new_industry	
 		   if = {
 				limit = { has_full_control_of_state = 112 }
 			    112 = {
@@ -2212,7 +2212,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = POR_army_reorganization
-		cost = 5
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		completion_reward = { 	
 			add_ideas = POR_estado_novo
@@ -2418,7 +2418,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_portuguese_legion
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_popularity = {
@@ -2446,7 +2446,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_strengthen_the_regime
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_political_power = 70
@@ -2474,7 +2474,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_strengthen_the_regime
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_ideas = POR_national_gold_reserves
@@ -2520,7 +2520,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_national_gold_reserves
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = { 
 		    add_political_power = 120
@@ -2549,7 +2549,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_concordat_with_the_holy_see
-		cost = 10
+		cost = 15
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			swap_ideas = {
