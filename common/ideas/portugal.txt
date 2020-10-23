@@ -963,7 +963,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				
-				cost = 100
+				cost = 200
 	
 				available = {
 				    has_completed_focus = POR_revan6			
@@ -972,8 +972,6 @@ ideas = {
 				traits = { POR_secretary_of_rubber }
 				
 				modifier = {
-	      		    production_speed_synthetic_refinery_factor = 0.05
-		 	  	  	production_speed_synthetic_rubber_refinery_factor = 0.05
 				}
 			
 				on_add = {
