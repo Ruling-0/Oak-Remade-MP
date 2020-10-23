@@ -2455,7 +2455,6 @@ focus_tree = {
 				add_idea = POR_estado_novo_3	
 			}
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = POR_joao_de_azevedo_coutinho
 			show_ideas_tooltip = POR_joao_francisco_de_barbosa_azevedo
 		}
 	}
@@ -2775,6 +2774,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
 			custom_effect_tooltip = POR_revan6_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POR_joao_de_azevedo_coutinho
 		}
 	}
 }
