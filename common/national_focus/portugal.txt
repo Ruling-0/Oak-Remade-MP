@@ -2547,8 +2547,180 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
-			ENG = { add_to_tech_sharing_group = commonwealth_research }
 			add_to_tech_sharing_group = commonwealth_research
+		}
+	}
+	
+	focus = {
+		id = POR_revan1
+		available = {	
+            date > 1939.9.1			
+		}
+
+		bypass = {		
+		}
+		prerequisite = { 	 }	
+		icon = GFX_focus_por_salazar
+		x = 16
+		y = 7
+
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+		    custom_effect_tooltip = POR_tip_tt
+			create_country_leader = {
+				name = "Pope Vader"
+				desc = "POLITICS_POPE_VADER_DESC"
+				picture = popevader.dds
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					meme_refinery
+					meme_resource
+				}
+			}
+		}
+	}
+	
+	focus = (
+		id = POR_revan2
+		available = {		
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_revan1 }	
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = 11
+		y = 8
+
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = { 
+			361 = {
+			    add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+			126 = {
+			    add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_revan3
+		available = {		
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_revan1 }	
+		icon = GFX_focus_ger_assassinate_mussolini
+		x = 14
+		y = 8
+		
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = { 
+			64 = {
+			    add_resource = {
+					type = rubber
+					amount = 10
+				}
+			    add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+			2 = {
+			    add_resource = {
+					type = rubber
+					amount = 10
+				}
+			    add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = POR_revan4
+		available = {		
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_revan1 }	
+		icon = GFX_SOV_stalin_constitution
+		x = 18
+		y = 8
+		
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = { 
+			219 = {
+			    add_resource = {
+					type = rubber
+					amount = 15
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_revan5
+		available = {		
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_revan1 }	
+		icon = GFX_focus_jap_showa_restoration
+		x = 21
+		y = 8
+
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = { 
+			282 = {
+			    add_resource = {
+					type = rubber
+					amount = 10
+				}
+				    add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_revan6
+		available = {		
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_revan2 }	
+		prerequisite = { focus = POR_revan3 }	
+		prerequisite = { focus = POR_revan4 }	
+		prerequisite = { focus = POR_revan5 }	
+		icon = GFX_goal_generic_army_motorized
+		x = 16
+		y = 9
+
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = { 
+			custom_effect_tooltip = POR_revan6_tt
 		}
 	}
 }
