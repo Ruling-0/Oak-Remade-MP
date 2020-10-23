@@ -455,7 +455,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
 				consumer_goods_factor = -0.01
 			}
 		}
@@ -550,7 +550,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.02
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
 				political_power_gain = 0.3
 				drift_defence_factor = 0.15
 				war_support_factor = 0.1
@@ -980,13 +980,13 @@ ideas = {
 				    ENG = {
 					    add_ideas = POR_idea_secretary_of_rubber
 					}
-			 	   USA = {
+			 	    USA = {
 					    add_ideas = POR_idea_secretary_of_rubber
 					}
-			 	   FRA = {
+			 	    FRA = {
 					    add_ideas = POR_idea_secretary_of_rubber
 					}
-			  		 RAJ = {    
+			  		RAJ = {    
 						add_ideas = POR_idea_secretary_of_rubber
 					}
 			        CAN = {    
@@ -1032,6 +1032,9 @@ ideas = {
 					    add_ideas = POR_idea_secretary_of_rubber
 				    }
 			        MAN = {    
+					    add_ideas = POR_idea_secretary_of_rubber
+				    }
+			        CZE = {    
 					    add_ideas = POR_idea_secretary_of_rubber
 				    }
 			    }
@@ -1040,13 +1043,13 @@ ideas = {
 				    ENG = {
 					    add_ideas = POR_idea_secretary_of_rubber
 					}
-			 	   USA = {
+			 	    USA = {
 					    add_ideas = POR_idea_secretary_of_rubber
 					}
-			 	   FRA = {
+			 	    FRA = {
 					    add_ideas = POR_idea_secretary_of_rubber
 					}
-			  		 RAJ = {    
+			  		RAJ = {    
 						add_ideas = POR_idea_secretary_of_rubber
 					}
 			        CAN = {    
@@ -1092,6 +1095,9 @@ ideas = {
 					    add_ideas = POR_idea_secretary_of_rubber
 				    }
 			        MAN = {    
+					    add_ideas = POR_idea_secretary_of_rubber
+				    }
+			        CZE = {    
 					    add_ideas = POR_idea_secretary_of_rubber
 				    }
 			    }
