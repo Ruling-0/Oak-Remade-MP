@@ -2310,6 +2310,7 @@ focus_tree = {
 
 		available = {
 			SPR_scw_in_progress = yes
+			is_ai = no
 		}
 
 		bypass = {
@@ -2379,6 +2380,7 @@ focus_tree = {
 
 		available = {
 			JAP = { has_war_with = CHI }
+			is_ai = no
 		}
 
 		bypass = {
@@ -2607,7 +2609,8 @@ focus_tree = {
 	focus = {
 		id = POR_revan1
 		available = {	
-            date > 1939.9.1			
+            date > 1939.9.1	
+            is_ai = no			
 		}
 
 		bypass = {		
