@@ -17,4 +17,6 @@
  POR_revan6_tt:0 "Will allow me to bestow my gift upon everyone."
  POR_secretary_of_rubber:0 "Secretary of Refineries"
  POR_idea_secretary_of_rubber:0 "Revan's Refinery Expertise"
- POR_idea_secretary_of_rubber_desc:0 "We are working with Revan's representative in order to import our refinery building efforts."
+ POR_idea_secretary_of_rubber_desc:0 "We are working with Revan's representative in order to improve our refinery building efforts."
+ POR_send_assist:0 "Help the Japanese"
+ POR_send_assist_desc:0 "Time to help out the Japanese in their war efforts."
