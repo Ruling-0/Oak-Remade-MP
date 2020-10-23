@@ -2324,6 +2324,7 @@ focus_tree = {
 		cost = 2
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+	    	add_ideas = low_economic_mobilisation
 			add_ideas = por_portuguese_legion
 		}
 	}
