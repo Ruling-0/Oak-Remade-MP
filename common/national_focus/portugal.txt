@@ -2511,6 +2511,7 @@ focus_tree = {
 		id = POR_honor_anglo_portuguese_alliance
 		available = {
 			is_ai = no
+			NOT = { 127 = { is_owned_and_controlled_by = ENG } }
 		}
 
 		bypass = {		
