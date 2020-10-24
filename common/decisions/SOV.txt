@@ -6449,11 +6449,11 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_deployed_air_force_size = {
-			    size > 2999
+			    size > 1499
 			    type = fighter
 			}
 			has_deployed_air_force_size = {
-			    size > 999
+			    size > 499
 			    type = cas
 			}
 		}
@@ -6509,11 +6509,11 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_deployed_air_force_size = {
-			    size > 2999
+			    size > 1499
 			    type = fighter
 			}
 			has_deployed_air_force_size = {
-			    size > 499
+			    size > 299
 			    type = tactical_bomber
 			}
 		}

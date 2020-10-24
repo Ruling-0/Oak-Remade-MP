@@ -4342,15 +4342,15 @@ GER_military_buildup = {
 			    type = armor
 			}
 			has_deployed_air_force_size = {
-			    size > 3999
+			    size > 1999
 			    type = fighter
 			}
 			has_deployed_air_force_size = {
-			    size > 1999
+			    size > 999
 			    type = cas
 			}
 			has_deployed_air_force_size = {
-			    size > 749
+			    size > 349
 			    type = tactical_bomber
 			}
 		}

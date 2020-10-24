@@ -33,7 +33,7 @@ equipments = {
         supply_consumption = 0.09
 		
 		fuel_consumption = 0.26
-		build_cost_ic = 36
+		build_cost_ic = 72
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -72,7 +72,7 @@ equipments = {
         supply_consumption = 0.14
 		naval_strike_targetting = 4
 		fuel_consumption = 0.72
-		build_cost_ic = 53
+		build_cost_ic = 106
 		resources = {
 			aluminium = 3
 			tungsten = 3
@@ -117,7 +117,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 43
+		build_cost_ic = 86
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -137,7 +137,7 @@ equipments = {
 		air_attack = 42
 		air_defence = 16 
 		fuel_consumption = 0.26
-		build_cost_ic = 40
+		build_cost_ic = 80
 	}
 	
 	heavy_fighter_equipment_1938 = {
@@ -152,7 +152,7 @@ equipments = {
 		air_agility = 32.5
 		air_attack = 45
 		air_defence = 17 
-		build_cost_ic = 41
+		build_cost_ic = 82
 	}
 	
 	heavy_fighter_equipment_1940 = {
@@ -168,7 +168,7 @@ equipments = {
 		air_attack = 48
 		air_defence = 18 
 		
-		build_cost_ic = 42
+		build_cost_ic = 84
 	}
 	heavy_fighter_equipment_1942 = {
 		year = 1942
@@ -187,7 +187,7 @@ equipments = {
 			rubber = 1
 		}
 		fuel_consumption = 0.32
-		build_cost_ic = 43
+		build_cost_ic = 86
 	}
 	heavy_fighter_equipment_1944 = {
 		year = 1944
@@ -205,7 +205,7 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
-		build_cost_ic = 44
+		build_cost_ic = 88
 	}
 	
 	#tacticals
@@ -226,7 +226,7 @@ equipments = {
 		air_ground_attack = 4
 		naval_strike_attack = 3
 		fuel_consumption = 0.34
-		build_cost_ic = 53
+		build_cost_ic = 106
 	}
 	
 	tac_bomber_equipment_1936 = {
@@ -243,7 +243,7 @@ equipments = {
 		air_bombing = 11
 		air_ground_attack = 5
 		naval_strike_attack = 4
-		build_cost_ic = 54
+		build_cost_ic = 108
 		fuel_consumption = 0.36
 	}
 	# Basic tac_bomber
@@ -261,7 +261,7 @@ equipments = {
 		air_bombing = 12
 		air_ground_attack = 6
 		naval_strike_attack = 5
-		build_cost_ic = 55
+		build_cost_ic = 110
 		fuel_consumption = 0.37
 	}
     tac_bomber_equipment_1938 = {
@@ -278,7 +278,7 @@ equipments = {
 		air_bombing = 13
 		air_ground_attack = 7
 		naval_strike_attack = 6
-		build_cost_ic = 55.5
+		build_cost_ic = 111
 		fuel_consumption = 0.38
 	}
 	# Improved tac_bomber
@@ -296,7 +296,7 @@ equipments = {
 		air_bombing = 14
 		air_ground_attack = 8
 		naval_strike_attack = 7
-		build_cost_ic = 56
+		build_cost_ic = 112
 		fuel_consumption = 0.39
 	}
     tac_bomber_equipment_1940 = {
@@ -313,7 +313,7 @@ equipments = {
 		air_bombing = 15
 		air_ground_attack = 9
 		naval_strike_attack = 8
-		build_cost_ic = 56.5	
+		build_cost_ic = 113	
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -336,7 +336,7 @@ equipments = {
 		air_bombing = 16
 		air_ground_attack = 10
 		naval_strike_attack = 9
-		build_cost_ic = 57
+		build_cost_ic = 114
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -358,7 +358,7 @@ equipments = {
 		air_bombing = 17
 		air_ground_attack = 11
 		naval_strike_attack = 10
-		build_cost_ic = 57.5
+		build_cost_ic = 115
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -379,7 +379,7 @@ equipments = {
 		air_bombing = 18
 		air_ground_attack = 12
 		naval_strike_attack = 11
-		build_cost_ic = 58
+		build_cost_ic = 116
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -400,7 +400,7 @@ equipments = {
 		air_bombing = 20
 		air_ground_attack = 13
 		naval_strike_attack = 12
-		build_cost_ic = 59
+		build_cost_ic = 118
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -422,7 +422,7 @@ equipments = {
 		air_bombing = 20
 		
 		
-		build_cost_ic = 60
+		build_cost_ic = 120
 		fuel_consumption = 0.5
 		
 		air_ground_attack = 14
@@ -446,7 +446,7 @@ equipments = {
 		air_bombing = 24
 		
 		
-		build_cost_ic = 62
+		build_cost_ic = 122
 		
 		
 		air_ground_attack = 16
@@ -503,7 +503,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 13
 		
-		build_cost_ic = 20
+		build_cost_ic = 40
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
 	}
@@ -521,7 +521,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 15
 
-		build_cost_ic = 20
+		build_cost_ic = 40
 		resources = {		
 			aluminium = 3
 			rubber = 1
