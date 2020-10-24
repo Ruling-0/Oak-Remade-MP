@@ -2217,6 +2217,7 @@ focus_tree = {
 		completion_reward = { 	
 			add_ideas = POR_estado_novo
 			add_political_power = 100
+			add_command_power = 100
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = POR_julio_botelho_moniz
 			custom_effect_tooltip = remove_political_advisor

@@ -34,6 +34,10 @@ ideas = {
 				tag = GER
 				trade_cost_for_target_factor = -0.66
 			}
+			
+			modifier = {
+		        war_support_weekly = 0.001
+			}
 		}
 
 		POR_unreliable_army = {
