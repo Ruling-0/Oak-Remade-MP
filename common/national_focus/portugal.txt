@@ -2240,7 +2240,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_estado_novo
-		cost = 3
+		cost = 2
 		completion_reward = { 	
 			SPA = {
 				add_opinion_modifier = {
@@ -2327,6 +2327,13 @@ focus_tree = {
 		relative_position_id = POR_support_the_spanish_nationalists
 		cost = 3
 		completion_reward = { 	
+			POR = {
+				diplomatic_relation = {
+					country = SPA
+					relation = send_attache
+				    active = yes
+				}
+			}
 			SPA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = POR }
@@ -2345,7 +2352,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_support_the_spanish_nationalists
-		cost = 2
+		cost = 3
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 	    	add_ideas = low_economic_mobilisation
@@ -2396,6 +2403,13 @@ focus_tree = {
 		relative_position_id = POR_portuguese_legion
 		cost = 3
 		completion_reward = { 	
+			POR = {
+				diplomatic_relation = {
+					country = JAP
+					relation = send_attache
+				    active = yes
+				}
+			}
 			JAP = {
 				add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = POR }
