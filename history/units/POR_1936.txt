@@ -228,22 +228,22 @@ air_wings = {
 		start_experience_factor = 0.25
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 60
+			amount = 40
 		}
 		start_experience_factor = 0.25
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 60
+			amount = 40
 		}
 		start_experience_factor = 0.25
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 60
+			amount = 40
 		}
 		start_experience_factor = 0.25
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 60
+			amount = 40
 		}
 		start_experience_factor = 0.25
 		cv_nav_bomber_equipment_1936 = {
