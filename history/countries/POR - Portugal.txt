@@ -13,6 +13,7 @@ add_ideas = {
 	POR_german_trading
 	POR_volunteers_in_the_war_nationalist
 	limited_conscription
+	POR_rubber_meme
 }
 set_technology = {
 	################# infantry ###############

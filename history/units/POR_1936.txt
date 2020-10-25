@@ -226,6 +226,46 @@ air_wings = {
 			amount = 100
 		}
 		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 60
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 60
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 60
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 60
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
 	}
 }
 ### Production ###
@@ -288,6 +328,15 @@ instant_effect = {
     add_equipment_production = {
 		equipment = {
 			type = anti_air_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+    add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
 			creator = "POR" 
 		}
 		requested_factories = 1

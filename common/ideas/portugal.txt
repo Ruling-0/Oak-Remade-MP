@@ -19,7 +19,175 @@ ideas = {
 			picture = FRA_motorized_focus
 			
 			removal_cost = -1			
+		}	
+		
+		POR_help = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = 0.10
+				army_defence_factor = 0.10
+				army_attack_factor = 0.10	
+			}
+
+			picture = por_unstable_republic
+			
+			removal_cost = -1			
+		}	
+		POR_help_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = 0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1	
+			}
+
+			picture = por_unstable_republic
+			
+			removal_cost = -1			
+		}
+
+		POR_aid = {
+			picture = por_volunteers_in_the_war
+			allowed = {
+				original_tag = POR
+			}
+		
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			rule = {
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				send_volunteer_size = 12
+				air_volunteer_cap = 1000
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+			} 
 		}		
+
+		POR_rubber_meme = {
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				country_resource_rubber = 5
+				fuel_gain_from_states = 42.0	
+			}
+		}
+
+		POR_rubber_meme_2 = {
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				country_resource_rubber = 10
+				fuel_gain_from_states = 84.0
+				
+			}
+		}	
+		POR_rubber_meme_3 = {
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				country_resource_rubber = 15
+				fuel_gain_from_states = 125.0
+			}
+		}	
+		POR_rubber_meme_4 = {
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+			   always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				country_resource_rubber = 20
+				fuel_gain_from_states = 167.0
+			}
+		}	
+		POR_rubber_meme_5 = {
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				country_resource_rubber = 25
+				fuel_gain_from_states = 209.0
+			}
+		}			
 	
 		POR_german_trading = {
 			allowed = {
@@ -38,6 +206,31 @@ ideas = {
 			modifier = {
 		        war_support_weekly = 0.001
 			}
+		}
+		
+		POR_volunteers_in_the_war_nationalist = {
+			picture = por_volunteers_in_the_war
+			name = POR_volunteers_in_the_war
+			allowed = {
+				original_tag = POR
+			}
+		
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			rule = {
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				send_volunteer_size = 8
+				air_volunteer_cap = 750
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+			} 
 		}
 
 		POR_unreliable_army = {
@@ -592,31 +785,6 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
 			}
-		}
-
-		POR_volunteers_in_the_war_nationalist = {
-			picture = por_volunteers_in_the_war
-			name = POR_volunteers_in_the_war
-			allowed = {
-				original_tag = POR
-			}
-		
-			allowed_civil_war = {
-				tag = POR
-			}
-			removal_cost = -1
-			
-			rule = {
-				can_send_volunteers = yes
-			}
-			
-			modifier = {
-				send_volunteer_size = 8
-				air_volunteer_cap = 750
-				lend_lease_tension = -1
-				send_volunteers_tension = -1
-				send_volunteer_divisions_required = -1
-			} 
 		}
 
 		POR_iberian_workers_united = {
