@@ -2502,6 +2502,9 @@ focus_tree = {
 		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
+			set_cosmetic_tag = KOP_kingdom_portugal
+			set_country_flag = KOP_kingdom_of_portugal_flag
+			
 			add_political_power = 70
 			swap_ideas = {
 				remove_idea = POR_estado_novo_2
