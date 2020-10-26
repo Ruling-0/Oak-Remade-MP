@@ -2217,7 +2217,6 @@ focus_tree = {
 		completion_reward = { 	
 			add_ideas = POR_estado_novo
 			add_political_power = 100
-			add_command_power = 100
 			
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = POR_julio_botelho_moniz
@@ -2327,13 +2326,7 @@ focus_tree = {
 		relative_position_id = POR_support_the_spanish_nationalists
 		cost = 3
 		completion_reward = { 	
-			POR = {
-				diplomatic_relation = {
-					country = SPA
-					relation = send_attache
-				    active = yes
-				}
-			}
+			add_political_power = 75
 			SPA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
@@ -2389,7 +2382,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			OR = {
+				JAP = { has_war_with = CHI }
+				date > 1940.1.1	
+			}
 			is_ai = no
 		}
 
@@ -2439,13 +2435,7 @@ focus_tree = {
 			    	add_idea = POR_rubber_meme_5
 			    }
 			}
-			POR = {
-				diplomatic_relation = {
-					country = JAP
-					relation = send_attache
-				    active = yes
-				}
-			}
+			add_political_power = 75
 			JAP = {
 				add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }

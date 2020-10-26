@@ -1589,6 +1589,7 @@ ideas = {
 		high_command = {
 		
 			POR_rolao_preto = {
+			    ledger = army
 				
 				picture = POR_rolao_preto
 				
@@ -1605,12 +1606,15 @@ ideas = {
 				
 				traits = { army_chief_morale_2 }
 				
+				ledger = army
+				
 				ai_will_do = {
 					factor = 1
 				}
 			}
 			
 			POR_julio_botelho_moniz = {
+			    ledger = army
 				
 				picture = generic_army_europe_5
 				
@@ -1624,6 +1628,8 @@ ideas = {
 				}
 				
 				traits = { army_commando_2 }
+				
+				ledger = army
 				
 				ai_will_do = {
 					factor = 1
@@ -1705,6 +1711,7 @@ ideas = {
 			}
 
 			POR_humberto_delgado = {
+			    ledger = air
 				
 				picture = generic_air_europe_1
 				
@@ -1712,9 +1719,9 @@ ideas = {
 					original_tag = POR
 				}
 				
-	
-				
 				traits = { air_tactical_bombing_2 }
+				
+				ledger = air
 				
 				ai_will_do = {
 					factor = 1
