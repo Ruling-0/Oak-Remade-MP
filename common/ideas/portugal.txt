@@ -1448,28 +1448,6 @@ ideas = {
 	
 		army_chief = {
 
-			POR_rolao_preto = {
-				
-				picture = POR_rolao_preto
-				
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-				
-				available = {
-					NOT = { 
-						has_completed_focus = POR_strengthen_the_regime
-					}			
-				}
-				
-				traits = { army_chief_morale_2 }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
 			POR_domingos_oliveira = {
 				
 				picture = generic_army_europe_3
@@ -1479,7 +1457,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				
-				traits = { army_chief_old_guard }
+				traits = { army_chief_defensive_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -1502,27 +1480,7 @@ ideas = {
 				}
 			}
 	
-			POR_julio_botelho_moniz = {
-				
-				picture = generic_army_europe_5
-				
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_estado_novo					
-				}
-				
-				traits = { army_chief_reform_2 }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-
-						POR_rolao_pretea = {
+			POR_rolao_pretea = {
 				
 				picture = generic_army_europe_1
 				
@@ -1583,24 +1541,7 @@ ideas = {
 				
 	
 				
-				traits = { air_chief_safety_2 }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-			POR_humberto_delgado = {
-				
-				picture = generic_air_europe_1
-				
-				allowed = {
-					original_tag = POR
-				}
-				
-	
-				
-				traits = { air_chief_ground_support_2 }
+				traits = { air_air_superiority_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -1621,7 +1562,7 @@ ideas = {
 				
 	
 				
-				traits = { navy_chief_reform_2 }
+				traits = { navy_fleet_logistics_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -1636,7 +1577,7 @@ ideas = {
 					original_tag = POR
 				}
 	
-				traits = { navy_chief_maneuver_2 }
+				traits = { navy_chief_decisive_battle_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -1646,38 +1587,43 @@ ideas = {
 	
 	
 		high_command = {
-	
-			POR_manuel_quintao_meireles = {
-				ledger = navy
 		
-				picture = POR_manuel_quintao_meireles
+			POR_rolao_preto = {
 				
-				allowed = {
-					original_tag = POR
-				}
-				
-				traits = { navy_fleet_logistics_2 }
-
-				ledger = navy
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-			POR_antonio_oscar_carmona = {
-				ledger = army
-		
-				picture = generic_army_europe_6
+				picture = POR_rolao_preto
 				
 				allowed = {
 					original_tag = POR
 					has_dlc = "La Resistance"
 				}
 				
-				traits = { army_logistics_2 }
-
-				ledger = army
+				available = {
+					NOT = { 
+						has_completed_focus = POR_strengthen_the_regime
+					}			
+				}
+				
+				traits = { army_chief_morale_2 }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			
+			POR_julio_botelho_moniz = {
+				
+				picture = generic_army_europe_5
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {
+					has_completed_focus = POR_estado_novo					
+				}
+				
+				traits = { army_commando_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -1702,7 +1648,7 @@ ideas = {
 					factor = 1
 				}
 			}
-	
+			
 			POR_jose_filipe_de_barros_rodrigues = {
 				ledger = army
 	
@@ -1715,6 +1661,60 @@ ideas = {
 				traits = { army_armored_2 }
 
 				ledger = army
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		
+				POR_antonio_oscar_carmona = {
+				ledger = army
+		
+				picture = generic_army_europe_6
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+				traits = { army_cavalry_2 }
+
+				ledger = army
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			
+			POR_manuel_quintao_meireles = {
+				ledger = navy
+		
+				picture = POR_manuel_quintao_meireles
+				
+				allowed = {
+					original_tag = POR
+				}
+				
+				traits = { navy_screen_2 }
+
+				ledger = navy
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			POR_humberto_delgado = {
+				
+				picture = generic_air_europe_1
+				
+				allowed = {
+					original_tag = POR
+				}
+				
+	
+				
+				traits = { air_tactical_bombing_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -2045,4 +2045,4 @@ ideas = {
 			}
 		}
     }
-	}
+}
