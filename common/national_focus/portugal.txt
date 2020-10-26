@@ -2389,7 +2389,7 @@ focus_tree = {
 		}
 
 		available = {
-			JAP = { has_war_with = CHI }
+			has_war = yes
 			is_ai = no
 		}
 
@@ -2419,6 +2419,24 @@ focus_tree = {
 			    swap_ideas = {
 			    	remove_idea = POR_rubber_meme_2
 			    	add_idea = POR_rubber_meme_3
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_3
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_3
+			    	add_idea = POR_rubber_meme_4
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_4
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_4
+			    	add_idea = POR_rubber_meme_5
 			    }
 			}
 			POR = {
@@ -2663,7 +2681,6 @@ focus_tree = {
 		id = POR_revan1
 		available = {	
             date > 1939.9.1	
-			has_idea = POR_rubber_meme_3
             is_ai = no			
 		}
 
@@ -2677,10 +2694,42 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-		    swap_ideas = {
-			  	remove_idea = POR_rubber_meme_3
-			   	add_idea = POR_rubber_meme_4
-		    }
+			if = {
+				limit = {
+					has_idea = POR_rubber_meme  
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme
+			    	add_idea = POR_rubber_meme_2
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_2 
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_2
+			    	add_idea = POR_rubber_meme_3
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_3
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_3
+			    	add_idea = POR_rubber_meme_4
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_4
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_4
+			    	add_idea = POR_rubber_meme_5
+			    }
+			}
 		    custom_effect_tooltip = POR_tip_tt
 			create_country_leader = {
 				name = "Pope Vader"
@@ -2839,10 +2888,42 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
-		    swap_ideas = {
-			  	remove_idea = POR_rubber_meme_4
-			   	add_idea = POR_rubber_meme_5
-		    }
+			if = {
+				limit = {
+					has_idea = POR_rubber_meme  
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme
+			    	add_idea = POR_rubber_meme_2
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_2 
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_2
+			    	add_idea = POR_rubber_meme_3
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_3
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_3
+			    	add_idea = POR_rubber_meme_4
+			    }
+			}
+			else_if = {
+				limit = {
+					has_idea = POR_rubber_meme_4
+				}
+			    swap_ideas = {
+			    	remove_idea = POR_rubber_meme_4
+			    	add_idea = POR_rubber_meme_5
+			    }
+			}
 			custom_effect_tooltip = POR_revan6_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POR_joao_de_azevedo_coutinho
