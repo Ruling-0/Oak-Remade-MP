@@ -2218,6 +2218,19 @@ focus_tree = {
 			add_ideas = POR_estado_novo
 			add_political_power = 100
 			
+				hidden_effect = {
+					create_intelligence_agency = {
+						name = "Revan's Meme Network"
+						icon = "GFX_intelligence_agency_logo_por"
+					}
+					upgrade_intelligence_agency = upgrade_economy_civilian
+					upgrade_intelligence_agency = upgrade_army_department
+					upgrade_intelligence_agency = upgrade_naval_department
+					upgrade_intelligence_agency = upgrade_airforce_department
+					upgrade_intelligence_agency = upgrade_passive_defense
+					upgrade_intelligence_agency = upgrade_form_department
+				}
+			
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = POR_julio_botelho_moniz
 			

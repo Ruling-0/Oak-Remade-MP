@@ -429,10 +429,10 @@ ideas = {
 			
 			modifier = {
 				operative_slot = 1
-				civilian_intel_factor = 0.1
-				army_intel_factor = 0.1
-				navy_intel_factor = 0.1
-				airforce_intel_factor = 0.1
+				civilian_intel_factor = 0.15
+				army_intel_factor = 0.15
+				navy_intel_factor = 0.15
+				airforce_intel_factor = 0.15
 				agency_upgrade_time = -0.20
 				enemy_operative_capture_chance_factor = 0.20
 				intelligence_agency_defense = 1.00
