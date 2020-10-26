@@ -428,14 +428,16 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				operative_slot = 1
-				civilian_intel_factor = 0.15
-				army_intel_factor = 0.15
-				navy_intel_factor = 0.15
-				airforce_intel_factor = 0.15
+				operative_slot = 3
+				civilian_intel_factor = 0.75
+				army_intel_factor = 0.75
+				navy_intel_factor = 0.75
+				airforce_intel_factor = 0.75
 				agency_upgrade_time = -0.20
 				enemy_operative_capture_chance_factor = 0.20
 				intelligence_agency_defense = 1.00
+				crypto_strength = 1.00
+				intel_network_gain = 0.2
 			}
 		}
 
