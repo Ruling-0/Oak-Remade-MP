@@ -237,46 +237,70 @@ if = {
 	
 	
 	create_field_marshal = {
-		name = "José Vicente de Freitas"
+		name = "Mr Tank"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-		traits = { }
+		traits = { offensive_doctrine inspirational_leader brilliant_strategist aggressive_assaulter organizer logistics_wizards winter_specialist }
+		skill = 4
+	
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 3
+	}
+	
+	create_field_marshal = {
+		name = "Mr Infantry"
+		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+		traits = { offensive_doctrine inspirational_leader inflexible_strategist unyielding_defender organizer logistics_wizards winter_specialist }
 		skill = 4
 	
 		attack_skill = 3
-		defense_skill = 3
+		defense_skill = 4
 		planning_skill = 3
-		logistics_skill = 3
+		logistics_skill = 4
 	}
 	
 	create_corps_commander = {
 		name = "Luís Augusto Ferreira Martins"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-		traits = { panzer_leader }
+		traits = { skilled_staffer panzer_leader panzer_expert trickster expert_improviser trait_engineer }
 		skill = 4
 	
-		attack_skill = 3
-		defense_skill = 3
-		planning_skill = 3
-		logistics_skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = {
+		name = "José Vicente de Freitas"
+		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+		traits = { skilled_staffer motorized_leader motorized_expert trickster expert_improviser desert_fox }
+		skill = 4
+	
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
 	}
 	
 	create_corps_commander = {
 		name = "Raul Augusto Esteves"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-		traits = { infantry_leader naval_invader }
+		traits = { skilled_staffer infantry_leader infantry_expert desert_fox trait_mountaineer adaptable }
 		skill = 4
 	
-		attack_skill = 3
-		defense_skill = 3
-		planning_skill = 3
-		logistics_skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
 	}
 	
 	create_navy_leader = {
 		name = "Darth Revan"
 		portrait_path = "gfx/leaders/POR/Revan.dds"
-		traits = { gentlemanly blockade_runner fleet_protector air_controller blue_water_expert }
-		skill = 6
+		traits = { gentlemanly blockade_runner fleet_protector destroyer_leader ironside safety_first crisis_magician blue_water_expert }
+		skill = 5
 		attack_skill = 5
 		defense_skill = 5
 		maneuvering_skill = 5
@@ -286,8 +310,8 @@ if = {
 	create_navy_leader = {
 		name = "José Mendes Cabeçadas"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-		traits = { gentlemanly seawolf blockade_runner inshore_fighter }
-		skill = 4
+		traits = { gentlemanly seawolf silent_hunter loading_drill_master superior_tactician inshore_fighter }
+		skill = 3
 		attack_skill = 3
 		defense_skill = 3
 		maneuvering_skill = 3
