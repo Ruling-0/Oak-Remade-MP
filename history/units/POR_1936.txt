@@ -216,12 +216,12 @@ air_wings = {
 			amount = 100
 		}
         start_experience_factor = 0.25
-		tac_bomber_equipment_1934 = {
+		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
 		start_experience_factor = 0.25
-		tac_bomber_equipment_1934 = {
+		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
@@ -353,19 +353,9 @@ instant_effect = {
 		efficiency = 100
 	}
 	
-	add_equipment_production = { 
-		equipment = {
-			type = light_tank_equipment_1936
-			creator = "POR" 
-		}
-		requested_factories = 1
-		progress = 0.8
-		efficiency = 100
-	}
-
 	add_equipment_production = {
 		equipment = {
-			type = tac_bomber_equipment_1934
+			type = armored_cars_equipment_2
 			creator = "POR" 
 		}
 		requested_factories = 1
@@ -375,11 +365,51 @@ instant_effect = {
 	
 	add_equipment_production = { 
 		equipment = {
+			type = light_tank_equipment_1936
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 100
+	}
+	
+	add_equipment_production = { 
+		equipment = {
+			type = medium_tank_equipment_1937
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 100
+	}
+
+	add_equipment_production = { 
+		equipment = {
 			type = fighter_equipment_1936
 			creator = "POR" 
 		}
 		requested_factories = 1
 		progress = 0.8
+		efficiency = 100
+	}
+	
+	add_equipment_production = { 
+		equipment = {
+			type = CAS_equipment_1937
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1937
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.4
 		efficiency = 100
 	}
 }
