@@ -199,6 +199,7 @@ if = {
 		ideology = despotism
 		traits = {
 			conservative_nationalist_lar
+			meme_resource
 			head_of_intelligence
 		}
 	}
