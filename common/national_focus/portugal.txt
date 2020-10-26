@@ -371,7 +371,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = POR_colonial_assimilation_policy
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {			
 			if = {
@@ -458,7 +458,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_continue_the_public_works
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_research_slot = 1
@@ -583,7 +583,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = POR_infrastructure_in_angola
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			if = {
@@ -679,7 +679,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_roads_bridges_and_dams
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 	
 			add_ideas = POR_hydroelectric_power
@@ -1900,7 +1900,6 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
-			army_experience	= 20
 			add_tech_bonus = {
 				name = POR_metropolitan_army
 			    bonus = 1.0
@@ -2168,7 +2167,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = { 
-			army_experience = 15
 			add_tech_bonus = {
 				name = POR_field_maneuvers
 			    bonus = 1.0
@@ -2291,8 +2289,6 @@ focus_tree = {
 			    uses = 1
 			    category = cat_light_armor
 			}
-			army_experience = 10
-			air_experience = 20
 
 			hidden_effect = {
 				add_ai_strategy = {
@@ -2334,12 +2330,15 @@ focus_tree = {
 		cost = 3
 		completion_reward = { 	
 			add_political_power = 75
+			army_experience = 20
+			air_experience = 20
 			SPA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
+				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
 			}
 		}
 	}
@@ -2442,6 +2441,8 @@ focus_tree = {
 			    	add_idea = POR_rubber_meme_5
 			    }
 			}
+			army_experience = 20
+			air_experience = 20
 			add_political_power = 75
 			JAP = {
 				add_offsite_building = { type = arms_factory level = 2 }

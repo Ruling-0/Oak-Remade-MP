@@ -1029,7 +1029,7 @@ ideas = {
 					has_completed_focus = POR_concordat_with_the_holy_see				
 				}
 	
-				traits = { appeaser }
+				traits = { smooth_talking_charmer }
 				
 				ai_will_do = {
 					factor = 1
@@ -1342,10 +1342,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				
-				available = {
-					NOT = { 
-						has_completed_focus = POR_strengthen_the_regime
-					}			
+				available = {	
 				}
 				
 				traits = { army_chief_morale_2 }
