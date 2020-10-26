@@ -2276,24 +2276,18 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_support_the_spanish_nationalists
-		cost = 3
+		cost = 2
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_tech_bonus = {
 				name = POR_observation_mission
 			    bonus = 1.0
 			    uses = 1
-			    category = air_doctrine
-			}
-			add_tech_bonus = {
-				name = POR_observation_mission
-			    bonus = 0.5
-			    uses = 1
 			    category = light_air
 			}
 			add_tech_bonus = {
 				name = POR_observation_mission
-			    bonus = 0.5
+			    bonus = 1.0
 			    uses = 1
 			    category = cat_light_armor
 			}
@@ -2382,7 +2376,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_portuguese_legion
-		cost = 3
+		cost = 2
 		completion_reward = { 
 			add_ideas = POR_the_capital_of_espionage
 		}
