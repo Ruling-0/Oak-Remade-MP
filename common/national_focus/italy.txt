@@ -1786,21 +1786,21 @@ focus_tree = {
 		cost = 7.145
 		available = { 
 			has_deployed_air_force_size = {
-			    size > 1999
+			    size > 999
 			    type = fighter
 			}
 			OR = { 
 				has_deployed_air_force_size = {
-					size > 999
+					size > 499
 					type = cas
 				}
 				has_deployed_air_force_size = {
-					size > 699
+					size > 299
 					type = tactical_bomber
 				}
 			}
 			has_deployed_air_force_size = {
-			    size > 599
+			    size > 299
 			    type = naval_bomber
 			}  
 		}
