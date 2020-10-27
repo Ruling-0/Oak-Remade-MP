@@ -352,19 +352,13 @@ focus_tree = {
 		y = 4
 		relative_position_id = PRC_agrarian_socialism
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
 		}
 
 		available = {
-			strength_ratio = {
-				tag = CHI
-				ratio > 0.5
-			}
-			num_of_factories > 49
-			NOT = { has_idea = PRC_the_long_march_1 }
 		}
 
 		bypass = {
@@ -395,7 +389,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = PRC_agrarian_socialism
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1389,7 +1383,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 	}
 
