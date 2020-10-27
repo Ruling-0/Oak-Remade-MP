@@ -427,10 +427,6 @@ ideas = {
 			}
 			
 			available = {
-				has_idea = german_advisors
-				NOT = {
-					has_war_with = GER
-				}
 			}
 			
 			cost = 150
