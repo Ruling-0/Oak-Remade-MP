@@ -1751,10 +1751,6 @@ ideas = {
 				    soft_attack = 0.1
 					armor_value = 0.05
 				}
-				heavy_tank_aa_equipment = {
-					air_attack = 0.1
-					armor_value = 0.05
-				}
 			}
 		}
 		tanks3 = {
