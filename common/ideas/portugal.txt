@@ -204,8 +204,8 @@ ideas = {
 			}
 			
 			modifier = {
-				send_volunteer_size = 8
-				air_volunteer_cap = 750
+				send_volunteer_size = 10
+				air_volunteer_cap = 1000
 				lend_lease_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
@@ -230,7 +230,7 @@ ideas = {
 			
 			modifier = {
 				send_volunteer_size = 24
-				air_volunteer_cap = 1000
+				air_volunteer_cap = 2500
 				lend_lease_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
@@ -378,7 +378,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = 0.05
+				conscription = 0.01
 			}
 		}
 		
@@ -701,6 +701,45 @@ ideas = {
 					factor = 1
 				}
 			}
+			POR_joao_francisco_de_barbosa_azevedo = {
+	
+				picture = generic_political_advisor_europe_3
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {
+				has_completed_focus = POR_revan1
+				}
+	
+				traits = { armaments_organizer }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			
+			POR_manuel_goncalves_cerejeira = {
+	
+				picture = generic_political_advisor_europe_6
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {
+					has_completed_focus = POR_revan11				
+				}
+	
+				traits = { GERminister_of_armament_and_war_production }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
 		}
 
 
@@ -734,6 +773,34 @@ ideas = {
 				
 				traits = { communist_revolutionary }
 			}
+			
+			POR_jose_hipolito_raposo_2 = {
+
+				name = POR_jose_hipolito_raposo
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {
+					NOT = { has_completed_focus = POR_estado_novo }		
+				}
+	
+				picture = por_jose_hipolito_raposo 
+				
+				traits = { fascist_demagogue } 
+			
+				do_effect = {
+					NOT = {
+						has_government = fascism
+					}
+				}
+			
+				ai_will_do = {
+					factor = 0
+				}
+			}
 	
 			POR_francisco_craveiro_lopes_2 = {
 	
@@ -761,6 +828,10 @@ ideas = {
 				}
 				
 				picture = por_augusto_de_vasconcelos 
+				
+				available = {
+					NOT = { has_completed_focus = POR_estado_novo }		
+				}
 				
 				traits = { democratic_reformer } 
 			
@@ -824,7 +895,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				
-				traits = { national_integralist }
+				traits = { smooth_talking_charmer }
 				
 				ai_will_do = {
 					factor = 1
@@ -845,27 +916,6 @@ ideas = {
 				}
 				
 				traits = { technocrat }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-	
-			POR_joao_francisco_de_barbosa_azevedo = {
-	
-				picture = generic_political_advisor_europe_3
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-				has_completed_focus = POR_appease_monarchists
-				}
-	
-				traits = { traditionalist_theorist }
 				
 				ai_will_do = {
 					factor = 1
@@ -1018,26 +1068,6 @@ ideas = {
 				    }
 			    }
 		    }	
-	
-			POR_manuel_goncalves_cerejeira = {
-	
-				picture = generic_political_advisor_europe_6
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_concordat_with_the_holy_see				
-				}
-	
-				traits = { smooth_talking_charmer }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
 			
 			POR_augusto_de_vasconcelos = {
 	
@@ -1074,6 +1104,7 @@ ideas = {
 				
 				traits = { captain_of_industry }
 			}
+			
 		}
 	
 		theorist = {
@@ -1367,8 +1398,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 	
-				available = {
-					has_completed_focus = POR_estado_novo					
+				available = {				
 				}
 				
 				traits = { army_commando_2 }

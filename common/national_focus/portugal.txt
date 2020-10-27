@@ -1027,6 +1027,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_tech_bonus = {
+				name = POR_observation_mission
+			    bonus = 1.0
+			    uses = 3
+			    category = air_doctrine
+			}
+			add_tech_bonus = {
 				name = POR_light_aircraft_focus
 			    bonus = 1.0
 			    uses = 1
@@ -1126,7 +1132,6 @@ focus_tree = {
 		bypass = {		
 		}
 		prerequisite = { focus = POR_instituto_superior_tecnico }
-		mutually_exclusive = { focus = POR_food_industries}	
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 3
 		y = 1
@@ -1216,8 +1221,7 @@ focus_tree = {
 
 		bypass = {		
 		}
-		prerequisite = { focus = POR_continue_the_public_works }
-		mutually_exclusive = { focus = POR_industrial_modernization }	
+		prerequisite = { focus = POR_continue_the_public_works }	
 		icon = GFX_goal_generic_consumer_goods
 		x = 5
 		y = 2
@@ -1944,7 +1948,6 @@ focus_tree = {
 		bypass = {		
 		}
 		prerequisite = { focus = POR_standardization }
-		mutually_exclusive = { focus = POR_rebuild_the_lines_of_torres_vedras }
 		icon = GFX_focus_generic_provoke_border_clashes
 		x = -1		
 		y = 1
@@ -2034,7 +2037,6 @@ focus_tree = {
 		bypass = {		
 		}
 		prerequisite = { focus = POR_standardization }
-		mutually_exclusive = { focus = POR_defend_the_borders }
 		icon = GFX_goal_generic_defence
 		x = 1		
 		y = 1
@@ -2229,11 +2231,10 @@ focus_tree = {
 					upgrade_intelligence_agency = upgrade_form_department
 				}
 			
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = POR_julio_botelho_moniz
-			
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = POR_alvaro_cunhal
+			show_ideas_tooltip = POR_jose_hipolito_raposo_2
+			show_ideas_tooltip = POR_augusto_de_vasconcelos_2
 		}
 	}
 
@@ -2251,7 +2252,8 @@ focus_tree = {
 
 		relative_position_id = POR_estado_novo
 		cost = 2
-		completion_reward = { 	
+		completion_reward = { 
+            add_political_power = 120		
 			SPA = {
 				add_opinion_modifier = {
 				    target = POR
@@ -2354,7 +2356,7 @@ focus_tree = {
 		cost = 3
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-	    	add_ideas = low_economic_mobilisation
+	    	add_ideas = partial_economic_mobilisation
 			add_ideas = por_portuguese_legion
 		}
 	}
@@ -2510,8 +2512,6 @@ focus_tree = {
 				remove_idea = POR_estado_novo_2
 				add_idea = POR_estado_novo_3	
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = POR_joao_francisco_de_barbosa_azevedo
 		}
 	}
 	
@@ -2578,13 +2578,10 @@ focus_tree = {
 		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = { 
-		    add_political_power = 120
 			swap_ideas = {
 				remove_idea = POR_estado_novo_3
 				add_idea = POR_estado_novo_4	
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = POR_manuel_goncalves_cerejeira
 		}
 	}
 	
@@ -2762,6 +2759,9 @@ focus_tree = {
 					head_of_intelligence
 				}
 			}
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POR_joao_francisco_de_barbosa_azevedo
 		}
 	}
 	
@@ -2944,6 +2944,7 @@ focus_tree = {
 			    	add_idea = POR_rubber_meme_5
 			    }
 			}
+            add_ideas = war_economy
 			custom_effect_tooltip = POR_revan6_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POR_joao_de_azevedo_coutinho
@@ -3099,6 +3100,10 @@ focus_tree = {
 			  	remove_idea = POR_volunteers_in_the_war_nationalist
 			   	add_idea = POR_aid
 		    }
+			add_ideas = tot_economic_mobilisation
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POR_manuel_goncalves_cerejeira
 		}
 	}
 }

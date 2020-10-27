@@ -25,7 +25,9 @@
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 }  
         anti_air_company = { x = 0 y = 2 }	
-        signal_company = { x = 1 y = 2 }		
+        signal_company = { x = 1 y = 2 }
+        maintenance_company = { x = 0 y = 3 }		
+        anti_tank = { x = 1 y = 3 }			
 	}
 }
 
@@ -59,7 +61,80 @@ division_template = {
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 } 
         anti_air_company = { x = 0 y = 2 }	
-        signal_company = { x = 1 y = 2 }			
+        signal_company = { x = 1 y = 2 }
+        maintenance_company = { x = 0 y = 3 }		
+        anti_tank = { x = 1 y = 3 }			
+	}
+}
+
+division_template = {
+	name = "Divisão de Marines"		# Infantry Division 
+	division_names_group = POR_INF_01
+	# Note: each regiment could also mobilize a 3rd battalion if called up
+	regiments = {
+		marine = { x = 0 y = 0 }	
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }	
+		marine = { x = 0 y = 3 }	
+
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+
+		marine = { x = 2 y = 0 }	
+		marine = { x = 2 y = 1 }	
+		marine = { x = 2 y = 2 }
+		marine = { x = 2 y = 3 }
+		
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 } 
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }	
+        maintenance_company = { x = 0 y = 3 }		
+        anti_tank = { x = 1 y = 3 }			
+	}
+}
+
+division_template = {
+	name = "Division d'Motorisée Memes"	# Division d'Infanterie Motorisée
+    division_names_group = POR_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }   
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+        motorized = { x = 2 y = 3 }		
+		
+		pack_artillery_brigade_mot = { x = 3 y = 0 }
+		pack_artillery_brigade_mot = { x = 3 y = 1 }
+		pack_artillery_brigade_mot = { x = 3 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }  
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 } 
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }	
+        maintenance_company = { x = 0 y = 3 }	
+        logistics_company = { x = 1 y = 3 }	
 	}
 }
 
@@ -89,6 +164,81 @@ division_template = {
 		light_armor = { x= 4 y = 2 }
 		
 	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 } 
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }	
+        maintenance_company = { x = 0 y = 3 }	
+        logistics_company = { x = 1 y = 3 }		
+	}
+}
+
+division_template = {
+	name = "Panzer Division"
+
+	division_names_group = POR_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+       	motorized = { x = 2 y = 1 }
+    	motorized = { x = 2 y = 2 }
+
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor =  { x = 4 y = 2 }
+	}
+
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 } 
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }	
+        maintenance_company = { x = 0 y = 3 }	
+        logistics_company = { x = 1 y = 3 }	
+	}
+}
+
+division_template = {
+	name = "Division Legion Mécanique" 
+    division_names_group = POR_ARM_01
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 4 y = 0 }
+		
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 4 y = 1 }
+
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		heavy_armor = { x = 4 y = 2 }	
+
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }	
+	}
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 } 
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
@@ -136,24 +286,25 @@ units = {
 	}
 
 	# 1a Distrito Militar #
-	division = { # "1a Divisão de Infanteria"
+	division = { # "1a Divisão de Marines"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
 		location = 9817
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.2
+		division_template = "Divisão de Marines"
+		start_experience_factor = 0.4
 	}
-	division = { # "3a Divisão de Infanteria"
+	division = { # "2a Divisão de Marines"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
 		location = 9817
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.2
+		division_template = "Divisão de Marines"
+		start_experience_factor = 0.4
 	}
+	
 	# 2a Distrito Militar #
 	division = { # "2a Divisão de Montanha"
 		division_name = {
@@ -181,7 +332,7 @@ units = {
 		}
 		location = 844
 		division_template = "Brigada de Tanka"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.9
 	}
 	division = { # "2a Brigada de Tanka"
 		division_name = {
@@ -190,7 +341,25 @@ units = {
 		}
 		location = 844
 		division_template = "Brigada de Tanka"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.9
+	}
+	division = { # "3a Brigada de Tanka"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 844
+		division_template = "Panzer Division"
+		start_experience_factor = 0.9
+	}
+	division = { # "4a Brigada de Tanka"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 844
+		division_template = "Division Legion Mécanique"
+		start_experience_factor = 0.9
 	}
 }
 ### Aeronáutica Militar ###
@@ -226,44 +395,24 @@ air_wings = {
 			amount = 100
 		}
 		start_experience_factor = 0.25
-		cv_fighter_equipment_1936 = {
+		tac_bomber_equipment_1937 = {
 			owner = "POR" 
-			amount = 40
+			amount = 100
 		}
 		start_experience_factor = 0.25
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 40
+			amount = 100
 		}
 		start_experience_factor = 0.25
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 40
-		}
-		start_experience_factor = 0.25
-		cv_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 40
+			amount = 100
 		}
 		start_experience_factor = 0.25
 		cv_nav_bomber_equipment_1936 = {
 			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.25
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.25
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.25
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
+			amount = 100
 		}
 		start_experience_factor = 0.25
 	}
