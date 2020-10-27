@@ -24,7 +24,8 @@
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 }  
-        anti_air_company = { x = 0 y = 2 }		
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }		
 	}
 }
 
@@ -57,7 +58,8 @@ division_template = {
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 } 
-        anti_air_company = { x = 0 y = 2 }			
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }			
 	}
 }
 
@@ -92,7 +94,10 @@ division_template = {
 		pack_artillery = { x = 0 y = 1 }  # Full howitzer regiment
 		recon = { x = 1 y = 0 }   
 		engineer = { x = 1 y = 1 } 
-        anti_air_company = { x = 0 y = 2 }		
+        anti_air_company = { x = 0 y = 2 }	
+        signal_company = { x = 1 y = 2 }	
+        maintenance_company = { x = 0 y = 3 }	
+        logistics_company = { x = 1 y = 3 }		
 	}
 }
 
@@ -116,7 +121,7 @@ units = {
 	# Governo Militar Portugues #
 	division = {
 		name = "Governo Militar Portugues"
-		location = 11805
+		location = 9817
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
 	}
@@ -125,7 +130,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 11805
+		location = 9817
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.2
 	}
@@ -165,8 +170,26 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 844
+		location = 3798
 		division_template = "Divisão de Montanha"
+		start_experience_factor = 0.4
+	}
+	division = { # "1a Brigada de Tanka"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 844
+		division_template = "Brigada de Tanka"
+		start_experience_factor = 0.4
+	}
+	division = { # "2a Brigada de Tanka"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 844
+		division_template = "Brigada de Tanka"
 		start_experience_factor = 0.4
 	}
 }
@@ -178,9 +201,69 @@ air_wings = {
 			amount = 100
 		}
         start_experience_factor = 0.25
-		tac_bomber_equipment_1934 = {
+		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
+		}
+        start_experience_factor = 0.25
+		fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 100
+		}
+        start_experience_factor = 0.25
+		fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 100
+		}
+        start_experience_factor = 0.25
+		tac_bomber_equipment_1937 = {
+			owner = "POR" 
+			amount = 100
+		}
+		start_experience_factor = 0.25
+		tac_bomber_equipment_1937 = {
+			owner = "POR" 
+			amount = 100
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 40
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 40
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 40
+		}
+		start_experience_factor = 0.25
+		cv_fighter_equipment_1936 = {
+			owner = "POR" 
+			amount = 40
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
+		}
+		start_experience_factor = 0.25
+		cv_nav_bomber_equipment_1936 = {
+			owner = "POR" 
+			amount = 20
 		}
 		start_experience_factor = 0.25
 	}
@@ -251,9 +334,28 @@ instant_effect = {
 		progress = 0.5
 		efficiency = 100
 	}
+    add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = armored_cars_equipment_2
 			creator = "POR" 
 		}
 		requested_factories = 1
@@ -270,17 +372,17 @@ instant_effect = {
 		progress = 0.8
 		efficiency = 100
 	}
-
-	add_equipment_production = {
+	
+	add_equipment_production = { 
 		equipment = {
-			type = tac_bomber_equipment_1934
+			type = medium_tank_equipment_1937
 			creator = "POR" 
 		}
 		requested_factories = 1
-		progress = 0.4
+		progress = 0.8
 		efficiency = 100
 	}
-	
+
 	add_equipment_production = { 
 		equipment = {
 			type = fighter_equipment_1936
@@ -288,6 +390,26 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.8
+		efficiency = 100
+	}
+	
+	add_equipment_production = { 
+		equipment = {
+			type = CAS_equipment_1937
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1937
+			creator = "POR" 
+		}
+		requested_factories = 1
+		progress = 0.4
 		efficiency = 100
 	}
 }

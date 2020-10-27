@@ -850,20 +850,8 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				tooltip = RULE_VOLUNTEERS_PORTUGAL_SCW_TT
 				NOT = {
 					AND = {
-						has_completed_focus = POR_support_the_spanish_republic
-						FROM = { NOT = { tag = SPD } }
-					}
-				}
-				NOT = {
-					AND = {
 						has_completed_focus = POR_support_the_spanish_nationalists
 						FROM = { NOT = { tag = SPA } }
-					}
-				}
-				NOT = {
-					AND = {
-						has_completed_focus = POR_support_a_spanish_monarchy_in_the_war
-						FROM = { NOT = { tag = SPB } }
 					}
 				}
 			}

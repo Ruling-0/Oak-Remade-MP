@@ -32,6 +32,9 @@
  GER_organisation_todt:0 "Organisation Todt"
  GER_organisation_todt_desc:0 "Named after Industrial Engineer Fritz Todt that served as minister of Armaments."
  GER_Landungstruppen:0 "Form a Landungs-Division!\n"   
+ 
+ HOL_american_aid:0 "American Aid"
+ HOL_american_aid_desc:0 "The Americans have sent us aidto help rebuild our armed forces."
 
  SOV_tank_designers_tt:0 "§R!!§G Gain Access to several tank designers.§W\n"
  cossacks_tt:0 "§YSpawn in Kiev 8 Cossacks cavalry Corps with very little equipement"

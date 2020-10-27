@@ -53,7 +53,7 @@ HOL_obtain_foreign_colonial_investments = {
 			has_full_control_of_state = 309
 		}
 
-		cost = 150
+		cost = 25
 
 		fire_only_once = no
 
@@ -129,7 +129,7 @@ HOL_obtain_foreign_colonial_investments = {
 			has_full_control_of_state = 309
 		}
 
-		cost = 150
+		cost = 25
 
 		fire_only_once = no
 
@@ -170,14 +170,13 @@ HOL_obtain_foreign_colonial_investments = {
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
 			HOL = { has_full_control_of_state = 695 }
-			has_war = no
 		}
 
-		cost = 20
+		cost = 5
 
 		fire_only_once = no
 
-		days_remove = 50
+		days_remove = 5
 
 		visible = {
 			tag = HOL
@@ -239,7 +238,6 @@ HOL_obtain_foreign_colonial_investments = {
 				is_in_faction_with = USA
 				is_in_faction_with = ENG
 			}
-			has_war = no
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
 			335 = {
@@ -275,10 +273,9 @@ HOL_obtain_foreign_colonial_investments = {
 
 		fire_only_once = no
 
-		days_remove = 25
+		days_remove = 10
 
 		visible = {
-			
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
 		}
 
@@ -380,9 +377,9 @@ HOL_prepare_the_inundation_lines = {
 
 		cost = 25
 
-		fire_only_once = yes
+		fire_only_once = no
 
-		days_remove = 1500
+		days_remove = 14
 
 		highlight_state_targets = { state = 7 }
 
@@ -614,8 +611,8 @@ HOL_war_on_pacifism = {
 		complete_effect = {
 			set_country_flag = hol_war_on_pacifism_in_progress
 		}
-
 	}
+
 
 	HOL_establish_pro_war_labor_indoctrination = {
 
@@ -632,8 +629,14 @@ HOL_war_on_pacifism = {
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_3
-					has_idea = HOL_shell_shocked_spectator_4
+				}				
+				hidden_trigger = {
+					has_idea = HOL_shell_shocked_spectator_4 
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_5
 				}
 			}
@@ -687,8 +690,14 @@ HOL_war_on_pacifism = {
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_3
-					has_idea = HOL_shell_shocked_spectator_4
+				}				
+				hidden_trigger = {
+					has_idea = HOL_shell_shocked_spectator_4 
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_5
 				}
 			}
@@ -737,29 +746,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -769,33 +762,16 @@ HOL_secret_staff_talks = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
-			FROM = {
-				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
-				}
+			OR = {
+				is_in_faction = no 
+				is_in_faction_with = FROM
 			}
+		}
+
+		target_root_trigger = {
+			has_completed_focus = HOL_secret_staff_talks
 		}
 
 		complete_effect = {
@@ -846,29 +822,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -878,33 +838,16 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
-			FROM = {
-				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
-				}
+			OR = {
+				is_in_faction = no 
+				is_in_faction_with = FROM
 			}
+		}
+
+		target_root_trigger = {
+			has_completed_focus = HOL_secret_staff_talks
 		}
 
 		complete_effect = {
@@ -930,29 +873,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -962,7 +889,6 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
 			FROM = {
@@ -989,6 +915,10 @@ HOL_secret_staff_talks = {
 					}
 				}
 			}
+		}
+
+		target_root_trigger = {
+			has_completed_focus = HOL_secret_staff_talks
 		}
 
 		complete_effect = {
@@ -1020,7 +950,6 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
 		}
@@ -1046,29 +975,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -1078,33 +991,16 @@ HOL_secret_staff_talks = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
-			FROM = {
-				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
-				}
+			OR = {
+				is_in_faction = no 
+				is_in_faction_with = FROM
 			}
+		}
+
+		target_root_trigger = {
+			has_completed_focus = HOL_secret_staff_talks
 		}
 
 		complete_effect = {
@@ -1141,7 +1037,7 @@ HOL_request_allied_favors = {
 			NOT = { controls_state = 35 }
 			NOT = { controls_state = 36 }
 			has_capitulated = yes
-			has_legitimacy > 60
+			has_legitimacy > 40
 		}
 
 		days_remove = 90
@@ -1179,7 +1075,7 @@ HOL_request_allied_favors = {
 		available = {
 			has_war = yes
 			has_capitulated = yes
-			has_legitimacy > 40
+			has_legitimacy > 80
 		}
 
 		days_remove = 30
@@ -1224,7 +1120,7 @@ HOL_request_allied_favors = {
 		available = {
 			has_war = yes
 			has_capitulated = yes
-			has_legitimacy > 60
+			has_legitimacy > 40
 		}
 
 		days_remove = 45
@@ -1316,7 +1212,7 @@ HOL_request_allied_favors = {
 		available = {
 			has_war = yes
 			has_capitulated = yes
-			has_legitimacy > 40
+			has_legitimacy > 80
 		}
 
 		days_remove = 60
@@ -1390,86 +1286,6 @@ HOL_request_allied_favors = {
 
 }
 
-HOL_bernhard = {
-	
-	HOL_give_bernhard_generalship = {
-
-		icon = generic_army_support
-
-		allowed = {
-			tag = HOL
-		}
-
-		available = {
-			has_war = yes
-		}
-
-		cost = 25
-
-		fire_only_once = yes
-
-		visible = {
-			original_tag = HOL
-			has_completed_focus = HOL_the_only_man_in_the_dutch_government
-		}
-
-		complete_effect = {
-			create_corps_commander = {
-				name = "Prins Bernhard"
-				gfx = "GFX_portrait_hol_prins_bernhard"
-				traits = { trickster skirmisher infantry_officer politically_connected trait_reckless media_personality }
-				id = 982
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
-			}
-			hidden_effect = {
-				country_event = { id = mtg_netherlands.44 days = 60 random_days = 60 }
-			}
-		}
-	}
-
-	HOL_pursue_diplomatic_grievances = {
-
-		icon = generic_army_support
-
-		allowed = {
-			original_tag = HOL
-		}
-
-		available = {
-		}
-
-		cost = 100
-
-		fire_only_once = yes
-
-		target_trigger = {
-			FROM = {
-				has_country_flag = HOL_bernhard_row_target
-			}
-		}
-
-		visible = {
-			original_tag = HOL
-			FROM = {
-				has_country_flag = HOL_bernhard_row_target
-			}
-		}
-
-		complete_effect = {
-			FROM = {
-				country_event = { id = mtg_netherlands.60 hours = 6 }
-				clr_country_flag = HOL_bernhard_row_target
-			}
-			custom_effect_tooltip = HOL_pursue_diplomatic_grievances_tt
-		}
-	}
-
-}
-
 political_actions = {
 	HOL_relocate_government_to_batavia = {
 
@@ -1508,6 +1324,11 @@ political_actions = {
 		complete_effect = {
 			remove_ideas = HOL_curtail_colonial_autonomy_overlord
 			INS = {
+				hidden_effect = {
+					country_event = { id = mtg_netherlands.22 }
+				}
+			}
+			INS = {
 				every_unit_leader = {
 					set_nationality = HOL
 				}
@@ -1516,12 +1337,13 @@ political_actions = {
 			    target = INS
 			    transfer_troops = yes
 			}
-			set_capital = 335
-			INS = {
-				hidden_effect = {
-					country_event = { id = mtg_netherlands.22 }
+			every_state = {
+				limit = {
+					is_core_of = INS
 				}
+				add_compliance = 70
 			}
+			set_capital = 335
 			hidden_effect = { news_event = { id = mtg_news.46 days = 1 } }
 		}
 	}

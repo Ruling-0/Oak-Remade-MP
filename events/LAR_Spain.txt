@@ -7965,14 +7965,6 @@ country_event = {
 		name = lar_spain.22.a
 		ai_chance = {
 			base = 50
-			modifier = {
-				factor = 0
-				has_completed_focus = POR_popular_front
-			}
-			modifier = {
-				factor = 0
-				has_completed_focus = POR_strict_neutrality_in_the_spanish_civil_war
-			}
 		}
 		add_manpower = -20000
 		effect_tooltip = {
@@ -8003,10 +7995,6 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				has_completed_focus = POR_support_the_spanish_nationalists
-			}
-			modifier = {
-				factor = 0
-				has_completed_focus = POR_send_assistance
 			}
 			modifier = {
 				factor = 0
@@ -8069,10 +8057,6 @@ country_event = {
 		name = lar_spain.25.a
 		ai_chance = {
 			base = 50
-			modifier = {
-				factor = 0
-				has_completed_focus = POR_popular_front
-			}
 		}
 		custom_effect_tooltip = SPA_the_iberian_pact_tt
 		hidden_effect = {
@@ -9077,10 +9061,6 @@ country_event = {
 		name = lar_spain.45.b
 		ai_chance = {
 			base = 95
-			modifier = {
-				factor = 0.1
-				has_completed_focus = POR_the_royal_iberian_alliance
-			}
 			modifier = {
 				factor = 0.8
 				NOT = { has_war_with = FROM }

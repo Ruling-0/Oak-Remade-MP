@@ -383,16 +383,6 @@ on_actions = {
 					add_idea = HOL_de_crisisjaren_2
 				}
 			}
-			if = {
-				limit = {
-					tag = GER
-					FROM = {
-						tag = HOL
-						has_completed_focus = HOL_wilhelminism
-					}
-				}
-				HOL = { country_event = { id = mtg_netherlands.76 } }
-			}
 		}
 	}
 
@@ -410,28 +400,6 @@ on_actions = {
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = HOL
-					has_completed_focus = HOL_wilhelminism
-					FROM = {
-						original_tag = GER
-						has_government = fascism
-						has_civil_war = no
-					}
-					FROM.FROM = {
-						is_core_of = GER
-					}
-				}
-				FROM.FROM = { 
-					set_state_flag = HOL_german_states_kaiser
-				}
-				country_event = { id = mtg_netherlands.73 }
-			}
-		}
-	}
 
 	on_nuke_drop = {
 		effect = {			
