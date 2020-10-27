@@ -21,7 +21,7 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -47,6 +47,16 @@ focus_tree = {
 			unlock_decision_category_tooltip = MAN_banditry_category
 			set_variable = { MAN_maintain_control_timer = 180 }
 			custom_effect_tooltip = MAN_pacify_the_countryside_effect_tooltip
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MAN_songgotu_zhanshan
+			JAP = { add_to_tech_sharing_group = axis_research }
+			add_to_tech_sharing_group = axis_research
+		    MAN = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = axis_research
+         	    	bonus = 0.3 # we get 20% higher bonus from this group
+    		    }
+		    }
 		}
 	}
 
@@ -276,20 +286,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				num_of_factories > 35
-				all_state = {
-					OR = {
-						NOT = { is_core_of = CHI }
-						NOT = { is_core_of = PRC }
-						OR = {
-							is_controlled_by = ROOT
-							CONTROLLER = { is_in_faction_with = ROOT }
-							CONTROLLER = { is_subject_of = ROOT }
-						}
-					}
-				}
-			}
+			num_of_factories > 35
 		}
 
 		bypass = {
@@ -453,14 +450,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
 		}
 
 		available = {
-
+           is_ai = no
 		}
 
 		bypass = {
@@ -476,7 +473,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.1
+			add_ideas = MAN_white_russian_advisers
 		}
 	}
 
@@ -558,8 +555,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MAN_songgotu_zhanshan
 			random_owned_controlled_state = {
 				prioritize = { 328 }
 				limit = {
@@ -699,18 +694,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { has_tech = excavation1 }
-				add_tech_bonus = {
+			add_tech_bonus = {
 					name = MAN_develop_aluminum_sources
 					bonus = 1
 					uses = 1
 					category = excavation_tech
 				}
-			}
-			else = {
-				set_technology = { excavation1 = 1 }
-			}
+            add_ideas = MAN_resource
 			unlock_decision_tooltip = MAN_develop_kirin_aluminium_deposits
 		}
 	}
@@ -999,8 +989,20 @@ focus_tree = {
 			add_tech_bonus = {
 				name = MAN_alliance_with_the_kwantung_army
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = MAN_alliance_with_the_kwantung_army
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = MAN_alliance_with_the_kwantung_army
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1112,11 +1114,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_state = {
-				limit = { is_core_of = CHI }
-				add_claim_by = ROOT
-			}
-			add_stability = 0.1 
+			add_stability = 0.1
 		}
 	}
 
@@ -1135,19 +1133,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			is_subject_of = JAP
-			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
-			MAN = { 
-				ic_ratio = {
-					tag = JAP
-					ratio > 0.2
-				}
-			}
-			strength_ratio = {
-				tag = JAP
-				ratio > 0.25
-			}
+		available = {		
 		}
 
 		bypass = {
@@ -1163,10 +1149,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_autonomy_ratio = {
-				value = 0.15
-				localization = MAN_the_two_emperors
-			}
+			add_stability = 0.1
 		}
 	}
 }
