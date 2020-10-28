@@ -2794,7 +2794,7 @@ focus_tree = {
 			country_exists = SIA
 		}
         bypass = {
-			SIA = { is_in_faction_with = JAP }
+			#SIA = { is_in_faction_with = JAP }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
