@@ -615,6 +615,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = autarky_2_tt
 			
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 1
+        	}
+			
 			if = {
 				limit = {
 						AND = {

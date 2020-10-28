@@ -81,7 +81,7 @@ ideas = {
 			
 			modifier = {
 				country_resource_rubber = 5
-				fuel_gain_from_states = 42.0	
+				fuel_gain_from_states = 50.0	
 			}
 		}
 
@@ -102,7 +102,7 @@ ideas = {
 			
 			modifier = {
 				country_resource_rubber = 10
-				fuel_gain_from_states = 84.0
+				fuel_gain_from_states = 100.0
 				
 			}
 		}	
@@ -123,7 +123,7 @@ ideas = {
 			
 			modifier = {
 				country_resource_rubber = 15
-				fuel_gain_from_states = 125.0
+				fuel_gain_from_states = 150.0
 			}
 		}	
 		POR_rubber_meme_4 = {
@@ -143,7 +143,7 @@ ideas = {
 			
 			modifier = {
 				country_resource_rubber = 20
-				fuel_gain_from_states = 167.0
+				fuel_gain_from_states = 200.0
 			}
 		}	
 		POR_rubber_meme_5 = {
@@ -163,7 +163,7 @@ ideas = {
 			
 			modifier = {
 				country_resource_rubber = 25
-				fuel_gain_from_states = 209.0
+				fuel_gain_from_states = 250.0
 			}
 		}			
 	
@@ -363,6 +363,7 @@ ideas = {
 			
 			modifier = {
 				non_core_manpower = 0.10
+				mobilization_speed = 0.4
 			}
 		}
 
@@ -378,6 +379,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+			    compliance_gain = 1.00
 				conscription = 0.01
 			}
 		}
@@ -431,16 +433,16 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				operative_slot = 5
+				operative_slot = 7
 				civilian_intel_factor = 0.25
 				army_intel_factor = 0.25
 				navy_intel_factor = 0.25
 				airforce_intel_factor = 0.25
 				agency_upgrade_time = -0.20
 				enemy_operative_capture_chance_factor = 0.10
-				intelligence_agency_defense = 1.00
-				crypto_strength = 1.00
-				intel_network_gain = 0.2
+				intelligence_agency_defense = 2.00
+				crypto_strength = 2.00
+				intel_network_gain = 1.0
 			}
 		}
 
@@ -456,7 +458,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 				consumer_goods_factor = -0.01
 			}
 		}
@@ -532,6 +534,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.1
 				political_power_gain = 0.3
 				drift_defence_factor = 1.0
 				stability_weekly = 0.004
@@ -552,7 +555,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.02
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
 				political_power_gain = 0.3
 				drift_defence_factor = 1.0
 				war_support_factor = 0.1
@@ -644,23 +647,11 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
-				cv_fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}				
-				cv_CAS_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
 				CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
-				nav_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-				cv_nav_bomber_equipment = {
+				tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
@@ -712,30 +703,9 @@ ideas = {
 				}
 	
 				available = {
-				has_completed_focus = POR_revan1
 				}
 	
 				traits = { armaments_organizer }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			POR_manuel_goncalves_cerejeira = {
-	
-				picture = generic_political_advisor_europe_6
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-					has_completed_focus = POR_revan11				
-				}
-	
-				traits = { GERminister_of_armament_and_war_production }
 				
 				ai_will_do = {
 					factor = 1
@@ -820,6 +790,24 @@ ideas = {
 				traits = { quartermaster_general }
 			}
 	
+			POR_manuel_goncalves_cerejeira = {
+	
+				picture = generic_political_advisor_europe_6
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {				
+				}
+	
+				traits = { GERminister_of_armament_and_war_production }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
 	
 			POR_augusto_de_vasconcelos_2 = {
 				
@@ -1558,6 +1546,7 @@ ideas = {
 				available = { 
 				}
 					
+				cost = 50
 				
 				research_bonus = {
 					light_air = 0.15
@@ -1798,6 +1787,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			
+			cost = 50
 			
 			traits = { Leyland_trait }
 			

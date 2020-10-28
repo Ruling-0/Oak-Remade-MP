@@ -61,7 +61,6 @@ POR_historical_plan = {
 		POR_concordat_with_the_holy_see
 		POR_textile_industry
 		POR_portuguese_artillery
-		POR_military_research_facilities
 		#1941
 		POR_national_gold_reserves
 		POR_standardization
