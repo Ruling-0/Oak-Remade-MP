@@ -1195,7 +1195,7 @@ equipments = {
 
 		hard_attack = 7.2
 		ap_attack = 71
-		air_attack = 27
+		air_attack = 34
 		
 		build_cost_ic = 34
 	}			
