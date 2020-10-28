@@ -310,23 +310,23 @@ if = {
 	create_corps_commander = {
 		name = "Darth Revan"
 		portrait_path = "gfx/leaders/POR/Revan.dds"
-		traits = { skilled_staffer expert_delegator infantry_leader infantry_expert panzer_leader panzer_expert trickster expert_improviser urban_assault_specialist winter_specialist adaptable }
+		traits = { skilled_staffer infantry_leader infantry_expert panzer_leader panzer_expert trickster expert_improviser urban_assault_specialist trait_mountaineer winter_specialist adaptable }
 		skill = 7
 		attack_skill = 7
 		defense_skill = 7
-		maneuvering_skill = 7
-		coordination_skill = 7
+		planning_skill = 7
+		logistics_skill = 7
 	}
 	
 	create_field_marshal = {
 		name = "Darth Revan"
 		portrait_path = "gfx/leaders/POR/Revan.dds"
-		traits = { skilled_staffer expert_delegator infantry_leader infantry_expert panzer_leader panzer_expert trickster expert_improviser urban_assault_specialist winter_specialist adaptable  }
+		traits = { infantry_leader infantry_expert panzer_leader panzer_expert trickster expert_improviser urban_assault_specialist trait_mountaineer winter_specialist adaptable  }
 		skill = 7
 		attack_skill = 7
 		defense_skill = 7
-		maneuvering_skill = 7
-		coordination_skill = 7
+		planning_skill = 7
+		logistics_skill = 7
 	}
 	
 	create_navy_leader = {
