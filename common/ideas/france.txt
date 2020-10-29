@@ -1185,11 +1185,11 @@ ideas = {
         	picture = generic_manpower_bonus
 
         	research_bonus = {
-        		special_tech = 0.15
+        		special_tech = 0.05
         	}
 
         	modifier = {
-        		special_forces_cap = 0.1
+        		special_forces_cap = 0.05
     			non_core_manpower = 0.05
 				training_time_factor = -0.15
         	}

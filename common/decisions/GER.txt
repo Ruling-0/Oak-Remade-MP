@@ -1267,7 +1267,7 @@ operations = {
 					ruling_only = yes
 				}
 			}		
-			NOT	= { has_dlc = "La Resistance" }
+
 		}
 		cost = 10
 		ai_will_do = {
