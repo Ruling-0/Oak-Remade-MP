@@ -261,6 +261,10 @@ focus_tree = {
 					province = 8248
 					instant_build = yes
 				}
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
 			}
 		}
 	}
