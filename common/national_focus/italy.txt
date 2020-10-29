@@ -2664,7 +2664,7 @@ focus_tree = {
 				}
 				ITA = {
 					declare_war_on = {
-						target = YUG
+						target = GRE
 						type = annex_everything
 					}
 				} 
