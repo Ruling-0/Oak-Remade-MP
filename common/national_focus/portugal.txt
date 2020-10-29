@@ -261,11 +261,6 @@ focus_tree = {
 					province = 8248
 					instant_build = yes
 				}
-
-				add_resource = {
-					type = rubber
-					amount = 20
-				}
 			}
 		}
 	}
@@ -2788,13 +2783,13 @@ focus_tree = {
 			361 = {
 			    add_resource = {
 					type = rubber
-					amount = 10
+					amount = 1
 				}
 			}
 			126 = {
 			    add_resource = {
 					type = rubber
-					amount = 10
+					amount = 1
 				}
 			}
 		}
@@ -2819,21 +2814,21 @@ focus_tree = {
 			64 = {
 			    add_resource = {
 					type = rubber
-					amount = 10
+					amount = 1
 				}
 			    add_resource = {
 					type = oil
-					amount = 10
+					amount = 1
 				}
 			}
 			2 = {
 			    add_resource = {
 					type = rubber
-					amount = 10
+					amount = 1
 				}
 			    add_resource = {
 					type = oil
-					amount = 10
+					amount = 1
 				}
 			}
 		}
@@ -2858,7 +2853,7 @@ focus_tree = {
 			219 = {
 			    add_resource = {
 					type = rubber
-					amount = 15
+					amount = 1
 				}
 			}
 		}
@@ -2883,11 +2878,11 @@ focus_tree = {
 			282 = {
 			    add_resource = {
 					type = rubber
-					amount = 10
+					amount = 1
 				}
 				    add_resource = {
 					type = oil
-					amount = 10
+					amount = 1
 				}
 			}
 		}
@@ -2955,7 +2950,7 @@ focus_tree = {
 		id = POR_revan7
 		available = {
             is_ai = no	
-            date > 1942.1.1			
+            GER = { has_war_with = SOV }		
 		}
 
 		bypass = {		
@@ -2968,19 +2963,16 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
 			SOV = {
-			    add_ideas = POR_help
-				add_offsite_building = { type = arms_factory level = 20 }
-				add_offsite_building = { type = industrial_complex level = 20 }
-				add_offsite_building = { type = synthetic_refinery level = 20 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 50000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 5000 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 5000 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 3500 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 3500 producer = POR }
-				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 2500 producer = POR }
-				add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 2500 producer = POR }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = POR }
+				add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 			}
 		}
 	}
@@ -2988,7 +2980,7 @@ focus_tree = {
 		id = POR_revan8
 		available = {	
             is_ai = no
-            NOT = { 127 = { is_owned_and_controlled_by = ENG } }			
+            ITA = { has_war_with = ENG }			
 		}
 
 		bypass = {		
@@ -3001,20 +2993,16 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
 			ENG = {
-			    add_ideas = POR_help_2
-				add_offsite_building = { type = arms_factory level = 10 }
-				add_offsite_building = { type = industrial_complex level = 10 }
-				add_offsite_building = { type = dockyard level = 10 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 2000 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 2000 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 1500 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1500 producer = POR }
-				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = POR }
-				add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 1000 producer = POR }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = POR }
-				add_equipment_to_stockpile = { type = special_equipment_1 amount = 1000 producer = POR }
+				add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 			}
 		}
 	}
@@ -3022,7 +3010,7 @@ focus_tree = {
 		id = POR_revan9
 		available = {
             is_ai = no	
-            date > 1942.1.1				
+            GER = { has_war_with = SOV }			
 		}
 
 		bypass = {		
@@ -3035,19 +3023,16 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
 			GER = {
-			    add_ideas = POR_help
-				add_offsite_building = { type = arms_factory level = 15 }
-				add_offsite_building = { type = industrial_complex level = 15 }
-				add_offsite_building = { type = synthetic_refinery level = 15 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 35000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 3500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 3500 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 2000 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 2000 producer = POR }
-				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1500 producer = POR }
-				add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 1500 producer = POR }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1500 producer = POR }
+				add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 			}
 		}
 	}
@@ -3055,7 +3040,7 @@ focus_tree = {
 		id = POR_revan10
 		available = {
             is_ai = no		
-			NOT = { 448 = { is_owned_and_controlled_by = ITA } }
+			ITA = { has_war_with = ENG }
 		}
 
 		bypass = {		
@@ -3068,16 +3053,16 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
 			ITA = {
-			    add_ideas = POR_help_2
-				add_offsite_building = { type = arms_factory level = 5 }
-				add_offsite_building = { type = industrial_complex level = 5 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 1000 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 750 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 750 producer = POR }
-				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = POR }
+				add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 			}
 		}
 	}
