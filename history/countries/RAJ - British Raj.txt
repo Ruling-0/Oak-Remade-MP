@@ -73,6 +73,7 @@ add_ideas = {
 	RAJ_poor_industrial_infrastructure
 	RAJ_marginalized_muslim_community
 	RAJ_army_corruption_1
+	refinery_idea
 }
 
 set_variable = {

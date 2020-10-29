@@ -2204,7 +2204,7 @@ focus_tree = {
 			
 				hidden_effect = {
 					create_intelligence_agency = {
-						name = "Revan's Meme Network"
+						name = "Revan's Network"
 						icon = "GFX_intelligence_agency_logo_por"
 					}
 					upgrade_intelligence_agency = upgrade_economy_civilian
@@ -2393,48 +2393,11 @@ focus_tree = {
 	                CAS_1939 = 1
 			    }
 			}
-			if = {
-				limit = {
-					has_idea = POR_rubber_meme  
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme
-			    	add_idea = POR_rubber_meme_2
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_2 
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_2
-			    	add_idea = POR_rubber_meme_3
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_3
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_3
-			    	add_idea = POR_rubber_meme_4
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_4
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_4
-			    	add_idea = POR_rubber_meme_5
-			    }
-			}
-			
 			army_experience = 20
 			air_experience = 20
 			add_political_power = 75
 			JAP = {
-				add_offsite_building = { type = arms_factory level = 2 }
+			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
@@ -2603,102 +2566,24 @@ focus_tree = {
 			}
 			remove_ideas = POR_unstable_republic
 			set_rule = { can_create_factions = yes }
-			if = {
-				limit = {
-					has_idea = POR_rubber_meme  
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme
-			    	add_idea = POR_rubber_meme_2
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_2 
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_2
-			    	add_idea = POR_rubber_meme_3
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_3
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_3
-			    	add_idea = POR_rubber_meme_4
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_4
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_4
-			    	add_idea = POR_rubber_meme_5
-			    }
-			}
-		}
-	}
-
-	focus = {
-		id = POR_honor_anglo_portuguese_alliance
-		available = {
-			is_ai = no
-			NOT = { 127 = { is_owned_and_controlled_by = ENG } }
-		}
-
-		bypass = {		
-		}
-
-		
-	    prerequisite = { focus = POR_proudly_alone }
-
-		icon = GFX_goal_generic_alliance
-		x = 0
-		y = 1
-
-		relative_position_id = POR_proudly_alone
-		cost = 5
-		completion_reward = { 
-			ENG = { add_to_faction = POR }
-		}
-	}
-	
-	focus = {
-		id = POR_research_sharing
-		available = {		
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_honor_anglo_portuguese_alliance }	
-		icon = GFX_focus_research2
-		x = 0
-		y = 1
-
-		relative_position_id = POR_honor_anglo_portuguese_alliance
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 	
 	focus = {
 		id = POR_revan1
 		available = {	
-            date > 1939.8.1	
+            GER = { has_war_with = ENG }	
             is_ai = no			
 		}
 
 		bypass = {		
 		}
-		prerequisite = { 	 }	
-		icon = GFX_focus_por_salazar
-		x = 16
-		y = 7
+		prerequisite = { focus = POR_proudly_alone }
+		icon = GFX_goal_generic_alliance
+		x = 0
+		y = 1
+		
+		relative_position_id = POR_proudly_alone
 
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2711,376 +2596,27 @@ focus_tree = {
 	                CAS_1941 = 1
 			    }
 			}
-			if = {
-				limit = {
-					has_idea = POR_rubber_meme  
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme
-			    	add_idea = POR_rubber_meme_2
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_2 
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_2
-			    	add_idea = POR_rubber_meme_3
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_3
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_3
-			    	add_idea = POR_rubber_meme_4
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_4
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_4
-			    	add_idea = POR_rubber_meme_5
-			    }
-			}
-		    custom_effect_tooltip = POR_tip_tt
-			create_country_leader = {
-				name = "Pope Vader"
-				desc = "POLITICS_POPE_VADER_DESC"
-				picture = popevader.dds
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					meme_refinery
-					meme_resource
-					head_of_intelligence
-				}
-			}
 			add_ideas = war_economy
 		}
 	}
-	
-	focus = (
+	focus = {
 		id = POR_revan2
 		available = {
-            is_ai = no			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan1 }	
-		icon = GFX_focus_eng_motion_of_no_confidence
-		x = 11
-		y = 8
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			361 = {
-			    add_resource = {
-					type = rubber
-					amount = 1
-				}
-			}
-			126 = {
-			    add_resource = {
-					type = rubber
-					amount = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = POR_revan3
-		available = {
-            is_ai = no			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan1 }	
-		icon = GFX_focus_ger_assassinate_mussolini
-		x = 14
-		y = 8
-		
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			64 = {
-			    add_resource = {
-					type = rubber
-					amount = 1
-				}
-			    add_resource = {
-					type = oil
-					amount = 1
-				}
-			}
-			2 = {
-			    add_resource = {
-					type = rubber
-					amount = 1
-				}
-			    add_resource = {
-					type = oil
-					amount = 1
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POR_revan4
-		available = {
-            is_ai = no			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan1 }	
-		icon = GFX_SOV_stalin_constitution
-		x = 18
-		y = 8
-		
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			219 = {
-			    add_resource = {
-					type = rubber
-					amount = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = POR_revan5
-		available = {	
-            is_ai = no			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan1 }	
-		icon = GFX_focus_jap_showa_restoration
-		x = 21
-		y = 8
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			282 = {
-			    add_resource = {
-					type = rubber
-					amount = 1
-				}
-				    add_resource = {
-					type = oil
-					amount = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = POR_revan6
-		available = {	
-            is_ai = no			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan2 }	
-		prerequisite = { focus = POR_revan3 }	
-		prerequisite = { focus = POR_revan4 }	
-		prerequisite = { focus = POR_revan5 }	
-		icon = GFX_goal_generic_army_motorized
-		x = 16
-		y = 9
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			if = {
-				limit = {
-					has_idea = POR_rubber_meme  
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme
-			    	add_idea = POR_rubber_meme_2
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_2 
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_2
-			    	add_idea = POR_rubber_meme_3
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_3
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_3
-			    	add_idea = POR_rubber_meme_4
-			    }
-			}
-			else_if = {
-				limit = {
-					has_idea = POR_rubber_meme_4
-				}
-			    swap_ideas = {
-			    	remove_idea = POR_rubber_meme_4
-			    	add_idea = POR_rubber_meme_5
-			    }
-			}
-			custom_effect_tooltip = POR_revan6_tt
-		}
-	}
-	focus = {
-		id = POR_revan7
-		available = {
-            is_ai = no	
             GER = { has_war_with = SOV }		
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan6 }	
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		x = 11
-		y = 10
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			army_experience = 20
-			air_experience = 20
-			add_political_power = 75
-			SOV = {
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
-			}
-		}
-	}
-	focus = {
-		id = POR_revan8
-		available = {	
-            is_ai = no
-            ITA = { has_war_with = ENG }			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan6 }		
-		icon = GFX_focus_chi_british_cooperation
-		x = 14
-		y = 10
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			army_experience = 20
-			air_experience = 20
-			add_political_power = 75
-			ENG = {
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
-			}
-		}
-	}
-	focus = {
-		id = POR_revan9
-		available = {
-            is_ai = no	
-            GER = { has_war_with = SOV }			
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan6 }		
-		icon = GFX_focus_attack_germany
-		x = 18
-		y = 10
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			army_experience = 20
-			air_experience = 20
-			add_political_power = 75
-			GER = {
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
-			}
-		}
-	}
-	focus = {
-		id = POR_revan10
-		available = {
-            is_ai = no		
-			ITA = { has_war_with = ENG }
-		}
-
-		bypass = {		
-		}
-		prerequisite = { focus = POR_revan6 }		
-		icon = GFX_focus_attack_italy 
-		x = 21
-		y = 10
-
-		cost = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = { 
-			army_experience = 20
-			air_experience = 20
-			add_political_power = 75
-			ITA = {
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
-				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
-			}
-		}
-	}
-	focus = {
-		id = POR_revan11
-		available = {
-            date > 1941.4.1			
             is_ai = no			
 		}
 
 		bypass = {		
 		}
-		prerequisite = { focus = POR_revan6 }		
+		prerequisite = { focus = POR_revan1 }		
 		icon = GFX_focus_eng_imperial_federation
-		x = 16
-		y = 11
+		x = 0
+		y = 1
+		
+		relative_position_id = POR_revan1
 
 		cost = 5
+
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
 			hidden_effect = {
@@ -3097,7 +2633,6 @@ focus_tree = {
 			  	remove_idea = POR_volunteers_in_the_war_nationalist
 			   	add_idea = POR_aid
 		    }
-			add_ideas = tot_economic_mobilisation
 		}
 	}
 }

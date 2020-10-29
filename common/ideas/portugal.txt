@@ -1,70 +1,7 @@
 ideas = {
 	country = {
-	
-		POR_idea_secretary_of_rubber = {
 
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-                production_speed_synthetic_refinery_factor = 0.05
-	         	production_speed_synthetic_rubber_refinery_factor = 0.05
-			}
-
-			picture = FRA_motorized_focus
-			
-			removal_cost = -1			
-		}	
-		
-		POR_help = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_org_factor = 0.10
-				army_morale_factor = 0.10
-				army_defence_factor = 0.10
-				army_attack_factor = 0.10	
-			}
-
-			picture = por_unstable_republic
-			
-			removal_cost = -1			
-		}	
-		POR_help_2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_org_factor = 0.05
-				army_morale_factor = 0.05
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1	
-			}
-
-			picture = por_unstable_republic
-			
-			removal_cost = -1			
-		}	
-
-		POR_rubber_meme = {
+		POR_fuel = {
 			
 			allowed = {
 				original_tag = POR
@@ -77,91 +14,12 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FRA_motorized_focus
+			picture = ROM_the_resource_curse
 			
 			modifier = {
-				fuel_gain_from_states = 50.0	
+				fuel_gain_from_states = 250.0	
 			}
 		}
-
-		POR_rubber_meme_2 = {
-			
-			allowed = {
-				original_tag = POR
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = FRA_motorized_focus
-			
-			modifier = {
-				fuel_gain_from_states = 100.0
-				
-			}
-		}	
-		POR_rubber_meme_3 = {
-			
-			allowed = {
-				original_tag = POR
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = FRA_motorized_focus
-			
-			modifier = {
-				fuel_gain_from_states = 150.0
-			}
-		}	
-		POR_rubber_meme_4 = {
-			
-			allowed = {
-				original_tag = POR
-				always = no
-			}
-
-			allowed_civil_war = {
-			   always = yes
-			}
-
-			removal_cost = -1
-
-			picture = FRA_motorized_focus
-			
-			modifier = {
-				fuel_gain_from_states = 200.0
-			}
-		}	
-		POR_rubber_meme_5 = {
-			
-			allowed = {
-				original_tag = POR
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = FRA_motorized_focus
-			
-			modifier = {
-				fuel_gain_from_states = 250.0
-			}
-		}			
-	
 		POR_german_trading = {
 			allowed = {
 				always = no
@@ -427,16 +285,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				operative_slot = 7
+				operative_slot = 1
 				civilian_intel_factor = 0.25
 				army_intel_factor = 0.25
 				navy_intel_factor = 0.25
 				airforce_intel_factor = 0.25
-				agency_upgrade_time = -0.20
 				enemy_operative_capture_chance_factor = 0.10
-				intelligence_agency_defense = 2.00
-				crypto_strength = 2.00
-				intel_network_gain = 1.0
+				intelligence_agency_defense = 3.00
 			}
 		}
 
@@ -904,153 +759,6 @@ ideas = {
 					factor = 1
 				}
 			}
-	
-			POR_joao_de_azevedo_coutinho = {
-	
-				picture = generic_army_europe_1
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-				
-				cost = 200
-	
-				available = {
-				    has_completed_focus = POR_revan6			
-				}
-	
-				traits = { POR_secretary_of_rubber }
-				
-				modifier = {
-				}
-			
-				on_add = {
-				    ENG = {
-					    add_ideas = POR_idea_secretary_of_rubber
-					}
-			 	    USA = {
-					    add_ideas = POR_idea_secretary_of_rubber
-					}
-			 	    FRA = {
-					    add_ideas = POR_idea_secretary_of_rubber
-					}
-			  		RAJ = {    
-						add_ideas = POR_idea_secretary_of_rubber
-					}
-			        CAN = {    
-			    		add_ideas = POR_idea_secretary_of_rubber
-			    	}
-			        AST = {    
-			    		add_ideas = POR_idea_secretary_of_rubber
-			    	}
-			        SAF = {    
-			    		add_ideas = POR_idea_secretary_of_rubber
-                    }
-				    NZL = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        IRE = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        SOV = {
-				        add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        GER = {
-				        add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        ITA = {
-				        add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        JAP = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-			    	}
-			        FIN = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        SPA = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        HUN = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-				    ROM = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        BUL = {    
-					    add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        MAN = {    
-					    add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        CZE = {    
-					    add_ideas = POR_idea_secretary_of_rubber
-				    }
-			    }
-
-			    on_remove = {
-				    ENG = {
-					    add_ideas = POR_idea_secretary_of_rubber
-					}
-			 	    USA = {
-					    add_ideas = POR_idea_secretary_of_rubber
-					}
-			 	    FRA = {
-					    add_ideas = POR_idea_secretary_of_rubber
-					}
-			  		RAJ = {    
-						add_ideas = POR_idea_secretary_of_rubber
-					}
-			        CAN = {    
-			    		add_ideas = POR_idea_secretary_of_rubber
-			    	}
-			        AST = {    
-			    		add_ideas = POR_idea_secretary_of_rubber
-			    	}
-			        SAF = {    
-			    		add_ideas = POR_idea_secretary_of_rubber
-                    }
-				    NZL = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        IRE = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        SOV = {
-				        add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        GER = {
-				        add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        ITA = {
-				        add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        JAP = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-			    	}
-			        FIN = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        SPA = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        HUN = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-				    ROM = {    
-				    	add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        BUL = {    
-					    add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        MAN = {    
-					    add_ideas = POR_idea_secretary_of_rubber
-				    }
-			        CZE = {    
-					    add_ideas = POR_idea_secretary_of_rubber
-				    }
-			    }
-		    }	
 			
 			POR_augusto_de_vasconcelos = {
 	

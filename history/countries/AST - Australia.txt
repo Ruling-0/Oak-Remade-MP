@@ -98,6 +98,7 @@ add_ideas = {
 	AST_great_depression_1
 	volunteer_only
 	AST_conscript_malus
+	refinery_idea
 }
 
 if = {

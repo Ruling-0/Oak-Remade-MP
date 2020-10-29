@@ -72,7 +72,8 @@ if = {
 
 add_ideas = {
 		#laws
-		disarmed_nation
+	disarmed_nation
+	refinery_idea
 }
 
 set_politics = {

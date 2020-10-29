@@ -348,14 +348,6 @@ leader_traits = {
 	SOV_variant_designer = {}
 
 	godlike_creature= {}
-	
-	POR_secretary_of_rubber = {
-		sprite = 13
-		random = yes
-		ai_will_do = {
-			factor = 50
-		}
-	}
 
 	ENG_chancellor_of_the_exchequer = {
 		sprite = 13
