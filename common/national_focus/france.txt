@@ -117,7 +117,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_intervention_in_spain }
 		available = {
 			or = {
-				threat > 0.1
+				threat > 0.15
 				GER = { has_full_control_of_state = 4 }
 			}
 		}
@@ -2014,6 +2014,7 @@ focus_tree = {
 		relative_position_id = FRA_expand_the_colonial_army
 
 		available = {
+		    country_exists = EFR
 		}
 
 		cost = 5
