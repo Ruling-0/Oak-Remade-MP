@@ -2548,9 +2548,13 @@ focus_tree = {
 			add_political_power = 100
 			add_ideas = USA_cash_and_carry_idea
 
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-		
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 	
 			    FRA = {
 				    add_ideas = USA_cash_and_carry_foreign_idea
@@ -2658,8 +2662,13 @@ focus_tree = {
 		completion_reward = {
 			USA_aircraft_industry_level_up = yes
 
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}						
@@ -2708,8 +2717,13 @@ focus_tree = {
 				USA_infantry_industry_level_up = yes 
 				USA_naval_industry_level_up = yes 
 			}
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 			add_ideas = USA_the_giant_wakes_economy
 		}
 	}		
@@ -2745,8 +2759,13 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}						
@@ -2851,9 +2870,13 @@ focus_tree = {
 				USA_infantry_industry_level_up = yes 
 				USA_naval_industry_level_up = yes 
 			}
-
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 			add_ideas = USA_arsenal_of_democracy_economy
 
@@ -2940,8 +2963,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = limited_conscription
 			activate_mission_tooltip = USA_selected_service_act_mission
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}						
@@ -2982,8 +3010,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 		}
 	}						
 
@@ -3154,8 +3187,13 @@ focus_tree = {
 				bonus = 1 
 				name = USA_detroit_vehicle_arsenal
 			}
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}	
@@ -3289,8 +3327,13 @@ focus_tree = {
 				uses = 1
 				bonus = 1
 			}
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}						
@@ -3419,8 +3462,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}						
@@ -3543,8 +3591,13 @@ focus_tree = {
 				USA_aircraft_industry_level_up = yes 
 				USA_aircraft_industry_level_up = yes 
 			}
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 
 		}
 	}			
@@ -5140,8 +5193,13 @@ focus_tree = {
 				USA_naval_industry_level_up = yes 
 			}
 
-			custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
-			USA_we_dont_want_to_send_our_boys_away = yes
+			if {
+				limit = {war_support = 1.0}
+			}
+			else{ 
+				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
+				USA_we_dont_want_to_send_our_boys_away = yes
+			}
 			
 			every_country = {
 				limit = {
