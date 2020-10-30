@@ -3607,7 +3607,6 @@ SOV_great_patriotic_war = {
 
 		fire_only_once = yes
 
-		cancel_if_not_visible = yes
 
 		available = {
 			hidden_trigger = { always = no }
@@ -4075,7 +4074,6 @@ SOV_great_patriotic_war = {
 
 		fire_only_once = yes
 
-		cancel_if_not_visible = yes
 
 		is_good = yes
 
