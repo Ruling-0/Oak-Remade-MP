@@ -3266,7 +3266,7 @@ ideas = {
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.075
-				production_speed_synthetic_rubber_refinery_factor = 0.115
+				production_speed_synthetic_rubber_refinery_factor = 0.155
 			}
 
 			traits = { GER_refinery_concern }
@@ -3341,7 +3341,7 @@ ideas = {
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.075
-				production_speed_synthetic_rubber_refinery_factor = 0.225
+				production_speed_synthetic_rubber_refinery_factor = 0.30
 			}
 
 			traits = { GER_refinery_concern }

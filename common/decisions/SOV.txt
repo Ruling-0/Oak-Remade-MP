@@ -6093,11 +6093,11 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_re_enable = 20
+		days_re_enable = 15
 
-		days_remove = 70
+		days_remove = 55
 
-		cost = 35
+		cost = 25
 
 		modifier = {
 			civilian_factory_use = 5
@@ -6152,11 +6152,11 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_re_enable = 20
+		days_re_enable = 15
 
-		days_remove = 70
+		days_remove = 55
 
-		cost = 35
+		cost = 25
 
 		modifier = {
 			civilian_factory_use = 5
@@ -6212,11 +6212,11 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_re_enable = 20
+		days_re_enable = 15
 
-		days_remove = 70
+		days_remove = 55
 
-		cost = 35
+		cost = 25
 
 		modifier = {
 			civilian_factory_use = 5
@@ -6272,11 +6272,11 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_re_enable = 20
+		days_re_enable = 15
 
-		days_remove = 70
+		days_remove = 55
 
-		cost = 35
+		cost = 25
 
 		modifier = {
 			civilian_factory_use = 5
@@ -6331,11 +6331,11 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_re_enable = 20
+		days_re_enable = 15
 
-		days_remove = 70
+		days_remove = 55
 
-		cost = 35
+		cost = 25
 
 		modifier = {
 			civilian_factory_use = 5
