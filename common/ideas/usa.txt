@@ -1194,7 +1194,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				construction = 0.1
+				industry = 0.1
 			}
 
 			removal_cost = -1
@@ -1218,7 +1218,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				construction = 0.1
+				industry = 0.1
 			}
 
 			removal_cost = -1
