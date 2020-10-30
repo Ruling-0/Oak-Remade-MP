@@ -67,7 +67,6 @@ set_technology = {
 	heavy_fighter_1936 = 1
 	############### economy ############
 	electronic_mechanical_engineering = 1
-	atomic_research = 1
 	radio_detection = 1
 	tank_radio = 1 
 	starting_industry = 1
@@ -246,33 +245,21 @@ if = {
 	
 	
 	create_field_marshal = {
-		name = "Mr Tank"
+		name = "Field Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-		traits = { offensive_doctrine inspirational_leader brilliant_strategist aggressive_assaulter organizer logistics_wizard winter_specialist }
-		skill = 4
-	
-		attack_skill = 3
-		defense_skill = 4
-		planning_skill = 3
-		logistics_skill = 4
-	}
-	
-	create_field_marshal = {
-		name = "Mr Infantry"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-		traits = { offensive_doctrine inspirational_leader inflexible_strategist unyielding_defender organizer logistics_wizard winter_specialist }
+		traits = { offensive_doctrine inspirational_leader organizer logistics_wizard winter_specialist }
 		skill = 4
 	
 		attack_skill = 4
-		defense_skill = 3
+		defense_skill = 4
 		planning_skill = 4
-		logistics_skill = 3
+		logistics_skill = 4
 	}
 	
 	create_corps_commander = {
-		name = "Luís Augusto Ferreira Martins"
+		name = "Tank Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-		traits = { skilled_staffer panzer_leader panzer_expert trickster expert_improviser trait_engineer }
+		traits = { skilled_staffer panzer_leader panzer_expert trickster }
 		skill = 4
 	
 		attack_skill = 4
@@ -282,9 +269,9 @@ if = {
 	}
 	
 	create_corps_commander = {
-		name = "José Vicente de Freitas"
+		name = "Motorized Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-		traits = { skilled_staffer motorized_leader motorized_expert trickster expert_improviser desert_fox }
+		traits = { skilled_staffer motorized_leader motorized_expert trickster }
 		skill = 4
 	
 		attack_skill = 4
@@ -294,37 +281,27 @@ if = {
 	}
 	
 	create_corps_commander = {
-		name = "Raul Augusto Esteves"
+		name = "Calvary Commander"
+		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+		traits = { skilled_staffer cavalry_leader cavalry_expert }
+		skill = 4
+	
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}	
+	
+	create_corps_commander = {
+		name = "Infantry Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-		traits = { skilled_staffer infantry_leader infantry_expert desert_fox trait_mountaineer adaptable }
+		traits = { skilled_staffer infantry_leader infantry_expert }
 		skill = 4
 	
 		attack_skill = 4
 		defense_skill = 4
 		planning_skill = 4
 		logistics_skill = 4
-	}
-	
-	create_corps_commander = {
-		name = "Darth Revan"
-		portrait_path = "gfx/leaders/POR/Revan.dds"
-		traits = { skilled_staffer infantry_leader infantry_expert panzer_leader panzer_expert trickster expert_improviser urban_assault_specialist trait_mountaineer winter_specialist adaptable }
-		skill = 7
-		attack_skill = 7
-		defense_skill = 7
-		planning_skill = 7
-		logistics_skill = 7
-	}
-	
-	create_field_marshal = {
-		name = "Darth Revan"
-		portrait_path = "gfx/leaders/POR/Revan.dds"
-		traits = { offensive_doctrine inspirational_leader logistics_wizard infantry_leader infantry_expert panzer_leader panzer_expert trickster expert_improviser urban_assault_specialist trait_mountaineer winter_specialist adaptable  }
-		skill = 7
-		attack_skill = 7
-		defense_skill = 7
-		planning_skill = 7
-		logistics_skill = 7
 	}
 	
 	create_navy_leader = {
