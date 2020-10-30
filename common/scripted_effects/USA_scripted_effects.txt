@@ -540,14 +540,9 @@ USA_we_dont_want_to_send_our_boys_away = {
 		var = USA_popular_support_var_stab
 		value = USA_popular_support_var
 	}
-	if{
-		has_war_support = 1.0
-		else{
-			multiply_temp_variable = {
-				var = USA_popular_support_var_stab
-				value = 0.2
-			}
-			add_stability = USA_popular_support_var_stab
-		}
+	multiply_temp_variable = {
+		var = USA_popular_support_var_stab
+		value = 0.2
 	}
+	add_stability = USA_popular_support_var_stab
 }
