@@ -3607,7 +3607,6 @@ SOV_great_patriotic_war = {
 
 		fire_only_once = yes
 
-
 		available = {
 			hidden_trigger = { always = no }
 		}
@@ -4064,6 +4063,7 @@ SOV_great_patriotic_war = {
 		icon = generic_operation
 
 		available = {
+			hidden_trigger = { always = no }
 		}
 
 		activation = {
