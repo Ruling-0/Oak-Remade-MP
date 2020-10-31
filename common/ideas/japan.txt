@@ -1130,7 +1130,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.25
+				special_forces_cap = 0.13
 			}
 		}
 
@@ -1851,7 +1851,7 @@ ideas = {
 			
 
 			
-			traits = { army_infantry }
+			traits = { army_infantry_1 }
 			
 			ai_will_do = {
 				factor = 3
@@ -1925,7 +1925,7 @@ ideas = {
 			
 
 			
-			traits = { army_commando }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 0.8
