@@ -1,6 +1,21 @@
 ideas = {
 
 	country = {
+	
+	
+		ENG_operation_battleaxe = {
+		
+			picture = SPR_torchbearers_of_tomorrow
+			
+			allowed = { 
+				always no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1	
+			}
+		}	
 		ENG_darkest_hour = {
 
 			picture = SPR_torchbearers_of_tomorrow
