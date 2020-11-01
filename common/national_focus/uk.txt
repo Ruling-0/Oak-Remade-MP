@@ -5698,6 +5698,7 @@ focus_tree = {
 				add_timed_idea = {
 					idea = ENG_operation_battleaxe
 					days = 90
+				}
 			}
 			RAJ = {
 				add_timed_idea = {
