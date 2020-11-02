@@ -563,7 +563,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { var = british_money value = -50 }
 			custom_effect_tooltip = british_money_50_tt
-			add_research_slot = 2
+			add_research_slot = 1
 		}
 	}
 
@@ -963,7 +963,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_research_slot = 1
 			add_to_variable = { var = british_money value = -100 }
 			custom_effect_tooltip = british_money_100_tt
 			if = { 
@@ -5679,7 +5679,7 @@ focus_tree = {
 	focus = {
 		id = ENG_operation_battleaxe 
 		prerequisite = { focus = ENG_western_desert_force  }
-		mutually_exclusive = { focus = ENG_operation_east_wall	}
+		mutually_exclusive = { focus = ENG_operation_east_wall 	}
 		icon = GFX_focus_eng_chiefs_of_staff_committee
 		relative_position_id = ENG_western_desert_force 
 		x = -1
