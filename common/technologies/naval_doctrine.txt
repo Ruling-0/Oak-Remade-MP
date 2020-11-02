@@ -22,7 +22,6 @@ technologies = {
 		destroyer = {
 			surface_detection = 0.10
 		}
-		mines_planting_by_fleets_factor = 0.1
 		#####
 
 
@@ -360,7 +359,6 @@ technologies = {
 
 		navy_anti_air_attack_factor = 0.10
 		navy_capital_ship_attack_factor = 0.1
-		mines_planting_by_fleets_factor = 0.1
 		
 		modifier = {
 			screening_efficiency = 0.10
