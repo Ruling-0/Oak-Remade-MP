@@ -1283,6 +1283,10 @@
  ENG_anglo_egyptian_treaty:0 "Anglo-Egyptian Treaty"
  ENG_anglo_egyptian_treaty_desc:0 "With the ongoing conflict in east africa and the threat through italy for Egypt, we should ask them to allow us to send troops to defend in the event of an attack. We also should ask if we can help them in any way to improve their Army!"
  ########England######
+ ENG_operation_battleaxe:0 "Operation Battleaxe"
+ ENG_operation_east_wall:0 "Operation Eastwall"
+ ENG_operation_east_wall_desc:0 "Operation Eastwall, reinforce southern egypt with infastructure and ports to the south!"
+ ENG_operation_battleaxe_desc:0 "Operation Battleaxe is a go General.  Advance on all fronts while we still can!"
  ENG_try_to_handle_the_king:0 "Handle the New King"
  ENG_try_to_handle_the_king_desc:0 "Our new King has made some bad political statements, and is living a life that weakens our Country! We need to stop him! Also we heard that he is often visited by an american woman, we might need to put some attention on that later own."
  ENG_force_abdication:0 "Force Abdication"

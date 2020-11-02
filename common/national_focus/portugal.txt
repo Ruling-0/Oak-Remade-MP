@@ -2633,7 +2633,6 @@ focus_tree = {
 	                CAS_1943 = 1
 			    }
 			}
-			add_ideas = tot_economic_mobilisation
 		    swap_ideas = {
 			  	remove_idea = POR_volunteers_in_the_war_nationalist
 			   	add_idea = POR_aid

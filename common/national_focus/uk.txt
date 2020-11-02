@@ -5677,10 +5677,10 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = ENG_western_desert_attack 
+		id = ENG_operation_battleaxe 
 		prerequisite = { focus = ENG_western_desert_force  }
-		mutually_exclusive = { focus = ENG_western_desert_defense	}
-		icon = GFX_ENG_western_desert_force
+		mutually_exclusive = { focus = ENG_operation_east_wall	}
+		icon = GFX_focus_eng_chiefs_of_staff_committee
 		relative_position_id = ENG_western_desert_force 
 		x = -1
 		y = 1
@@ -5744,10 +5744,10 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = ENG_western_desert_defense 
+		id = ENG_operation_east_wall 
 		prerequisite = { focus = ENG_western_desert_force  }
-		mutually_exclusive = { focus = ENG_western_desert_attack	}
-		icon = GFX_ENG_western_desert_force
+		mutually_exclusive = { focus = ENG_operation_battleaxe	}
+		icon = GFX_focus_rom_royal_dictatorship
 		relative_position_id = ENG_western_desert_force 
 		x = 1
 		y = 1
