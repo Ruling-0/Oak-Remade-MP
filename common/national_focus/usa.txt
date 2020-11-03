@@ -2549,7 +2549,7 @@ focus_tree = {
 			add_ideas = USA_cash_and_carry_idea
 
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -2663,7 +2663,7 @@ focus_tree = {
 			USA_aircraft_industry_level_up = yes
 
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -2718,7 +2718,7 @@ focus_tree = {
 				USA_naval_industry_level_up = yes 
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -2760,7 +2760,7 @@ focus_tree = {
 			USA_great_depression_level_down = yes
 
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -2871,7 +2871,7 @@ focus_tree = {
 				USA_naval_industry_level_up = yes 
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -3011,7 +3011,7 @@ focus_tree = {
 				}
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -3188,7 +3188,7 @@ focus_tree = {
 				name = USA_detroit_vehicle_arsenal
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -3328,7 +3328,7 @@ focus_tree = {
 				bonus = 1
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -3463,7 +3463,7 @@ focus_tree = {
 				}
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
@@ -3592,7 +3592,7 @@ focus_tree = {
 				USA_aircraft_industry_level_up = yes 
 			}
 			if {
-				has_war_support = 1.0
+				limit ={has_war_support = 1.0}
 			}
 			else{ 
 				custom_effect_tooltip = USA_dont_send_our_boys_to_war_tt
