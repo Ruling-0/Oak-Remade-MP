@@ -111,6 +111,7 @@ ideas = {
 			picture = generic_disjointed_gov
 			modifier = {
 				foreign_subversive_activites = -0.50
+				conscription_factor = 0.10
 				stability_factor = -0.05
 				war_support_factor = 0.08
 			}

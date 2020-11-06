@@ -628,4 +628,10 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 100
 	}
+	############### Equipment stockpile
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 1000
+		producer = POR
+	}
 }

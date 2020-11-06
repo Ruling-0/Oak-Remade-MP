@@ -138,7 +138,6 @@ if = {
 		fire_control_methods_2 = 1
 		fire_control_methods_3 = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 if = {
@@ -146,7 +145,7 @@ if = {
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
-	set_war_support = 0.25
+	set_war_support = 0.35
 	set_research_slots = 5
 
 	ENG = {
