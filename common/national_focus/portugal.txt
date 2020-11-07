@@ -38,7 +38,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 5
+		cost = 2
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_ideas = POR_colonial_assimilation_policy
@@ -62,7 +62,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_colonial_assimilation_policy
-		cost = 5
+		cost = 2
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_ideas = POR_colonial_army
@@ -102,7 +102,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		
-		cost = 5
+		cost = 2
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
 			unlock_decision_tooltip = POR_mozambique_overseas_territory

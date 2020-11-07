@@ -145,7 +145,7 @@ if = {
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
-	set_war_support = 0.35
+	set_war_support = 0.70
 	set_research_slots = 5
 
 	ENG = {
@@ -246,7 +246,7 @@ if = {
 	create_field_marshal = {
 		name = "Field Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-		traits = { offensive_doctrine inspirational_leader organizer logistics_wizard winter_specialist }
+		traits = { offensive_doctrine inspirational_leader organizer logistics_wizard }
 		skill = 4
 	
 		attack_skill = 4
@@ -258,7 +258,7 @@ if = {
 	create_corps_commander = {
 		name = "Tank Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-		traits = { skilled_staffer panzer_leader panzer_expert trickster }
+		traits = { yak_command panzer_leader panzer_expert trickster }
 		skill = 4
 	
 		attack_skill = 4
@@ -270,7 +270,7 @@ if = {
 	create_corps_commander = {
 		name = "Motorized Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-		traits = { skilled_staffer motorized_leader motorized_expert trickster }
+		traits = { yak_command motorized_leader motorized_expert trickster }
 		skill = 4
 	
 		attack_skill = 4
@@ -282,7 +282,7 @@ if = {
 	create_corps_commander = {
 		name = "Calvary Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-		traits = { skilled_staffer cavalry_leader cavalry_expert }
+		traits = { yak_command cavalry_leader cavalry_expert }
 		skill = 4
 	
 		attack_skill = 4
@@ -294,7 +294,7 @@ if = {
 	create_corps_commander = {
 		name = "Infantry Commander"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-		traits = { skilled_staffer infantry_leader infantry_expert }
+		traits = { yak_command infantry_leader infantry_expert }
 		skill = 4
 	
 		attack_skill = 4

@@ -33,11 +33,6 @@ ideas = {
 				tag = GER
 				trade_cost_for_target_factor = -0.66
 			}
-			
-			modifier = {
-			    weekly_manpower = 1000
-		        war_support_weekly = 0.001
-			}
 		}
 		
 		POR_volunteers_in_the_war_nationalist = {
@@ -128,7 +123,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.5
 				stability_weekly = -0.005
-				production_speed_buildings_factor = -0.25	
+				production_speed_buildings_factor = -0.3
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -145,7 +140,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.075
 				consumer_goods_factor = -0.02
 			}
 		}
@@ -162,7 +157,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.10
+				mobilization_speed = 0.20
 			}
 		}
 
@@ -179,7 +174,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.10
+				mobilization_speed = 0.20
 				conscription_factor = 0.15
 			}
 		}
@@ -197,7 +192,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.10
+				mobilization_speed = 0.20
 				conscription_factor = 0.3
 			}
 		}
@@ -214,8 +209,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.10
-				mobilization_speed = 0.4
+			    acclimatization_cold_climate_gain_factor = 0.10
+				winter_attrition_factor = -0.20
+				acclimatization_hot_climate_gain_factor = 0.10
+				heat_attrition_factor = -0.20
 			}
 		}
 
@@ -231,7 +228,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    compliance_gain = 1.00
 				conscription = 0.01
 			}
 		}
@@ -325,6 +321,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.01
+				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 1.0
 			}
 		}
@@ -344,6 +341,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.02
 				political_power_gain = 0.1
+				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 1.0
 				stability_weekly = 0.001
 			}
@@ -364,6 +362,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.02
 				political_power_gain = 0.2
+				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 1.0
 				stability_weekly = 0.002
 			}
@@ -385,6 +384,7 @@ ideas = {
 				consumer_goods_factor = -0.02
 				production_factory_max_efficiency_factor = 0.1
 				political_power_gain = 0.3
+				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 1.0
 				stability_weekly = 0.004
 			}
@@ -406,6 +406,7 @@ ideas = {
 				consumer_goods_factor = -0.02
 				production_factory_max_efficiency_factor = 0.1
 				political_power_gain = 0.3
+				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 1.0
 				war_support_factor = 0.1
 				stability_weekly = 0.005
@@ -440,7 +441,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.075
 			}
 		}
 

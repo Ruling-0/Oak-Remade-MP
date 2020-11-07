@@ -162,7 +162,7 @@ POR_prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = POR_santarem_chromium_duration value = 30 }
+			add_to_variable = { var = POR_santarem_chromium_duration value = 10 }
 			795 = {
 				if = {
 					limit = {
@@ -201,9 +201,9 @@ POR_prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = POR_santarem_chromium_duration value = 30 compare = less_than }
+					check_variable = { var = POR_santarem_chromium_duration value = 10 compare = less_than }
 				}
-				set_variable = { var = POR_santarem_chromium_duration value = 15 }
+				set_variable = { var = POR_santarem_chromium_duration value = 5 }
 			}
 		}
 	}
