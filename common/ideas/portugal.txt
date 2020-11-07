@@ -123,7 +123,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.5
 				stability_weekly = -0.005
-				production_speed_buildings_factor = -0.3
+				production_speed_buildings_factor = -0.35
 				consumer_goods_factor = 0.05
 			}
 		}
