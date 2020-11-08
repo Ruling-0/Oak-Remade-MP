@@ -10,7 +10,6 @@ set_technology = { #player
 	#docs 
 	mobile_warfare = 1
 	trade_interdiction = 1
-	formation_flying = 1
 	######### infantry ##########
 	tech_mountaineers = 1
 	support_weapons = 1
