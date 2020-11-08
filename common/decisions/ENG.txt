@@ -223,10 +223,6 @@ political_actions = {
 	}
 }	
 
-
-
-
-
 ENG_budget_decisions = {
 
 	ENG_collect_budget = {
