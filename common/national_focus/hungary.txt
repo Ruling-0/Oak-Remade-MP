@@ -88,7 +88,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HUN_strengthen_fascists
-			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_popularity = { ideology = fascism popularity = 0.1 }
 			set_party_name = { ideology = fascism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
 			hidden_effect = {
 				create_country_leader = {
@@ -357,306 +357,33 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_core = 76
-			add_state_core = 83
-			add_state_core = 84
-			add_state_claim = 664
-			add_state_claim = 45
-			add_state_claim = 82
+			add_state_core = 45
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 73
+			add_state_core = 664
 			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = HUN_demand_transylvania
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus =  HUN_reaffirm_territorial_claims }
-		x = -1
-		y = 1
-		relative_position_id = HUN_reaffirm_territorial_claims
-		will_lead_to_war_with = ROM
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-			ROM = {
-				controls_state = 76
-				controls_state = 83
-				controls_state = 84
-			}
-			is_puppet = no
-			NOT = {
-				is_in_faction_with = ROM
-			}
-			NOT = {
-				has_war_with = ROM
-			}
-			strength_ratio = { tag = ROM ratio > 0.55 }
-			has_army_manpower = { size > 750000 }
-		
-		}
-
-		bypass = {
-			OR = {
-				664 = {
-					OWNER = {
-						has_war_with = ROOT
-					}
-				}
-				NOT = {
-					ROM = {
-						controls_state = 76
-						controls_state = 83
-						controls_state = 84
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {	
-			custom_effect_tooltip = HUN_demands_tt		
-			ROM = { country_event = { id = DOD_hungary.50 } }
-			hidden_effect = {
-				news_event = { id = news.300 }
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_demand_southern_slovakia
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = HUN_reaffirm_territorial_claims }
-		x = 1
-		y = 1
-		relative_position_id = HUN_reaffirm_territorial_claims
-		will_lead_to_war_with = CZE
-		will_lead_to_war_with = SLO
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			
-			if = {
-				limit = { 
-					country_exists = CZE 
-					664 = { is_owned_by = CZE }
-				}
-				strength_ratio = { tag = CZE ratio > 0.75 }
-			}
-			if = {
-				limit = { 
-					country_exists = SLO 
-					664 = { is_owned_by = SLO }
-				}
-				strength_ratio = { tag = SLO ratio > 0.75 }
-			}
-				
-			
-			has_army_manpower = { size > 120000 }
-		}
-
-		bypass = {
-			OR = {
-				owns_state = 664
-				664 = {
-					OWNER = {
-						has_war_with = ROOT
-					}
-				}
-				AND = {
-					NOT = { CZE = { owns_state = 664 } }
-					NOT = { SLO = { owns_state = 664 } }
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = HUN_demands_tt
-			if = {
-				limit = {
-					CZE = { 
-						exists = yes 
-						owns_state = 664
-					}
-				}
-				if = {
-					limit = {
-						CZE = { is_subject = yes }
-					}
-					create_wargoal = {
-						type = take_state_focus
-						target = CZE
-						generator = { 664 }
-					}
-					else = { 
-						CZE = { country_event = DOD_hungary.80 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					664 = { is_owned_by = POL } #exchanged Danzig for Slovakia
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = POL
-					generator = { 664 }
-				}
-			}
-			if = {
-				limit = {
-					SLO = { 
-						exists = yes 
-						owns_state = 664
-					}
-				}
-				SLO = { country_event = DOD_hungary.80 }
-			}
-			hidden_effect = {
-				news_event = { id = news.303 }
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_demand_the_vojvodina
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = HUN_demand_transylvania }
-		prerequisite = { focus = HUN_demand_southern_slovakia }
-		x = 0
-		y = 2
-		relative_position_id = HUN_reaffirm_territorial_claims
-		will_lead_to_war_with = YUG
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-			YUG = { has_capitulated = yes }
-		}
-
-		bypass = {
-			OR = {
-				YUG = {
-					exists = no
-				}
-				owns_state = 45
-				45 = {
-					OWNER = {
-						is_in_faction_with = ROOT
-					}
-				}
-				45 = {
-					OWNER = {
-						has_war_with = ROOT
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = HUN_demands_tt
-			if = {
-				limit = {
-					OR = {
-						has_war_with = YUG
-						45 = {
-							NOT = {
-								is_owned_by = YUG
-							}
-						}
-					}
-				}
-				add_state_claim = 45
-				else = {
-					if = {
-						limit = {
-							YUG = { 
-								is_subject = yes 
-								owns_state = 45
-							}
-						}
-						create_wargoal = {
-							type = take_state_focus
-							target = YUG
-							generator = { 45 }
-						}
-						else = {
-							if = {
-								limit = {
-									45 = { is_owned_by = YUG }
-								}
-								YUG = { country_event = DOD_hungary.90 }
-							}
-						}
-					}
-				}
-			}
-			hidden_effect = {
-				news_event = { id = news.306 }
-			}
 		}
 	}
 
 	focus = {
 		id = HUN_proclaim_greater_hungary
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		prerequisite = { focus = HUN_demand_the_vojvodina }
+		prerequisite = { focus = HUN_reaffirm_territorial_claims }
 		x = 0
-		y = 3
+		y = 1
 		relative_position_id = HUN_reaffirm_territorial_claims
 
-		cost = 16
+		cost = 2
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			
-			OR = {
-				owns_state = 664
-				owns_state = 73
-				owns_state = 76
-				owns_state = 84
-				owns_state = 83
-				owns_state = 82
-				owns_state = 45
-			}
-			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
+			owns_state = 664
+			owns_state = 73
+			owns_state = 45
 		}
 
 		bypass = {
@@ -676,12 +403,6 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = news.299 }
 				}
-			remove_state_claim = 664
-			remove_state_claim = 45
-			add_state_core = 664
-			add_state_core = 45
-			
-			add_state_core = 73
 			add_political_power = 100
 			
 		}
@@ -726,9 +447,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_industrial_revitalization
-				bonus = 1
-				uses = 1
-				category = industry
+				bonus = 1.0
+				uses = 2
+				category = construction_tech
 			}
 		}
 	}
@@ -889,18 +610,12 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_support_domestic_industry_IC
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-			}
-			add_tech_bonus = {
-				name = HUN_industrial_revitalization
-				bonus = 0.5
-				uses = 1
-				category = excavation_tech
 			}
 		}
 
@@ -909,24 +624,17 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_support_domestic_industry_IC
-			}
-			
-			add_tech_bonus = {
-				name = HUN_industrial_revitalization
-				bonus = 0.25
-				uses = 2
-				category = construction_tech
 			}
 		}
 	}
@@ -1061,9 +769,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_announce_the_gyor_program
-				bonus = 0.5
-				uses = 2
-				category = construction_tech
+				bonus = 1.0
+				uses = 1
+				category = industry
 			}
 		}
 	}
@@ -1542,7 +1250,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_synthetic_industry
-				bonus = 0.25
+				bonus = 1.00
 				uses = 2
 				category = synth_resources
 			}
@@ -1911,7 +1619,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_heavy_fighter_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_heavy_fighter
 		
@@ -1952,7 +1660,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 			}
@@ -1992,7 +1700,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_cas_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cas_bomber
 			
@@ -2033,7 +1741,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_tac_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 			}
@@ -2245,7 +1953,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
