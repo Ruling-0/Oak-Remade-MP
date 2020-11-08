@@ -911,7 +911,7 @@ technologies = {
 		
 		category_line_artillery = {
 			default_morale = 0.1
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -944,7 +944,7 @@ technologies = {
 	overwhelming_firepower = {
 
 		category_line_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.075
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
