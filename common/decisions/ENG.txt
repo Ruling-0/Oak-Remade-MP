@@ -1,228 +1,3 @@
-political_actions = {
-    ENG_annex_raj = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG			
-		}
-
-		available = {
-			is_ai = no
-			RAJ = { is_ai = yes }
-			date > 1939.1.1
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-
-		complete_effect = {
-			RAJ = {
-				transfer_navy = {
-					target = ENG
-				}
-			}
-			annex_country = {
-              target = RAJ
-              transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = RAJ
-				}
-				add_core_of = ENG
-			}	
-		}		
-	}
-   ENG_annex_can = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG			
-		}
-
-		available = {
-			is_ai = no
-			NZL = { is_ai = yes }
-			date > 1939.1.1
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-
-		complete_effect = {
-			CAN = {
-				transfer_navy = {
-					target = ENG
-				}
-			}
-			annex_country = {
-              target = CAN
-              transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = CAN
-				}
-				add_core_of = ENG
-			}	
-		}		
-	}
-   ENG_annex_ast = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG			
-		}
-
-		available = {
-			is_ai = no
-			AST = { is_ai = yes }
-			date > 1939.1.1
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-
-		complete_effect = {
-			AST = {
-				transfer_navy = {
-					target = ENG
-				}
-			}
-			annex_country = {
-              target = AST
-              transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = AST
-				}
-				add_core_of = ENG
-			}	
-		}		
-	}
-   ENG_annex_saf = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG			
-		}
-
-		available = {
-			is_ai = no
-			SAF = { is_ai = yes }
-			date > 1939.1.1
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-
-		complete_effect = {
-			SAF = {
-				transfer_navy = {
-					target = ENG
-				}
-			}
-			annex_country = {
-              target = SAF
-              transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = SAF
-				}
-				add_core_of = ENG
-			}	
-		}		
-	}
-   ENG_annex_ire = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG			
-		}
-
-		available = {
-			is_ai = no
-			IRE = { is_ai = yes }
-			date > 1939.1.1
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-
-		complete_effect = {
-			IRE = {
-				transfer_navy = {
-					target = ENG
-				}
-			}
-			annex_country = {
-              target = IRE
-              transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = IRE
-				}
-				add_core_of = ENG
-			}	
-		}		
-	}
-   ENG_annex_nzl = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG			
-		}
-
-		available = {
-			is_ai = no
-			NZL = { is_ai = yes }
-			date > 1939.1.1
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-
-		complete_effect = {
-			NZL = {
-				transfer_navy = {
-					target = ENG
-				}
-			}
-			annex_country = {
-              target = NZL
-              transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = NZL
-				}
-				add_core_of = ENG
-			}	
-		}		
-	}
-}	
-
 ENG_budget_decisions = {
 
 	ENG_collect_budget = {
@@ -2113,6 +1888,228 @@ ENG_budget_decisions = {
 }
 
 operations = {
+    ENG_annex_raj = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			RAJ = { is_ai = yes }
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			RAJ = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = RAJ
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+				add_core_of = ENG
+			}	
+		}		
+	}
+   ENG_annex_can = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			NZL = { is_ai = yes }
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			CAN = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = CAN
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				add_core_of = ENG
+			}	
+		}		
+	}
+   ENG_annex_ast = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			AST = { is_ai = yes }
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			AST = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = AST
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+				add_core_of = ENG
+			}	
+		}		
+	}
+   ENG_annex_saf = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			SAF = { is_ai = yes }
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			SAF = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = SAF
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = SAF
+				}
+				add_core_of = ENG
+			}	
+		}		
+	}
+   ENG_annex_ire = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			IRE = { is_ai = yes }
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			IRE = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = IRE
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = IRE
+				}
+				add_core_of = ENG
+			}	
+		}		
+	}
+   ENG_annex_nzl = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			NZL = { is_ai = yes }
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			NZL = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = NZL
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+				add_core_of = ENG
+			}	
+		}		
+	}
 	french_partisans_normandy = {
         icon = generic_civil_support
         

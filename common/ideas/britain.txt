@@ -8,7 +8,7 @@ ideas = {
 			picture = SPR_torchbearers_of_tomorrow
 			
 			allowed = { 
-				always no
+				always = no
 			}
 			removal_cost = -1
 			modifier = {
