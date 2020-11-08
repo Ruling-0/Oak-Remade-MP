@@ -1956,25 +1956,6 @@ ideas = {
 			}
 		}	
 
-		FRA_vincent_auriol = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-			
-			traits = { financial_expert }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		FRA_roger_salengro = {
 			
 			allowed = {
@@ -2198,7 +2179,7 @@ ideas = {
 			
 
 			
-			traits = { army_armored_2 }
+			traits = { army_armored_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2232,7 +2213,7 @@ ideas = {
 			
 
 			
-			traits = { army_commando_2 }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2240,7 +2221,7 @@ ideas = {
 		}	
 		
 		alfred_heurtaux = {
-			ledger = air
+			ledger = army
 			
 			
 			allowed = {
@@ -2249,7 +2230,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_combat_training_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1

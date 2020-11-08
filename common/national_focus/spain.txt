@@ -3989,7 +3989,7 @@ focus_tree = {
 		available = {
 		    date > 1940.1.1	
 			has_global_flag = scw_over
-			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
+			NOT = { has_completed_focus = SPA_join_the_axis }
 		}
 		bypass = {
 		}

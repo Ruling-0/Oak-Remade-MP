@@ -555,7 +555,6 @@ ideas = {
 				Tag = SPR
 			    tag = SWE
 			    tag = TUR
-				tag = FRA
 				tag = SWI
 				AND = {
 			        has_war = no

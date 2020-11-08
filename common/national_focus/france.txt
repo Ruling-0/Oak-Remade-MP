@@ -1692,7 +1692,6 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
-			add_ideas = free_trade
 			add_ideas = war_economy
 			add_tech_bonus = {
 				name = FRA_appoint_new_supreme_commander
