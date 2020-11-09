@@ -963,7 +963,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = FRA
-				trade_cost_for_target_factor = -0.5
+				trade_cost_for_target_factor = -0.25
 			}	
 			targeted_modifier = {
 				tag = USA

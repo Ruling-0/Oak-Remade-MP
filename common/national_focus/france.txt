@@ -1686,29 +1686,25 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = 772
-			add_ideas = war_economy
-			add_tech_bonus = {
-				name = FRA_appoint_new_supreme_commander
-				bonus = 3.0
-				uses = 2
-				category = land_doctrine
-			}
-			add_popularity = { ideology = democratic popularity = 0.50 }
-			hidden_effect = { news_event = { id = news.342 hours = 12 } }
-			
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 10
-			}	
+			remove_ideas = FRA_naval
+			add_popularity = { ideology = democratic popularity = 0.75 }	
             add_offsite_building = { 
 			    type = dockyard 
 				level = 2 
 			}			
+			add_tech_bonus = {
+				name = FRA_appoint_new_supreme_commander
+				bonus = 3.0
+				uses = 3
+				category = land_doctrine
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+			}
+			add_ideas = war_economy
 			hidden_effect  {
+			news_event = { id = news.342 hours = 12 } 
 			create_corps_commander = {
 				name = "Charles De Gaulle"
 				picture = "Portrait_France_Charles_De_Gaulle.dds"
@@ -1770,10 +1766,6 @@ focus_tree = {
  			    coordination_skill = 4
 			}
 				load_oob = FRA_naval_oob
-			}
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 150
 			}			
 		}
 	}
@@ -1831,7 +1823,8 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+		    num_of_civilian_factories < 15
+		    num_of_military_factories < 10
 		}
 		
 		bypass = {
@@ -1843,8 +1836,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+			add_offsite_building = {
 				type = arms_factory
-				level = 4
+				level = 10
 			}
 		}
 	}
@@ -1880,7 +1877,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 100
+				amount = 250
 			}		
 		}
 	}

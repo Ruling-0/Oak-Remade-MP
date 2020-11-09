@@ -6,6 +6,8 @@
  quantity3:0 "Mass Production III"
  
  refinery_idea:0 "No need to build refineries yet"
+ FRA_naval:0 "Peaceful Seas"
+ FRA_naval_desc:0 "France has no need for a large navy at this time."
  
  MAN_resource:0 "Resource Bitch"
  MAN_resource_desc:0 "Guess what your job is"
