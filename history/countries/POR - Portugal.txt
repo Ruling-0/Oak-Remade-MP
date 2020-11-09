@@ -244,8 +244,20 @@ if = {
 	
 	
 	create_field_marshal = {
-		name = "Field Commander"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+		name = "Sergeant Arch Dornan"
+		portrait_path = "gfx/leaders/POR/Enclave.dds"
+		traits = { offensive_doctrine inspirational_leader organizer logistics_wizard }
+		skill = 4
+	
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+	
+	create_field_marshal = {
+		name = "Carl Johnson"
+		portrait_path = "gfx/leaders/POR/CarlJohnson.dds"
 		traits = { offensive_doctrine inspirational_leader organizer logistics_wizard }
 		skill = 4
 	
@@ -256,8 +268,8 @@ if = {
 	}
 	
 	create_corps_commander = {
-		name = "Tank Commander"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+		name = "Courier Six"
+		portrait_path = "gfx/leaders/POR/CourierSix.dds"
 		traits = { yak_command panzer_leader panzer_expert trickster }
 		skill = 4
 	
@@ -268,8 +280,21 @@ if = {
 	}
 	
 	create_corps_commander = {
-		name = "Motorized Commander"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+		name = "Truth"
+		portrait_path = "gfx/leaders/POR/Truth.dds"
+		traits = { yak_command infantry_leader infantry_expert }
+		skill = 4
+	
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+	
+	
+	create_corps_commander = {
+		name = "Tenpenny"
+		portrait_path = "gfx/leaders/POR/Tenpenny.dds"
 		traits = { yak_command motorized_leader motorized_expert trickster }
 		skill = 4
 	
@@ -280,8 +305,8 @@ if = {
 	}
 	
 	create_corps_commander = {
-		name = "Calvary Commander"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+		name = "Salvatore Leone"
+		portrait_path = "gfx/leaders/POR/SalvatoreLeone.dds"
 		traits = { yak_command cavalry_leader cavalry_expert }
 		skill = 4
 	
@@ -290,18 +315,6 @@ if = {
 		planning_skill = 4
 		logistics_skill = 4
 	}	
-	
-	create_corps_commander = {
-		name = "Infantry Commander"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-		traits = { yak_command infantry_leader infantry_expert }
-		skill = 4
-	
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 4
-	}
 	
 	create_navy_leader = {
 		name = "Darth Revan"
@@ -315,8 +328,8 @@ if = {
 	}
 	
 	create_navy_leader = {
-		name = "José Mendes Cabeçadas"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+		name = "Wu Zi Mu"
+		portrait_path = "gfx/leaders/POR/WuZiMu.dds"
 		traits = { gentlemanly seawolf silent_hunter loading_drill_master superior_tactician inshore_fighter }
 		skill = 3
 		attack_skill = 3
