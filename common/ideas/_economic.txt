@@ -92,6 +92,7 @@ ideas = {
 			visible = {
 				NOT = {
 					tag = USA 
+					tag = POR
 				}
 			}
 
@@ -122,6 +123,7 @@ ideas = {
 			visible = {
 				NOT = {
 					tag = USA 
+					tag = POR
 				}
 			}			
 
@@ -173,6 +175,7 @@ ideas = {
 			visible = {
 				NOT = {
 					tag = USA 
+					tag = POR
 				}
 			}
 
@@ -229,6 +232,7 @@ ideas = {
 			visible = {
 				NOT = {
 					tag = USA 
+					tag = POR
 				}
 			}
 
@@ -327,6 +331,7 @@ ideas = {
 
 			visible = {
 				NOT = {
+				    tag = POR
 					tag = USA 
 				}
 			}			
@@ -541,6 +546,105 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
+		POR_eco1 = {
+		
+		    picture = POR_economy1
+		
+			available = {
+				tag = POR
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.05
+				conversion_cost_civ_to_mil_factor= -0.05
+				conversion_cost_mil_to_civ_factor = 0.1
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.025
+			}
+			
+			ai_will_do = {
+   				factor = 200
+            }
+
+			visible = {
+				tag = POR 
+			}
+
+			cancel_if_invalid = no
+		}
+		POR_eco2 = {
+		
+		    picture = POR_economy2
+		
+			available = {
+				has_completed_focus = POR_proudly_alone
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_weekly = -0.001
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.05		
+				political_power_factor = 0.05	
+			}
+			
+			ai_will_do = {
+   				factor = 200
+            }
+
+			visible = {
+				tag = POR 
+			}
+
+			cancel_if_invalid = no
+		}
+		POR_eco3 = {
+		
+		    picture = POR_economy3
+		
+			available = {
+				has_completed_focus = POR_revan2
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_weekly = -0.002
+				industry_repair_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.075
+				global_building_slots_factor = 0.1
+				political_power_factor = 0.1
+			}
+			
+			ai_will_do = {
+   				factor = 200
+            }
+
+			visible = {
+				tag = POR 
+			}
+
+			cancel_if_invalid = no
+		}
 	}
 	## TRADING
 	trade_laws = { 
@@ -563,6 +667,12 @@ ideas = {
 				}
 			}
 		}
+		
+			visible = {
+				NOT = {
+					tag = POR
+				}
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -592,6 +702,12 @@ ideas = {
 					tag = TUR
 					tag = POR
 					tag = SWI
+				}
+			}
+			
+			visible = {
+				NOT = {
+					tag = POR
 				}
 			}
 
@@ -646,6 +762,12 @@ ideas = {
 					}
 				}
 			}
+			
+			visible = {
+				NOT = {
+					tag = POR
+				}
+			}
 		
 			cost = 150
 			removal_cost = -1
@@ -690,6 +812,12 @@ ideas = {
 				}
 			}
 			
+			visible = {
+				NOT = {
+					tag = POR
+				}
+			}
+			
 			cost = 150
 			removal_cost = -1
 			
@@ -705,6 +833,37 @@ ideas = {
 			on_add = {
 				custom_effect_tooltip = closed_economy_TT
 			}
+			
+			cancel_if_invalid = no
+		}
+		POR_tra1 = {
+		
+		    picture = POR_trade1
+			
+		    available = {
+			    tag = POR
+			}
+		
+			visible = {
+				tag = POR
+			}
+
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0				   							   
+			}
+			
+			ai_will_do = {
+   				factor = 0
+            }
 			
 			cancel_if_invalid = no
 		}

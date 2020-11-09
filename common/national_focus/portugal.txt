@@ -2569,7 +2569,7 @@ focus_tree = {
 				add_idea = POR_estado_novo_5	
 			}
 			remove_ideas = POR_unstable_republic
-			set_rule = { can_create_factions = yes }
+			add_ideas = POR_eco2
 		}
 	}
 	
@@ -2600,7 +2600,7 @@ focus_tree = {
 	                CAS_1941 = 1
 			    }
 			}
-			add_ideas = war_economy
+			add_ideas = POR_man2
 		}
 	}
 	focus = {
@@ -2633,7 +2633,7 @@ focus_tree = {
 	                CAS_1943 = 1
 			    }
 			}
-			add_ideas = tot_economic_mobilisation
+			add_ideas = POR_eco3
 		    swap_ideas = {
 			  	remove_idea = POR_volunteers_in_the_war_nationalist
 			   	add_idea = POR_aid

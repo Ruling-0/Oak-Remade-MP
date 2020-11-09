@@ -8,13 +8,13 @@ if = {
 set_research_slots = 5
 
 add_ideas = {
-    free_trade
+    POR_tra1
+	POR_man1
+	POR_eco1
 	no_spies_idea
 	POR_german_trading
 	POR_volunteers_in_the_war_nationalist
-	limited_conscription
 	POR_fuel
-	partial_economic_mobilisation
 }
 set_technology = {
 	################# infantry ###############

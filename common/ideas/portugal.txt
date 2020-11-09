@@ -48,6 +48,7 @@ ideas = {
 			removal_cost = -1
 			
 			rule = {
+			    can_create_factions = yes
 				can_send_volunteers = yes
 			}
 			
@@ -62,7 +63,7 @@ ideas = {
 		}
 		
 		POR_aid = {
-			picture = por_volunteers_in_the_war
+			picture = POR_Volunteer1
 			allowed = {
 				original_tag = POR
 			}
@@ -73,6 +74,7 @@ ideas = {
 			removal_cost = -1
 			
 			rule = {
+			    can_create_factions = yes
 				can_send_volunteers = yes
 			}
 			

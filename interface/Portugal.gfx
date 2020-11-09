@@ -1,0 +1,32 @@
+spriteTypes = {	
+
+	#### Generic goal icons
+	spriteType = {
+		name = "GFX_idea_POR_economy1"
+		texturefile = "gfx/interface/ideas/POR_economy1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_economy2"
+		texturefile = "gfx/interface/ideas/POR_economy2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_economy3"
+		texturefile = "gfx/interface/ideas/POR_economy3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_manpower1"
+		texturefile = "gfx/interface/ideas/POR_manpower1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_manpower2"
+		texturefile = "gfx/interface/ideas/POR_manpower2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_trade1"
+		texturefile = "gfx/interface/ideas/POR_trade1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_Volunteer1"
+		texturefile = "gfx/interface/ideas/POR_Volunteer1.dds"
+	}
+}
