@@ -371,7 +371,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.02
+				conscription = 0.035
 			}
 			cancel_if_invalid = no
 		}
@@ -393,7 +393,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.04
+				conscription = 0.05
 			}
 			cancel_if_invalid = no
 		}

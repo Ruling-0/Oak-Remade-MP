@@ -17,7 +17,7 @@ ideas = {
 			picture = ROM_the_resource_curse
 			
 			modifier = {
-				fuel_gain_from_states = 250.0	
+				fuel_gain_from_states = 300.0	
 			}
 		}
 		POR_german_trading = {
@@ -56,6 +56,7 @@ ideas = {
 				send_volunteer_size = 12
 				air_volunteer_cap = 1000
 				lend_lease_tension = -1
+				join_faction_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
 				special_forces_min = 100
@@ -82,6 +83,7 @@ ideas = {
 				send_volunteer_size = 24
 				air_volunteer_cap = 2500
 				lend_lease_tension = -1
+				join_faction_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
 				special_forces_min = 265
