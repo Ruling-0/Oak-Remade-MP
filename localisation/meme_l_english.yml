@@ -24,3 +24,6 @@
  POR_man2_desc:0 "We have expanded our recuitment efforts to ensure we have a steadly supply of recruits."
  POR_tra1:0 "Supply the World"
  POR_tra1_desc:0 "We shall help supply resources to ensure a steadly growth in our economy."
+ POR_con:0 "Poseidon Energy"
+ POR_con_desc:0 "Poseidon Energy will ensure the world is supplied with all the equipment, arms and fuel it needs."
+ energy_concern:0 "Energy Company"

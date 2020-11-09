@@ -1414,6 +1414,24 @@ ideas = {
 				modifier = {
 				}
 			}
+			POR_con = {
+			
+				picture = POR_concern1
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+				research_bonus = {
+					industry = 0.15
+				}
+				
+				traits = { energy_concern }
+				
+				modifier = {
+				}
+			}
 		}
 	tank_manufacturer = {
 		

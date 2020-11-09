@@ -29,4 +29,8 @@ spriteTypes = {
 		name = "GFX_idea_POR_Volunteer1"
 		texturefile = "gfx/interface/ideas/POR_Volunteer1.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_POR_concern1"
+		texturefile = "gfx/interface/ideas/POR_concern1.dds"
+	}
 }
