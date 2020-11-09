@@ -610,7 +610,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_bomber_focus
-				bonus = 10
+				bonus = 1
 				uses = 1
 				category = cat_strategic_bomber
 				category = tactical_bomber
@@ -651,7 +651,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_defend_our_islands
-				bonus = 10
+				bonus = 1
 				uses = 2
 				category = naval_air
 			}
@@ -862,7 +862,7 @@ focus_tree = {
 			284 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 20
 				}
 			}
 		}
@@ -902,7 +902,7 @@ focus_tree = {
 			284 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 10
 				}
 			}
 		}
