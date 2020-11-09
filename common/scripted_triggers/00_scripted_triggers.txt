@@ -232,7 +232,6 @@ ai_air_doctrine_tier_1_trigger = {
 	OR = {
 		has_tech = naval_strike_tactics
 		has_tech = direct_ground_support
-		has_tech = low_echelon_support
 	}
 }
 
@@ -240,14 +239,11 @@ ai_air_doctrine_tier_2_trigger = {
 	OR = {
 		has_tech = multialtitude_flying
 		has_tech = hunt_and_destroy
-		has_tech = operational_destruction
 	}
 }
 ai_air_doctrine_tier_3_trigger = {
 	OR = {
 		has_tech = flying_fortress
-		has_tech = naval_strike_torpedo_tactics
-		has_tech = infiltration_bombing
 	}
 }
 
