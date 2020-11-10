@@ -1,3 +1,106 @@
+operations = {
+    POR_ally = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			ENG = {
+				is_faction_leader = yes
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			ENG = { add_to_faction = POR }	
+		}		
+	}
+   POR_axis = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			GER = {
+				is_faction_leader = yes
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			GER = { add_to_faction = POR }	
+		}		
+	}
+   POR_comm = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			SOV = {
+				is_faction_leader = yes
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			SOV = { add_to_faction = POR }	
+		}		
+	}
+   POR_jap = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			JAP = {
+				is_faction_leader = yes
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			JAP = { add_to_faction = POR }	
+		}		
+	}
+}
+
 POR_overseas_provinces = {
 
 	POR_angola_overseas_province = {
