@@ -35,6 +35,9 @@
  
  HOL_american_aid:0 "American Aid"
  HOL_american_aid_desc:0 "The Americans have sent us aidto help rebuild our armed forces."
+ 
+ ITA_home_defence:0 "Italian Home Guard"
+ ITA_home_defence_desc:0 "All men to the front!  If we do not stop this now, we might never!
 
  SOV_tank_designers_tt:0 "§R!!§G Gain Access to several tank designers.§W\n"
  cossacks_tt:0 "§YSpawn in Kiev 8 Cossacks cavalry Corps with very little equipement"
@@ -5079,7 +5082,7 @@ FIN_further_artillery_support_desc:0 "Artillery support has proven invaluable to
  ROM_ensure_agricultural_self_sufficiency_desc:0 "We can depend on Germnay for technological expertise but the one thing that cannot depend on any other nation is our food supply, special emphasis must be placed on our agricultural sector to achieve self sufficiency."
  ROM_support_the_war_industry:0 "Support the War Industry"
  ROM_support_the_war_industry_desc:0 "Every citizen needs to understand the role he plays during war, it is the patriotic duty of every citizen to contribute to the war effort by buying war bonds,working hard to ensure that bullets produced at the homefront reach the frontlines in time. It is time for everyone to support the war industry."
-   
+
  CHI_the_defence_of_china:0 "The Defence of China"
  CHI_japan_is_the_greater_threat:0 "Japan is the Greater Threat"
  CHI_consolidate_our_forces:0 "Consolidate our Forces"

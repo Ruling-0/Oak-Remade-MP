@@ -365,7 +365,7 @@ country_event = {
 
 	option = {
 		name = usa.27.a
-		every_state = {
+		every_owned_state = {
 			add_building_construction = {
 				type = infrastructure
 				level = 2 

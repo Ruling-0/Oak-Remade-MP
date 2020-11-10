@@ -942,6 +942,28 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_home_defence
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = ITA_ARMIR }
+		relative_position_id = ITA_ARMIR 
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		available = { 
+			ENG = { controls_state = 115 }
+			has_war_with = SOV
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			# Ipswich
+			add_ideas = the_home_guard
+		
+		}
+	}
+	focus = {
 		id = ITA_bassotto
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = ITA_ARMIR }
