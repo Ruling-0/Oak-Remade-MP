@@ -483,6 +483,11 @@ ideas = {
 					build_cost_ic = -0.10
 				}
 			}
+			modifier = {
+				refit_ic_cost = -0.2
+				refit_speed = 0.2
+				repair_speed_factor = 0.2
+			} 
 		}
 
 		POR_advanced_light_aircraft = {
