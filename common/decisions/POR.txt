@@ -117,7 +117,7 @@ operations = {
 
 		cost = 0
 
-		fire_only_once = no
+		fire_only_once = yes
 
 
 		complete_effect = {
