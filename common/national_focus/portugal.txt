@@ -2396,6 +2396,7 @@ focus_tree = {
 		completion_reward = { 	
 			hidden_effect = {
 				set_technology = { 
+				    improved_infantry_weapons = 1
 				    light_tank_1938 = 1 
 					medium_tank_1939 = 1
 					fighter_1938 = 1
@@ -2607,6 +2608,10 @@ focus_tree = {
 	                CAS_1941 = 1
 			    }
 			}
+	        add_offsite_building = { 
+			    type = dockyard 
+				level = 5
+			}	
 			add_ideas = POR_man2
 		}
 	}
@@ -2685,7 +2690,7 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
-				add_equipment_to_stockpile = { type = light_tank_1940 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1940 amount = 250 producer = POR }
 			}
 		}
 	}
@@ -2711,6 +2716,7 @@ focus_tree = {
 		completion_reward = { 
 			hidden_effect = {
 				set_technology = { 
+				    advanced_infantry_weapons = 1
 				    light_tank_1942 = 1 
 					medium_tank_1943 = 1
 					heavy_tank_1943 = 1

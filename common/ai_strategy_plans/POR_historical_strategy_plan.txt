@@ -46,7 +46,6 @@ POR_historical_plan = {
 		POR_a_powerful_merchant_marine
 		#1938
 		POR_army_reorganization
-		POR_observation_mission
 		POR_strengthen_the_regime
 		POR_corpo_do_estado_maior
 		POR_ogme
@@ -57,7 +56,6 @@ POR_historical_plan = {
 		POR_metropolitan_army
 		POR_ogma
 		#1940
-		POR_the_capital_of_espionage
 		POR_concordat_with_the_holy_see
 		POR_textile_industry
 		POR_portuguese_artillery
