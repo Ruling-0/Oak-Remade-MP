@@ -2254,39 +2254,34 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = POR_observation_mission
+		id = POR_fins
 
-		available = {	
+		available = {
+			OR = {
+				FIN = { has_war_with = SOV }
+				date > 1940.3.1	
+			}
+			is_ai = no
 		}
 		prerequisite = { focus = POR_support_the_spanish_nationalists }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_invite_finland
 		x = -2		
 		y = 1
 
 		relative_position_id = POR_support_the_spanish_nationalists
-		cost = 2
+		cost = 3
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
-			add_tech_bonus = {
-				name = POR_observation_mission
-			    bonus = 1.0
-			    uses = 1
-			    category = cat_light_armor
-			}
-
-			hidden_effect = {
-				add_ai_strategy = {
-					type = befriend
-					id = SPA
-					value = 100
-				}
-				SPA = {
-					add_ai_strategy = {
-						type = befriend
-						id = POR
-						value = 100
-					}
-				}
+			add_political_power = 75
+			army_experience = 20
+			air_experience = 20
+			FIN = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
+				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
 			}
 		}
 	}
@@ -2296,14 +2291,15 @@ focus_tree = {
 
 		select_effect = {
 		}
-
+		
 		available = {
-			SPR_scw_in_progress = yes
+			OR = {
+				SPR_scw_in_progress = yes
+				date > 1939.1.1	
+			}
 			is_ai = no
 		}
-
 		bypass = {
-			has_global_flag = scw_over
 		}
 		prerequisite = { focus = POR_support_the_spanish_nationalists }
 		icon = GFX_focus_intervention_spain_nationalists
@@ -2343,24 +2339,34 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = POR_the_capital_of_espionage
-		available = {	
-			owns_state = 112
-			has_war = no
+		id = POR_fran
+		available = {
+			OR = {
+				country_exists = EFR
+				date > 1940.6.1	
+			}
+			is_ai = no
 		}
 
 		bypass = {		
 		}
 		prerequisite = { focus = POR_portuguese_legion }
 
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_chi_reach_out_to_france
 		x = -2
 		y = 1
 
 		relative_position_id = POR_portuguese_legion
-		cost = 2
+		cost = 3
 		completion_reward = { 
-			add_ideas = POR_the_capital_of_espionage
+			add_political_power = 75
+			army_experience = 20
+			air_experience = 20
+			FRA = {
+			    add_manpower = 15000
+				add_equipment_to_stockpile = { type = convoy amount = 100 producer = POR }
+			}
+			add_manpower = -15000
 		}
 	}
 	
@@ -2407,8 +2413,8 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
-				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_1934 amount = 100 producer = POR }
+				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 100 producer = POR }
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1937 amount = 100 producer = POR }
 			}
 		}
 	}
@@ -2605,6 +2611,85 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = POR_engs
+
+		select_effect = {
+		}
+
+		available = {
+			OR = {
+				ENG = { has_war_with = ITA }
+				date > 1940.6.1	
+			}
+			is_ai = no
+		}
+
+		bypass = {
+		}
+		prerequisite = { focus = POR_revan1 }
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = -2	
+		y = 1
+
+		relative_position_id = POR_revan1
+		cost = 5
+		completion_reward = { 	
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
+			custom_effect_tooltip = POR_engs_tt
+			ENG = {
+			    add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = fighter_equipment_1940 amount = 100 producer = POR }
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1939 amount = 100 producer = POR }
+			}
+		}
+	}
+	focus = {
+		id = POR_italy
+
+		select_effect = {
+		}
+
+		available = {
+			OR = {
+				ITA = { has_war_with = ENG }
+				date > 1940.6.1	
+			}
+			is_ai = no
+		}
+
+		bypass = {
+		}
+		prerequisite = { focus = POR_revan1 }
+		icon = GFX_focus_ger_assassinate_mussolini
+		x = 2	
+		y = 1
+
+		relative_position_id = POR_revan1
+		cost = 5
+		completion_reward = { 	
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
+			custom_effect_tooltip = POR_italy_tt
+			ITA = {
+			    add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = light_tank_1940 amount = 250 producer = POR }
+			}
+		}
+	}
+	focus = {
 		id = POR_revan2
 		available = {
             GER = { has_war_with = SOV }		
@@ -2639,6 +2724,115 @@ focus_tree = {
 			  	remove_idea = POR_volunteers_in_the_war_nationalist
 			   	add_idea = POR_aid
 		    }
+		}
+	}
+	focus = {
+		id = POR_russ
+
+		select_effect = {
+		}
+
+		available = {
+			OR = {
+				SOV = { has_war_with = GER }
+				date > 1941.9.1	
+			}
+			is_ai = no
+		}
+
+		bypass = {
+		}
+		prerequisite = { focus = POR_revan2 }
+		icon = GFX_SOV_stalin_constitution
+		x = -2	
+		y = 1
+
+		relative_position_id = POR_revan2
+		cost = 5
+		completion_reward = { 	
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
+			custom_effect_tooltip = POR_germ_tt
+			SOV = {
+			    add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = fighter_equipment_1942 amount = 100 producer = POR }
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1941 amount = 100 producer = POR }
+			}
+		}
+	}
+	focus = {
+		id = POR_usa
+
+		select_effect = {
+		}
+
+		available = {
+			date > 1942.1.1	
+			is_ai = no
+		}
+
+		bypass = {
+		}
+		prerequisite = { focus = POR_revan2 }
+		icon = GFX_USA_federal_housing_act
+		x = 0
+		y = 1
+
+		relative_position_id = POR_revan2
+		cost = 5
+		completion_reward = { 	
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
+			USA = {
+			    add_offsite_building = { type = arms_factory level = 4 }
+			}
+		}
+	}
+	focus = {
+		id = POR_germ
+
+		select_effect = {
+		}
+
+		available = {
+			OR = {
+				GER = { has_war_with = SPV }
+				date > 1941.9.1	
+			}
+			is_ai = no
+		}
+
+		bypass = {
+		}
+		prerequisite = { focus = POR_revan2 }
+		icon = GFX_GER_total_war
+		x = 2	
+		y = 1
+
+		relative_position_id = POR_revan2
+		cost = 5
+		completion_reward = { 	
+			army_experience = 20
+			air_experience = 20
+			add_political_power = 75
+			custom_effect_tooltip = POR_germ_tt
+			GER = {
+			    add_offsite_building = { type = arms_factory level = 2 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
+				add_equipment_to_stockpile = { type = fighter_equipment_1942 amount = 100 producer = POR }
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1941 amount = 100 producer = POR }
+			}
 		}
 	}
 }
