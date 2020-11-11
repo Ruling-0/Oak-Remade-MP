@@ -381,9 +381,9 @@ focus_tree = {
 		}
 
 		available = {
-			owns_state = 664
-			owns_state = 73
-			owns_state = 45
+			owns_state = 155
+			owns_state = 154
+			owns_state = 43
 		}
 
 		bypass = {
