@@ -33,7 +33,7 @@
  POR_fran_desc:0 "Send some aid to France."
  POR_engs:0 "Support Our Old Friend"
  POR_engs_desc:0 "Aid for our oldest ally, England who we will always support."
- POR_engs_tt:0 "Will get 100 1940 fighters and 100 1939 bombers and infantry equipment kit 3 guns."
+ POR_engs_tt:0 "Will get 100 1940 fighters and 100 1939 bombers."
  POR_italy:0 "Support Italy's Bid in Africa"
  POR_italy_desc:0 "Send some help to the fools and their silly claim to an Italian lake."
  POR_italy_tt:0 "Will get 250 1940 light tanks."

@@ -2645,7 +2645,7 @@ focus_tree = {
 			custom_effect_tooltip = POR_engs_tt
 			ENG = {
 			    add_offsite_building = { type = arms_factory level = 2 }
-				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 5000 producer = POR }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
