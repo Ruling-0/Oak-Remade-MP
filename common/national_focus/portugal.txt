@@ -2404,9 +2404,9 @@ focus_tree = {
 	                CAS_1939 = 1
 			    }
 			}
+			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			add_political_power = 75
 			JAP = {
 			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
@@ -2639,9 +2639,9 @@ focus_tree = {
 		relative_position_id = POR_revan1
 		cost = 5
 		completion_reward = { 	
+			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			add_political_power = 75
 			custom_effect_tooltip = POR_engs_tt
 			ENG = {
 			    add_offsite_building = { type = arms_factory level = 2 }
@@ -2679,9 +2679,9 @@ focus_tree = {
 		relative_position_id = POR_revan1
 		cost = 5
 		completion_reward = { 	
+			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			add_political_power = 75
 			custom_effect_tooltip = POR_italy_tt
 			ITA = {
 			    add_offsite_building = { type = arms_factory level = 2 }
@@ -2756,9 +2756,9 @@ focus_tree = {
 		relative_position_id = POR_revan2
 		cost = 5
 		completion_reward = { 	
+			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			add_political_power = 75
 			custom_effect_tooltip = POR_germ_tt
 			SOV = {
 			    add_offsite_building = { type = arms_factory level = 2 }
@@ -2793,9 +2793,9 @@ focus_tree = {
 		relative_position_id = POR_revan2
 		cost = 5
 		completion_reward = { 	
+			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			add_political_power = 75
 			USA = {
 			    add_offsite_building = { type = arms_factory level = 4 }
 			}
@@ -2809,7 +2809,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				GER = { has_war_with = SPV }
+				GER = { has_war_with = SOV }
 				date > 1941.9.1	
 			}
 			is_ai = no
@@ -2825,9 +2825,9 @@ focus_tree = {
 		relative_position_id = POR_revan2
 		cost = 5
 		completion_reward = { 	
+			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			add_political_power = 75
 			custom_effect_tooltip = POR_germ_tt
 			GER = {
 			    add_offsite_building = { type = arms_factory level = 2 }

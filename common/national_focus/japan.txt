@@ -2889,59 +2889,49 @@ focus_tree = {
 				target = USA
 				type = annex_everything
 			}		    
-			create_wargoal = {
-					target = "PHI"
-					type = annex_everything
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}	
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
 			}
-			create_wargoal = {
-					target = ENG
-					type = annex_everything
+			declare_war_on = {
+				target = RAJ
+				type = annex_everything
 			}
-			if = {
-				limit = {
-					NOT = { has_wargoal_against = INS }
-					NOT = { has_war_with = INS }
-				}
-				create_wargoal = {
-					target = INS
-					type = annex_everything
-				}
+			declare_war_on = {
+				target = CAN
+				type = annex_everything
 			}
-			if = {
-				limit = {
-					NOT = { has_wargoal_against = RAJ }
-					NOT = { has_war_with = RAJ }
-				}
-				create_wargoal = {
-					target = RAJ
-					type = annex_everything
-				}
+			declare_war_on = {
+				target = AST
+				type = annex_everything
 			}
-			if = {
-				limit = {
-					OR = {
-						671 = {
-							is_controlled_by = FRA
-						}
-						670 = {
-							is_controlled_by = FRA
-						}
-						286 = {
-							is_controlled_by = FRA
-						}
-						741 = {
-							is_controlled_by = FRA
-						}
-					}
-					NOT = { has_wargoal_against = FRA }
-					NOT = { has_war_with = FRA }
-				}
-				#Might be generating on states FRA does not own, but not worth the time to get it exact. Should have no gameplay impact.
-				create_wargoal = {
-					target = FRA
-					type = take_state_focus
-					generator = { 671 670 286 741 }
-				}
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IRE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NZL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PHI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = INS
+				type = annex_everything
 			}
 		}
 	}
