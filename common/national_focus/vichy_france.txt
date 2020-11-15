@@ -1391,12 +1391,16 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 18
 		y = 0
-		cost = 10
+		cost = 5
 
+		available_if_capitulated = yes
 		available = {
-			country_exists = GER
+		   date > 1941.1.1
 		}
 
+		ai_will_do = {
+			factor = 100
+		}
 		
 		completion_reward = {
 			if = {
@@ -1464,12 +1468,15 @@ focus_tree = {
 		prerequisite = {focus = EFR_economic_help}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
+		available_if_capitulated = yes
 		available = {
-			GER = {
-				has_war_with = SOV
-			}
+		    date > 1941.7.1
+		}
+
+		ai_will_do = {
+			factor = 100
 		}
 
 		completion_reward = {
@@ -1498,11 +1505,14 @@ focus_tree = {
 		prerequisite = {focus = EFR_economic_help}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
+		available_if_capitulated = yes
 		available = {
-			country_exists = GER
-			date > 1941.1.1
+		}
+
+		ai_will_do = {
+			factor = 100
 		}
 
 		completion_reward = {
@@ -1537,13 +1547,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		available = {
-			date > 1942.1.1
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 
 		completion_reward = {
@@ -1592,13 +1601,12 @@ focus_tree = {
 		y = 2
 		cost = 5
 
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		available = {
-			date > 1942.1.1
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 
 		completion_reward = {
