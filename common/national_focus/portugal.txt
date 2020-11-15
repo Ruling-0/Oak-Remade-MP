@@ -2584,7 +2584,7 @@ focus_tree = {
 	focus = {
 		id = POR_revan1
 		available = {	
-            GER = { has_war_with = ENG }	
+            date > 1939.8.1		
             is_ai = no			
 		}
 
@@ -2697,7 +2697,7 @@ focus_tree = {
 	focus = {
 		id = POR_revan2
 		available = {
-            GER = { has_war_with = SOV }		
+            date > 1941.1.1			
             is_ai = no			
 		}
 
@@ -2779,7 +2779,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1942.1.1	
+			date > 1941.12.7	
 			is_ai = no
 		}
 

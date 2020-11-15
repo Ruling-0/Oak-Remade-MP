@@ -558,7 +558,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.25
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
 				conversion_cost_civ_to_mil_factor= -0.05
@@ -589,7 +589,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.20
 				stability_weekly = -0.001
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.1
@@ -623,7 +623,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.15
 				stability_weekly = -0.002
 				industry_repair_factor = 0.1
 				production_speed_arms_factory_factor = 0.2
