@@ -6,25 +6,20 @@ state=
 	
 	state_category = rural
 	resources={
-		rubber=6 # was: 7
 	}	
-	
 
 	history= {
+		owner = POR
+		add_core_of = POR
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 3
+			air_base = 5
 			7959 = {
-				naval_base = 2
+				naval_base = 5
 			}
 		}
 		victory_points = {
 			7959 3
-		}
-		1936.1.2 = {
-			add_core_of = LIB
-			owner = LIB
 		}
 	}
 	provinces={

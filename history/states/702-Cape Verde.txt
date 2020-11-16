@@ -10,6 +10,7 @@ state={
 		add_core_of = POR
 		buildings = {
 			infrastructure = 3
+			air_base = 5
 			13014 ={
 				naval_base = 5
 			}

@@ -5,6 +5,7 @@ state={
 		owner = POR
 		buildings = {
 			infrastructure = 5
+			air_base = 5
 			2115 = {
 				naval_base = 5
 			}
