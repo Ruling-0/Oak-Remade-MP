@@ -130,11 +130,11 @@ operations = {
 				}	
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 5
 				}	
 				set_building_level = {
 					type = infrastructure
-					level = 10
+					level = 5
 				}
 			}
 		}		
@@ -170,11 +170,11 @@ operations = {
 				}	
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 5
 				}	
 				set_building_level = {
 					type = infrastructure
-					level = 10
+					level = 5
 				}
 			}
 		}		
@@ -213,11 +213,11 @@ operations = {
 				}	
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 5
 				}	
 				set_building_level = {
 					type = infrastructure
-					level = 10
+					level = 5
 				}
 			}	
 		}		
