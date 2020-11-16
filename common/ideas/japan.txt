@@ -831,7 +831,8 @@ ideas = {
 			picture = jap_hirohito
 			rule = { can_create_factions = yes }
 			modifier = {
-				stability_factor = 0.5  
+				stability_factor = 0.5 
+                conscription = 0.02				
 			}
 		}
 
