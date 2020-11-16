@@ -13,7 +13,7 @@ add_ideas = {
 	POR_eco1
 	no_spies_idea
 	POR_german_trading
-	POR_volunteers_in_the_war_nationalist
+	POR_aid1
 	POR_fuel
 }
 set_technology = {
@@ -28,6 +28,7 @@ set_technology = {
 	marines = 1
 	radio = 1
 	special_equipment = 1
+	bicycle_infantry = 1
 	################## support ##################
 	tech_recon = 1
 	tech_support = 1		

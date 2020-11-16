@@ -2612,6 +2612,7 @@ focus_tree = {
 			    type = dockyard 
 				level = 5
 			}	
+			add_ideas = POR_the_capital_of_espionage
 			add_ideas = POR_man2
 		}
 	}
@@ -2727,8 +2728,8 @@ focus_tree = {
 			}
 			add_ideas = POR_eco3
 		    swap_ideas = {
-			  	remove_idea = POR_volunteers_in_the_war_nationalist
-			   	add_idea = POR_aid
+			  	remove_idea = POR_aid1
+			   	add_idea = POR_aid2
 		    }
 		}
 	}

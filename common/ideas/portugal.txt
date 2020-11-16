@@ -35,9 +35,8 @@ ideas = {
 			}
 		}
 		
-		POR_volunteers_in_the_war_nationalist = {
-			picture = por_volunteers_in_the_war
-			name = POR_volunteers_in_the_war
+		POR_aid1 = {
+			picture = POR_volunteer1
 			allowed = {
 				original_tag = POR
 			}
@@ -63,8 +62,8 @@ ideas = {
 			} 
 		}
 		
-		POR_aid = {
-			picture = POR_Volunteer1
+		POR_aid2 = {
+			picture = POR_Volunteer2
 			allowed = {
 				original_tag = POR
 			}
@@ -256,7 +255,7 @@ ideas = {
 		}
 
 		POR_corpo_do_estado_maior = {
-			picture = generic_manpower_bonus
+			picture = POR_volunteers_in_the_war
 			allowed = {
 				original_tag = POR
 			}
@@ -273,7 +272,7 @@ ideas = {
 		}
 
 		POR_the_capital_of_espionage = {
-			picture = generic_spy_intel
+			picture = por_unstable_republic
 			allowed = {
 				original_tag = POR
 			}
@@ -574,7 +573,92 @@ ideas = {
 
 		#POLIICAL
 		political_advisor = {
+	
+			POR_joshua_graham = {
+	
+				picture = POR_josh
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
 
+		    	traits = { POR_defense }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		
+			POR_legate_lanius = {
+	
+				picture = POR_lanius
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+
+				traits = { POR_landair }				
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+	
+			POR_general_oliver = {
+	
+				picture = POR_general
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+		    	traits = { POR_navy }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			
+			POR_alfredo_da_silva = {
+	
+				picture = generic_political_advisor_europe_2
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {
+			
+				}
+				
+				traits = { technocrat }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			
+			POR_francisco_craveiro_lopes_2 = {
+	
+				picture = generic_political_advisor_europe_3
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {	
+				}
+
+				name = POR_francisco_craveiro_lopes
+				
+				traits = { quartermaster_general }
+			}			
+			
 			POR_alvaro_cunhal = {
 
 				name = POR_alvaro_cunhal
@@ -630,43 +714,7 @@ ideas = {
 					factor = 0
 				}
 			}
-	
-			POR_francisco_craveiro_lopes_2 = {
-	
-				picture = generic_political_advisor_europe_3
-				
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {	
-				}
-
-				name = POR_francisco_craveiro_lopes
-				
-				traits = { quartermaster_general }
-			}
-	
-			POR_manuel_goncalves_cerejeira = {
-	
-				picture = generic_political_advisor_europe_6
 			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {				
-				}
-	
-				traits = { GERminister_of_armament_and_war_production }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
 			POR_augusto_de_vasconcelos_2 = {
 				
 				allowed = {
@@ -692,80 +740,6 @@ ideas = {
 			
 				ai_will_do = {
 					factor = 0
-				}
-			}
-
-			POR_jose_hipolito_raposo = {
-				
-				allowed = {
-					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
-				}
-	
-				picture = generic_fascist_demagogue_western_european_2d 
-				
-				traits = { fascist_demagogue } 
-			
-				do_effect = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-			
-				ai_will_do = {
-					factor = 0
-				}
-			}
-	
-			POR_jose_adriano_pequito_rebelo = {
-	
-				picture = generic_fascist_demagogue_western_european_2d
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-				
-				traits = { financial_expert }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-			POR_alberto_monsaraz = {
-	
-				picture = generic_political_advisor_europe_6
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-				
-				traits = { smooth_talking_charmer }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-	
-			POR_alfredo_da_silva = {
-	
-				picture = generic_political_advisor_europe_2
-			
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-	
-				available = {
-			
-				}
-				
-				traits = { technocrat }
-				
-				ai_will_do = {
-					factor = 1
 				}
 			}
 			
@@ -803,6 +777,27 @@ ideas = {
 				}
 				
 				traits = { captain_of_industry }
+			}
+			POR_jose_hipolito_raposo = {
+				
+				allowed = {
+					original_tag = POR
+					NOT = { has_dlc = "La Resistance" }
+				}
+	
+				picture = generic_fascist_demagogue_western_european_2d 
+				
+				traits = { fascist_demagogue } 
+			
+				do_effect = {
+					NOT = {
+						has_government = fascism
+					}
+				}
+			
+				ai_will_do = {
+					factor = 0
+				}
 			}
 			
 		}
@@ -1311,6 +1306,7 @@ ideas = {
 				
 				picture = generic_infantry_equipment_manufacturer_2
 	
+				cost = 50
 				
 				allowed = {
 					original_tag = POR

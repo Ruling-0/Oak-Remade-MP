@@ -14,6 +14,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/POR_economy3.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_POR_economy4"
+		texturefile = "gfx/interface/ideas/POR_economy4.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_POR_manpower1"
 		texturefile = "gfx/interface/ideas/POR_manpower1.dds"
 	}
@@ -22,15 +26,43 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/POR_manpower2.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_POR_manpower3"
+		texturefile = "gfx/interface/ideas/POR_manpower3.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_POR_trade1"
 		texturefile = "gfx/interface/ideas/POR_trade1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_POR_Volunteer1"
-		texturefile = "gfx/interface/ideas/POR_Volunteer1.dds"
+		name = "GFX_idea_POR_trade2"
+		texturefile = "gfx/interface/ideas/POR_trade2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_trade3"
+		texturefile = "gfx/interface/ideas/POR_trade3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_volunteer1"
+		texturefile = "gfx/interface/ideas/POR_volunteer1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_volunteer2"
+		texturefile = "gfx/interface/ideas/POR_volunteer2.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_POR_concern1"
 		texturefile = "gfx/interface/ideas/POR_concern1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_lanius"
+		texturefile = "gfx/interface/ideas/POR_lanius.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_josh"
+		texturefile = "gfx/interface/ideas/POR_josh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_general"
+		texturefile = "gfx/interface/ideas/POR_general.dds"
 	}
 }

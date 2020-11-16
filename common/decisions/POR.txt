@@ -113,10 +113,11 @@ operations = {
 			163 = { is_owned_and_controlled_by = ITA } 
 		}
 
-		cost = 0
+		cost = 25
 
 		fire_only_once = yes
 
+        days_remove = 14
 
 		complete_effect = {
 			transfer_state = 163 
@@ -152,10 +153,11 @@ operations = {
 			124 = { is_owned_and_controlled_by = SWE } 
 		}
 
-		cost = 0
+		cost = 25
 
 		fire_only_once = yes
 
+        days_remove = 14
 
 		complete_effect = {
 			transfer_state = 124 
@@ -194,10 +196,11 @@ operations = {
 			}
 		}
 
-		cost = 0
+		cost = 25
 
 		fire_only_once = yes
-
+		
+		days_remove = 14
 
 		complete_effect = {
 			transfer_state = 743 
@@ -235,10 +238,11 @@ operations = {
 			}
 		}
 
-		cost = 0
+		cost = 50
 
 		fire_only_once = yes
-
+		
+		days_remove = 21
 
 		complete_effect = {
 			ENG = {
@@ -273,10 +277,11 @@ operations = {
 			NOT = { 451 = { is_owned_and_controlled_by = ITA } }
 		}
 
-		cost = 0
+		cost = 50
 
 		fire_only_once = yes
 
+        days_remove = 21
 
 		complete_effect = {
 			ITA = {
@@ -301,13 +306,14 @@ operations = {
 
 		available = {
 			is_ai = no
-			date > 1941.1.1
+			JAP = { has_war_with = USA }
 		}
 
-		cost = 0
+		cost = 100
 
 		fire_only_once = yes
 
+        days_remove = 35
 
 		complete_effect = {
 			JAP = {
