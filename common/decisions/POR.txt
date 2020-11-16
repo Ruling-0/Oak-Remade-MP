@@ -99,6 +99,126 @@ operations = {
 			JAP = { add_to_faction = POR }	
 		}		
 	}
+    POR_itaf = {
+
+		icon = generic_construction
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			163 = { is_owned_and_controlled_by = ITA } 
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			transfer_state = 163 
+			add_state_core = 163
+		    163 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province = 3943
+				}	
+				set_building_level = {
+					type = air_base
+					level = 10
+				}	
+				set_building_level = {
+					type = infrastructure
+					level = 10
+				}
+			}
+		}		
+	}
+    POR_gerf = {
+
+		icon = generic_construction
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			124 = { is_owned_and_controlled_by = SWE } 
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			transfer_state = 124 
+			add_state_core = 124
+		    124 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province = 408
+				}	
+				set_building_level = {
+					type = air_base
+					level = 10
+				}	
+				set_building_level = {
+					type = infrastructure
+					level = 10
+				}
+			}
+		}		
+	}
+    POR_japf = {
+
+		icon = generic_construction
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1936.2.1
+			OR = {
+			    743 = { is_owned_and_controlled_by = JAP }
+				743 = { is_owned_and_controlled_by = CHI }
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			transfer_state = 743 
+			add_state_core = 743
+		    743 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province = 10000
+				}	
+				set_building_level = {
+					type = air_base
+					level = 10
+				}	
+				set_building_level = {
+					type = infrastructure
+					level = 10
+				}
+			}	
+		}		
+	}
     POR_honor = {
 
 		icon = infiltrate_state
@@ -162,15 +282,46 @@ operations = {
 			ITA = {
 		    	add_offsite_building = {
 		    		type = synthetic_refinery
-		    		level = 4
+		    		level = 5
 		    	}
 		    	add_offsite_building = {
 		    		type = synthetic_rubber_refinery
-		    		level = 2
+		    		level = 3
 		    	}
 			}
 		}		
-	}
+	} 
+    POR_japg = {
+
+		icon = generic_paperwork
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1941.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			JAP = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 750 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 250 producer = POR }
+			}
+		}		
+	} 
 }
 
 POR_overseas_provinces = {

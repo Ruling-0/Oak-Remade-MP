@@ -1812,8 +1812,9 @@ ENG_budget_decisions = {
 		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
-				type = fighter_equipment
-				amount = 400
+				type = fighter_equipment_1936
+				amount = 200
+				producer = USA
 			}
 		}
 	}
@@ -1880,8 +1881,9 @@ ENG_budget_decisions = {
 		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
+				type = tac_bomber_equipment_1937
 				amount = 100
+				producer = USA
 			}
 		}
 	}
