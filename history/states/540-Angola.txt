@@ -9,12 +9,13 @@ state={
 		owner = POR
 		buildings = {
 			infrastructure = 5
+			air_base = 10
 			8248 = {
-				naval_base = 5
+				naval_base = 10
 			}
 		}
 		victory_points = {
-			8248 1 
+			8248 25 
 		}
 		victory_points = {
 			10966 1 

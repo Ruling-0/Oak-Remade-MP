@@ -21,7 +21,7 @@ state={
 			dockyard = 2
 			air_base = 10
 			11805 = {
-				naval_base = 8
+				naval_base = 10
 			}
 		}
 		add_core_of = POR

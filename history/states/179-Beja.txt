@@ -17,12 +17,13 @@ state={
 			970 1
 		}
 		buildings = {
+		    air_base = 10
 			infrastructure = 6
 			industrial_complex = 5
 			dockyard = 2
 			arms_factory = 3
 			3790 = {
-				naval_base = 2
+				naval_base = 10
 
 			}
 		}
