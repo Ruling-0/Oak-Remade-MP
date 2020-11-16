@@ -10,13 +10,13 @@ state= {
 
 	history= {
 		buildings = {
-			infrastructure = 10
-			air_base = 10
+			infrastructure = 5
+			air_base = 1
 			7622 = {
-				naval_base = 10
+				naval_base = 5
 			}
 			1550 = {
-				naval_base = 10
+				naval_base = 5
 			}
 		}
 			add_core_of = POR
