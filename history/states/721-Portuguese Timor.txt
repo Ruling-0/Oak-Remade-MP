@@ -10,10 +10,9 @@ state={
 		owner = POR
 		add_core_of = POR
 		buildings = {
-		    air_base = 10
-			infrastructure = 10
+			infrastructure = 3
 			12190 ={
-				naval_base = 10
+				naval_base = 5
 			}
 		}
 	}
