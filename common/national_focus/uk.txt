@@ -5730,16 +5730,21 @@ focus_tree = {
 					days = 90
 				}
 			}
+			IRE = {
+				add_timed_idea = {
+					idea = ENG_operation_battleaxe
+					days = 90
+				}
+			}
 			NZL = {
 				add_timed_idea = {
 					idea = ENG_operation_battleaxe
 					days = 90
 				}
 			}
-                add_timed_idea = {
-					idea = ENG_operation_battleaxe
-					days = 90
-				
+            add_timed_idea = {
+			    idea = ENG_operation_battleaxe
+			    days = 90	
             }
 		}
 	}	

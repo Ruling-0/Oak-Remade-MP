@@ -2073,12 +2073,10 @@ GER_case_anton_category = {
 			GER = {
 				set_autonomy = { target = EFR autonomy_state = autonomy_reichsprotectorate }
 				transfer_state = 26
-				transfer_state = 21
 				transfer_state = 22
 				transfer_state = 31
 				transfer_state = 25
 				transfer_state = 20
-				transfer_state = 32
 				transfer_state = 33
 			}
 			every_state = {
