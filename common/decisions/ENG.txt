@@ -1811,13 +1811,10 @@ ENG_budget_decisions = {
 			}
 		}
 		remove_effect = {
-		ENG = {
 			add_equipment_to_stockpile = {
-				type = fighter_equipment_1936
-				amount = 200
-				producer = ENG
+				type = fighter_equipment
+				amount = 400
 			}
-		}
 		}
 	}
 	ENG_order_bombers_in_USA = {
@@ -1882,13 +1879,10 @@ ENG_budget_decisions = {
 			}
 		}
 		remove_effect = {
-		ENG = {
 			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment_1934
+				type = tac_bomber_equipment
 				amount = 100
-				producer = ENG
 			}
-		}
 		}
 	}
 }
