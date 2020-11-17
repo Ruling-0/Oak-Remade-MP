@@ -63,7 +63,7 @@ ideas = {
 		}
 		
 		POR_aid2 = {
-			picture = POR_Volunteer2
+			picture = POR_volunteer2
 			allowed = {
 				original_tag = POR
 			}
