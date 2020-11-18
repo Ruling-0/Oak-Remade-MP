@@ -2829,7 +2829,7 @@ focus_tree = {
 			add_tech_bonus = { 
 				category = cat_heavy_fighter
 				uses = 2
-				bonus = 1 
+				bonus = 2 
 			}
 			add_tech_bonus = {
 				name = radar_focus
@@ -5333,7 +5333,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = cat_heavy_fighter
 				uses = 2
-				bonus = 2
+				bonus = 1
 			}
 		}
 	}

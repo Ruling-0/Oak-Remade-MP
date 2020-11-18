@@ -137,7 +137,7 @@ equipments = {
 		air_attack = 42
 		air_defence = 16 
 		fuel_consumption = 0.26
-		build_cost_ic = 80
+		build_cost_ic = 90
 	}
 	
 	heavy_fighter_equipment_1938 = {
@@ -152,7 +152,7 @@ equipments = {
 		air_agility = 32.5
 		air_attack = 45
 		air_defence = 17 
-		build_cost_ic = 82
+		build_cost_ic = 97
 	}
 	
 	heavy_fighter_equipment_1940 = {
@@ -168,7 +168,7 @@ equipments = {
 		air_attack = 48
 		air_defence = 18 
 		
-		build_cost_ic = 84
+		build_cost_ic = 102
 	}
 	heavy_fighter_equipment_1942 = {
 		year = 1942
@@ -187,7 +187,7 @@ equipments = {
 			rubber = 1
 		}
 		fuel_consumption = 0.32
-		build_cost_ic = 86
+		build_cost_ic = 107
 	}
 	heavy_fighter_equipment_1944 = {
 		year = 1944
@@ -205,7 +205,7 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
-		build_cost_ic = 88
+		build_cost_ic = 112
 	}
 	
 	#tacticals

@@ -911,7 +911,7 @@ focus_tree = {
 			factor = 1
 		}	
 		available = { 
-			ENG = { controls_state = 115 }
+			NOT = { 115 = { is_owned_and_controlled_by = ITA } }
 			has_war_with = SOV
 		}
 		completion_reward = {
