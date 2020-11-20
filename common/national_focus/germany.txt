@@ -3031,7 +3031,7 @@ focus_tree = {
 		cost = 5
 		available = { 
 			OR = {
-				surrender_progress > 0.05
+				surrender_progress > 0.10
 				casualties >1200000
 			}
 		}
@@ -3086,7 +3086,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			SOV = {
-				surrender_progress < 0.05 
+				surrender_progress < 0.10 
 			}
 		}
 		ai_will_do = {
@@ -3145,7 +3145,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			SOV = {
-				surrender_progress < 0.05 
+				surrender_progress < 0.10 
 			}
 		}
 		ai_will_do = {
@@ -3169,7 +3169,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			SOV = {
-				surrender_progress < 0.05 
+				surrender_progress < 0.10
 			}
 		}
 		ai_will_do = {
@@ -3193,7 +3193,7 @@ focus_tree = {
 		available = {
 			AND = {
 				SOV = {
-					surrender_progress < 0.05 
+					surrender_progress < 0.10 
 				}
 				casualties > 1500000
 			}
@@ -3219,7 +3219,7 @@ focus_tree = {
 		available = {
 			AND = {
 				SOV = {
-					surrender_progress < 0.05 
+					surrender_progress < 0.10 
 				}
 				casualties > 1500000
 			}
@@ -3245,7 +3245,7 @@ focus_tree = {
 		available = {
 			AND = {
 				SOV = {
-					surrender_progress < 0.05 
+					surrender_progress < 0.10 
 				}
 				casualties > 1500000
 			}
@@ -3271,7 +3271,7 @@ focus_tree = {
 		available = {
 			AND = {
 				SOV = {
-					surrender_progress < 0.05 
+					surrender_progress < 0.10 
 				}
 				casualties > 1500000
 			}
@@ -3501,7 +3501,7 @@ focus_tree = {
 		available = {
 			AND = {
 				SOV = {
-					surrender_progress < 0.05 
+					surrender_progress < 0.10 
 				}
 				casualties > 1500000
 			}
@@ -5926,15 +5926,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_anti_non_contact_committee
-				bonus = 1.0
-				uses = 1
-				category = naval_minelaying
-			}
-			add_tech_bonus = {
-				name = GER_anti_non_contact_committee
-				bonus = 1.0
-				uses = 2
-				category = naval_minesweeping
+					bonus = 1.0
+					uses = 2
+					category = dd_tech
 			}
 		}
 	}

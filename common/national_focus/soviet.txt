@@ -6216,7 +6216,7 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.25
+			surrender_progress > 0.15
 		}
 
 		relative_position_id = SOV_american_lend_lease
@@ -6245,7 +6245,7 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.35 
+			surrender_progress > 0.15 
 		}
 
 		relative_position_id = SOV_american_lend_lease
@@ -6280,7 +6280,7 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.4
+			surrender_progress > 0.25
 			SOV = { controls_state = 266 }
 		}
 
