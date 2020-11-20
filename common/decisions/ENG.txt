@@ -1918,11 +1918,10 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = {
-					is_core_of = RAJ
-				}
-				add_core_of = ENG
-			}	
+				limit = { is_core_of = RAJ }
+				set_resistance = 0
+				set_compliance = 100
+			}
 		}		
 	}
    ENG_annex_can = {
@@ -1955,10 +1954,9 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = {
-					is_core_of = CAN
-				}
-				add_core_of = ENG
+				limit = { is_core_of = CAN }
+				set_resistance = 0
+				set_compliance = 100
 			}	
 		}		
 	}
@@ -1992,11 +1990,10 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = {
-					is_core_of = AST
-				}
-				add_core_of = ENG
-			}	
+				limit = { is_core_of = AST }
+				set_resistance = 0
+				set_compliance = 100
+			}
 		}		
 	}
    ENG_annex_saf = {
@@ -2029,11 +2026,10 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = {
-					is_core_of = SAF
-				}
-				add_core_of = ENG
-			}	
+				limit = { is_core_of = SAF }
+				set_resistance = 0
+				set_compliance = 100
+			}
 		}		
 	}
    ENG_annex_ire = {
@@ -2103,11 +2099,10 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = {
-					is_core_of = NZL
-				}
-				add_core_of = ENG
-			}	
+				limit = { is_core_of = NZL }
+				set_resistance = 0
+				set_compliance = 100
+			}
 		}		
 	}
 	french_partisans_normandy = {
