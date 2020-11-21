@@ -6381,7 +6381,7 @@ SOV_5_year_plan_decisions = {
 		available = {
 			has_tech = excavation3
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 10
 			owns_state = 582
 			controls_state = 582
 			has_completed_focus = SOV_3_5_plan_magnitogorsk
@@ -6397,13 +6397,13 @@ SOV_5_year_plan_decisions = {
 		days_remove = SOV_magnitogorsk_development_duration
 
 		modifier = {
-			civilian_factory_use = 20
+			civilian_factory_use = 10
 		}
 		
 		cost = 25
 
 		remove_effect = {
-			add_to_variable = { var = SOV_magnitogorsk_development_duration value = 30 }
+			add_to_variable = { var = SOV_magnitogorsk_development_duration value = 15 }
 			add_to_variable = { var = magnitogorsk_development_var value = 1 }
 			582 = {
 				add_resource = {
@@ -6434,9 +6434,9 @@ SOV_5_year_plan_decisions = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_magnitogorsk_development_duration value = 30 compare = less_than }
+					check_variable = { var = SOV_magnitogorsk_development_duration value = 15 compare = less_than }
 				}
-				set_variable = { var = SOV_magnitogorsk_development_duration value = 30 }
+				set_variable = { var = SOV_magnitogorsk_development_duration value = 15 }
 			}
 		}
 	}
