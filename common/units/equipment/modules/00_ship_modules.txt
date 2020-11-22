@@ -1814,7 +1814,7 @@ equipment_modules = {
 		
 		add_stats = {
 			surface_detection = 9
-			sub_detection = 2.5
+			sub_detection = 3
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -1827,7 +1827,7 @@ equipment_modules = {
 		
 		add_stats = {
 			surface_detection = 12
-			sub_detection = 3.5
+			sub_detection = 6
 			build_cost_ic = 170
 		}
 		can_convert_from = {
@@ -1905,7 +1905,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 7.0
+			sub_detection = 8.0
 			build_cost_ic = 60
 		}
 		can_convert_from = {
