@@ -47,6 +47,9 @@ governments_in_exile = {
 		available = {
 		    FROM = {
 		    	has_legitimacy < 80
+				NOT = {
+				    tag = FRA
+				}
 		    }
 		}
 
