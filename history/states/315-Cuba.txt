@@ -19,16 +19,15 @@ state= {
 				naval_base = 5
 			}
 		}
+			add_core_of = POR
+			owner = POR
 		victory_points = {
 			7622 5 
 		}
 		victory_points = {
 			7590 1
 		}
-		1936.1.2 = {
-			add_core_of = CUB
-			owner = CUB
-		}
+
 	}
 	provinces={
 		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347

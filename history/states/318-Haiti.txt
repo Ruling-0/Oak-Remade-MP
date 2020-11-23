@@ -16,13 +16,12 @@ state=
 				naval_base = 5
 			}
 		}
+		add_core_of = POR
+		owner = POR
 		victory_points = {
 			4641 5 
 		}
-		1936.1.2 = {
-			add_core_of = HAI
-			owner = HAI
-		}
+
 	}
 	provinces={
 		1594 1635 4641

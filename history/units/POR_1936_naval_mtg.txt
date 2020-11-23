@@ -7,18 +7,96 @@
 		task_force = {				
 			name = "The Invincible Aegir Fleet"			
 			location = 11805 # Lisbon	
-
+			ship = { name = "CV1" definition = carrier start_experience_factor = 0.4 equipment = { ship_hull_carrier_1 = { amount = 1 owner = POR version_name = "Viva La Memes Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1936 =  { owner = "POR" amount = 1 }
+				}			
+			}
+			ship = { name = "CV2" definition = carrier start_experience_factor = 0.4 equipment = { ship_hull_carrier_1 = { amount = 1 owner = POR version_name = "Viva La Memes Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1936 =  { owner = "POR" amount = 1 }
+				}			
+			}
+			ship = { name = "CV3" definition = carrier start_experience_factor = 0.4 equipment = { ship_hull_carrier_1 = { amount = 1 owner = POR version_name = "Viva La Memes Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1936 =  { owner = "POR" amount = 1 }
+				}			
+			}
+			ship = { name = "CV4" definition = carrier start_experience_factor = 0.4 equipment = { ship_hull_carrier_1 = { amount = 1 owner = POR version_name = "Viva La Memes Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1936 =  { owner = "POR" amount = 1 }
+				}			
+			}
+			# Battleship Group
+			ship = { name = "BB1" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Taris Class" } } }				
+            ship = { name = "BB2" definition = battleship start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Taris Class" } } }				
+			ship = { name = "BC1" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Kuat Class" } } }
+            ship = { name = "BC2" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Kuat Class" } } }			
+			# Heavy Cruiser Group 1
+			ship = { name = "CA1" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Sherman Class" } } }			
+			ship = { name = "CA2" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Sherman Class" } } }			
+			ship = { name = "CA3" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Sherman Class" } } }
+	        # Heavy Cruiser Group 2
+			ship = { name = "CA4" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Sherman Class" } } }			
+			ship = { name = "CA5" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Sherman Class" } } }			
+			ship = { name = "CA6" definition = heavy_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Sherman Class" } } }
 			# Light Cruiser Group 1
 			ship = { name = "LC1" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
-			ship = { name = "LC2" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }			
+			ship = { name = "LC2" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }	
+			ship = { name = "LC3" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			# Light Cruiser Group 2
+			ship = { name = "LC4" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC5" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC6" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			# Light Cruiser Group 3
+			ship = { name = "LC7" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC8" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }	
+			ship = { name = "LC9" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			# Light Cruiser Group 4
+			ship = { name = "LC10" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC11" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC12" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			# Light Cruiser Group 4
+			ship = { name = "LC13" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC14" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC15" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }			
 			# Destroyer Group 1
 			ship = { name = "DD1" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
 			ship = { name = "DD2" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
-			ship = { name = "DD3" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }				
-			# Destroyer Group  2
+			ship = { name = "DD3" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
 			ship = { name = "DD4" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
-            ship = { name = "DD5" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
-			ship = { name = "DD6" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }			
+            ship = { name = "DD5" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }				
+			# Destroyer Group  2
+			ship = { name = "DD6" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD7" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD8" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD9" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD10" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			# Destroyer Group  3
+			ship = { name = "DD11" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD12" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD13" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD14" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			# Destroyer Group 4
+			ship = { name = "DD15" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
+			ship = { name = "DD16" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
+			ship = { name = "DD17" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD18" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
+			# Destroyer Group  5
+			ship = { name = "DD19" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD20" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD21" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD22" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			# Destroyer Group  6
+			ship = { name = "DD23" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD24" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD25" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD26" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			# Destroyer Group  7
+			ship = { name = "DD27" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD28" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD29" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
+			ship = { name = "DD30" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }				
 		}				
 	}
 	fleet = {
@@ -30,9 +108,16 @@
             # Submarine Group  1
 			ship = { name = "SS1" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
 			ship = { name = "SS2" definition = submarine start_experience_factor = 0.3  equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
-            # Submarine Group  2					
+			ship = { name = "SS3" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }	
+            # Submarine Group  2
+			ship = { name = "SS4" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
+			ship = { name = "SS5" definition = submarine start_experience_factor = 0.3  equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
+			ship = { name = "SS6" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }						
+            # Submarine Group  3	
 			ship = { name = "SC1" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
 			ship = { name = "SC2" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
+			ship = { name = "SC3" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }	
+            ship = { name = "SC4" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }	
         }
     }	
 } 
@@ -43,5 +128,17 @@ instant_effect = {
 	
 #####################
 ### Ongoing Naval Production Sep 1 1939 ###
+	# SHBB (x1): "SHBB1"
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_super_heavy_1
+			creator = "POR" 
+			version_name = "Dantooine Class"
+		}
+		name = "SHBB1" 
+		requested_factories = 6
+		progress = 0.99
+		amount = 1
+	}
 }
 
