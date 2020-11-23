@@ -1453,10 +1453,7 @@ focus_tree = {
     focus = {
 		id = FIN_continuation_war
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		prerequisite = { focus = FIN_mannerheim }
-		prerequisite = { focus = FIN_sturmgeschutz }
-		prerequisite = { focus = FIN_young_wolfes }
-		prerequisite = { focus = FIN_panzerfaust }
+	
 		x = 11
 		y = 10
 		cost = 7.16

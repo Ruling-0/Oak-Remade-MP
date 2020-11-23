@@ -313,6 +313,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_timed_idea = { idea = JAP_modernize_the_fleet days = 180 }
 			add_ideas = X_Flottiglia_MAS
 			add_tech_bonus = {
 				bonus = 0.8
