@@ -1,38 +1,39 @@
 ﻿units= {
-
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "Fleet of Memery"			
+		name = "Main Fleet"			
 		naval_base = 11805 # Lisbon
 		task_force = {				
 			name = "The Invincible Aegir Fleet"			
 			location = 11805 # Lisbon	
-
-			# Light Cruiser Group 1
+			# Heavy Group
+			ship = { name = "BC1" pride_of_the_fleet = yes  definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Kuat Class" } } }
+			ship = { name = "BC2" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Kuat Class" } } }
 			ship = { name = "LC1" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
-			ship = { name = "LC2" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }			
-			# Destroyer Group 1
+			ship = { name = "LC2" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+            ship = { name = "LC3" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }
+			ship = { name = "LC4" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POR version_name = "Tiger Class" } } }			
+			# Light Group
 			ship = { name = "DD1" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
 			ship = { name = "DD2" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }	
 			ship = { name = "DD3" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }				
-			# Destroyer Group  2
 			ship = { name = "DD4" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
             ship = { name = "DD5" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }
 			ship = { name = "DD6" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_2 = { amount = 1 owner = POR version_name = "London Class" } } }			
 		}				
 	}
 	fleet = {
-		name = "Fleet of Fun"			
+		name = "Raiding Fleet"			
 		naval_base = 11805 # Lisbon
 		task_force = {				
 			name = "Raid Group"			
 			location = 11805 # Lisbon
             # Submarine Group  1
-			ship = { name = "SS1" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
-			ship = { name = "SS2" definition = submarine start_experience_factor = 0.3  equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
+			ship = { name = "SS1" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
+			ship = { name = "SS2" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
             # Submarine Group  2					
-			ship = { name = "SC1" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
-			ship = { name = "SC2" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
+			ship = { name = "SC1" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
+			ship = { name = "SC2" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
         }
     }	
 } 

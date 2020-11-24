@@ -65,4 +65,36 @@ spriteTypes = {
 		name = "GFX_idea_POR_general"
 		texturefile = "gfx/interface/ideas/POR_general.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_POR_dhatri"
+		texturefile = "gfx/interface/ideas/POR_dhatri.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_granite"
+		texturefile = "gfx/interface/ideas/POR_granite.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_hua"
+		texturefile = "gfx/interface/ideas/POR_hua.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_moore"
+		texturefile = "gfx/interface/ideas/POR_moore.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_reyez"
+		texturefile = "gfx/interface/ideas/POR_reyez.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_simmons"
+		texturefile = "gfx/interface/ideas/POR_simmons.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_vulpes"
+		texturefile = "gfx/interface/ideas/POR_vulpes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_mrvegas"
+		texturefile = "gfx/interface/ideas/POR_mrvegas.dds"
+	}
 }

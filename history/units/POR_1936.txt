@@ -433,46 +433,6 @@ air_wings = {
 			amount = 100
 		}
 		start_experience_factor = 0.4
-		cv_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 40
-		}
-		start_experience_factor = 0.4
-		cv_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 40
-		}
-		start_experience_factor = 0.4
-		cv_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 40
-		}
-		start_experience_factor = 0.4
-		cv_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 40
-		}
-		start_experience_factor = 0.4
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.4
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.4
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.4
-		cv_nav_bomber_equipment_1936 = {
-			owner = "POR" 
-			amount = 20
-		}
-		start_experience_factor = 0.4
 	}
 }
 ### Production ###
@@ -629,6 +589,11 @@ instant_effect = {
 		efficiency = 100
 	}
 	############### Equipment stockpile
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 1000
+		producer = POR
+	}
 	add_equipment_to_stockpile = {
 		type = artillery_equipment_1
 		amount = 1000
