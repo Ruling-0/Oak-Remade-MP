@@ -161,7 +161,7 @@ focus_tree = {
 				}	
 				add_resource = {
 					type = steel
-					amount = 20
+					amount = 30
 				}		
 				add_resource = {
 					type = aluminium
@@ -255,14 +255,6 @@ focus_tree = {
 					province = 8248
 					instant_build = yes
 				}
-				add_resource = {
-					type = steel
-					amount = 20
-				}		
-				add_resource = {
-					type = chromium
-					amount = 20
-				}
 			}
 		}
 	}
@@ -293,7 +285,7 @@ focus_tree = {
 			540 = {
 				add_resource = {
 					type = oil
-					amount = 20
+					amount = 10
 				}
 				add_resource = {
 					type = rubber
@@ -1857,7 +1849,7 @@ focus_tree = {
 	focus = {
 		id = POR_army_reorganization
 		available = {
-            has_army_experience > 149		
+            has_army_experience > 200		
 		}
 
 		bypass = {		
@@ -1873,7 +1865,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = { 	
 			remove_ideas = POR_unreliable_army
-			army_experience	= -150
+			army_experience	= -200
 			add_stability = -0.05
 		}
 	}
