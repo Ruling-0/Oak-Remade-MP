@@ -1888,6 +1888,41 @@ ENG_budget_decisions = {
 }
 
 operations = {
+    ENG_annex_fra = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG			
+		}
+
+		available = {
+			is_ai = no
+			FRA = { is_ai = yes }
+			date > 1940.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			FRA = {
+				transfer_navy = {
+					target = ENG
+				}
+			}
+			annex_country = {
+              target = FRA
+              transfer_troops = yes
+			}
+			every_state = {
+				set_resistance = 0
+				set_compliance = 100
+			}
+		}		
+	}
     ENG_annex_raj = {
 
 		icon = generic_political_discourse
