@@ -45,11 +45,6 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			rule = {
-			    can_create_factions = yes
-				can_send_volunteers = yes
-			}
-			
 			modifier = {
 				send_volunteer_size = 12
 				air_volunteer_cap = 1000
@@ -71,11 +66,6 @@ ideas = {
 				tag = POR
 			}
 			removal_cost = -1
-			
-			rule = {
-			    can_create_factions = yes
-				can_send_volunteers = yes
-			}
 			
 			modifier = {
 				send_volunteer_size = 24

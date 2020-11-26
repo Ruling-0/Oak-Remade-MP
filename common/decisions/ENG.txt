@@ -1899,7 +1899,7 @@ operations = {
 		available = {
 			is_ai = no
 			FRA = { is_ai = yes }
-			date > 1940.1.1
+			country_exists = EFR
 		}
 
 		cost = 0

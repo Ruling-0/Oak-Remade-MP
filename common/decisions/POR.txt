@@ -1,4 +1,28 @@
 operations = {
+    POR_human = {
+
+		icon = generic_bureaucracy
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			set_rule = { 
+			    can_create_factions = yes
+				can_send_volunteers = yes
+			}
+		}		
+	}
     POR_ally = {
 
 		icon = generic_political_discourse
@@ -119,7 +143,7 @@ operations = {
 
         days_remove = 14
 
-		complete_effect = {
+		remove_effect = {
 			transfer_state = 163 
 			add_state_core = 163
 		    163 = {
@@ -159,7 +183,7 @@ operations = {
 
         days_remove = 14
 
-		complete_effect = {
+		remove_effect = {
 			transfer_state = 124 
 			add_state_core = 124
 		    124 = {
@@ -202,7 +226,7 @@ operations = {
 		
 		days_remove = 14
 
-		complete_effect = {
+		remove_effect = {
 			transfer_state = 743 
 			add_state_core = 743
 		    743 = {
@@ -244,7 +268,7 @@ operations = {
 		
 		days_remove = 21
 
-		complete_effect = {
+		remove_effect = {
 			ENG = {
 		    	add_offsite_building = {
 		    		type = industrial_complex
@@ -283,7 +307,7 @@ operations = {
 
         days_remove = 21
 
-		complete_effect = {
+		remove_effect = {
 			ITA = {
 		    	add_offsite_building = {
 		    		type = synthetic_refinery
@@ -315,7 +339,7 @@ operations = {
 
         days_remove = 35
 
-		complete_effect = {
+		remove_effect = {
 			JAP = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = POR }
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 750 producer = POR }

@@ -54,6 +54,8 @@
  POR_germ:0 "Support Germany's Failure?"
  POR_germ_desc:0 "Aid Germany's war against Russia, looks as if the odds are against them."
  POR_germ_tt:0 "Will get 100 1942 fighters and 1941 tactical bombers."
+ POR_human:0 "Click if not ai"
+ POR_human_desc:0 "Read title"
  POR_ally:0 "Join the Allies"
  POR_ally_desc:0 "Aid the Allies in their fight."
  POR_axis:0 "Join the Axis"
