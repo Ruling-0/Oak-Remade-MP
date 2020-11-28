@@ -371,7 +371,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.035
+				conscription = 0.03
 			}
 			cancel_if_invalid = no
 		}
@@ -385,7 +385,7 @@ ideas = {
 			
 			available = {
 				tag = POR
-				has_completed_focus = POR_revan2
+				has_completed_focus = POR_concordat_with_the_holy_see
 			}
 			
 			visible = {
@@ -408,13 +408,7 @@ ideas = {
 			available = {
 				tag = POR
 				is_ai = no
-				OR = {
-				    has_war = yes
-					NOT = { 126 = { is_owned_and_controlled_by = ENG } }
-					NOT = { 2 = { is_owned_and_controlled_by = ITA } }
-					NOT = { 219 = { is_owned_and_controlled_by = SOV } }
-					date > 1942.1.1
-				}
+				has_completed_focus = POR_revan2
 			}
 			
 			visible = {
