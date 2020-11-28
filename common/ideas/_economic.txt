@@ -662,7 +662,8 @@ ideas = {
 			available = {				
 				is_ai = no
 				tag = POR
-				date < 1936.1.15
+				date > 1936.7.1
+				date < 1936.9.1
 			}
 			
 			cost = 0
