@@ -552,6 +552,9 @@ ideas = {
 		
 			available = {
 				tag = POR
+				NOT = {
+			    	has_idea = POR_eco4
+				}
 			}
 			
 			cost = 150
@@ -561,10 +564,11 @@ ideas = {
 				consumer_goods_factor = 0.25
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
-				conversion_cost_civ_to_mil_factor= -0.05
-				conversion_cost_mil_to_civ_factor = 0.1
-				research_speed_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				global_building_slots_factor = 0.1
+				research_speed_factor = 0.025
 				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
 			}
 			
 			ai_will_do = {
@@ -584,6 +588,9 @@ ideas = {
 			available = {
 				has_completed_focus = POR_proudly_alone
 				tag = POR
+				NOT = {
+			    	has_idea = POR_eco4
+				}
 			}
 			
 			cost = 150
@@ -591,15 +598,14 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.20
-				stability_weekly = -0.001
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.1
-				conversion_cost_civ_to_mil_factor= -0.1
-				conversion_cost_mil_to_civ_factor = -0.1
-				research_speed_factor = 0.075
+				production_speed_dockyard_factor = 0.1
+				global_building_slots_factor = 0.15
+				research_speed_factor = 0.05
 				industrial_capacity_factory = 0.05
-				global_building_slots_factor = 0.05		
-				political_power_factor = 0.05	
+				industrial_capacity_dockyard = 0.05
+				political_power_factor = 0.05
 			}
 			
 			ai_will_do = {
@@ -619,6 +625,9 @@ ideas = {
 			available = {
 				has_completed_focus = POR_revan2
 				tag = POR
+				NOT = {
+			    	has_idea = POR_eco4
+				}
 			}
 			
 			cost = 150
@@ -626,13 +635,13 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.15
-				stability_weekly = -0.002
+				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.2
-				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
+				production_speed_dockyard_factor = 0.2
+				global_building_slots_factor = 0.20
 				research_speed_factor = 0.1
-				industrial_capacity_factory = 0.075
-				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 				political_power_factor = 0.1
 			}
 			
@@ -650,25 +659,24 @@ ideas = {
 		
 		    picture = POR_economy4
 		
-			available = {							
+			available = {				
 				is_ai = no
 				tag = POR
+				date < 1936.1.15
 			}
 			
-			cost = 150
+			cost = 0
 			removal_cost = -1
 			
 			modifier = {
-			    consumer_goods_factor = 0.15
-				production_speed_arms_factory_factor = 0.2
-				production_speed_industrial_complex_factor = 0.20
-				production_speed_dockyard_factor = 0.20
+			    consumer_goods_factor = 0.20
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 				global_building_slots_factor = 0.20
-				conversion_cost_civ_to_mil_factor= -0.20
-				conversion_cost_mil_to_civ_factor = -0.20
-				research_speed_factor = 0.1
+				research_speed_factor = 0.025
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
+				political_power_factor = 0.05
 			}
 			
 			ai_will_do = {
@@ -892,9 +900,7 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.10
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0				   							   
+				research_speed_factor = 0.10		   							   
 			}
 			
 			ai_will_do = {
@@ -925,9 +931,7 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.10
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0				   							   
+				research_speed_factor = 0.10		   							   
 			}
 			
 			ai_will_do = {
@@ -959,8 +963,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0				   							   
+				civilian_intel_to_others = 100.0			   							   
 			}
 			
 			ai_will_do = {
