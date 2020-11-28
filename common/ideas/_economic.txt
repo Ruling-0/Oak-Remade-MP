@@ -650,13 +650,7 @@ ideas = {
 		
 		    picture = POR_economy4
 		
-			available = {
-			    OR = {
-					NOT = { 126 = { is_owned_and_controlled_by = ENG } }
-					NOT = { 2 = { is_owned_and_controlled_by = ITA } }
-					NOT = { 219 = { is_owned_and_controlled_by = SOV } }
-					date > 1943.1.1
-                }								
+			available = {							
 				is_ai = no
 				tag = POR
 			}
@@ -666,7 +660,6 @@ ideas = {
 			
 			modifier = {
 			    consumer_goods_factor = 0.15
-				stability_weekly = -0.005
 				production_speed_arms_factory_factor = 0.2
 				production_speed_industrial_complex_factor = 0.20
 				production_speed_dockyard_factor = 0.20
