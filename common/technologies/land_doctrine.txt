@@ -283,7 +283,7 @@ technologies = {
 		
 		category_tanks = {
 			max_organisation = 4
-			breakthrough = 0.25
+			breakthrough = 0.15
 		}
 		medium_assault_gun_brigade = {
 			soft_attack = 0.05
@@ -560,13 +560,13 @@ technologies = {
 		
 		category_tanks = {
 			max_organisation = 3
-			breakthrough = 0.20
+			breakthrough = 0.10
 		}
 		medium_assault_gun_brigade = {
-			breakthrough = 0.15
+			breakthrough = 0.05
 		}
 		heavy_assaut_gun_brigade = {
-			breakthrough = 0.15
+			breakthrough = 0.05
 		}	
 
 		category_all_armor = {
