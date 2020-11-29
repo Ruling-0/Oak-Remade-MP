@@ -1460,7 +1460,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}	
-		available = { SOV = { has_war_with = GER } }
+		available = 
+		{ SOV = { has_war_with = GER } }
+		available = {`
+				has_war = yes
+				date > 1941.6.1}
 
 		bypass = {
 			SOV = { has_war_with = FIN }
