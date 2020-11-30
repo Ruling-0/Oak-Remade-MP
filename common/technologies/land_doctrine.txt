@@ -1286,8 +1286,8 @@ technologies = {
 	shock_and_awe = {
 
 		category_army = { 
-			soft_attack = 0.1
-			hard_attack = 0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		enable_tactic = tactic_breakthrough
