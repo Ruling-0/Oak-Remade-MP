@@ -2226,7 +2226,7 @@ focus_tree = {
 	focus = {
 		id = POR_support_the_spanish_nationalists
 		available = {
-			country_exists = SPA
+			date > 1936.7.15
 		}
 		bypass = {
 		}
@@ -2239,7 +2239,7 @@ focus_tree = {
 		cost = 2
 		completion_reward = { 
             add_political_power = 120		
-			SPA = {
+			SPR = {
 				add_opinion_modifier = {
 				    target = POR
 				    modifier = POR_helped_in_civil_war
@@ -2290,10 +2290,7 @@ focus_tree = {
 		}
 		
 		available = {
-			OR = {
-				SPR_scw_in_progress = yes
-				date > 1939.1.1	
-			}
+			date > 1936.7.15
 			is_ai = no
 		}
 		bypass = {
@@ -2309,7 +2306,7 @@ focus_tree = {
 			add_political_power = 75
 			army_experience = 20
 			air_experience = 20
-			SPA = {
+			SPR = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }

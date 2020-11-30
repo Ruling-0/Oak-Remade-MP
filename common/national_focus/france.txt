@@ -94,7 +94,7 @@ focus_tree = {
 		}
 
 		available = {
-			SPR_scw_in_progress = yes
+			date > 1936.7.15
 			is_subject = no
 		}
 		

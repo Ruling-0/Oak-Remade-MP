@@ -15,7 +15,6 @@
 # Make POR want to send stuff to Republican Spain
 POR_helps_SPD_win_civil_war = {
 	enable = {
-		SPR_scw_in_progress = yes
 		tag = POR
 		NOT = { has_government = fascism }
 		country_exists = SPD
@@ -46,7 +45,6 @@ POR_helps_SPD_win_civil_war = {
 # Make POR want to send stuff to Nationalist Spain
 POR_helps_SPA_win_civil_war = {
 	enable = {
-		SPR_scw_in_progress = yes
 		tag = POR
 		OR = { 
 			has_government = fascism
@@ -84,7 +82,6 @@ POR_helps_SPA_win_civil_war = {
 # Make POR want to send stuff to Carlist Spain
 POR_helps_SPB_win_civil_war = {
 	enable = {
-		SPR_scw_in_progress = yes
 		tag = POR
 		has_government = neutrality
 		country_exists = SPB
