@@ -944,7 +944,7 @@ technologies = {
 	overwhelming_firepower = {
 
 		category_line_artillery = {
-			soft_attack = 0.075
+			soft_attack = 0.05
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -979,7 +979,7 @@ technologies = {
 	sup_mechanized_offensive = {
 
 		category_all_armor = {
-			breakthrough = 0.15
+			breakthrough = 0.05
 			max_strength = 2
 		}
 		enable_tactic = tactic_blitz		
@@ -1058,8 +1058,8 @@ technologies = {
 
 		
 		category_army = {
-			hard_attack = 0.1
-			soft_attack = 0.1
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 		
 		enable_tactic = tactic_breakthrough
