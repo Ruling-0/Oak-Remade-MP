@@ -1002,6 +1002,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
+		    add_ideas = POR_advanced_light_aircraft
 			add_tech_bonus = {
 				name = POR_observation_mission
 			    bonus = 1.0
@@ -1071,7 +1072,6 @@ focus_tree = {
 			    category = heavy_air
 			}
 			air_experience = 50
-			add_ideas = POR_advanced_light_aircraft
 		}
 	}
 
@@ -2275,7 +2275,7 @@ focus_tree = {
 			FIN = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
@@ -2312,7 +2312,7 @@ focus_tree = {
 			SPA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
@@ -2401,7 +2401,7 @@ focus_tree = {
 	                CAS_1939 = 1
 			    }
 			}
-			add_political_power = 75
+			add_political_power = 150
 			army_experience = 20
 			air_experience = 20
 			JAP = {
@@ -2413,6 +2413,13 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 100 producer = POR }
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_1937 amount = 100 producer = POR }
+			}
+			MAN = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
 			}
 		}
 	}
@@ -2578,6 +2585,7 @@ focus_tree = {
 					fighter_1940 = 1
 			    }
 			}
+			add_political_power = 150
 			swap_ideas = {
 				remove_idea = POR_estado_novo_4
 				add_idea = POR_estado_novo_5	
