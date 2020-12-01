@@ -522,6 +522,8 @@ equipments = {
 		air_attack = 20
 		air_defence = 6
 		build_cost_ic = 82
+		naval_strike_attack = 3
+		naval_strike_targetting = 10
 	}
 	cv_fighter_equipment_1937 = {
 		archetype = cv_fighter_equipment
@@ -535,6 +537,8 @@ equipments = {
 		air_attack = 21
 		air_defence = 7
 		build_cost_ic = 84
+		naval_strike_attack = 3
+		naval_strike_targetting = 10
 	}
 	# Improved Carrier Fighter
 	cv_fighter_equipment_1938 = {
@@ -549,6 +553,8 @@ equipments = {
 		air_attack = 22
 		air_defence = 8		
 		build_cost_ic = 86
+		naval_strike_attack = 3
+		naval_strike_targetting = 10
 	}
 	cv_fighter_equipment_1939 = {
 		archetype = cv_fighter_equipment
@@ -562,6 +568,8 @@ equipments = {
 		air_attack = 23
 		air_defence = 9		
 		build_cost_ic = 88
+		naval_strike_attack = 3
+		naval_strike_targetting = 10
 	}
 	# Advanced Carrier Fighter
 	cv_fighter_equipment_1940 = {
@@ -580,6 +588,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 4
+		naval_strike_targetting = 10
 	}
 	cv_fighter_equipment_1941 = {
 		archetype = cv_fighter_equipment
@@ -597,6 +607,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 5
+		naval_strike_targetting = 10
 	}
 	#Advanced Carrier Fighter
 	cv_fighter_equipment_1942 = {
@@ -615,6 +627,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 6
+		naval_strike_targetting = 10
 	}
 	cv_fighter_equipment_1943 = {
 		archetype = cv_fighter_equipment
@@ -632,6 +646,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 7
+		naval_strike_targetting = 10
 	}
 	cv_fighter_equipment_1944 = {
 		archetype = cv_fighter_equipment
@@ -649,6 +665,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 8
+		naval_strike_targetting = 10
 	}
     CAS_equipment_1935 = {
 		archetype = CAS_equipment
