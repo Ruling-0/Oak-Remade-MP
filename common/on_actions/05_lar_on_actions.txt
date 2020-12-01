@@ -571,32 +571,6 @@ on_actions = {
 					}
 					POR = { country_event = { id = lar_portugal_navy_mutiny.5 days = 5 random_days = 3 } }
 				}
-			}
-			if = { # Remove Portuguese "Volunteers in the War" National Spirit
-				limit = { 
-					original_tag = SPR
-					has_global_flag = scw_over
-				}
-				POR = {
-					if = {
-						limit = {
-							has_idea = POR_volunteers_in_the_war_nationalist
-						}
-						remove_ideas = POR_volunteers_in_the_war_nationalist
-					}
-					else_if = {
-						limit = {
-							has_idea = POR_volunteers_in_the_war_republican
-						}
-						remove_ideas = POR_volunteers_in_the_war_republican
-					}
-					else_if = {
-						limit = {
-							has_idea = POR_volunteers_in_the_war_carlist
-						}
-						remove_ideas = POR_volunteers_in_the_war_carlist
-					}
-				}
 			}														 
 		}
 	}
