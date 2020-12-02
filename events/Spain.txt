@@ -17,6 +17,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+		    add_named_threat = { threat = 5 name = SPR_civil_war_threat }
 			if = {
 				limit = {
 					has_country_leader = {
@@ -127,8 +128,6 @@ country_event = {
 			set_equipment_fraction = 0.85
 			set_stability = 0.55
 			set_war_support = 0.5
-			add_ideas = war_economy
-			add_ideas = extensive_conscription
 			add_ideas = SPA_death_before_surrender 
 		    remove_ideas = SPR_military_disloyalty
 		    remove_ideas = SPR_political_violence
@@ -172,24 +171,16 @@ country_event = {
 	desc = spain.8.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
 	
-	trigger = {
-		has_government = fascism
-		has_global_flag = nationalist_victory
-		owns_state = 41
-	}
-
 	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	
+	is_triggered_only = yes
+	
 	option = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
 		set_capital = 41
-		add_ideas = SPA_recovering_from_civil_war
-		add_ideas = partial_economic_mobilisation
+		add_ideas = SPA_recovering_from_civil_war 
+		remove_ideas = SPA_death_before_surrender
 		delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 		every_state = {
 			limit = {
