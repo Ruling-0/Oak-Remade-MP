@@ -205,49 +205,14 @@ focus = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-
 			country_event = {
 				id = spain.1
 			}
-
-
 			army_experience = 40
-
-
-	add_stability = .15
-	hidden_effect = {
-	172 = {
-		remove_core_of = SPR
+	        add_stability = .15
+	   }
 	}
-	165 = {
-		remove_core_of = SPR
-
-
-	}
-	167 = {
-		remove_core_of = SPR
-
-	}
-	175 = {
-		remove_core_of = SPR
-
-	}
-	168 = {
-		remove_core_of = SPR
-
-	}
-	173 = {
-		remove_core_of = SPR
-	}
-	}
-}
-		}
-
-
-
-
-
-
+	
 focus = {
 		id = SPA_the_corpo_truppe_volontarie
 		available = {

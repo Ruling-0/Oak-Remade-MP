@@ -12,7 +12,9 @@ country_event = {
 	picture = GFX_report_event_spain_civil_war_soldiers
 	
 	fire_only_once = yes
-
+	
+	is_triggered_only = yes
+	
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -96,11 +98,12 @@ country_event = {
 				remove_ideas = SPR_military_disloyalty
 				remove_ideas = SPR_political_violence
 		        remove_ideas = SPR_national_strikes_3
+				remove_ideas = SPA_carlism_1
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.35
 				}
-				delete_units = {
+				    delete_units = {
 					    division_template = "División de Infantería"
 					    disband = yes
 					}
@@ -127,11 +130,9 @@ country_event = {
 			add_ideas = war_economy
 			add_ideas = extensive_conscription
 			add_ideas = SPA_death_before_surrender 
-			remove_ideas = SPA_carlism_1
 		    remove_ideas = SPR_military_disloyalty
 		    remove_ideas = SPR_political_violence
 		    remove_ideas = SPR_national_strikes_3
-			add_ideas = SPR_disbanded_army_1
 			hidden_effect = {
 				kill_country_leader = yes
 				kill_ideology_leader = fascism
@@ -172,13 +173,9 @@ country_event = {
 	picture = GFX_report_event_spain_civil_war_volunteers_01
 	
 	trigger = {
-		original_tag = SPR
 		has_government = fascism
 		has_global_flag = nationalist_victory
 		owns_state = 41
-		NOT = {
-			41 = { is_capital = yes }
-		}
 	}
 
 	fire_only_once = yes
@@ -191,9 +188,40 @@ country_event = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
 		set_capital = 41
-	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = spain.8.b
+		add_ideas = SPA_recovering_from_civil_war
+		add_ideas = partial_economic_mobilisation
+		delete_unit_template_and_units = { division_template = "Brigada Legionario" }
+		every_state = {
+			limit = {
+				OR = {
+					state = 41
+					state = 165
+					state = 166
+					state = 167
+					state = 168
+					state = 169
+					state = 170
+					state = 171
+					state = 172
+					state = 173
+					state = 174
+					state = 175
+					state = 176
+					state = 788
+					state = 789
+					state = 790
+					state = 791
+					state = 792
+					state = 793
+					state = 794
+				}
+			}
+			remove_province_modifier = {
+				static_modifiers = { unplanned_offensive }
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
 	}
 }
