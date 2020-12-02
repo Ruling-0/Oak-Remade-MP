@@ -11,19 +11,6 @@ news_event = {
 			SPA = { has_completed_focus = SPA_unify_the_nationalist_front }
 		}
 	}
-	title = {
-		text = lar_news.1.t_falangist
-		trigger = {
-			country_exists = SPA
-			SPA = { has_completed_focus = SPA_the_phalanx_ascendant }
-		}
-	}
-	title = {
-		text = lar_news.1.t_carlists
-		trigger = {
-			country_exists = SPB
-		}
-	}
 	desc = {
 		text = lar_news.1.desc_franco
 		trigger = {
@@ -49,13 +36,6 @@ news_event = {
 		}
 	}
 	desc = {
-		text = lar_news.1.desc_falangist
-		trigger = {
-			country_exists = SPA
-			SPA = { has_completed_focus = SPA_the_phalanx_ascendant }
-		}
-	}
-	desc = {
 		text = lar_news.1.desc_carlists
 		trigger = {
 			country_exists = SPB
@@ -77,21 +57,12 @@ news_event = {
 					}
 				}
 				if = {
-					limit = {
-						has_completed_focus = SPA_supremacy_of_the_communion
-						NOT = {
-							has_global_flag = SPR_carlist_uprising_flag
-						}
-					}
 					clr_country_flag = SPR_nationalist_spain_flag
 					drop_cosmetic_tag = yes
 					set_country_flag = SPR_carlist_spain_flag
 					set_cosmetic_tag = SPR_carlist_spain
 					set_party_name = { ideology = neutrality long_name = SPR_neutrality_party_long name = SPR_neutrality_party }
 					if = {
-						limit = {
-							NOT = { has_completed_focus = SPA_head_the_junta_nacional }
-						}
 						create_country_leader = {
 							name = "Manuel Fal Conde"
 							desc = "POLITICS_MANUEL_FAL_CONDE_DESC"
@@ -171,24 +142,6 @@ news_event = {
 						}
 						complete_national_focus = SPA_caudillo_of_spain
 					}
-					if = {
-						limit = {
-							has_completed_focus = SPA_the_phalanx_ascendant
-							NOT = {
-								has_completed_focus = SPA_suspend_the_constitution
-							}
-						}
-						complete_national_focus = SPA_suspend_the_constitution
-					}
-					if = {
-						limit = {
-							has_completed_focus = SPA_the_phalanx_ascendant
-							NOT = {
-								has_completed_focus = SPA_establish_the_directory
-							}
-						}
-						complete_national_focus = SPA_establish_the_directory
-					}
 				}
 				if = {
 					limit = {
@@ -207,40 +160,6 @@ news_event = {
 						remove_claim_by = SPA
 						remove_claim_by = SPC
 						remove_claim_by = SPD
-					}
-					if = {
-						limit = {
-							has_completed_focus = SPA_supremacy_of_the_communion
-							NOT = {
-								has_global_flag = SPR_carlist_uprising_flag
-							}
-						}
-						clr_country_flag = SPR_nationalist_spain_flag
-						drop_cosmetic_tag = yes
-						set_country_flag = SPR_carlist_spain_flag
-						set_cosmetic_tag = SPR_carlist_spain
-						set_party_name = { ideology = neutrality long_name = SPR_neutrality_party_long name = SPR_neutrality_party }
-						add_popularity = {
-						    ideology = fascism
-						    popularity = -0.35
-						}
-						add_stability = -0.1
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_completed_focus = SPA_head_the_junta_nacional
-							}
-						}
-						complete_national_focus = SPA_head_the_junta_nacional
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_completed_focus = SPA_unite_the_requetes
-							}
-						}
-						complete_national_focus = SPA_unite_the_requetes
 					}
 				}
 				every_state = {

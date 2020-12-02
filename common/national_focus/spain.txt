@@ -679,7 +679,6 @@ focus = {
 	focus = {
 		id = SPA_join_the_axis
 		available = {
-			NOT = { has_idea = SPR_ongoing_civil_war }
 		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
@@ -1104,7 +1103,6 @@ technology = construction4
 	focus = {
 		id = SPA_autarky
 		available = {
-			NOT = { has_idea = SPR_ongoing_civil_war }
 		}
 		bypass = {
 		}
@@ -1677,7 +1675,6 @@ technology = construction4
 	focus = {
 		id = SPA_join_the_allies
 		available = {
-			NOT = { has_idea = SPR_ongoing_civil_war }
 		}
 
 		bypass = {
@@ -2305,7 +2302,6 @@ technology = construction4
 	focus = {
 		id = SPA_stamp_out_the_maquis
 		available = {
-			NOT = { has_idea =  SPR_ongoing_civil_war }
 		}
 		bypass = {
 		}
