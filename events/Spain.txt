@@ -105,7 +105,6 @@ country_event = {
 				remove_ideas = SPR_military_disloyalty
 				remove_ideas = SPR_political_violence
 		        remove_ideas = SPR_national_strikes_3
-				load_focus_tree = communist_spain
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.35
