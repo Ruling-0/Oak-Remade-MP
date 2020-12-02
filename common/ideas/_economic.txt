@@ -514,10 +514,11 @@ ideas = {
 		
 		USA_last_bastion_of_democracy = {
 			
-
-			available = {
-				has_country_flag = USA_sealion_has_begun 
+		available = {
+			ENG = {
+				has_capitulated = yes 
 			}
+		}
 			
 			cost = 150
 			removal_cost = -1

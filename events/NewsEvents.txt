@@ -12428,7 +12428,6 @@ news_event = { #Sealion
 		trigger = {
 			tag = USA 
 		}
-		add_ideas = USA_last_bastion_of_democracy
 		
 		
 		if = {
