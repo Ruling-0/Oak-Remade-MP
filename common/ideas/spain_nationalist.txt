@@ -2,80 +2,6 @@ ideas = {
 
 	country = {
 	
-		SPA_recovering_from_civil_war_nodlc = {
-
-			picture = ROM_king_carol_emptied_accounts
-
-			allowed = {
-				original_tag = SPR
-			}
-			cancel = {
-				has_war = yes
-			}
-			allowed_civil_war = {
-				always = no
-			}
-            rule = {
-				can_create_factions = no
-				can_join_factions = no 
-				can_send_volunteers = yes
-			}
-			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
-				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.1
-			}
-		}
-		SPA_recovering_from_civil_war_ai = {
-
-			picture = ROM_king_carol_emptied_accounts		
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-			cancel = {
-				has_war = yes
-			}
-            rule = {
-				can_create_factions = no
-				can_join_factions = no 
-				can_send_volunteers = yes
-			}
-			modifier = {
-				consumer_goods_factor = 0.10
-				production_factory_max_efficiency_factor = -0.25
-				industrial_capacity_factory = -0.75
-			}
-		}
-
-	    spanish_civil_war_republic = {
-
-			picture = spanish_civil_war
-
-		    allowed = {
-				original_tag = SPR
-			}
-			
-			name = spanish_civil_war_defence
-
-			removal_cost = -1
-			modifier = {
-			    conscription = 0.015
-				army_org_factor = 0.05
-				army_defence_factor = 1.0
-				army_speed_factor = -0.5
-				max_dig_in = 10
-				dig_in_speed_factor = 1.0
-				supply_consumption_factor = -0.5
-				surrender_limit = 0.15
-			}
-		}	
-
         isolationism = {
 
 			picture = generic_pp_unity_bonus
@@ -117,139 +43,12 @@ ideas = {
 				supply_consumption_factor = -0.5
 			}
 		}
-
-		SPR_seized_spanish_gold_reserves = {
-
-			picture = SPR_seize_the_gold_reserves
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}		
-
-		BUL_army_restrictions = {
-			picture = tfv_can_conscription_crisis
-
-			allowed = {
-				original_tag = BUL
-			}
-
-			allowed_civil_war = {
-				tag = BUL
-			}
-			removal_cost = -1
-			modifier = {
-
-			}
-		}
-
-        SPA_civil_war_support = {
-
-	     picture = CZE_planning_bonus
-
-	     modifier = {
-	    	experience_gain_army = 0.15
-	    	experience_gain_air = 0.15
-	        }
-        }
-
-
-		SPR_Recruitment_Fascist = {
-
-					picture = generic_manpower_bonus
-
-					allowed = {
-						original_tag = SPR
-						has_government = fascism
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						conscription = 0.02
-					}
-				}
-
-
-				SPR_military_disloyalty = {
-
-					picture = chi_war_of_resistance
-
-					allowed = {
-						original_tag = SPR
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						custom_modifier_tooltip = SPR_military_disloyalty_tt
-						military_leader_cost_factor = 1.00
-					}
-				}
-
-				SPR_political_violence = {
-
-		picture = SPR_political_violence
-
-		allowed = {
-			original_tag = SPR
-			NOT = { has_global_flag = spanish_civil_war }
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		modifier = {
-			stability_factor = -0.15
-			disabled_ideas = 1
-		}
-	}
-
-
-		SPR_ongoing_civil_war = {
-
-			name = SPR_ongoing_civil_war
-
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
-				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.1
-				weekly_manpower = -500
-				experience_gain_army = 0.15
-			}
-		}
-
+		
 		SPA_death_before_surrender = {
 
 			name = SPR_death_before_surrender
 
-			picture = SPR_nationalist_remnants
+			picture = spanish_civil_war
 
 			allowed = {
 				original_tag = SPR
@@ -261,31 +60,11 @@ ideas = {
 
 			modifier = {
 				surrender_limit = 1
+				army_org_factor = 0.1
+				max_dig_in = 5
+				army_defence_factor = 0.25
+				dig_in_speed_factor = 1.0
 				max_surrender_limit_offset = 0.15
-			}
-		}
-
-		SPA_no_navy = {
-
-			picture = neutrality_idea
-
-			cancel = {
-				has_defensive_war_with = ENG
-			}
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				production_speed_dockyard_factor = -1.2
-				production_speed_naval_base_factor = -1.2
-				production_speed_air_base_factor = -1.2
-				industrial_capacity_dockyard = -1.2
 			}
 		}
 
@@ -307,129 +86,6 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
-
-		SPR_national_strikes_1 = { # Two times suppressed as Nationalists
-
-					name = SPR_national_strikes
-
-					picture = FRA_factory_strikes
-
-					allowed = {
-						original_tag = SPR
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						stability_factor = -0.2
-					}
-
-				}
-
-				SPR_national_strikes_2 = { # One time suppressed as Nationalists
-
-					name = SPR_national_strikes
-
-					picture = FRA_factory_strikes
-
-					allowed = {
-						original_tag = SPR
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						stability_factor = -0.15
-						industrial_capacity_factory = -0.05
-						industrial_capacity_dockyard = -0.05
-						production_speed_buildings_factor = -0.05
-					}
-
-				}
-
-				SPR_national_strikes_3 = { # Default starter spirit
-
-					name = SPR_national_strikes
-
-					picture = FRA_factory_strikes
-
-					allowed = {
-						original_tag = SPR
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						stability_factor = -0.1
-						industrial_capacity_factory = -0.1
-						industrial_capacity_dockyard = -0.1
-						production_speed_buildings_factor = -0.1
-					}
-
-				}
-
-				SPR_national_strikes_4 = { # One time concessions to the left as Nationalists
-
-					name = SPR_national_strikes
-
-					picture = FRA_factory_strikes
-
-					allowed = {
-						original_tag = SPR
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						political_power_factor = -0.1
-						stability_factor = -0.05
-						industrial_capacity_factory = -0.15
-						industrial_capacity_dockyard = -0.15
-						production_speed_buildings_factor = -0.15
-					}
-
-				}
-
-				SPR_national_strikes_5 = { # Two times concessions to the left as Nationalists
-
-					name = SPR_national_strikes
-
-					picture = FRA_factory_strikes
-
-					allowed = {
-						original_tag = SPR
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-
-					allowed_civil_war = {
-						always = yes
-					}
-
-					modifier = {
-						political_power_factor = -0.2
-						industrial_capacity_factory = -0.2
-						industrial_capacity_dockyard = -0.2
-						production_speed_buildings_factor = -0.2
-					}
-
-				}
-
-
-
-
-
 
 		SPA_anti_anarchist_offensive = {
 
@@ -468,45 +124,82 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+		SPA_recovering_from_civil_war_nodlc = {
 
-		SPA_recovering_from_civil_war = {
-
-			name = SPA_recovering_from_civil_war
-
-			picture = FRA_matignon_agreements
+			picture = ROM_king_carol_emptied_accounts
 
 			allowed = {
 				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
 			}
-
+			cancel = {
+				has_war = yes
+			}
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
-
+            rule = {
+				can_create_factions = no
+				can_join_factions = no 
+			}
 			modifier = {
-				ai_get_ally_desire_factor = -200
-				ai_join_ally_desire_factor = -200
-				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = 0.1
+			}
+		}
+		SPA_recovering_from_civil_war_ai = {
 
+			picture = ROM_king_carol_emptied_accounts		
+
+			allowed = {
+				original_tag = SPR
 			}
 
-			rule = { can_decline_call_to_war = yes }
-
+			allowed_civil_war = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+            rule = {
+				can_create_factions = no
+				can_join_factions = no 
+			}
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.75
+			}
 		}
+		SPA_recovering_from_civil_war = {
 
+			picture = ROM_king_carol_emptied_accounts
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+            rule = {
+				can_create_factions = no
+				can_join_factions = no 
+			}
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+		
 		SPA_recovering_from_civil_war_2 = {
 
 			name = SPA_recovering_from_civil_war
 
-			picture = FRA_matignon_agreements
+			picture = ROM_king_carol_emptied_accounts
 
 			allowed = {
 				original_tag = SPR
@@ -519,19 +212,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			rule = {
+				can_create_factions = no
+				can_join_factions = no 
+			}
 			modifier = {
-				ai_get_ally_desire_factor = -200
-				ai_join_ally_desire_factor = -200
-				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.14
 				industrial_capacity_dockyard = -0.14
 				production_speed_buildings_factor = -0.07
 				consumer_goods_factor = 0.07
-
 			}
-
-			rule = { can_decline_call_to_war = yes }
 
 		}
 
@@ -539,7 +229,7 @@ ideas = {
 
 			name = SPA_recovering_from_civil_war
 
-			picture = FRA_matignon_agreements
+			picture = ROM_king_carol_emptied_accounts
 
 			allowed = {
 				original_tag = SPR
@@ -552,16 +242,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			rule = {
+				can_create_factions = no
+				can_join_factions = no 
+			}
 			modifier = {
 				industrial_capacity_factory = -0.07
 				industrial_capacity_dockyard = -0.07
 				production_speed_buildings_factor = -0.04
 				consumer_goods_factor = 0.04
-
 			}
-
-			rule = { can_decline_call_to_war = yes }
 		}
 
 		SPA_awaiting_the_rebellion = {
@@ -603,8 +293,10 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.003
 				neutrality_drift = 0.05
-				army_defence_factor = -0.08
-				army_attack_factor = -0.08
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 			}
 		}
 
@@ -629,8 +321,10 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.001
 				neutrality_drift = 0.02
-				army_defence_factor = -0.04
-				army_attack_factor = -0.04
+				army_defence_factor = -0.05
+				army_attack_factor = -0.05
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 			}
 		}
 
@@ -655,9 +349,13 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.001
 				neutrality_drift = 0.02
-				conscription = 0.005
-				army_infantry_attack_factor = 0.04
-				army_infantry_defence_factor = 0.04
+				army_defence_factor = -0.05
+				army_attack_factor = -0.05
+				conscription = 0.01
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 			}
 		}
 
@@ -680,9 +378,11 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.005
-				army_infantry_attack_factor = 0.08
-				army_infantry_defence_factor = 0.08
+				conscription = 0.01
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 			}
 		}
 
@@ -705,7 +405,8 @@ ideas = {
 			}
 
 			modifier = {
-
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 			}
 		}
 
@@ -744,9 +445,7 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 3
-				send_volunteer_divisions_required = -1
-				lend_lease_tension = -0.30
+				lend_lease_tension = -0.50
 			}
 		}
 
@@ -965,7 +664,6 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -985,7 +683,6 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -1005,7 +702,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -1025,7 +721,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -1046,7 +741,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -1067,7 +761,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -1090,7 +783,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -1164,9 +856,9 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 3
-				send_volunteer_divisions_required = -0.25
-				send_volunteers_tension = -0.20
+				send_volunteer_size = 8 
+				send_volunteer_divisions_required = -1
+				air_volunteer_cap = 500
 			}
 		}
 
@@ -1448,7 +1140,6 @@ ideas = {
 			}
 		}
 	}
-	
 	theorist_production = {
 		SPA_jose_antonio_giron = {
 
@@ -1460,12 +1151,37 @@ ideas = {
 			}
 
 			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
 			}
 
 			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
 			}
 			
 			traits = { falangist_industrialist }
+		}
+		SPA_fidel_davila_arrondo_vanilla = {
+
+				name = SPA_fidel_davila_arrondo
+
+				picture = generic_army_europe_4
+
+				allowed = {
+					NOT = { has_dlc = "La Resistance" }
+					original_tag = SPR
+					has_government = fascism
+				}
+				
+				traits = { war_industrialist }
 		}
 		SPA_diego_hidalgo_y_duran = {
 
@@ -1477,15 +1193,24 @@ ideas = {
 			}
 
 			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
 			}
 
 			available = {
+				NOT = {
+					has_completed_focus = SPA_the_phalanx_ascendant
+					has_completed_focus = SPA_supremacy_of_the_communion
+					has_completed_focus = SPR_regional_defense_council_of_aragon
+					has_completed_focus = SPR_the_anti_fascist_workers_revolution
+				}
 			}
 			
 			traits = { war_industrialist }
 		}
 	}	
-
 	political_advisor = {
 
 		### Vanilla ###
@@ -1501,7 +1226,7 @@ ideas = {
 				original_tag = SPR
 				has_government = fascism
 			}
-
+			
 			traits = { prince_of_terror }
 		}
 
@@ -1516,9 +1241,10 @@ ideas = {
 				original_tag = SPR
 				has_government = fascism
 			}
-
+			
 			traits = { compassionate_gentleman }
 		}
+
 		### La Resistance ###
 
 		SPA_manuel_hedilla = {
@@ -1537,11 +1263,19 @@ ideas = {
 				}
 			}
 
-		available = {
-			NOT = { has_completed_focus = SPA_banish_the_party_leaders
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				NOT = {
+					has_completed_focus = SPA_banish_the_party_leaders
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
 			}
-		}
-
+			
 			traits = { falangist_syndicalist }
 		}
 
@@ -1561,11 +1295,18 @@ ideas = {
 				}
 			}
 
-		available = {
-			has_completed_focus = SPA_banish_the_party_leaders
-		}
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				NOT = { has_idea = SPA_ramon_serrano_suner }
+				has_completed_focus = SPA_banish_the_party_leaders
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { loyal_falangist }
 		}
 
@@ -1585,8 +1326,29 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				if = {
+					limit = {
+						NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+					}
+					NOT = {
+						has_completed_focus = SPA_eliminate_the_carlists
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SPA_unify_the_nationalist_front
+					}
+					NOT = {
+						has_global_flag = SPR_carlist_uprising_flag
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { lifelong_carlist }
 		}
 
@@ -1606,8 +1368,17 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				NOT = { has_idea = SPA_raimundo_fernandez_cuesta }
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { silent_workhorse }
 		}
 
@@ -1627,14 +1398,98 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				has_completed_focus = SPA_supremacy_of_the_communion
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { traditionalist_theorist }
 		}
 
+		SPA_jose_antonio_primo_de_rivera = {
 
+			picture = SPA_jose_antonio_primo_de_rivera
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				has_completed_focus = SPA_primo_de_rivera_prisoner_exchange
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { falangist_figurehead }
+		}
+		SPA_martin_de_riquer = { #Carlist
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				has_completed_focus = SPA_supremacy_of_the_communion
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { carlist_intellectual }
+		}
+
+		SPA_mauricio_de_sivatte = { #Carlist
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				has_completed_focus = SPA_supremacy_of_the_communion
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { regional_traditionalist_leader }
+		}
 	}
-	
+
 	theorist = {
 
 		### Vanilla ###
@@ -1690,9 +1545,33 @@ ideas = {
 			}
 	
 			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
 			}
 	
 			available = {
+				if = {
+					limit = {
+						NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+					}
+					NOT = {
+						has_completed_focus = SPA_eliminate_the_carlists
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SPA_unify_the_nationalist_front
+					}
+					NOT = {
+						has_global_flag = SPR_carlist_uprising_flag
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
 			}
 			
 			picture = SPA_jose_enrique_varela
@@ -1712,9 +1591,18 @@ ideas = {
 			}
 	
 			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
 			}
 	
 			available = {
+				NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
 			}
 			
 			picture = SPA_agustin_munoz_grandes
@@ -1735,19 +1623,19 @@ ideas = {
 		SPA_miguel_cabanellas_ferrer_vanilla = {
 
 			name = SPA_miguel_cabanellas_ferrer
-
+			
 			picture = generic_army_europe_3
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { army_chief_old_guard }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1756,19 +1644,19 @@ ideas = {
 		SPA_ricardo_rada_vanilla = {
 
 			name = SPA_ricardo_rada
-
+			
 			picture = generic_army_europe_1
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { army_chief_defensive_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1777,30 +1665,30 @@ ideas = {
 		SPA_emilio_mola_vidal_vanilla = {
 
 			name = SPA_emilio_mola_vidal
-
+			
 			picture = generic_army_europe_5
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { army_chief_offensive_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		### La Resistance ###
-
+		
 		SPA_juan_yague = { # Falangist
-
+			
 			picture = SPA_juan_yague
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1813,19 +1701,27 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { army_chief_offensive_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		SPA_rafael_garcia_valino = { # Francoist/Carlist
-
+			
 			picture = SPA_rafael_garcia_valino
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1838,21 +1734,40 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				if = {
+					limit = {
+						NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+					}
+					NOT = {
+						has_completed_focus = SPA_eliminate_the_carlists
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SPA_unify_the_nationalist_front
+					}
+					NOT = {
+						has_global_flag = SPR_carlist_uprising_flag
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { army_chief_organizational_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-
-
-		SPA_miguel_ponte = { # Francoist
-
-			picture = SPA_miguel_ponte
-
+		SPA_heli_rolando_de_tella = { # Francoist/Carlist
+			
+			picture = SPA_heli_rolando_de_tella
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1865,10 +1780,64 @@ ideas = {
 				}
 			}
 
+			available = {
+				if = {
+					limit = {
+						NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+					}
+					NOT = {
+						has_completed_focus = SPA_eliminate_the_carlists
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SPA_unify_the_nationalist_front
+					}
+					NOT = {
+						has_global_flag = SPR_carlist_uprising_flag
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
+		SPA_miguel_ponte = { # Francoist
+			
+			picture = SPA_miguel_ponte
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
 
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { army_chief_drill_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1882,19 +1851,19 @@ ideas = {
 		SPA_alfredo_kindelan_duany_vanilla = {
 
 			name = SPA_alfredo_kindelan_duany
-
+			
 			picture = generic_air_europe_1
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { air_chief_ground_support_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1903,19 +1872,19 @@ ideas = {
 		SPA_juan_yague_blanco_vanilla = {
 
 			name = SPA_juan_yague_blanco
-
+			
 			picture = generic_air_europe_3
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { air_chief_reform_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1924,9 +1893,9 @@ ideas = {
 		### La Resistance ###
 
 		SPA_joaquin_garcia_morato = { # Francoist
-
+			
 			picture = SPA_joaquin_garcia_morato
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1939,10 +1908,50 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SPA_juan_vigon_suero_diaz = { # Carlist
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
 
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				NOT = {
+					has_completed_focus = SPA_eliminate_the_carlists
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { air_chief_reform_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1956,19 +1965,19 @@ ideas = {
 		SPA_salvador_moreno_fernandez_vanilla = {
 
 			name = SPA_salvador_moreno_fernandez
-
+			
 			picture = generic_navy_europe_1
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { navy_chief_decisive_battle_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1977,19 +1986,19 @@ ideas = {
 		SPA_fransisco_moreno_fernandez_vanilla = {
 
 			name = SPA_fransisco_moreno_fernandez
-
+			
 			picture = generic_navy_europe_2
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { navy_chief_reform_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -1998,19 +2007,19 @@ ideas = {
 		SPA_luis_carrero_blanco_vanilla = {
 
 			name = SPA_luis_carrero_blanco
-
+			
 			picture = generic_navy_europe_1
-
+			
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { navy_chief_old_guard }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -2019,9 +2028,9 @@ ideas = {
 		### La Resistance ###
 
 		SPA_luis_carrero_blanco = { # Francoist
-
+			
 			picture = SPA_luis_carrero_blanco
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -2034,17 +2043,25 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { navy_chief_decisive_battle_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
 
-
+	
 	high_command = {
 
 		### Vanilla ###
@@ -2053,81 +2070,81 @@ ideas = {
 			ledger = army
 
 			name = SPA_emilio_esteban_infantes
-
+			
 			picture = generic_army_europe_5
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { army_logistics_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
+		
 		SPA_agustin_munoz_grandes_vanilla = {
 			ledger = army
 
 			name = SPA_agustin_munoz_grandes
-
+			
 			picture = generic_army_europe_3
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { army_infantry_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
+	
 		SPA_joaquin_garcia_morato_vanilla = {
 			ledger = air
 
 			name = SPA_joaquin_garcia_morato
-
+			
 			picture = generic_air_europe_2
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { air_air_combat_training_3 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
+		
 		SPA_angel_salas_larrazabal_vanilla = {
 			ledger = air
 
 			name = SPA_angel_salas_larrazabal
-
+			
 			picture = generic_air_europe_1
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 				has_government = fascism
 			}
+			
 
-
-
+			
 			traits = { air_strategic_bombing_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -2135,13 +2152,46 @@ ideas = {
 
 		### La Resistance ###
 
+		SPA_emilio_mola = { # Falangist/Francoist
+			ledger = army
+			
+			picture = SPA_emilio_mola
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
 
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				NOT = {
+					has_completed_focus = SPR_masters_of_our_own_fate
+					has_completed_focus = SPA_no_compromise_on_carlist_ideals
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
 			ledger = army
-
+			
 			picture = SPA_wilhelm_ritter_von_thoma
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -2156,37 +2206,14 @@ ideas = {
 
 			available = {
 				has_completed_focus = SPA_the_condor_legion
-			}
-
-
-			traits = { army_armored_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_heli_rolando_de_tella = { # Francoist/Carlist
-
-      ledger = army
-			picture = SPA_heli_rolando_de_tella
-
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
 				}
 			}
-
-
-
-			traits = { army_infantry_2 }
-
+			
+			traits = { army_armored_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -2194,9 +2221,9 @@ ideas = {
 
 		SPA_enrique_canovas_lacruz = { # Francoist
 			ledger = army
-
+			
 			picture = SPA_enrique_canovas_lacruz
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -2209,10 +2236,18 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPR_masters_of_our_own_fate
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { army_logistics_2 }
-
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -2220,9 +2255,9 @@ ideas = {
 
 		SPA_miguel_cabanellas = { # Carlist
 			ledger = army
-
+			
 			picture = SPA_miguel_cabanellas
-
+			
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -2235,10 +2270,51 @@ ideas = {
 				}
 			}
 
-
-
+			available = {
+				NOT = {
+					has_completed_focus = SPR_masters_of_our_own_fate
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
 			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SPA_ricardo_rada = { # Carlist
+			ledger = army
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
 
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				NOT = {
+					has_completed_focus = SPA_eliminate_the_carlists
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			
+			traits = { army_entrenchment_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}

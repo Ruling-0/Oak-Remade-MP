@@ -16,7 +16,6 @@ country_event = {
 	trigger = {
 		NOT = { has_global_flag = spanish_civil_war }
 		tag = SPR
-		date > 1936.7.1
 	}
 
 	immediate = {
@@ -97,11 +96,8 @@ country_event = {
 				set_equipment_fraction = 0.8
 				set_stability = 0.5
 				set_war_support = 0.4
-				add_ideas = war_economy
-			    add_ideas = extensive_conscription
 				add_ideas = SPR_disbanded_army_1
-				add_timed_idea = { idea = SPR_death_before_surrender days = 600 }
-		        remove_ideas = SPA_carlism_1
+				add_ideas = SPR_death_before_surrender 
 				remove_ideas = SPR_military_disloyalty
 				remove_ideas = SPR_political_violence
 		        remove_ideas = SPR_national_strikes_3
@@ -135,10 +131,12 @@ country_event = {
 			set_war_support = 0.5
 			add_ideas = war_economy
 			add_ideas = extensive_conscription
-			add_timed_idea = { idea = SPA_death_before_surrender days = 600 }
+			add_ideas = SPA_death_before_surrender 
+			remove_ideas = SPA_carlism_1
 		    remove_ideas = SPR_military_disloyalty
 		    remove_ideas = SPR_political_violence
 		    remove_ideas = SPR_national_strikes_3
+			add_ideas = SPR_disbanded_army_1
 			hidden_effect = {
 				kill_country_leader = yes
 				kill_ideology_leader = fascism

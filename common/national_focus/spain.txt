@@ -122,13 +122,6 @@ focus = {
 			    ideology = neutrality
 			    popularity = 0.05
 			}
-			hidden_effect = {
-				country_event = {
-					id = spain.90
-					days = 61
-				}
-			}
-
 		}
 	}
 
