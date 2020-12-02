@@ -94,10 +94,11 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1936.7.15
-			is_subject = no
+			SPR = {
+				has_civil_war = yes
+			}
 		}
-		
+
 		bypass = {
 			has_global_flag = scw_over
 		}

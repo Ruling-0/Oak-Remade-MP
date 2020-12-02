@@ -2226,8 +2226,8 @@ focus_tree = {
 	focus = {
 		id = POR_support_the_spanish_nationalists
 		available = {
-			date > 1936.7.15
-		}
+			country_exists = SPR
+		} 
 		bypass = {
 		}
 		prerequisite = { focus = POR_estado_novo }
@@ -2244,9 +2244,9 @@ focus_tree = {
 				    target = POR
 				    modifier = POR_helped_in_civil_war
 				}
-				add_manpower = 10000
+				add_manpower = 25000
 			}			
-			add_manpower = -10000
+			add_manpower = -25000
 		}
 	}
 	
@@ -2290,9 +2290,12 @@ focus_tree = {
 		}
 		
 		available = {
-			date > 1936.7.15
+		    OR = {
+			    SPR = { has_civil_war = yes }
+			    date > 1939.1.1
+			}
 			is_ai = no
-		}
+		} 
 		bypass = {
 		}
 		prerequisite = { focus = POR_support_the_spanish_nationalists }

@@ -1118,10 +1118,13 @@
 		}
 
 		available = {
-		    date > 1936.7.15 
+			SPR = {
+				has_civil_war = yes
+			}
 		}
 
 		bypass = {
+			has_global_flag = scw_over
 		}
 
 		cancel_if_invalid = yes
