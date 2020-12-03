@@ -1,5 +1,107 @@
 ﻿add_namespace = lar_news
 
+# End of the Spanish Civil War (Nationalist/Carlist victory)
+news_event = {
+	id = lar_news.1
+	title = {
+		text = lar_news.1.t_franco
+		trigger = {
+			has_global_flag = nationalist_victory
+		}
+	}
+	desc = {
+		text = lar_news.1.desc_franco_unified
+		trigger = {
+			has_global_flag = nationalist_victory
+		}
+	}
+	picture = GFX_news_event_033
+	
+	
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+	option = {
+		name = lar_news.1.a
+		trigger = {
+			country_exists = SPB
+			SPB = { has_capitulated = no }
+			NOT = { tag = SPB }
+			NOT = { original_tag = SPR }
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = lar_news.1.b
+		trigger = {
+			country_exists = SPB
+			SPB = { has_capitulated = no }
+			NOT = { tag = SPB }
+			NOT = { original_tag = SPR }
+			NOT = { has_government = neutrality }
+		}
+	}
+	option = {
+		name = lar_news.1.c
+		trigger = {
+			OR = {
+				AND = {
+					tag = GER
+					has_government = fascism
+				}
+				AND = {
+					tag = ITA
+					has_government = fascism
+				}
+			}
+			NOT = { original_tag = SPR }
+			country_exists = SPA
+			SPA = { has_capitulated = no }
+			NOT = { tag = SPA }
+		}
+	}
+	option = {
+		name = news.28.a
+		trigger = {
+			NOT = {
+				AND = {
+					tag = GER
+					has_government = fascism
+				}
+				AND = {
+					tag = ITA
+					has_government = fascism
+				}
+				tag = SOV
+			}
+			NOT = { original_tag = SPR }
+			country_exists = SPA
+			SPA = { has_capitulated = no }
+			NOT = { tag = SPA }
+		}
+	}
+	option = {
+		name = lar_news.1.e
+		trigger = {
+			tag = SOV
+			country_exists = SPA
+			SPA = { has_capitulated = no }
+			NOT = { tag = SPA }
+			NOT = { original_tag = SPR }
+		}
+	}
+	option = {
+		name = lar_news.1.f
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = SPB
+			}
+		}
+	}
+}
 #news event - France - Congress of paris
 
 #news event - France - France abandons eastern allies

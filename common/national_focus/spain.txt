@@ -811,6 +811,13 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		    add_ideas = MAN_resource
+			add_tech_bonus = {
+				name = HOL_expand_curacao_oil_refineries
+				bonus = 2.0
+				uses = 2
+				category = synth_resources
+			}
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -1548,7 +1555,6 @@ technology = construction4
 	focus = {
 		id = SPA_join_the_allies
 		available = {
-		    add_ideas = war_economy
 		}
 
 		bypass = {
@@ -1573,7 +1579,7 @@ technology = construction4
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+            add_ideas = war_economy
 	    }
     }
 	focus = {
@@ -1926,12 +1932,14 @@ technology = construction4
 		}
 		
 		completion_reward = {
+		    793 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+			}
 		}			
 	}
 
@@ -1954,18 +1962,6 @@ technology = construction4
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-					}
-				EFR = {
-					add_autonomy_ratio = {
-						value = 0.05
-						localization = EFR_collaboration
-					}
-				}
-			}
-
 			add_timed_idea = {idea = EFR_war_repairs days = 80}
 			GER = {add_timed_idea = {idea = EFR_german_war_repairs days = 140}}
 
@@ -1990,7 +1986,7 @@ technology = construction4
 		}
 
 		completion_reward = {
-			26 = {
+			794 = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
@@ -2021,18 +2017,7 @@ technology = construction4
 
 		completion_reward = {
 			add_ideas = idea_EFR_STO
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-					}
-				EFR = {
-					add_autonomy_ratio = {
-						value = 0.05
-						localization = EFR_collaboration
-					}
-				}
-			}
-			26 = {
+			794 = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = arms_factory
@@ -2075,11 +2060,11 @@ technology = construction4
 
 		completion_reward = {
 			swap_ideas = { remove_idea = idea_EFR_STO add_idea = idea_EFR_STO2 }
-			26 = {
-				add_extra_state_shared_building_slots = 4
+			793 = {
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}

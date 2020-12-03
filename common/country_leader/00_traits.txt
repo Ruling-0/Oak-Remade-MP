@@ -200,7 +200,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.1
-		political_power_factor = 0.05
+		political_power_factor = 0.1
 	}
 
 	falangist_figurehead = {
