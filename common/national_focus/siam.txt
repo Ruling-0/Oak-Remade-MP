@@ -77,6 +77,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_ideas = rice_reforms
 		}
 	}
 	
@@ -491,7 +492,28 @@ focus_tree = {
 				category = support_tech
 			}
 		}
-   } 
+   }
+   
+   focus = {
+		id = SIA_elite_schools
+		icon = GFX_goal_generic_scientific_exchange
+		x = 8
+		y = 1
+		cost = 10
+		ai_will_do = { 
+	
+			factor = 5
+		}
+        prerequisite = {
+         focus = SIA_adressing_social_issues		
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = elite_schools_focus
+		}
+	}
+   
   focus = {
 		id = SIA_suphapburut_group
 		icon = GFX_goal_tfv_generic_tech_sharing
@@ -502,11 +524,12 @@ focus_tree = {
 		
 			factor = 5
 		} 
+		prerequisite = { focus = SIA_elite_schools }
 		prerequisite = { focus = SIA_newspapers }
 		available_if_capitulated = yes
            
 		completion_reward = {
-			add_research_slot = 2
+			add_research_slot = 1
 		}
 	}
 	  
@@ -523,7 +546,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	        add_political_power = 120
+	        remove_ideas = divided_nation_full	
+			add_ideas = divided_nation_half
 		}
 	}
 	
@@ -539,6 +563,7 @@ focus_tree = {
         prerequisite = { focus = SIA_new_siamese_man }
 		available_if_capitulated = yes
 		completion_reward = {
+	        remove_ideas = divided_nation_half
 			add_political_power = 120
 		}
 	}
@@ -715,45 +740,50 @@ focus_tree = {
   }
   
   focus = {
-		id = SIA_strenghten_rel_ger
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = SIA_fascism_support }
-		x = 12
-		y = 2
-		cost = 5
-		ai_will_do = {
+   id = SIA_strenghten_rel_ger
+   icon = GFX_goal_generic_major_war
+   prerequisite = { focus = SIA_fascism_support }
+   x = 12
+   y = 2
+   cost = 5
+    ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = offered_support } 
-		}  
-	}
+    available_if_capitulated = yes
+	completion_reward = {
+	 add_opinion_modifier = { target = GER modifier = offered_support } 
+	}  
+  }
   
-	focus = {
-		id = SIA_fascist_nation
-		icon = GFX_goal_generic_political_pressure
-		x = 11
-		y = 3
-		cost = 10
-		prerequisite = { focus = SIA_strenghten_rel_jap }
-		prerequisite = { focus = SIA_strenghten_rel_ger }
+  focus = {
+      id= SIA_fascist_nation
+	  icon = GFX_goal_generic_political_pressure
+	  x = 11
+	  y = 3
+	  cost = 10
+	  ai_will_do = { factor = 5 }	
+	  prerequisite = { focus = SIA_strenghten_rel_jap }
+	  prerequisite = { focus = SIA_strenghten_rel_ger }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.3
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.1
-			}
+				add_popularity = {
+					ideology = fascism
+					popularity = +0.1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+				add_popularity = {
+				 ideology = democratic
+				 popularity = -0.1
+				}
+			
+			add_ideas = fascist_leanings
 		}
-	}
+
+    }
+	
 	
 	focus = {
 		id = SIA_militarism
@@ -766,10 +796,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {			
-			army_experience = 200
+			add_ideas = fascist_military
+			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
 		}
 	}
+
+	focus = {
+		id = SIA_paramilitarism
+		icon = SIA_PHIBUNSONGKHRAM_NF #GFX_goal_generic_military_sphere
+		prerequisite = { focus = SIA_militarism }
+		x = 11
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = SIA_paramilitarism
+		}
+	}
+	
 	focus = {
 		id = SIA_japanese_ships
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -818,6 +865,7 @@ focus_tree = {
 		id = SIA_austerity
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SIA_german_equipment }
+		prerequisite = { focus = SIA_paramilitarism }
 		x = 12
 		y = 6
 		cost = 10
@@ -828,13 +876,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.5
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
+			add_ideas = imperial_austerity_idea
 		}
 	}
 
@@ -1097,9 +1139,12 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 1
-				category = all_air 
+				technology = fighter1
+				technology = fighter2
+				technology = tactical_bomber1
+				technology = tactical_bomber2
 			}
 		}
 	}
@@ -1119,9 +1164,12 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 1
-				category = medium_air
+				technology = CAS1
+				technology = CAS2
+				technology = heavy_fighter1
+				technology = heavy_fighter2
 			}
 		}
 	}
@@ -1143,7 +1191,8 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = naval_air
-				category = heavy_air
+				technology = strategic_bomber1
+				technology = strategic_bomber2
 			}
 			
 		}
@@ -1216,7 +1265,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_navy_funds
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = SIAM_NAVY
 		x = 25
 		y = 0
 		cost = 10
