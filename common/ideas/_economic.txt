@@ -964,8 +964,7 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.10
-				civilian_intel_to_others = 100.0			   							   
+				research_speed_factor = 0.10		   							   
 			}
 			
 			ai_will_do = {
