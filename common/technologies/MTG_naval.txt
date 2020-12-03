@@ -1516,7 +1516,7 @@ early_ship_hull_carrier = {
 		start_year = 1940
 
 		
-		naval_torpedo_reveal_chance_factor = -0.25
+		naval_torpedo_reveal_chance_factor = -0.05
 		
 
 		folder = {
