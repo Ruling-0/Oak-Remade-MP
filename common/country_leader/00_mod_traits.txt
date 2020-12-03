@@ -82,7 +82,7 @@ leader_traits = {
 	}
 	
     energy_concern = {
-	    sprite = 10
+	    random = no
 	    production_speed_buildings_factor = 0.05 
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
@@ -106,56 +106,173 @@ leader_traits = {
 		}
 	}
     tank_concern = {
-	    sprite = 10
-			equipment_bonus = {
-				light_tank_equipment = {
-				    maximum_speed = 0.05
-					soft_attack = 0.1
-				}
-				light_tank_artillery_equipment = {
-					soft_attack = 0.1
-					maximum_speed = 0.05
-				}
-				light_tank_destroyer_equipment = {
-					hard_attack = 0.1
-					maximum_speed = 0.05
-				}
-				light_tank_aa_equipment = {
-					air_attack = 0.1
-					maximum_speed = 0.05
-				}
-				
-			    medium_tank_equipment = {
-			        maximum_speed = 0.05
-				    soft_attack = 0.05
-					hard_attack = 0.05
-				}
-				medium_tank_aa_equipment = {
-					air_attack = 0.1
-					maximum_speed = 0.05
-				}
-				medium_tank_artillery_equipment = {
-					soft_attack = 0.1
-					maximum_speed = 0.05
-				}
-				medium_tank_destroyer_equipment = {
-					maximum_speed = 0.05
-					hard_attack = 0.1
-				}
-				
-				heavy_tank_equipment = {
-					hard_attack = 0.1
-					armor_value = 0.05
-				}
-				heavy_tank_destroyer_equipment = {
-				    hard_attack = 0.1
-					armor_value = 0.05
-				}
-				heavy_tank_artillery_equipment = {
-				    soft_attack = 0.1
-					armor_value = 0.05
-				}
+	    random = no
+		equipment_bonus = {
+			light_tank_equipment = {
+			    maximum_speed = 0.05
+		     	soft_attack = 0.1
 			}
+			light_tank_artillery_equipment = {
+				soft_attack = 0.1
+				maximum_speed = 0.05
+			}
+			light_tank_destroyer_equipment = {
+				hard_attack = 0.1
+				maximum_speed = 0.05
+			}
+			light_tank_aa_equipment = {
+	    		air_attack = 0.1
+				maximum_speed = 0.05
+			}
+				
+		    medium_tank_equipment = {
+		        maximum_speed = 0.05
+			    soft_attack = 0.05
+				hard_attack = 0.05
+			}
+			medium_tank_aa_equipment = {
+				air_attack = 0.1
+				maximum_speed = 0.05
+			}
+			medium_tank_artillery_equipment = {
+				soft_attack = 0.1
+				maximum_speed = 0.05
+			}
+			medium_tank_destroyer_equipment = {
+				maximum_speed = 0.05
+				hard_attack = 0.1
+			}
+				
+			heavy_tank_equipment = {
+				hard_attack = 0.1
+				armor_value = 0.05
+			}
+			heavy_tank_destroyer_equipment = {
+			    hard_attack = 0.1
+				armor_value = 0.05
+			}
+			heavy_tank_artillery_equipment = {
+			    soft_attack = 0.1
+				armor_value = 0.05
+			}
+		}
+	}
+    air_concern = {
+	    random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.1 reliability = 0.05
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.1 reliability = 0.05
+			}
+			
+			CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.05
+			}
+			cv_CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.05
+			}
+			
+			nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			cv_nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			
+			heavy_fighter_equipment = {
+				reliability = 0.05
+				air_agility = 0.05
+				air_range = 0.05
+			}
+			tac_bomber_equipment = {
+				reliability = 0.05
+				air_bombing = 0.05
+				air_range = 0.05
+			}
+			scout_plane_equipment = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+			
+			strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
+		}
+	}
+    sea_concern = {
+	    random = no
+		equipment_bonus = {
+			submarine = {
+				sub_visibility = -0.1 
+				surface_visibility = -0.1 
+				naval_speed = 0.1
+				build_cost_ic = -0.1
+			}
+			screen_ship = {
+				sub_detection = 0.1 
+				lg_attack = 0.15
+				naval_range = 0.3 
+				build_cost_ic = -0.1
+			}
+			capital_ship = {
+				armor_value = 0.15 
+				hg_attack = 0.15
+				naval_range = 0.25 
+				max_strength = 0.1
+			}
+			carrier = {
+			    armor_value = 0.15 
+				naval_range = 0.25
+			    carrier_size = 0.35 
+				max_strength = 0.1				
+			}
+		}
+	}
+    gun_concern = {
+	    random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				breakthrough = 0.05 
+				soft_attack = 0.1 
+				defense = 0.05 
+			}
+				
+	        anti_air_equipment = {
+			    air_attack = 0.05 
+				soft_attack = 0.05 
+			}
+			anti_tank_equipment = {
+		  	    hard_attack = 0.05 
+				ap_attack = 0.05
+			}
+			artillery_equipment = {
+                soft_attack = 0.05 
+			}
+			pack_artillery_equipment = {
+			    soft_attack = 0.05
+			}
+			heavy_artillery_equipment = {
+                soft_attack = 0.05 
+			}
+			rocket_artillery_equipment  = {
+                soft_attack = 0.05 
+	        }
+				
+			mechanized_equipment = {
+				breakthrough = 0.1 
+				hardness = 0.1 
+			}
+			motorized_equipment = {
+				build_cost_ic = -0.05 
+				instant = yes
+			}
+			armored_cars_equipment = {
+				soft_attack = 0.05 
+				hardness = 0.05 
+			}
+		}
 	}
 	
 	OAK_autocratic_charmer = {

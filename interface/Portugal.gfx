@@ -58,6 +58,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/POR_concern2.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_POR_concern3"
+		texturefile = "gfx/interface/ideas/POR_concern3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_concern4"
+		texturefile = "gfx/interface/ideas/POR_concern4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_concern5"
+		texturefile = "gfx/interface/ideas/POR_concern5.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_POR_lanius"
 		texturefile = "gfx/interface/ideas/POR_lanius.dds"
 	}

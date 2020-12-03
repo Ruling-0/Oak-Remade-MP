@@ -1238,6 +1238,27 @@ ideas = {
 			
 			designer = yes
 			
+			POR_air = {
+			
+				picture = POR_concern3
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+                cost = 50
+				
+				research_bonus = {
+					air_equipment = -0.15
+				}
+				
+				traits = { air_concern }
+				
+				modifier = {
+				}
+			}	
+			
 			ogma = {
 				
 				picture = por_ogma
@@ -1251,11 +1272,9 @@ ideas = {
 	
 				available = { 
 				}
-					
-				cost = 50
 				
 				research_bonus = {
-					air_equipment = -0.15
+					air_equipment = 0.15
 				}
 				
 				traits = { light_aircraft_manufacturer }
@@ -1273,6 +1292,27 @@ ideas = {
 		naval_manufacturer = { 
 			
 			designer = yes
+			
+			POR_sea = {
+			
+				picture = POR_concern4
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+                cost = 50
+				
+				research_bonus = {
+					naval_equipment = 0.15
+				}
+				
+				traits = { sea_concern }
+				
+				modifier = {
+				}
+			}
 			
 			arsenal_alfeite = {
 				
@@ -1300,13 +1340,34 @@ ideas = {
 		
 		materiel_manufacturer = {
 				
-			designer = yes		
+			designer = yes	
+
+			POR_gun = {
+			
+				picture = POR_concern5
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+				cost = 50
+				
+				research_bonus = {
+					infantry_weapons = -0.15
+					motorized_equipment = 0.1
+					artillery = 0.1
+				}
+				
+				traits = { gun_concern }
+				
+				modifier = {
+				}
+			}			
 	
 			fnmal = {
 				
 				picture = generic_infantry_equipment_manufacturer_2
-	
-				cost = 50
 				
 				allowed = {
 					original_tag = POR
@@ -1314,7 +1375,7 @@ ideas = {
 				}
 	
 				research_bonus = {
-					infantry_weapons = -0.15
+					infantry_weapons = 0.15
 				}
 							
 				traits = { infantry_equipment_manufacturer }
@@ -1397,6 +1458,25 @@ ideas = {
 		}
 	
 		industrial_concern = {	
+		
+			POR_con = {
+			
+				picture = POR_concern1
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+				research_bonus = {
+					industry = 0.15
+				}
+				
+				traits = { energy_concern }
+				
+				modifier = {
+				}
+			}
 	
 			companhia_uniao_fabril = {
 	
@@ -1412,24 +1492,6 @@ ideas = {
 				}
 				
 				traits = { industrial_concern }
-				
-				modifier = {
-				}
-			}
-			POR_con = {
-			
-				picture = POR_concern1
-				
-				allowed = {
-					original_tag = POR
-					has_dlc = "La Resistance"
-				}
-				
-				research_bonus = {
-					industry = 0.15
-				}
-				
-				traits = { energy_concern }
 				
 				modifier = {
 				}
