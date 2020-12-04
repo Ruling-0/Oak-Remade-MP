@@ -24,10 +24,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = -0.005
-				conscription_factor = -0.05
-				communism_drift = 0.05
-				fascism_drift = 0.05
+				conscription = -0.01
+				conscription_factor = -0.1
 			}
 		}
 		
@@ -57,6 +55,7 @@ ideas = {
 			}
 
 			modifier = {
+			    consumer_goods_factor = -0.05
 				drift_defence_factor = 0.5
 			}
 		}
