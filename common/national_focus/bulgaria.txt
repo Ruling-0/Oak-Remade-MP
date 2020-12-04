@@ -2484,90 +2484,27 @@ focus_tree = {
 		relative_position_id = BUL_appoint_right_wing_ministers
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 
 		available = {
-			has_civil_war = no
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				SPR_scw_in_progress = yes
-				country_exists = SPA
-				NOT = { has_war_with = SPA }
+			SPR = { 
+				has_war = yes
 			}
-			else = {
-				any_country = {
-					original_tag = SPR
-					has_civil_war = yes
-					NOT = { has_war_with = ROOT }
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
-				}
-			}
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-			is_subject = no
 		}
 		
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
+			SPR = {
+				add_opinion_modifier = {
+				    target = BUL
+				    modifier = BUL_helped_in_civil_war
 				}
-				SPA = {
-					add_opinion_modifier = {
-					    target = BUL
-					    modifier = BUL_helped_in_civil_war
-					}
-					add_manpower = 3000
-					ROOT = {
-						set_variable = { BUL_spanish_tag_aided = PREV }
-					}
-				}
-				add_ai_strategy = {
-					type = befriend
-					id = SPA
-					value = 100
-				}
+				add_manpower = 25000
+			}			
+			add_manpower = -25000
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = BUL }
 			}
-			else = {
-				random_country = {
-					limit = {
-						original_tag = SPR
-						has_civil_war = yes
-						OR = {
-							has_government = neutrality
-							has_government = fascism
-						}
-					}
-					add_opinion_modifier = {
-					    target = BUL
-					    modifier = BUL_helped_in_civil_war
-					}
-					add_manpower = 3000
-					ROOT = {
-						set_variable = { BUL_spanish_tag_aided = PREV }
-						add_ai_strategy = {
-							type = befriend
-							id = PREV
-							value = 100
-						}
-						add_ai_strategy = {
-							type = send_volunteers_desire
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
-			add_manpower = -3000
-			add_ideas = BUL_volunteers_in_spain_nationalist
-			custom_effect_tooltip = BUL_support_the_spanish_coup_tt
+			army_experience = 20
 		}
 	}
 
