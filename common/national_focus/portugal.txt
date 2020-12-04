@@ -2261,7 +2261,7 @@ focus_tree = {
 			is_ai = no
 		}
 		prerequisite = { focus = POR_support_the_spanish_nationalists }
-		icon = GFX_focus_invite_finland
+		icon = GFX_FIN_the_white_guard
 		x = -2		
 		y = 1
 
@@ -2299,7 +2299,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = POR_support_the_spanish_nationalists }
-		icon = GFX_focus_intervention_spain_nationalists
+		icon = GFX_GER_lessons_of_the_civil_war
 		x = 2	
 		y = 1
 
@@ -2349,7 +2349,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = POR_portuguese_legion }
 
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GFX_focus_fra_french_union
 		x = -2
 		y = 1
 
@@ -2384,7 +2384,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = POR_portuguese_legion }
-		icon = GFX_focus_chi_collaboration_with_the_japanese
+		icon = GFX_focus_jap_pacific_guardian
 		x = 2	
 		y = 1
 
