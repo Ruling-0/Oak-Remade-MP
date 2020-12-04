@@ -585,10 +585,8 @@ country_event = {
 			}	
 		}	
 		if = {
-			limit = {
-				ENG = { controls_state = 100 }
-				ENG = { controls_state = 101}
-			}
+			
+			
 			USA = { country_event = { id = oak_usa.50 } }
 		}			
 		news_event = { hours = 4 id = news.461 }
