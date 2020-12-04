@@ -2085,10 +2085,9 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_appointed_bzns_members_flag
 			}
 			
-			traits = { leader_of_the_agrarian_union }
+			traits = { smooth_talking_charmer }
 
 			ai_will_do = {
 				base = 3
@@ -2176,11 +2175,9 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_appointed_bs_members_flag
-				NOT = { has_government = fascism }
 			}
 			
-			traits = { marxist_philosopher }
+			traits = { smooth_talking_charmer }
 
 			ai_will_do = {
 				base = 3
@@ -2219,7 +2216,6 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_appointed_nsm_members_flag
 				NOT = { has_government = communism }
 			}
 			
@@ -2554,8 +2550,6 @@ ideas = {
 			}
 			
 			available = {
-				NOT = { has_completed_focus = BUL_join_the_tripartite_pact }
-				NOT = { has_government = fascism }
 			}
 			
 			traits = { army_chief_drill_2 }
@@ -2623,7 +2617,6 @@ ideas = {
 			}
 			
 			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -2704,7 +2697,6 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
 			}
 						
 			traits = { air_chief_safety_2 }
@@ -2726,8 +2718,6 @@ ideas = {
 			}
 
 			available = {
-				has_government = communism
-				has_country_flag = BUL_back_from_the_scw_flag
 			}
 						
 			traits = { air_chief_ground_support_3 }
@@ -2985,7 +2975,6 @@ ideas = {
 			}
 
 			available= {
-				has_government = communism
 			}
 			
 			traits = { army_entrenchment_2 }
@@ -3007,7 +2996,6 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
 			}
 			
 			traits = { army_armored_2 }
@@ -3032,7 +3020,6 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
 			}
 			
 			traits = { army_infantry_2 }

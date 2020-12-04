@@ -2024,7 +2024,8 @@ focus_tree = {
 			add_ideas = BUL_tsar_boris_positive_01
 
 			custom_effect_tooltip = remove_political_advisor
-			show_ideas_tooltip = BUL_vasil_kolarov
+			show_ideas_tooltip = BUL_vasil_kolarov 
+			show_ideas_tooltip = BUL_stoycho_mushanov
 		}
 	}
 
@@ -2129,9 +2130,7 @@ focus_tree = {
 		relative_position_id = BUL_power_to_the_tsar
 		x = -4
 		y = 2
-		cost = 10
-
-		mutually_exclusive = { focus = BUL_appoint_right_wing_ministers }
+		cost = 5
 
 		available = {
 
@@ -2139,11 +2138,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-			add_political_power = 70
+			add_political_power = 50
 			add_stability = -0.05
 		}
 	}
@@ -2156,7 +2151,7 @@ focus_tree = {
 		relative_position_id = BUL_the_tsars_regime
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 
 		available = {
@@ -2166,14 +2161,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
 			}
-			add_war_support = 0.1
+			add_war_support = 0.05
 			add_ideas = BUL_paramilitary_organizations
 		}
 	}
@@ -2186,7 +2177,7 @@ focus_tree = {
 		relative_position_id = BUL_the_tsars_regime
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2194,11 +2185,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-			add_political_power = 70
+			add_political_power = 50
 		}
 	}
 
@@ -2210,7 +2197,7 @@ focus_tree = {
 		relative_position_id = BUL_restore_the_tarnovo_constitution
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2218,18 +2205,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			set_country_flag = BUL_freedom_of_press_flag
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_political_power = 120
-			add_stability = 0.1
-			if = {
-				limit = {
-					NOT = { has_completed_focus = BUL_crush_the_communists }
-					NOT = { has_country_flag = BUL_bs_destroyed_flag }
-				}
-			}
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 
@@ -2241,7 +2218,7 @@ focus_tree = {
 		relative_position_id = BUL_the_tsars_regime
 		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2249,7 +2226,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			add_political_power = 70
+			add_political_power = 50
 			add_stability = 0.05
 			add_war_support = 0.05
 		}
@@ -2342,7 +2319,6 @@ focus_tree = {
 		y = 2
 		cost = 10
 
-		mutually_exclusive = { focus = BUL_the_tsars_regime }
 
 		available = {
 
@@ -2905,7 +2881,7 @@ focus_tree = {
 		relative_position_id = BUL_approach_germany
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		bypass = {
 			OR = {
@@ -3056,9 +3032,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			hidden_effect = {
-				set_rule = { can_join_factions = yes }
-			}		
+			set_rule = { can_join_factions = yes }	
 			if = {
 				limit = {
 					OR = {
@@ -3162,27 +3136,39 @@ focus_tree = {
 		completion_reward = {
 			add_to_tech_sharing_group = BUL_axis_research
 			GER = {add_to_tech_sharing_group = BUL_axis_research}
-			if = { 
-				limit = { is_faction_leader = yes }
-				every_country = {
-					limit = {
-						is_in_faction_with = BUL
-					}
-					add_to_tech_sharing_group = BUL_axis_research
-				}
-			}
-			else = {
-				every_country = {
-					limit = {
-						is_in_faction_with = BUL
-						OR = {
-							is_major = yes
-							is_faction_leader = yes
-						}
-					}
-					add_to_tech_sharing_group = BUL_axis_research
-				}
-			}
+			ITA = {add_to_tech_sharing_group = BUL_axis_research}
+			HUN = {add_to_tech_sharing_group = BUL_axis_research}
+			ROM = {add_to_tech_sharing_group = BUL_axis_research}
+		    GER = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = BUL_axis_research
+         	    	bonus = -0.05 # we get 20% higher bonus from this group
+    		    }
+		    }
+		    ITA = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = BUL_axis_research
+         	    	bonus = -0.05 # we get 20% higher bonus from this group
+    		    }
+		    }
+		    ROM = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = BUL_axis_research
+         	    	bonus = -0.05 # we get 20% higher bonus from this group
+    		    }
+		    }
+		    HUN = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = BUL_axis_research
+         	    	bonus = -0.05 # we get 20% higher bonus from this group
+    		    }
+		    }
+		    BUL = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = BUL_axis_research
+         	    	bonus = -0.05 # we get 20% higher bonus from this group
+    		    }
+		    }
 		}
 	}
 

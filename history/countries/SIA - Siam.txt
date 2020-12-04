@@ -13,6 +13,8 @@ add_ideas = {
 	divided_nation_full
 }
 
+set_research_slots = 4
+
 # Starting tech
 set_technology = {
 	################# infantry ###############
