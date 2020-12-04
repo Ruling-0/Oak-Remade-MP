@@ -29,6 +29,25 @@ ideas = {
 
 	############### Blitz Strategic bonus 
 	country = {
+		GER_prepare_for_the_inevitable = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1
+		}
 		#Drang nach Osten
 		Barbarossa_I = {
 		
