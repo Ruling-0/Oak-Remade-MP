@@ -1,5 +1,24 @@
 ideas = {
 	country = {
+		imperial_austerity_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 		elite_schools_focus = {
 			removal_cost = -1
 			
@@ -164,6 +183,18 @@ ideas = {
 			}			
 		}
 	}
+    theorist_production = {
+		SIA_thawee_punyaketu = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { captain_of_industry }
+		}	
+	}
 	political_advisor = {
 
 		SIA_phot_bhahalyodin = {
@@ -174,7 +205,7 @@ ideas = {
 				original_tag = SIA
 			}
 			
-			traits = { prince_of_terror }
+			traits = { popular_figurehead }
 		}
 
 		SIA_kuang_abhayavongsa = {
@@ -186,17 +217,6 @@ ideas = {
 			}
 			
 			traits = { silent_workhorse }
-		}
-
-		SIA_thawee_punyaketu = {
-
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			traits = { captain_of_industry }
 		}
 	}	
 

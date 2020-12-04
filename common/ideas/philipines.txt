@@ -191,6 +191,18 @@ ideas = {
 			}
 		}
 	}
+    theorist_production = {
+		PHI_juan_sumulong = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
 	political_advisor = {
 
 		PHI_sergio_osmena = {
@@ -213,17 +225,6 @@ ideas = {
 			}
 			
 			traits = { popular_figurehead }
-		}
-
-		PHI_juan_sumulong = {
-
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = PHI
-			}
-			
-			traits = { prince_of_terror }
 		}
 	}	
 

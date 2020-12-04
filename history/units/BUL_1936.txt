@@ -161,12 +161,12 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "BUL"
 		}
 		requested_factories = 4
 		progress = 0.87
-		efficiency = 10
+		efficiency = 50
 	}
 	
 	add_equipment_production = {
@@ -176,7 +176,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.19
-		efficiency = 10
+		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
@@ -185,7 +185,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 10
+		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
@@ -194,7 +194,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.76
-		efficiency = 10
+		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
@@ -203,7 +203,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.24
-		efficiency = 10
+		efficiency = 50
 	}
 	
 	add_equipment_production = {
@@ -213,7 +213,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 10
+		efficiency = 50
 	}
 
 	add_equipment_production = {
@@ -223,6 +223,6 @@ instant_effect = {
 		}
 		requested_factories = 15
 		progress = 0.4
-		efficiency = 10
+		efficiency = 50
 	}
 }
