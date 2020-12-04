@@ -91,3 +91,15 @@ yugoslavia_partisans_modifier = {
 	resistance_target_on_our_occupied_states = 0.5
 	resistance_damage_to_garrison = 0.5
 }
+BUL_foreign_industry_dynamic_modifier = { #Used as National Spirit
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	political_power_gain = 0.05
+	production_speed_buildings_factor = BUL_foreign_industry_construction_speed_modifier
+	industrial_capacity_factory = -0.02
+	production_factory_efficiency_gain_factor = BUL_foreign_industry_production_efficiency_modifier
+	production_factory_max_efficiency_factor = BUL_foreign_industry_production_efficiency_modifier
+	consumer_goods_factor = BUL_foreign_industry_consumer_goods_modifier
+}

@@ -101,20 +101,6 @@ if = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
-	every_owned_state = {
-		limit = {
-			NOT = {
-				state = 177
-				state = 178
-				state = 290
-				state = 699
-				state = 783
-				state = 297
-			}
-		}
-		set_variable = { var = SPA_garrison_control value = 1 }
-		SPA_garrison_control_cost_calculation = yes
-	}
 	set_popularities = {
 		democratic = 41
 		fascism = 37
@@ -151,29 +137,11 @@ if = {
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
 	}
-	SPR = {
-		set_variable = { var = spa_civil_war_divisions_counter_var value = 17 }
-		set_variable = { var = spr_civil_war_divisions_counter_var value = 66 }
-	}
-	for_each_scope_loop = {
-	    array = core_states
-	    
-	    set_state_flag = SPR_original_core
-	}
 	add_ideas = {
 		SPA_carlism_1
 		SPR_military_disloyalty
 		SPR_political_violence
-		SPR_national_strikes_3
-	}
-	165 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
-	171 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
-	792 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
+		SPR_national_strikes_1
 	}
 }
 

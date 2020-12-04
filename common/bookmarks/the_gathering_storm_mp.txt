@@ -170,7 +170,6 @@ bookmarks = {
 			focuses = {
 			    SPA_unify_the_nationalist_front
 				SPA_fuse_the_parties
-				SPR_maintain_the_second_republic
 			}
 		}
 		"HUN"={

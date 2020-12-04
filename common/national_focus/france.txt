@@ -94,10 +94,11 @@ focus_tree = {
 		}
 
 		available = {
-			SPR_scw_in_progress = yes
-			is_subject = no
+			SPR = {
+				has_civil_war = yes
+			}
 		}
-		
+
 		bypass = {
 			has_global_flag = scw_over
 		}

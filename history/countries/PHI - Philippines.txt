@@ -4,6 +4,8 @@ oob = "PHI_1936"
 
 add_ideas = {
 	no_spies_idea
+	PHI_unstable_state
+	PHI_ideological_rebels
 }
 
 # Starting tech

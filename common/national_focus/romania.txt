@@ -1118,8 +1118,8 @@
 		}
 
 		available = {
-			SPA = {
-				has_civil_war = yes 
+			SPR = {
+				has_civil_war = yes
 			}
 		}
 

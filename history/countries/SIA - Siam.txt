@@ -10,6 +10,7 @@ if = {
 }
 add_ideas = {
 	no_spies_idea
+	divided_nation_full
 }
 
 # Starting tech
