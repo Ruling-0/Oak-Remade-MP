@@ -230,7 +230,7 @@ ideas = {
 				original_tag = SIA
 			}
 			
-			traits = { army_chief_morale_2 }
+			traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -282,7 +282,7 @@ ideas = {
 				original_tag = SIA
 			}
 			
-			traits = { air_chief_night_operations_2 }
+			traits = { air_air_superiority_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -317,7 +317,7 @@ ideas = {
 				original_tag = SIA
 			}
 					
-			traits = { navy_chief_maneuver_2 }
+			traits = { navy_chief_commerce_raiding_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -360,7 +360,7 @@ ideas = {
 		}
 
 		SIA_phraya_thayarnpikart = {
-			ledger = air
+			ledger = army
 
 			picture = generic_air_asia_3
 			
@@ -368,7 +368,7 @@ ideas = {
 				original_tag = SIA
 			}
 			
-			traits = { air_close_air_support_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -384,7 +384,7 @@ ideas = {
 				original_tag = SIA
 			}
 			
-			traits = { air_naval_strike_2 }
+			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -401,22 +401,6 @@ ideas = {
 			}
 			
 			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SIA_phraya_preechacholayudha = {
-			ledger = navy
-
-			picture = generic_navy_asia_1
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
 				factor = 1

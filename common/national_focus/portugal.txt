@@ -2273,7 +2273,7 @@ focus_tree = {
 			army_experience = 20
 			air_experience = 20
 			FIN = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
@@ -2310,7 +2310,7 @@ focus_tree = {
 			army_experience = 20
 			air_experience = 20
 			SPR = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
@@ -2401,7 +2401,7 @@ focus_tree = {
 	                CAS_1939 = 1
 			    }
 			}
-			add_political_power = 150
+			add_political_power = 225
 			army_experience = 20
 			air_experience = 20
 			JAP = {
@@ -2415,6 +2415,13 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_1937 amount = 100 producer = POR }
 			}
 			MAN = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
+			}
+			SIA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }

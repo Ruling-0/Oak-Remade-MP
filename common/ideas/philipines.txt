@@ -237,7 +237,7 @@ ideas = {
 				original_tag = PHI
 			}
 			
-			traits = { army_chief_morale_2 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -273,7 +273,7 @@ ideas = {
 				original_tag = PHI
 			}
 			
-			traits = { air_chief_all_weather_2 }
+			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -289,7 +289,7 @@ ideas = {
 				original_tag = PHI
 			}
 			
-			traits = { air_chief_reform_2 }
+			traits = { air_air_superiority_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -308,7 +308,7 @@ ideas = {
 				original_tag = PHI
 			}
 					
-			traits = { navy_chief_maneuver_2 }
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -375,7 +375,7 @@ ideas = {
 				original_tag = PHI
 			}
 			
-			traits = { air_airborne_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -391,7 +391,22 @@ ideas = {
 				original_tag = PHI
 			}
 			
-			traits = { navy_fleet_logistics_2 }
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SIA_phraya_preechacholayudha = {
+			ledger = navy
+
+			picture = generic_navy_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
 				factor = 1
