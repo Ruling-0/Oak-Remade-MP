@@ -1347,7 +1347,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
 			remove_ideas = PHI_unstable_state
 			#As per generic
