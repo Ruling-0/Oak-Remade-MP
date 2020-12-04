@@ -1815,7 +1815,7 @@ ideas = {
 		generic_communist_revolutionary = {
 			
 			allowed = {
-				NOT = { OR = { tag = BUL tag = EFR tag = MAN tag = MEX tag = HOL tag = CZE tag = ROM tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = HUN tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = BUL tag = EFR tag = MAN tag = MEX tag = HOL tag = CZE tag = ROM tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = HUN tag = IRE tag = NZL tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
 				}
@@ -1877,7 +1877,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = IRE tag = NZL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
@@ -2394,7 +2394,7 @@ ideas = {
 		generic_war_industrialist = {
 
 			allowed = {
-				OR = { original_tag = ETH original_tag = BEL original_tag = NOR original_tag = BUL original_tag = YUG original_tag = SWE original_tag = KOR original_tag = SER   original_tag = LEB original_tag = EGY  original_tag = CRO  original_tag = INS original_tag = MAL  original_tag = UKR     original_tag = MNT original_tag = LIB   }
+				OR = { original_tag = ETH original_tag = SIA original_tag = PHI original_tag = BEL original_tag = NOR original_tag = YUG original_tag = SWE original_tag = KOR original_tag = SER   original_tag = LEB original_tag = EGY  original_tag = CRO  original_tag = INS original_tag = MAL  original_tag = UKR     original_tag = MNT original_tag = LIB   }
 			}
 			
 			traits = { war_industrialist }
