@@ -1284,7 +1284,6 @@ focus = {
 		completion_reward = {
 			add_political_power = 120
 			add_to_tech_sharing_group = commonwealth_research
-			remove_ideas = PHI_unstable_state
 		}
 	}
 
@@ -1295,7 +1294,7 @@ focus = {
 
 		x = 26
 		y = 1
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1350,6 +1349,7 @@ focus = {
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
+			remove_ideas = PHI_unstable_state
 			#As per generic
 		}
 	}
@@ -1364,7 +1364,7 @@ focus = {
 
 		x = 25
 		y = 5
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1440,7 +1440,6 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-	    add_research_slot = 1
 		327 = {
 		   add_manpower = 250000
 			}

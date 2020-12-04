@@ -681,7 +681,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = MAN_resource
 		}
 	}
    
@@ -797,7 +797,6 @@ focus_tree = {
 		completion_reward = {			
 			add_ideas = fascist_military
 			army_experience = 20
-			set_rule = { can_send_volunteers = yes }
 		}
 	}
 

@@ -14,7 +14,7 @@ add_ideas = {
 }
 
 set_stability = 0.5
-set_war_support = 0.8
+set_war_support = 0.3
 
 set_research_slots = 4
 
@@ -88,14 +88,16 @@ if = {
 set_convoys = 100
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	fascism = 20
+	neutrality = 80
 }
+
 create_country_leader = {
 	name = "Phraya Phahon"
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"
