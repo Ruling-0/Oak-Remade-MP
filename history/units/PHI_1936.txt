@@ -15,17 +15,18 @@ division_names_group = PHI_INF_01
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
+		light_infantry = { x = 2 y = 3 }
 		
 		pack_artillery_brigade = { x = 3 y = 0 }
 		pack_artillery_brigade = { x = 3 y = 1 }
 		pack_artillery_brigade = { x = 3 y = 2 }
-		pack_artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
-	    engineer = { x = 0 y = 2 }
-
+	    engineer = { x = 1 y = 0 }
+		pack_artillery = { x = 1 y = 1 }
+		anti_air_company = { x = 0 y = 2 }	
 	}
 }
 division_template = {
@@ -42,12 +43,13 @@ division_template = {
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
-	
 	}
 	 support = {
-		DIV_HQ = { x = 0 y = 0 }
+	    DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
-		
+	    engineer = { x = 1 y = 0 }
+		pack_artillery = { x = 1 y = 1 }
+		anti_air_company = { x = 0 y = 2 }	
 	}
 }
 
@@ -67,8 +69,11 @@ division_names_group = PHI_INF_01
 		garrison = { x = 2 y = 2 }
 	}
 	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }	
+	    DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	    engineer = { x = 1 y = 0 }
+		pack_artillery = { x = 1 y = 1 }
+		anti_air_company = { x = 0 y = 2 }	
 	}
 }
 #### OOB ####
@@ -212,51 +217,57 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "PHI"
 		}
 		requested_factories = 1
-		progress = 0.40
+		progress = 0.27
 		efficiency = 100
 	}
-	
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
 			creator = "PHI"
 		}
 		requested_factories = 1
-		progress = 0.40
+		progress = 0.27
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "PHI"
+		}
+		requested_factories = 1
+		progress = 0.5
 		efficiency = 100
 	}
 	
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_0
-			amount = 1000
-			producer = USA
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "PHI" 
 		}
-	
-	add_equipment_to_stockpile = {
-		type = support_equipment_1
-			amount = 300
-			producer = USA
-		}
-	add_equipment_to_stockpile = {
-		type = motorized_equipment_1
-			amount = 200
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 400
-			producer = USA
-		}
-	
-		
-	add_equipment_to_stockpile = {
-		type = radio_equipment_1
-		amount = 100
-		producer = USA
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
 	}
-		
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "PHI" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+    add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "PHI" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
 }

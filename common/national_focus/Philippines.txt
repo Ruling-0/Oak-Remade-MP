@@ -1283,7 +1283,7 @@ focus = {
 
 		completion_reward = {
 			add_political_power = 120
-			remove_ideas = PHI_unstable_state
+			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 
@@ -1294,7 +1294,7 @@ focus = {
 
 		x = 26
 		y = 1
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1347,8 +1347,8 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
+			remove_ideas = PHI_unstable_state
 			#As per generic
 		}
 	}
@@ -1363,7 +1363,7 @@ focus = {
 
 		x = 25
 		y = 5
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1400,7 +1400,7 @@ focus = {
 
 		x = 26
 		y = 4
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1411,8 +1411,14 @@ focus = {
 		completion_reward = {
 			add_opinion_modifier = { target = ENG modifier = POL_draw_closer_to_britain }
 			ENG = { add_opinion_modifier = { target = ROOT modifier = POL_draw_closer_to_britain } }
-			#Relation boost with the UK
+			PHI = {
+   			 modify_tech_sharing_bonus = {
+         			id = commonwealth_research
+         			bonus = 0.1  # we get 20% higher bonus from this group
+    			}
+			}
 		}
+		#Relation boost with the UK
 	}
 
 
@@ -1424,7 +1430,7 @@ focus = {
 
 	x = 27
 	y = 5
-	cost = 1
+	cost = 5
 
 	ai_will_do = {
 		factor = 10
@@ -1438,8 +1444,8 @@ focus = {
 			}
 		623 = {
 		add_manpower = 250000
-	 }
- }
+	    }
+    }
 }
 
 

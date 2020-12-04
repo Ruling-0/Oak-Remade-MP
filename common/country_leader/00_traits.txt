@@ -5026,9 +5026,8 @@ leader_traits = {
 	womens_rights_activist = {
 		random = no
 		sprite = 13
-		democratic_drift = 0.05
 		political_power_gain = 0.05
-		stability_weekly = 0.005
+		stability_weekly = 0.0025
 	}
 
 	marxist_philosopher = {

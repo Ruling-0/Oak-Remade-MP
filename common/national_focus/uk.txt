@@ -3753,7 +3753,7 @@ focus_tree = {
 			    HOL = {
 				    add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
-			    MEX = {
+			    PHI = {
 				    add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
 			    RAJ = {    
@@ -5503,7 +5503,7 @@ focus_tree = {
 			    FRA = {
 				    add_ideas = ENG_british_commonwealth_air_training_plan
 				}
-			    HOL = {
+			    PHI = {
 				    add_ideas = ENG_british_commonwealth_air_training_plan
 				}
 			    MEX = {

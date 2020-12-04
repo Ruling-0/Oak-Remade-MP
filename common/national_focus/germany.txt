@@ -1498,6 +1498,18 @@ focus_tree = {
 					remove_resource_rights = 6
 				}
 			}
+	            ITA = {
+				    add_ideas = GER_prepare_for_the_inevitable
+				}
+			    ROM = {
+				    add_ideas = GER_prepare_for_the_inevitable
+				}
+			    HUN = {
+				    add_ideas = GER_prepare_for_the_inevitable
+				}
+			    BUL = {    
+					add_ideas = GER_prepare_for_the_inevitable
+				}
 		}
 	}
 

@@ -50,11 +50,18 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MAN_songgotu_zhanshan
 			JAP = { add_to_tech_sharing_group = axis_research }
+			SIA = { add_to_tech_sharing_group = axis_research }
 			add_to_tech_sharing_group = axis_research
 		    MAN = {
    		        modify_tech_sharing_bonus = {
          	    	id = axis_research
-         	    	bonus = 0.3 # we get 20% higher bonus from this group
+         	    	bonus = 0.1 # we get 10% higher bonus from this group
+    		    }
+		    }
+		    SIA = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = axis_research
+         	    	bonus = 0.1 # we get 10% higher bonus from this group
     		    }
 		    }
 		}

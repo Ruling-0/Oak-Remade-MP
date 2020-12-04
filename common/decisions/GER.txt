@@ -3105,7 +3105,18 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-			puppet = BUL
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor" 
+					BUL = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				GER = {
+					set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
+				}
+			}
 			BUL = {
 				48 = {
 					add_extra_state_shared_building_slots = 2

@@ -359,9 +359,9 @@ focus_tree = {
 	focus = {
 		id = ITA_roma_class
 		icon = GFX_ITA_roma_class_battleship
-		prerequisite = { focus = ITA_modern_cruisers }
+		prerequisite = { focus = ITA_Escape_the_cage focus = ITA_X_Flottiglia_MAS }
 		x = 1
-		y = 6
+		y = 7
 		cost = 7.145
 		ai_will_do = {
 			factor = 10
@@ -380,11 +380,10 @@ focus_tree = {
 	focus = {
 		id = ITA_Mare_Nostrum 
 		icon = GFX_ITA_Mare_Nostrum
-		prerequisite = { focus = ITA_Escape_the_cage }
-		prerequisite = { focus = ITA_X_Flottiglia_MAS }
+		prerequisite = { focus = ITA_modern_cruisers }
 		x = 1
-		y = 7
-		cost = 10
+		y = 6
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -392,7 +391,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-		    has_war_with = ENG
+		    date > 1939.1.1
         }
 		completion_reward = {
 		add_political_power = 100

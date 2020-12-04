@@ -671,7 +671,6 @@ focus_tree = {
 		prerequisite = { focus = SIA_heal_the_divide_2 }
 		prerequisite = { focus = SIA_production_effort_1 }
 		available = {
-			num_of_factories > 50
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -682,7 +681,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = MAN_resource
 		}
 	}
    
@@ -798,13 +797,12 @@ focus_tree = {
 		completion_reward = {			
 			add_ideas = fascist_military
 			army_experience = 20
-			set_rule = { can_send_volunteers = yes }
 		}
 	}
 
 	focus = {
 		id = SIA_paramilitarism
-		icon = SIA_PHIBUNSONGKHRAM_NF #GFX_goal_generic_military_sphere
+		icon = GFX_goal_generic_army_doctrines #GFX_goal_generic_military_sphere
 		prerequisite = { focus = SIA_militarism }
 		x = 11
 		y = 5
@@ -1260,7 +1258,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_navy_funds
-		icon = SIAM_NAVY
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 25
 		y = 0
 		cost = 10
