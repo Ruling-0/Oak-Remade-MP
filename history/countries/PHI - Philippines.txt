@@ -6,6 +6,7 @@ add_ideas = {
 	no_spies_idea
 	PHI_unstable_state
 	PHI_ideological_rebels
+	limited_conscription
 }
 
 set_research_slots = 4
