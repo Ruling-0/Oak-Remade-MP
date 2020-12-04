@@ -2620,7 +2620,7 @@ focus_tree = {
 		bypass = {		
 		}
 		prerequisite = { focus = POR_proudly_alone }
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_mex_privatisation
 		x = 0
 		y = 1
 		
