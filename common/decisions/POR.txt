@@ -256,12 +256,11 @@ operations = {
 
 		available = {
 			is_ai = no
-			date > 1936.2.1
 			OR = {
 				ENG = {
 					has_capitulated = yes 
 				}
-			    date < 1942.1.1
+			    date > 1942.1.1
 			}
 		}
 
