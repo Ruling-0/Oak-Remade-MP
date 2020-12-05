@@ -96,8 +96,8 @@ ideas = {
 			}
 			
 			modifier = {
-				fascism_drift = 0.034
-				stability_factor = 0.1
+				fascism_drift = 0.1
+				stability_factor = 0.05
 			}
 		}
 
@@ -160,7 +160,8 @@ ideas = {
 			picture = generic_fascism_drift_2
 			
 			modifier = {
-				fascism_drift = 0.05
+			    stability_factor = 0.05
+				fascism_drift = 0.1
 			}
 		}
 

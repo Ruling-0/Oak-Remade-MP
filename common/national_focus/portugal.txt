@@ -2121,7 +2121,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_army_reorganization
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
@@ -2146,7 +2146,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_staff_wargames
-		cost = 10
+		cost = 7.16
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -2168,12 +2168,12 @@ focus_tree = {
 		bypass = {		
 		}
 		prerequisite = { focus = POR_field_maneuvers }
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_por_the_fifth_empire
 		x = 1		
 		y = 1
 
 		relative_position_id = POR_field_maneuvers
-		cost = 10
+		cost = 3
 		completion_reward = { 	
 			add_ideas = POR_corpo_do_estado_maior	
 			army_experience = 20
@@ -2567,6 +2567,28 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = POR_restoration_of_the_monarch
+		available = {	
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_concordat_with_the_holy_see }
+		icon = GFX_focus_por_the_kingdom_reunited
+		x = 0		
+		y = 1
+
+		relative_position_id = POR_concordat_with_the_holy_see
+		cost = 7.16
+		completion_reward = {
+			add_stability = -0.1
+			set_country_flag = KOP_kingdom_of_portugal_flag
+			set_cosmetic_tag = KOP_kingdom_portugal
+			add_ideas = POR_the_portuguese_empire
+		}
+	}
+	
+	focus = {
 		id = POR_proudly_alone
 		available = {	
 			date > 1939.1.1	
@@ -2576,13 +2598,13 @@ focus_tree = {
 		bypass = {		
 		}
 		
-		prerequisite = { focus = POR_concordat_with_the_holy_see }
+		prerequisite = { focus = POR_restoration_of_the_monarch }
 
 		icon = GFX_focus_por_salazar
 		x = 0
 		y = 1
 
-		relative_position_id = POR_concordat_with_the_holy_see
+		relative_position_id = POR_restoration_of_the_monarch
 		cost = 10
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 

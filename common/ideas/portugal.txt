@@ -208,7 +208,7 @@ ideas = {
 		}
 
 		POR_portuguese_legion = {
-			picture = tfv_can_conscription_crisis
+			picture = por_volunteers_in_the_war
 			allowed = {
 				original_tag = POR
 			}
@@ -243,7 +243,7 @@ ideas = {
 		}
 
 		POR_corpo_do_estado_maior = {
-			picture = por_volunteers_in_the_war
+			picture = POR_the_fifth_empire
 			allowed = {
 				original_tag = POR
 			}
@@ -256,6 +256,22 @@ ideas = {
 			modifier = {
 				army_leader_cost_factor = -0.5
 				army_leader_start_planning_level = 1
+			}
+		}
+		
+		POR_the_portuguese_empire = {
+			picture = por_empire
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.1
 			}
 		}
 
@@ -398,7 +414,6 @@ ideas = {
 				political_power_gain = 0.3
 				production_speed_industrial_complex_factor = 0.10
 				drift_defence_factor = 1.0
-				war_support_factor = 0.1
 				stability_weekly = 0.005
 			}
 		}
