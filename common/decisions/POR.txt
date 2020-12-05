@@ -257,8 +257,11 @@ operations = {
 		available = {
 			is_ai = no
 			date > 1936.2.1
-			ENG = {
-				has_capitulated = yes 
+			OR = {
+				ENG = {
+					has_capitulated = yes 
+				}
+			    date < 1942.1.1
 			}
 		}
 
@@ -272,15 +275,15 @@ operations = {
 			ENG = {
 		    	add_offsite_building = {
 		    		type = industrial_complex
-		    		level = 5
+		    		level = 3
 		    	}
 		    	add_offsite_building = {
 		    		type = arms_factory
-		    		level = 5
+		    		level = 3
 		    	}
 		    	add_offsite_building = {
 		    		type = dockyard
-		    		level = 5
+		    		level = 2
 		    	}
 			}
 		}		
