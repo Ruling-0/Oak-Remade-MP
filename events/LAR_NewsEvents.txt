@@ -167,3 +167,42 @@ news_event = {
 		}
 	}
 }
+#Polynesia United
+news_event = {
+	id = lar_news.291
+	title = lar_news.291.t
+	desc = {
+		text = lar_news.291.new_zealand_desc
+		trigger = {
+			FROM = {
+				original_tag = NZL
+			}
+		}
+	}
+	desc = {
+		text = lar_news.291.desc
+		trigger = {
+			FROM = {
+				NOT = { original_tag = NZL }
+			}
+		}
+	}
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lar_news.291.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = lar_news.291.b
+		trigger = {
+			NOT = { tag = FROM }
+		}
+	}
+}

@@ -2021,7 +2021,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2061,6 +2061,57 @@ focus_tree = {
 					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
 					owner = NZL
 				}
+			}
+		}
+	}
+	
+	focus = {
+		id = NZL_nation
+		icon = GFX_focus_hol_united_netherlands
+		prerequisite = { focus = NZL_maori_conscription focus = NZL_maori_volunteers }
+		x = 0
+		y = 5
+		relative_position_id = NZL_ratana_alliance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+            date < 1941.1.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			transfer_state = 636 
+		    transfer_state = 643 
+			transfer_state = 642 
+		    transfer_state = 727 
+			transfer_state = 641 
+		    transfer_state = 270 
+			add_state_core = 636
+			add_state_core = 643
+			add_state_core = 642
+			add_state_core = 727
+			add_state_core = 641
+			add_state_core = 270
+		    set_cosmetic_tag = united_polynesia
+			hidden_effect = {
+				news_event = { id = lar_news.291 hours = 6 }
+				set_global_flag = form_polynesia_flag
 			}
 		}
 	}
