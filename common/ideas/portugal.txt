@@ -243,7 +243,7 @@ ideas = {
 		}
 
 		POR_corpo_do_estado_maior = {
-			picture = POR_volunteers_in_the_war
+			picture = por_volunteers_in_the_war
 			allowed = {
 				original_tag = POR
 			}
