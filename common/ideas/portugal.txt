@@ -243,7 +243,7 @@ ideas = {
 		}
 
 		POR_corpo_do_estado_maior = {
-			picture = POR_the_fifth_empire
+			picture = por_the_fifth_empire
 			allowed = {
 				original_tag = POR
 			}

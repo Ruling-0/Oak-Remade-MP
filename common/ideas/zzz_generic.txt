@@ -1815,7 +1815,7 @@ ideas = {
 		generic_communist_revolutionary = {
 			
 			allowed = {
-				NOT = { OR = { tag = BUL tag = EFR tag = MAN tag = MEX tag = HOL tag = CZE tag = ROM tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = HUN tag = IRE tag = NZL tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = PHI tag = IRE tag = BUL tag = EFR tag = MAN tag = MEX tag = HOL tag = CZE tag = ROM tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = HUN tag = NZL tag = CHI original_tag = SPR original_tag = SIA is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
 				}
@@ -1838,7 +1838,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = BUL tag = EFR tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = ROM tag = HUN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = BUL tag = EFR tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = ROM tag = HUN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CHI original_tag = SPR original_tag = SIA is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -1877,7 +1877,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = IRE tag = NZL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = MAN tag = PRC tag = MEX tag = HOL tag = PHI tag = IRE tag = NZL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
