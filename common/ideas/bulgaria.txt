@@ -2059,6 +2059,7 @@ ideas = {
 			}
 
 			available = {
+			    NOT = { has_completed_focus = BUL_power_to_the_tsar }
 			}
 			
 			traits = { democratic_reformer }
