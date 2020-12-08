@@ -158,6 +158,16 @@
   PHI_invite_indonesia_desc:0 "Uniting the Nusantara and our Islands is the first step to Malayan unification."
   PHI_invite_malaysia:0 "Invite Malaysia"
   PHI_invite_malaysia_desc:0 "The Malaysian Federation needs the support of its ancestral brothers if it needs to survive. For this we will invite them into our faction and finally unite all Malay men, women, and children into one 'balangay'."
+  PHI_lost1:0 "Back from the Grave"
+  PHI_lost1_desc:0 "We have been defeated but we are still not out of this war yet."
+  PHI_lost2:0 "American-Phillipino Industry Deal"
+  PHI_lost2_desc:0 "Congress and our government in exile have made a deal to help the Phillipines recover industrial. In this deal, the USA will provide industrial support to the Phillipines as long as we keep on fighting."
+  PHI_lost3:0 "Foreign Support"
+  PHI_lost3_desc:0 "We are recieving foreign support to hel prebuild  our army. With foreign manpower heling fill our ranks, we should be able to deploy units shortly."
+  PHI_lost4:0 "Contact the Portuguese"
+  PHI_lost4_desc:0 "We have heard that the Portuguese are supplying arms to everyone in this conflict. Lets contact them for a shipments of arms to help get our starting forces supplied."
+  PHI_lost5:0 "We Shall Return"
+  PHI_lost5_desc:0 "We will return to our homeland and liberate it from our oppressors. We must product all the equipment we can to prepare for our liberation."
   
   #Philippines
  PHI_american_way:0 "The American Way"
@@ -184,3 +194,4 @@
  PHI_unstable_state:0 "Unstable State"
  PHI_unstable_state_desc:0 "When we gained our independence many groups were vying for power. There are only three left,but they are fighing fervorusily for the house."
  PHI_refugee_volunteers:0 "Refugee Volunteers"
+ PHI_refugee_volunteers_desc:0 "We are getting manpower from foreign volunteers from other exiled nations."
