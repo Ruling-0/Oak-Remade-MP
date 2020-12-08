@@ -1,6 +1,7 @@
 ﻿capital = 271
 set_research_slots = 2
 oob = "ETH_1936"
+set_country_flag = ITA_puppet
 
 # Starting tech
 set_technology = {
@@ -18,13 +19,13 @@ set_technology = {
 set_convoys = 12
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	fascism = 100
 }
 
 create_country_leader = {

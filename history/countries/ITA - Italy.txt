@@ -12,21 +12,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
-
-550 = {
-	start_resistance = yes
-	set_compliance = 10
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-559 = {
-	start_resistance = yes
-	set_compliance = 10
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}	   
+	   
 # Starting tech
 set_technology = { #player 
 	################ infantry ############
@@ -122,11 +108,7 @@ if = {
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
-# DIPLOMACY / WAR 36
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
+# DIPLOMACY
 	give_guarantee = ALB
 
 set_convoys = 195
