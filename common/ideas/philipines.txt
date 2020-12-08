@@ -165,8 +165,11 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				justify_war_goal_time = -0.25
-				generate_wargoal_tension = -0.4
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 		
@@ -186,7 +189,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription = 0.02
+				weekly_manpower = 2000
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
 			}
 		}
 	}
