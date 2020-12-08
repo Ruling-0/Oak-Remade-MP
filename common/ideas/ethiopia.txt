@@ -1,274 +1,106 @@
 ideas = {
-	# MILITARY
-
-	theorist_production = {
-		ETH_ras_imru_haile_selassie = {
-
-			picture = generic_political_advisor_arab_1
-				
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { captain_of_industry }
-		}	
-	}
+		country = {
+				ETH_superior_tactics_ma2_idea = {		
+			picture = generic_fighter_production_diverted
+			allowed = {	always = no	}
+			removal_cost = -1
+			modifier = { conscription = 0.2	}  
+		}		
+				ETH_superior_firepower_mw2_idea = {		
+			picture = generic_fighter_production_diverted
+			allowed = {	always = no	}
+			removal_cost = -1
+			equipment_bonus = { motorized_equipment = { hardness = 3 }   }
+		}		
+				ETH_superior_firepower_sf2_idea = {		
+			picture = generic_fighter_production_diverted
+			allowed = {	always = no	} 
+			removal_cost = -1 
+			modifier = { army_attack_factor = 0.1	}
+		}		
+				ETH_superior_tactics_gbp2_idea = {		
+			picture = generic_fighter_production_diverted
+			allowed = {	always = no	}
+			removal_cost = -1 
+			modifier = { max_command_power = 400 dig_in_speed_factor = 1	}
+		}		
+		}
 	political_advisor = {
-
 		ETH_bedjironde_tekle_hawariate = {
-
 			picture = generic_political_advisor_arab_2
-
-			allowed = {
-				original_tag = ETH
-			}
-			
+			allowed = {	original_tag = ETH	}		
 			traits = { prince_of_terror }
 		}
-
-		ETH_makonnen_endelkatchew = {
-
-			picture = generic_political_advisor_arab_3
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { smooth_talking_charmer }
+		ETH_ras_imru_haile_selassie = {
+			picture = generic_political_advisor_arab_1			
+			allowed = {	original_tag = ETH	}	
+			traits = { captain_of_industry }
 		}
 	}
-
 	army_chief = {
-
 		ETH_desta_damtew = {
-
-			picture = generic_army_arab_2
-			
-			allowed = {
-				original_tag = ETH
-			}		
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ETH_ras_kassa = {
-
-			picture = generic_army_arab_1
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
+			picture = generic_army_arab_2	
+			allowed = {	original_tag = ETH	}			
+			traits = { army_chief_organizational_3 }
 		}
 	}
 
 	air_chief = {
-
-		ETH_john_robinson = {
-
-			picture = generic_air_arab_3
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		ETH_mesfin_sileshi = {
-
 			picture = generic_air_arab_3
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
+			allowed = {	original_tag = ETH	}		
 			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
-
 	}
 
 	navy_chief = {
-
 		ETH_ras_seyum = {
-
 			picture = generic_navy_arab_2
-			
-			allowed = {
-				original_tag = ETH
-			}
-					
+			allowed = {	original_tag = ETH	}			
 			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ETH_lij_johannes = {
-
-			picture = generic_navy_arab_3
-			
-			allowed = {
-				original_tag = ETH
-			}
-					
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
 	}
 
 	high_command = {
-
-		ETH_woldemeskal_tariku = {
-			ledger = army
-			
-			picture = generic_army_arab_1
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
+		ETH_mario_roatta = {
+			ledger = army 
+			picture = mario_roatta	
+			allowed = {	original_tag = ETH	}	
 			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
-		
-		ETH_haile_abba_mersa = {
+		ETH_alfredo_guzzoni = {
 			ledger = army
-
-			picture = generic_army_arab_3
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
+			picture = alfredo_guzzoni 
+			allowed = {	original_tag = ETH	}	
+			traits = { army_infantry_3 }
 		}
-
-		ETH_lij_abiye_abebe = {
+				ETH_pietro = {
 			ledger = army
-
-			picture = generic_army_arab_2
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
+			picture = pietro_badoglio
+			allowed = {	original_tag = ETH	}	
+			traits = { army_commando_2 }
+		}
+				ETH_graziani = {
+			ledger = army
+			picture = generic_army_europe_3
+			allowed = {	original_tag = ETH	}	
+			traits = { army_cavalry_2 }
+		}
+		ETH_vittorio_ambrosio = {
+			ledger = army
+			picture = generic_army_europe_2	
+			allowed = {	original_tag = ETH	}	
 			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ETH_fitauri_zawde_gobena = {
-			ledger = air
-
-			picture = generic_air_arab_2
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ETH_dedja_zinatch_nadeon = {
-			ledger = navy
-
-			picture = generic_navy_arab_2
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			traits = { navy_capital_ship_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
 	}	
 
 	theorist = {
 		ETH_ras_kebbede = {
 			ledger = army
-			
 			picture = generic_army_arab_2
-
-			allowed = {
-				original_tag = ETH
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-			
+			allowed = {	original_tag = ETH	}
+			research_bonus = {	land_doctrine = 0.10	}
 			traits = { military_theorist }
 		}
-		
-		ETH_wondossen_kassa = {
-			ledger = navy
-
-			picture = generic_navy_arab_3
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}	
-
-		ETH_gabriel_zawde_gilaneh = {
-			ledger = air
-
-			picture = generic_air_arab_2
-			
-			allowed = {
-				original_tag = ETH
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
 	}
 }
