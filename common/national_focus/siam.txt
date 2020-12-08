@@ -735,6 +735,10 @@ focus_tree = {
     available_if_capitulated = yes
 	completion_reward = {
 	 add_opinion_modifier = { target = JAP modifier = offered_support } 
+				add_popularity = {
+					ideology = fascism
+					popularity = +0.05
+				}
 	}  
   }
   
@@ -751,6 +755,10 @@ focus_tree = {
     available_if_capitulated = yes
 	completion_reward = {
 	 add_opinion_modifier = { target = GER modifier = offered_support } 
+				add_popularity = {
+					ideology = fascism
+					popularity = +0.05
+				}
 	}  
   }
   
