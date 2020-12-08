@@ -32,7 +32,7 @@ focus_tree = {
 		id = ETH_superior_firepower
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = ETH_army_reform }
-								mutually_exclusive = { focus = ETH_superior_tactics }
+		mutually_exclusive = { focus = ETH_superior_tactics }
 
 		x = 2
 		y = 1   
@@ -52,7 +52,7 @@ focus_tree = {
 		}
 	}
 		
-			focus = {
+	focus = {
 		id = ETH_superior_firepower_mw
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = ETH_superior_firepower }
@@ -65,11 +65,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			hidden_effect = { set_technology = { gwtank = 1} set_technology = { basic_light_tank = 1} set_technology = { improved_light_tank = 1} }
+			hidden_effect = { set_technology = { light_tank_1934 = 1} set_technology = { light_tank_1936 = 1 } }
 			custom_effect_tooltip = "We will research up to 1936 light tanks."
 		}
 	}
-					focus = {
+	focus = {
 		id = ETH_superior_firepower_mw2
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = ETH_superior_firepower_mw }
@@ -100,8 +100,8 @@ focus_tree = {
 
 		completion_reward = { 
 		add_equipment_to_stockpile = { producer = ITA  type = motorized_equipment amount = 5000 }
-			add_equipment_to_stockpile = { producer = ITA  type = light_tank_equipment_1 amount = 1200 }
-			add_equipment_to_stockpile = { producer = GER  type = light_tank_equipment_2 amount = 800 }
+			add_equipment_to_stockpile = { producer = ITA  type = light_tank_equipment_1934 amount = 1200 }
+			add_equipment_to_stockpile = { producer = GER  type = light_tank_equipment_1936 amount = 800 }
 		}
 	}
 	
