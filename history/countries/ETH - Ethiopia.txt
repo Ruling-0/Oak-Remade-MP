@@ -1,7 +1,13 @@
 ﻿capital = 271
-set_research_slots = 2
+set_research_slots = 4
 oob = "ETH_1936"
-set_country_flag = ITA_puppet
+
+set_cosmetic_tag = ETH_ITA
+
+add_ideas = {
+	limited_conscription
+	partial_economic_mobilisation
+}
 
 # Starting tech
 set_technology = {
@@ -13,10 +19,19 @@ set_technology = {
 	special_equipment = 1
 	tech_support = 1
 	################## support ##################
-	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1	
+	################## artillery ###############
+	gw_pack_artillery = 1
+	interwar_antiair = 1
+	############### economy ############
+	starting_industry = 1
 }
 
-set_convoys = 12
+set_convoys = 50
+set_stability = 0.60
+set_war_support = 0.60
 
 set_politics = {
 	ruling_party = fascism
@@ -64,10 +79,10 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Seyoum Mengesha"
 	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	traits = { desert_fox }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
+	traits = { trait_mountaineer desert_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }

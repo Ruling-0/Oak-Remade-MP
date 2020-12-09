@@ -24,12 +24,10 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		bypass = {
-			550 = { NOT = { is_owned_and_controlled_by = ITA } }
 			
 		}
 
 		completion_reward = {
-			if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
 				550 = {
 					add_building_construction = {
 						type = infrastructure
@@ -45,9 +43,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}
 
-			if = { limit = { 559 = { is_owned_and_controlled_by = ITA } }
 				559 = {
 						add_building_construction = {
 							type = infrastructure
@@ -63,7 +59,6 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}
 		}
 	}
 	focus = {
@@ -81,15 +76,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			OR = { 
-				NOT = { country_exists = ETH }
-				ETH = { is_puppet_of = ITA }
-			}
 		}
 		continue_if_invalid = yes
 		completion_reward = {
-		army_experience = 35
-		air_experience = 20
+		army_experience = 200
+		air_experience = 100
 		add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 0.6
@@ -121,9 +112,10 @@ focus_tree = {
 		available_if_capitulated = yes
         continue_if_invalid = yes
 		available = {
-			has_war_with = ETH
 		}
 		completion_reward = {
+		army_experience = 200
+		air_experience = 100
 		add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.8
@@ -144,10 +136,6 @@ focus_tree = {
 		icon = GFX_ITA_Ultranationalism_2
 		prerequisite = { focus = ITA_victory_by_any_means focus = ITA_learn_from_the_ethiopian_war }
 		available = {
-			OR = {
-				owns_state = 271
-				ETH = { is_puppet_of = ITA }
-			}
 		}
 		available_if_capitulated = yes
 		x = 14

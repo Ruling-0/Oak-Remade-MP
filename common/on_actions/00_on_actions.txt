@@ -1477,38 +1477,6 @@ on_actions = {
 				}
 				add_country_leader_trait = stalins_puppet
 			}	
-			if = {
-				limit = {
-					ROOT = { tag = ETH }
-					FROM = { tag = ITA }
-					ITA = { is_ai = yes }				
-				}
-				ETH = { 
-					inherit_technology = ITA
-					set_cosmetic_tag = ETH_ITA
-					remove_state_core = 271
-					transfer_state = 550
-					transfer_state = 559
-					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
-					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = ITA }
-				}
-			}
-			if = {
-				limit = {
-					ROOT = { tag = ETH }
-					FROM = { tag = ITA }
-					ITA = { is_ai = no }				
-				}
-				ETH = { 
-					inherit_technology = ITA
-					set_cosmetic_tag = ETH_ITA
-					remove_state_core = 271
-					transfer_state = 550
-					transfer_state = 559
-					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
-					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = ITA }
-				}
-			}
 		}
 	}
 	
@@ -1533,22 +1501,6 @@ on_actions = {
 					}
 				}
 				add_country_leader_trait = stalins_puppet
-			}
-		}
-	}
-	
-	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
-	on_annex = {
-		effect = {
-			if = {
-				limit = {
-					ROOT = { tag = ETH }
-					FROM = { tag = ITA }
-					ITA = { is_ai = no }				
-				}
-				ETH = { 
-					remove_state_core = 271
-				}
 			}
 		}
 	}
