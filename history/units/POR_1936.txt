@@ -268,23 +268,6 @@ division_template = {
 }
 units = {
 	###### Exército Portugues #####
-	# Governo Militar Portugues #
-	division = {
-		name = "Governo Militar Portugues"
-		location = 9817
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.4
-	}
-	division = { # "2a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 9817
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.4
-	}
-
 	# 1a Distrito Militar #
 	division = { # "1a Divisão de Marines"
 		division_name = {
@@ -304,9 +287,18 @@ units = {
 		division_template = "Divisão de Marines"
 		start_experience_factor = 0.4
 	}
+	division = { # "3a Divisão de Marines"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9817
+		division_template = "Divisão de Marines"
+		start_experience_factor = 0.4
+	}
 	
 	# 2a Distrito Militar #
-	division = { # "2a Divisão de Montanha"
+	division = { # "1a Divisão de Montanha"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -315,8 +307,7 @@ units = {
 		division_template = "Divisão de Montanha"
 		start_experience_factor = 0.4
 	}
-	# 3a Distrito Militar #
-	division = { # "3a Divisão de Montanha"
+	division = { # "2a Divisão de Montanha"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -325,13 +316,23 @@ units = {
 		division_template = "Divisão de Montanha"
 		start_experience_factor = 0.4
 	}
+	division = { # "3a Divisão de Montanha"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9817
+		division_template = "Divisão de Montanha"
+		start_experience_factor = 0.4
+	}
+	# 3a Distrito Militar #
 	division = { # "1a Brigada de Tanka"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 844
-		division_template = "Brigada de Tanka"
+		division_template = "Panzer Division"
 		start_experience_factor = 0.4
 	}
 	division = { # "2a Brigada de Tanka"
@@ -340,43 +341,7 @@ units = {
 				name_order = 2
 		}
 		location = 844
-		division_template = "Brigada de Tanka"
-		start_experience_factor = 0.4
-	}
-	division = { # "3a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 844
 		division_template = "Panzer Division"
-		start_experience_factor = 0.4
-	}
-	division = { # "4a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 844
-		division_template = "Panzer Division"
-		start_experience_factor = 0.4
-	}
-	division = { # "5a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 844
-		division_template = "Division Legion Mécanique"
-		start_experience_factor = 0.4
-	}
-	division = { # "6a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 844
-		division_template = "Division Legion Mécanique"
 		start_experience_factor = 0.4
 	}
 }

@@ -2420,6 +2420,7 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 250 producer = POR }
 			}
 			SIA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
@@ -2427,6 +2428,7 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 250 producer = POR }
 			}
 		}
 	}
@@ -2448,6 +2450,7 @@ focus_tree = {
 		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
+		    add_political_power = 70
 			add_popularity = {
 			    ideology = neutrality
 			    popularity = 0.15
@@ -2476,7 +2479,6 @@ focus_tree = {
 		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 		
-			add_political_power = 70
 			swap_ideas = {
 				remove_idea = POR_estado_novo_2
 				add_idea = POR_estado_novo_3	
@@ -2582,6 +2584,19 @@ focus_tree = {
 			set_country_flag = KOP_kingdom_of_portugal_flag
 			set_cosmetic_tag = KOP_kingdom_portugal
 			add_ideas = POR_the_portuguese_empire
+		    hidden_effect = {
+	    	    create_country_leader = {
+		    	    name = "Senator Claus"
+		    	    desc = "CLAUS_DESC"
+		    	    picture = "gfx/leaders/POR/portrait_senator_claus.dds"
+		    	    expire = "1965.1.1"
+		    	    ideology = despotism
+	    	    	traits = {
+	    	    		jolly
+	    	    		naughty_and_nice
+	    	    	}
+	    	    }
+			}
 		}
 	}
 	
@@ -2844,7 +2859,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.12.7	
+			date > 1941.1.1
 			is_ai = no
 		}
 
@@ -2858,11 +2873,19 @@ focus_tree = {
 		relative_position_id = POR_revan2
 		cost = 5
 		completion_reward = { 	
-			add_political_power = 75
+			add_political_power = 150
 			army_experience = 20
 			air_experience = 20
 			USA = {
-			    add_offsite_building = { type = arms_factory level = 4 }
+			    add_offsite_building = { type = arms_factory level = 3 }
+			}
+			PHI = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
+			    add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 250 producer = POR }
 			}
 		}
 	}

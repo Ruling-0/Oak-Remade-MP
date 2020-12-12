@@ -274,7 +274,24 @@ leader_traits = {
 			}
 		}
 	}
-	
+	jolly = {
+		random = no
+		stability_weekly = 0.005
+		production_speed_infrastructure_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	naughty_and_nice = {
+		random = no
+		stability_factor = 0.10
+		army_morale_Factor = 0.05
+		army_org_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 	OAK_autocratic_charmer = {
 		sprite = 13
 		random = yes
