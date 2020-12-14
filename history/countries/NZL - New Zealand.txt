@@ -5,7 +5,7 @@ oob = "NZL_1936"
 # Starting tech
 set_research_slots = 4
 
-set_stability = 0.8
+set_stability = 0.60
 set_war_support = 0.4
 
 set_technology = { #player 
@@ -74,6 +74,7 @@ add_ideas = {
 		#laws
 	disarmed_nation
 	refinery_idea
+	NZL_great_depression_1
 }
 
 set_politics = {
@@ -130,18 +131,7 @@ create_country_leader = {
 	}
 }
 
-set_convoys = 80
-
-create_corps_commander = {
-	name = "Bernard Freyberg"
-	gfx = "GFX_NZL_bernard_freyberg"
-	traits = {  }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 3
-}
+set_convoys = 100
 
 create_corps_commander = {
 	name = "Robert Row"

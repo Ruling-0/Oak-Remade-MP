@@ -1,11 +1,132 @@
 ideas = {
 
 	country = {
-		NZL_wairarapa_sheep_farms = {
+		Nzl_res_bnk1 = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				global_building_slots_factor = 0.2
+			}
+		}
+
+		Nzl_res_bnk2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		NZL_great_depression_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.30
+				stability_factor = -0.10
+			}
+		}
+
+		NZL_great_depression_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+
+		NZL_great_depression_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		NZL_home_guard = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		NZL_wairarapa_sheep_farms = {
+
+			allowed = {
+				always = no
+			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -13,36 +134,19 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-			
+
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
+
 		}
-		NZL_in_the_darkness = {
 
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				autonomy_gain = 1
-				fascism_drift = 0.01
-				production_speed_buildings_factor = 0.1
-			}
-		}
 		NZL_bob_semple_tank = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -50,37 +154,90 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_production_bonus
-			
+
 			modifier = {
 				army_core_defence_factor = 0.05
 				army_org_factor = 0.02
 			}
+
 		}
-		NZL_social_security_act = {
+
+		NZL_social_security_act_1 = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_manpower_bonus
+
 			modifier = {
-				conscription = 0.01
-				consumer_goods_factor = 0.05
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
-				experience_loss_factor = -0.02
+				conscription = 0.02
+				stability_factor = 0.05
+				war_support_factor = 0.05
 			}
+
 		}
-		NZL_2nzef = {
+
+		NZL_social_security_act_2 = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.02
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+
+		}
+
+		NZL_social_security_act_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.02
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+
+		}
+
+		NZL_2nzef = {
+
+			allowed = {
+				always = no
+			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -89,19 +246,20 @@ ideas = {
 
 			picture = generic_volunteer_expedition_bonus
 
-			rule = {
-				can_send_volunteers = yes
-			}
 			modifier = {
-				send_volunteers_tension = -0.5
-				send_volunteer_size = 1
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
+
 		}
+
 		NZL_stomp_out_pacifism = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -109,18 +267,20 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_disjointed_gov
+
 			modifier = {
 				foreign_subversive_activites = -0.50
-				conscription_factor = 0.10
-				stability_factor = -0.05
-				war_support_factor = 0.08
+				war_support_factor = 0.1
+				conscription_factor = 0.1
 			}
 		}
+
 		NZL_first_labor_government = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				has_government = democratic
 			}
@@ -128,19 +288,22 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_pp_unity_bonus
+
 			modifier = {
 				consumer_goods_factor = -0.02
-				production_factory_efficiency_gain_factor = 0.02
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				stability_factor = 0.05
 			}
 		}
+
 		NZL_ratana_alliance = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -148,37 +311,40 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_morale_bonus
+
 			modifier = {
-				political_power_cost = 0.2
+				political_power_cost = 0.1
 				stability_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
+
 		NZL_the_manpower_act = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_infantry_bonus
-			
+
 			modifier = {
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_factory_efficiency_gain_factor = 0.10
 				conscription = 0.01
-				local_resources_factor = 0.10
+				mobilization_speed = 0.1
 			}
 		}
+
 		NZL_waitangi_tribunal = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -186,132 +352,32 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_democratic_drift_bonus
-			
+
 			modifier = {
 				conscription = 0.02
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.01
 			}
 		}
+
 		NZL_maori_conscription = {
+
 			allowed = {
 				always = no
-				original_tag = NZL
 			}
+
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_intel_bonus
+
 			modifier = {
 				conscription = 0.01
+				stability_factor = -0.05
 			}
 		}
-		NZL_import_restrictions = {
-			allowed = {
-				always = no
-				original_tag = NZL
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_production_bonus
-			modifier = {
-				production_speed_industrial_complex_factor = 0.1
-				consumer_goods_factor = 0.02
-			}
-		}
-		NZL_food_exports = {
-			allowed = {
-				always = no
-				original_tag = NZL
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_production_bonus
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-		NZL_food_imports = {
-			allowed = {
-				always = no
-				original_tag = ENG
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_production_bonus
-			modifier = {
-				consumer_goods_factor = -0.02
-			}
-		}
-		# NZ Aid to US
-		NZL_canned_meat = {
-			allowed = {
-				always = no
-				original_tag = NZL
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_production_bonus
-			modifier = {
-				supply_consumption_factor = -0.01
-			}
-		}
-		NZL_the_workers_party_1 = {
-			allowed = {
-				always = no
-				original_tag = NZL
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-			
-			modifier = {
-				autonomy_gain = 1
-				communism_drift = 0.02
-			}
-		}
-		NZL_the_workers_party_2 = {
-			allowed = {
-				always = no
-				original_tag = NZL
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-			
-			modifier = {
-				autonomy_gain = 1
-				communism_drift = 0.02
-				production_speed_buildings_factor = 0.1
-			}
-		}
-		
 	}
 	political_advisor = {
 
@@ -323,12 +389,9 @@ ideas = {
 				original_tag = NZL
 			}
 			
-			traits = { democratic_reformer }
+			traits = { smooth_talking_charmer }
 		}
-		
-	}
-	theorist_production = {
-        NZL_w_a_veitch_milne = {
+		NZL_w_a_veitch_milne = {
 
 			picture = generic_political_advisor_europe_2
 				
@@ -336,9 +399,10 @@ ideas = {
 				original_tag = NZL
 			}
 			
-			traits = { war_industrialist }
+			traits = { quartermaster_general }
 		}
-
+	}
+	theorist_production = {
 		NZL_walter_nash = {
 
 			picture = generic_political_advisor_europe_3
