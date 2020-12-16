@@ -21,6 +21,7 @@ create_faction = "Dai Tōa Kyōeiken"
 add_to_faction = JAP 
 add_to_faction = MAN 
 add_to_faction = MEN 
+add_to_faction = SIA
 609 = {
 	start_resistance = yes
 	set_compliance = 80

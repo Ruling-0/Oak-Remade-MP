@@ -117,14 +117,6 @@ focus = {
 		}
 	}
 
-
-
-
-
-
-
-
-
 	focus = {
 		id = SPA_con_paquito
 		available = {

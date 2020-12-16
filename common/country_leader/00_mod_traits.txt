@@ -53,7 +53,7 @@ leader_traits = {
 		army_org_factor = 0.08
 	}
 	
-	POR_armor = {
+	POR_arm = {
 		random = no
 		army_armor_attack_factor = 0.08
 	    army_armor_defence_factor = 0.08

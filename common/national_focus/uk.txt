@@ -6825,18 +6825,18 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					D01 = { 
+					D04 = { 
 						OR = { 
 							has_government = democratic 
 							has_government = communism 
 						}
 					}			
 				}			
-				D01 = {
+				D04 = {
 					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ENG }
 					add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = ENG }
 				}	
-				D01 = { 
+				D04 = { 
 					add_opinion_modifier = { target = ENG modifier = FRA_scw_intervention_republicans_SPR }
 				}
 			}						
