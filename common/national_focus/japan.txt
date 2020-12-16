@@ -1034,52 +1034,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_japanese_settlement
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			OR = {
-				JAP = { controls_state = 604 }
-					any_other_country = {
-						is_in_faction_with = JAP
-						controls_state = 604
-					}
-				}
-			OR = {
-				JAP = { controls_state = 605 }
-					any_other_country = {
-						is_in_faction_with = JAP
-						controls_state = 605
-					}
-				}
-            OR = {
-				JAP = { controls_state = 622 }
-					any_other_country = {
-						is_in_faction_with = JAP
-						controls_state = 622
-					}
-				}
-            OR = {
-				JAP = { controls_state = 613 }
-					any_other_country = {
-						is_in_faction_with = JAP
-						controls_state = 613
-					}
-				}
-            OR = {
-				JAP = { controls_state = 594 }
-					any_other_country = {
-						is_in_faction_with = JAP
-						controls_state = 594
-					}
-				}				
-
-			MAN = {
-				is_subject_of = ROOT
-			}
 
 		}
 
@@ -1096,16 +1057,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = { 
-			limit = { country_exists = MEN }
-				annex_country = { target = MEN transfer_troops = yes }
-			}
-			annex_country = { target = MAN transfer_troops = yes }
-			every_state = {
-				limit = { is_core_of = MAN }
-				set_resistance = 0
-				set_compliance = 100
-			}
+            add_political_power = 150
 		}
 	}
 
@@ -2203,13 +2155,10 @@ focus_tree = {
 		}
 
 		available = {
-			owns_state = 714
-			controls_state = 714
 			has_tech = excavation3
 		}
 
 		bypass = {
-			has_war_with = SOV
 		}
 
 		cancel_if_invalid = yes
@@ -2221,11 +2170,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
 			714 = {
 				add_resource = {
 					type = oil
-					amount = 40
+					amount = 30
 				}
 			}
 		}
@@ -2786,15 +2734,8 @@ focus_tree = {
 		}
 
 		available = {
-		    286 = { is_owned_by = JAP }
-			670 = { is_owned_by = JAP }
-			671 = { is_owned_by = JAP }
-			741 = { is_owned_by = JAP }
-			is_faction_leader = yes
-			country_exists = SIA
 		}
         bypass = {
-			SIA = { is_in_faction_with = JAP }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2805,14 +2746,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    custom_effect_tooltip = siam_tt
-			annex_country = { target = SIA }
-			every_state = {
-				limit = {
-					is_core_of = SIA 
+			SIA = {
+				289 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes 
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes 
+					}
 				}
-				set_compliance = 90
-				set_resistance = 0 
 			}
 		}
 	}

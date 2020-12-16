@@ -1107,7 +1107,7 @@ ideas = {
 				available = {	
 				}
 				
-				traits = { POR_armor }
+				traits = { POR_arm }
 				
 				ledger = army
 				
