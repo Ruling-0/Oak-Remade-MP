@@ -269,7 +269,6 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 613
 			}
 			
 			research_bonus = { naval_equipment = -0.05 } traits = { naval_research_trait }
@@ -294,7 +293,6 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 608
 			}
 			
 			research_bonus = { naval_equipment = -0.05 } traits = { naval_research_trait }
@@ -323,7 +321,6 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 615
 			}
 			
 			research_bonus = {
@@ -347,7 +344,6 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 715
 			}
 			
 			research_bonus = {
@@ -371,7 +367,6 @@ ideas = {
 			}
 			cost = 300
 			available = {
-				controls_state = 620
 			}
 			
 			research_bonus = {
@@ -397,7 +392,6 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 716
 			}
 			
 			research_bonus = {
@@ -574,7 +568,6 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			available = {
-				controls_state = 613
 			}
 
 			allowed = {
@@ -607,7 +600,6 @@ ideas = {
 			picture = generic_refining_concern_1
 
 			available = {
-				controls_state = 716
 			}
 
 			allowed = {
@@ -638,10 +630,6 @@ ideas = {
 			picture = stalingrad_tractor_factory
 
 			available = {
-				controls_state = 617
-				NOT = {
-					has_war_with = SOV
-				}
 			}
 
 			allowed = {
@@ -671,7 +659,6 @@ ideas = {
 			picture = generic_industrial_concern_1			
 			
 			available = {
-				controls_state = 716
 			}
 
 			allowed = {
