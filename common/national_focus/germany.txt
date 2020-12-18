@@ -1486,6 +1486,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GER_reorganized_industry_tt
 			add_ideas = war_economy
+			add_ideas = GER_prepare_for_the_inevitable
 			hidden_effect = {
 				GER = {
 					country_event = { id = germany.320 days = 100 }
@@ -1508,6 +1509,9 @@ focus_tree = {
 				    add_ideas = GER_prepare_for_the_inevitable
 				}
 			    BUL = {    
+					add_ideas = GER_prepare_for_the_inevitable
+				}
+				FIN = {    
 					add_ideas = GER_prepare_for_the_inevitable
 				}
 		}
