@@ -40,13 +40,15 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
-				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				political_power_gain = 0.1
 			}
 
-			picture = eng_the_sun_never_sets
+			picture = MEX_callistas
 			
 			removal_cost = -1
 		}
