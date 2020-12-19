@@ -821,7 +821,7 @@ ideas = {
 				original_tag = CZE
 			}
 						
-			traits = { army_cavalry_2 }
+			traits = { army_cavalry_1 }
 			
 			ai_will_do = {
 				factor = 1
