@@ -1035,7 +1035,7 @@ instant_effect = { #player
 	############### Equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
-			amount = 30000
+			amount = 20000
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
@@ -1055,7 +1055,7 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_1
-			amount = 10000
+			amount = 5000
 			producer = FRA
 		}
 		
@@ -1081,7 +1081,7 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = fighter_equipment_1934
-			amount = 1000
+			amount = 500
 			producer = FRA
 		}			
 }
