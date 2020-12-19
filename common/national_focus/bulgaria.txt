@@ -3008,6 +3008,7 @@ focus_tree = {
 			ITA = {add_to_tech_sharing_group = BUL_axis_research}
 			HUN = {add_to_tech_sharing_group = BUL_axis_research}
 			ROM = {add_to_tech_sharing_group = BUL_axis_research}
+			CZE = {add_to_tech_sharing_group = BUL_axis_research}
 		}
 	}
 
