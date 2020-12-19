@@ -45,7 +45,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
-				political_power_gain = 0.1
+				political_power_cost = 0.1
 			}
 
 			picture = MEX_callistas
