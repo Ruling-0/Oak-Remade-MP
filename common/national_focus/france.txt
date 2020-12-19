@@ -1824,7 +1824,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		    539 = { is_owned_and_controlled_by = FRA }
+			NOT = { 539 = { is_owned_and_controlled_by = FRA } }
 		}
 		
 		bypass = {
