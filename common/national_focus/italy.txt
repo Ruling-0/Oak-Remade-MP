@@ -162,7 +162,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_victoryinETH }		
 		x = 1
 		y = 3
-		cost = 7.145
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}	
@@ -246,7 +246,7 @@ focus_tree = {
 		relative_position_id = ITA_regia_marina
 		x = 0
 		y = 1
-		cost = 7.145
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -272,7 +272,7 @@ focus_tree = {
 		relative_position_id = ITA_regia_marina
 		x = 0
 		y = 2
-		cost = 7.145
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -294,7 +294,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_modern_cruisers }
 		x = -1
 		y = 6
-		cost = 7.145
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -321,7 +321,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_modern_cruisers }
 		x = 3
 		y = 6
-		cost = 7.145
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}

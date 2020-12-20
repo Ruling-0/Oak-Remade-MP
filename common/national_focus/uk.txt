@@ -963,7 +963,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
 			add_to_variable = { var = british_money value = -100 }
 			custom_effect_tooltip = british_money_100_tt
 			if = { 
@@ -3747,12 +3746,6 @@ focus_tree = {
 			add_to_variable = { var = british_money value -100 }
 			custom_effect_tooltip = british_money_100_tt
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
-			    FRA = {
-				    add_ideas = ENG_prepare_for_the_inevitable_idea
-				}
-			    HOL = {
-				    add_ideas = ENG_prepare_for_the_inevitable_idea
-				}
 			    PHI = {
 				    add_ideas = ENG_prepare_for_the_inevitable_idea
 				}

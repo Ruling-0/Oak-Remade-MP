@@ -165,7 +165,7 @@ ideas = {
 			}
 		
 			modifier = {
-				civilian_factory_use = 5 
+				civilian_factory_use = 1 
 				political_power_cost = 0.1 
 			}
 		}
@@ -402,10 +402,10 @@ ideas = {
 				economy_cost_factor = 0.25
 				political_advisor_cost_factor 0.25 
 				stability_factor = -0.1
-				production_speed_industrial_complex_factor = 0.15
+				production_speed_industrial_complex_factor = 0.20
 				production_speed_arms_factory_factor = 0.15
 				production_speed_dockyard_factor = 0.15
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.02
 			}
 		}
 
@@ -428,8 +428,8 @@ ideas = {
 				trade_laws_cost_factor = -0.15
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.2
-				production_speed_arms_factory_factor = 0.2
-				production_speed_dockyard_factor = 0.2
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
 				consumer_goods_factor = 0.05
 			}
 		}

@@ -2134,12 +2134,6 @@ ideas = {
 			}
 
 			on_add = {
-			    FRA = {
-				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
-				}
-			    HOL = {
-				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
-				}
 			    PHI = {
 				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
@@ -2164,15 +2158,10 @@ ideas = {
 			}
 
 			on_remove = {
-			    FRA = {
-				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
-				}
 				PHI = {
 				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
-			    MEX = {
-				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
-				}
+
 			    RAJ = {    
 					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
