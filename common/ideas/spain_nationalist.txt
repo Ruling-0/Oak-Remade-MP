@@ -2167,7 +2167,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2194,7 +2194,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2229,7 +2229,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2263,7 +2263,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -2300,7 +2300,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -2335,7 +2335,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -2374,7 +2374,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -2403,7 +2403,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				artillery = 0.15
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
@@ -2461,7 +2461,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.15
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2552,7 +2552,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.15
+				industry = -0.05
 			}
 			
 			traits = { industrial_concern }
@@ -2581,8 +2581,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				synth_resources = 0.1
-				industry = 0.05
+				synth_resources = 0.05
 			}
 			
 			traits = { refinery_concern }

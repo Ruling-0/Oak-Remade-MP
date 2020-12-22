@@ -299,6 +299,9 @@ technologies = {
 		recon_ac = {
 			recon = 1
 		}
+		mot_recon = {
+			recon = 1
+		}
 		light_armor_recon = {
 			recon = 1
 			initiative = 0.05
@@ -334,6 +337,9 @@ technologies = {
 		recon_ac = {
 			recon = 1
 		}
+		mot_recon = {
+			recon = 1
+		}
 		light_armor_recon = {
 			recon = 1
 			initiative = 0.05
@@ -365,6 +371,9 @@ technologies = {
 			recon = 1
 		}		
 		recon_ac = {
+			recon = 1
+		}
+		mot_recon = {
 			recon = 1
 		}
 		light_armor_recon = {
