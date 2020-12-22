@@ -657,13 +657,12 @@ focus = {
 	focus = {
 		id = SPA_fascist_economic_aid
 		available = {
-			NOT = { has_completed_focus = SPA_the_stabilization_plan }
 		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_join_the_axis }
 		prerequisite = { focus = SPA_national_recovery }
-		mutually_exclusive = { focus = SPA_autarky }
+		mutually_exclusive = { focus = SPA_autarky focus = SPA_the_stabilization_plan }
 
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -1066,7 +1065,7 @@ technology = construction4
 		bypass = {
 		}
 		prerequisite = { focus = SPA_national_recovery }
-		mutually_exclusive = { focus = SPA_fascist_economic_aid }
+		mutually_exclusive = { focus = SPA_fascist_economic_aid focus = SPA_the_stabilization_plan }
 
 		icon = GFX_goal_generic_oil_refinery
 		x = 3
@@ -1131,7 +1130,7 @@ technology = construction4
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_spanish_austerity }
+		prerequisite = { focus = SPA_spanish_austerity focus = SPA_expand_spanish_bases }
 
 		icon = GFX_goal_generic_construction2
 		x = 1
@@ -1155,12 +1154,10 @@ technology = construction4
 	focus = {
 		id = SPA_expand_the_axis_gold_trade
 		available = {
-			NOT = { has_completed_focus = SPA_the_stabilization_plan }
 		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_spanish_austerity }
-		mutually_exclusive = { focus = SPA_capitalist_economic_aid }
 
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 0
@@ -1577,9 +1574,8 @@ technology = construction4
 	focus = {
 		id = SPA_the_stabilization_plan
 		available = {
-			NOT = { has_completed_focus = SPA_fascist_economic_aid }
-			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
 		}
+		mutually_exclusive = { focus = SPA_autarky focus = SPA_fascist_economic_aid }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		bypass = {
@@ -1599,6 +1595,13 @@ technology = construction4
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_1
 				add_idea = SPA_national_recovery_2
+			}
+		    add_ideas = MAN_resource
+			add_tech_bonus = {
+				name = HOL_expand_curacao_oil_refineries
+				bonus = 2.0
+				uses = 2
+				category = synth_resources
 			}
 		}
 	}
@@ -1646,7 +1649,6 @@ technology = construction4
 		bypass = {
 		}
 		prerequisite = { focus = SPA_expand_spanish_bases }
-		mutually_exclusive = { focus = SPA_expand_the_axis_gold_trade }
 
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
@@ -1765,7 +1767,7 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_improve_living_standards
-		cost = 20
+		cost = 10
 
 		available_if_capitulated = yes
 
