@@ -6578,9 +6578,8 @@ focus_tree = {
 	focus = {
 		id = ENG_southern_english_infra_boom
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = ENG_major_loans_to_shipyards }
-		prerequisite = { focus = ENG_growth_of_advanced_industries }
-
+		prerequisite = { focus = ENG_major_loans_to_shipyards focus = ENG_growth_of_advanced_industries }
+		
 		relative_position_id = ENG_enforce_arms_embargo_in_spain
 		x = 0
 		y = 2

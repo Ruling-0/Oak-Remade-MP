@@ -657,7 +657,7 @@ focus = {
 	focus = {
 		id = SPA_fascist_economic_aid
 		available = {
-
+			NOT = { has_completed_focus = SPA_the_stabilization_plan }
 		}
 		bypass = {
 		}
@@ -674,6 +674,13 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+		    add_ideas = MAN_resource
+			add_tech_bonus = {
+				name = HOL_expand_curacao_oil_refineries
+				bonus = 2.0
+				uses = 2
+				category = synth_resources
+			}
 			add_ideas = SPA_fascist_economic_aid
 			add_tech_bonus = {
 				name = SPA_fascist_economic_aid
@@ -803,13 +810,6 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-		    add_ideas = MAN_resource
-			add_tech_bonus = {
-				name = HOL_expand_curacao_oil_refineries
-				bonus = 2.0
-				uses = 2
-				category = synth_resources
-			}
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -1077,6 +1077,7 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+		    add_ideas = MAN_resource
 			add_tech_bonus = {
 				name = HOL_make_use_of_our_riches
 				bonus = 1.0
@@ -1117,7 +1118,6 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-		    add_ideas = MAN_resource
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war_2
 				add_idea = SPA_recovering_from_civil_war_3
@@ -1577,6 +1577,7 @@ technology = construction4
 	focus = {
 		id = SPA_the_stabilization_plan
 		available = {
+			NOT = { has_completed_focus = SPA_fascist_economic_aid }
 			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
 		}
 		cancel_if_invalid = yes
@@ -1645,7 +1646,6 @@ technology = construction4
 		bypass = {
 		}
 		prerequisite = { focus = SPA_expand_spanish_bases }
-		prerequisite = { focus = SPA_reduce_reliance_on_foreign_resources }
 		mutually_exclusive = { focus = SPA_expand_the_axis_gold_trade }
 
 		icon = GFX_focus_generic_the_giant_wakes
