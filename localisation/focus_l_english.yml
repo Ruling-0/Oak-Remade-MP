@@ -41,6 +41,12 @@
  ITA_home_defence:0 "Italian Home Guard"
  ITA_home_defence_desc:0 "All men to the front!  If we do not stop this now, we might never!
 
+ uk_nzl_focus:0 "Develop New Zealand"
+ uk_nzl_focus_desc:0 "We must aid the New Zealanders in developing their nation. They are an important outpost in the pacific and must be able to hold onto their territory."
+
+ uk_ire_focus:0 "Develop Ireland"
+ uk_ire_focus_desc:0 "We should help Ireland rebuild after the trade war. It will help heal the rift between our nations.
+
  SOV_tank_designers_tt:0 "§R!!§G Gain Access to several tank designers.§W\n"
  cossacks_tt:0 "§YSpawn in Kiev 8 Cossacks cavalry Corps with very little equipement"
  7_armoured_tt:0 "Spawn in Egypt The legendary §Y7th Armoured Division "Desert Rats""

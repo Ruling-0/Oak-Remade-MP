@@ -1156,6 +1156,9 @@ focus_tree = {
 			MAN = {
 			    add_ideas = infantry_production_jap
 			}
+			SIA = {
+			    add_ideas = infantry_production_jap
+			}
 			add_ideas = infantry_production_jap
 		}
 	}

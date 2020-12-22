@@ -4629,7 +4629,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 0
-		y = 1
+		y = 4
 		relative_position_id = uk_empire_focus
 		cost = 5
 
@@ -4668,6 +4668,13 @@ focus_tree = {
 				add_political_power = 100 
 			}
 			SAF = {
+				if = {
+					limit = { is_in_faction_with = ENG }
+					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+				}
+				add_political_power = 100 
+			}
+			IRE = {
 				if = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
@@ -4716,10 +4723,10 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civilian
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 5
+		cost = 3
 
 		available_if_capitulated = yes
 
@@ -4926,7 +4933,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_new_zealand_focus 
-		prerequisite = { focus = uk_australia_focus }
+		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
 			any_country = {
 				original_tag = RAJ
@@ -4961,10 +4968,10 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construction
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = uk_australia_focus
-		cost = 5
+		relative_position_id = uk_commonwealth_focus
+		cost = 3
 
 		available_if_capitulated = yes
 
@@ -5105,10 +5112,10 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = -1
-		y = 3
+		x = -3
+		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 5
+		cost = 3
 
 		available_if_capitulated = yes
 
@@ -5303,10 +5310,10 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1
-		y = 3
+		x = 3
+		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 5
+		cost = 3
 
 		available_if_capitulated = yes
 
@@ -5325,10 +5332,10 @@ focus_tree = {
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = industrial_complex
-							level = 1
+							level = 2
 							instant_build = yes
 						}
 					}
@@ -5340,10 +5347,10 @@ focus_tree = {
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = industrial_complex
-							level = 1
+							level = 2
 							instant_build = yes
 						}
 					}
@@ -5463,13 +5470,165 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = uk_nzl_focus 
+		prerequisite = { focus = uk_commonwealth_focus }
+		available = {
+			any_country = {
+				original_tag = NZL
+				is_in_faction_with = ROOT
+			}
+							
+		}
+		bypass = {
+			OR = {
+				NZL = { exists = no }
+				NZL = {
+					custom_trigger_tooltip = {
+						tooltip = construction_effort_tt
+						all_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size < 1
+								include_locked = yes
+							}
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = naval_effort_tt
+						all_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size < 1
+								include_locked = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -2
+		y = 2
+		relative_position_id = uk_commonwealth_focus
+		cost = 3
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_to_variable = { var = british_money value = -50 }
+			custom_effect_tooltip = british_money_50_tt
+			NZL = {
+			    add_opinion_modifier = { target = ENG modifier = aided_industry }
+			    random_owned_controlled_state = {
+				prioritize = { 284 }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+					}
+				}
+				random_owned_controlled_state = {
+				prioritize = { 723 }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes 
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_south_africa_focus
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = uk_ire_focus 
+		prerequisite = { focus = uk_commonwealth_focus }
+		available = {
+			any_country = {
+				original_tag = IRE
+				is_in_faction_with = ROOT
+			}
+							
+		}
+		bypass = {
+			OR = {
+				IRE = { exists = no }
+				IRE = {
+					custom_trigger_tooltip = {
+						tooltip = construction_effort_tt
+						all_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size < 1
+								include_locked = yes
+							}
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = naval_effort_tt
+						all_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size < 1
+								include_locked = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 2
+		relative_position_id = uk_commonwealth_focus
+		cost = 3
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_to_variable = { var = british_money value = -50 }
+			custom_effect_tooltip = british_money_50_tt
+			IRE = {
+			    add_opinion_modifier = { target = ENG modifier = aided_industry }
+			    random_owned_controlled_state = {
+				prioritize = { 134 }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+					}
+				}
+				random_owned_controlled_state = {
+				prioritize = { 135 }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes 
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_south_africa_focus
+				}
+			}
+		}
+	}
+	
 
 	focus = {
 		id = ENG_british_commonwealth_air_training_plan
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_british_commonwealth_air_training_plan
 		x = 2
-		y = 1
+		y = -1
 		relative_position_id = uk_commonwealth_focus
 		cost = 2
 		ai_will_do = {
@@ -5976,6 +6135,12 @@ focus_tree = {
 					days = 365
 				}
 			}
+			IRE = {
+				add_timed_idea = {
+					idea = ENG_king_edward_colonies
+					days = 365
+				}
+			}
 			AST = {
 				add_timed_idea = {
 					idea = ENG_king_edward_colonies
@@ -6236,16 +6401,6 @@ focus_tree = {
 					type = dockyard
 					level = 2 
 					instant_build = yes 
-				}
-			}
-			custom_effect_tooltip = ENG_irish_treaty_ports
-			hidden_effect = {
-				IRE = {
-					diplomatic_relation = {
-						country = ENG
-						relation = docking_rights
-						active = yes
-					}
 				}
 			}
 		}
@@ -7335,41 +7490,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 3
 				category = naval_doctrine
-			}
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				CAN = {
-					if = {
-						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
-					}
-				}
-				AST = {
-					if = {
-						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
-					}
-				}
-				NZL = {
-					if = {
-						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
-					}
-				}
-				SAF = {
-					if = {
-						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
-					}
-				}
-				RAJ = {
-					if = {
-						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
-					}
-				}
 			}
 			FRA = {
 				if = {

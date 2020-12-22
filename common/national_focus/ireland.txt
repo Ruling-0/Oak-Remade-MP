@@ -176,7 +176,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    threat > 0.15
+		    date > 1937.9.1
 		}
 	
 		bypass = {
@@ -822,7 +822,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    threat > 0.10
+		    date > 1939.1.1
 		}
 	
 		bypass = {
