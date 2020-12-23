@@ -37,6 +37,7 @@
  HOL_american_aid_desc:0 "The Americans have sent us aidto help rebuild our armed forces."
  
  develop_daqing_deposits_desc:0 "We must develop the oil fields under our control."
+ british_no_upgrade_tt:0 "Can not use additional funds decision to get more factories from this focus."
  
  ITA_home_defence:0 "Italian Home Guard"
  ITA_home_defence_desc:0 "All men to the front!  If we do not stop this now, we might never!
