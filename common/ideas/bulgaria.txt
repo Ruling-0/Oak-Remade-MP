@@ -3185,13 +3185,6 @@ ideas = {
 			}
 
 			available = {
-				if = {
-
-
-					}
-				}
-				OR = {
-					is_subject = no
 			}
 
 			on_add = {
