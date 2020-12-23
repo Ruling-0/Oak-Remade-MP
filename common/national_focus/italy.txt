@@ -332,13 +332,13 @@ focus_tree = {
 		navy_experience = 25
 			add_tech_bonus = {
 				name = radar_focus
-				bonus = 0.7
+				bonus = 1.0
 				uses = 1
 				category = radar_tech
 			}
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.8
+				bonus = 1.0
 				uses = 1
 				category = naval_doctrine
 			}
@@ -2142,11 +2142,7 @@ focus_tree = {
 				amount = 32
 				state = 450
 			}
-			add_resource = {
-				type = oil
-				amount = 32
-				state = 448
-			}
+			
 			450 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {

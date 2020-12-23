@@ -278,8 +278,10 @@ ideas = {
 			modifier = {
 				naval_torpedo_screen_penetration_factor = 0.1
 				amphibious_invasion = 0.1
+				special_forces_cap = 0.05
 			}				
 		}
+		
 		impero_di_argilla = {
 
 			picture = generic_fascism_drift_2

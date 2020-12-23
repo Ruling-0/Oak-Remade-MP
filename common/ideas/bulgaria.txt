@@ -3129,26 +3129,12 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_german_military_agreements_flag
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_german_tank_designer_flag }
-					}
-					GER = { #Scripted trigger for this generates confusing tt due to indentation
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						has_capitulated = no
-
-					}
-				}
 				OR = {
 					is_subject = no
-					is_subject_of = GER
+
 				}
-				is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
+	
+
 			}
 
 			on_add = {
@@ -3199,26 +3185,13 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_italian_military_agreements_flag
 				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_italian_tank_designer_flag }
-					}
-					ITA = { #Scripted trigger for this generates confusing tt due to indentation
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						has_capitulated = no
+
 
 					}
 				}
 				OR = {
 					is_subject = no
-					is_subject_of = ITA
-				}
-				is_in_faction_with = ITA
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 
 			on_add = {
@@ -3523,25 +3496,11 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_german_aeronautical_agreements_flag
 				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_german_aircraft_designer_flag }
-					}
-					GER = { #Scripted trigger for this generates confusing tt due to indentation
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						has_capitulated = no
-					}
-				}
-				NOT = { has_war_with = GER }
-				OR = {
 					is_subject = no
-					is_subject_of = GER
+
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+
 			}
 
 			on_add = {
@@ -3736,25 +3695,25 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_german_military_agreements_flag
+				
 				if = {
 					limit = {
-						NOT = { has_country_flag = BUL_contract_with_german_materiel_designer_flag }
+
 					}
 					GER = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
-							value > 49
+							value > 0
 						}
 						has_capitulated = no
 					}
 				}
-				NOT = { has_war_with = GER }
+				
 				OR = {
 					is_subject = no
-					is_subject_of = GER
+					
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+
 			}
 
 			on_add = {
@@ -3802,7 +3761,7 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = BUL_italian_military_agreements_flag
+				
 				if = {
 					limit = {
 						NOT = { has_country_flag = BUL_contract_with_italian_materiel_designer_flag }
@@ -3810,7 +3769,7 @@ ideas = {
 					ITA = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
-							value > 49
+							value > 1
 						}
 						has_capitulated = no
 
@@ -3819,9 +3778,9 @@ ideas = {
 				NOT = { has_war_with = ITA }
 				OR = {
 					is_subject = no
-					is_subject_of = ITA
+					
 				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
 			}
 
 			on_add = {
@@ -4108,27 +4067,24 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						NOT = { has_country_flag = BUL_contract_with_german_industrial_concern_flag }
+						
 					}
 					GER = { #Scripted trigger for this generates confusing tt due to indentation
 						has_opinion = {
 							target = ROOT
-							value > 49
+							value > 1
 						}
 						has_capitulated = no
 
 					}
 				}
-				NOT = { has_war_with = GER }
+				
 				OR = {
 					is_subject = no
-					is_subject_of = GER
+					
 				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_foreign_industrial_concern_requirements_ger_tt
-					NOT = { check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_medium_cap } }
-				}
-				NOT = { has_completed_focus = BUL_nationalization }
+				
+				
 			}
 
 			on_add = {
