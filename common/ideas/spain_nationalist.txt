@@ -2219,13 +2219,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 792
-				}
 			}
 			
 			research_bonus = {
@@ -2290,13 +2283,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 167
-				}
 			}
 			
 			research_bonus = {
@@ -2325,13 +2311,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 169
-				}
 			}
 			
 			research_bonus = {
@@ -2364,13 +2343,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 792
-				}
 			}
 			
 			research_bonus = {
@@ -2393,13 +2365,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 792
-				}
 			}
 			
 			research_bonus = {
@@ -2422,13 +2387,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 792
-				}
 			}
 			
 			research_bonus = {
@@ -2451,13 +2409,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 165
-				}
 			}
 			
 			research_bonus = {
@@ -2472,9 +2423,8 @@ ideas = {
 
 	}
 
+    industrial_research = {
 
-	industrial_concern = {
-	
 		SPR_compania_telefonica_nacional = {
 			
 			picture = SPR_compania_telefonica_nacional
@@ -2485,13 +2435,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 41
-				}
 			}
 			
 			research_bonus = {
@@ -2503,6 +2446,9 @@ ideas = {
 			modifier = {
 			}
 		}
+	}
+
+	industrial_concern = {
 
 		SPR_industria_de_guerra_de_cataluna = {
 			
@@ -2542,13 +2488,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 792
-				}
 			}
 			
 			research_bonus = {
@@ -2571,13 +2510,6 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 41
-				}
 			}
 			
 			research_bonus = {

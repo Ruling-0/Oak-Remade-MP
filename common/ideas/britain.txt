@@ -3010,6 +3010,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = ENG
+				original_tag = IRE
 			}
 			
 			research_bonus = {
@@ -3041,6 +3042,7 @@ ideas = {
 			
 			allowed = {
 				original_TAG = ENG
+				original_tag = IRE
 			}
 				
 			research_bonus = {
@@ -3068,6 +3070,7 @@ ideas = {
 			
 			allowed = {
 				original_TAG = ENG
+				original_tag = IRE
 			}
 
 			research_bonus = {

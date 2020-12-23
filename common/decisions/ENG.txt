@@ -1969,7 +1969,7 @@ operations = {
 
 		available = {
 			is_ai = no
-			NZL = { is_ai = yes }
+			CAN = { is_ai = yes }
 			date > 1939.1.1
 		}
 
@@ -2116,6 +2116,7 @@ operations = {
 			is_ai = no
 			NZL = { is_ai = yes }
 			date > 1939.1.1
+			country_exists = NZL
 		}
 
 		cost = 0

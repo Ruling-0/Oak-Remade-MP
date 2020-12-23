@@ -10,7 +10,7 @@
 		medium_armor = { x = 1 y = 0 }
 		medium_armor = { x = 1 y = 1 }
 		medium_armor = { x = 1 y = 2 }
-		medium_tank_destroyer_brigade = { x = 4 y = 2 }
+		medium_tank_destroyer_brigade = { x = 4 y = 0 }
 
 		mechanized = { x = 2 y = 0 }
 		mechanized = { x = 2 y = 1 }
@@ -20,7 +20,7 @@
 		mechanized = { x = 3 y = 1 }
 		mechanized = { x = 3 y = 2 }	
 	
-		anti_air_mot = { x = 4 y = 0 }		
+		anti_air_mot = { x = 3 y = 3 }		
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
