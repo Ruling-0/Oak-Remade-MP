@@ -936,6 +936,7 @@ technology = construction4
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = SPA_the_duty_to_work
+			remove_ideas = SPA_recovering_from_civil_war_3
 		}
 	}
 
@@ -1793,6 +1794,7 @@ technology = construction4
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		    remove_ideas = SPA_recovering_from_civil_war_3
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_3
 				add_idea = SPA_national_recovery_4
