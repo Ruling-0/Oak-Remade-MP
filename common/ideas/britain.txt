@@ -3009,8 +3009,10 @@ ideas = {
 		vickers_armstrong_eng = {
 			
 			allowed = {
+			    OR = {
 				original_tag = ENG
 				original_tag = IRE
+				}
 			}
 			
 			research_bonus = {
@@ -3041,8 +3043,10 @@ ideas = {
 		vauxhall = {
 			
 			allowed = {
+			    OR = {
 				original_TAG = ENG
 				original_tag = IRE
+			    }
 			}
 				
 			research_bonus = {
@@ -3069,8 +3073,10 @@ ideas = {
 		Leyland = {
 			
 			allowed = {
+			    OR = {
 				original_TAG = ENG
 				original_tag = IRE
+				}
 			}
 
 			research_bonus = {
@@ -3108,7 +3114,8 @@ ideas = {
 				original_TAG = ENG
 			}
 						
-			research_bonus = { armor = 0.15 }  traits = { tank_research_trait }		
+			research_bonus = { armor = 0.15 }  
+			traits = { tank_research_trait }		
 
 			modifier = {
 			}

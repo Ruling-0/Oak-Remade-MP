@@ -872,9 +872,11 @@ ideas = {
 
 			
 			allowed = {
+			    OR = {
 				original_tag = CZE
 				original_tag = HUN
 				original_tag = SPR
+				}
 			}
 			
 			research_bonus = {
@@ -894,9 +896,11 @@ ideas = {
 
 			
 			allowed = {
+			    OR = {
 				original_tag = CZE
 				original_tag = HUN
 				original_tag = SPR
+				}
 			}
 			
 			research_bonus = {
@@ -915,9 +919,11 @@ ideas = {
 
 			
 			allowed = {
+			    OR = {
 			    original_tag = CZE
 				original_tag = HUN
 				original_tag = SPR
+				}
 			}
 			
 			research_bonus = {
