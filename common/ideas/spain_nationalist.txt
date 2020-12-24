@@ -1333,7 +1333,7 @@ ideas = {
 			available = {
 			}
 			
-			traits = { loyal_falangist }
+			traits = { fascist_demagogue }
 		}
 		SPA_jose_antonio_primo_de_rivera = {
 
