@@ -290,6 +290,7 @@ country_event = {
 		
 	       }
         }  
+		add_ideas = FRA_exile
 		name = france.20.a
 	}
 }

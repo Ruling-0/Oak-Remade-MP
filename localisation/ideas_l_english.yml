@@ -12,7 +12,11 @@
  MAN_resource:0 "Resource Bitch"
  MAN_resource_desc:0 "Guess what your job is"
 
- GER_prepare_for_the_inevitable:0 "Prepare for War"
+ GER_prepare_for_the_inevitable:0 "German techinical Expertise"
+ GER_prepare_for_the_inevitable:0 "Germany has sent over engineers to help us in making our production lines are more efficient."
+ 
+ FRA_exile:0 "French Government in Exile"
+ FRA_exile_desc:0 "We have been defeated and are now exiled to our colonies. We are not seen as the legitimate government of France 
 
  GER_economy_of_plunder_1:0 "Economy of Plunder: Light Plunder"
  GER_economy_of_plunder_1_desc:0 "The Nazis expected to cover their debt by plundering the wealth of conquered nations during the war. By extracting the wealth of occupied nations, the German economy can hopefully come back on its feet, although the price of such an extraction is payed in human life through extremely complicated bereaucracy and logistics."
@@ -3378,6 +3382,7 @@
 
 
  # USA
+ USA_rationing_and_war_bonds:0 "War Bonds and Rationing"
  USA_japan_trading:0 "Japanese-American Trade"
  USA_japan_trading_desc:0 "The Japanese benefit greatly from trading with us. They get access to large amounts of cheap scrap metal, plane parts, machining tools and oil that they otherwise cannot easily obtain."
  bethlehem_steel:0 "Bethlehem Steel"    

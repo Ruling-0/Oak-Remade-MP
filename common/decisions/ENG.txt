@@ -1899,7 +1899,9 @@ operations = {
 		available = {
 			is_ai = no
 			FRA = { is_ai = yes }
-			country_exists = EFR
+			FRA = {
+				has_capitulated = yes 
+			}
 		}
 
 		cost = 0
@@ -1914,10 +1916,11 @@ operations = {
 				}
 			}
 			annex_country = {
-              target = FRA
-              transfer_troops = yes
+                target = FRA
+                transfer_troops = yes
 			}
 			every_state = {
+			    limit = { is_controlled_by = FRA }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1953,7 +1956,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = RAJ }
+				limit = { is_controlled_by = RAJ }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1989,7 +1992,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = CAN }
+				limit = { is_controlled_by = CAN }
 				set_resistance = 0
 				set_compliance = 100
 			}	
@@ -2025,7 +2028,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = AST }
+				limit = { is_controlled_by = AST }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -2061,7 +2064,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = SAF }
+				limit = { is_controlled_by = SAF }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -2131,11 +2134,11 @@ operations = {
 				}
 			}
 			annex_country = {
-              target = NZL
-              transfer_troops = yes
+                target = NZL
+                transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = NZL }
+				limit = { is_controlled_by = NZL }
 				set_resistance = 0
 				set_compliance = 100
 			}

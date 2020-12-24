@@ -1279,7 +1279,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = ROM }
+				limit = { is_controlled_by = ROM }
 				set_resistance = 0
 				set_compliance = 100
 			}	
@@ -1296,7 +1296,7 @@ operations = {
 		available = {
 			is_ai = no
 			CZE = { is_ai = yes }
-			date > 1939.1.1
+			date > 1940.1.1
 		}
 
 		cost = 0
@@ -1315,7 +1315,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = CZE }
+				limit = { is_controlled_by = CZE }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1351,7 +1351,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = HUN }
+				limit = { is_controlled_by = HUN }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1387,7 +1387,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_core_of = BUL }
+				limit = { is_controlled_by = BUL }
 				set_resistance = 0
 				set_compliance = 100
 			}

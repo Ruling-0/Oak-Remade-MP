@@ -113,4 +113,8 @@ spriteTypes = {
 		name = "GFX_idea_POR_mrvegas"
 		texturefile = "gfx/interface/ideas/POR_mrvegas.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_FRA_FREE_army"
+		texturefile = "gfx/interface/ideas/FRA_FREE_army.dds"
+	}
 }

@@ -1,6 +1,27 @@
 ideas = {
 
 	country = {
+		FRA_exile = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+            picture = FRA_FREE_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = -0.25
+				army_core_defence_factor = -0.25
+				consumer_goods_factor = -0.05
+			}
+		}
 		FRA_naval = {
 			picture = generic_sea_focused_navy
 			allowed = {
@@ -32,7 +53,7 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_dockyard_factor = -0.25
+				production_speed_dockyard_factor = -0.10
 			}
 		}
 		FRA_the_young_school = {
@@ -1156,14 +1177,11 @@ ideas = {
 			
 			modifier = {
 				army_org_factor = -0.2
-				land_reinforce_rate = -0.02
 				army_morale_factor = -0.2
 				army_speed_factor = -0.15
 				army_attack_factor = -0.25
 				army_defence_factor = -0.25
-				war_support_factor = -0.6
 				surrender_limit = -0.35
-				lend_lease_tension = 1.00
 			}
 			
 			removal_cost = -1
@@ -1241,8 +1259,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				compliance_growth_on_our_occupied_states = -0.25
-				resistance_growth_on_our_occupied_states  = 0.1
+	         	resistance_damage_to_garrison = 0.1
+				compliance_growth_on_our_occupied_states = -0.35
+				resistance_growth_on_our_occupied_states  = 0.2
 			}
 		}
 
@@ -1477,6 +1496,8 @@ ideas = {
 			modifier = {
 				max_planning = 0.25
 				planning_speed = -0.25
+				army_core_attack_factor = -0.25
+				army_core_defence_factor = -0.25
 			}
 		}
 
@@ -1834,7 +1855,7 @@ ideas = {
 
 			picture = advisor_generic_12
 			
-			traits = { resistance_banker }
+			traits = { fortification_engineer }
 	
 			on_add = {
 			}
