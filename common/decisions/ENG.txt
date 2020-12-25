@@ -2334,6 +2334,7 @@ operations = {
 			tag = ENG
 		}
 		available = {
+		    455 = { is_owned_and_controlled_by = ENG } 
 			OR = {
 				has_war_with = ITA
 				FRA = { has_capitulated = yes }
@@ -2433,6 +2434,7 @@ operations = {
 		available = {
 			SOV = { has_defensive_war_with = GER }
 			PER = { is_ai = yes }
+			291 = { is_owned_and_controlled_by = ENG } 
 		}
 
 		visible = {
@@ -2442,7 +2444,7 @@ operations = {
 		}		
 		cost = 0
 
-		days_remove = 60
+		days_remove = 15
 		
 		
 		ai_will_do = {

@@ -1,3 +1,45 @@
+operations = {
+	ITA_invade_syria = {
+        icon = generic_civil_support
+ 		fire_only_once = yes
+		
+		allowed = {
+			tag = ITA
+		}
+		available = {
+		    OR = {
+		        445 = { is_owned_and_controlled_by = GER } 
+                445 = { is_owned_and_controlled_by = ITA } 
+            }	
+            553 = { is_owned_and_controlled_by = EFR }			
+		}
+
+		visible = {
+			NOT = {
+				IRQ = { exists = no }
+			}
+		}		
+		cost = 0
+		
+		modifier = {		
+		}
+
+		days_remove = 15
+		
+		
+		ai_will_do = {
+			factor = 50
+		}
+		remove_effect = {
+			ITA = {
+				transfer_state = 553
+				transfer_state = 554
+				transfer_state = 677
+				transfer_state = 680
+			}		
+		}	
+	}
+}
 political_actions = {
     ITA_reconquista = {
 	    icon = generic_operation

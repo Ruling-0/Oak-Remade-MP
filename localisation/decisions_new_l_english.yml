@@ -32,7 +32,8 @@
  
  RAJ_royal_class_decision:0 "Lay down the §YIllustrious Class§!"
  RAJ_illustrious_decision:0 "Lay down the §YRoyal Class§!"
-
+ 
+ BUL_join_axis:0 "Join the Axis"
 
  ###Xenbang stuff### 
 
@@ -155,13 +156,20 @@
  ENG_bad_economy_3:0 "Worsening Economy"
  ENG_bad_economy_4:0 "Worsening Economy"
  ENG_bad_economy_5:0 "Worsening Economy"
+ 
+ ###Middle East###
  ENG_operation_countenance:0 "Operation Countenance"
  ENG_operation_countenance_desc:0 "Control over the Trans-Iranian Railway would grant our new ally a lucrative and relatively safe way to funnel supplies into them, so let us launch a joint invasion into Iran lead by us and the Soviets."
  ENG_invade_iraq:0 "Prepare To Invade Iraq"
  ENG_invade_iraq_desc:0 "Iraq's recent Axis friendly government change is absolutely unacceptable and poses a massive risk to our control over the Suez, Persian Gulf and more. We must prepare to take out this threat to secure our supply lines and rear."
-
- ###ENG###
- BUL_join_axis:0 "Join the Axis"
+ FRA_invade_syria:0 "Take Back Syria"
+ FRA_invade_syria_desc:0 "We must regain control of our former colony. This will allow us to open more bases and increase our presence in the Middle East."
+ GER_operation_countenance:0 "Invade Iran"
+ GER_operation_countenance_desc:0 "With Iraq secured we now have a springboard into Iran. We should invade Iran in our to claim the oil fields for the Axis."
+ GER_invade_iraq:0 "Invade Iraq"
+ GER_invade_iraq_desc:0 "We should invade Iraq since there are nationalists there who support our cause. But we will still retain  full control over  the nation if the invasion is successful."
+ ITA_invade_syria:0 "Take control of Syria"
+ ITA_invade_syria_desc:0 "We should ask Vichy for control over Syria to strength our position in the Middle East. With the taking of the Suez, they will have little reason to deny this request."
 
  ###CHI###
  CHI_opening_roads:0 "The West Will Supply us in this War"
