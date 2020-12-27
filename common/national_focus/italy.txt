@@ -1113,9 +1113,6 @@ focus_tree = {
 			factor = 10
 		}
 		
-		available = {
-		    has_army_manpower = { size > 1000000 }	      
-		}
 
 		available_if_capitulated = yes
         
@@ -1259,11 +1256,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = italian_leadership_tt
-			if = { limit = { has_completed_focus = ITA_The_Old_guard }
-				swap_ideas = { 
-					remove_idea = italian_leadership
-					add_idea = italian_leadership_improved
-				}	
+			if = { limit = { has_completed_focus = ITA_The_Old_guard } 
+			remove_idea = italian_leadership
+					
+				}
 			}
 			if = { limit = { has_completed_focus = ITA_Innovative_theories}
 			remove_ideas = italian_leadership }
@@ -1857,7 +1853,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			450 = {
+			157 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_rubber_refinery
@@ -1865,7 +1861,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			448 = {
+			157 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_rubber_refinery
@@ -2140,10 +2136,10 @@ focus_tree = {
 			add_resource = {
 				type = oil
 				amount = 32
-				state = 450
+				state = 448
 			}
 			
-			450 = {
+			157 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
@@ -2151,7 +2147,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			448 = {
+			157 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
