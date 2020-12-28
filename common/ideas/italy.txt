@@ -1288,7 +1288,7 @@ ideas = {
 				air_doctrine = 0.1
 			}
 			
-			traits = { GERvictory_through_airpower }
+			traits = { victory_through_airpower }
 		}
 	}
 	industrial_concern = {

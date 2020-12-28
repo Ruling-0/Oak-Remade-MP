@@ -1,17 +1,13 @@
-﻿
-units= {
-
-	##### NAVAL UNITS #####
-	### METRPOLITAN FRANCE ###
+﻿units= {
+	fleet = {
+		name = "Amiral Ouest"
+		naval_base = 3552 # Brest
+		task_force = {
+			name = "2ème Région Navale"
+			location = 3552 # Brest			
+			# 2e Division des Contre-Torpilleurs
+			ship = { name = "Mogada" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Mogadeta" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+		}
+	}
 } 
-
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-instant_effect = {
-
-}
-
-#####################

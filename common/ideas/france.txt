@@ -17,8 +17,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_attack_factor = -0.25
-				army_core_defence_factor = -0.25
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -36,19 +36,19 @@ ideas = {
 
 			equipment_bonus = {
 				ship_hull_heavy = {
-					build_cost_ic = 0.35 instant = yes
+					build_cost_ic = 0.20 instant = yes
 				}
 				ship_hull_carrier = {
-					build_cost_ic = 0.35 instant = yes
+					build_cost_ic = 0.20 instant = yes
 				}
 				ship_hull_cruiser = {
-					build_cost_ic = 0.35 instant = yes
+					build_cost_ic = 0.20 instant = yes
 				}
 				ship_hull_light = {
-					build_cost_ic = 0.35 instant = yes
+					build_cost_ic = 0.20 instant = yes
 				}
 				ship_hull_submarine = {
-					build_cost_ic = 0.35 instant = yes
+					build_cost_ic = 0.20 instant = yes
 				}
 			}
 			
@@ -1496,8 +1496,8 @@ ideas = {
 			modifier = {
 				max_planning = 0.25
 				planning_speed = -0.25
-				army_core_attack_factor = -0.25
-				army_core_defence_factor = -0.25
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
 			}
 		}
 

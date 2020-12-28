@@ -469,9 +469,15 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_instituto_superior_tecnico
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
+			add_tech_bonus = {
+				name = POR_military_vehicles
+			    bonus = 1.0
+			    uses = 2
+			    category = motorized_equipment
+			}
 			if = {
 				limit = { has_full_control_of_state = 112 }
 				112 = {
@@ -518,7 +524,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_instituto_superior_tecnico
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
 			add_tech_bonus = {
@@ -772,16 +778,9 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_ogme
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 			
-			add_tech_bonus = {
-				name = POR_military_vehicles
-			    bonus = 1.0
-			    uses = 1
-			    category = motorized_equipment
-			}
-
 			if = {
 				limit = { has_full_control_of_state = 112 }
 				112 = {
@@ -829,7 +828,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_ogme
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_tech_bonus = {
@@ -885,7 +884,7 @@ focus_tree = {
 		y = 2
 
 		relative_position_id = POR_portuguese_artillery
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_tech_bonus = {
@@ -919,7 +918,7 @@ focus_tree = {
 		y = 2
 
 		relative_position_id = POR_military_vehicles
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			if = {
@@ -974,13 +973,13 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_armor_focus
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_tech_bonus = {
 				name = POR_mechanized_focus
 			    bonus = 1.0
-			    uses = 2
+			    uses = 1
 			    category = cat_mechanized_equipment
 			}
 		}
@@ -999,7 +998,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_ogma
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 		    add_ideas = POR_advanced_light_aircraft
@@ -1062,7 +1061,7 @@ focus_tree = {
 		y = 2
 
 		relative_position_id = POR_light_aircraft_focus
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_tech_bonus = {
@@ -1088,7 +1087,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_advanced_light_aircraft
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_tech_bonus = {
@@ -1883,7 +1882,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_army_reorganization
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_tech_bonus = {
@@ -1910,7 +1909,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_metropolitan_army
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 	
 			add_ideas = POR_standardization
@@ -2061,7 +2060,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_defend_the_borders
-		cost = 10
+		cost = 7.16
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -2088,7 +2087,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_tropas_paraquedistas
-		cost = 10
+		cost = 7.16
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -2397,6 +2396,7 @@ focus_tree = {
 				    light_tank_1938 = 1 
 					medium_tank_1939 = 1
 					fighter_1938 = 1
+					heavy_fighter_1938 = 1
 		            tactical_bomber_1939 = 1
 	                CAS_1939 = 1
 			    }
@@ -2617,13 +2617,14 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_restoration_of_the_monarch
-		cost = 10
+		cost = 7.16
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			hidden_effect = {
 				set_technology = { 
 				    light_tank_1940 = 1 
 					fighter_1940 = 1
+					heavy_fighter_1940 = 1
 			    }
 			}
 			add_political_power = 150
@@ -2793,6 +2794,7 @@ focus_tree = {
 					medium_tank_1943 = 1
 					heavy_tank_1943 = 1
 					fighter_1942 = 1
+					heavy_fighter_1942 = 1
 		            tactical_bomber_1943 = 1
 	                CAS_1943 = 1
 			    }

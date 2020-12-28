@@ -310,8 +310,8 @@ stability_bad_modifier = {
 
 war_support_good_modifier = {
 	mobilization_speed = 0.35
-	army_core_attack_factor = 0.25
-	army_core_defence_factor = 0.25
+	army_core_attack_factor = 0.20
+	army_core_defence_factor = 0.20
 	command_power_gain_mult = 1.0
 }
 

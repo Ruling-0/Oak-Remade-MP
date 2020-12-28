@@ -629,6 +629,94 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Ray"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Andery"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Engery"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Yutea"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Ville"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Green"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Retyut"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG" 
+			version_name = "E/F/G/H Class"
+		}
+		name = "HMS Gren"
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
 			type = ship_hull_carrier_1
 			creator = "ENG" 
 			version_name = "Ark Royal Class"
