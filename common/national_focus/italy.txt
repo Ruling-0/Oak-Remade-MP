@@ -1257,10 +1257,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = italian_leadership_tt
 			if = { limit = { has_completed_focus = ITA_The_Old_guard } 
-			remove_idea = italian_leadership
+			remove_ideas = italian_leadership }
 					
-				}
-			}
+				
+			
 			if = { limit = { has_completed_focus = ITA_Innovative_theories}
 			remove_ideas = italian_leadership }
 			army_experience = -100
