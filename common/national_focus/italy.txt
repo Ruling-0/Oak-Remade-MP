@@ -379,7 +379,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-		    date > 1939.1.1
+		    date > 1938.1.1
         }
 		completion_reward = {
 		add_political_power = 100
@@ -899,8 +899,10 @@ focus_tree = {
 			factor = 1
 		}	
 		available = { 
-			NOT = { 115 = { is_owned_and_controlled_by = ITA } }
-			NOT = { 114 = { is_owned_and_controlled_by = ITA } }
+		    OR = {
+			    NOT = { 115 = { is_owned_and_controlled_by = ITA } }
+			    NOT = { 114 = { is_owned_and_controlled_by = ITA } }
+			}
 			has_war_with = SOV
 		}
 		completion_reward = {
@@ -1255,14 +1257,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = italian_leadership_tt
-			if = { limit = { has_completed_focus = ITA_The_Old_guard } 
-			remove_ideas = italian_leadership }
-					
-				
-			
-			if = { limit = { has_completed_focus = ITA_Innovative_theories}
-			remove_ideas = italian_leadership }
+			remove_ideas = italian_leadership 
 			army_experience = -100
 		}
 	}

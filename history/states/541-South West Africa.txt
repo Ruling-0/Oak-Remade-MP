@@ -9,8 +9,9 @@ state={
 	history={
 		owner = SAF
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			industrial_complex = 3
+			dockyard = 1
 		}
 		victory_points = {
 			4879 1

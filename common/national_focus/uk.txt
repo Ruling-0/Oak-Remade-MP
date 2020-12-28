@@ -2674,7 +2674,6 @@ focus_tree = {
 
 	focus = {
 		id = naval_rearmament_focus
-		prerequisite = { focus = general_rearmament_focus }
 		icon = GFX_goal_generic_construct_naval_dockyard 
 		x = 6
 		y = 1
@@ -2685,7 +2684,17 @@ focus_tree = {
 		}
 
 		available = { 
-				
+			OR = {
+				ENG = {
+					has_completed_focus = general_rearmament_focus
+				}
+				GER = {
+					num_of_naval_factories > 19
+				}
+				ITA = {
+					num_of_naval_factories > 29
+				}
+			}	
 		}
 
 		available_if_capitulated = yes

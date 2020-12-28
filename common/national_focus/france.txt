@@ -1691,7 +1691,7 @@ focus_tree = {
 			add_popularity = { ideology = democratic popularity = 0.75 }	
             add_offsite_building = { 
 			    type = dockyard 
-				level = 2 
+				level = 1
 			}			
 			add_tech_bonus = {
 				name = FRA_appoint_new_supreme_commander
@@ -2498,7 +2498,6 @@ focus_tree = {
 			has_capitulated = yes 
 		}
 		prerequisite = { focus = FRA_responsibility_for_defense }
-		mutually_exclusive = { focus = FRA_germany_is_the_greater_threat }
 		icon= GFX_focus_attack_italy
 		x = 2
 		y = 1
@@ -2636,7 +2635,6 @@ focus_tree = {
 			has_capitulated = yes 
 		}
 		prerequisite = { focus = FRA_responsibility_for_defense }
-		mutually_exclusive = { focus = FRA_protect_against_italy }
 		icon = GFX_focus_attack_germany
 		x = -2
 		y = 1
@@ -3110,7 +3108,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 150
-			15 = {
+			772 = {
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -3175,26 +3173,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			772 = {
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_dockyards
-				}
-			272 = {
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_dockyards
-				}
 			543 = {
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = FRA_colonial_dockyards
@@ -3214,7 +3196,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			735 = {
+			272 = {
 				add_building_construction = {
 					type = dockyard
 					level = 1
