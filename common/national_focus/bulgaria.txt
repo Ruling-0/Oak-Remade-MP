@@ -3170,9 +3170,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			set_rule = {
-				can_create_factions = yes
-			}
 			random_owned_state = {
 				prioritize = { 48 212 }
 				limit = {
