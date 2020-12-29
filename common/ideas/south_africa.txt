@@ -480,7 +480,7 @@ ideas = {
 				original_tag = SAF
 			}
 			
-			traits = { armaments_organizer }
+			traits = { captain_of_industry }
 		}
 	}	
 	political_advisor = {

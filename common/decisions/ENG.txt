@@ -2432,7 +2432,7 @@ operations = {
 			tag = ENG
 		}
 		available = {
-			SOV = { has_defensive_war_with = GER }
+			date > 1941.4.1
 			PER = { is_ai = yes }
 			291 = { is_owned_and_controlled_by = ENG } 
 		}

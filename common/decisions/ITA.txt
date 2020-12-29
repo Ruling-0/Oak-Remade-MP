@@ -8,10 +8,16 @@ operations = {
 		}
 		available = {
 		    OR = {
-		        445 = { is_owned_and_controlled_by = GER } 
-                445 = { is_owned_and_controlled_by = ITA } 
+		        455 = { is_owned_and_controlled_by = GER } 
+                455 = { is_owned_and_controlled_by = ITA } 
             }	
-            553 = { is_owned_and_controlled_by = EFR }			
+			OR = {
+                553 = { is_owned_and_controlled_by = EFR }	
+				553 = { is_owned_and_controlled_by = FRA }
+			}
+            ENG = {
+                NOT = { has_war_with = EFR }
+            }				
 		}
 
 		visible = {

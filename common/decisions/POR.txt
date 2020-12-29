@@ -241,7 +241,7 @@ operations = {
 				ENG = {
 					has_capitulated = yes 
 				}
-			    date > 1942.1.1
+			    date > 1941.7.1
 			}
 		}
 
@@ -278,9 +278,14 @@ operations = {
 
 		available = {
 			is_ai = no
-			NOT = { 448 = { is_owned_and_controlled_by = ITA } }
-		    NOT = { 450 = { is_owned_and_controlled_by = ITA } }
-			NOT = { 451 = { is_owned_and_controlled_by = ITA } }
+			OR = {
+				AND = {
+					NOT = { 448 = { is_owned_and_controlled_by = ITA } }
+		            NOT = { 450 = { is_owned_and_controlled_by = ITA } }
+			        NOT = { 451 = { is_owned_and_controlled_by = ITA } }
+			 	}
+			    date > 1941.7.1
+			}
 		}
 
 		cost = 50

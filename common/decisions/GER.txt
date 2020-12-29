@@ -1403,11 +1403,11 @@ operations = {
 		}
 		available = {
 			OR = {
-			    445 = { is_owned_and_controlled_by = GER } 
-				445 = { is_owned_and_controlled_by = ITA } 
+			    455 = { is_owned_and_controlled_by = GER } 
+				455 = { is_owned_and_controlled_by = ITA } 
 			}
 			OR = {
-				has_war_with = ITA
+				ITA = { has_war_with = ENG }
 				FRA = { has_capitulated = yes }
 			}
 		}
