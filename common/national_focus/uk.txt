@@ -5129,6 +5129,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_to_variable = { var = british_money value = -50 }
+			custom_effect_tooltip = british_money_50_tt
 			if = { 
 				limit = { 
 					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
@@ -5327,6 +5329,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_to_variable = { var = british_money value = -50 }
+			custom_effect_tooltip = british_money_50_tt
 			if = { 
 				limit = { 
 					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
@@ -5525,26 +5529,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    custom_effect_tooltip = british_no_upgrade_tt
 		    add_to_variable = { var = british_money value = -50 }
 			custom_effect_tooltip = british_money_50_tt
+			if = { 
+				limit = { 
+					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
+				}
 			NZL = {
 			    add_opinion_modifier = { target = ENG modifier = aided_industry }
-			    random_owned_controlled_state = {
-				prioritize = { 284 }
-					add_extra_state_shared_building_slots = 4
+				random_owned_controlled_state = {
+				prioritize = { 723 }
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 2
 						instant_build = yes 
 					}
 				}
-				random_owned_controlled_state = {
-				prioritize = { 723 }
-					add_extra_state_shared_building_slots = 4
+			    random_owned_controlled_state = {
+				prioritize = { 284 }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = industrial_complex
-						level = 2
+						type = dockyard
+						level = 1
 						instant_build = yes 
 					}
 				}
@@ -5552,6 +5559,38 @@ focus_tree = {
 					value = -0.05
 					localization = uk_south_africa_focus
 				}
+			}
+			}
+			if = { 
+				limit = { 
+					check_variable = { var = focus_power value = 1 compare = greater_than_or_equals }
+				}
+				subtract_from_variable = { var = focus_power value = 1 }
+			NZL = {
+			    add_opinion_modifier = { target = ENG modifier = aided_industry }
+				random_owned_controlled_state = {
+				prioritize = { 723 }
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes 
+					}
+				}
+			    random_owned_controlled_state = {
+				prioritize = { 284 }
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.1
+					localization = uk_south_africa_focus
+				}
+			}
 			}
 		}
 	}
@@ -5602,26 +5641,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    custom_effect_tooltip = british_no_upgrade_tt
 		    add_to_variable = { var = british_money value = -50 }
 			custom_effect_tooltip = british_money_50_tt
+			if = { 
+				limit = { 
+					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
+				}
 			IRE = {
 			    add_opinion_modifier = { target = ENG modifier = aided_industry }
-			    random_owned_controlled_state = {
-				prioritize = { 134 }
-					add_extra_state_shared_building_slots = 4
+				random_owned_controlled_state = {
+				prioritize = { 135 }
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 2
 						instant_build = yes 
 					}
 				}
-				random_owned_controlled_state = {
-				prioritize = { 135 }
-					add_extra_state_shared_building_slots = 4
+			    random_owned_controlled_state = {
+				prioritize = { 134 }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = industrial_complex
-						level = 2
+						type = dockyard
+						level = 1
 						instant_build = yes 
 					}
 				}
@@ -5629,6 +5671,38 @@ focus_tree = {
 					value = -0.05
 					localization = uk_south_africa_focus
 				}
+			}
+			}
+			if = { 
+				limit = { 
+					check_variable = { var = focus_power value = 1 compare = greater_than_or_equals }
+				}
+				subtract_from_variable = { var = focus_power value = 1 }
+			IRE = {
+			    add_opinion_modifier = { target = ENG modifier = aided_industry }
+				random_owned_controlled_state = {
+				prioritize = { 135 }
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes 
+					}
+				}
+			    random_owned_controlled_state = {
+				prioritize = { 134 }
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.1
+					localization = uk_south_africa_focus
+				}
+			}
 			}
 		}
 	}
