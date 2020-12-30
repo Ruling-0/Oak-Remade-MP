@@ -1469,8 +1469,7 @@ focus = {
 			PHI = {
 				become_exiled_in = { target = USA legitimacy = 1.0 }	
 			}
-            add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = PHI_fighting_filipinos
 		}
 
 	}

@@ -130,7 +130,7 @@ ideas = {
 			}
 		}
 		
-		PHI_fighting_filipinos_focus = {
+		PHI_fighting_filipinos = {
 			allowed = {
 				original_tag = PHI
 				always = no
@@ -142,10 +142,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = generic_morale_bonus
 
 			modifier = {
-				conscription = 0.025
+				stability_factor = 0.10
+				war_support_factor = 0.10
 			}
 		}
 		
@@ -189,7 +190,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				weekly_manpower = 2000
+				weekly_manpower = 5000
 				war_support_weekly = 0.005
 				stability_weekly = 0.005
 			}
