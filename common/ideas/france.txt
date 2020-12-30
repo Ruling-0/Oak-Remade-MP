@@ -211,6 +211,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				lend_lease_tension = -1
+				join_faction_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
 				local_resources_factor = 0.1
 				fuel_gain_factor = 0.5
 				compliance_gain = 1.00
