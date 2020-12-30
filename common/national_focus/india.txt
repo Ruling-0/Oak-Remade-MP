@@ -6039,9 +6039,9 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = PHI_lost1
+		id = RAJ_lost1
 		icon = GFX_USA_fight_fascist_with_fire
-		x = 30
+		x = 34  	
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -6050,7 +6050,7 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			PHI = {
+			RAJ = {
 				has_capitulated = yes 
 			}
 			is_ai = no
@@ -6060,15 +6060,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-            add_ideas = PHI_fighting_filipinos
+            add_ideas = PHI_fighting_on
 		}
 
 	}
 	focus = {
-		id = PHI_lost2
+		id = RAJ_lost2
 		icon = GFX_USA_executive_office_of_the_president
-		prerequisite = { focus = PHI_lost1 }
-		relative_position_id = PHI_lost1
+		prerequisite = { focus = RAJ_lost1 }
+		relative_position_id = RAJ_lost1
 		x = 0
 		y =1
 		cost = 5
@@ -6078,7 +6078,7 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			PHI = {
+			RAJ = {
 				has_capitulated = yes 
 			}
             is_ai = no
@@ -6094,7 +6094,7 @@ focus_tree = {
 		    }
 		    add_offsite_building = {
 		    	type = arms_factory
-		    	level = 20
+		    	level = 15
 		    }
 		    add_offsite_building = {
 		    	type = dockyard
@@ -6103,10 +6103,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PHI_lost3
+		id = RAJ_lost3
 		icon = GFX_USA_reorganize_the_army_departments
-		prerequisite = { focus = PHI_lost2 }
-		relative_position_id = PHI_lost2
+		prerequisite = { focus = RAJ_lost2 }
+		relative_position_id = RAJ_lost2
 		x = 0
 		y = 1
 		cost = 5
@@ -6116,7 +6116,7 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			PHI = {
+			RAJ = {
 				has_capitulated = yes 
 			}
             is_ai = no
@@ -6126,15 +6126,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 50000
+			add_manpower = 100000
 			add_ideas = PHI_refugee_volunteers
 		}
 	}
 	focus = {
-		id = PHI_lost4
+		id = RAJ_lost4
 		icon = GFX_focus_por_the_fifth_empire
-		prerequisite = { focus = PHI_lost3 }
-		relative_position_id = PHI_lost3
+		prerequisite = { focus = RAJ_lost3 }
+		relative_position_id = RAJ_lost3
 		x = 0
 		y = 1
 		cost = 5
@@ -6144,7 +6144,7 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			PHI = {
+			RAJ = {
 				has_capitulated = yes 
 			}
             is_ai = no
@@ -6155,7 +6155,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
-			add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 750 producer = POR }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 producer = POR }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
 			add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = POR }
 			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = POR }
@@ -6165,10 +6165,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PHI_lost5
+		id = RAJ_lost5
 		icon = GFX_SOV_mechanized_wave
-		prerequisite = { focus = PHI_lost4 }
-		relative_position_id = PHI_lost4
+		prerequisite = { focus = RAJ_lost4 }
+		relative_position_id = RAJ_lost4
 		x = 0
 		y = 1
 		cost = 5
@@ -6178,7 +6178,7 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			PHI = {
+			RAJ = {
 				has_capitulated = yes 
 			}
             is_ai = no
@@ -6188,7 +6188,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = PHI_filipino_irredentism
+			add_ideas = PHI_irredentism
 		}
 	}
 

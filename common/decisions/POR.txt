@@ -329,8 +329,7 @@ operations = {
 		remove_effect = {
 			JAP = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 750 producer = POR }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = POR }

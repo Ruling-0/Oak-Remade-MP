@@ -2274,7 +2274,7 @@ focus_tree = {
 			FIN = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
@@ -2311,7 +2311,7 @@ focus_tree = {
 			SPR = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
@@ -2360,6 +2360,11 @@ focus_tree = {
 			air_experience = 20
 			FRA = {
 			    add_manpower = 15000
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = convoy amount = 100 producer = POR }
 			}
 			add_manpower = -15000
@@ -2408,7 +2413,7 @@ focus_tree = {
 			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 100 producer = POR }
@@ -2417,7 +2422,7 @@ focus_tree = {
 			MAN = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 250 producer = POR }
@@ -2425,7 +2430,7 @@ focus_tree = {
 			SIA = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 250 producer = POR }
@@ -2720,7 +2725,7 @@ focus_tree = {
 			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1940 amount = 100 producer = POR }
@@ -2760,7 +2765,7 @@ focus_tree = {
 			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = light_tank_equipment_1940 amount = 250 producer = POR }
@@ -2846,7 +2851,7 @@ focus_tree = {
 			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1942 amount = 100 producer = POR }
@@ -2884,7 +2889,7 @@ focus_tree = {
 			PHI = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 175 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 175 producer = POR }
 			    add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 250 producer = POR }
@@ -2923,7 +2928,7 @@ focus_tree = {
 			    add_offsite_building = { type = arms_factory level = 2 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
-				add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = POR }
 				add_equipment_to_stockpile = { type = radio_equipment amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 350 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1942 amount = 100 producer = POR }

@@ -1469,7 +1469,7 @@ focus = {
 			PHI = {
 				become_exiled_in = { target = USA legitimacy = 1.0 }	
 			}
-			add_ideas = PHI_fighting_filipinos
+			add_ideas = PHI_fighting_on
 		}
 
 	}
@@ -1564,7 +1564,7 @@ focus = {
 		
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = POR }
-			add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 750 producer = POR }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 producer = POR }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
 			add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = POR }
 			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = POR }
@@ -1597,7 +1597,7 @@ focus = {
 		}
 		
 		completion_reward = {
-			add_ideas = PHI_filipino_irredentism
+			add_ideas = PHI_irredentism
 		}
 	}
 }

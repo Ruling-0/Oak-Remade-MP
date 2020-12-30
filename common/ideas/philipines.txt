@@ -130,9 +130,8 @@ ideas = {
 			}
 		}
 		
-		PHI_fighting_filipinos = {
+		PHI_fighting_on = {
 			allowed = {
-				original_tag = PHI
 				always = no
 			}
 
@@ -150,10 +149,30 @@ ideas = {
 			}
 		}
 		
-		PHI_filipino_irredentism = {
+		PHI_refugee_volunteers = {
 
 			allowed = {
-				original_tag = PHI
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				weekly_manpower = 5000
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+			}
+		}
+		
+		PHI_irredentism = {
+
+			allowed = {
 				always = no
 			}
 
@@ -171,28 +190,6 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-			}
-		}
-		
-		PHI_refugee_volunteers = {
-
-			allowed = {
-				original_tag = PHI
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-
-			modifier = {
-				weekly_manpower = 5000
-				war_support_weekly = 0.005
-				stability_weekly = 0.005
 			}
 		}
 	}
