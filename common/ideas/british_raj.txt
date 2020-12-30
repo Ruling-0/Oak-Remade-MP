@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.05
 			}
 		}
 
@@ -31,7 +31,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.05
 			}
 		}
 	}
@@ -79,8 +79,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.05
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25
 				conscription_factor = -0.1
@@ -104,7 +104,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = 0.1
-				stability_factor = 0.1 
+				stability_factor = 0.15
+				war_support_factor = 0.05
 			}
 		}	
 
@@ -1773,7 +1774,7 @@ ideas = {
 				original_tag = RAJ
 			}
 			
-			traits = { army_infantry_1 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1821,7 +1822,7 @@ ideas = {
 				original_tag = RAJ
 			}
 			
-			traits = { army_commando_1 }
+			traits = { army_commando_2 }
 			
 			ai_will_do = {
 				factor = 1

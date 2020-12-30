@@ -14,6 +14,8 @@ operations = {
 			OR = {
                 553 = { is_owned_and_controlled_by = EFR }	
 				553 = { is_owned_and_controlled_by = FRA }
+		        553 = { is_owned_and_controlled_by = GER } 
+                553 = { is_owned_and_controlled_by = ITA } 
 			}
             ENG = {
                 NOT = { has_war_with = EFR }

@@ -229,11 +229,10 @@ focus_tree = {
 	focus = {
 		id = SIA_infrastructure_effort_1
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SIA_production_effort_2}
-		prerequisite = {focus = SIA_military_effort_2}
+		prerequisite = { focus = SIA_production_effort_2 focus = SIA_military_effort_2 }
 		x = 2
 		y = 3
-		cost = 10
+		cost = 5
         ai_will_do = {
 		 factor = 5
 		}
@@ -275,7 +274,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_infrastructure_effort_1}
 		x = 2
 		y = 4
-		cost = 10
+		cost = 5
         ai_will_do{
 		factor = 5
 		}
@@ -457,7 +456,7 @@ focus_tree = {
 	 icon = GFX_goal_generic_demand_territory
 	 x=7
 	 y=0
-	 cost = 10
+	 cost = 5
 	 
 	 ai_will_do = {
 	  factor = 5
@@ -539,7 +538,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
         prerequisite = { focus = SIA_suphapburut_group }
 		available_if_capitulated = yes
@@ -555,7 +554,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		x = 6
 		y = 5
-		cost = 15
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -573,7 +572,7 @@ focus_tree = {
    icon = GFX_goal_generic_demand_territory
    x=6
    y=4
-   cost = 10
+   cost = 5
    ai_will_do = {
     factor = 5
    } 

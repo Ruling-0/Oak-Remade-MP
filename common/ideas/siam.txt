@@ -47,9 +47,9 @@ ideas = {
 			removal_cost = -1
 			picture = great_depression
 			modifier = {
-				political_power_cost = 0.5
-				conscription_factor = -0.5
-				stability_factor = -0.4
+				political_power_cost = 0.35
+				conscription_factor = -0.25
+				stability_factor = -0.3
 			}
 		}
 		
@@ -64,7 +64,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				conscription_factor = -0.2
+				conscription_factor = -0.15
 				stability_factor = -0.2
 			}
 		}
