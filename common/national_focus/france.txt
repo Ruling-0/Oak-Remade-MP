@@ -49,10 +49,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_rule = { 
-			    can_create_factions = yes
-				can_send_volunteers = yes
-			}
 			add_ideas = FRA_matignon_agreements
 			add_ideas = FRA_global_investments
 			FRA_disjointed_government_level_up = yes
