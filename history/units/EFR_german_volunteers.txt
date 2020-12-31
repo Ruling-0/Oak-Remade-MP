@@ -33,7 +33,7 @@ division_names_group = FRA_INF_01
 units = {
 	##### armistice army #####
 	division= {
-		name = "1. French Volunteer"
+		name = "1. Spanish Volunteer"
 		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
@@ -41,7 +41,7 @@ units = {
 	}
 
 	division= {
-		name = "2. French Volunteer"
+		name = "2. Spanish Volunteer"
 		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
@@ -49,7 +49,7 @@ units = {
 	}
 
 	division= {
-		name = "3. French Volunteer"
+		name = "3. Spanish Volunteer"
 		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
@@ -57,7 +57,7 @@ units = {
 	}
 
 	division= {
-		name = "4. French Volunteer"
+		name = "4. Spanish Volunteer"
 		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
@@ -65,7 +65,7 @@ units = {
 	}
 
 	division= {
-		name = "5. French Volunteer"
+		name = "5. Spanish Volunteer"
 		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
@@ -73,7 +73,7 @@ units = {
 	}
 
 	division= {
-		name = "6. French Volunteer"
+		name = "6. Spanish Volunteer"
 		location = 6521  # Berlin
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }

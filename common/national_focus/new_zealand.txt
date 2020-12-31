@@ -22,7 +22,7 @@ focus_tree = {
 
 
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -54,7 +54,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_Nat_Res_Bnk
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -113,7 +113,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_Exp_Auk_Uni
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1405,7 +1405,7 @@ focus_tree = {
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -1422,42 +1422,16 @@ focus_tree = {
 		add_ideas = {NZL_first_labor_government}
 		}
 	}
-
+	
 	focus = {
-		id = Nzl_min_rep
-		icon = GFX_goal_generic_neutrality_focus
+		id = Nzl_rat_all
+		icon = GFX_goal_anschluss
 		prerequisite = { focus = Nzl_sav_cab }
 		x = -5
 		y = 1
 		relative_position_id = Nzl_sav_cab
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = NZL_waitangi_tribunal
-		}
-	}
-
-	focus = {
-		id = Nzl_rat_all
-		icon = GFX_goal_anschluss
-		prerequisite = { focus = Nzl_min_rep }
-		x = 0
-		y = 1
-		relative_position_id = Nzl_min_rep
-
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -1476,14 +1450,40 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Nzl_mao_div
-		icon = GFX_goal_generic_small_arms
+		id = Nzl_min_rep
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = Nzl_rat_all }
 		x = 0
 		y = 1
 		relative_position_id = Nzl_rat_all
 
-		cost = 10
+		cost = 7.16
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = NZL_waitangi_tribunal
+		}
+	}
+
+	focus = {
+		id = Nzl_mao_div
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = Nzl_min_rep }
+		x = 0
+		y = 1
+		relative_position_id = Nzl_min_rep
+
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -1544,7 +1544,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_sav_cab
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1569,7 +1569,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_cri_app
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1601,7 +1601,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_cri_app
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1622,13 +1622,12 @@ focus_tree = {
 	focus = {
 		id = Nzl_den_con
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		prerequisite = { focus = Nzl_con_lan }
-		prerequisite = { focus = Nzl_man_act }
+		prerequisite = { focus = Nzl_con_lan focus = Nzl_man_act }
 		x = 0
 		y = 1
 		relative_position_id = Nzl_con_lan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1642,20 +1641,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 75
 		}
 	}
 
 	focus = {
 		id = Nzl_sil_dis
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = Nzl_con_lan }
-		prerequisite = { focus = Nzl_man_act }
+		prerequisite = {  focus = Nzl_con_lan focus = Nzl_man_act  }
 		x = 0
 		y = 1
 		relative_position_id = Nzl_man_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1682,7 +1680,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_den_con
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1701,10 +1699,9 @@ focus_tree = {
 						OR = {
 							has_idea = disarmed_nation
 							has_idea = volunteer_only
-							has_idea = limited_conscription
 						}
 					}
-					add_ideas = extensive_conscription
+					add_ideas = limited_conscription
 				}
 				else = {
 					add_political_power = 150
@@ -1720,7 +1717,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_sav_cab
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -1747,7 +1744,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_soc_act
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -1776,7 +1773,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_une_ben
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -1796,100 +1793,14 @@ focus_tree = {
 				}
 		}
 	}
-
-	focus = {
-		id = Nzl_fra_cab
-		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = Nzl_sav_cab }
-		x = -2
-		y = 1
-		relative_position_id = Nzl_sav_cab
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-
-		}
-	}
-
-	focus = {
-		id = Nzl_str_com
-		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
-		prerequisite = { focus = Nzl_fra_cab }
-		x = -1
-		y = 1
-		relative_position_id = Nzl_fra_cab
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			modify_tech_sharing_bonus = {
-			  	id = commonwealth_research
-			   	bonus = 0.05
-			}
-		}
-	}
-
-	focus = {
-		id = Nzl_anz_agr
-		icon = GFX_focus_attack_australia
-		prerequisite = { focus = Nzl_str_com }
-		prerequisite = { focus = NZL_nation }
-		x = 1
-		y = 1
-		relative_position_id = Nzl_str_com
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			modify_tech_sharing_bonus = {
- 				id = commonwealth_research
- 				bonus = 0.05  # we get 20% higher bonus from this group
-			}
-		}
-	}
 	
 	focus = {
 		id = NZL_nation
 		icon = GFX_focus_hol_united_netherlands
-		prerequisite = { focus = Nzl_fra_cab }
-		x = 1
+		prerequisite = { focus = Nzl_sav_cab }
+		x = -2
 		y = 1
-		relative_position_id = Nzl_fra_cab
+		relative_position_id = Nzl_sav_cab
 
 		cost = 5
 
@@ -1931,6 +1842,92 @@ focus_tree = {
 				news_event = { id = lar_news.291 hours = 6 }
 				set_global_flag = form_polynesia_flag
 			}
+		}
+	}
+
+	focus = {
+		id = Nzl_str_com
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		prerequisite = { focus = NZL_nation }
+		x = -1
+		y = 1
+		relative_position_id = NZL_nation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+			  	id = commonwealth_research
+			   	bonus = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = Nzl_anz_agr
+		icon = GFX_focus_attack_australia
+		prerequisite = { focus = NZL_nation }
+		x = 1
+		y = 1
+		relative_position_id = NZL_nation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.05  # we get 20% higher bonus from this group
+			}
+		}
+	}
+	
+	focus = {
+		id = Nzl_fra_cab
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = Nzl_anz_agr }
+		prerequisite = { focus = Nzl_str_com }
+		x = 0
+		y = 2
+		relative_position_id = NZL_nation
+
+		cost = 7.16
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+
 		}
 	}
 
