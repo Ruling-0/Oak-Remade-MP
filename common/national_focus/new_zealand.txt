@@ -333,7 +333,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = Nzl_Pub_Wor
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -424,7 +424,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = Nzl_Exc_Tar_Oil
 
-		cost = 15
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

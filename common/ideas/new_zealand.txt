@@ -136,7 +136,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.03
 			}
 
 		}
@@ -355,7 +355,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
-				consumer_goods_factor = 0.01
 			}
 		}
 
@@ -773,7 +772,7 @@ ideas = {
 
 			
 			research_bonus = {
-				motorized_equipment = 0.15
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }

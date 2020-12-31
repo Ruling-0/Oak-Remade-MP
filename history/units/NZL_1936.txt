@@ -28,6 +28,8 @@
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
+		anti_air_company = { x = 1 y = 3 }
+		artillery = { x = 0 y = 3 }
 	}
 }
 
@@ -43,8 +45,7 @@ units = {
 		location = 4543 # Auckland
 		division_template = "District Force"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		#name = "Central Military District"
@@ -55,8 +56,7 @@ units = {
 		location = 1814 # Wellington
 		division_template = "District Force"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		#name = "Southern Military District"
@@ -67,8 +67,7 @@ units = {
 		location = 2197 # Christchurch
 		division_template = "District Force"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.7
 	}
 }
 
@@ -93,9 +92,19 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "NZL"
 		}
-		requested_factories = 8
+		requested_factories = 2
 		progress = 0.73
-		efficiency = 15
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "NZL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
 	}
 
 	add_equipment_production = {
@@ -103,45 +112,45 @@ instant_effect = { #player
 			type = support_equipment_1
 			creator = "NZL"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.73
-		efficiency = 15
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
 			creator = "NZL" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
-		efficiency = 15
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
 			creator = "NZL" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
-		efficiency = 15
+		efficiency = 100
 	}
 		add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
 			creator = "NZL" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
-		efficiency = 15
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
 			creator = "NZL"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.73
-		efficiency = 15
+		efficiency = 100
 	}
 	
 	
