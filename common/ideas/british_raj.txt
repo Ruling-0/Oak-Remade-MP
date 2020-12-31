@@ -330,7 +330,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.125
 				attrition = -0.1
 			}
 		}
@@ -513,11 +513,11 @@ ideas = {
 			}
 
 			modifier = {
-				army_core_attack_factor = -0.20
+				army_core_attack_factor = -0.175
 			}
 
 			modifier = {
-				army_core_defence_factor = -0.20
+				army_core_defence_factor = -0.175
 			}
 
 			removal_cost = -1
@@ -546,11 +546,11 @@ ideas = {
 			}
 			
 			modifier = {
-				army_core_attack_factor = -0.15
+				army_core_attack_factor = -0.1
 			}
 
 			modifier = {
-				army_core_defence_factor = -0.15
+				army_core_defence_factor = -0.1
 			}
 
 			removal_cost = -1
@@ -1172,7 +1172,7 @@ ideas = {
 			modifier = {
 				autonomy_gain = 3
 				war_support_factor = -0.4
-				surrender_limit = -0.3
+				surrender_limit = -0.25
 				conscription_factor = -0.15 
 			}
 		}
@@ -1199,7 +1199,7 @@ ideas = {
 			modifier = {
 				autonomy_gain = 0.5
 				war_support_factor = -0.3
-				surrender_limit = -0.25
+				surrender_limit = -0.20
 				conscription_factor = -0.1
 			}
 		}
@@ -1226,7 +1226,7 @@ ideas = {
 			modifier = {
 				autonomy_gain = 0.5
 				war_support_factor = -0.2
-				surrender_limit = -0.15
+				surrender_limit = -0.10
 				conscription_factor = -0.05
 			}
 		}	
@@ -1253,7 +1253,7 @@ ideas = {
 			modifier = {
 				autonomy_gain = 2.5
 				war_support_factor = -0.25
-				surrender_limit = -0.25
+				surrender_limit = -0.20
 				conscription_factor = -0.1
 			}
 		}		

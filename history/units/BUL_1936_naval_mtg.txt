@@ -1,13 +1,13 @@
 ﻿units= {
 	##### Naval OOB #####
 	fleet = {
-		name = "Marine and Coastwatching Service"			
+		name = "Coastwatching Service"			
 		naval_base = 9902
 		task_force = {				
-			name = "Sub Command"
+			name = "Coast Command"
 			location = 9902 
-			ship = { name = "Orphe" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BUL version_name = "Delf Series" } } }				
-			ship = { name = "Oree" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BUL version_name = "Delf Series" } } }				
+			ship = { name = "Orphe" definition = submarine equipment = { ship_hull_light_1 = { amount = 1 owner = BUL version_name = "Thore Class" } } }				
+			ship = { name = "Oree" definition = submarine equipment = { ship_hull_light_1 = { amount = 1 owner = BUL version_name = "Thore Class" } } }				
 		}
 	}
 } 

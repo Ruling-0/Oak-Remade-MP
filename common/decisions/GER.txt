@@ -1403,8 +1403,8 @@ operations = {
 		}
 		available = {
 			OR = {
-			    455 = { is_owned_and_controlled_by = GER } 
-				455 = { is_owned_and_controlled_by = ITA } 
+			    455 = { is_controlled_by = GER } 
+				455 = { is_controlled_by = ITA } 
 			}
 			OR = {
 				ITA = { has_war_with = ENG }
@@ -1447,8 +1447,8 @@ operations = {
 		}
 		available = {
 			OR = {
-			    291 = { is_owned_and_controlled_by = GER } 
-				291 = { is_owned_and_controlled_by = ITA } 
+			    291 = { is_controlled_by = GER } 
+				291 = { is_controlled_by = ITA } 
 			}
 			PER = { is_ai = yes }
 		}

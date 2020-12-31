@@ -2334,7 +2334,7 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		    455 = { is_owned_and_controlled_by = ENG } 
+		    455 = { is_controlled_by = ENG } 
 			OR = {
 				has_war_with = ITA
 				FRA = { has_capitulated = yes }
@@ -2434,7 +2434,7 @@ operations = {
 		available = {
 			date > 1941.4.1
 			PER = { is_ai = yes }
-			291 = { is_owned_and_controlled_by = ENG } 
+			291 = { is_controlled_by = ENG } 
 		}
 
 		visible = {
