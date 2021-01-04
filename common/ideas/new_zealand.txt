@@ -476,7 +476,7 @@ ideas = {
 				original_tag = NZL
 			}
 			
-			traits = { army_regrouping_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -492,7 +492,7 @@ ideas = {
 				original_tag = NZL
 			}
 			
-			traits = { army_cavalry_2 }
+			traits = { army_armored_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -500,15 +500,15 @@ ideas = {
 		}
 
 		NZL_h_d_mcgregor = {
-			ledger = air
+			ledger = army
 
-			picture = generic_air_europe_3
+			picture = generic_army_europe_3
 			
 			allowed = {
 				original_tag = NZL
 			}
 			
-			traits = { air_airborne_2 }
+			traits = { army_armored_1 }
 			
 			ai_will_do = {
 				factor = 1

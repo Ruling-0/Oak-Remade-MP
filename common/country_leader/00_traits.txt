@@ -644,8 +644,7 @@ leader_traits = {
 
 	exiled_revolutionary = {
 		random = no
-		subversive_activites_upkeep = -0.5
-		drift_defence_factor = 0.3
+        war_support_weekly = 0.002
 
 		ai_will_do = {
 			factor = 1

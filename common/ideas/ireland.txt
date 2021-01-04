@@ -50,8 +50,8 @@ ideas = {
 
 					modifier = { 
 					stability_factor = -0.20
-					political_power_cost = 0.30
-					consumer_goods_factor = 0.05
+					political_power_cost = 0.25
+					consumer_goods_factor = 0.1
 					}
 				
 				}
@@ -140,6 +140,8 @@ ideas = {
 
 					modifier = { 
 					production_speed_buildings_factor = 0.1
+			    	industrial_capacity_factory = 0.05
+			    	industrial_capacity_dockyard = 0.05
 					}
 				
 				}
@@ -184,7 +186,10 @@ ideas = {
 					picture = generic_wall_line
 
 					modifier = { 
-					army_core_defence_factor = 0.1
+				stability_factor = 0.1
+				army_core_attack_factor = 0.15 
+				army_core_defence_factor = 0.15
+				static_anti_air_damage_factor = 0.25
 					}
 				
 				}
@@ -227,6 +232,7 @@ ideas = {
 
 					modifier = { 
 						consumer_goods_factor = -0.05
+						global_building_slots_factor = 0.15
 					}
 				
 				}
@@ -316,6 +322,7 @@ ideas = {
 
 					modifier = { 
 						conscription = +0.05
+						conscription_factor = 0.1
 					}
 				
 				}
@@ -558,7 +565,7 @@ ideas = {
 				original_tag = IRE
 			}
 			
-			traits = { army_commando_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -566,15 +573,15 @@ ideas = {
 		}
 
 		IRE_michael_brennan = {
-			ledger = air
+			ledger = army
 
-			picture = generic_air_europe_3
+			picture = generic_army_europe_3
 			
 			allowed = {
 				original_tag = IRE
 			}
 			
-			traits = { air_bomber_interception_2 }
+			traits = { army_armored_1 }
 			
 			ai_will_do = {
 				factor = 1

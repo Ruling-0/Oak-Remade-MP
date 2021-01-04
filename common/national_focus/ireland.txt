@@ -124,7 +124,8 @@
 		}
 		
 		cost = 5
-		prerequisite = { focus = fianna_fail_majority_government focus = invite_british_investors}
+		prerequisite = { focus = invite_british_investors }
+		prerequisite = { focus = fianna_fail_majority_government }
 		#mutually_exclusive = { focus = fianna_fail_majority_government }
 		
 		cancel_if_invalid = yes
@@ -134,7 +135,7 @@
 		completion_reward = {
 			add_timed_idea = {
 				idea = IRE_offences_against_the_state_act_idea
-				days = 365
+				days = 180
 			}
 		}	
 		ai_will_do = {
@@ -176,7 +177,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    date > 1937.9.1
+		    date > 1939.1.1
 		}
 	
 		bypass = {
@@ -191,7 +192,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = 0.05
 			add_ideas = IRE_prepare_for_war
 			remove_ideas = IRE_unstable_republic
 		}	
@@ -260,7 +260,8 @@
 		}
 		
 		cost = 10
-		prerequisite = { focus = IRE_defs focus = plan_w }
+		prerequisite = { focus = IRE_defs }
+		prerequisite = { focus = plan_w }
 		#mutually_exclusive = { focus = irish_neutrality }
 		
 		cancel_if_invalid = yes
@@ -268,12 +269,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			IRE = {
-   			    modify_tech_sharing_bonus = {
-         			id = commonwealth_research
-         			bonus = 0.1  # we get 20% higher bonus from this group
-    			}
-			}
 			add_research_slot = 1
 		}	
 		ai_will_do = {
@@ -499,8 +494,8 @@
 		
 	}
 	focus = {
-		id = coal_cattle_pact
-		icon = GFX_goal_generic_consumer_goods
+		id = industrial_modernisation
+		icon = GFX_goal_generic_production
 		x = 5
 		y = 5
 		#relative_position_id = AST_empower_the_workers
@@ -511,9 +506,9 @@
 		bypass = {
 		}
 		
-		cost = 10
-		prerequisite = { focus = textile_industry }	
-		prerequisite = { focus = clare_aluminium_plants }	
+		cost = 5
+		prerequisite = { focus = clare_aluminium_plants }
+		prerequisite = { focus = textile_industry }
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -521,10 +516,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = IRE_trade_war
-				add_idea = IRE_less_trade_war
-			}
+		134 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes } 
+				}
+		135 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes } 
+				}
 		}	
 		ai_will_do = {
 		}
@@ -533,10 +536,10 @@
 	}
 	
 	focus = {
-		id = negotiate_trade_deals
-		icon = GFX_goal_generic_major_alliance
-		x = 5
-		y = 6
+		id = national_roads
+		icon = GFX_goal_generic_construction
+		x = 9
+		y = 2
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
@@ -545,8 +548,8 @@
 		bypass = {
 		}
 		
-		cost = 10
-		prerequisite = { focus = coal_cattle_pact }
+		cost = 5
+		prerequisite = { focus = expand_public_works }
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -554,12 +557,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_ideas = IRE_less_trade_war
+		113 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes } 
+				}
 		}	
 		ai_will_do = {
 		}
-		
-		
 	}
 	
 	focus = {
@@ -642,7 +648,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 5
 		prerequisite = { focus = national_roads }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -651,7 +657,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_research_slot = 1
+			IRE = {
+   			    modify_tech_sharing_bonus = {
+         			id = commonwealth_research
+         			bonus = 0.1  # we get 20% higher bonus from this group
+    			}
+			}
 		}	
 		ai_will_do = {
 		}
@@ -735,44 +746,9 @@
 	}
 	
 	focus = {
-		id = national_roads
-		icon = GFX_goal_generic_construction
-		x = 9
-		y = 2
-		#relative_position_id = AST_empower_the_workers
-	
-		available = {
-		}
-	
-		bypass = {
-		}
-		
-		cost = 5
-		prerequisite = { focus = expand_public_works }
-		#mutually_exclusive = { focus = colonial_power }
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		113 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes } 
-				}
-		}	
-		ai_will_do = {
-		}
-		
-		
-	}
-	
-	focus = {
-		id = industrial_modernisation
-		icon = GFX_goal_generic_production
-		x = 9
+		id = coal_cattle_pact
+		icon = GFX_goal_generic_consumer_goods
+		x = 7
 		y = 6
 		#relative_position_id = AST_empower_the_workers
 	
@@ -782,8 +758,8 @@
 		bypass = {
 		}
 		
-		cost = 5
-		prerequisite = { focus = modernise_esb }
+		cost = 10
+		prerequisite = { focus = modernise_esb focus = industrial_modernisation }	
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -791,22 +767,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = industry }
-		134 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes } 
-				}
-		135 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes } 
-				}
+		    add_research_slot = 1
+			swap_ideas = {
+				remove_idea = IRE_trade_war
+				add_idea = IRE_less_trade_war
+			}
 		}	
 		ai_will_do = {
 		}
@@ -815,21 +780,50 @@
 	}
 	
 	focus = {
-		id = emergency_powers_act
-		icon = GFX_focus_generic_treaty
+		id = negotiate_trade_deals
+		icon = GFX_goal_generic_major_alliance
 		x = 7
 		y = 7
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    date > 1939.1.1
+		}
+	
+		bypass = {
+		}
+		
+		cost = 5
+		prerequisite = { focus = coal_cattle_pact }
+		#mutually_exclusive = { focus = colonial_power }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = IRE_less_trade_war
+		}	
+		ai_will_do = {
+		}
+		
+		
+	}
+		
+	focus = {
+		id = emergency_powers_act
+		icon = GFX_focus_generic_treaty
+		x = 7
+		y = 8
+		#relative_position_id = AST_empower_the_workers
+	
+		available = {
 		}
 	
 		bypass = {
 		}
 		
 		cost = 10
-		prerequisite = { focus = negotiate_trade_deals OR = industrial_modernisation }
+		prerequisite = { focus = negotiate_trade_deals }
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -848,8 +842,8 @@
 	focus = {
 		id = fuel_rations
 		icon = GFX_goal_generic_oil_refinery
-		x = 7
-		y = 8
+		x = 5
+		y = 9
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
@@ -883,7 +877,7 @@
 	focus = {
 		id = motorways
 		icon = GFX_goal_generic_construction2
-		x = 7
+		x = 9
 		y = 9
 		#relative_position_id = AST_empower_the_workers
 	
@@ -894,7 +888,7 @@
 		}
 		
 		cost = 5
-		prerequisite = { focus = fuel_rations }
+		prerequisite = { focus = emergency_powers_act }
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -931,7 +925,7 @@
 		id = emergency_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 7
-		y = 10
+		y = 9
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
@@ -942,7 +936,7 @@
 		}
 		
 		cost = 10
-		prerequisite = { focus = motorways }
+		prerequisite = { focus = emergency_powers_act }
 		#mutually_exclusive = { focus = colonial_power }
 		
 		cancel_if_invalid = yes
@@ -1008,7 +1002,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = constitution_of_ireland }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1038,7 +1032,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = modernise_irish_army }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1072,7 +1066,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = modernise_infantry_weapons }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1106,7 +1100,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = irish_artillery }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1135,13 +1129,13 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    date > 1939.11.1	
+		   has_army_experience > 50	
 		}
 	
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = modernise_irish_army }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1151,6 +1145,7 @@
 
 		completion_reward = {
 			add_ideas = IRE_lessons_of_great_war_idea
+			army_experience	= -50
 		}	
 		ai_will_do = {
 		}
@@ -1166,12 +1161,13 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
+		    has_army_experience > 25
 		}
 	
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = lessons_of_great_war }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1180,6 +1176,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+		    army_experience	= -25
 			add_ideas = IRE_dublin_war_college_idea
 			add_tech_bonus = {
 				bonus = 1
@@ -1206,7 +1203,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = modernise_irish_army }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1240,7 +1237,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = support_equipment }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1274,7 +1271,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = modernise_irish_army }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1308,7 +1305,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = motorised_infantry }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1342,7 +1339,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = irish_tank_corps }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1627,7 +1624,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = modernise_irish_army }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1657,7 +1654,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = irish_air_corps }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1690,7 +1687,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = irish_air_corps }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1723,7 +1720,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = fighters OR = light_bombers }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1756,7 +1753,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = close_air_support }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1789,7 +1786,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = irish_air_corps }
 		#mutually_exclusive = { focus = colonial_power }
 		
@@ -1801,7 +1798,7 @@
 			113 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1825,7 +1822,7 @@
 		bypass = {
 		}
 		
-		cost = 10
+		cost = 7.16
 		prerequisite = { focus = air_base_expansion }
 		#mutually_exclusive = { focus = colonial_power }
 		
