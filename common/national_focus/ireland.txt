@@ -832,6 +832,7 @@
 
 		completion_reward = {
 			add_ideas = IRE_emergency_powers_act
+			add_ideas = limited_conscription
 		}	
 		ai_will_do = {
 		}

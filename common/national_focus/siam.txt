@@ -497,7 +497,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		x = 8
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = { 
 	
 			factor = 5
