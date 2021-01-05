@@ -5,6 +5,10 @@ state={
 	manpower = 1496508
 	
 	state_category = rural
+	
+	resources={
+		rubber=10 # was: 1
+	}
 
 	history={
 		owner = PHI

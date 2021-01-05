@@ -109,6 +109,26 @@ create_country_leader = {
 		#
 	}
 }
+create_corps_commander = {
+	name = "Lu Long"
+	portrait_path = "gfx/leaders/Europe/Portrait_Asia_Generic_land_1.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Chang Tano"
+	portrait_path = "gfx/leaders/Europe/Portrait_Asia_Generic_land_2.dds"
+	traits = { jungle_rat }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 ### VARIANTS ###
 # 1936 Start #
 if = {

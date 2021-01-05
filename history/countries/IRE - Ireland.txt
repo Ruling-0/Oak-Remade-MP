@@ -207,6 +207,18 @@ create_corps_commander = {
 	logistics_skill = 5
 }
 
+create_corps_commander = {
+	name = "Mike Fleischer"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { trickster }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+
 add_ideas = {
 	IRE_unstable_republic
 	IRE_trade_war

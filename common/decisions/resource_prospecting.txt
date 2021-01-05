@@ -364,8 +364,8 @@ prospect_for_resources = {
 		available = {
 			owns_state = 623
 			controls_state = 623
-			num_of_civilian_factories_available_for_projects > 2
-			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 1
+			has_tech = excavation2
 		}
 		highlight_state_targets = {
 			state = 623
@@ -387,7 +387,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 
 		ai_will_do = {
@@ -417,8 +417,8 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
 			owns_state = 627
 			controls_state = 627
 		}
@@ -439,7 +439,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 
 		ai_will_do = {
@@ -512,7 +512,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_samar_steel_deposits = { #625
+	develop_samar_steel_deposits = { #623
 		
 		icon = steel
 
@@ -521,20 +521,20 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 625
-			controls_state = 625
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 623
+			controls_state = 623
 		}
 
 		highlight_state_targets = {
-			state = 625
+			state = 623
 		}
 
 		visible = {
-			owns_state = 625
-			controls_state = 625
-			625 = {
+			owns_state = 623
+			controls_state = 623
+			623 = {
 				NOT = {
 					has_state_flag = samar_steel_developed
 				}
@@ -547,7 +547,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 
 		ai_will_do = {
@@ -555,8 +555,8 @@ prospect_for_resources = {
 		}
 
 		remove_effect = { 
-			625 = { set_state_flag = samar_steel_developed } 
-			625 = {
+			623 = { set_state_flag = samar_steel_developed } 
+			623 = {
 				add_resource = {
 					type = steel
 					amount = 22

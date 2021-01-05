@@ -706,6 +706,7 @@ ideas = {
 				tag = SWI
 				tag = SIA
 				tag = MAN
+				tag = PHI
 				AND = {
 			        has_war = no
 			        NOT = { has_government = fascism }

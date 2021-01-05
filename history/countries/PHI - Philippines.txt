@@ -76,14 +76,9 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = yes
 }
-set_popularities = {
-	democratic = 82
-	fascism = 9
-	communism = 9
-}
 
 set_stability = 0.60
-set_war_support = 0.40
+set_war_support = 0.50
 
 create_country_leader = {
 	name = "Manuel Luis Quezón"
@@ -105,4 +100,24 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+create_corps_commander = {
+	name = "Richard Marshall"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = " Leonard T. Gerow"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { jungle_rat }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
