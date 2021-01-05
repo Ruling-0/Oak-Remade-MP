@@ -1725,9 +1725,6 @@ focus_tree = {
 		}
 
 		available = {
-			SWI = {
-				controls_state = 3
-			}
 			OR = {
 				has_idea = GER_economy_of_plunder_1
 				has_idea = GER_economy_of_plunder_2

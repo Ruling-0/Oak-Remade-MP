@@ -11,7 +11,7 @@ state=
 		add_core_of = NGA
 		owner = ENG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 0
 		}
 	}
 	provinces={
