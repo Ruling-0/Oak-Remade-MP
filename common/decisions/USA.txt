@@ -1291,8 +1291,7 @@ foreign_support = {
 	}
 }
 
-USA_unique_measures = {
-
+operations = {
     USA_annex_phi = {
 
 		icon = generic_political_discourse
@@ -1329,6 +1328,9 @@ USA_unique_measures = {
 			}	
 		}		
 	}
+}
+
+USA_unique_measures = {
 	
 	USA_women_in_the_workforce_1 = {
 

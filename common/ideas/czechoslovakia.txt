@@ -880,7 +880,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.15
+				armor = -0.05
 			}
 			
 			traits = { fast_tank_manufacturer }
@@ -904,7 +904,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.15
+				armor = -0.05
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -927,7 +927,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.15
+				armor = -0.05
 			}
 			
 			traits = { heavy_tank_manufacturer }

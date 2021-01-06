@@ -1393,51 +1393,6 @@ operations = {
 			}
 		}		
 	}
-	
-	GER_invade_iraq = {
-        icon = generic_civil_support
- 		fire_only_once = yes
-		
-		allowed = {
-			tag = GER
-		}
-		available = {
-			OR = {
-			    455 = { is_controlled_by = GER } 
-				455 = { is_controlled_by = ITA } 
-			}
-			OR = {
-				ITA = { has_war_with = ENG }
-				FRA = { has_capitulated = yes }
-			}
-		}
-
-		visible = {
-			NOT = {
-				IRQ = { exists = no }
-			}
-		}		
-		cost = 0
-		
-		modifier = {		
-		}
-
-		days_remove = 15
-		
-		
-		ai_will_do = {
-			factor = 50
-		}
-		remove_effect = {
-			create_wargoal = {
-				type = take_state_focus
-				target = IRQ
-				generator = { 291 }
-				expire = 0
-			}			
-		}	
-	}
-
 	GER_operation_countenance = {
         icon = generic_civil_support
  		fire_only_once = yes

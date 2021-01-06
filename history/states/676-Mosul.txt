@@ -11,10 +11,8 @@ state={
 
 
 	history={
-		owner = IRQ
+		owner = ENG
 		buildings = {
-			arms_factory = 2
-
 			infrastructure = 4
 		}
 		victory_points = {
