@@ -445,7 +445,7 @@ focus_tree = {
 			724 = {
 			 add_resource = {
 			  type = oil
-			  amount = 4
+			  amount = 10
 			 }
 			}
 		}
@@ -1028,26 +1028,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SIA_doctrine_inf_3
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SIA_doctrine_inf_2 }
-		x = 16
-		y = 4
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doctrine_bonus
-				bonus = 1
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
 		id = SIA_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		x = 21
@@ -1155,7 +1135,7 @@ focus_tree = {
 		id = SIA_tactical_air
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SIA_air_force }
-		mutually_exclusive = { focus = SIA_heavy_air}
+		mutually_exclusive = { focus = SIA_heavy }
 		x = 20
 		y = 2
 		cost = 10
@@ -1175,7 +1155,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SIA_heavy_air
+		id = SIA_heavy
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = SIA_air_force }
 		mutually_exclusive = { focus = SIA_tactical_air}
@@ -1200,7 +1180,7 @@ focus_tree = {
 	focus = {
 		id = SIA_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = SIA_heavy_air focus = SIA_tactical_air }
+		prerequisite = { focus = SIA_heavy focus = SIA_tactical_air }
 		
 		x = 20
 		y = 3
@@ -1226,7 +1206,7 @@ focus_tree = {
 	focus = {
 		id = SIA_air_doct_1
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SIA_heavy_air focus = SIA_tactical_air }
+		prerequisite = { focus = SIA_heavy focus = SIA_tactical_air }
 		x = 22
 		y = 3
 		cost = 10
@@ -1485,9 +1465,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
-  
 }
 
 

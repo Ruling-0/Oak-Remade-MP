@@ -91,7 +91,7 @@ ideas = {
 			removal_cost = -1
 			
 			research_bonus = {
-			    land_doctrine = -0.15
+			    land_doctrine = -0.2
 		    }
 			
 			modifier = {
@@ -810,6 +810,8 @@ ideas = {
 				ledger = army
 				
 				picture = POR_reyez
+				
+				cost = 50
 	
 				allowed = {
 					original_tag = POR

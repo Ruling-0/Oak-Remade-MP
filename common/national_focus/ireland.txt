@@ -1130,7 +1130,6 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		   has_army_experience > 50	
 		}
 	
 		bypass = {
@@ -1146,7 +1145,6 @@
 
 		completion_reward = {
 			add_ideas = IRE_lessons_of_great_war_idea
-			army_experience	= -50
 		}	
 		ai_will_do = {
 		}
@@ -1162,7 +1160,7 @@
 		#relative_position_id = AST_empower_the_workers
 	
 		available = {
-		    has_army_experience > 25
+		    has_army_experience > 80
 		}
 	
 		bypass = {
@@ -1177,7 +1175,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-		    army_experience	= -25
+		    army_experience	= -80
 			add_ideas = IRE_dublin_war_college_idea
 			add_tech_bonus = {
 				bonus = 1

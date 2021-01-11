@@ -71,7 +71,7 @@ focus_tree = {
 		x = 1
 		y = 0
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -109,7 +109,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -144,7 +144,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -202,7 +202,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -240,7 +240,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -275,7 +275,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -317,7 +317,7 @@ focus_tree = {
 		x = 4
 		y = 0
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -354,7 +354,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -394,7 +394,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 2
@@ -433,7 +433,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -468,7 +468,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -504,7 +504,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 2
@@ -540,7 +540,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 0
@@ -583,7 +583,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -618,7 +618,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -647,6 +647,36 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SAF_voortrekker_monument
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SAF_expand_the_cape_corps focus = SAF_outlaw_strikes }
+		x = -1
+		y = 1
+		relative_position_id = SAF_outlaw_strikes
+
+		cost = 7.16
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
+		completion_reward = {
+			add_ideas = SAF_voortrekker_monument
+		}
+	}
 
 	############################
 	##### INDUSTRY SECTION #####
@@ -658,7 +688,7 @@ focus_tree = {
 		x = 7
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -691,6 +721,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+			    prioritize = { 275 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -785,7 +816,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -825,7 +856,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -858,6 +889,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+			    prioritize = { 719 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure

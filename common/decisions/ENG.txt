@@ -2334,9 +2334,9 @@ operations = {
 			tag = ENG
 		}
 		available = {
-			date > 1941.4.1
-			PER = { is_ai = yes }
 			291 = { is_controlled_by = ENG } 
+			date > 1941.1.1
+			PER = { is_ai = yes }
 		}
 
 		visible = {
@@ -2346,7 +2346,7 @@ operations = {
 		}		
 		cost = 0
 
-		days_remove = 15
+		days_remove = 30
 		
 		
 		ai_will_do = {

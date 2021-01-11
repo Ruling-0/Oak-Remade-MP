@@ -2196,12 +2196,12 @@ leader_traits = {
 			fighter_equipment = {
 				instant = yes
 				reliability = 0.1
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}
 			tac_bomber_equipment = {
 				instant = yes
 				reliability = 0.1
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}
 		}
 		

@@ -1405,6 +1405,7 @@ operations = {
 			    291 = { is_controlled_by = GER } 
 				291 = { is_controlled_by = ITA } 
 			}
+			has_war_with = ENG
 			PER = { is_ai = yes }
 		}
 
@@ -1415,7 +1416,7 @@ operations = {
 		}		
 		cost = 0
 
-		days_remove = 15
+		days_remove = 30
 		
 		
 		ai_will_do = {

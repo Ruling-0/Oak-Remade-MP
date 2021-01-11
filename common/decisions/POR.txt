@@ -338,6 +338,68 @@ operations = {
 			}
 		}		
 	} 
+    POR_gerg = {
+
+		icon = generic_paperwork
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1942.3.1
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+        days_remove = 35
+
+		remove_effect = {
+			GER = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 250 producer = POR }
+			}
+		}		
+	} 
+    POR_sovg = {
+
+		icon = generic_paperwork
+
+		allowed = {
+			tag = POR			
+		}
+
+		available = {
+			is_ai = no
+			date > 1942.3.1
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+        days_remove = 35
+
+		remove_effect = {
+			SOV = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = POR }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1500 producer = POR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = radio_equipment amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = POR }
+				add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 250 producer = POR }
+				add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 250 producer = POR }
+			}
+		}		
+	} 
 }
 
 POR_overseas_provinces = {

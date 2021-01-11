@@ -29,7 +29,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 9
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 24
@@ -67,7 +67,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 9
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 25
@@ -218,7 +218,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			factor = 75
@@ -259,7 +259,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 473 471 }
+				prioritize = { 470 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -268,7 +268,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_canada_pacific_railway_Inf
@@ -284,7 +284,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			factor = 75
@@ -325,6 +325,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+			prioritize = { 682 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -333,7 +334,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_maritime_colonial_railway_Inf
@@ -420,7 +421,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -428,9 +429,6 @@ focus_tree = {
 
 		available = {
 			controls_state = 470
-			controls_state = 471
-			controls_state = 472
-			controls_state = 683
 		}
 		
 		bypass = {
@@ -449,25 +447,7 @@ focus_tree = {
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 4
-				}
-			}
-			471 = {
-				add_resource = {
-					type = oil
-					amount = 6
-				}
-			}
-			472 = {
-				add_resource = {
-					type = oil
-					amount = 6
-				}
-			}
-			683 = {
-				add_resource = {
-					type = oil
-					amount = 6
+					amount = 24
 				}
 			}
 		}
@@ -834,7 +814,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 470 }
 				limit = {
 					is_in_home_area = yes
 				}
@@ -844,23 +824,33 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 682 }
 				limit = {
 					is_in_home_area = yes
 				}
 				add_resource = {
 					type = steel
-					amount = 40
+					amount = 50
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
+				prioritize = { 682 }
 				limit = {
 					is_in_home_area = yes
 				}
 				add_resource = {
 					type = chromium
-					amount = 16
+					amount = 30
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 682 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = tungsten
+					amount = 30
 				}
 			}
 		}
@@ -1088,7 +1078,7 @@ focus_tree = {
 		x = 11
 		y = 3
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1477,7 +1467,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_commit_to_the_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1714,7 +1704,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_commit_to_the_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1753,7 +1743,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_commit_to_the_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2648,7 +2638,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2704,7 +2694,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2748,7 +2738,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2773,22 +2763,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			470 = {
+				add_resource = {
+					type = aluminium
+					amount = 40
+				}
+			}
 			682 = {
 				add_resource = {
 					type = aluminium
-					amount = 36
+					amount = 20
 				}
 			}
-			466 = {
+			682 = {
 				add_resource = {
 					type = aluminium
-					amount = 16
-				}
-			}
-			468 = {
-				add_resource = {
-					type = aluminium
-					amount = 16
+					amount = 20
 				}
 			}
 		}
@@ -2802,7 +2792,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

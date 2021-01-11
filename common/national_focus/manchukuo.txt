@@ -13,8 +13,6 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 1300 y = 250 }
-
 	focus = {
 		id = MAN_pacify_the_countryside
 		icon = GFX_goal_generic_major_war
@@ -403,10 +401,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = MAN_expand_the_textile_industry_IC
@@ -789,70 +787,16 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
+	
 	focus = {
-		id = MAN_second_five_year_plan
-		icon = GFX_goal_generic_production
+		id = MAN_national_defense_state
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = MAN_social_research_unit }
 		prerequisite = { focus = MAN_expand_showa_steel_works }
 		prerequisite = { focus = MAN_mamc }
 		x = 0
 		y = 4
 		relative_position_id = MAN_first_five_year_plan
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-			if = {
-				limit = { has_idea = MAN_five_year_plan_air }
-				NOT = { has_idea = MAN_five_year_plan_air }
-			}
-			if = {
-				limit = { has_idea = MAN_five_year_plan_tank }
-				NOT = { has_idea = MAN_five_year_plan_tank }
-			}
-			if = {
-				limit = { has_idea = MAN_five_year_plan_industry }
-				NOT = { has_idea = MAN_five_year_plan_industry }
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = MAN_five_year_plan_air }
-					NOT = { has_idea = MAN_five_year_plan_tank }
-					NOT = { has_idea = MAN_five_year_plan_industry }
-				}
-				NOT = { has_idea = MAN_five_year_plan_air }
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			country_event = wtt_manchukou.11
-		}
-	}
-
-	focus = {
-		id = MAN_national_defense_state
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = MAN_second_five_year_plan }
-		x = 0
-		y = 1
-		relative_position_id = MAN_second_five_year_plan
 
 		cost = 10
 
@@ -913,10 +857,10 @@ focus_tree = {
 
 		completion_reward = {
 			716 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -954,6 +898,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			716 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = MAN_mamc_light
 			show_ideas_tooltip = MAN_mamc_medium
@@ -993,24 +945,6 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = MAN_kwantung_veto
-			add_tech_bonus = {
-				name = MAN_alliance_with_the_kwantung_army
-				bonus = 1
-				uses = 2
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				name = MAN_alliance_with_the_kwantung_army
-				bonus = 1
-				uses = 2
-				category = air_doctrine
-			}
-			add_tech_bonus = {
-				name = MAN_alliance_with_the_kwantung_army
-				bonus = 1
-				uses = 2
-				category = naval_doctrine
-			}
 		}
 	}
 
@@ -1157,6 +1091,586 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MAN_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		 x = 16
+         y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_equipment_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = MAN_army_effort }
+		x = 14
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_equipment_effort_2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = MAN_equipment_effort }
+		x = 14
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_motorized
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MAN_army_effort }
+		x = 18
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_tanks
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = MAN_motorized }
+		x = 18
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tanks_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_doctrine_inf_1
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = MAN_army_effort }
+		x = 16
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_doctrine_inf_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = MAN_doctrine_inf_1 }
+		prerequisite = { focus = MAN_equipment_effort_2 focus = MAN_tanks }
+		x = 16
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 21
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_air_force
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = MAN_aviation_effort }
+		x = 21
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1
+				uses = 1
+				category = light_fighter
+				category = cas_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_tactical_air
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = MAN_air_force }
+		mutually_exclusive = { focus = MAN_heavy }
+		x = 20
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_heavy
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = MAN_air_force }
+		mutually_exclusive = { focus = MAN_tactical_air}
+		x = 22
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+					add_tech_bonus = {
+				name = air_bonus
+				bonus = 1
+				uses = 1
+				category = naval_bomber
+				category = heavy_air
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = MAN_rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = MAN_heavy focus = MAN_tactical_air }
+		
+		x = 20
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MAN_air_doct_1
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = MAN_heavy focus = MAN_tactical_air }
+		x = 22
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MAN_air_doct_2
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = MAN_air_doct_1 }
+		x = 22
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_navy_funds
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 25
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = MAN
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+			navy_experience = 25
+			
+		}
+		
+		completion_reward = {
+		        navy_experience = 25
+				724 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+			}
+			
+	}
+	
+	focus = {
+		id = MAN_navy_doc_1
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = MAN_navy_funds }
+		mutually_exclusive = { focus = MAN_navy_doc_2 }
+		x = 24
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_navy_doc_2
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = MAN_navy_funds }
+		mutually_exclusive = { focus = MAN_navy_doc_1 }
+		x = 26
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 2
+				category = trade_interdiction_tree
+			}
+		}
+	}
+		
+	focus = {
+		id = MAN_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = MAN_navy_doc_1 focus = MAN_navy_doc_2}
+		x = 26
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = MAN_destroyer_effort
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = MAN_navy_doc_1 focus = MAN_navy_doc_2}
+		x = 24
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_big_ship_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = MAN_destroyer_effort focus = MAN_submarine_effort }
+		x = 25
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = ca_tech
+				category = cl_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MAN_naval_doctrine_1
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = MAN_big_ship_effort }
+		x = 25
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 }

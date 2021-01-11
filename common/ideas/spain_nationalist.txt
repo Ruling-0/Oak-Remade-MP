@@ -64,7 +64,8 @@ ideas = {
 				max_dig_in = 5
 				army_defence_factor = 0.25
 				dig_in_speed_factor = 1.0
-				max_surrender_limit_offset = 0.15
+				max_surrender_limit_offset = 0.10
+				consumer_goods_factor = 0.1
 			}
 		}
 		
@@ -88,6 +89,7 @@ ideas = {
 				dig_in_speed_factor = 1.0
 				supply_consumption_factor = -0.5
 				surrender_limit = 0.15
+				consumer_goods_factor = 0.1
 			}
 		}		
 
@@ -112,7 +114,8 @@ ideas = {
 				max_dig_in = 5
 				army_defence_factor = 0.25
 				dig_in_speed_factor = 1.0
-				max_surrender_limit_offset = 0.15
+				max_surrender_limit_offset = 0.10
+				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -370,10 +373,10 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				industrial_capacity_factory = -0.14
-				industrial_capacity_dockyard = -0.14
-				production_speed_buildings_factor = -0.07
-				consumer_goods_factor = 0.07
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
 			}
 
 		}
@@ -400,10 +403,10 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				industrial_capacity_factory = -0.07
-				industrial_capacity_dockyard = -0.07
-				production_speed_buildings_factor = -0.04
-				consumer_goods_factor = 0.04
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -498,7 +501,6 @@ ideas = {
 			modifier = {
 				army_defence_factor = -0.05
 				army_attack_factor = -0.05
-				conscription = 0.01
 				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
 			}
@@ -523,9 +525,9 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.01
 				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
+				supply_consumption_factor = 0.30
 			}
 		}
 

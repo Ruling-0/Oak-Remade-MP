@@ -358,7 +358,9 @@ focus = {
 	focus = {
 		id = SPA_the_national_and_popular_army_of_spain
 		available = {
-
+			SPR = {
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
@@ -605,7 +607,6 @@ focus = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_motorization }
-		prerequisite = { focus = SPA_join_the_axis }
 
 		icon = GFX_goal_generic_build_tank
 		x = 1
@@ -629,6 +630,9 @@ focus = {
 	focus = {
 		id = SPA_join_the_axis
 		available = {
+			SPR = {
+				has_civil_war = no
+			}
 		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
@@ -644,7 +648,7 @@ focus = {
 		x = -3
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -657,6 +661,10 @@ focus = {
 	focus = {
 		id = SPA_fascist_economic_aid
 		available = {
+			SPR = {
+				has_civil_war = no
+			}
+            date > 1939.11.1	
 		}
 		bypass = {
 		}
@@ -673,13 +681,6 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-		    add_ideas = MAN_resource
-			add_tech_bonus = {
-				name = HOL_expand_curacao_oil_refineries
-				bonus = 2.0
-				uses = 2
-				category = synth_resources
-			}
 			add_ideas = SPA_fascist_economic_aid
 			add_tech_bonus = {
 				name = SPA_fascist_economic_aid
@@ -1009,7 +1010,10 @@ technology = construction4
 	focus = {
 		id = SPA_national_recovery
 		available = {
-            date > 1939.7.1	
+			SPR = {
+				has_civil_war = no
+			}
+            date > 1939.1.1
 		}
 		bypass = {
 		}
@@ -1035,6 +1039,7 @@ technology = construction4
 			}
 		}
 		completion_reward = {
+            add_ideas = MAN_resource
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war
 				add_idea = SPA_recovering_from_civil_war_2
@@ -1062,6 +1067,10 @@ technology = construction4
 	focus = {
 		id = SPA_autarky
 		available = {
+			SPR = {
+				has_civil_war = no
+			}
+            date > 1939.11.1	
 		}
 		bypass = {
 		}
@@ -1077,13 +1086,6 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-		    add_ideas = MAN_resource
-			add_tech_bonus = {
-				name = HOL_make_use_of_our_riches
-				bonus = 1.0
-				uses = 2
-				category = excavation_tech
-			}
 			add_tech_bonus = {
 				name = HOL_expand_curacao_oil_refineries
 				bonus = 2.0
@@ -1545,8 +1547,10 @@ technology = construction4
 	focus = {
 		id = SPA_join_the_allies
 		available = {
+			SPR = {
+				has_civil_war = no
+			}
 		}
-
 		bypass = {
 
 		}
@@ -1564,7 +1568,7 @@ technology = construction4
 		x = 3
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1575,6 +1579,10 @@ technology = construction4
 	focus = {
 		id = SPA_the_stabilization_plan
 		available = {
+			SPR = {
+				has_civil_war = no
+			}
+            date > 1939.11.1	
 		}
 		mutually_exclusive = { focus = SPA_autarky focus = SPA_fascist_economic_aid }
 		cancel_if_invalid = yes
@@ -1596,13 +1604,6 @@ technology = construction4
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_1
 				add_idea = SPA_national_recovery_2
-			}
-		    add_ideas = MAN_resource
-			add_tech_bonus = {
-				name = HOL_expand_curacao_oil_refineries
-				bonus = 2.0
-				uses = 2
-				category = synth_resources
 			}
 		}
 	}
@@ -1889,6 +1890,9 @@ technology = construction4
 	focus = {
 		id = SPA_la_division_azul
 		available = {
+			SPR = {
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
@@ -1919,7 +1923,6 @@ technology = construction4
 
 		available_if_capitulated = yes
 		available = {
-		     date > 1939.1.1
 		}
 		prerequisite = { focus = SPA_la_division_azul  }
 		
@@ -1985,7 +1988,7 @@ technology = construction4
 			794 = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -2013,21 +2016,10 @@ technology = construction4
 
 		completion_reward = {
 			add_ideas = idea_EFR_STO
-			794 = {
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-
 			GER = {
 				add_manpower = 150000
 			}
-
 			custom_effect_tooltip = EFR_STO_tt
-
 			hidden_effect = {
 				GER = {
 					load_oob = EFR_german_volunteers
@@ -2056,27 +2048,279 @@ technology = construction4
 
 		completion_reward = {
 			swap_ideas = { remove_idea = idea_EFR_STO add_idea = idea_EFR_STO2 }
-			793 = {
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-
 			GER = {
 				add_manpower = 150000
 			}
-
 			custom_effect_tooltip = EFR_STO_tt
-
 			hidden_effect = {
 				GER = {
 					load_oob = EFR_german_volunteers
 					swap_ideas = { remove_idea = EFR_french_volunteer_army_1 add_idea = EFR_french_volunteer_army_2 }
 				}
 			}
+		}
+	}
+	
+	############################
+	##### AIRFORCE SECTION #####
+	############################
+
+
+	focus = {
+		id = SPA_air_base_expansion
+		icon = GFX_goal_generic_air_production
+
+		x = 16
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			random_state = {
+				limit = { has_state_flag = POL_air_base_expansion_1 }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_air_base_expansion_1
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_fighter_modernisation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = SPA_air_base_expansion }
+
+		x = 17
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_fighter_modernisation
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+			#1x50% research bonus to fighter models
+		}
+	}
+
+
+
+	focus = {
+		id = SPA_air_innovations
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = SPA_air_base_expansion }
+
+		x = 15
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_air_innovations
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+			#1x50% research bonus to Air Doctrine Research
+		}
+	}
+
+	focus = {
+		id = SPA_heavy_fighter_concept
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = SPA_air_innovations focus = SPA_fighter_modernisation }
+
+		x = 16
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_heavy_fighter_concept
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+			}
+			#1x 50% research bonus to Heavy Fighters
+		}
+	}
+
+	focus = {
+		id = SPA_naval_bomber_experiments
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = SPA_air_innovations }
+
+		x = 14
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_naval_bomber_experiments
+				bonus = 1
+				uses = 1
+				category = naval_bomber
+			}
+			#1x50% research bonus to NAV
+		}
+	}
+
+	focus = {
+		id = SPA_medium_bomber_focus
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = SPA_heavy_fighter_concept focus = SPA_air_innovations }
+		mutually_exclusive = { focus = SPA_light_bomber_focus }
+
+		x = 15
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_medium_bomber_focus
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+			}
+			#1 x 50% research bonus to Tactical Bomber models
+		}
+	}
+
+	focus = {
+		id = SPA_light_bomber_focus
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = SPA_heavy_fighter_concept focus = SPA_fighter_modernisation }
+		mutually_exclusive = { focus = SPA_medium_bomber_focus }
+
+		x = 17
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_light_bomber_focus
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+			#1 x 50% research bonus to CAS
+		}
+	}
+
+	focus = {
+		id = SPA_air_modernisations_program
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = SPA_light_bomber_focus focus = SPA_medium_bomber_focus }
+
+		x = 16
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_air_modernisations_program
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+			#1x 50% reduction in an air doctrine research
+
+		}
+	}
+
+	focus = {
+		id = SPA_rocket_development
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = SPA_air_modernisations_program }
+
+		x = 16
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_rocket_development
+				bonus = 1
+				uses = 1
+				category = jet_technology
+				category = rocketry
+			}
+			#1x50% research to Rockets and Jet Engine Research
 		}
 	}
 }

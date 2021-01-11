@@ -959,9 +959,9 @@ operations = {
 			tag = JAP
 		}
 		available = {
-			date > 1941.4.1
+		    RAJ = { has_capitulated = yes }
+			has_war_with = ENG
 			PER = { is_ai = yes }
-			RAJ = { has_capitulated = yes }
 		}
 
 		visible = {

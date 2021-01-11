@@ -6279,8 +6279,13 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.25
-			SOV = { controls_state = 266 }
+		    OR = {
+		        AND = {
+			        surrender_progress > 0.25
+		            SOV = { controls_state = 266 }
+			    }
+				surrender_progress > 0.4
+			}
 		}
 
 		relative_position_id = SOV_american_lend_lease

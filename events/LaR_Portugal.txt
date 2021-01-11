@@ -44,7 +44,6 @@ country_event = {
 	option = {
 		name = lar_portugal_overseas_provinces.1.a
 		add_stability = -0.1
-		add_war_support = 0.1
 		effect_tooltip = {
 			if = { #Check for the idea added through immediate effect in order to show appropriate tt
 				limit = { has_idea = POR_colonial_assimilation_policy_2 }
@@ -96,7 +95,6 @@ country_event = {
 	option = {
 		name = lar_portugal_overseas_provinces.2.a
 		add_stability = -0.1
-		add_war_support = 0.1
 		effect_tooltip = {
 			if = { #Check for the idea added through immediate effect in order to show appropriate tt
 				limit = { has_idea = POR_colonial_assimilation_policy_2 }

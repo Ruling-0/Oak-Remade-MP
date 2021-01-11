@@ -146,7 +146,7 @@ create_import = {
 
 create_import = {
 	resource = tungsten
-	amount = 8
+	amount = 23
 	exporter = POR
 }
 

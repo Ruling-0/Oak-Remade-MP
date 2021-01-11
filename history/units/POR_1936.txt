@@ -413,75 +413,75 @@ air_wings = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		
 		heavy_fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		heavy_fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		heavy_fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		heavy_fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 		heavy_fighter_equipment_1936 = {
 			owner = "POR" 
 			amount = 100
 		}
-        start_experience_factor = 0.4
+        start_experience_factor = 0.3
 	}	
 	179 = {
 		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
 		}
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 	}
 }
 ### Production ###
