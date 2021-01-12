@@ -4,8 +4,8 @@ leader_traits = {
 	    random = no
 		consumer_goods_factor = -0.05
 		war_support_weekly = 0.002
-	    army_core_attack_factor = 0.25
-	    army_core_defence_factor = 0.25
+	    army_core_attack_factor = 0.1
+	    army_core_defence_factor = 0.1
 	}
 	
 	POR_navy = {
@@ -213,25 +213,25 @@ leader_traits = {
 			submarine = {
 				sub_visibility = -0.1 
 				surface_visibility = -0.1 
-				naval_speed = 0.1
-				build_cost_ic = -0.1
+				naval_range = 0.25
+				max_strength = 0.1
 			}
 			screen_ship = {
 				sub_detection = 0.1 
-				lg_attack = 0.15
-				naval_range = 0.3 
-				build_cost_ic = -0.1
+				lg_attack = 0.1
+				naval_range = 0.25
+				max_strength = 0.1
 			}
 			capital_ship = {
 				armor_value = 0.15 
-				hg_attack = 0.15
+				hg_attack = 0.1
 				naval_range = 0.25 
 				max_strength = 0.1
 			}
 			carrier = {
 			    armor_value = 0.15 
-				naval_range = 0.25
 			    carrier_size = 0.35 
+				naval_range = 0.25
 				max_strength = 0.1				
 			}
 		}

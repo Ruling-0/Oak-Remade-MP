@@ -129,10 +129,9 @@ focus_tree = {
 		completion_reward = { 
 
 			796 = {		
-				
 				add_building_construction = {
 					type = naval_base
-					level = 2
+					level = 3
 					province = 2115
 					instant_build = yes
 				}	
@@ -149,7 +148,7 @@ focus_tree = {
 
 				add_building_construction = {
 					type = naval_base
-					level = 2
+					level = 3
 					province = 8248
 					instant_build = yes
 				}	
@@ -161,7 +160,7 @@ focus_tree = {
 				}	
 				add_resource = {
 					type = steel
-					amount = 30
+					amount = 20
 				}		
 				add_resource = {
 					type = aluminium
@@ -202,12 +201,17 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 2115
+					instant_build = yes
+				}	
 			}
 		}
 	}
@@ -334,9 +338,23 @@ focus_tree = {
 
 				add_building_construction = {
 					type = naval_base
-					level = 2
+					level = 5
 					province = 2123				
 					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					province = 8245				
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}		
+				add_resource = {
+					type = aluminium
+					amount = 20
 				}
 			}
 		}
@@ -420,13 +438,6 @@ focus_tree = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
-						instant_build = yes
-					}
-
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 11805					
 						instant_build = yes
 					}				
 				}
@@ -636,7 +647,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = naval_base
-						level = 2
+						level = 5
 						province = 9817					
 						instant_build = yes
 					}
@@ -717,6 +728,12 @@ focus_tree = {
 						instant_build = yes
 					}
 					add_extra_state_shared_building_slots = 1	
+					add_building_construction = {
+						type = naval_base
+						level = 5
+						province = 3790					
+						instant_build = yes
+					}
 				}
 			}
 			if = {
@@ -893,15 +910,6 @@ focus_tree = {
 			    uses = 2
 			    category = artillery
 			}
-
-			add_tech_bonus = {
-				name = POR_advanced_artillery
-			    bonus = 1.0
-			    uses = 1
-			    category = land_doctrine
-			    category = naval_doctrine
-			    category = air_doctrine
-			}
 		}
 	}
 
@@ -921,36 +929,6 @@ focus_tree = {
 		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
-			if = {
-				limit = { has_full_control_of_state = 112 }	
-				112 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory		
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				random_owned_state = {
-					limit = {
-						is_controlled_by = ROOT
-						is_core_of = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 			add_tech_bonus = {
 				name = POR_armor_focus
 			    bonus = 1.0
@@ -1038,7 +1016,6 @@ focus_tree = {
 					}
 				}
 			}
-			air_experience = 25
 		}
 	}
 
@@ -1064,7 +1041,6 @@ focus_tree = {
 			    uses = 1
 			    category = heavy_air
 			}
-			air_experience = 50
 		}
 	}
 
@@ -1306,6 +1282,7 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
+			navy_experience = 100
 			if = {
 				limit = { has_full_control_of_state = 112 }
 				112 = {
@@ -1489,13 +1466,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = POR_submarine_effort
 			    bonus = 1.0
-			    uses = 1
-			    category = naval_doctrine			   
-			}
-
-			add_tech_bonus = {
-				name = POR_submarine_effort
-			    bonus = 1.0
 			    uses = 2
 			    category = ss_tech			   
 			}
@@ -1509,8 +1479,7 @@ focus_tree = {
 
 		bypass = {		
 		}
-		prerequisite = { focus = POR_submarine_effort }
-		prerequisite = { focus = POR_advanced_light_aircraft }			
+		prerequisite = { focus = POR_submarine_effort focus = POR_advanced_light_aircraft }		
 		icon = GFX_goal_generic_air_naval_bomber
 		x = 0
 		y = 1
@@ -1518,8 +1487,12 @@ focus_tree = {
 		relative_position_id = POR_submarine_effort 
 		cost = 5
 		completion_reward = { 	
-			navy_experience = 50
-			air_experience = 50
+			add_tech_bonus = {
+				name = POL_naval_bomber_experiments
+				bonus = 1
+				uses = 2
+				category = naval_bomber
+			}
 		}
 	}
 
@@ -1561,12 +1534,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-
-				add_building_construction = {
-					type = naval_base		
-					level = 2
-					instant_build = yes
-				}
 			}
 		}
 	}
@@ -1599,8 +1566,6 @@ focus_tree = {
 			    uses = 1
 			    category = cl_tech	   
 			}
-
-			navy_experience = 50
 		}
 	}
 
@@ -1625,12 +1590,6 @@ focus_tree = {
 			    bonus = 1.0
 			    uses = 2
 			    category = bb_tech	   
-			}
-			add_tech_bonus = {
-				name = POR_battleship_effort
-			    bonus = 1.0
-			    uses = 1
-			    category = naval_doctrine	   
 			}
 		}
 	}
@@ -1657,12 +1616,11 @@ focus_tree = {
 			    uses = 2
 			    category = cv_tech	   
 			}
-
 			add_tech_bonus = {
-				name = POR_carrier_effort
-			    bonus = 1.0
-			    uses = 1
-			    category = naval_doctrine  
+				name = NZL_defend_our_islands
+				bonus = 1
+				uses = 2
+				category = naval_air
 			}
 		}
 	}
@@ -2169,7 +2127,6 @@ focus_tree = {
 		cost = 3
 		completion_reward = { 	
 			add_ideas = POR_corpo_do_estado_maior	
-			army_experience = 20
 		}
 	}
 

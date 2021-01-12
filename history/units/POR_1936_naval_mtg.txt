@@ -32,12 +32,11 @@
 			name = "Raid Group"			
 			location = 11805 # Lisbon
             # Submarine Group  1
-			ship = { name = "SS1" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
-			ship = { name = "SS2" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
-			ship = { name = "SS3" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_submarine_2 = { amount = 1 owner = POR version_name = "Berlin Class" } } }
-            # Submarine Group  2					
-			ship = { name = "SC1" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
-			ship = { name = "SC2" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
+			ship = { name = "SC1" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }
+			ship = { name = "SC2" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }
+			ship = { name = "SC3" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
+			ship = { name = "SC4" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
+			ship = { name = "SC5" definition = submarine start_experience_factor = 0.4 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = POR version_name = "Moscow Class" } } }				
         }
     }	
 } 

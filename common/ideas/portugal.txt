@@ -254,8 +254,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_leader_cost_factor = -0.5
-				army_leader_start_planning_level = 1
+	            army_core_attack_factor = 0.05
+	            army_core_defence_factor = 0.05
+				training_time_factor = -0.10
 			}
 		}
 		
