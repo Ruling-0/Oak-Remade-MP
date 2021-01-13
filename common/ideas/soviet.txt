@@ -2528,27 +2528,16 @@ ideas = {
 
 	army_chief = {
 		
-		semyon_timoshenko = {
-			#Also unit leader: 404
-			
+		vasily_chuikov_1 = { 
+			ledger = army
 			allowed = {
 				original_tag = SOV
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 404
-						} 
-					}
-				}
+
+			available = {
 			}
 			
-			traits = { army_chief_reform_2 }
+			traits = { army_chief_maneuver_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2808,6 +2797,33 @@ ideas = {
 			
 			traits = { army_concealment_3 }
 			# Almost certainly a psychopath
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		semyon_timoshenko = {
+			#Also unit leader: 404
+			
+			allowed = {
+				original_tag = SOV
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_1_group_b }
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 404
+						} 
+					}
+				}
+			}
+			
+			traits = { army_chief_reform_2 }
 			
 			ai_will_do = {
 				factor = 1
