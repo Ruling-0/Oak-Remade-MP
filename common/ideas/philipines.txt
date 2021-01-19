@@ -164,9 +164,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				weekly_manpower = 5000
-				war_support_weekly = 0.005
-				stability_weekly = 0.005
+				weekly_manpower = 1000
+				war_support_weekly = 0.002
+				stability_weekly = 0.002
 			}
 		}
 		
@@ -185,11 +185,10 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 	}

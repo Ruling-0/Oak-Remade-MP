@@ -532,10 +532,11 @@ leader_traits = {
 		random = no
 		sprite = 10
 
-		consumer_goods_factor = -0.1
-		resistance_damage_to_garrison = 0.1
-		compliance_growth_on_our_occupied_states = -0.1
-		resistance_growth_on_our_occupied_states  = 0.1
+		operative_slot = 1
+		civilian_intel_factor = 0.1
+		army_intel_factor = 0.1
+		navy_intel_factor = 0.1
+        agency_upgrade_time = -0.1
 		
 		ai_will_do = {
 			factor = 1

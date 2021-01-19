@@ -6090,15 +6090,15 @@ focus_tree = {
 		completion_reward = {
 		    add_offsite_building = {
 		    	type = industrial_complex
-		    	level = 30
+		    	level = 5
 		    }
 		    add_offsite_building = {
 		    	type = arms_factory
-		    	level = 15
+		    	level = 10
 		    }
 		    add_offsite_building = {
 		    	type = dockyard
-		    	level = 5
+		    	level = 1
 		    }
 		}
 	}
@@ -6126,7 +6126,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 100000
+			add_manpower = 50000
 			add_ideas = PHI_refugee_volunteers
 		}
 	}
@@ -6191,5 +6191,4 @@ focus_tree = {
 			add_ideas = PHI_irredentism
 		}
 	}
-
 }

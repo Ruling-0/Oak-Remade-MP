@@ -757,7 +757,7 @@ SOV_socialism_in_one_country = {
 			}
 		}
 
-		days_mission_timeout = 180 
+		days_mission_timeout = 120 
 
 		timeout_effect = { 
 			FIN = { country_event = finland.7 }

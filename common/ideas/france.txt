@@ -20,7 +20,6 @@ ideas = {
 				army_core_attack_factor = -0.2
 				army_core_defence_factor = -0.2
 				consumer_goods_factor = -0.05
-				training_time_factor = -0.10
 			}
 		}
 		FRA_naval = {
@@ -1856,7 +1855,7 @@ ideas = {
 
 			picture = advisor_generic_12
 			
-			traits = { fortification_engineer }
+			traits = { resistance_banker }
 	
 			on_add = {
 			}

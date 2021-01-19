@@ -2079,6 +2079,13 @@ technology = construction4
 		}
 
 		available_if_capitulated = yes
+		
+		available = {
+			SPR = {
+				has_civil_war = no
+			}
+            date > 1937.1.1	
+		}
 
 		complete_tooltip = {
 			random_state = {

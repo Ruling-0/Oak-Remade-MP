@@ -21,7 +21,6 @@
 	}
 }
 units = {
-	
 	division = {
 		name = "NKVD Divisions 1"
 		location = 6380
@@ -79,13 +78,6 @@ units = {
 		start_equipment_factor = 0.9
 	}
 	division = {
-		name = "NKVD Division"
-		location = 6380
-		division_template = "NKVD Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = {
 		name = "NKVD Divisions 9"
 		location = 6380
 		division_template = "NKVD Divisions"
@@ -94,6 +86,13 @@ units = {
 	}
 	division = {
 		name = "NKVD Divisions 10"
+		location = 6380
+		division_template = "NKVD Divisions"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "NKVD Divisions 11"
 		location = 6380
 		division_template = "NKVD Divisions"
 		start_experience_factor = 0.1

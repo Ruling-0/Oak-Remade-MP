@@ -596,68 +596,35 @@ focus_tree = {
 				remove_idea = FRA_inefficient_economy_2
 				add_idea = FRA_inefficient_economy_1
 			}
-		
-			random_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-						include_locked = yes
-					}
-				}
+			random_owned_controlled_state = {
+			    prioritize = { 543 }
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-						include_locked = yes
-					}
-				}
+			random_owned_controlled_state = {
+			    prioritize = { 772 }
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-						include_locked = yes
-					}
-				}
+			random_owned_controlled_state = {
+			    prioritize = { 310 }
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-						include_locked = yes
-					}
-				}
+			random_owned_controlled_state = {
+			    prioritize = { 695 }
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -757,6 +724,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = FRA_regulate_the_banking_sector
 		cost = 7.16
+		
+		available = {
+			threat > 0.10
+		}
 
 		available_if_capitulated = yes
 
@@ -2492,10 +2463,8 @@ focus_tree = {
 	focus = {
 		id = FRA_protect_against_italy
 		available = {
-			threat > 0.1
 		}
 		bypass = {
-			has_capitulated = yes 
 		}
 		prerequisite = { focus = FRA_responsibility_for_defense }
 		icon= GFX_focus_attack_italy
@@ -2509,10 +2478,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 539 }
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 3
 					instant_build = yes 
 				}
 			}
@@ -2522,7 +2491,6 @@ focus_tree = {
 	focus = {
 		id = FRA_alpine_forts
 		available = {
-			threat > 0.15
 			has_full_control_of_state = 735
 		}
 		prerequisite = { focus = FRA_protect_against_italy }
@@ -2549,7 +2517,6 @@ focus_tree = {
 		id = FRA_southward_defenses
 		available = {
 			has_tech = radio_detection
-			threat > 0.2
 			has_full_control_of_state = 21
 			has_full_control_of_state = 735
 		}
@@ -2629,10 +2596,8 @@ focus_tree = {
 	focus = {
 		id = FRA_germany_is_the_greater_threat
 		available = {
-			threat > 0.1
 		}
 		bypass = {
-			has_capitulated = yes 
 		}
 		prerequisite = { focus = FRA_responsibility_for_defense }
 		icon = GFX_focus_attack_germany
@@ -2646,10 +2611,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 539 }
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes 
 				}
 			}
@@ -2692,7 +2657,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
@@ -2701,9 +2666,11 @@ focus_tree = {
 				}
 				remove_ideas = { FRA_inefficient_economy_1 }
 			}
-			swap_ideas = {
-				remove_idea = FRA_inefficient_economy_2
-				add_idea = FRA_inefficient_economy_1
+			if = {
+				limit = {
+					has_idea = FRA_inefficient_economy_2
+				}
+				add_ideas = { FRA_inefficient_economy_1 }
 			}
 			add_tech_bonus = {
 				category = industry
@@ -3021,7 +2988,6 @@ focus_tree = {
 	focus = {
 		id = FRA_extend_the_maginot_line
 		available = {
-			threat > 0.45
 			has_full_control_of_state = 29
 			has_full_control_of_state = 785
 			has_full_control_of_state = 18
@@ -3044,7 +3010,6 @@ focus_tree = {
 		id = FRA_modernize_the_paris_line
 		available = {
 			has_tech = radio_detection
-			threat > 0.55
 			has_full_control_of_state = 29
 			has_full_control_of_state = 785
 			has_full_control_of_state = 18

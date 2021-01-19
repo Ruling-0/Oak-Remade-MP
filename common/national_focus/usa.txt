@@ -2796,11 +2796,9 @@ focus_tree = {
 			OR = {
 				AND  = {
 					NOT = { 696 = { is_controlled_by = ENG } }
-					NOT = { 331 = { is_controlled_by = ENG } }
 					NOT = { 308 = { is_controlled_by = ENG } } 
 					NOT = { 693 = { is_controlled_by = ENG } } 
 					NOT = { 689 = { is_controlled_by = ENG } } 
-					NOT = { 691 = { is_controlled_by = ENG } } 
 				}
 				ENG = { exists = no }		
 				USA = {
@@ -2818,11 +2816,9 @@ focus_tree = {
 			effect_tooltip = {
 				custom_effect_tooltip = USA_destroyers_for_bases_tt
 				transfer_state = 696
-				transfer_state = 331
 				transfer_state = 308
 				transfer_state = 693
 				transfer_state = 689
-				transfer_state = 691
 			}
 		}
 	}						
