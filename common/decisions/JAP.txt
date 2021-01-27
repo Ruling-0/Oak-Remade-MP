@@ -907,6 +907,10 @@ operations = {
               target = MAN
               transfer_troops = yes
 			}
+			annex_country = {
+              target = MEN
+              transfer_troops = yes
+			}
 			every_state = {
 				limit = { is_core_of = MAN }
 				set_resistance = 0
