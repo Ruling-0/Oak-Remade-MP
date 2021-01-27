@@ -11,21 +11,13 @@ operations = {
 		        455 = { is_controlled_by = GER } 
                 455 = { is_controlled_by = ITA } 
             }	
-			OR = {
-                553 = { is_controlled_by = EFR }	
-				553 = { is_controlled_by = FRA }
-		        553 = { is_controlled_by = GER } 
-                553 = { is_controlled_by = ITA } 
-			}
+            553 = { is_controlled_by = EFR }	
             ENG = {
                 NOT = { has_war_with = EFR }
             }				
 		}
 
 		visible = {
-			NOT = {
-				IRQ = { exists = no }
-			}
 		}		
 		cost = 0
 		

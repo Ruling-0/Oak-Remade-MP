@@ -41,11 +41,11 @@ ideas = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.5
 				industrial_capacity_dockyard = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.1
-				political_power_cost = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_cost = 0.15
 			}
 
 			picture = MEX_callistas
@@ -3293,7 +3293,7 @@ ideas = {
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.075
-				production_speed_synthetic_rubber_refinery_factor = 0.155
+				production_speed_synthetic_rubber_refinery_factor = 0.10
 			}
 
 			traits = { GER_refinery_concern }
@@ -3368,7 +3368,7 @@ ideas = {
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.075
-				production_speed_synthetic_rubber_refinery_factor = 0.30
+				production_speed_synthetic_rubber_refinery_factor = 0.25
 			}
 
 			traits = { GER_refinery_concern }

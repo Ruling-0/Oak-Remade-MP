@@ -405,7 +405,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
-				production_speed_buildings_factor = -0.05
+				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -501,8 +501,6 @@ ideas = {
 			modifier = {
 				army_defence_factor = -0.05
 				army_attack_factor = -0.05
-				army_infantry_attack_factor = 0.05
-				army_infantry_defence_factor = 0.05
 			}
 		}
 
@@ -525,9 +523,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
-				supply_consumption_factor = 0.30
+				supply_consumption_factor = 0.4
 			}
 		}
 
@@ -919,9 +916,12 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 8 
+				send_volunteer_size = 12
+				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
-				air_volunteer_cap = 500
+				lend_lease_tension = -1
+				special_forces_min = 150
+				air_volunteer_cap = 1500
 			}
 		}
 

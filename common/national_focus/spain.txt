@@ -58,10 +58,14 @@ focus = {
 	completion_reward = {
 		set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 		set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
-			swap_ideas = {
-				remove_idea = SPA_carlism_3
-				add_idea = SPA_carlism_4
-			}
+		custom_effect_tooltip = USA_rangers_tt
+	    hidden_effect = {
+			set_technology = { rangers = 1 } 
+	    }		
+		swap_ideas = {
+			remove_idea = SPA_carlism_3
+			add_idea = SPA_carlism_4
+		}
 	}
 }
 
