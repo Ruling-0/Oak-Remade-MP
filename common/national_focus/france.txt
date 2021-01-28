@@ -2670,7 +2670,10 @@ focus_tree = {
 				limit = {
 					has_idea = FRA_inefficient_economy_2
 				}
-				add_ideas = { FRA_inefficient_economy_1 }
+				swap_ideas = {
+					remove_idea = FRA_inefficient_economy_2
+					add_idea = FRA_inefficient_economy_1
+				}
 			}
 			add_tech_bonus = {
 				category = industry
