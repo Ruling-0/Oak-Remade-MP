@@ -885,10 +885,12 @@ operations = {
 		allowed = {
 			tag = JAP			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = JAP
 			MAN = { is_ai = yes }
+			country_exists = MAN
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -925,10 +927,12 @@ operations = {
 		allowed = {
 			tag = JAP			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = JAP
 			SIA = { is_ai = yes }
+			country_exists = SIA
+		}
+		available = {
 			date > 1939.1.1
 		}
 

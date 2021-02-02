@@ -1896,12 +1896,13 @@ operations = {
 			tag = ENG			
 		}
 
-		available = {
-			is_ai = no
+		visible = {
+			tag = ENG
 			FRA = { is_ai = yes }
-			FRA = {
-				has_capitulated = yes 
-			}
+			country_exists = FRA
+		}
+		available = {
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -1920,7 +1921,7 @@ operations = {
                 transfer_troops = yes
 			}
 			every_state = {
-			    limit = { is_controlled_by = FRA }
+			    limit = { is_core_of = SEN }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1934,9 +1935,12 @@ operations = {
 			tag = ENG			
 		}
 
-		available = {
-			is_ai = no
+		visible = {
+			tag = ENG
 			RAJ = { is_ai = yes }
+			country_exists = RAJ
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -1956,7 +1960,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = RAJ }
+				limit = { is_core_of = RAJ }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1969,10 +1973,13 @@ operations = {
 		allowed = {
 			tag = ENG			
 		}
-
-		available = {
-			is_ai = no
+		
+		visible = {
+			tag = ENG
 			CAN = { is_ai = yes }
+			country_exists = CAN
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -1992,7 +1999,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = CAN }
+				limit = { is_core_of = CAN }
 				set_resistance = 0
 				set_compliance = 100
 			}	
@@ -2006,9 +2013,12 @@ operations = {
 			tag = ENG			
 		}
 
-		available = {
-			is_ai = no
+		visible = {
+			tag = ENG
 			AST = { is_ai = yes }
+			country_exists = AST
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -2028,7 +2038,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = AST }
+				limit = { is_core_of = AST }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -2041,10 +2051,12 @@ operations = {
 		allowed = {
 			tag = ENG			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = ENG
 			SAF = { is_ai = yes }
+			country_exists = SAF
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -2064,7 +2076,7 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = SAF }
+				limit = { is_core_of = SAF }
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -2077,10 +2089,12 @@ operations = {
 		allowed = {
 			tag = ENG			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = ENG
 			IRE = { is_ai = yes }
+			country_exists = IRE
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -2114,12 +2128,13 @@ operations = {
 		allowed = {
 			tag = ENG			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = ENG
 			NZL = { is_ai = yes }
-			date > 1939.1.1
 			country_exists = NZL
+		}
+		available = {
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -2138,7 +2153,9 @@ operations = {
                 transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = NZL }
+				limit = {
+					is_core_of = NZL
+				}
 				set_resistance = 0
 				set_compliance = 100
 			}

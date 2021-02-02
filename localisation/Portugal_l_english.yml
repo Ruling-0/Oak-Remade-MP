@@ -11,6 +11,8 @@
  POR_aid1_desc:0 "Portugal will send volunteers and equipment to people in need."
  POR_aid2:0 "Portuguese Military Aid Program"
  POR_aid2_desc:0 "Portugal will send military aid to those who are in need of it."
+ POR_aid3:0 "Modder Idea"
+ POR_aid3_desc:0 "This idea allows modders of the mod to see the wars that happen before the main war and help if need be."
  POR_eco1:0 "World is at Rest"
  POR_eco1_desc:0 "The world right now is relatively peaceful but we can still begin to prepare for future conflicts."
  POR_eco2:0 "Aid has Been Approved"

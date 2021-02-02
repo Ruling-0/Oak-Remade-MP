@@ -1256,17 +1256,19 @@ operations = {
 		allowed = {
 			tag = GER			
 		}
-
-		available = {
-			is_ai = no
+		
+		visible = {
+			tag = GER
 			ROM = { is_ai = yes }
+			country_exists = ROM
+		}
+		available = {
 			date > 1939.1.1
 		}
 
 		cost = 0
 
 		fire_only_once = yes
-
 
 		complete_effect = {
 			ROM = {
@@ -1279,7 +1281,9 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = ROM }
+				limit = {
+					is_core_of = ROM
+				}
 				set_resistance = 0
 				set_compliance = 100
 			}	
@@ -1292,10 +1296,12 @@ operations = {
 		allowed = {
 			tag = GER			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = GER
 			CZE = { is_ai = yes }
+			country_exists = CZE
+		}
+		available = {
 			date > 1940.1.1
 		}
 
@@ -1315,7 +1321,9 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = CZE }
+				limit = {
+					is_core_of = CZE
+				}
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1328,10 +1336,12 @@ operations = {
 		allowed = {
 			tag = GER			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = GER
 			HUN = { is_ai = yes }
+			country_exists = HUN
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -1351,7 +1361,9 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = HUN }
+				limit = {
+					is_core_of = HUN
+				}
 				set_resistance = 0
 				set_compliance = 100
 			}
@@ -1364,10 +1376,12 @@ operations = {
 		allowed = {
 			tag = GER			
 		}
-
-		available = {
-			is_ai = no
+		visible = {
+			tag = GER
 			BUL = { is_ai = yes }
+			country_exists = BUL
+		}
+		available = {
 			date > 1939.1.1
 		}
 
@@ -1387,7 +1401,9 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = BUL }
+				limit = {
+					is_core_of = BUL
+				}
 				set_resistance = 0
 				set_compliance = 100
 			}

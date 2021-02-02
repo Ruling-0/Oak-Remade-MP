@@ -76,9 +76,29 @@ ideas = {
 				send_volunteer_divisions_required = -1
 				special_forces_min = 265
 			}
-        }			
-		
+        }	
 
+		POR_aid3 = {
+			picture = POR_volunteer1
+			allowed = {
+			}
+		
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			
+			rule = { 
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 5
+			} 
+		}		
+		
 		POR_unreliable_army = {
 			picture = generic_army_problems
 			allowed = {
