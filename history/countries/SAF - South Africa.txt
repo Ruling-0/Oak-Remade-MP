@@ -148,6 +148,17 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Thomas Jacomb Hutton"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
 create_corps_commander = {
 	name = "George Edwin Brink"
 	gfx = "GFX_SAF_george_edwin_brink"
@@ -156,7 +167,7 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 1
+	logistics_skill = 2
 }
 
 create_navy_leader = {
