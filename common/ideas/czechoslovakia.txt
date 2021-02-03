@@ -416,7 +416,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				conscription = -0.005
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.05
 			}
 		}
 		
