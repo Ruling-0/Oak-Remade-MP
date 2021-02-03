@@ -2508,7 +2508,6 @@ prospect_for_resources = {
 		available = {
 			has_full_control_of_state = 537
 			num_of_civilian_factories_available_for_projects > 2
-			has_tech = excavation3
 			controls_state = 537
 		}
 
