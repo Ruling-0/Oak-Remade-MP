@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
-				local_resources_factor = 0.15
+				local_resources_factor = 0.1
 				min_export = 0.1
 				consumer_goods_factor = -0.05
 			}
@@ -37,7 +37,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.15
-				local_resources_factor = 0.2
+				local_resources_factor = 0.15
 				min_export = 0.15
 				consumer_goods_factor = -0.08
 			}
@@ -58,7 +58,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.2
-				local_resources_factor = 0.25
+				local_resources_factor = 0.20
 				min_export = 0.2
 				consumer_goods_factor = -0.10
 			}
@@ -125,7 +125,7 @@ ideas = {
 			}
 			
 			modifier = {
-				fuel_gain_factor = 0.2
+				fuel_gain_factor = 0.1
 				max_fuel_factor = 0.4
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
@@ -151,7 +151,7 @@ ideas = {
 			}
 			
 			modifier = {
-				fuel_gain_factor = 0.3
+				fuel_gain_factor = 0.20
 				max_fuel_factor = 0.5
 				industrial_capacity_factory = 0.15
 				production_factory_max_efficiency_factor = 0.15

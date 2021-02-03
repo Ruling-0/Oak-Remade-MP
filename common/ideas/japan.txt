@@ -39,6 +39,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
 				production_speed_fuel_silo_factor = 0.25
 				max_fuel_factor = 1.25
 			}
