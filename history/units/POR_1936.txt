@@ -445,7 +445,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "POR"
 		}
-		requested_factories = 3
+		requested_factories = 1
 		progress = 0.47
 		efficiency = 100
 	}
@@ -530,8 +530,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.4
 		efficiency = 100
-	}
-	
+	}	
 	add_equipment_production = {
 		equipment = {
 			type = armored_cars_equipment_2
@@ -541,7 +540,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 100
 	}
-	
 	add_equipment_production = { 
 		equipment = {
 			type = light_tank_equipment_1936
@@ -550,8 +548,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.8
 		efficiency = 100
-	}
-	
+	}	
 	add_equipment_production = { 
 		equipment = {
 			type = medium_tank_equipment_1937
@@ -561,40 +558,9 @@ instant_effect = {
 		progress = 0.8
 		efficiency = 100
 	}
-	
-	add_equipment_production = { 
-		equipment = {
-			type = heavy_tank_equipment_1934
-			creator = "POR" 
-		}
-		requested_factories = 1
-		progress = 0.8
-		efficiency = 100
-	}
-
-	add_equipment_production = { 
-		equipment = {
-			type = fighter_equipment_1936
-			creator = "POR" 
-		}
-		requested_factories = 1
-		progress = 0.8
-		efficiency = 100
-	}
-	
 	add_equipment_production = { 
 		equipment = {
 			type = heavy_fighter_equipment_1936
-			creator = "POR" 
-		}
-		requested_factories = 1
-		progress = 0.8
-		efficiency = 100
-	}
-	
-	add_equipment_production = { 
-		equipment = {
-			type = CAS_equipment_1937
 			creator = "POR" 
 		}
 		requested_factories = 1
