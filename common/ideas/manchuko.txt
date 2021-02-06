@@ -25,6 +25,32 @@ ideas = {
 		    }
 				
 		}
+		MAN_imperial_pretender = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = jap_intervene_in_china
+			
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.1
+			}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.1
+			}
+		}
 		MAN_exiled_imperial_family = {
 
 			allowed = {
@@ -40,13 +66,31 @@ ideas = {
 			picture = state_shintoism
 			
 			modifier = {
-			    political_power_gain = 0.1
-				stability_factor = 0.1
 				war_support_factor = 0.1
 				stability_weekly = 0.001
 			}
 		}
+		MAN_imperial_family = {
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = state_shintoism
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				stability_weekly = 0.001
+				consumer_goods_factor = -0.05
+			}
+		}
 		MAN_banditry = {
 
 			available = {
@@ -345,7 +389,7 @@ ideas = {
 			
 			research_bonus = { industry = 0.05 }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 		MAN_underground_gun_shops = {

@@ -19,7 +19,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.1
+				land_doctrine = 0.05
 			}
 		}
 

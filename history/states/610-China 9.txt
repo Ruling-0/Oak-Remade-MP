@@ -13,7 +13,7 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
-			dockyard = 5
+			dockyard = 3
 			3955 = {
 				bunker = 3
 			}

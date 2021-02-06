@@ -695,25 +695,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			716 = {
-				if = {
-					limit = {
-						MAN = { has_focus_tree = generic_focus }
-					}
-					add_resource = {
-						type = steel
-						amount = 16
-					}				
+			714 = {
+				add_resource = {
+					type = steel
+					amount = 16
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
 					instant_build = yes
 				}
 			}
@@ -917,10 +907,10 @@ focus_tree = {
 
 		completion_reward = {
 			715 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -964,16 +954,16 @@ focus_tree = {
 
 		completion_reward = {
 			716 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
 			MAN = {
 				add_tech_bonus = {
-					category = industry
+					category = synth_resources
 					bonus = 1
 					uses = 2 
 					name = JAP_heavy_industry_development
@@ -1071,7 +1061,7 @@ focus_tree = {
 
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

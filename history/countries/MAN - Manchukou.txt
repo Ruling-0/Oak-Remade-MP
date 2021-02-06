@@ -2,8 +2,8 @@
 #player
 set_country_flag = JAP_puppet
 
-set_stability = 0.5
-set_war_support = 0.75
+set_stability = 0.30
+set_war_support = 0.70
 
 oob = "MAN_1936"
 
@@ -15,11 +15,10 @@ if = {
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 	add_ideas = MAN_low_legitimacy_1
-	add_ideas = limited_conscription
 	add_ideas = partial_economic_mobilisation
-	add_ideas = free_trade
 	add_ideas = MAN_exiled_imperial_family
 	add_ideas = german_advisors
+	add_ideas = MAN_imperial_pretender
 }
 if = {
 	limit = {
@@ -126,7 +125,6 @@ create_country_leader = {
 	expire = "1960.1.1"
 	ideology = rexism
 	traits = {
-	    financial_expert
 		warrior_code
 	}
 }
