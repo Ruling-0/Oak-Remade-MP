@@ -566,9 +566,6 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.15
 				production_speed_arms_factory_factor = -0.1
 				production_speed_dockyard_factor = -0.1
-				global_building_slots_factor = 0.1
-				industrial_capacity_factory = 0.025
-				industrial_capacity_dockyard = 0.025
 			}
 			
 			ai_will_do = {
@@ -601,10 +598,6 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
-				global_building_slots_factor = 0.15
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				political_power_factor = 0.05
 			}
 			
 			ai_will_do = {
@@ -636,10 +629,6 @@ ideas = {
 				consumer_goods_factor = 0.20
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
-				global_building_slots_factor = 0.20
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				political_power_factor = 0.1
 			}
 			
 			ai_will_do = {
@@ -666,10 +655,8 @@ ideas = {
 			
 			modifier = {
 			    consumer_goods_factor = 0.15
-				global_building_slots_factor = 0.25
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				political_power_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 			
 			ai_will_do = {
@@ -925,8 +912,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				min_export = 0.85
-				local_resources_factor = 0.05
+				min_export = 0.9
+				local_resources_factor = 0.1
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
@@ -945,7 +932,7 @@ ideas = {
 			
 		    available = {
 			    tag = POR
-				is_ai = no
+				is_ai = no	
 			}
 		
 			visible = {
@@ -956,8 +943,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				min_export = 0.9
-				local_resources_factor = 0.10
+				min_export = 0.5
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15

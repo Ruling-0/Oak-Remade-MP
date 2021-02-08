@@ -1039,7 +1039,7 @@ focus_tree = {
 		}
 
 		available = {
-
+           date > 1938.5.1		
 		}
 
 		bypass = {
@@ -1055,7 +1055,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MAN_imperial_pretender
+			swap_ideas = {
+				remove_idea = MAN_exiled_imperial_family
+				add_idea = MAN_imperial_family
+			}
 		}
 	}
 
@@ -1074,7 +1077,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {		
+		available = {
 		}
 
 		bypass = {
@@ -1090,10 +1093,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MAN_exiled_imperial_family
-				add_idea = MAN_imperial_family
-			}
+			remove_ideas = MAN_imperial_pretender
 		}
 	}
 	focus = {

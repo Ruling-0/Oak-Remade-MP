@@ -40,8 +40,8 @@ leader_traits = {
 	ncr_theorist = {
 		random = no
 		experience_gain_army = 0.1
-		experience_gain_air = 0.05
-		experience_gain_navy = 0.05
+		experience_gain_air = 0.1
+		experience_gain_navy = 0.1
 	}
 	
 	POR_attack = {

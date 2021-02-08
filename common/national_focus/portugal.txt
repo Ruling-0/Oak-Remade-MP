@@ -67,11 +67,6 @@ focus_tree = {
 		id = POR_luso_tropicalism
 		available = {
 			NOT = { has_government = fascism }
-			OR = {
-				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #South Angola
-				has_full_control_of_state = 544 #Mozambique
-			}
 		}
 
 		ai_will_do = {
@@ -107,12 +102,6 @@ focus_tree = {
 	focus = {
 		id = POR_infrastructure_in_angola
 		available = {
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
 		}
 
 		bypass = {		
@@ -173,13 +162,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_develop_north_angola
-		available = {	
-			OR = {
-				has_full_control_of_state = 796
-				796 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}					
+		available = {					
 		}
 
 		bypass = {		
@@ -219,12 +202,6 @@ focus_tree = {
 	focus = {
 		id = POR_develop_south_angola
 		available = {
-			OR = {
-				has_full_control_of_state = 540
-				540 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
 		}
 
 		bypass = {		
@@ -266,12 +243,6 @@ focus_tree = {
 	focus = {
 		id = POR_portuguese_oil
 		available = {
-			OR = {
-				has_full_control_of_state = 540
-				540 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
 		}
 
 		bypass = {		
@@ -302,12 +273,6 @@ focus_tree = {
 	focus = {
 		id = POR_develop_mozambique
 		available = {
-			OR = {
-				has_full_control_of_state = 544
-				544 = {
-					owner = { is_subject_of = ROOT }
-				}
-			}
 		}
 
 		bypass = {		
@@ -363,13 +328,6 @@ focus_tree = {
 	focus = {
 		id = POR_continue_the_public_works
 		available = {
-			OR = {
-				has_full_control_of_state = 180 #PORTO
-				has_full_control_of_state = 181 #GUARDA
-				has_full_control_of_state = 795 #SANTAREM
-				has_full_control_of_state = 179 #BEJA
-				has_full_control_of_state = 112 #LISBON
-			}
 		}
 
 		bypass = {		
@@ -580,13 +538,6 @@ focus_tree = {
 	focus = {
 		id = POR_roads_bridges_and_dams
 		available = {	
-			OR = {
-				has_full_control_of_state = 181 #GUARDA
-				has_full_control_of_state = 795 #SANTAREM
-				has_full_control_of_state = 179 #BEJA
-				has_full_control_of_state = 180 #PORTO
-				has_full_control_of_state = 112 #LISBON
-			}			
 		}
 
 		bypass = {		
@@ -676,13 +627,7 @@ focus_tree = {
 	
 	focus = {
 		id = POR_hydroelectricity
-		available = {
-			OR = {
-				has_full_control_of_state = 180 #PORTO
-				has_full_control_of_state = 181 #GUARDA
-				has_full_control_of_state = 179 #BEJA
-				has_full_control_of_state = 112 #LISBON
-			}			
+		available = {	
 		}
 
 		bypass = {		
@@ -1163,11 +1108,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_food_industries
-		available = {
-			OR = {
-				has_full_control_of_state = 180
-				has_full_control_of_state = 181
-			}		
+		available = {	
 		}
 
 		bypass = {		
@@ -1499,7 +1440,6 @@ focus_tree = {
 	focus = {
 		id = POR_arsenal_do_alfeite
 		available = {
-			has_full_control_of_state = 112		
 		}
 
 		bypass = {		
@@ -1627,12 +1567,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_atlantic_defense_strategy
-		available = {
-			OR = {
-				has_full_control_of_state = 698
-				has_full_control_of_state = 697
-				has_full_control_of_state = 702
-			}			
+		available = {		
 		}
 
 		bypass = {		
@@ -1704,11 +1639,6 @@ focus_tree = {
 	focus = {
 		id = POR_endless_sea
 		available = {
-			OR = {
-				has_full_control_of_state = 321
-				has_full_control_of_state = 729
-				has_full_control_of_state = 721
-			}
 		}
 
 		bypass = {
@@ -1870,12 +1800,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_defend_the_borders
-		available = {
-			OR = {
-				has_full_control_of_state = 112
-				has_full_control_of_state = 180
-				has_full_control_of_state = 179
-			}			
+		available = {		
 		}
 
 		bypass = {		
@@ -1964,7 +1889,6 @@ focus_tree = {
 	focus = {
 		id = POR_rebuild_the_lines_of_torres_vedras
 		available = {
-			has_full_control_of_state = 112		
 		}
 
 		bypass = {		
