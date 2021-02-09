@@ -2,6 +2,25 @@ ideas = {
 
 	country = {
 	
+	    SPA_spanish_civil_war_industry = {
+
+			picture = spanish_civil_war
+
+		    allowed = {
+				original_tag = SPR
+			}
+			
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+	
         isolationism = {
 
 			picture = generic_pp_unity_bonus
@@ -65,7 +84,6 @@ ideas = {
 				army_defence_factor = 0.25
 				dig_in_speed_factor = 1.0
 				max_surrender_limit_offset = 0.10
-				consumer_goods_factor = 0.1
 			}
 		}
 		
@@ -89,7 +107,6 @@ ideas = {
 				dig_in_speed_factor = 1.0
 				supply_consumption_factor = -0.5
 				surrender_limit = 0.15
-				consumer_goods_factor = 0.1
 			}
 		}		
 
@@ -115,7 +132,6 @@ ideas = {
 				army_defence_factor = 0.25
 				dig_in_speed_factor = 1.0
 				max_surrender_limit_offset = 0.10
-				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -781,7 +797,7 @@ ideas = {
 			}
 
 			modifier = {
-				stability_weekly = 0.002
+			    production_speed_infrastructure_factor = 0.05
 			}
 		}
 
@@ -799,9 +815,9 @@ ideas = {
 				always = yes
 			}
 
-			modifier = {
-				stability_weekly = 0.002
-                production_speed_buildings_factor = 0.1
+			modifier = {  
+			    production_speed_infrastructure_factor = 0.05
+                production_speed_buildings_factor = 0.05
 			}
 		}
 
@@ -820,9 +836,8 @@ ideas = {
 			}
 
 			modifier = {
-			    stability_weekly = 0.002
                 production_speed_buildings_factor = 0.1
-				production_speed_infrastructure_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
 			}
 		}
 
@@ -842,8 +857,7 @@ ideas = {
 			}
 
 			modifier = {
-			    stability_weekly = 0.002
-				production_speed_infrastructure_factor = 0.05
+                production_speed_infrastructure_factor = 0.1
                 production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
@@ -1314,7 +1328,7 @@ ideas = {
 			}
 
 			available = {
-			    has_completed_focus = SPA_join_the_axis
+			    has_completed_focus = SPA_axis
 			}
 			
 			traits = { falangist_syndicalist }

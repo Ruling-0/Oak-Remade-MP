@@ -12,7 +12,6 @@ add_ideas = {
 	POR_man1
 	POR_eco1
 	no_spies_idea
-	POR_german_trading
 	POR_aid1
 	POR_fuel
 }

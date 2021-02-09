@@ -632,7 +632,7 @@ focus = {
 ######
 #Repay Axis debts
 	focus = {
-		id = SPA_join_the_axis
+		id = SPA_axis
 		available = {
 			SPR = {
 				has_civil_war = no
@@ -672,14 +672,14 @@ focus = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_join_the_axis }
+		prerequisite = { focus = SPA_axis }
 		prerequisite = { focus = SPA_national_recovery }
 		mutually_exclusive = { focus = SPA_autarky focus = SPA_the_stabilization_plan }
 
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 1
-		relative_position_id = SPA_join_the_axis
+		relative_position_id = SPA_axis
 		cost = 10
 
 		available_if_capitulated = yes
@@ -866,6 +866,7 @@ technology = construction4
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		    add_ideas = SPA_italian_shipbuilding_expertise
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -941,7 +942,21 @@ technology = construction4
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = SPA_the_duty_to_work
-			remove_ideas = SPA_recovering_from_civil_war_3
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1084,7 +1099,7 @@ technology = construction4
 		icon = GFX_goal_generic_oil_refinery
 		x = 3
 		y = 1
-		relative_position_id = SPA_join_the_axis
+		relative_position_id = SPA_axis
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1208,7 +1223,6 @@ technology = construction4
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-            remove_ideas = SPA_recovering_from_civil_war_3
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1549,7 +1563,7 @@ technology = construction4
 
 #apponit pro allies foreign minister
 	focus = {
-		id = SPA_join_the_allies
+		id = SPA_allies
 		available = {
 			SPR = {
 				has_civil_war = no
@@ -1593,13 +1607,13 @@ technology = construction4
 		continue_if_invalid = no
 		bypass = {
 		}
-		prerequisite = { focus = SPA_join_the_allies }
+		prerequisite = { focus = SPA_allies }
 		prerequisite = { focus = SPA_national_recovery }
 
 		icon = GFX_goal_generic_neutrality_focus
 		x = 0
 		y = 1
-		relative_position_id = SPA_join_the_allies
+		relative_position_id = SPA_allies
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1799,7 +1813,6 @@ technology = construction4
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-		    remove_ideas = SPA_recovering_from_civil_war_3
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_3
 				add_idea = SPA_national_recovery_4
