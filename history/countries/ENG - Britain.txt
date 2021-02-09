@@ -139,6 +139,7 @@ add_ideas = {
 	george_v
 	ENG_economy
 	refinery_idea
+	POR_aid3
 }
 set_convoys = 480
 
