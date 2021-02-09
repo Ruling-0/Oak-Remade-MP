@@ -2512,7 +2512,6 @@ focus_tree = {
 					heavy_fighter_1940 = 1
 			    }
 			}
-			add_political_power = 150
 			swap_ideas = {
 				remove_idea = POR_estado_novo_4
 				add_idea = POR_estado_novo_5	
