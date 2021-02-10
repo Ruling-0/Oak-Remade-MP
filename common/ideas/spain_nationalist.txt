@@ -4,7 +4,7 @@ ideas = {
 	
 	    SPA_spanish_civil_war_industry = {
 
-			picture = spanish_civil_war
+			picture = generic_goods_red_bonus
 
 		    allowed = {
 				original_tag = SPR
@@ -20,7 +20,23 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
-	
+		SPA_german_trading = {
+			allowed = {
+			    original_tag = SPR
+				always = no
+			}
+			allowed_civil_war = {
+				tag = SPR
+			}
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+			
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.5
+			}
+		}	
         isolationism = {
 
 			picture = generic_pp_unity_bonus

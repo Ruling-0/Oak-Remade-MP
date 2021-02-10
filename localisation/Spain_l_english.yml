@@ -1,4 +1,6 @@
 ﻿l_english:
+ SPA_german_trading:0 "German Influence"
+ SPA_german_trading_desc:0 "Germany's want and need over our production of tungsten is undeniable. Let us satisfy their needs less we anger them." 
  SPR_Industry_focus:0 "Expand Civilian Industry"
  SPR_Industry_focus_desc:0 "To boost our economy we should encourage the construction of more civilian factories. In times of need these can be taken over by the state and used to build military factories, or even get converted into one!"
  SPR_Industry_focus_short_desc:0 "Expand civilian industry"
