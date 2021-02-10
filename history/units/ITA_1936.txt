@@ -111,7 +111,7 @@ units = {
 
 	division= {	
 		name = "4a Divisione di Fanteria 'Livorno'"
-		location = 11721
+		location = 9904
 		division_template = "Divisione di Fanteria"		# "Semi-Mountain" (less trained & equipped than Alpina)
 		start_experience_factor = 0.3
 	}
@@ -120,7 +120,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		} 
-		location = 11721 
+		location = 9904 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.5 
 	} 
@@ -129,13 +129,13 @@ units = {
 	# III Corpo d'Armata #
 	division= {	
 		name = "3a Divisione di Fanteria 'Ravenna'"
-		location = 11891
+		location = 9904
 		division_template = "Divisione di Fanteria"		# "Semi-Mountain" (less trained & equipped than Alpina)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "6a Divisione di Fanteria 'Cuneo'"
-		location = 11891
+		location = 9904
 		division_template = "Divisione di Fanteria"		# "Semi-Mountain" (less trained & equipped than Alpina)
 		start_experience_factor = 0.3
 	}
@@ -143,7 +143,7 @@ units = {
 	# Location changed to Somaliland, the ITA Troops are insufficient there and get overran by Ethiopia, wiki says they had a number of armored cars
 	division= {	
 		name = "1° Raggruppamento Celere"
-		location = 2063
+		location = 9904
 		division_template = "Divisione Celere"
 		start_experience_factor = 0.2
 		
@@ -157,14 +157,14 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}  
-		location = 9738 
+		location = 9904 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.5 
 	} 
 	# I Corpo d'Armata #
 	division= {	
 		name = "1a Divisione di Fanteria 'Superga'"
-		location = 6780
+		location = 9904
 		division_template = "Divisione di Fanteria"		# "Semi-Mountain" (less trained & equipped than Alpina)
 		start_experience_factor = 0.3
 	}
@@ -173,20 +173,20 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}  
-		location = 6780 
+		location = 9904 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.5 
 	} 
 	# IV Corpo d'Armata #
 	division= {	
 		name = "2a Divisione di Fanteria 'Sforzesca'"
-		location = 611
+		location = 9904
 		division_template = "Divisione di Fanteria"		# "Semi-Mountain" (less trained & equipped than Alpina)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "7a Divisione di Fanteria 'Lupi di Toscana'"
-		location = 611
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 	}
@@ -196,7 +196,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 201
 		}
-		location = 611
+		location = 9904
 		division_template = "Divisione Di Guarnigione"
 		start_experience_factor = 0.1
 	}
@@ -206,7 +206,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 202
 		}
-		location = 6780
+		location = 9904
 		division_template = "Divisione Di Guarnigione"
 		start_experience_factor = 0.1
 	}
@@ -216,7 +216,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 203
 		}
-		location = 6788
+		location = 9904
 		division_template = "Divisione Di Guarnigione"
 		start_experience_factor = 0.1
 	}
@@ -236,7 +236,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 205
 		}
-		location = 819
+		location = 9904
 		division_template = "Divisione Di Guarnigione"
 		start_experience_factor = 0.1
 	}
@@ -246,7 +246,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 206
 		}
-		location = 11837
+		location = 9904
 		division_template = "Divisione Di Guarnigione"
 		start_experience_factor = 0.1
 	}
@@ -256,7 +256,7 @@ units = {
 	# V Corpo d'Armata #
 	division= {	
 		name = "9a Divisione di Fanteria 'Pasubio'"
-		location = 11735
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 		
@@ -266,7 +266,7 @@ units = {
 	# VI Corpo d'Armata #
 	division= {	
 		name = "8a Divisione di Fanteria 'Po'"
-		location = 628
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 		
@@ -277,13 +277,13 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Alpina 'Julia'" 
-		location = 628 
+		location = 9904 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.5 
 	} 
 	division= {	
 		name = "2° Raggruppamento Celere"
-		location = 11014
+		location = 9904
 		division_template = "Divisione Celere"
 		start_experience_factor = 0.2
 		
@@ -293,19 +293,19 @@ units = {
 	# Corpo d'Armata Celere #
 	division= {	
 		name = "1a Divisione Celere 'Eugenio di Savoia'"
-		location = 11584
+		location = 9904
 		division_template = "Divisione Celere"	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "2a Divisione Celere 'Emanuele Filiberto'"
-		location = 11584
+		location = 9904
 		division_template = "Divisione Celere"	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "3a Divisione Celere 'Principe Amedeo'"
-		location = 11584
+		location = 9904
 		division_template = "Divisione Celere"	
 		start_experience_factor = 0.3
 	}
@@ -314,7 +314,7 @@ units = {
 	# VII Corpo d'Armata #
 	division= {	
 		name = "20a Divisione di Fanteria 'Friuli'"
-		location = 4159
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 		
@@ -322,7 +322,7 @@ units = {
 	}
 	division= {	
 		name = "25a Divisione di Fanteria 'Bologna'"
-		location = 10074
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 		
@@ -334,7 +334,7 @@ units = {
 	# Subordinate to Theatre #
 	division= {	
 		name = "7a Divisione CC.NN. 'Cirene'"
-		location = 1149
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.1
 		
@@ -345,13 +345,13 @@ units = {
 	# I Corpo d'Armata dell'A.O.I. # First Corps, led by Ruggero Santini
 	division= {	
 		name = "26a Divisione di Fanteria 'Assietta'" #Formed as binary in 1935
-		location = 12723
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "30a Divisione di Fanteria 'Sabauda'" #Formed as three-regimented, but one regiment was semi-motorized, and moved to separate group in March 1936, so representing as binary
-		location = 12723
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.35
 
@@ -361,13 +361,13 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		} #  "5a Divisione Alpina 'Pusteria'" 
-		location = 12723 
+		location = 9904 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.5 
 	} 
 	division= {	
 		name = "4a Divisione CC.NN. '3 Gennaio'"
-		location = 12723
+		location = 9904
 		division_template = "Divisione di Fanteria"		# CCNN division
 		start_experience_factor = 0.25
 
@@ -377,19 +377,19 @@ units = {
 	# II Corpo d'Armata dell'A.O.I. #2nd Corps, led by Pietro Maravigna
 	division= {	
 		name = "19a Divisione di Fanteria 'Gavinana'" #Demobilized in July 1936, remobilized later, 3-regiment during Ethiopian war, 'mountain infantry'
-		location = 12766
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.35
 	}
 	division= {	
 		name = "24a Divisione di Fanteria 'Gran Sasso'" #Later Pinerolo, 3-regiment during Ethiopian war, later 2-regiment
-		location = 12766
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "3a Divisione CC.NN. '21 Aprile'"
-		location = 12766
+		location = 9904
 		division_template = "Divisione di Fanteria"		# CCNN division
 		start_experience_factor = 0.25
 
@@ -400,12 +400,12 @@ units = {
 	division= {	
 		name = "27a Divisione di Fanteria 'Sila'" #Later semi-mot division Brescia, three-regiment division in Ethiopia
 		division_template = "Divisione di Fanteria"	
-		location = 8043
+		location = 9904
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "1a Divisione CC.NN. '23 Marzo'"
-		location = 8043
+		location = 9904
 		division_template = "Divisione di Fanteria"		# CCNN division
 		start_experience_factor = 0.25
 
@@ -414,20 +414,20 @@ units = {
 	# IV Corpo d'Armata dell'A.O.I. #
 	division= {	
 		name = "5a Divisione di Fanteria 'Cosseria'" #Raised as binary before reorganisation in 1938
-		location = 8043
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.25
 	}
 	division= {	
 		name = "2a Divisione CC.NN. '28 Ottobre'"
-		location = 8043
+		location = 9904
 		division_template = "Divisione di Fanteria"		# CCNN division
 		start_experience_factor = 0.25
 
 	}
 	division= {	
 		name = "5a Divisione CC.NN. '1 Febbraio'"
-		location = 8043
+		location = 9904
 		division_template = "Divisione di Fanteria"		# CCNN division
 		start_experience_factor = 0.25
 
@@ -436,13 +436,13 @@ units = {
 	# Corpo d'Armata Eritreo #
 	division= {	
 		name = "1a Divisione Coloniale 'Eritrea'"
-		location = 12766
+		location = 9904
 		division_template = "Divisione Coloniale"		#Askari division
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 	}
 	division= {	
 		name = "2a Divisione Coloniale 'Eritrea'"
-		location = 12766
+		location = 9904
 		division_template = "Divisione Coloniale"		#Askari division
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 	}
@@ -454,31 +454,31 @@ units = {
 	# Corpo d'Armata Libico #
 	division= {	
 		name = "29a Divisione di Fanteria 'Peloritana'" #Three-regiment division in Ethiopia Oct. 1935
-		location = 11014
+		location = 9904
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "1a Divisione Coloniale 'Libia'" #Arab / Libyan auxillary division
-		location = 2063
+		location = 9904
 		division_template = "Divisione Coloniale"		
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 	}
 	division= {	
 		name = "Battaglioni Dubat del Somaliland" #Refers to unattached Somalian batallions under Graziani
-		location = 1964
+		location = 9904
 		division_template = "Divisione Coloniale"		
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 	}
 	division= {	
 		name = "Comando Regione di Ogaden" #Refers to Somalian border command under Luigi Frusci
-		location = 2020
+		location = 9904
 		division_template = "Divisione Coloniale"		
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 	}
 	division= {	
 		name = "6a Divisione CC.NN. 'Tevere'"
-		location = 2063
+		location = 9904
 		division_template = "Divisione Coloniale"
 		start_experience_factor = 0.15
 	}
@@ -489,7 +489,7 @@ units = {
 ### Air Wings ###
 air_wings = {
 	### 1a Squadra Aerea -- Milan/Turin
-	158 = { 
+	2 = { 
 		# 2a Divisione Aerea 'Borea'
 		fighter_equipment_1934 = {
 			owner = "ITA" 
@@ -504,7 +504,7 @@ air_wings = {
 	}
 
 	### 2a Squadra Aerea -- Palermo
-	115 = {
+	2 = {
 		# 1a Divisione Aerea 'Aquila'
 		fighter_equipment_1934 = {
 			owner = "ITA" 
@@ -532,7 +532,7 @@ air_wings = {
 	}
 
 	### 4a Squadra Aerea -- Bari
-	156 = {
+	2 = {
 		# 9a Divisione Aerea 'Leone'
 		nav_bomber_equipment_1936 = {
 			owner = "ITA" 
@@ -542,7 +542,7 @@ air_wings = {
 
 
 	### Commando Aeronautica Libia -- Tripoli
-	448 = {
+	2 = {
 		tac_bomber_equipment_1934 =  {
 			owner = "ITA" 
 			amount = 50
@@ -550,7 +550,7 @@ air_wings = {
 	}
 
 	### Commando Aeronautica Africa Orientale -- Eritrea
-	550 = {
+	2 = {
 		fighter_equipment_1934 =  {
 			owner = "ITA" 
 			amount = 80

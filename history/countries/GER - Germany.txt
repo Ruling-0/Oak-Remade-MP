@@ -146,8 +146,8 @@ create_import = {
 
 create_import = {
 	resource = tungsten
-	amount = 23
-	exporter = POR
+	amount = 8
+	exporter = SPR
 }
 
 set_politics = {

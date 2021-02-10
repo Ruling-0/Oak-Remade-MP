@@ -21,7 +21,7 @@ ideas = {
 		}
 		POR_german_trading = {
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1

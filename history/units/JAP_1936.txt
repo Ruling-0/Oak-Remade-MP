@@ -167,20 +167,20 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 12421 #Asahigawa
+		location = 1182 #Asahigawa
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "Ominato Kichi Kaiheidan"
-		location = 9859 #Ominato Naval Base
+		location = 1182 #Ominato Naval Base
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 		
 	}
 	division = {
 		name = "Chishima Kichi Shubitai"
-		location = 1399 #Shumshu
+		location = 1182 #Shumshu
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
@@ -189,7 +189,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 201
 		}
-		location = 12446 #Toyohara
+		location = 1182 #Toyohara
 		division_template = "Dokuritsu Konsei Ryodan"
 		start_experience_factor = 0.3
 	}
@@ -200,7 +200,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7087 #Shizuoka
+		location = 1182 #Shizuoka
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -215,13 +215,13 @@ units = {
 	}
 	division = {
 		name = "Osaka Kichi Kaiheidan"
-		location = 7072 #Osaka
+		location = 1182 #Osaka
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Yokusaka Tokubetsu Rikusentai"
-		location = 9998 #Yokosuka
+		location = 1182 #Yokosuka
 		division_template = "Rikusentai"
 		start_experience_factor = 1.0
 	}
@@ -232,19 +232,19 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 9950 #Nagasaki
+		location = 1182 #Nagasaki
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "Kure Kichi Kaiheidan"
-		location = 1092 #Hiroshima
+		location = 1182 #Hiroshima
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1		
 	}
 	division = {
 		name = "Sasebo Kichi Kaiheidan"
-		location = 9950 #Sasebo/Nagasaki
+		location = 1182 #Sasebo/Nagasaki
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
@@ -253,7 +253,7 @@ units = {
 	#Taiwan Homengun - Taiwan Army
 	division = {
 		name = "Taiwan Kichi Shubitai"
-		location = 7186 #Taipei
+		location = 1182 #Taipei
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
@@ -264,7 +264,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 7186 #Taipei
+		location = 1182 #Taipei
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -273,7 +273,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 7186 #Taipei
+		location = 1182 #Taipei
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -282,7 +282,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 7186 #Taipei
+		location = 1182 #Taipei
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -294,7 +294,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 4052 #Pyongyang
+		location = 1182 #Pyongyang
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -303,13 +303,13 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 7125 #Seoul
+		location = 1182 #Seoul
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "Chinkai Kichi Kaiheidan"
-		location = 4056 #Pusan
+		location = 1182 #Pusan
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
@@ -319,7 +319,7 @@ units = {
 
 	division = {
 		name = "Okinawa Kichi Shubitai"
-		location = 11932 #Naha
+		location = 1182 #Naha
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
@@ -328,19 +328,19 @@ units = {
 	#1 Konkyochi Ichigun
 	division = {
 		name = "Saipan Kichi Shubitai"
-		location = 3995 #Saipan
+		location = 1182 #Saipan
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Iwoto Kichi Shubitai"
-		location = 13025 #Iwo Jima
+		location = 1182 #Iwo Jima
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Minamitorishima Kichi Shubitai"
-		location = 13026 #Marcus Island
+		location = 1182 #Marcus Island
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
@@ -348,31 +348,31 @@ units = {
 	#2 Konkyochi Ichigun
 	division = {
 		name = "Yappu Kichi Shubitai"
-		location = 13028 #Yap
+		location = 1182 #Yap
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Palau Kichi Shubitai"
-		location = 4357 #Palau
+		location = 1182 #Palau
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Truk Kichi Shubitai"
-		location = 2489 #Truk
+		location = 1182 #Truk
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Satawan Kichi Shubitai"
-		location = 13035 #Satawan
+		location = 1182 #Satawan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1		
 	}
 	division = {
 		name = "Ulithi Kichi Shubitai"
-		location = 13029 #Ulithi
+		location = 1182 #Ulithi
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
@@ -380,31 +380,31 @@ units = {
 	#3 Konkyochi Ichigun
 	division = {
 		name = "Kwajalein Kichi Shubitai"
-		location = 13041 #Kwajalein
+		location = 1182 #Kwajalein
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Eniwetok Kichi Shubitai"
-		location = 13046 #Eniwetok
+		location = 1182 #Eniwetok
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Ponape Kichi Shubitai"
-		location = 13036 #Ponape
+		location = 1182 #Ponape
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Mili Kichi Shubitai"
-		location = 13040 #Mili
+		location = 1182 #Mili
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Maleolap Kichi Shubitai"
-		location = 13043 #Maleolap
+		location = 1182 #Maleolap
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1		
 	}
@@ -414,19 +414,19 @@ units = {
 
 	division = {
 		name = "Manshu Tetsudo Shubitai" # Manchuria Railway Guard
-		location = 11771 #Mukden
+		location = 1182 #Mukden
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Kantogun Shureibu Keibitai"
-		location = 4572 #Hsinking
+		location = 1182 #Hsinking
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Ryojun Kichi Shubitai"
-		location = 1150 #Dalian
+		location = 1182 #Dalian
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 	}
@@ -435,7 +435,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 3944 #Near Changkufeng Lake
+		location = 1182 #Near Changkufeng Lake
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -444,19 +444,19 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 3843 #Eastern Manchuria
+		location = 1182 #Eastern Manchuria
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	#Hoppou Manchuko Homengun - Northern Manchukuo Army
 	division = {
 		name = "1 Dokuritsu Shubirentai"
-		location = 7743
+		location = 1182
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 	}
 	division = {
 		name = "2 Dokuritsu Shubirentai"
-		location = 10541
+		location = 1182
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 	}
@@ -465,7 +465,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10612
+		location = 1182
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -474,7 +474,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9998
+		location = 1182
 		division_template = "Rikusentai"
 		start_experience_factor = 1.0
 	}
@@ -482,25 +482,25 @@ units = {
 	# 5 Homengun - 5th Field Army
 	division = {
 		name = "3 Dokuritsu Shubirentai"
-		location = 10521
+		location = 1182
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1		
 	}
 	division = {
 		name = "4 Dokuritsu Shubirentai"
-		location = 10368
+		location = 1182
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1		
 	}
 	division = {
 		name = "5 Dokuritsu Shubirentai"
-		location = 10698
+		location = 1182
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1		
 	}
 	division = {
 		name = "6 Dokuritsu Shubirentai"
-		location = 12500
+		location = 1182
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1		
 	}
@@ -509,7 +509,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 1693
+		location = 1182
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -518,7 +518,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 7569
+		location = 1182
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -529,7 +529,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 101
 		}
-		location = 9998
+		location = 1182
 		division_template = "Rikusentai"
 		start_experience_factor = 1.0
 	}
@@ -538,7 +538,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 102
 		}
-		location = 9998
+		location = 1182
 		division_template = "Rikusentai"
 		start_experience_factor = 0.1.0
 	}
@@ -547,7 +547,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 103
 		}
-		location = 7812
+		location = 1182
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
@@ -557,7 +557,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 104
 		}
-		location = 9998
+		location = 1182
 		division_template = "Rikusentai"
 		start_experience_factor = 1.0
 	}
@@ -566,7 +566,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 105
 		}
-		location = 10429
+		location = 1182
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
@@ -576,7 +576,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 106
 		}
-		location = 10429
+		location = 1182
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
@@ -586,7 +586,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 107
 		}
-		location = 3978
+		location = 1182
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
@@ -596,7 +596,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 108
 		}
-		location = 3978
+		location = 1182
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
@@ -610,7 +610,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 3955 #East Hebei Autonomous Council
+		location = 1182 #East Hebei Autonomous Council
 		division_template = "Jidousha Shidan"
 		start_experience_factor = 0.3
 	}
@@ -619,7 +619,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3900 #East Hebei Autonomous Council
+		location = 1182 #East Hebei Autonomous Council
 		division_template = "Dokuritsu Konsei Ryodan"
 		start_experience_factor = 0.3
 	}
@@ -628,7 +628,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 11822 #East Hebei Autonomous Council
+		location = 1182 #East Hebei Autonomous Council
 		division_template = "Dokuritsu Konsei Ryodan"
 		start_experience_factor = 0.3
 	}
@@ -640,7 +640,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 881
+		location = 1182
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -649,7 +649,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 9768
+		location = 1182
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -694,7 +694,7 @@ air_wings = {
 		
 	}
 	# 2 Hikodan -- Dalian
-	716 = {
+	282 = {
 		
 		fighter_equipment_1936 = {
 			owner = "JAP"
@@ -719,7 +719,7 @@ air_wings = {
 		}
 	}
 	# 3 Hikodan -- Taiwan
-	524 = {
+	282 = {
 		
 		fighter_equipment_1936 = {
 			owner = "JAP"
@@ -738,7 +738,7 @@ air_wings = {
 	}
 	### IJN Air Forces ###
 	# 1 Rengo Kokutai -- Taiwan
-	524 = {
+	282 = {
 		
 		fighter_equipment_1936 = {
 			owner = "JAP"
