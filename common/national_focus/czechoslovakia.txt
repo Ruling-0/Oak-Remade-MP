@@ -1259,9 +1259,7 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = {
-				is_puppet_of = GER
-			}
+			CZE = { is_subject_of = GER }
 		}
 
 		bypass = {

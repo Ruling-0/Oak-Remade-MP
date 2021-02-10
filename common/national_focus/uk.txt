@@ -7243,7 +7243,7 @@ focus_tree = {
 			NOT = { has_war_with = POL }
 			OR = {
 				NOT = { country_exists = CZE }
-				CZE = { is_puppet_of = GER }
+				CZE = { is_subject_of = GER }
 			}
 		}
 		completion_reward = {

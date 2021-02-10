@@ -2413,6 +2413,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			transfer_state = 331 
+		    transfer_state = 332
    			modify_tech_sharing_bonus = {
          		id = commonwealth_research
          		bonus = 0.03
