@@ -5168,16 +5168,3 @@ FIN_further_artillery_support_desc:0 "Artillery support has proven invaluable to
  ETH_why_we_fight_desc:0 "Glory, guts, nation, homeland."
  ETH_technology_sharing:0 "Technology"
  ETH_technology_sharing_desc:0 "Growth in the technology sector will help us in the long term."
- 
- ##Exile##
- RAJ_lost1:0 "Back from the Grave"
- RAJ_lost1_desc:0 "We have been defeated but we are still not out of this war yet."
- RAJ_lost2:0 "American Industry Aid"
- RAJ_lost2_desc:0 "Congress and our government in exile have made a deal to help recover industrially. In this deal, the USA will provide industrial support to our nation as long as we keep on fighting."
- RAJ_lost3:0 "Foreign Support"
- RAJ_lost3_desc:0 "We are recieving foreign support to help rebuild  our army. With foreign manpower heling fill our ranks, we should be able to deploy units shortly."
- RAJ_lost4:0 "Contact the Portuguese"
- RAJ_lost4_desc:0 "We have heard that the Portuguese are supplying arms to everyone in this conflict. Lets contact them for a shipments of arms to help get our starting forces supplied."
- RAJ_lost5:0 "We Shall Return"
- RAJ_lost5_desc:0 "We will return to our homeland and liberate it from our oppressors. We must product all the equipment we can to prepare for our liberation."
- 

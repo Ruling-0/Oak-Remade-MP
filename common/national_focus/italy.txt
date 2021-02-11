@@ -806,7 +806,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction = yes
+			GER = { has_full_control_of_state = 4 }
 		}
 
 		bypass = {
