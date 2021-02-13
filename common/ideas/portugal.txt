@@ -31,7 +31,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 6
+				send_volunteer_size = 4
 				air_volunteer_cap = 750
 				lend_lease_tension = -1
 				join_faction_tension = -1
@@ -53,7 +53,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 12
+				send_volunteer_size = 8
 				air_volunteer_cap = 1200
 				lend_lease_tension = -1
 				join_faction_tension = -1
