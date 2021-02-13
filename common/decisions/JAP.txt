@@ -903,13 +903,13 @@ operations = {
 		    MAN = {
    		        modify_tech_sharing_bonus = {
          	    	id = axis_research
-         	    	bonus = 0.15 # we get 10% higher bonus from this group
+         	    	bonus = 0.05 # we get 10% higher bonus from this group
     		    }
 		    }
 		    SIA = {
    		        modify_tech_sharing_bonus = {
          	    	id = axis_research
-         	    	bonus = 0.15 # we get 10% higher bonus from this group
+         	    	bonus = 0.05 # we get 10% higher bonus from this group
     		    }
 		    }	
 		}
