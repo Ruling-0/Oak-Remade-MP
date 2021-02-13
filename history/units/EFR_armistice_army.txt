@@ -41,7 +41,7 @@ units = {
 	
 	division = {
 		name = "2. Division Militaire"
-		location = 6613  # Lyon
+		location = 641  # Lyon
 		division_template = "Division d'Infanterie Vichy"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.5
@@ -49,7 +49,21 @@ units = {
 
 	division = {
 		name = "3. Division Militaire"
-		location = 6613  # Marseille
+		location = 641  # Marseille
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "4. Division Militaire"
+		location = 641  # Marseille
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "5. Division Militaire"
+		location = 641  # Marseille
 		division_template = "Division d'Infanterie Vichy"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.5

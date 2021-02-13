@@ -3,7 +3,6 @@
 oob = "EFR_1936"
 
 set_research_slots = 5
-add_political_power = 300
 set_technology = {
 	########## infantry ###########
 	infantry_weapons = 1 
@@ -153,8 +152,6 @@ set_popularities = {
 }
 
 add_ideas = {
-    war_economy
-	free_trade
 	limited_conscription
 	GER_gestapo_idea2
 }
@@ -181,7 +178,18 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = { ##available at the beginning - imprisonned when south is invaded then join De Gaulle
+create_field_marshal = {
+	name = "Maxime Weygand"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = { 
 	name = "Jean de Lattre de Tassigny"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { trickster }
@@ -192,49 +200,10 @@ create_corps_commander = { ##available at the beginning - imprisonned when south
 	logistics_skill = 5
 }
 
-#create_corps_commander = { #in prison until freed by focus
-#	name = "Alphonse Juin"
-#	picture = "Portrait_France_Alphonse_Juin.dds"
-#	traits = { panzer_leader  }
-#	skill = 4
-#}
-
-#create_field_marshal = { ##in prison for the whole war
-#	name = "Maurice Gamelin"
-#	picture = "Portrait_France_Maurice_Gamelin.dds"
-#	traits = { defensive_doctrine old_guard }
-#	skill = 2
-#}
-
-create_field_marshal = {
-	name = "Maxime Weygand"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine old_guard }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-#create_field_marshal = { ## Retired in 1940 due to age limit
-#	name = "Alphonse Georges"
-#	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-#	traits = { defensive_doctrine old_guard }
-#	skill = 3
-#}
-
-
-#create_corps_commander = { ## Escaped german prison in 1942
-#	name = "Henri Giraud"
-#	picture = "portrait_france_henri_giraud.dds"
-#	traits = {  trickster }
-#	skill = 3
-#}
 create_corps_commander = {
 	name = "Henri Dentz"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { career_officer }
+	traits = { }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -244,7 +213,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Charles Huntziger"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { old_guard }
+	traits = { }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -252,19 +221,18 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 create_navy_leader = {
-	name = "François Darlan"
-		picture = "Portrait_France_Francois_Darlan.dds"
+    name = "François Darlan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds" 
 	traits = { naval_lineage bold superior_tactician }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 3
+	defense_skill = 3
 	maneuvering_skill = 3
 	coordination_skill = 3
 }
-
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
-		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds" 
 	traits = { chief_engineer superior_tactician }
 	skill = 3
 	attack_skill = 2
@@ -272,26 +240,15 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 2
 }
-
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
-		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds" 
 	traits = { aviation_enthusiast }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
 	maneuvering_skill = 2
 	coordination_skill = 2
-}
-create_navy_leader = {
-	name = "Jean de Laborde"
-	picture = "Portrait_France_Jean_de_Laborde.dds"
-	traits = { naval_lineage aviation_enthusiast }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }

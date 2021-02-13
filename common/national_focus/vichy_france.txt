@@ -34,21 +34,20 @@ focus_tree = {
 			hidden_effect  {
 				load_oob = EFR_armistice_army
 				load_oob = EFR_fleet
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
+				every_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+						NOT = {
+							is_core_of = ROOT
+						}
+						NOT = {
+							is_on_continent = europe
+						}
 					}
-					NOT = {
-						is_on_continent = europe
-					}
+					add_compliance = 100
 				}
-				add_compliance = 100
-			}
 			}
 			custom_effect_tooltip = EFR_armistice_army_tt
-
 		}
 	}
 	focus = {
