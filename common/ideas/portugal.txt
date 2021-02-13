@@ -31,13 +31,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 12
-				air_volunteer_cap = 1000
+				send_volunteer_size = 6
+				air_volunteer_cap = 750
 				lend_lease_tension = -1
 				join_faction_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
-				special_forces_min = 120
+				special_forces_min = 100
 			} 
 		}
 		
@@ -53,13 +53,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 24
-				air_volunteer_cap = 2500
+				send_volunteer_size = 12
+				air_volunteer_cap = 1200
 				lend_lease_tension = -1
 				join_faction_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
-				special_forces_min = 265
+				special_forces_min = 150
 			}
         }	
 
@@ -80,7 +80,7 @@ ideas = {
 				lend_lease_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
-				send_volunteer_size = 5
+				send_volunteer_size = 2
 			} 
 		}		
 		
