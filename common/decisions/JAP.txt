@@ -878,6 +878,42 @@ political_actions = {
 }
 
 operations = {
+   JAP_sci = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = JAP			
+		}
+		visible = {
+			tag = JAP
+		}
+		available = {
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+		    add_to_tech_sharing_group = axis_research
+			MAN = { add_to_tech_sharing_group = axis_research }
+			SIA = { add_to_tech_sharing_group = axis_research }
+		    MAN = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = axis_research
+         	    	bonus = 0.15 # we get 10% higher bonus from this group
+    		    }
+		    }
+		    SIA = {
+   		        modify_tech_sharing_bonus = {
+         	    	id = axis_research
+         	    	bonus = 0.15 # we get 10% higher bonus from this group
+    		    }
+		    }	
+		}
+	}
    JAP_annex_man = {
 
 		icon = generic_political_discourse

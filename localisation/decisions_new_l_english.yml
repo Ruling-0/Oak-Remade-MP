@@ -19,6 +19,8 @@
  SOV_SPR_help:0 "Soviet help with Weapons"
  remove_mod_decision:0 "Hide Mod Decisions"
  remove_mod_decision_desc:0 "§RWARNING: THIS CAN'T BE UNDONE"	
+ GER_sci:0 "Form Faction Tech Sharing Group"
+ JAP_sci:0 "Form Faction Tech Sharing Group"
 
  FRA_war_on_pacifism:0 "War on Pacifism"
  FRA_war_on_pacifism_desc:0 "Having emerged victorious from the Great War at a terrible price, the people of France have no desire for a future conflict. Thus the army has developed a dangerously complacent attitude which has caused strategic developments to come slowly and with some reluctance."

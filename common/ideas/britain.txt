@@ -1987,11 +1987,8 @@ ideas = {
 			}
 
 			modifier = {
-				generate_wargoal_tension = -0.65
-				join_faction_tension = -0.50
-				lend_lease_tension = -0.25
-				send_volunteers_tension = -0.25
-				guarantee_tension = -0.10
+				lend_lease_tension = -0.5
+				send_volunteers_tension = -0.5
 			}
 
 			picture = FRA_scw_intervention_nationalists_focus

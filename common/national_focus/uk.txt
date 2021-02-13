@@ -2686,7 +2686,10 @@ focus_tree = {
 		available = { 
 			OR = {
 				ENG = {
-					has_completed_focus = general_rearmament_focus
+				    OR = {
+					    has_completed_focus = general_rearmament_focus
+					    has_idea = ENG_no_further_appeasement_idea
+					}
 				}
 				GER = {
 					num_of_naval_factories > 19

@@ -1984,31 +1984,6 @@ focus_tree = {
 			show_ideas_tooltip = BUL_stoycho_mushanov
 		}
 	}
-	
-	focus = {
-		id = BUL_military_secrets_sharing
-
-		prerequisite = { focus = BUL_power_to_the_tsar }
-
-		icon = GFX_goal_tfv_generic_tech_sharing
-		relative_position_id = BUL_power_to_the_tsar
-		x = 0
-		y = 2
-		cost = 7.16
-
-		available = {
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_to_tech_sharing_group = BUL_axis_research
-			GER = {add_to_tech_sharing_group = BUL_axis_research}
-			ITA = {add_to_tech_sharing_group = BUL_axis_research}
-			HUN = {add_to_tech_sharing_group = BUL_axis_research}
-			ROM = {add_to_tech_sharing_group = BUL_axis_research}
-			CZE = {add_to_tech_sharing_group = BUL_axis_research}
-		}
-	}
 
 	focus = {
 		id = BUL_condemn_macedonian_organizations
