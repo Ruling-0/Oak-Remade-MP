@@ -32,12 +32,10 @@ ideas = {
 			
 			modifier = {
 				send_volunteer_size = 4
-				air_volunteer_cap = 750
+				air_volunteer_cap = 600
 				lend_lease_tension = -1
-				join_faction_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
-				special_forces_min = 100
 			} 
 		}
 		
@@ -53,13 +51,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 8
-				air_volunteer_cap = 1200
+				send_volunteer_size = 6
+				air_volunteer_cap = 1000
 				lend_lease_tension = -1
-				join_faction_tension = -1
 				send_volunteers_tension = -1
 				send_volunteer_divisions_required = -1
-				special_forces_min = 150
 			}
         }	
 
@@ -226,6 +222,7 @@ ideas = {
 			modifier = {
 			    conscription = 0.01
 			    political_power_factor = 0.05
+				special_forces_min = 50
 			}
 		}
 		
