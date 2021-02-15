@@ -1081,7 +1081,7 @@ ideas = {
 				
 	
 				
-				traits = { navy_fleet_logistics_2 }
+				traits = { navy_submarine_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -1206,6 +1206,24 @@ ideas = {
 					factor = 1
 				}
 			}
+			
+			POR_francisco_da_costa_gomes = {
+	
+				picture = generic_air_europe_2
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+				traits = { air_bomber_interception_2 }
+
+				ledger = air
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}			
 			
 			POR_manuel_quintao_meireles = {
 				ledger = navy
@@ -1333,7 +1351,7 @@ ideas = {
                 cost = 50
 				
 				research_bonus = {
-					naval_equipment = 0.15
+					naval_equipment = 0.1
 				}
 				
 				traits = { sea_concern }
@@ -1497,7 +1515,7 @@ ideas = {
 				}
 				
 				research_bonus = {
-					industry = 0.15
+					industry = 0.1
 				}
 				
 				traits = { energy_concern }

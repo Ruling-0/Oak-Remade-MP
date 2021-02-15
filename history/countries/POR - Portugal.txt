@@ -98,6 +98,7 @@ set_technology = {
 	submarine_offensive = 1
 
 	air_superiority = 1
+	superior_firepower = 1
 	
 	USA_infrastructure_tech = 1
 }

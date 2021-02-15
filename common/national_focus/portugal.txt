@@ -2104,9 +2104,7 @@ focus_tree = {
 				    target = POR
 				    modifier = POR_helped_in_civil_war
 				}
-				add_manpower = 25000
 			}			
-			add_manpower = -25000
 		}
 	}
 	
@@ -2133,6 +2131,7 @@ focus_tree = {
 			army_experience = 20
 			air_experience = 20
 			FIN = {
+			    add_manpower = 10000
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
@@ -2140,6 +2139,7 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
 			}
+			add_manpower = -10000
 		}
 	}
 	
@@ -2170,6 +2170,7 @@ focus_tree = {
 			army_experience = 20
 			air_experience = 20
 			SPR = {
+			    add_manpower = 25000
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = POR }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = POR }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = POR }
@@ -2177,6 +2178,7 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = horse_equipment_0 amount = 200 producer = POR }
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 100 producer = POR }
 			}
+			add_manpower = -25000
 		}
 	}
 

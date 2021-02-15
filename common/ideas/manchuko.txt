@@ -20,8 +20,6 @@ ideas = {
 			modifier = { 
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_synthetic_rubber_refinery_factor = 0.1
-		        fuel_gain_factor = 0.15
-		        fuel_gain_factor_from_states = 0.15
 		    }
 				
 		}

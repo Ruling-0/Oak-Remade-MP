@@ -10,8 +10,8 @@
  FRA_naval:0 "Peaceful Seas"
  FRA_naval_desc:0 "France has no need for a large navy at this time."
  
- MAN_resource:0 "Resource Bitch"
- MAN_resource_desc:0 "Guess what your job is."
+ MAN_resource:0 "Resource Minor"
+ MAN_resource_desc:0 "Part of your job is to build resources to support the war effort."
 
  GER_prepare_for_the_inevitable:0 "German techinical Expertise"
  GER_prepare_for_the_inevitable:0 "Germany has sent over engineers to help us in making our production lines are more efficient."
