@@ -38,3 +38,15 @@
  ETH_lost4_desc:0 "We have heard that the Portuguese are supplying arms to everyone in this conflict. Lets contact them for a shipments of arms to help get our starting forces supplied."
  ETH_lost5:0 "We Shall Return"
  ETH_lost5_desc:0 "We will return to our homeland and liberate it from our oppressors. We must product all the equipment we can to prepare for our liberation."
+ 
+ FIN_lost1:0 "Back from the Grave"
+ FIN_lost1_desc:0 "We have been defeated but we are still not out of this war yet."
+ FIN_lost2:0 "German Industry Aid"
+ FIN_lost2_desc:0 "The Further and our government in exile have made a deal to help recover industrially. In this deal, Germany will provide industrial support to our nation as long as we keep on fighting."
+ FIN_lost3:0 "Foreign Support"
+ FIN_lost3_desc:0 "We are recieving foreign support to help rebuild  our army. With foreign manpower heling fill our ranks, we should be able to deploy units shortly."
+ FIN_lost4:0 "Contact the Portuguese"
+ FIN_lost4_desc:0 "We have heard that the Portuguese are supplying arms to everyone in this conflict. Lets contact them for a shipments of arms to help get our starting forces supplied."
+ FIN_lost5:0 "We Shall Return"
+ FIN_lost5_desc:0 "We will return to our homeland and liberate it from our oppressors. We must product all the equipment we can to prepare for our liberation."
+ 
