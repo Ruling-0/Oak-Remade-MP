@@ -6,8 +6,12 @@ operations = {
 		allowed = {
 		    OR = {
 			    tag = POR	
-                tag = SPR
+                tag = PAR
             }			
+		}
+		
+		visible = {
+			is_ai = no
 		}
 
 		available = {
