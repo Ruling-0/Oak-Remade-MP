@@ -65,12 +65,9 @@ ideas = {
 			}
 		
 			allowed_civil_war = {
+			    tag = SPR
 			}
 			removal_cost = -1
-			
-			rule = { 
-				can_send_volunteers = yes
-			}
 			
 			modifier = {
 				lend_lease_tension = -1

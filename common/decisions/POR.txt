@@ -4,7 +4,10 @@ operations = {
 		icon = generic_bureaucracy
 
 		allowed = {
-			tag = POR			
+		    OR = {
+			    tag = POR	
+                tag = SPR
+            }			
 		}
 
 		available = {
@@ -20,6 +23,15 @@ operations = {
 			set_rule = { 
 			    can_create_factions = yes
 				can_send_volunteers = yes
+			}
+			if = {
+				limit = {
+					tag = POR 
+				}
+				add_ideas = POR_aid1
+			}
+			else = {
+				add_ideas = POR_aid3
 			}
 		}		
 	}
