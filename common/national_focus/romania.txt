@@ -2161,9 +2161,7 @@
 		}
 
 		available = {
-			HUN = {
-				has_capitulated = yes 
-			}
+		    ROOT = { has_full_control_of_state = 43 }
 		}
 
 		bypass = {
@@ -2249,10 +2247,8 @@
 			factor = 9
 		}
 
-		available = {
-			BUL = {
-				has_capitulated = yes 
-			}
+		available = { 
+		    ROOT = { has_full_control_of_state = 48 }
 		}
 
 		bypass = {

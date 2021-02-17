@@ -1322,10 +1322,10 @@ operations = {
               transfer_troops = yes
 			}
 			every_state = {
-				limit = { is_controlled_by = PHI }
+			    limit = { is_core_of = PHI }
 				set_resistance = 0
 				set_compliance = 100
-			}	
+			}
 		}		
 	}
 }
