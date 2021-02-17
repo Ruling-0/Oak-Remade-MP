@@ -8,7 +8,12 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					FROM = { tag = JAP }
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+						} 
+					}
 					ROOT = { 
 						OR = { 
 							is_in_faction_with = USA 
@@ -42,7 +47,12 @@ on_actions = {
 							tag = USA
 						}
 					}
-					ROOT = { tag = JAP }
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+						} 
+					}
 					FROM.FROM = {
 						has_state_flag = USA_controls
 					}
