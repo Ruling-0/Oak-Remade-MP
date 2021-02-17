@@ -2428,6 +2428,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = FRA_motorized_focus
 		cost = 7.16
+		
+		available_if_capitulated = yes
+	
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
