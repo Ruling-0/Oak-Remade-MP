@@ -99,9 +99,9 @@ focus_tree = {
 		available_if_capitulated = yes 
 
 		completion_reward = { 
-		add_equipment_to_stockpile = { producer = ITA  type = motorized_equipment amount = 5000 }
-			add_equipment_to_stockpile = { producer = ITA  type = light_tank_equipment_1934 amount = 1200 }
-			add_equipment_to_stockpile = { producer = GER  type = light_tank_equipment_1936 amount = 800 }
+		add_equipment_to_stockpile = { producer = ITA  type = motorized_equipment amount = 1500 }
+			add_equipment_to_stockpile = { producer = ITA  type = light_tank_equipment_1934 amount = 400 }
+			add_equipment_to_stockpile = { producer = GER  type = light_tank_equipment_1936 amount = 200 }
 		}
 	}
 	
@@ -155,8 +155,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_equipment_to_stockpile = { producer = ITA  type = artillery_equipment_1 amount = 2500 }	
-			add_equipment_to_stockpile = { producer = ITA  type = infantry_equipment_1 amount = 15000 }	
+			add_equipment_to_stockpile = { producer = ITA  type = artillery_equipment_1 amount = 1500 }	
+			add_equipment_to_stockpile = { producer = ITA  type = infantry_equipment_1 amount = 10000 }	
 			add_equipment_to_stockpile = { producer = ITA  type = support_equipment amount = 500 }				
 		}
 	}
@@ -232,7 +232,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 50000 }
+              add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 }
 		}
 	}	
 	
@@ -291,8 +291,8 @@ add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 50000 }
 		available_if_capitulated = yes
   
 		completion_reward = {
-			add_equipment_to_stockpile = { producer = ITA  type = infantry_equipment_1 amount = 25000 }	
-			add_equipment_to_stockpile = { producer = ITA  type = anti_tank_equipment_1 amount = 10000 }				
+			add_equipment_to_stockpile = { producer = ITA  type = infantry_equipment_1 amount = 10000 }	
+			add_equipment_to_stockpile = { producer = ITA  type = anti_tank_equipment_1 amount = 500 }				
 			add_equipment_to_stockpile = { producer = ITA  type = support_equipment amount = 1000 }				
 	
 		}
