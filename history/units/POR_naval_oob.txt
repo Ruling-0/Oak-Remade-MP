@@ -7,6 +7,11 @@
 			name = "The Invincible Aegir Fleet"			
 			location = 11805 # Lisbon	
 			# Heavy Group
+			ship = { name = "CV1" definition = carrier start_experience_factor = 0.4 equipment = { ship_hull_carrier_1 = { amount = 1 owner = POR version_name = "Reach Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1936 =  { owner = "POR" amount = 81 } # historical: 0
+				}
+			}
 			ship = { name = "SHBB1" pride_of_the_fleet = yes  definition = battleship start_experience_factor = 0.4 equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = POR version_name = "Dantooine Class" } } }
 			ship = { name = "BC1" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Kuat Class" } } }
 			ship = { name = "BC2" definition = battle_cruiser start_experience_factor = 0.4 equipment = { ship_hull_heavy_2 = { amount = 1 owner = POR version_name = "Kuat Class" } } }

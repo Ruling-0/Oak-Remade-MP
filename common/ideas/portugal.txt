@@ -1345,7 +1345,7 @@ ideas = {
 					has_dlc = "La Resistance"
 				}
 				
-                cost = 50
+                cost = 0
 				
 				research_bonus = {
 					naval_equipment = 0.1

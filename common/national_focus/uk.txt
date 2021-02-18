@@ -6542,14 +6542,14 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					D01 = { 
+					D04 = { 
 						OR = { 
 							has_government = fascism 
 							has_government = neutrality 
 						}
 					}
 				}				
-				D01 = {
+				D04 = {
 					add_ideas = ENG_arms_embargo
 			    }	
 			}
@@ -6568,14 +6568,14 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					D01 = { 
+					D04 = { 
 						OR = { 
 							has_government = democratic 
 							has_government = communism 
 						}
 					}				
 				}			
-				D01 = {
+				D04 = {
 					add_ideas = ENG_arms_embargo
 			    }	
 			}	
