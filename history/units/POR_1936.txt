@@ -307,16 +307,6 @@ units = {
 		division_template = "Divisão de Marines"
 		start_experience_factor = 0.4
 	}
-	division = { # "3a Divisão de Marines"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 9817
-		division_template = "Divisão de Marines"
-		start_experience_factor = 0.4
-	}
-	
 	# 2a Distrito Militar #
 	division = { # "1a Divisão de Montanha"
 		division_name = {
@@ -331,15 +321,6 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
-		}
-		location = 9817
-		division_template = "Divisão de Montanha"
-		start_experience_factor = 0.4
-	}
-	division = { # "3a Divisão de Montanha"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
 		}
 		location = 9817
 		division_template = "Divisão de Montanha"
@@ -364,42 +345,6 @@ units = {
 		division_template = "Panzer Division"
 		start_experience_factor = 0.4
 	}
-	division = { # "3a Brigada de Tanka"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 844
-		division_template = "Panzer Division"
-		start_experience_factor = 0.4
-	}
-	division = { # "Brigada de Bicycle"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 844
-		division_template = "Brigada de Bicycle"
-		start_experience_factor = 0.4
-	}
-	division = { # "2a Brigada de Bicycle"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 844
-		division_template = "Brigada de Bicycle"
-		start_experience_factor = 0.4
-	}
-	division = { # "3a Brigada de Bicycle"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 844
-		division_template = "Brigada de Bicycle"
-		start_experience_factor = 0.4
-	}
 }
 ### Aeronáutica Militar ###
 air_wings = {
@@ -409,28 +354,6 @@ air_wings = {
 			amount = 100
 		}
         start_experience_factor = 0.3
-		heavy_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 100
-		}
-        start_experience_factor = 0.3
-		heavy_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 100
-		}
-        start_experience_factor = 0.3
-		heavy_fighter_equipment_1936 = {
-			owner = "POR" 
-			amount = 100
-		}
-        start_experience_factor = 0.3
-	}	
-	179 = {
-		tac_bomber_equipment_1937 = {
-			owner = "POR" 
-			amount = 100
-		}
-		start_experience_factor = 0.3
 		tac_bomber_equipment_1937 = {
 			owner = "POR" 
 			amount = 100
@@ -438,10 +361,10 @@ air_wings = {
 		start_experience_factor = 0.3
 		cv_fighter_equipment_1936 = {
 			owner = "POR" 
-			amount = 81
+			amount = 100
 		}
 		start_experience_factor = 0.3
-	}
+	}	
 }
 ### Production ###
 instant_effect = {
@@ -596,11 +519,6 @@ instant_effect = {
 	add_equipment_to_stockpile = { 
 		type = light_tank_equipment_1936
 		amount = 300
-		producer = POR
-	}
-	add_equipment_to_stockpile = {
-		type = cv_fighter_equipment_1936
-		amount = 50
 		producer = POR
 	}
 }
