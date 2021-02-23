@@ -6,6 +6,7 @@ operations = {
 		allowed = {
 		    OR = {
 			    tag = POR	
+				tag = IRE
             }			
 		}
 		
@@ -23,17 +24,20 @@ operations = {
 
 
 		complete_effect = {
-			set_rule = { 
-			    can_create_factions = yes
-				can_send_volunteers = yes
-			}
 			if = {
 				limit = {
 					tag = POR 
 				}
+				set_rule = { 
+				    can_create_factions = yes
+				    can_send_volunteers = yes
+				}
 				add_ideas = POR_aid1
 			}
 			else = {
+				set_rule = { 
+				    can_send_volunteers = yes
+				}
 				add_ideas = POR_aid3
 			}
 		}		
