@@ -4,6 +4,10 @@ state={
 	name="STATE_284" # North Island
 	manpower = 899836
 	
+	resources={
+		tungsten=5 # was: 6
+	}
+	
 	state_category = city
 	
 	history={

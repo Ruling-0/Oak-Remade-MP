@@ -221,6 +221,10 @@ focus_tree = {
 					type = steel
 					amount = 32
 				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
 			}
 		}
 	}
