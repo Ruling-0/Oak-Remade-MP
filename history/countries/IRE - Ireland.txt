@@ -3,7 +3,7 @@
 oob = "IRE_1936"
 
 set_stability = 0.55
-set_war_support = 0.40
+set_war_support = 0.35
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -234,6 +234,7 @@ add_ideas = {
 	IRE_trade_war
 	IRE_incompetent_army
 	refinery_idea
+	limited_conscription
 }
 if = {
 	limit = {

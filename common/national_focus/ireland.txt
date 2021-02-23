@@ -482,10 +482,12 @@
 					instant_build = yes
 				}
 			}
+			113 = {
 			add_resource = {
 				type = aluminium
 				amount = 12
 				state = 113
+			}
 			}
 		}	
 		ai_will_do = {
@@ -832,7 +834,6 @@
 
 		completion_reward = {
 			add_ideas = IRE_emergency_powers_act
-			add_ideas = limited_conscription
 		}	
 		ai_will_do = {
 		}
