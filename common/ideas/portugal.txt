@@ -819,10 +819,7 @@ ideas = {
 				cost = 150
 	
 				allowed = {
-				OR = {
 					original_tag = POR
-					original_tag = IRE
-				}
 					has_dlc = "La Resistance"
 				}
 				
@@ -1115,10 +1112,7 @@ ideas = {
 				picture = POR_granite
 				
 				allowed = {
-				OR = {
 					original_tag = POR
-					original_tag = IRE
-				}
 					has_dlc = "La Resistance"
 				}
 				
@@ -1162,10 +1156,7 @@ ideas = {
 				picture = POR_simmons
 				
 				allowed = {
-				OR = {
 					original_tag = POR
-					original_tag = IRE
-				}
 					has_dlc = "La Resistance"
 				}
 				
@@ -1203,10 +1194,7 @@ ideas = {
 				picture = POR_mrvegas
 				
 				allowed = {
-				OR = {
 					original_tag = POR
-					original_tag = IRE
-				}
 				}
 				
 				traits = { POR_radio }
