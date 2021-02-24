@@ -537,10 +537,6 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			USA = {
-				has_tech = usa_fighter_1936
-				has_tech = usa_cas_1937
-			}
 		}
 
 		bypass = {
