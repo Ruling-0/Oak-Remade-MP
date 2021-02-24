@@ -129,7 +129,6 @@ on_actions = {
 					give_resource_rights = { receiver = JAP state = 328 }
 				}
 				SIA = {
-					give_resource_rights = { receiver = JAP state = 289 }
 					give_resource_rights = { receiver = JAP state = 724 }
 				}
 			}

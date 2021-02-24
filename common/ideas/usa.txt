@@ -970,15 +970,35 @@ ideas = {
 				has_government = democratic
 			}
 
-			cancel = {
-				has_war = yes
+			removal_cost = -1
+			
+			modifier = {
+			    air_volunteer_cap = -1000
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+				join_faction_tension = 1
+				guarantee_tension = 1
+			}
+		}
+		
+		USA_neutrality_acts = {
+			picture = hol_the_foundations_of_defense
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
 			}
 
 			removal_cost = -1
 			
 			modifier = {
+				air_volunteer_cap = 300
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
 				join_faction_tension = 1
-				send_volunteers_tension = 1
 				guarantee_tension = 1
 			}
 		}

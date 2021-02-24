@@ -255,16 +255,16 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Friedrich Paulus"
 	picture = "Portrait_Germany_Friedrich_Paulus.dds"
-	traits = { trait_cautious organizer }
-	skill = 2
+	traits = { panzer_leader organizer }
+	skill = 3
 	id = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {

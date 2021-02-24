@@ -559,11 +559,18 @@ focus_tree = {
 					category = air_doctrine
 					bonus = 1 
 					name = USA_form_modern_chinese_airforce
-				}	
-				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 300 producer = USA }
-				add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 150 producer = USA }			
+				}		
 			}
 			USA = {
+				if = {
+					limit = {
+						has_idea = USA_neutrality_act  
+					}
+			   	    swap_ideas = {
+			    		remove_idea = USA_neutrality_act
+			    		add_idea = USA_neutrality_acts
+			    	}
+				}
 				add_tech_bonus = {
 					uses = 1
 					category = air_equipment

@@ -771,18 +771,6 @@ focus_tree = {
 	  prerequisite = { focus = SIA_strenghten_rel_ger }
 		available_if_capitulated = yes
 		completion_reward = {
-				add_popularity = {
-					ideology = fascism
-					popularity = +0.1
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.1
-				}
-				add_popularity = {
-				 ideology = democratic
-				 popularity = -0.1
-				}
 			
 			add_ideas = fascist_leanings
 		}

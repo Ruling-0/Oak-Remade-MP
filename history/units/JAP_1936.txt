@@ -691,7 +691,14 @@ air_wings = {
 			owner = "JAP"
 			amount = 100
 		}
-		
+		fighter_equipment_1934 = {
+			owner = "JAP"
+			amount = 100 
+		}
+		fighter_equipment_1936 = {
+			owner = "JAP"
+			amount = 100 
+		}	
 	}
 	# 2 Hikodan -- Dalian
 	282 = {
