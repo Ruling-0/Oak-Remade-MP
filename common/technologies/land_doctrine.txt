@@ -831,7 +831,7 @@ technologies = {
 	
 		category_support_battalions = {
 			max_organisation = 10
-            soft_attack = 0.20
+            soft_attack = 0.15
 			
 		}
 		attrition = -0.05
@@ -867,7 +867,7 @@ technologies = {
 		
 		category_support_battalions = {
 			max_organisation = 10
-            soft_attack = 0.20
+            soft_attack = 0.15
 			
 		}
 		land_reinforce_rate = 0.01
