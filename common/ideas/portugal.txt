@@ -4,6 +4,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = POR
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -14,14 +15,10 @@ ideas = {
 
 			picture = ROM_the_resource_curse
 			
-			research_bonus = {
-				synth_resources = 0.10
-			}
-			
 			modifier = {
 				fuel_gain_from_states = 300.0	
-				production_speed_synthetic_refinery_factor = -0.4
-			    production_speed_synthetic_rubber_refinery_factor = -0.4
+				production_speed_synthetic_refinery_factor = -0.5
+			    production_speed_synthetic_rubber_refinery_factor = -0.5
 			}
 		}	
 		POR_aid1 = {
