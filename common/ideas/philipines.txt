@@ -405,7 +405,7 @@ ideas = {
 			picture = generic_navy_asia_1
 			
 			allowed = {
-				original_tag = SIA
+				original_tag = PHI
 			}
 			
 			traits = { navy_submarine_2 }

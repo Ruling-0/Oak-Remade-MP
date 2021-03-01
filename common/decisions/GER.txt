@@ -2861,7 +2861,7 @@ foreign_politics = {
 			}
 			add_timed_idea = {
 				idea = GER_blitzkrieg
-				days = 180
+				days = 90
 			}
 		}
 	}

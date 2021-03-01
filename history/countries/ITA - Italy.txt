@@ -110,7 +110,7 @@ if = {
 }
 # DIPLOMACY
 give_guarantee = ALB
-set_autonomy = { target = ETH autonomy_state = autonomy_reichskommissariat }
+set_autonomy = { target = ETH autonomy_state = autonomy_dominion }
 
 set_convoys = 195
 set_stability = 0.40

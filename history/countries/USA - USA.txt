@@ -288,6 +288,22 @@ set_popularities = {
 	communism = 2
 	fascism = 2
 }
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = PHI
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.1
+	} 
+	else = {
+		puppet = PHI
+	}
+}
 add_ideas = {
 	undisturbed_isolation
 	disarmed_nation
@@ -299,11 +315,6 @@ add_ideas = {
 	USA_the_poor_command_post
 	USA_japan_trading
 	refinery_idea
-}
-
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
 }
 
 create_country_leader = {

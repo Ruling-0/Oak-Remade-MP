@@ -1790,12 +1790,17 @@ focus_tree = {
 		}
 		relative_position_id = FRA_free_france
 		
-		cost = 7.16
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			NOT = { 539 = { is_controlled_by = FRA } }
+		    OR = {
+			    NOT = { 772 = { is_controlled_by = FRA } }
+				ENG = {
+					has_capitulated = yes 
+				}
+			}
 		}
 		
 		bypass = {
@@ -1808,12 +1813,16 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 10
+				level = 15
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 10
+				level = 15
 			}
+		    add_offsite_building = {
+		    	type = dockyard
+		    	level = 5
+		    }
 		}
 	}
 

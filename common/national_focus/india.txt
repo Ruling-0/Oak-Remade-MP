@@ -6061,7 +6061,7 @@ focus_tree = {
 		
 		completion_reward = {
 			RAJ = {
-				become_exiled_in = { target = ENG legitimacy = 1.0 }	
+				become_exiled_in = { target = USA legitimacy = 1.0 }	
 			}
             add_ideas = PHI_fighting_on
 		}

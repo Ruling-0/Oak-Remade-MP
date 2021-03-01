@@ -397,15 +397,41 @@ units = {
 #########################
 
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "ETH"
 		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
+		requested_factories = 1
+		progress = 0.27
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ETH"
+		}
+		requested_factories = 1
+		progress = 0.27
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "ETH"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "ETH" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
 	}
 
 }

@@ -5708,12 +5708,55 @@ SOV_great_patriotic_war = {
 
 
 operations = {
+	SOV_sealion = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			ENG = {
+				has_capitulated = yes 
+			}
+		}
+
+		visible = {
+		}
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 50
+
+			modifier = {
+				factor = 0.5
+				has_war_support > 0.6
+			}
+
+			modifier = {
+				factor = 2
+				has_war_with = CHI
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_stability = 0.5
+			add_war_support = 0.5
+		    add_ideas = tot_economic_mobilisation 
+			add_ideas = SOV_sealions
+		}
+	}
 }
 
 political_actions = {
 }
 
 SOV_global_revolution = {
+
 
 	SOV_guns_for_china_against_china = {
 

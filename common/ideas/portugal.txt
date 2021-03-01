@@ -816,7 +816,7 @@ ideas = {
 				
 				picture = POR_reyez
 				
-				cost = 150
+				cost = 50
 	
 				allowed = {
 					original_tag = POR

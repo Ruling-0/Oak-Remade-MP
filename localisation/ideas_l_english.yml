@@ -22,7 +22,10 @@
  FRA_exile_desc:0 "We have been defeated and are now exiled to our colonies. We are not seen as the legitimate government of France"
  
  ITA_air_dominance:0 "Air Investments"
- ITA_air_dominance_desc:0 "We must invest in our air power. It will help us control the Med. "
+ ITA_air_dominance_desc:0 "We must invest in our air power. It will help us control the Med."
+ 
+ SOV_sealions:0 "Emergency Measures"
+ SOV_sealions_desc:0 "With the Fall of England, we must take action to increase our production and recruit more men."
 
  GER_economy_of_plunder_1:0 "Economy of Plunder: Light Plunder"
  GER_economy_of_plunder_1_desc:0 "The Nazis expected to cover their debt by plundering the wealth of conquered nations during the war. By extracting the wealth of occupied nations, the German economy can hopefully come back on its feet, although the price of such an extraction is payed in human life through extremely complicated bereaucracy and logistics."
