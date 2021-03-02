@@ -972,6 +972,10 @@ ideas = {
 
 			removal_cost = -1
 			
+			rule = { 
+			    can_send_volunteers = yes
+			}
+			
 			modifier = {
 			    air_volunteer_cap = -1000
 				send_volunteers_tension = -1
@@ -993,6 +997,10 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
+			rule = { 
+			    can_send_volunteers = yes
+			}
 			
 			modifier = {
 				air_volunteer_cap = 300

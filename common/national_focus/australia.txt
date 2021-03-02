@@ -2171,10 +2171,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = AST_south_australian_housing_trust_IC
@@ -2368,10 +2368,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = AST_allied_works_council_IC1
@@ -2486,6 +2486,23 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = AST_australian_arms_production
+			random_owned_controlled_state = {
+				prioritize = { 285 517 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = AST_department_of_supply_and_development_AF
+			}
 		}
 	}
 
