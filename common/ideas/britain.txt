@@ -16,11 +16,10 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.10
-				production_factory_max_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-				consumer_goods_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 		
@@ -40,8 +39,8 @@ ideas = {
 
 			modifier = {
 				weekly_manpower = 10000
-				war_support_weekly = 0.005
-				stability_weekly = 0.005
+				war_support_weekly = 0.002
+				stability_weekly = 0.002
 			}
 		}
 		

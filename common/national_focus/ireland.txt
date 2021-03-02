@@ -1908,7 +1908,7 @@
 		    }
 		    add_offsite_building = {
 		    	type = dockyard
-		    	level = 5
+		    	level = 2
 		    }
 		}
 	}

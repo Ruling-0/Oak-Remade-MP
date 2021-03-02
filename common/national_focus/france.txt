@@ -1813,11 +1813,11 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 15
+				level = 10
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 15
+				level = 10
 			}
 		    add_offsite_building = {
 		    	type = dockyard
