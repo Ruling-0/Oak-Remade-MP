@@ -1,68 +1,6 @@
 ideas = {
 
 	country = {
-	
-		ENG_fighting_on = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_morale_bonus
-
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-			}
-		}
-		
-		ENG_refugee_volunteers = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-
-			modifier = {
-				weekly_manpower = 10000
-				war_support_weekly = 0.002
-				stability_weekly = 0.002
-			}
-		}
-		
-		ENG_irredentism = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_intel_bonus
-
-			modifier = {
-				army_core_attack_factor = 0.25
-				army_core_defence_factor = 0.25
-			}
-		}
 		
 		ENG_operation_battleaxe = {
 		
