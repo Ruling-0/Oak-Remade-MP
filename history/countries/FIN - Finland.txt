@@ -42,8 +42,8 @@ set_technology = { #player
 	tech_engineers = 1
 	tech_field_hospital = 1
 	############# aircraft ############
-	fighter_1934 = 1
-	tactical_bomber_1934 = 1	
+	ger_fighter_1934 = 1
+	ger_tactical_bomber_1934 = 1	
 	aluminum_frame = 1
 	############### economy #############
 	starting_industry = 1

@@ -30,7 +30,7 @@ set_technology = { #player
 
 	
 	############## aircraft ##############
-	fighter_1934 = 1
+	ger_fighter_1934 = 1
 	
 	################# economy ############
 	starting_industry = 1

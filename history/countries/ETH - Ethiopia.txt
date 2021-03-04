@@ -29,8 +29,8 @@ set_technology = {
 	interwar_antiair = 1
 	interwar_antitank = 1
 	################## armor ##############
-	light_tank_1934 = 1 
-	motorised_infantry = 1
+	axis_light_tank_1934 = 1 
+	axis_motorised_infantry = 1
 	################## aircraft ##############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1

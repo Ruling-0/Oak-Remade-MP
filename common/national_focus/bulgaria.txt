@@ -2955,10 +2955,10 @@ focus_tree = {
 		cost = 7.145
 
 		available = {
-			BUL = { owns_state = 184 }
-			BUL = { owns_state = 731 }
-			BUL = { owns_state = 106 }
-			BUL = { owns_state = 108 }
+			184 = { is_controlled_by = BUL }
+			731 = { is_controlled_by = BUL }
+			106 = { is_controlled_by = BUL }
+			108 = { is_controlled_by = BUL }
 		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}

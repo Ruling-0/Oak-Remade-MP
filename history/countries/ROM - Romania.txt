@@ -48,7 +48,7 @@ set_technology = { #player
 	axis_basic_tank_engines = 1
 	axis_rivetted_armour = 1
 	################# aircraft ###########
-	fighter_1934 = 1
+	ger_fighter_1934 = 1
 
 	################# economy #################
 	starting_industry = 1
