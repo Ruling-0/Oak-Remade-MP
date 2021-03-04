@@ -65,7 +65,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.8
+		research_cost = 2.5
 		start_year = 1940
 		folder = {
 			name = jap_armour_folder
@@ -102,7 +102,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.8
+		research_cost = 2
 		start_year = 1943
 		folder = {
 			name = jap_armour_folder
