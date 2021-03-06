@@ -21,11 +21,11 @@ set_technology = {
 	interwar_antiair = 1
 	interwar_antitank = 1
 	################## armor ##############
-	usa_light_tank_1934 = 1 
-	usa_motorised_infantry = 1
+	sov_light_tank_1934 = 1 
+	sov_motorised_infantry = 1
 	################## aircraft ##############
-	usa_fighter_1934 = 1
-	usa_tactical_bomber_1934 = 1
+	sov_fighter_1934 = 1
+	sov_tactical_bomber_1934 = 1
 	############### economy ############
 	starting_industry = 1
 }
