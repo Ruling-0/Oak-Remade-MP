@@ -39,53 +39,7 @@ division_template = {
 
 #### OOB ####
 units = {
-	division = {
-		name = "1 Xin'jiang Juntuán"
-		location = 4709
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		
-	}
-	division = {
-		name = "2 Xin'jiang Juntuán"
-		location = 4709
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		
-	}
-	division = {
-		name = "3 Xin'jiang Juntuán"
-		location = 4709
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		
-	}
-	
-	division = {
-		name = "1 Garrison"
-		location = 4709
-		division_template = "Garrison"
-		start_experience_factor = 0.1
-		
-	}
-	
-	division = {
-		name = "2 Garrison"
-		location = 4709
-		division_template = "Garrison"
-		start_experience_factor = 0.1
-		
-	}
 }
 #### Instant Production ####
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "SIK"
-		}
-		requested_factories = 1
-		progress = 0.52
-		efficiency = 100
-	}
 }

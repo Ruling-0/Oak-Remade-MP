@@ -493,7 +493,7 @@ ideas = {
 			}
 		}
 
-		MON_buyannmeh = {
+		MON_khan = {
 			ledger = army
 
 			picture = genghis_ghost

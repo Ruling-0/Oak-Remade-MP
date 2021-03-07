@@ -1,5 +1,8 @@
 ﻿capital = 330
 
+set_stability = 0.65
+set_war_support = 0.75
+
 oob = "MON_1936"
 # Starting tech
 set_technology = {

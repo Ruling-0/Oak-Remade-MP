@@ -121,4 +121,8 @@ spriteTypes = {
 		name = "GFX_idea_portrait_kublai"
 		texturefile ="gfx/leaders/MON/portrait_kublai.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_genghis_ghost"
+		texturefile = "gfx/interface/ideas/idea_genghis_ghost.dds"
+	}
 }
