@@ -144,7 +144,7 @@ division_template = {
 	#Focus for Expand MPRA
 	focus = {
 		id = MON_expandmpra
-		icon = GFX_monarmedforces
+		icon = GFX_monarmedforce
 		x = 7
 		y = 0
 		cost = 10
@@ -265,49 +265,49 @@ division_template = {
 		}
 		
 		bypass = {
-			798 = { NOT = { is_owned_and_controlled_by = MON} }
+			330 = { NOT = { is_owned_and_controlled_by = MON} }
 			330 = { NOT = { is_owned_and_controlled_by = MON} }	
 		}
 		
 				completion_reward = {			
-						798 = {
+						330 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					}
 							add_building_construction = {
 							type = bunker
 							level = 1
-							province = 4792
+							province = 4732
 							instant_build = yes
 						}
 							add_building_construction = {
 							type = bunker
 							level = 1
-							province = 12557
+							province = 4732
 							instant_build = yes
 						}
 							add_building_construction = {
 							type = bunker
 							level = 1
-							province = 1743
+							province = 4732
 							instant_build = yes
 						}
 							add_building_construction = {
 							type = bunker
 							level = 1
-							province = 12629
+							province = 4732
 							instant_build = yes
 						}
 							add_building_construction = {
 							type = bunker
 							level = 1
-							province = 4873
+							province = 4732
 							instant_build = yes
 						}
 							add_building_construction = {
 							type = bunker
 							level = 1
-							province = 10575
+							province = 4732
 							instant_build = yes
 						}						
 

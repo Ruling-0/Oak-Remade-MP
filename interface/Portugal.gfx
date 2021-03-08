@@ -304,4 +304,52 @@ spriteTypes = {
 		name = "GFX_sovguards"
 		texturefile = "gfx/interface/goals/sovguards.dds"
 	}
+	SpriteType = { 
+		name = "GFX_monministry"
+		texturefile = "gfx/interface/goals/monministry.dds"
+	}
+	SpriteType = { 
+		name = "GFX_monarmedforce"
+		texturefile = "gfx/interface/goals/monarmedforce.dds"
+	}
+	SpriteType = { 
+		name = "GFX_monborderguard"
+		texturefile = "gfx/interface/goals/monborderguard.dds"
+	}
+	SpriteType = { 
+		name = "GFX_europeandoctrinebrz"
+		texturefile = "gfx/interface/goals/Europeandoctrine.dds"
+	}
+	SpriteType = { 
+		name = "GFX_monindustry1"
+		texturefile = "gfx/interface/goals/monindustry1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_tireplant"
+		texturefile = "gfx/interface/goals/tireplant.dds"
+	}
+	SpriteType = { 
+		name = "GFX_mondefensiveop"
+		texturefile = "gfx/interface/goals/mondefensiveop.dds"
+	}
+	SpriteType = { 
+		name = "GFX_monforthepeople"
+		texturefile = "gfx/interface/goals/monforthepeople.dds"
+	}
+	SpriteType = { 
+		name = "GFX_SovietResarchslot"
+		texturefile = "gfx/interface/goals/SovietResarchslot.dds"
+	}
+	SpriteType = { 
+		name = "GFX_sovietfighters"
+		texturefile = "gfx/interface/goals/sovietfighters.dds"
+	}
+	SpriteType = { 
+		name = "GFX_localplaneproduction"
+		texturefile = "gfx/interface/goals/localplaneproduction.dds"
+	}
+	SpriteType = { 
+		name = "GFX_MON_air"
+		texturefile = "gfx/interface/goals/MON_air.dds"
+	}
 }
