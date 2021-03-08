@@ -545,10 +545,10 @@ equipments = {
 		max_strength = 700
 		fuel_consumption = 75
 		reliability = 0.80
-		build_cost_ic = 5500
+		build_cost_ic = 7000
 		resources = {
-			steel = 1
-			chromium = 1
+			steel = 2
+			chromium = 2
 		}
 		manpower = 9000
 	}
