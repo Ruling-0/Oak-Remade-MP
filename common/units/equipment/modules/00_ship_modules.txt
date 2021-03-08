@@ -1507,14 +1507,14 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 18
+			torpedo_attack = 14
 			build_cost_ic = 90
 		}
 		multiply_stats = {
 			naval_speed = -0.01			
 		}
 		build_cost_resources = {
-			steel = 0
+			steel = 1
 		}
 		critical_parts = { damaged_torpedoes }
 	}
@@ -1526,14 +1526,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 27
+			torpedo_attack = 20
 			build_cost_ic = 120
 		}
 		multiply_stats = {
 			naval_speed = -0.01		
 		}
 		build_cost_resources = {
-			steel = 0
+			steel = 1
 		}
 		 
 		dismantle_cost_ic = 60
@@ -1558,7 +1558,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 36
+			torpedo_attack = 27
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -1580,7 +1580,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 45
+			torpedo_attack = 34
 			build_cost_ic = 180
 		}
 		multiply_stats = {
