@@ -39,10 +39,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_monindustry1_shine"
-		texturefile = "gfx/interface/goals/GFX_monindustry1.dds"
+		texturefile = "gfx/interface/goals/monindustry1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_monindustry1.dds"
+			animationmaskfile = "gfx/interface/goals/monindustry1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -55,7 +55,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_monindustry1.dds"
+			animationmaskfile = "gfx/interface/goals/monindustry1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
