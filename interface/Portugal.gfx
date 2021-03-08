@@ -125,4 +125,183 @@ spriteTypes = {
 		name = "GFX_idea_genghis_ghost"
 		texturefile = "gfx/interface/ideas/idea_genghis_ghost.dds"
 	}
+	SpriteType = { 
+		name = "GFX_monindustry1"
+		texturefile = "gfx/interface/goals/monindustry1.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monindustry2"
+		texturefile = "gfx/interface/goals/monindustry2.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monindustry3"
+		texturefile = "gfx/interface/goals/monindustry3.dds"
+	}	
+
+	SpriteType = { 
+		name = "GFX_monindustry4"
+		texturefile = "gfx/interface/goals/monindustry4.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_mondefensiveop"
+		texturefile = "gfx/interface/goals/mondefensiveop.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monarmedforces"
+		texturefile = "gfx/interface/goals/monarmedforces.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monpardoning"
+		texturefile = "gfx/interface/goals/monpardoning.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_monmutualassistance"
+		texturefile = "gfx/interface/goals/monmutualassistance.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_mongenden"
+		texturefile = "gfx/interface/goals/mongenden.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_monstuff"
+		texturefile = "gfx/interface/goals/monstuff.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_monexcav"
+		texturefile = "gfx/interface/goals/monexcav.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_monpurgetime"
+		texturefile = "gfx/interface/goals/monpurgetime.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monrailroads"
+		texturefile = "gfx/interface/goals/monrailroads.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_localplaneproduction"
+		texturefile = "gfx/interface/goals/localplaneproduction.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_monexcav2"
+		texturefile = "gfx/interface/goals/monexcav2.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_crushjapan"
+		texturefile = "gfx/interface/goals/crushjapan.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_airtraining"
+		texturefile = "gfx/interface/goals/airtraining.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_monrailway"
+		texturefile = "gfx/interface/goals/monrailway.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monforthepeople"
+		texturefile = "gfx/interface/goals/monforthepeople.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monrussianofficers"
+		texturefile = "gfx/interface/goals/monrussianofficers.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_herdsmen"
+		texturefile = "gfx/interface/goals/herdsmen.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monartillery"
+		texturefile = "gfx/interface/goals/monartillery.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monrecruitment"
+		texturefile = "gfx/interface/goals/monrecruitment.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_montruck"
+		texturefile = "gfx/interface/goals/montruck.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_montank"
+		texturefile = "gfx/interface/goals/montank.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monplanez"
+		texturefile = "gfx/interface/goals/monplanez.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monmilitaryll"
+		texturefile = "gfx/interface/goals/monmilitaryll.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monindustryll"
+		texturefile = "gfx/interface/goals/monindustryll.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monsovietll"
+		texturefile = "gfx/interface/goals/monsovietll.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_auguststorm"
+		texturefile = "gfx/interface/goals/auguststorm.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monmilitaryfactory"
+		texturefile = "gfx/interface/goals/monmilitaryfactory.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_monpropaganda"
+		texturefile = "gfx/interface/goals/focus_por_workers_of_iberia.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_mongolgold"
+		texturefile = "gfx/interface/goals/mongolgold.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_monlocalmilitaryprod"
+		texturefile = "gfx/interface/goals/monlocalmilitaryprod.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_findwhotoblame"
+		texturefile = "gfx/interface/goals/findwhotoblame.dds"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_sovguards"
+		texturefile = "gfx/interface/goals/sovguards.dds"
+	}
 }

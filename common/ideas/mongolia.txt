@@ -1,322 +1,24 @@
 ideas = {
+    country = {
+            MON_conscription = {
 
-	country = {
-	
-		MON_spirit_of_genghis_idea = {
-		
-			picture = FRA_army_of_aggression_focus
-			
-			allowed = {
-				always = no
-			}
+            picture = FRA_factory_strikes
 
-			removal_cost = -1
-			
-			modifier = {
-				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
-			}		
+            allowed = {
+            original_tag = "MON"
+            }
 
-		}
-	
-		MON_sov_advisors = {
-		
-			picture = generic_communist_army
-			
-			allowed = {
-				always = no
-			}
+            allowed_civil_war = {
+                always = yes
+            }
 
-			removal_cost = -1
-			
-			modifier = {
-				army_morale_factor = 0.1
-				army_leader_start_level = 1
-				army_leader_start_attack_level= 1
-				army_leader_start_planning_level= 1
-				army_leader_start_defense_level= 1
-				army_leader_start_logistics_level= 1
-				military_leader_cost_factor = -0.50
-			}		
+            removal_cost = -1
 
-		}
-	
-		MON_nomad_mob = {
-		
-			picture = generic_manpower_bonus
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.04
-			}		
-		
-		}
-	
-		MON_sov_investments = {
-		
-			picture = home_of_revolution
-			
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.1
-			}		
-		
-		}
-	
-		MON_purge_1 = {
-		
-			picture = generic_purge
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = 0.01
-				political_advisor_cost_factor = 0.25
-				economy_cost_factor = 0.25
-				trade_laws_cost_factor = 0.25
-			}		
-		
-		}
-	
-		MON_monastries = {
-
-			picture = SPR_seize_the_gold_reserves
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-			}		
-		
-		}
-	
-		MON_collectivisation_1 = {
-
-			picture = trotskyite_plot_purged
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				MONTHLY_POPULATION = -0.33
-				conscription_factor = -0.33
-				political_power_factor = -0.25
-				consumer_goods_factor = -0.05
-			}
-		}
-		
-		MON_collectivisation_2 = {
-
-			picture = trotskyite_plot
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				MONTHLY_POPULATION = -0.5
-				conscription_factor = -0.50
-				political_power_factor = -0.40
-				consumer_goods_factor = -0.10
-			}
-		}
-		
-		MON_collectivisation_3 = {
-
-			picture = trotskyite_plot_purged
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				MONTHLY_POPULATION = -0.1
-				conscription_factor = -0.1
-				political_power_factor = -0.1
-				consumer_goods_factor = -0.10
-			}
-		}
-		
-		MON_collectivisation_4 = {
-
-			picture = trotskyite_plot_purged
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = -0.10
-			}
-		}
-
-		MON_nomad_0 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = -0.50
-				industrial_capacity_factory = -0.25
-				local_resources_factor = -0.25
-				production_speed_buildings_factor = -0.25
-				supply_consumption_factor = -0.20
-				mobilization_speed = -0.75
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.50 instant = yes
-				}
-			}
-		}
-		
-		MON_nomad_1 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = -0.4
-				industrial_capacity_factory = -0.2
-				local_resources_factor = -0.2
-				production_speed_buildings_factor = -0.2
-				supply_consumption_factor = -0.1
-				mobilization_speed = -0.5
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.30 instant = yes
-				}
-			}
-		}
-		
-		MON_nomad_2 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = -0.2
-				industrial_capacity_factory = -0.1
-				local_resources_factor = -0.1
-				production_speed_buildings_factor = -0.1
-				supply_consumption_factor = -0.05
-				mobilization_speed = -0.25
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.15 instant = yes
-				}
-			}
-		}	
-
-		MON_nomad_3 = {
-
-			picture = chi_army_corruption2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_building_slots_factor = -0.1
-				industrial_capacity_factory = -0.05
-				production_speed_buildings_factor = -0.05
-				mobilization_speed = -0.1
-			}
-			equipment_bonus = {
-				horse_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-			}
-		}		
-
-	}
+            modifier = {
+                conscription_factor = 0.25
+            }
+        }
+    }
 
 	political_advisor = {
 
@@ -328,7 +30,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { backroom_backstabber }
 		}
 
 		MON_yundunwangcug = {
@@ -339,7 +41,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { quartermaster_general }
+			traits = { captain_of_industry }
 		}
 
 		MON_pai_yun_ti = {
@@ -352,6 +54,17 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
+		
+		MON_Harghasun = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { smooth_talking_charmer }
+		}		
 	}	
 
 	army_chief = {
@@ -364,7 +77,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { army_chief_morale_2 }
+			traits = { army_chief_morale_2 army_chief_defensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -380,7 +93,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { army_chief_defensive_2 }
+			traits = { army_chief_maneuver_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -400,7 +113,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { air_chief_reform_2 }
+			traits = { air_chief_ground_support_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -461,16 +174,37 @@ ideas = {
 
 	high_command = {
 
-		MON_lee_shou_hsin = {
+		konstantin_rokossovsky = {
 			ledger = army
+			#Also unit leader: 402
+			
+			allowed = {
+				original_tag = MON
+			}
+			available = 
+			{
+				has_completed_focus = MON_moscowmilitaryadvisors
+			}
+			
 
+			
+			# Not purged, but tried and tortured, then released
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MON_lee_shou_hsin = {
+            ledger = army
 			picture = generic_army_asia_3
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			traits = { army_regrouping_2 }
+			traits = { army_cavalry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -478,8 +212,7 @@ ideas = {
 		}
 		
 		MON_chimid = {
-			ledger = army
-
+            ledger = army
 			picture = generic_army_asia_1
 			
 			allowed = {
@@ -493,20 +226,15 @@ ideas = {
 			}
 		}
 
-		MON_khan = {
-			ledger = army
-
-			picture = genghis_ghost
+		MON_buyannmeh = {
+            ledger = air
+			picture = generic_air_asia_3
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			available = {
-				has_completed_focus = MON_spirit_of_genghis
-			}
-			
-			traits = { army_cavalry_3 }
+			traits = { air_tactical_bombing_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -515,15 +243,14 @@ ideas = {
 
 
 		MON_haidav = {
-			ledger = navy
-
-			picture = generic_navy_asia_1
+             ledger = air
+			picture = generic_air_asia_2
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			traits = { navy_naval_air_defense_2 }
+			traits = { air_air_superiority_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -531,12 +258,232 @@ ideas = {
 		}
 	}
 	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		MON_morozov_design_bureau = {
+			picture = morozov_design_bureau
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+			
+			modifier = {
+			}
+			modifier = {
+			tank_manufacturer_cost_factor = -0.50
+			}			
+		}
+		
+		MON_KhPZ_design_bureau = {
+			picture = KhPZ
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+			modifier = {
+			tank_manufacturer_cost_factor = -0.50
+			}			
+		}		
 
+		MON_GAZ_design_bureau = {
+			picture = gaz
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { assault_gun_manufacturer }
+			
+			modifier = {
+			}
+			modifier = {
+			tank_manufacturer_cost_factor = -0.50
+			}			
+		}
+		
+		MON_astrov_design_bureau = {
+			picture = astrov_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { pacific_light_tank_manufacturer } 
+			
+			modifier = {
+			}
+			modifier = {
+			tank_manufacturer_cost_factor = -0.50
+			}			
+		}
+		
+		MON_okmo = {
+			picture = okmo
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+			modifier = {
+			tank_manufacturer_cost_factor = -0.50
+			}			
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		mig_design_bureau1 = {
+			picture = mig_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			cost = 100			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { interceptor_fighter_manufacturer }
+			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -0.50
+			}
+		}
+		
+		ilyushin_design_bureau1 = {
+			picture = ilyushin_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			cost = 100					
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { flying_tank_manufacturer }
+			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -0.50
+			}
+		}
+		
+		tupolev_design_bureau1 = {
+			picture = tupolev_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			cost = 100			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { fast_bomber_manufacturer }
+			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -0.50
+			}
+		}
+		
+		yakovlev_design_bureau1 = {
+			picture = yakovlev_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			cost = 100			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_fighter_designer }
+			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -0.50
+			}
+		}
+		
+		Myasishchev_design_bureau1 = {
+			picture = Myasishchev
+			
+			allowed = {
+				original_tag = MON
+			}
+			cost = 100			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_bomber_manufacturer }
+			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -0.50
+			}
+		}
+
+		LaGG_design_bureau1 = {
+			picture = LaGG
+			
+			allowed = {
+				original_tag = MON
+			}
+			cost = 100			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { cheap_fighter_manufacturer }
+			
+			modifier = {
+			aircraft_manufacturer_cost_factor = -0.50
+			}
+		}		
+	}	
 
 	theorist = {
 		MON_dagva = {
-			ledger = army
-
+            ledger = army
 			picture = generic_army_asia_5
 			
 			allowed = {
@@ -544,15 +491,14 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.07
 			}
 			
 			traits = { military_theorist }
 		}
 		
 		MON_ganbaatar = { 
-			ledger = navy
-
+             ledger = navy
 			picture = generic_navy_asia_3
 			
 			allowed = {
@@ -560,15 +506,14 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_doctrine = 0.10
+				naval_doctrine = 0.07
 			}
 			
 			traits = { naval_theorist }
 		}
 
 		MON_ulanhu = {
-			ledger = air
-
+            ledger = air
 			picture = generic_air_asia_2
 			
 			allowed = {
@@ -576,14 +521,11 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.07
 			}
 			
 			traits = { air_warfare_theorist }
 		}
 
 	}
-
-
-
 }
