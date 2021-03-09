@@ -4269,11 +4269,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = henschel2
-			add_tech_bonus = {
-				technology = ger_heavy_tank_1942
-				uses = 1
-				bonus = 2
-				name = GER_mobile_fortresses 
+			set_technology = { 
+			    ger_heavy_tank_1942 = 1
 			}
 			add_tech_bonus = {
 				category = armor
