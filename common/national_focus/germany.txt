@@ -2429,7 +2429,7 @@ focus_tree = {
 			}
 			OR = {
 				FRA = { has_capitulated = yes }
-				FRA = { is_subject_of = GER }
+				country_exists = EFR
 			}
 			OR = {
 				HOL = { has_capitulated = yes }
