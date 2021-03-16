@@ -62,41 +62,8 @@ focus_tree = {
 			factor = 1
 		}
 		
-				completion_reward = {
-custom_effect_tooltip = "Allows recruitment of cavalry divisions during war"				
-			add_ideas = ROM_agrarian_reform
-division_template = {
-	name = "Mongolian Revolutionary Cavalry"		
-	is_locked = yes	
-	division_names_group = MON_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 0 y = 4 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
-		cavalry = { x = 1 y = 4 }
-        cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-		cavalry = { x = 2 y = 2 }
-		cavalry = { x = 2 y = 3 }
-		cavalry = { x = 2 y = 4 }
-		cavalry = { x = 3 y = 0 }
-		cavalry = { x = 3 y = 1 }
-		cavalry = { x = 3 y = 2 }
-		cavalry = { x = 3 y = 3 }
-		cavalry = { x = 3 y = 4 }
-	}
-	support = {
-        anti_air = { x = 0 y = 0 } 		
-		engineer = { x = 0 y = 1 } 	
-		artillery = { x = 0 y = 2 } 	
-	}
-}			
+		completion_reward = {			
+			add_ideas = ROM_agrarian_reform		
 		}
 		
 	}
@@ -130,7 +97,7 @@ division_template = {
 				uses = 1
 				category = armor
 				}			
-			remove_ideas = officers_purged_6
+			remove_ideas = officers_purged_5
 						add_tech_bonus = {
 				name = MON_army_maneuvers
 				bonus = 1.0
@@ -322,8 +289,8 @@ division_template = {
 					}
 				}
 			}
-			if = { limit = { 798 = { is_owned_and_controlled_by = MON } }
-				798 = {
+			if = { limit = { 330 = { is_owned_and_controlled_by = MON } }
+				330 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -354,12 +321,10 @@ division_template = {
 		available_if_capitulated = yes
 
 		available = {
-			is_in_faction_with = SOV
 		}
 
 
 		prerequisite = { 
-			is_in_faction_with = SOV
 			focus = MON_woolwashingfactory 
 			focus = MON_healthandeducationservices 
 			focus = MON_defensivepreparations 
@@ -409,13 +374,12 @@ division_template = {
 			factor = 1
 		}
 		available = {		
-							SOV = {
-						has_completed_focus = SOV_war_with_japan
-					}
+			SOV = { 
+				has_war_with = JAP
+			}
 		}
 		
 		bypass = {
-			has_offensive_war_with = JAP
 		}
 
 		completion_reward = {
@@ -520,16 +484,10 @@ division_template = {
 			factor = 1
 		}
 		
-				bypass = {
-			330 = { NOT = { is_owned_and_controlled_by = MON} }
-			330 = { NOT = { is_owned_and_controlled_by = MON} }	
-			330 = { NOT = { is_owned_and_controlled_by = MON} }			
+				bypass = {	
 		}
 		
 		available = {
-			330 = { is_owned_and_controlled_by = MON} 
-			330 = { is_owned_and_controlled_by = MON} 	
-			330 = { is_owned_and_controlled_by = MON} 
 		}		
 		
 		
@@ -618,7 +576,7 @@ division_template = {
 	  }
 		
 			completion_reward = {
-			add_ideas = officers_purged_6
+			add_ideas = officers_purged_5
 		}	
 		
 	}
@@ -972,12 +930,9 @@ create_country_leader = {
 		}
 		
 		available = {
-			has_tech = improved_medium_tank
-            has_tech = motorised_infantry
 			has_full_control_of_state = 330
 		}
-						completion_reward = {
-					load_oob = "MON_tankdivision"
+	    completion_reward = {
 	    }
 	}
 
@@ -1148,26 +1103,12 @@ create_country_leader = {
 				available = {
 			SOV = { 
 				has_war_with = GER
-				NOT = { has_war_with = MON }
 			}
-			GER = { NOT = { is_in_faction_with = MON } }
 		}
 		completion_reward = {
 			add_political_power = 100
-			SOV = {
-			if = {
-			limit = {			
-			 NOT = {
-			 	has_tech = improved_medium_tank
-             }		
-             }
-				set_technology = {
-				improved_medium_tank = 1
-				}			 
-             }
 				add_political_power = 50
 				add_timed_idea = { idea = MON_idea_economic_aid days = 100 }
-		    }
 		}
 	}
 
@@ -1246,17 +1187,11 @@ create_country_leader = {
 			factor = 1
 			}
 		available = {
-		SOV  = {
-			has_tech = improved_medium_tank
-            has_tech = motorised_infantry
-			has_full_control_of_state = 219
-		}}
+		}
 
 			completion_reward = {
-			SOV = {
-					load_oob = "MON_tankdivision2"
-	        }}
-}
+            }
+    }
 
 	#Focus for Arat squadron
 	focus = {
@@ -1266,19 +1201,14 @@ create_country_leader = {
 		y = 7
 		cost = 3
 		available = {
-        SOV = {	has_full_control_of_state = 219 }	
-		SOV = { has_tech = fighter3 }
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = MON_revolutionarymongoliantankdivision }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {		
-		SOV = { 
-			country_event = { id = soviet.202 days = 1 }
-			}		
-    }
+		completion_reward = {	
+        }		
 	}
 
 	#Focus for Military lend-lease
@@ -1473,15 +1403,9 @@ create_country_leader = {
 			factor = 1
 		}
 		
-						bypass = {
-			330 = { NOT = { is_owned_and_controlled_by = MON} }
-			798 = { NOT = { is_owned_and_controlled_by = MON} }
-			800 = { NOT = { is_owned_and_controlled_by = MON} }				
+						bypass = {			
 		}
 		available = {
-			800 = { is_owned_and_controlled_by = MON} 
-			798 = { is_owned_and_controlled_by = MON} 	
-			330 = { is_owned_and_controlled_by = MON} 
 		}
 		
 				completion_reward = {
@@ -1494,14 +1418,14 @@ create_country_leader = {
 				technology = tech_logistics_company3
 				technology = tech_logistics_company4
 			}				
-				800 = {
+				330 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
 						instant_build = yes
 					}
 				}
-				798 = {
+				330 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -1614,13 +1538,10 @@ create_country_leader = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = MON_cac_boomerang
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				bonus = 2.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
 			}
 		}
 	}
