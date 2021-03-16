@@ -144,7 +144,7 @@ division_template = {
 	#Focus for Expand MPRA
 	focus = {
 		id = MON_expandmpra
-		icon = GFX_monarmedforce
+		icon = GFX_monarmedforces
 		x = 7
 		y = 0
 		cost = 10

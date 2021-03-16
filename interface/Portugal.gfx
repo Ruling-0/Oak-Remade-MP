@@ -345,6 +345,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/sovietfighters.dds"
 	}
 	SpriteType = { 
+		name = "GFX_sovietbombers"
+		texturefile = "gfx/interface/goals/sovietbombers.dds"
+	}
+	SpriteType = { 
 		name = "GFX_localplaneproduction"
 		texturefile = "gfx/interface/goals/localplaneproduction.dds"
 	}
