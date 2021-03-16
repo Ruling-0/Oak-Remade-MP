@@ -2799,8 +2799,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/crushjapan.dds"
 	}	
 	SpriteType = {
-		name = "GFX_monmutualassistance"
-		texturefile = "gfx/interface/goals/monmutualassistance.dds"
+		name = "GFX_monpropaganda"
+		texturefile = "gfx/interface/goals/monpropaganda.dds"
 	}	
 	SpriteType = {
 		name = "GFX_monmutualassistance"
