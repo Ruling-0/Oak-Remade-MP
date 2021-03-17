@@ -2805,6 +2805,7 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_findwhotoblame"
 		texturefile = "gfx/interface/goals/findwhotoblame.dds"
+	}
 	SpriteType = {
 		name = "GFX_monarmedforces"
 		texturefile = "gfx/interface/goals/monarmedforces.dds"
