@@ -382,7 +382,7 @@ leader_traits = {
 			max_commander_army_size = 12
 		}
 		field_marshal_modifier = {
-			max_army_group_size = 6
+			max_army_group_size = 2
 		}
 	}
 ##################################
@@ -756,10 +756,6 @@ leader_traits = {
 		}
 		cost = 1000
 
-		corps_commander_modifier = {
-			max_commander_army_size = -4
-		}
-
 		modifier = {
 			terrain_penalty_reduction = 0.2
 			acclimatization_cold_climate_gain_factor = 0.1
@@ -792,9 +788,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 
-		corps_commander_modifier = {
-			max_commander_army_size = -2
-		}
 		enable_ability = requisition_winter_gear
 		modifier = {
 			acclimatization_cold_climate_gain_factor = 0.2
@@ -1068,10 +1061,6 @@ leader_traits = {
 		}
 		cost = 1000
 
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
-
 		modifier = {
 			army_armor_defence_factor = 0.1
 			army_armor_attack_factor = 0.1
@@ -1099,10 +1088,6 @@ leader_traits = {
 		cost = 750
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
 
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
-
 		modifier = {
 			motorized_defence_factor = 0.1
 			mechanized_defence_factor = 0.1
@@ -1122,10 +1107,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
 
 		modifier = {
 		    army_armor_attack_factor = 0.05
@@ -1157,10 +1138,6 @@ leader_traits = {
 		}
 		cost = 500
 
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
-
 		modifier = {
 			cavalry_attack_factor = 0.10
 			cavalry_defence_factor = 0.15
@@ -1191,10 +1168,6 @@ leader_traits = {
 		}
 		cost = 700
 
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
-
 		modifier = {
 			fort = {
 				attack = 0.1
@@ -1223,9 +1196,7 @@ leader_traits = {
 		modifier = {
 			equipment_capture = 0.03
 		}
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1243,10 +1214,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
 
 		modifier = {
 			army_infantry_attack_factor = 0.15
@@ -1269,10 +1236,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
 
 		modifier = {
 			max_dig_in = 3
@@ -1298,10 +1261,6 @@ leader_traits = {
 		}
 		cost = 500
 
-		corps_commander_modifier = {
-			max_commander_army_size = -6
-		}
-
 		modifier = {
 			extra_marine_supply_grace = 240
 		}
@@ -1324,10 +1283,6 @@ leader_traits = {
 		}
 		cost = 500
 
-		corps_commander_modifier = {
-			max_commander_army_size = -6
-		}
-
 		modifier = {
 			shore_bombardment_bonus = 0.25
 		}
@@ -1348,10 +1303,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
 
 		modifier = {
 		}
@@ -1374,10 +1325,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -12
-		}
 
 		modifier = {
 			extra_paratrooper_supply_grace = 240
@@ -1403,10 +1350,6 @@ leader_traits = {
 		}
 		cost = 500
 
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
-
 		modifier = {
 			cas_damage_reduction = 0.5
 			air_superiority_bonus_in_combat = -0.5
@@ -1428,11 +1371,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
-		
 			
 		ai_will_do = {
 			factor = 1
@@ -1456,10 +1394,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
-
-		corps_commander_modifier = {
-			max_commander_army_size = -3
-		}
 
 		modifier = {
 			dig_in_speed_factor = 0.25
