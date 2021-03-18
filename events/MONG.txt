@@ -16,6 +16,7 @@ country_event = {
 
     immediate = {
             add_ideas = MON_Internal_security
+			add_ideas = officers_purged_4
     }
         option = {
         name = mon.1.a

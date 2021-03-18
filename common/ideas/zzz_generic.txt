@@ -1838,7 +1838,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = BUL tag = EFR tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = ROM tag = HUN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CHI original_tag = SPR original_tag = SIA is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = BUL tag = EFR tag = MON tag = MAN tag = PRC tag = MEX tag = HOL tag = CZE tag = ROM tag = HUN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CHI original_tag = SPR original_tag = SIA is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -1863,7 +1863,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = MAN tag = PRC tag = MEX tag = HOL tag = PHI tag = IRE tag = NZL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
+				NOT = { OR = { tag = MAN tag = MON tag = PRC tag = MEX tag = HOL tag = PHI tag = IRE tag = NZL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CHI original_tag = SPR is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
@@ -1951,7 +1951,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR { tag = BUL tag = RAJ tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
+				NOT = { OR { tag = BUL tag = RAJ tag = GER tag = ENG tag = SOV tag = MON tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}
@@ -2034,7 +2034,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-				NOT = { OR { tag = BUL tag = MAN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
+				NOT = { OR { tag = BUL tag = MAN tag = MON tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
 				}
@@ -2061,7 +2061,7 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				NOT = { OR { tag = BUL tag = MAN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
+				NOT = { OR { tag = BUL tag = MAN tag = MON tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
 				}
@@ -2088,7 +2088,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 			
 			allowed = {
-				NOT = { OR { tag = BUL tag = MAN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
+				NOT = { OR { tag = BUL tag = MAN tag = MON tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
 				}
@@ -2115,7 +2115,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				NOT = { OR { tag = BUL tag = MAN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = CHI is_reichskommissariat_ger = yes } }
+				NOT = { OR { tag = BUL tag = MAN tag = MON tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = CHI is_reichskommissariat_ger = yes } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}
