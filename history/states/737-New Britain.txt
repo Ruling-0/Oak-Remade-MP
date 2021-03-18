@@ -1,6 +1,10 @@
 state={
 	id=737
 	name="STATE_737"
+	
+	resources={
+		rubber=10
+	}
 
 	history={
 		add_core_of = NGA
