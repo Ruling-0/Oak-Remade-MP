@@ -10,7 +10,7 @@ state={
 		add_core_of = NGA
 		owner = AST
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 3
 
 			4329 = {

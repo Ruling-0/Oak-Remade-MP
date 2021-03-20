@@ -50,8 +50,8 @@ HOL_historical_plan = {
 		HOL_de_vaarplicht					#March 30 1941	
 		HOL_expand_the_mld					#June 10 1941
 		HOL_protect_the_colonies					#August 20 1941
-		HOL_java
-		HOL_reinforce_java					#October 30 1941	
+		HOL_jav
+		HOL_reinforce_jav				#October 30 1941	
 		HOL_modernize_the_air_fleet					#January 10
  		HOL_the_singapore_conferences					#March 20 1942
  		HOL_ship_a_day_sinking_quotas					#May 30 1942	

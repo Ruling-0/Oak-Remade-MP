@@ -679,7 +679,6 @@ ideas = {
 			
 		available = {
 			OR = {
-			    tag = MON
 			    tag = POR 
 				Tag = SPR
 			    tag = SWE
