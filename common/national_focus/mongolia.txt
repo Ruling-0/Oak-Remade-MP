@@ -989,9 +989,14 @@ create_country_leader = {
 		}
 		
 						available = {
+						date > 1939.7.1
 		}
 		
 				completion_reward = {	
+			swap_ideas = {
+				remove_idea = MON_agrarian_reform1
+				add_idea = MON_agrarian_reform2
+			}
 	
 			617 = {
 				add_extra_state_shared_building_slots = 2
@@ -1279,7 +1284,6 @@ create_country_leader = {
 		}
 		
 						completion_reward = {
-						add_ideas = ROM_agrarian_reform
 			if = {
 				limit = {
 					has_idea = MON_Rogue_state

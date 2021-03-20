@@ -73,9 +73,27 @@ ideas = {
 				air_training_xp_gain_factor = 0.2
 			}
 		}
-		ROM_agrarian_reform = {
+		MON_agrarian_reform1 = {
 
 			picture = generic_agrarian_society
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = MON
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+			}
+		}
+		MON_agrarian_reform2 = {
+
+			picture = chi_hyper_inflation2
 
 			removal_cost = -1
 			

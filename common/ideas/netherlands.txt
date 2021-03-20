@@ -2177,6 +2177,7 @@ ideas = {
 		}	
 		
 		HOL_hein_ter_poorten = {
+		    ledger = army
 			
 			picture = generic_army_europe_5
 			
