@@ -5732,7 +5732,7 @@ operations = {
 			country_exists = IRE
 		}
 		available = {
-			date > 1941.1.1
+			date > 1942.4.1
 		}
 
 		cost = 0
