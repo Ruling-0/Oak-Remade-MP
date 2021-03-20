@@ -679,7 +679,6 @@ ideas = {
 			
 		available = {
 			OR = {
-			    tag = EFR
 			    tag = POR 
 				Tag = SPR
 			    tag = SWE
@@ -688,6 +687,8 @@ ideas = {
 				tag = SIA
 				tag = MAN
 				tag = PHI
+				tag = MON
+				tag = HOL
 				AND = {
 			        has_war = no
 			        NOT = { has_government = fascism }

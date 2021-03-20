@@ -3761,6 +3761,9 @@ focus_tree = {
 			    PHI = {
 				    add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
+			    HOL = {
+				    add_ideas = ENG_prepare_for_the_inevitable_idea
+				}
 			    RAJ = {    
 					add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
@@ -5746,7 +5749,7 @@ focus_tree = {
 			    PHI = {
 				    add_ideas = ENG_british_commonwealth_air_training_plan
 				}
-			    MEX = {
+			    HOL = {
 				    add_ideas = ENG_british_commonwealth_air_training_plan
 				}
 			    RAJ = {    
@@ -6079,6 +6082,12 @@ focus_tree = {
 						province = 271
 						instant_build = yes
 					}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 271
+					instant_build = yes
+				}
 				}
 			}
 			# Greater London Area
@@ -6092,6 +6101,12 @@ focus_tree = {
 						province = 11374
 						instant_build = yes
 					}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 11374
+					instant_build = yes
+				}
 				}
 			}
 			# Sussex
@@ -6111,7 +6126,19 @@ focus_tree = {
 						level = 5
 						province = 9458
 						instant_build = yes
-					}					
+					}	
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 3501
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 9458
+					instant_build = yes
+				}
 				}								
 			}
 			# Cornwall
@@ -6125,6 +6152,12 @@ focus_tree = {
 						province = 540
 						instant_build = yes
 					}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 540
+					instant_build = yes
+				}
 				}
 			}
 		}

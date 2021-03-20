@@ -791,5 +791,10 @@ leader_traits = {
 		production_speed_radar_station_factor = 0.1
 		production_speed_infrastructure_factor = 0.1 
 	}
+	mongolian_stalin = {
+		random = no
+		resistance_damage_to_garrison = -0.15
+		communism_drift = 0.1
+	}
 }
 

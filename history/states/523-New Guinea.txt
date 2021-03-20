@@ -1,12 +1,16 @@
 state={
 	id=523
 	name="STATE_523"
+	
+	resources={
+		rubber=20
+	}
 
 	history={
 		add_core_of = NGA
 		owner = AST
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 3
 
 			4329 = {

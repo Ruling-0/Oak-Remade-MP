@@ -28,7 +28,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				compliance_gain = 0.25
+	            army_core_attack_factor = -0.2
+	            army_core_defence_factor = -0.2
+				compliance_gain = 0.05
 			}
 			
 			traits = { popular_figurehead }
@@ -343,7 +345,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				political_power_cost = 0.33
+				consumer_goods_factor = 0.03
 			}
 		}
 
@@ -584,9 +586,9 @@ ideas = {
 			}
 		}
 
-		HOL_friesland_agricultural_impetus = {
+		HOL_friesland_agricultural_impetu = {
 
-			picture = generic_goods_red_bonus
+			picture = generic_foreign_capital
 			
 			allowed = {
 				always = no
@@ -753,59 +755,59 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				cv_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				jet_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				cv_CAS_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				CAS_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				cv_nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				rocket_interceptor_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				tac_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				jet_tac_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				jet_strat_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				heavy_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				strat_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				transport_plane_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 			}
 		}
@@ -825,7 +827,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 
@@ -1159,7 +1161,7 @@ ideas = {
 			}
 		}
 
-		HOL_allied_technological_developments = {
+		HOL_allied_technological_development = {
 
 			picture = generic_research_bonus
 
@@ -1174,7 +1176,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_speed_factor = 0.10
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -1215,7 +1217,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 
@@ -1758,7 +1760,7 @@ ideas = {
 						
 			modifier = {
 				industrial_capacity_factory = -0.05
-				production_speed_buildings_factor = -0.1
+				production_speed_buildings_factor = -0.05
 			}
 
 		}
@@ -1989,21 +1991,6 @@ ideas = {
 				factor = 1
 			}
 		}
-
-		HOL_hein_ter_poorten = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { army_chief_morale_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
 		HOL_henri_winkelman = {
 			
@@ -2061,7 +2048,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_reform_2 }
+			traits = { air_air_superiority_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2183,6 +2170,22 @@ ideas = {
 			}
 			
 			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		HOL_hein_ter_poorten = {
+		    ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { army_armored_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2446,7 +2449,7 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 
-			cost = 75
+			cost = 100
 
 			picture = generic_electronics_concern_1
 			
@@ -2469,7 +2472,7 @@ ideas = {
 				has_dlc = "Man the Guns"
 			}
 
-			cost = 75
+			cost = 100
 
 			picture = HOL_royal_dutch_shell
 			

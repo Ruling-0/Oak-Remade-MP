@@ -2991,7 +2991,11 @@ focus_tree = {
 				limit = {
 					is_ai = no 
 				}
-				has_tech = dispersed_industry4
+				OR = {
+				    has_tech = dispersed_industry4
+				    has_tech = concentrated_industry4
+				}
+
 				has_tech = excavation4
 				has_war_with = SOV
 				has_idea = GER_economy_of_plunder_6			

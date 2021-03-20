@@ -2369,7 +2369,10 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+			    OR = {
+				    original_tag = FRA
+					original_tag = HOL
+				}
 			}
 						
 			research_bonus = {
@@ -2385,11 +2388,17 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 
 			available = {
-				has_completed_focus = FRA_army_reform
+			    OR = {
+				    tag = HOL
+				    has_completed_focus = FRA_army_reform
+			    }
 			}
 						
 			allowed = {
-				original_tag = FRA
+			    OR = {
+				    original_tag = FRA
+					original_tag = HOL
+				}
 			}
 						
 			research_bonus = {
@@ -2404,11 +2413,17 @@ ideas = {
 			picture = generic_tank_manufacturer_3
 
 			available = {
-				has_completed_focus = FRA_infantry_tanks
+			    OR = {
+				    tag = HOL
+				    has_completed_focus = FRA_infantry_tanks
+				}
 			}
 						
 			allowed = {
-				original_tag = FRA
+			    OR = {
+				    original_tag = FRA
+					original_tag = HOL
+				}
 			}
 						
 			research_bonus = {
@@ -2428,7 +2443,10 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+			    OR = {
+				    original_tag = FRA
+					original_tag = HOL
+				}
 			}
 						
 			research_bonus = {
@@ -2447,7 +2465,10 @@ ideas = {
 
 						
 			allowed = {
-				original_tag = FRA
+			    OR = {
+				    original_tag = FRA
+					original_tag = HOL
+				}
 				has_dlc = "La Resistance"
 			}
 						

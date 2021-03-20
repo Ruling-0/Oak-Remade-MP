@@ -1080,36 +1080,6 @@ SOV_socialism_in_one_country = {
 		}
 	}
 
-	SOV_annex_tannu_tuva = {
-
-		icon = decision_generic_construction
-
-		fire_only_once = yes
-		
-		allowed = {
-		   tag = SOV
-		}
-		
-		available = {
-			is_puppet = no
-			has_army_manpower = { size > 999999 }
-			has_capitulated = no
-			has_completed_focus = SOV_eastern_security
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		days_remove = 70
-
-		remove_effect = {
-			TAN = {
-				country_event = { id = soviet.14 }
-			}			
-		}
-	}
-
 	SOV_fortify_molotov_line = {
 
 		icon = generic_construction
@@ -5748,6 +5718,45 @@ operations = {
 			add_war_support = 0.5
 			add_ideas = SOV_sealions
 		}
+	}
+   SOV_annex_mon = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = SOV			
+		}
+		visible = {
+			tag = SOV
+			IRE = { is_ai = yes }
+			country_exists = IRE
+		}
+		available = {
+			date > 1941.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			MON = {
+				transfer_navy = {
+					target = SOV
+				}
+			}
+			annex_country = {
+              target = MON
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = SOV
+			}	
+		}		
 	}
 }
 

@@ -2771,5 +2771,67 @@ spriteTypes = {
 		name = "GFX_GOAL_infrastructure_projects"
 		texturefile = "gfx/interface/goals/coopicons/GOAL_infrastructure_projects.dds"
 	}	
+####NORAS STUFF####
 
+####MONGOLIA####
+	SpriteType = {
+		name = "GFX_monministry"
+		texturefile = "gfx/interface/goals/monministry.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mongenden"
+		texturefile = "gfx/interface/goals/mongenden.dds"
+	}	
+	SpriteType = {
+		name = "GFX_monmutualassistance"
+		texturefile = "gfx/interface/goals/monmutualassistance.dds"
+	}	
+	SpriteType = {
+		name = "GFX_monpardoning"
+		texturefile = "gfx/interface/goals/monpardoning.dds"
+	}	
+	SpriteType = {
+		name = "GFX_monpurgetime"
+		texturefile = "gfx/interface/goals/monpurgetime.dds"
+	}	
+	SpriteType = {
+		name = "GFX_crushjapan"
+		texturefile = "gfx/interface/goals/crushjapan.dds"
+	}	
+	SpriteType = {
+		name = "GFX_monpropaganda"
+		texturefile = "gfx/interface/goals/focus_por_workers_of_iberia.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_findwhotoblame"
+		texturefile = "gfx/interface/goals/findwhotoblame.dds"
+	}
+	SpriteType = {
+		name = "GFX_monarmedforces"
+		texturefile = "gfx/interface/goals/monarmedforces.dds"
+	}	
+	SpriteType = {
+		name = "GFX_monborderguard"
+		texturefile = "gfx/interface/goals/monborderguard.dds"
+	}
+	SpriteType = {
+		name = "GFX_monindustry1"
+		texturefile = "gfx/interface/goals/monindustry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tireplant"
+		texturefile = "gfx/interface/goals/tireplant.dds"
+	}
+	SpriteType = {
+		name = "GFX_mondefensiveop"
+		texturefile = "gfx/interface/goals/mondefensiveop.dds"
+	}	
+	SpriteType = {
+		name = "GFX_monforthepeople"
+		texturefile = "gfx/interface/goals/monforthepeople.dds"
+	}
+	SpriteType = {
+		name = "GFX_sovietfighters"
+		texturefile = "gfx/interface/goals/sovietfighters.dds"
+	}
 }

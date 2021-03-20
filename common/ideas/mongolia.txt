@@ -1,16 +1,457 @@
 ideas = {
-	theorist_production = {
-		MON_pai_yun_ti = {
+    country = {
+            MON_advisors = {
 
-			picture = generic_political_advisor_asia_1
+            picture = por_volunteers_in_the_war
+
+            allowed = {
+            original_tag = "MON"
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+
+			modifier = {
+			    winter_attrition_factor = -0.3
+				acclimatization_cold_climate_gain_factor = 0.15
+				supply_consumption_factor = -0.2
+				training_time_factor = -0.1 
+				special_forces_cap = 0.1
+			}
+        }
+		MON_spirit_of_genghis_idea = {
+		
+			picture = FRA_army_of_aggression_focus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}		
+			
+			equipment_bonus = {
+				horse_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		MONAF = {
+		           
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+			
+			picture = generic_air_bonus		
+            
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+			
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
+			}
+		}
+		MON_agrarian_reform1 = {
+
+			picture = generic_agrarian_society
+
+			removal_cost = -1
 			
 			allowed = {
 				original_tag = MON
 			}
+
+			allowed_civil_war = {
+
+			}
 			
-			traits = { war_industrialist }
+			modifier = {
+				consumer_goods_factor = 0.08
+			}
 		}
-	}
+		MON_agrarian_reform2 = {
+
+			picture = chi_hyper_inflation2
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = MON
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+			MON_Rogue_state = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = MON
+						has_government = communism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.15
+			}
+		}	
+		
+			MON_Rogue_state_2 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = MON
+						has_government = communism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.10
+			}
+		}
+		
+			MON_Rogue_state_3 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = MON
+						has_government = communism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_cost = 0.10
+			}
+		}
+		
+		MON_Rual_population = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = MON
+						has_government = communism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				war_support_factor = -0.15
+				research_speed_factor = -0.15
+			}
+		}
+		
+		
+		MON_Rual_population_2 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = MON
+						has_government = communism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				war_support_factor = -0.1			
+				research_speed_factor = -0.10
+			}
+		}
+		
+		MON_Rual_population_3 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = MON
+						has_government = communism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}		
+		
+		MON_Mongolian_Police = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.25
+			}
+		}
+		
+		
+		MON_Armed_State = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+			
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		
+		MON_Armed_State_2 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+			
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
+				MON_idea_economic_aid = {
+
+			picture = generic_goods_red_bonus
+			
+			available = {
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		
+		MON_Internal_security = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.25
+			}
+		}
+		
+		MON_Internal_security_1 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.22
+			}
+		}
+		
+		MON_Internal_security_2 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.19
+			}
+		}
+		
+		MON_Internal_security_3 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.16
+			}
+		}
+		
+	    MON_Internal_security_4 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.13
+			}
+		}
+		
+		MON_Internal_security_5 = {
+			
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+    }
+
 	political_advisor = {
 
 		MON_dansrabilegyin_dogsam = {
@@ -21,7 +462,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { marxist_philosopher }
 		}
 
 		MON_yundunwangcug = {
@@ -32,8 +473,19 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { quartermaster_general }
+			traits = { social_reformer }
 		}
+		
+		MON_Harghasun = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { smooth_talking_charmer }
+		}		
 	}	
 
 	army_chief = {
@@ -46,7 +498,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { army_chief_morale_2 }
+			traits = { army_chief_morale_1 army_chief_defensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -62,7 +514,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { army_chief_defensive_2 }
+			traits = { army_chief_maneuver_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -82,7 +534,7 @@ ideas = {
 				original_tag = MON
 			}
 			
-			traits = { air_chief_reform_2 }
+			traits = { air_chief_ground_support_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -142,33 +594,63 @@ ideas = {
 	}
 
 	high_command = {
-
-		MON_lee_shou_hsin = {
+	
+		MON_khan = {
 			ledger = army
 
+			picture = genghis_ghost
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			available = {
+				has_completed_focus = MON_assisttheherdsmen
+			}
+			
+			traits = { army_cavalry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		MON_lee_shou_hsin = {
+            ledger = army
 			picture = generic_army_asia_3
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			traits = { army_regrouping_2 }
+			traits = { army_infantry_1 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
+		MON_ganbaatar = { 
+             ledger = army
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { army_armored_1 }
+		}
+		
 		MON_chimid = {
-			ledger = army
-
+            ledger = army
 			picture = generic_army_asia_1
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			traits = { army_concealment_2 }
+			traits = { army_concealment_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -176,15 +658,14 @@ ideas = {
 		}
 
 		MON_buyannmeh = {
-			ledger = air
-
+            ledger = air
 			picture = generic_air_asia_3
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			traits = { air_strategic_bombing_2 }
+			traits = { air_tactical_bombing_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -193,15 +674,14 @@ ideas = {
 
 
 		MON_haidav = {
-			ledger = navy
-
-			picture = generic_navy_asia_1
+             ledger = air
+			picture = generic_air_asia_2
 			
 			allowed = {
 				original_tag = MON
 			}
 			
-			traits = { navy_naval_air_defense_2 }
+			traits = { air_air_superiority_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -209,12 +689,363 @@ ideas = {
 		}
 	}
 	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		MON_morozov_design_bureau = {
+			picture = morozov_design_bureau
+			
+			allowed = {
+					original_tag = MON
+			}
+			research_bonus = {
+				armor = -0.05
+			}
+			
+			equipment_bonus = {
+				heavy_assault_gun_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					armor_value = 0.05
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					reliability = 0.1
+					air_attack = 0.05
+					armor_value = 0.05
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					reliability = 0.1
+					hard_attack = 0.1
+					armor_value = 0.05
+					build_cost_ic = 0.1
+				}
+				medium_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_equipment = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1 
+					armor_value = 0.05
+					build_cost_ic = 0.1
+				}
+			    light_tank_equipment = {
+					reliability = 0.05
+					soft_attack = 0.1
+					armor_value = 0.05				
+					build_cost_ic = 0.05
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.05
+					soft_attack = 0.1
+					build_cost_ic = 0.05
+				}
 
+				light_tank_destroyer_equipment = {
+					reliability = 0.05
+					hard_attack = 0.1
+					build_cost_ic = 0.05
+				}
+				light_tank_aa_equipment = {
+					reliability = 0.05
+					air_attack = 0.1
+					build_cost_ic = 0.05
+				}				
+			}
+
+			traits = { SOV_medium_tank_designer }
+			
+			modifier = {
+			}
+		}
+
+		MON_GAZ_design_bureau = {
+			picture = gaz
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = -0.05
+			}
+
+			modifier = {
+			}
+			
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					reliability = -0.1 
+					armor_value = 0.05
+					hard_attack = 0.05
+					soft_attack = 0.05
+					build_cost_ic = 0.10
+				}
+				heavy_tank_destroyer_equipment = {
+					reliability = -0.1
+					armor_value = 0.05
+					hard_attack = 0.1
+					build_cost_ic = 0.10
+				}
+				heavy_tank_artillery_equipment = {
+					reliability = -0.1 
+					armor_value = 0.05
+					soft_attack = 0.1
+					build_cost_ic = 0.10
+				}				
+				heavy_assault_gun_equipment = {
+					reliability = -0.1 
+					armor_value = 0.05
+					hard_attack = 0.075
+					soft_attack = 0.075
+					build_cost_ic = 0.10
+				}
+			}
+		
+			traits = { SOV_heavy_tank_designer }
+			
+			modifier = {
+			}				
+		}
+		
+		MON_astrov_design_bureau = {
+			picture = astrov_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			research_bonus = {
+				armor = -0.05
+			}
+
+			modifier = {
+			}
+
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.05
+					maximum_speed = -0.15 
+					defense = 0.25
+					build_cost_ic = 0.15
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.05
+					maximum_speed = -0.15
+					defense = 0.15
+					build_cost_ic = 0.10
+				}
+				heavy_assault_gun_equipment = {
+					armor_value = 0.05
+					maximum_speed = -0.1 
+					hard_attack = 0.1 
+					soft_attack = 0.1
+					defense = 0.15
+					build_cost_ic = 0.1					
+				}
+				medium_tank_equipment = {
+					maximum_speed = -0.15 
+					armor_value = 0.05
+					defense = 0.2
+					build_cost_ic = 0.10
+				}				
+			}
+
+			traits = { SOV_breakthrough_tank_designer }
+			
+			modifier = {
+			}		
+		}
+		
+		MON_okmo = {
+			picture = okmo
+			
+			allowed = {
+				original_tag = MON
+			}
+			research_bonus = {
+				armor = -0.05
+			}
+			
+			equipment_bonus = {
+				heavy_assault_gun_equipment = {
+					reliability = -0.05
+					maximum_speed = 0.1 
+					armor_value = -0.10
+					build_cost_ic = -0.05
+				}
+				medium_tank_aa_equipment = {
+					reliability = -0.05
+					maximum_speed = 0.1 
+					armor_value = -0.10
+					build_cost_ic = -0.05
+				}
+				medium_tank_artillery_equipment = {
+					reliability = -0.05
+					maximum_speed = 0.1 
+					armor_value = -0.10
+					build_cost_ic = -0.05
+				}
+				medium_tank_equipment = {
+					reliability = -0.05
+					maximum_speed = 0.1 
+					armor_value = -0.10
+					build_cost_ic = -0.05
+				}
+			    light_tank_equipment = {
+					reliability = 0.05
+					soft_attack = 0.05
+					maximum_speed = 0.1
+					armor_value = 0.05					
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.05
+					soft_attack = 0.05
+					maximum_speed = 0.1					
+				}
+
+				light_tank_destroyer_equipment = {
+					reliability = 0.05
+					hard_attack = 0.05
+					maximum_speed = 0.1					
+				}
+				light_tank_aa_equipment = {
+					reliability = 0.05
+					air_attack = 0.05
+					maximum_speed = 0.1					
+				}				
+			}
+			
+			traits = { SOV_cavalry_tank_designer }
+			
+			modifier = {
+			}			
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		mig_design_bureau1 = {
+			picture = mig_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			research_bonus = {
+				air_equipment = -0.05
+			}
+
+			equipment_bonus = {		
+				fighter_equipment = {
+					air_agility = 0.1 reliability = 0.05 
+				} 					
+			}
+			
+			modifier = {
+			}
+		}
+		
+		ilyushin_design_bureau1 = {
+			picture = ilyushin_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}				
+			research_bonus = {
+				air_equipment = -0.05
+			}
+
+			equipment_bonus = {		
+				CAS_equipment = {
+					air_ground_attack = 0.15 reliability = 0.15 air_defence = 0.15 build_cost_ic = -0.1 
+				}				
+				fighter_equipment = {
+					air_attack = 0.075 air_agility = 0.075
+				}					
+			}
+			
+			modifier = {
+			}
+		}
+		
+		tupolev_design_bureau1 = {
+			picture = tupolev_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			research_bonus = {
+				air_equipment = -0.05
+			}
+
+			equipment_bonus = {		
+				tac_bomber_equipment = {
+					air_ground_attack = 0.1 reliability = 0.1  
+				}
+				heavy_fighter_equipment = {
+					air_attack = 0.1 air_range = 0.05
+				}						
+			}
+			
+			modifier = {
+			}
+		}
+		
+		yakovlev_design_bureau1 = {
+			picture = yakovlev_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			research_bonus = {
+				air_equipment = -0.05
+			}
+
+			equipment_bonus = {		
+				fighter_equipment = {
+					air_attack = 0.1 air_range = 0.05
+				}						
+			}
+			
+			modifier = {
+			}
+		}		
+	}	
+	
+	theorist_production = {	
+
+		MON_pai_yun_ti = {
+			picture = generic_political_advisor_asia_1
+
+			allowed = {
+				original_tag = MON
+			}
+			
+			available = {
+				GER = { has_war_with = SOV }
+			}
+
+			traits = { SOV_peoples_commissar_of_armaments }
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.15
+				stability_weekly = -0.002
+			}
+		}
+    }
 
 	theorist = {
 		MON_dagva = {
-			ledger = army
-
+            ledger = army
 			picture = generic_army_asia_5
 			
 			allowed = {
@@ -222,31 +1053,14 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.1
 			}
 			
 			traits = { military_theorist }
 		}
-		
-		MON_ganbaatar = { 
-			ledger = navy
-
-			picture = generic_navy_asia_3
-			
-			allowed = {
-				original_tag = MON
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
 
 		MON_ulanhu = {
-			ledger = air
-
+            ledger = air
 			picture = generic_air_asia_2
 			
 			allowed = {
@@ -254,14 +1068,11 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.1
 			}
 			
 			traits = { air_warfare_theorist }
 		}
 
 	}
-
-
-
 }

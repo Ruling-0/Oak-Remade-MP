@@ -145,6 +145,7 @@ technology_folders = {
 			original_tag = IRE
 			original_tag = CZE
 			original_tag = PHI
+			original_tag = MON
 		  }
         }
     }
@@ -169,7 +170,12 @@ technology_folders = {
     }
     sov_armour_folder = {
 		ledger = army
-        available = {original_tag = SOV}
+        available = {
+		    OR  = {
+			original_tag = SOV
+			original_tag = MON
+		    }
+        }
     }
     eng_armour_folder = {
 		ledger = army
@@ -215,6 +221,7 @@ technology_folders = {
             NOT = { 
 			original_tag = GER 
 			original_tag = SOV 
+			original_tag = MON
 			original_tag = ENG 
 			original_tag = USA 
 		    original_tag = CAN
@@ -279,7 +286,12 @@ technology_folders = {
     }
 	sov_air_techs_folder = {
 		ledger = air	   			
-        available = { original_tag = SOV }
+        available = {
+		    OR  = {
+			original_tag = SOV
+			original_tag = MON
+		    }
+        }
     }
 	eng_air_techs_folder = {
 		ledger = air

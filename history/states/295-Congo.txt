@@ -7,11 +7,12 @@ state={
 	state_category = rural
 	
 	resources={
-		tungsten=2 # was: 2
+		steel=15
+		tungsten=10
 	}
 
 	history={
-		owner = BEL
+		owner = HOL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -23,7 +24,7 @@ state={
 			191 1 
 		}
 		victory_points = {
-			5117 3 
+			5117 20
 		}
 			add_core_of = COG
 	}

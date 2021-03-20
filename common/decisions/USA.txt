@@ -1306,7 +1306,7 @@ operations = {
 			country_exists = PHI
 		}
 		available = {
-			date > 1940.10.1
+			date > 1942.3.1
 		}
 
 		cost = 0

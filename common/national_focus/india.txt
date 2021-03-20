@@ -2323,7 +2323,7 @@ focus_tree = {
 		x = -1
 		y = 4
 
-		cost = 7.145
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -5956,7 +5956,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 2.9
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -6000,13 +6000,14 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 7.145
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
+		    OR = {
 			AND = {
 				OR = {
 					has_war_with = JAP 
@@ -6016,6 +6017,8 @@ focus_tree = {
 				OR = {
 					has_idea = RAJ_corruption_6 
 				}
+			}
+			PER = { has_capitulated = yes }
 			}
 
 		}

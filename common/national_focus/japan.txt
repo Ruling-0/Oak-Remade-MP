@@ -1795,9 +1795,6 @@ focus_tree = {
 			    YUN = {
 					country_event = china.101
 				}
-				SIK = {
-				    country_event = china.102
-				}
 				XSM = {
 				    country_event = china.102
 				}	
