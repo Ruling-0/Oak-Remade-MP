@@ -334,7 +334,7 @@ focus_tree = {
 		}
 			
 		icon = GFX_focus_generic_industry_2
-		x = 9
+		x = 10
 		y = 0
 
 		relative_position_id = POR_colonial_assimilation_policy
@@ -544,7 +544,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = POR_instituto_superior_tecnico }	
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 2
+		x = 3
 		y = 0
 
 		relative_position_id = POR_infrastructure_in_angola
@@ -692,10 +692,7 @@ focus_tree = {
 	focus = {
 		id = POR_extraction_industries
 		available = {
-			OR = {
-				has_full_control_of_state = 112
-				has_full_control_of_state = 795
-			}			
+			date > 1939.5.1				
 		}
 
 		bypass = {		
@@ -717,6 +714,34 @@ focus_tree = {
 				limit = { has_full_control_of_state = 795 }
 				unlock_decision_tooltip = POR_develop_santarem_chromium_deposits
 			}			
+		}
+	}
+	
+	focus = {
+		id = POR_resource
+		available = {	
+		}
+
+		bypass = {		
+		}
+		prerequisite = { focus = POR_extraction_industries }	
+		icon = GFX_por_rubber
+		x = 0
+		y = 1
+
+		relative_position_id = POR_extraction_industries
+		cost = 5
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = { 	
+			swap_ideas = {
+				remove_idea = POR_fuel
+				add_idea = POR_fuel2	
+			}	
+			modify_building_resources = {
+        	   building = synthetic_rubber_refinery
+        	   resource = rubber
+        	   amount = 1
+        	}			
 		}
 	}
 

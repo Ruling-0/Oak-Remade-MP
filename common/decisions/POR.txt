@@ -273,15 +273,15 @@ operations = {
 			ENG = {
 		    	add_offsite_building = {
 		    		type = industrial_complex
-		    		level = 3
+		    		level = 2
 		    	}
 		    	add_offsite_building = {
 		    		type = arms_factory
-		    		level = 3
+		    		level = 2
 		    	}
 		    	add_offsite_building = {
 		    		type = dockyard
-		    		level = 2
+		    		level = 1
 		    	}
 			}
 		}		
@@ -316,11 +316,11 @@ operations = {
 			ITA = {
 		    	add_offsite_building = {
 		    		type = synthetic_refinery
-		    		level = 5
+		    		level = 3
 		    	}
 		    	add_offsite_building = {
 		    		type = synthetic_rubber_refinery
-		    		level = 3
+		    		level = 2
 		    	}
 			}
 		}		
