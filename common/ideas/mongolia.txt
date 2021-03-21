@@ -383,7 +383,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-				stability_factor = -0.22
+				stability_factor = -0.23
 			}
 		}
 		
@@ -399,7 +399,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-				stability_factor = -0.19
+				stability_factor = -0.21
 			}
 		}
 		
@@ -415,7 +415,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-				stability_factor = -0.16
+				stability_factor = -0.19
 			}
 		}
 		
@@ -431,7 +431,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-				stability_factor = -0.13
+				stability_factor = -0.17
 			}
 		}
 		
@@ -447,7 +447,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.15
 			}
 		}
     }

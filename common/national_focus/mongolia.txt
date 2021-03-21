@@ -36,7 +36,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		x = 2
 		y = 7
-		cost = 5
+		cost = 7.16
 		available_if_capitulated = yes
 		prerequisite = { focus = MON_findscapegoatsforthegreatterror }
 		ai_will_do = {
@@ -44,7 +44,7 @@ focus_tree = {
 		}
 		
 	  completion_reward = {
-			 remove_ideas = officers_purged_4
+	         remove_ideas = MON_Internal_security_5
 	  }
 	}
 
@@ -214,7 +214,7 @@ focus_tree = {
 		}
 		
 				completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
 		}
 		
 	}
@@ -482,9 +482,6 @@ focus_tree = {
 		}
 		
 		available = {
-			NOT = {
-				has_idea = MON_Internal_security_2
-			}
 		}
 		
 				completion_reward = {
@@ -598,9 +595,9 @@ create_country_leader = {
 		icon = GFX_goal_generic_attack_allies
 		x = 2
 		y = 5
-		cost = 5
+		cost = 7.16
 		available = {
-			if = { date > 1939.02.01 } 
+			date > 1939.02.01 
 			}			
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -613,8 +610,8 @@ create_country_leader = {
 			factor = 1
 		}
 		
-		completion_reward = {												
-	remove_ideas = MON_Internal_security_5		
+		completion_reward = {	
+custom_effect_tooltip = MON_leader_tt		
 	hidden_effect = {	
 		create_country_leader = {
 			name = "Señor Hilter"
@@ -1278,7 +1275,7 @@ create_country_leader = {
 			factor = 1
 		}
 						available = {
-						has_idea = MON_Internal_security_2
+						has_idea = MON_Rual_population_3
 		}
 						completion_reward = {
 			if = {
@@ -1300,7 +1297,7 @@ create_country_leader = {
 			  }
 			}
 			if = { limit = { has_idea = MON_Rogue_state_3 } remove_ideas = MON_Rogue_state_3 }									
-			if = { limit = { has_idea = MON_Rual_population_3 } remove_ideas = MON_Rual_population_3 }			
+			remove_ideas = MON_Rual_population_3 		
 		}
 		
 		
@@ -1414,14 +1411,14 @@ create_country_leader = {
 		icon = GFX_findwhotoblame
 		x = 2
 		y = 6
-		cost = 5
+		cost = 7.16
 		available_if_capitulated = yes
 		prerequisite = { focus = MON_purgeanandynamar }
 		ai_will_do = {
 			factor = 1
 		}
-				completion_reward = {
-			    add_stability = 0.05
+				completion_reward = {	
+				remove_ideas = officers_purged_4
 				
 		}			
 	}
