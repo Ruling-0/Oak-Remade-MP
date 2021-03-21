@@ -125,7 +125,6 @@ focus_tree = {
 		}
 				available = {
 				has_idea = MON_Mongolian_Police
-				has_idea = MON_Internal_security
 		}
 		
 							completion_reward = {
@@ -234,7 +233,6 @@ focus_tree = {
 		
 				available = {
 				has_idea = MON_Mongolian_Police
-				has_idea = MON_Internal_security
 		}	
 		
 		bypass = {
@@ -485,7 +483,7 @@ focus_tree = {
 		
 		available = {
 			NOT = {
-				has_idea = MON_Internal_security
+				has_idea = MON_Internal_security_2
 			}
 		}
 		
@@ -555,7 +553,6 @@ focus_tree = {
 		
 				available = {
 				has_idea = MON_Mongolian_Police
-				has_idea = MON_Internal_security
 		}
 		
 		
@@ -898,7 +895,6 @@ create_country_leader = {
 		}
 				available = {
 				has_idea = MON_Mongolian_Police
-				has_idea = MON_Internal_security
 		}
 				completion_reward = {		
 								swap_ideas = {
@@ -922,7 +918,6 @@ create_country_leader = {
 		
 				available = {
 				has_idea = MON_Mongolian_Police
-				has_idea = MON_Internal_security
 		}
 		
 				completion_reward = {
@@ -1282,7 +1277,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+						available = {
+						has_idea = MON_Internal_security_2
+		}
 						completion_reward = {
 			if = {
 				limit = {
@@ -1460,7 +1457,6 @@ create_country_leader = {
 		}
 				available = {
 				has_idea = MON_Mongolian_Police
-				has_idea = MON_Internal_security
 		}			
 		completion_reward = {
         air_experience = 25

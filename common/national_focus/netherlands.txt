@@ -1001,7 +1001,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			custom_effect_tooltip = HOL_philips_focus_tt
 			add_tech_bonus = {
 				name = HOL_philips_focus
 				bonus = 1.0

@@ -13,10 +13,6 @@ ideas = {
             }
 
             removal_cost = -1
-			
-			research_bonus = {
-				land_doctrine = 0.1
-			}
 
 			modifier = {
 			    winter_attrition_factor = -0.3
@@ -35,6 +31,10 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
 			
 			modifier = {
 				cavalry_attack_factor = 0.05
@@ -251,7 +251,7 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = -0.1			
-				research_speed_factor = -0.10
+				research_speed_factor = -0.12
 			}
 		}
 		
@@ -279,7 +279,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				research_speed_factor = -0.05
+				research_speed_factor = -0.1
 			}
 		}		
 		
@@ -295,7 +295,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				stability_factor = 0.1
+				stability_weekly = 0.001
 				political_power_cost = 0.25
 			}
 		}
