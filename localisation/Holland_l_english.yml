@@ -123,7 +123,7 @@
  HOL_light_tanks_for_the_colonies_2tt:0 "Or:\n"
  HOL_secret_staff_talks:0 "Secret Staff Talks"
  HOL_secret_staff_talks_desc:0 "Though we are officially neutral, we should nevertheless look into secret staff talks with our neighbors. Concerted defensive plans worked out with any one of our neighbors, even if unofficial, could be of monumental importance if we are invaded by another."
- HOL_secret_staff_talks_tt:0 "These make it possible to obtain §YEquipment§!, §YOffensive§! and §YDefensive§! combat bonuses, §YLand Doctrine§! research bonuses, and Government-in-Exile £legitimacy §YLegitimacy§!.\n"
+ HOL_secret_staff_talk_tt:0 "These make it possible to obtain §YLand Doctrine§! research bonuses, and Government-in-Exile £legitimacy §YLegitimacy§!.\n"
  HOL_anti_tank_guns_for_the_continent:0 "Anti Tank Guns for the Continent"
  HOL_anti_tank_guns_for_the_continent_desc:0 "Since the Great War we have seen our continental neighbors improve their tank designs. If invasion comes, these machines will certainly be an integral part of it. We must prepare accordingly."
  HOL_lessons_from_the_last_war:0 "Lessons from the Last War"

@@ -2156,7 +2156,7 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = HOL_secret_staff_talks
-			custom_effect_tooltip = HOL_secret_staff_talks_tt
+			custom_effect_tooltip = HOL_secret_staff_talk_tt
 		}
 	}
 
@@ -2254,25 +2254,8 @@ focus_tree = {
 	focus = {
 		id = HOL_expand_the_mld
 		available = {
-			OR = {
-				has_full_control_of_state = 335
-				any_other_country = {
-					is_subject_of = ROOT
-					has_full_control_of_state = 335
-				}
-			}
 		}
 		bypass = {
-			335 = {
-				OWNER = { 
-					NOT = {
-						OR = {
-							TAG = ROOT 
-							is_subject_of = ROOT 
-						}
-					} 
-				}
-			}
 		}
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_goal_generic_air_doctrine
