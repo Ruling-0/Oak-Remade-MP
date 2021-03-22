@@ -1230,22 +1230,6 @@ on_actions = {
 				}
 				ENG = { load_oob = ENG_Norway_Merchant_fleet } 
 			}
-            if = {
-				limit = {
-					original_tag = HOL
-					has_government = democratic
-					HOL = { has_war_with = GER }
-					HOL = { is_in_faction_with = ENG } 
-		            ENG = { has_capitulated = no }
-				}
-				ENG = {
-					set_autonomy = { target = HOL autonomy_state = autonomy_dominion freedom_level = 0.3 }
-				}
-				HOL = {
-					load_oob = HOL_ai
-					add_popularity = { ideology = democratic popularity = 0.50 }
-				}
-			}
          	if = {
 				limit = {
 					original_tag = BEL

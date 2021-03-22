@@ -69,13 +69,33 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Khorloogiin Choibalsan"
+create_field_marshal = {
+	name = "Khorloin Amar"
 	picture = "portrait_mon_anandyn_amar.dds"
-	traits = { cavalry_leader }
+	traits = { organizer }
 	skill = 3
-	attack_skill = 4
-	defense_skill = 2
+	attack_skill = 3
+	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Borjigin Altan"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Chono Dzhambul "
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { panzer_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }

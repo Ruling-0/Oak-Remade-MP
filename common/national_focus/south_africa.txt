@@ -1148,7 +1148,7 @@ focus_tree = {
 		id = SAF_the_cape_defense_institute
 		icon = GFX_focus_research
 		prerequisite = { focus = SAF_establish_the_atomics_energy_board }
-		x = -1
+		x = 0
 		y = 7
 		relative_position_id = SAF_south_african_railways
 
@@ -1160,41 +1160,6 @@ focus_tree = {
 
 		available = {
 			date > 1939.9.1
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
-		id = SAF_defense_collaboration_initiative
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = SAF_establish_the_atomics_energy_board }
-		x = 1
-		y = 7
-		relative_position_id = SAF_south_african_railways
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			date > 1945.1.1
 		}
 		
 		bypass = {

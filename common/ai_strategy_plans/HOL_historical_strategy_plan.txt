@@ -38,7 +38,7 @@ HOL_historical_plan = {
 		HOL_cornerstone_of_colonial_defense					#April 30 1938	
 		HOL_modernize_the_cruiser_fleet					#July 10 1938	
 		HOL_prepare_the_inundation_lines					#November 30 1938
-		HOL_germany_is_the_greater_threat					#February 10 1939	
+		
 		HOL_antilles_defenses					#April 20 1939	
 		HOL_form_new_government					#June 30 1939
 		HOL_gateway_to_europe				#September 10 1939	

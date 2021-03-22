@@ -1485,7 +1485,7 @@ focus_tree = {
 		id = HOL_overturn_military_budget_cuts
 		prerequisite = { focus = HOL_abandon_the_gold_standard }
 		icon = GFX_goal_generic_army_doctrines
-		x = 6
+		x = 5
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 5
@@ -1512,375 +1512,28 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
-		cost = 5
+		cost = 10
+		
+		available = {
+			threat > 0.15
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_ideas = low_economic_mobilisation
 			add_ideas = HOL_prepare_the_inundation_lines
 		}
 	}
 
 	focus = {
-		id = HOL_protect_against_britain
-		available = {
-			threat > 0.1
-			has_full_control_of_state = 7
-			has_full_control_of_state = 36
-		}
-		bypass = {
-			has_defensive_war_with = ENG
-			NOT = {
-				focus_progress = {
-					focus = HOL_germany_is_the_greater_threat
-					progress > 0
-				}
-			}
-		}
-		prerequisite = { focus = HOL_prepare_the_inundation_lines }
-		mutually_exclusive = { focus = HOL_germany_is_the_greater_threat }
-		icon = GFX_focus_attack_britain
-		x = -1
-		y = 1
-		relative_position_id = HOL_prepare_the_inundation_lines
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			7 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 9498
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 9498
-					instant_build = yes
-				}
-			}
-			36 = {	
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 6336
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 6336
-					instant_build = yes
-				}
-			}
-			ENG = {
-				add_opinion_modifier = { target = HOL modifier = HOL_protect_against_britain }
-			}	
-		}
-	}
-
-	focus = {
-		id = HOL_further_reinforce_the_ports
-		available = {
-			threat > 0.15
-			has_full_control_of_state = 7
-			has_full_control_of_state = 36
-		}
-		prerequisite = { focus = HOL_protect_against_britain }
-		icon = GFX_focus_generic_coastal_fort
-		x = 0
-		y = 1
-		relative_position_id = HOL_protect_against_britain
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			7 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 9498
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 9498
-					instant_build = yes
-				}
-			}
-			36 = {	
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 6336
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 6336
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_southward_defenses
-		available = {
-			threat > 0.2
-			has_full_control_of_state = 7
-			has_full_control_of_state = 35
-			has_full_control_of_state = 36
-		}
-		prerequisite = { focus = HOL_further_reinforce_the_ports }
-		icon = GFX_goal_generic_construct_military
-		x = 0
-		y = 1
-		relative_position_id = HOL_further_reinforce_the_ports
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			7 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 9498
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 9498
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}
-			35 = {
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 11456
-					instant_build = yes
-				}
-			}
-			36 = {	
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 6336
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_germany_is_the_greater_threat
-		available = {
-			threat > 0.1
-			has_full_control_of_state = 7
-			has_full_control_of_state = 35
-			has_full_control_of_state = 36
-		}
-		bypass = {
-			has_defensive_war_with = GER
-			NOT = {
-				focus_progress = {
-					focus = HOL_protect_against_britain
-					progress > 0
-				}
-			}
-		}
-		prerequisite = { focus = HOL_prepare_the_inundation_lines }
-		mutually_exclusive = { focus = HOL_protect_against_britain }
-		icon = GFX_focus_attack_germany
-		x = 1
-		y = 1
-		relative_position_id = HOL_prepare_the_inundation_lines
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			7 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 3314
-					instant_build = yes
-				}
-			}
-			36 = {	
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 6241
-					instant_build = yes
-				}
-			}
-			35 = {	
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 11456
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 6500
-					instant_build = yes
-				}
-			}	
-			GER = {
-				add_opinion_modifier = { target = HOL modifier = HOL_germany_is_the_greater_threat }
-			}	
-		}
-	}
-
-	focus = {
-		id = HOL_fortress_holland
-		available = {
-			threat > 0.15
-			has_full_control_of_state = 7
-			has_full_control_of_state = 35
-		}
-		prerequisite = { focus = HOL_germany_is_the_greater_threat }
-		icon = GFX_goal_generic_fortify_city
-		x = 0
-		y = 1
-		relative_position_id = HOL_germany_is_the_greater_threat
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			7 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 3314
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 9498
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 391
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-			35 = {	
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11456
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}	
-		}
-	}
-
-	focus = {
-		id = HOL_modernize_the_grebbeline
-		available = {
-			threat > 0.2
-			has_full_control_of_state = 36
-		}
-		prerequisite = { focus = HOL_fortress_holland }
-		icon = GFX_goal_generic_construct_military
-		x = 0
-		y = 1
-		relative_position_id = HOL_fortress_holland
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			36 = {	
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 6241
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}	
-		}
-	}
-
-	focus = {
 		id = HOL_war_on_pacifism
-		available = {
-			threat > 0.15
-		}
-		prerequisite = { focus = HOL_protect_against_britain focus = HOL_germany_is_the_greater_threat }
+		prerequisite = { focus = HOL_prepare_the_inundation_lines }
 		icon = GFX_focus_hol_war_on_pacifism
-		x = 1
-		y = 3
-		relative_position_id = HOL_protect_against_britain
-		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = HOL_prepare_the_inundation_lines
+		cost = 5
 
 		cancel_if_invalid = no
 
@@ -1902,7 +1555,7 @@ focus_tree = {
 		id = HOL_appoint_new_supreme_commander
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_focus_generic_military_mission
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 10
@@ -1917,10 +1570,6 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			remove_ideas = HOL_izaak_reijnders
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_henri_winkelman
-			remove_unit_leader = 980 #izaak_reijnders
 			custom_effect_tooltip = HOL_appoint_new_supreme_commander_tt
 			hidden_effect = {
 				create_field_marshal = {
@@ -2200,7 +1849,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_goal_generic_air_doctrine
-		x = 4
+		x = 3
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 5
@@ -2251,7 +1900,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-		    custom_effect_tooltip = HOL_fokker_tt
 			add_tech_bonus = {
 				name = HOL_protect_the_mainland
 				bonus = 1.0
@@ -2492,7 +2140,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 8
+		x = 7
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 5
@@ -2781,7 +2429,7 @@ focus_tree = {
 			has_capitulated = yes
 		}
 		icon = GFX_goal_generic_improve_relations
-		x = 19
+		x = 18
 		y = 0
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 5
@@ -3002,7 +2650,6 @@ focus_tree = {
 			ENG = { has_government = democratic }
 		}
 		bypass = {
-			is_in_faction_with = ENG
 		}
 		prerequisite = { focus = HOL_unity_through_democracy }
 		icon = GFX_focus_chi_british_cooperation
@@ -3014,9 +2661,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_to_tech_sharing_group = commonwealth_research
-			remove_ideas = HOL_aloof_neutrality
-			ENG = { country_event = { id = generic.2 hours = 6 } }
+   			modify_tech_sharing_bonus = {
+         		id = commonwealth_research
+         		bonus = 0.05
+			}		    
 		}
 	}
 
