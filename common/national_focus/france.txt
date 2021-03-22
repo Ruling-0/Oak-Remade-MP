@@ -1677,7 +1677,13 @@ focus_tree = {
 				type = convoy
 				amount = 100
 			}
-			add_legitimacy = 100
+			every_state = {
+				limit = {
+					is_core_of = SEN
+				}
+				add_compliance = 100
+			}
+			add_legitimacy = 25
 			hidden_effect  {
 			news_event = { id = news.342 hours = 12 } 
 			create_corps_commander = {

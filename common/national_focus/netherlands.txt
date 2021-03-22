@@ -15,7 +15,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = HOL
-			has_dlc = "Man the Guns"
 		}
 	}
 	
@@ -329,20 +328,6 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					INS = {
-						is_subject_of = HOL
-						has_full_control_of_state = 335
-					}
-				}
-				INS = {
-					add_autonomy_ratio = {
-						value = -0.05
-						localization = HOL_java
-					}
-				}
-			}
 		}
 	}
 
@@ -378,20 +363,6 @@ focus_tree = {
 					type = anti_air_building
 					level = 2
 					instant_build = yes
-				}
-			}
-			if = {
-				limit = {
-					INS = {
-						is_subject_of = HOL
-						has_full_control_of_state = 335
-					}
-				}
-				INS = {
-					add_autonomy_ratio = {
-						value = -0.025
-						localization = HOL_reinforce_java
-					}
 				}
 			}
 		}
@@ -481,20 +452,6 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					INS = {
-						is_subject_of = HOL
-						has_full_control_of_state = 672
-					}
-				}
-				INS = {
-					add_autonomy_ratio = {
-						value = -0.05
-						localization = HOL_sumatra
-					}
-				}
-			}
 		}
 	}
 
@@ -536,23 +493,6 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					INS = {
-						is_subject_of = HOL
-						has_full_control_of_state = 667
-						has_full_control_of_state = 334
-						has_full_control_of_state = 668
-						has_full_control_of_state = 673
-					}
-				}
-				INS = {
-					add_autonomy_ratio = {
-						value = -0.05
-						localization = HOL_borneo_and_the_grote_oost
-					}
-				}
-			}
 		}
 	}
 
@@ -579,13 +519,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			activate_decision = HOL_relocate_government_to_batavia
+			remove_ideas = HOL_curtail_colonial_autonomy_overlord
 			HOL_de_crisisjaren_level_down = yes
-			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
-			effect_tooltip = {
-				remove_ideas = HOL_curtail_colonial_autonomy_overlord
-				set_capital = 295
-			}
 		}
 	}
 
@@ -2236,6 +2171,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 25
+			add_tech_bonus = {
+				name = POR_armor_focus
+			    bonus = 1.0
+			    uses = 1
+			    category = armor
+			}
 			add_tech_bonus = {
 				name = HOL_lessons_from_the_last_war
 				bonus = 1.0

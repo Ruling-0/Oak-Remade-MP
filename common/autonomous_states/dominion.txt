@@ -39,13 +39,10 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
+	     NOT = { original_tag = INS }
 	}
 
 	can_lose_level = {
-		if = {
-			limit = {
-
-			}
-		}
+         NOT = { original_tag = INS }
 	}
 }

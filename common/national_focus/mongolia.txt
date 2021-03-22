@@ -1418,7 +1418,7 @@ custom_effect_tooltip = MON_leader_tt
 			factor = 1
 		}
 				completion_reward = {	
-				remove_ideas = officers_purged_4
+				remove_ideas = MON_officer_purged
 				
 		}			
 	}

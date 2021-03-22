@@ -151,14 +151,14 @@ HOL_obtain_foreign_colonial_investments = {
 			}
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
-			HOL = { has_full_control_of_state = 695 }
+			HOL = { has_full_control_of_state = 295 }
 		}
 
-		cost = 5
+		cost = 20
 
 		fire_only_once = no
 
-		days_remove = 5
+		days_remove = 35
 
 		visible = {
 			tag = HOL
@@ -169,14 +169,14 @@ HOL_obtain_foreign_colonial_investments = {
 			295 = {
 				add_resource = {
 					type = oil
-					amount = 2
+					amount = 3
 				}
 			}
 			if = {
 				limit = {
 					check_variable = { var = west_indies_oil value = 4 compare = less_than }
 				}
-				custom_effect_tooltip = HOL_attract_west_indies_oil_companies_tt
+				custom_effect_tooltip = HOL_attract_west_indies_oil_company_tt
 			}
 			if = {
 				limit = {
@@ -237,7 +237,7 @@ HOL_obtain_foreign_colonial_investments = {
 
 		fire_only_once = no
 
-		days_remove = 10
+		days_remove = 70
 
 		visible = {
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
@@ -256,7 +256,7 @@ HOL_obtain_foreign_colonial_investments = {
 					check_variable = { var = east_indies_oil value = 5 compare = not_equals }
 					check_variable = { var = east_indies_oil value = 9 compare = less_than }
 				}
-				custom_effect_tooltip = HOL_attract_east_indies_oil_companies_tt
+				custom_effect_tooltip = HOL_attract_east_indies_oil_company_tt
 			}
 			if = {
 				limit = {
@@ -519,7 +519,7 @@ HOL_secret_staff_talks = {
 
 		cost = 50
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = HOL_secret_staff_talks
@@ -540,7 +540,7 @@ HOL_secret_staff_talks = {
 				FROM = {
 					send_equipment = {
 					    equipment = infantry_equipment
-					    amount = 2000
+					    amount = 2500
 					    target = ROOT
 					}
 				}
@@ -560,7 +560,7 @@ HOL_secret_staff_talks = {
 				FROM = {
 					send_equipment = {
 					    equipment = artillery_equipment
-				    	amount = 200
+				    	amount = 250
 				    	target = ROOT
 					}
 				}
@@ -625,7 +625,7 @@ HOL_secret_staff_talks = {
 
 		cost = 75
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = HOL_secret_staff_talks
@@ -924,7 +924,7 @@ HOL_request_allied_favors = {
 }
 
 political_actions = {
-	HOL_relocate_government_to_batavia = {
+	HOL_relocate_government_to_batavi = {
 
 		icon = eng_trade_unions_support
 
@@ -934,7 +934,6 @@ political_actions = {
 
 		available = {
 			has_capitulated = yes
-			has_completed_focus = HOL_continue_the_war_in_batavi
 		}
 
 		cost = 0
@@ -946,7 +945,6 @@ political_actions = {
 		}
 
 		complete_effect = {
-			remove_ideas = HOL_curtail_colonial_autonomy_overlord
 			set_capital = 295
 		}
 	}

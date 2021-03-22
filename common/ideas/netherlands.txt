@@ -30,7 +30,7 @@ ideas = {
 			modifier = {
 	            army_core_attack_factor = -0.2
 	            army_core_defence_factor = -0.2
-				compliance_gain = 0.05
+				compliance_gain = 0.01
 			}
 			
 			traits = { popular_figurehead }
@@ -647,6 +647,7 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
+				fuel_gain_factor = 0.25
 			}
 		}
 
@@ -2171,7 +2172,7 @@ ideas = {
 				original_tag = HOL
 			}
 			
-			traits = { army_cavalry_2 }
+			traits = { army_cavalry_1 }
 			
 			ai_will_do = {
 				factor = 1

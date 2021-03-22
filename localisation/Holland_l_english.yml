@@ -253,3 +253,7 @@
  HOL_german_defectors_1_desc:0 "A steady trickle of German defectors regularly forms into units keen on fighting on our behalf, to reinstate their Kaiser."
  HOL_german_defectors_2:0 "Pro-Kaiser Defectors"
  HOL_german_defectors_2_desc:0 "Misguided loyalty to the old Kaiser has driven a steady trickle of soldiers to defect and fight for the Dutch, in a vain attempt to put the Kaiser back on the throne.\n\nOnly the complete defeat of the Dutch, and the alliance they are a part of, is likely to stamp this movement out, entirely."
+ HOL_attract_west_indies_oil_company_tt:1 "Add §G1§! Building Slot and §Y1 Civilian Factory§! to §YLeopoldville§! after taking this decision §Y5§! times.\n"
+ HOL_attract_east_indies_oil_company_tt:1 "Add §G1§! Building Slot and §Y1 Civilian Factory§! to §YWest Papua§! after taking this decision §Y3§!, §Y6§!, and §Y10§! times, respectively.\n"
+ HOL_relocate_government_to_batavi:0 "Relocate Government to Leopoldville"
+ HOL_relocate_government_to_batavi_desc:0 "Our mainland has been overrun, but our colonies lie untouched. Though it goes against the wishes of the Queen, we can relocate our government to Leopoldville, the capital of the Congo, and continue the war effort from there."

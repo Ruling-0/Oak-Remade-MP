@@ -892,7 +892,7 @@ ideas = {
 				conscription_factor = -0.02
 				consumer_goods_factor = 0.04
 				autonomy_gain = 0.4
-				stability_factor = -0.8
+				stability_factor = -0.08
 			}
 		}	
 

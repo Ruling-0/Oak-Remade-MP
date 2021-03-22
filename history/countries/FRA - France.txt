@@ -141,6 +141,21 @@ add_ideas = {
 	FRA_naval
 }
 
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = HOL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.1
+	}
+}
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"

@@ -185,3 +185,5 @@ MON_agrarian_reform1_desc:0 "We have an agrarian based economy. Without industri
 MON_agrarian_reform2:0 "Newly Industrialized Nation"
 MON_agrarian_reform2_desc:0 "With our reforms completed, we will be able to keep up with other nations industrially. Our economy is now geared towards heavy industry."
 MON_leader_tt:0 "We must purge this troublesome leader with one approved by Stalin."
+MON_officer_purged:0 "Purge of the Officer Corp"
+MON_officer_purged_desc:0 "The purge of the 'fifth columnists' has left great scars in the ranks of the our army. This has negitively affected how effective our forces are and will take time to correct these deficiency."
