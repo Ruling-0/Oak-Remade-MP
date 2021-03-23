@@ -79,6 +79,7 @@ operations = {
 			    }
 			}
 		}
+	}
     POR_ally = {
 
 		icon = generic_political_discourse
