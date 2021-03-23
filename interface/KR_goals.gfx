@@ -2882,4 +2882,64 @@ spriteTypes = {
 		name = "GFX_auguststorm"
 		texturefile = "gfx/interface/goals/auguststorm.dds"
 	}
+	SpriteType = {
+		name = "GFX_europeandoctrinebrz"
+		texturefile = "gfx/interface/goals/Europeandoctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_monrecruitment"
+		texturefile = "gfx/interface/goals/monrecruitment.dds"
+	}
+	SpriteType = {
+		name = "GFX_monartillery"
+		texturefile = "gfx/interface/goals/monartillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_monexcav"
+		texturefile = "gfx/interface/goals/monexcav.dds"
+	}
+	SpriteType = {
+		name = "GFX_monexcav2"
+		texturefile = "gfx/interface/goals/monexcav2.dds"
+	}
+	SpriteType = {
+		name = "GFX_monstuff"
+		texturefile = "gfx/interface/goals/monstuff.dds"
+	}
+	SpriteType = {
+		name = "GFX_monrailway"
+		texturefile = "gfx/interface/goals/monrailway.dds"
+	}
+	SpriteType = {
+		name = "GFX_monlocalmilitaryprod"
+		texturefile = "gfx/interface/goals/monlocalmilitaryprod.dds"
+	}
+	SpriteType = {
+		name = "GFX_montruck"
+		texturefile = "gfx/interface/goals/montruck.dds"
+	}
+	SpriteType = {
+		name = "GFX_monrussianofficers"
+		texturefile = "gfx/interface/goals/monrussianofficers.dds"
+	}
+	SpriteType = {
+		name = "GFX_monmilitaryll"
+		texturefile = "gfx/interface/goals/monmilitaryll.dds"
+	}
+	SpriteType = {
+		name = "GFX_monindustryll"
+		texturefile = "gfx/interface/goals/monindustryll.dds"
+	}
+	SpriteType = {
+		name = "GFX_montank"
+		texturefile = "gfx/interface/goals/montank.dds"
+	}
+	SpriteType = {
+		name = "GFX_monplanez"
+		texturefile = "gfx/interface/goals/GFX_monplanez.dds"
+	}
+	SpriteType = {
+		name = "GFX_mongolgold"
+		texturefile = "gfx/interface/goals/mongolgold.dds"
+	}
 }
