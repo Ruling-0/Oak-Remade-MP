@@ -5,13 +5,17 @@ state=
 	manpower = 10000000
 	
 	state_category = town
+	
+	resources={
+		steel=10 # was: 0
+	}
 
 	history={
 		owner = ETH
 		buildings = {
 			infrastructure = 3
 			arms_factory = 4
-			industrial_complex = 4
+			industrial_complex = 5
 			air_base = 1
 		}
 		victory_points = { 
