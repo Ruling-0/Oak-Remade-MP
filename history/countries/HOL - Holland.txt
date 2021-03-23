@@ -24,6 +24,7 @@ if = {
 		HOL_shell_shocked_spectator_5
 		HOL_de_crisisjaren_5
 		HOL_weak_government
+		HOL_aloof_neutralit
 	}
 }
 
@@ -58,6 +59,7 @@ set_technology = {
 	interwar_antiair = 1
 	############## aircraft #############
 	fighter_1934 = 1
+	fighter_1936 = 1
 	tactical_bomber_1934 = 1	
 	############# economy#############
 	starting_industry = 1

@@ -53,6 +53,27 @@ ideas = {
 			modifier = {
 			}
 		}
+		
+		HOL_aloof_neutralit = {
+
+			picture = hol_aloof_neutrality
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+			    special_forces_cap = 0.05
+			    production_speed_synthetic_refinery_factor = 0.05
+			    production_speed_synthetic_rubber_refinery_factor = 0.05
+			}
+		}
 
 		HOL_shell_shocked_spectator_5 = {
 
@@ -2147,7 +2168,7 @@ ideas = {
 				original_tag = HOL
 			}
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2163,7 +2184,7 @@ ideas = {
 				original_tag = HOL
 			}
 			
-			traits = { army_cavalry_1 }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2179,7 +2200,7 @@ ideas = {
 				original_tag = HOL
 			}
 			
-			traits = { army_armored_1 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1

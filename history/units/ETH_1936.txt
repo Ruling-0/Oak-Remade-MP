@@ -130,7 +130,7 @@ units = {
 		start_experience_factor = 0.6
 	}
 	division = {
-		name = Regulars Sefari 6"
+		name = "Regulars Sefari 6"
 		location = 5010
 		division_template = "Regulars Sefari"			
 		start_experience_factor = 0.6
