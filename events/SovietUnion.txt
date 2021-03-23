@@ -16,20 +16,8 @@ country_event = {
 	fire_only_once = yes
 	option = { # Push back
 		name = soviet.1.a
-		ai_chance = { factor = 100 } # historical mod
-		hidden_effect = {
-			random_list = {
-				99 = { # historical mod
-					JAP = {
-						country_event = { days = 1 id = japan.3 }
-					}
-				}
-				1 = { # historical mod
-					JAP = {
-						country_event = { days = 1 id = japan.4 }
-					}
-				}
-			}
+		JAP = {
+			country_event = { days = 1 id = japan.3 }
 		}
 	}
 }

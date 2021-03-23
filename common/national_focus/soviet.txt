@@ -2155,11 +2155,9 @@ focus_tree = {
 	focus = {
 		id = SOV_hero_of_the_union
 		icon = GFX_georgy_zhukov_hero
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		mutually_exclusive = { focus = SOV_execute_zhukov_and_annex_mongolia }		
+		search_filters = { FOCUS_FILTER_POLITICAL }	
 		relative_position_id = SOV_eastern_security 
 		available = {
-			has_country_flag = SOV_victory_at_khalkin_gol
 		}
 		prerequisite = {
 			focus = SOV_eastern_security
@@ -2195,12 +2193,10 @@ focus_tree = {
 	focus = {
 		id = SOV_execute_zhukov_and_annex_mongolia
 		icon = GFX_SOV_operation_luna
-		mutually_exclusive = { focus = SOV_hero_of_the_union }
 		relative_position_id = SOV_eastern_security 
 		prerequisite = { focus = SOV_eastern_security }
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		available = {
-			has_country_flag = SOV_defeat_at_khalkin_gol
 		}
 
 		continue_if_invalid = yes
@@ -2214,8 +2210,38 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = soviet.55 days = 1 }	
-		}
+			MON = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = SOV
+				}
+				287 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				759 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				760 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}				
+			}
+		}	
 	}	
 
 	focus = {

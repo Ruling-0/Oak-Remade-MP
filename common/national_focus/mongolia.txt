@@ -1075,6 +1075,11 @@ custom_effect_tooltip = MON_leader_tt
 		
 						completion_reward = {
 			SOV = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = MON
+			}
 			408 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1197,6 +1202,11 @@ custom_effect_tooltip = MON_leader_tt
 		
 								completion_reward = {
 			SOV = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = MON
+			}
 			408 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
