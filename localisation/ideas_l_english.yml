@@ -12,6 +12,9 @@
  FRA_naval:0 "Peaceful Seas"
  FRA_naval_desc:0 "France has no need for a large navy at this time."
  
+ ETH_core:0 "Weak Army Leadership"
+ ETH_core_desc:0 "Our army is lead by incompetent generals."
+ 
  MAN_resource:0 "Resource Minor"
  MAN_resource_desc:0 "Part of your job is to build resources to support the war effort."
 
