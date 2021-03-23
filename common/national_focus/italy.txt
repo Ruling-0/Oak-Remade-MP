@@ -2070,7 +2070,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 5
+						level = 4
 						instant_build = yes
 					}
 				}
