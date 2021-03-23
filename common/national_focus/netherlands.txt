@@ -1465,10 +1465,11 @@ focus_tree = {
 		cost = 10
 		
 		available = {
-			threat > 0.15
+			threat > 0.10
 		}
 
 		available_if_capitulated = yes
+		continue_if_invalid = yes
 
 		completion_reward = {
 		    add_ideas = low_economic_mobilisation
@@ -1484,8 +1485,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = HOL_prepare_the_inundation_lines
 		cost = 5
+		
+		available = {
+			threat > 0.20
+		}
 
-		cancel_if_invalid = no
+		continue_if_invalid = yes
 
 		available_if_capitulated = yes
 		completion_reward = {
