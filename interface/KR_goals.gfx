@@ -2936,7 +2936,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_monplanez"
-		texturefile = "gfx/interface/goals/GFX_monplanez.dds"
+		texturefile = "gfx/interface/goals/monplanez.dds"
 	}
 	SpriteType = {
 		name = "GFX_mongolgold"
