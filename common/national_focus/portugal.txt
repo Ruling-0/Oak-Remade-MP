@@ -448,8 +448,8 @@ focus_tree = {
 			    category = motorized_equipment
 			}
 			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
+				limit = { has_full_control_of_state = 544 }
+				544 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -496,15 +496,9 @@ focus_tree = {
 		cost = 7.16
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
-			add_tech_bonus = {
-				name = POR_observation_mission
-			    bonus = 1.0
-			    uses = 1
-			    category = heavy_air
-			}
 			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
+				limit = { has_full_control_of_state = 544 }
+				544 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -763,8 +757,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 			
 			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
+				limit = { has_full_control_of_state = 796 }
+				796 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -944,15 +938,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 		    add_ideas = POR_advanced_light_aircraft
-			add_tech_bonus = {
-				name = POR_light_aircraft_focus
-			    bonus = 1.0
-			    uses = 1
-			    category = heavy_air
-			}
 			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
+				limit = { has_full_control_of_state = 796 }
+				796 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory		
@@ -1000,10 +988,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			add_tech_bonus = {
-				name = POR_advanced_light_aircraft
+				name = POR_light_aircraft_focus
 			    bonus = 1.0
 			    uses = 1
-			    category = heavy_air
+			    category = naval_air
 			}
 		}
 	}
@@ -1076,8 +1064,8 @@ focus_tree = {
 		completion_reward = { 
 		   add_ideas = POR_a_new_industry	
 		   if = {
-				limit = { has_full_control_of_state = 112 }
-			    112 = {
+				limit = { has_full_control_of_state = 796 }
+			    796 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex		
@@ -1087,8 +1075,8 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { has_full_control_of_state = 795 }
-				795 = {
+				limit = { has_full_control_of_state = 796 }
+				796 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex		
@@ -1136,8 +1124,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 
 			if = {
-				limit = { has_full_control_of_state = 180 }
-				180 = {
+				limit = { has_full_control_of_state = 544 }
+				544 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex		
@@ -1148,8 +1136,8 @@ focus_tree = {
 			}
 
 			if = {
-				limit = { has_full_control_of_state = 181 }
-				181 = {
+				limit = { has_full_control_of_state = 544 }
+				544 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex		
@@ -1182,8 +1170,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 	
 			if = {
-				limit = { has_full_control_of_state = 179 }	
-				179 = {
+				limit = { has_full_control_of_state = 540 }	
+				540 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex		
@@ -1194,8 +1182,8 @@ focus_tree = {
 			}
 
 			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
+				limit = { has_full_control_of_state = 540 }
+				540 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex		
@@ -1226,8 +1214,8 @@ focus_tree = {
 		completion_reward = { 
 			navy_experience = 100
 			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
+				limit = { has_full_control_of_state = 544 }
+				544 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard		
@@ -1275,12 +1263,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			if = {
-				limit = { has_full_control_of_state = 180 }
-				180 = { #Porto
-					add_extra_state_shared_building_slots = 1
+				limit = { has_full_control_of_state = 540 }
+				540 = { #Porto
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard		
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -1292,14 +1280,14 @@ focus_tree = {
 						is_core_of = ROOT
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 2
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -1432,8 +1420,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = POL_naval_bomber_experiments
 				bonus = 1
-				uses = 2
-				category = naval_bomber
+				uses = 1
+				category = naval_air
 			}
 		}
 	}
@@ -1468,11 +1456,11 @@ focus_tree = {
 			    category = cl_tech	   
 			}
 
-			112 = { #Lisbon
-				add_extra_state_shared_building_slots = 1
+			796 = { #Lisbon
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard		
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1773,7 +1761,6 @@ focus_tree = {
 			    bonus = 1.0
 			    uses = 2
 			    category = infantry_weapons
-				category = artillery
 			}
 		}
 	}
@@ -2454,8 +2441,10 @@ focus_tree = {
 				    light_tank_1938 = 1 
 					medium_tank_1939 = 1
 					fighter_1938 = 1
+					naval_bomber_1938 = 1
 					heavy_fighter_1938 = 1
 		            tactical_bomber_1939 = 1
+					strategic_bomber_1939 = 1
 	                CAS_1939 = 1
 			    }
 			}
@@ -2669,6 +2658,7 @@ focus_tree = {
 				set_technology = { 
 				    light_tank_1940 = 1 
 					fighter_1940 = 1
+					naval_bomber_1940 = 1
 					heavy_fighter_1940 = 1
 			    }
 			}
@@ -2713,6 +2703,7 @@ focus_tree = {
 					medium_tank_1941 = 1
 					heavy_tank_1941 = 1
 		            tactical_bomber_1941 = 1
+					strategic_bomber_1941 = 1
 	                CAS_1941 = 1
 			    }
 			}
@@ -2835,7 +2826,9 @@ focus_tree = {
 					heavy_tank_1943 = 1
 					fighter_1942 = 1
 					heavy_fighter_1942 = 1
+					naval_bomber_1942 = 1
 		            tactical_bomber_1943 = 1
+					strategic_bomber_1943 = 1
 	                CAS_1943 = 1
 			    }
 			}

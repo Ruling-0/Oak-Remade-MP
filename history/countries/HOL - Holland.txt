@@ -179,31 +179,31 @@ create_field_marshal = {
 	id = 980
 	gfx = "GFX_portrait_hol_izaak_reijnders"
 	traits = { organizer brilliant_strategist  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
 	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Petrus Wilhelmus Best"
 	gfx = "GFX_portrait_hol_petrus_wilhelmus_best"
-	traits = { skilled_staffer infantry_officer }
+	traits = { skilled_staffer infantry_leader }
 	skill = 3
-	attack_skill = 2
+	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Godfried van Voorst tot Voorst"
 	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
-	traits = { career_officer armor_officer politically_connected }
-	skill = 4
+	traits = { skilled_staffer pazner_leader }
+	skill = 3
 	attack_skill = 3
-	defense_skill = 4
+	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
 }

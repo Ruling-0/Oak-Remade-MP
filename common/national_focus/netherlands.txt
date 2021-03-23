@@ -1530,11 +1530,11 @@ focus_tree = {
 				create_field_marshal = {
 					name = "Henri Winkelman"
 					gfx = "GFX_portrait_hol_henri_winkelman"
-					traits = { defensive_doctrine trait_cautious unyielding_defender }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 4
-					planning_skill = 4
+					traits = { unyielding_defender }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 3
 					logistics_skill = 3
 				}
 			}
