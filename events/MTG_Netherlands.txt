@@ -39,10 +39,6 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_netherlands.14.a
-		add_popularity = {
-		    ideology = democratic
-		    popularity = -0.05
-		}
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Pieter Sjoerds Gerbrandy"
@@ -733,7 +729,7 @@ country_event = {
 		name = mtg_netherlands.63.a
 		remove_ideas = HOL_preparing_evacuation_of_gold_reserves
 		add_legitimacy = 100
-		add_political_power = 100
+		add_political_power = 350
 		add_ideas = HOL_friesland_agricultural_impetu
 	}
 }

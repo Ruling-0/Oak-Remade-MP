@@ -44,14 +44,14 @@ HOL_obtain_foreign_colonial_investments = {
 			has_full_control_of_state = 669
 		}
 
-		cost = 25
+		cost = 50
 
 		fire_only_once = no
 
 		days_remove = 90
 
 		modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.02
 		}
 
 		visible = {
@@ -111,14 +111,14 @@ HOL_obtain_foreign_colonial_investments = {
 			has_full_control_of_state = 669
 		}
 
-		cost = 25
+		cost = 50
 
 		fire_only_once = no
 
 		days_remove = 90
 
 		modifier = {
-			production_speed_buildings_factor = 0.15
+			production_speed_buildings_factor = 0.08
 		}
 
 		visible = {
@@ -158,11 +158,12 @@ HOL_obtain_foreign_colonial_investments = {
 
 		fire_only_once = no
 
-		days_remove = 35
+		days_remove = 70
 
 		visible = {
 			tag = HOL
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
+			check_variable = { var = west_indies_oil value = 5 compare = less_than }
 		}
 
 		remove_effect = {
@@ -237,10 +238,11 @@ HOL_obtain_foreign_colonial_investments = {
 
 		fire_only_once = no
 
-		days_remove = 70
+		days_remove = 35
 
 		visible = {
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
+			check_variable = { var = east_indies_oil value = 10 compare = less_than }
 		}
 
 		remove_effect = {
@@ -325,7 +327,6 @@ HOL_war_on_pacifism = {
 		available = {
 			NOT = { has_country_flag = hol_war_on_pacifism_in_progress }
 			OR = {
-				has_war_support < 0.8
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
@@ -350,7 +351,7 @@ HOL_war_on_pacifism = {
 
 		modifier = {
 			war_support_weekly = 0.005
-			stability_weekly = -0.005
+			stability_weekly = -0.002
 		}
 
 		visible = {
@@ -359,11 +360,6 @@ HOL_war_on_pacifism = {
 		}
 
 		remove_effect = {
-			add_popularity = {
-			    ideology = democratic
-			    popularity = -0.05
-			}
-			add_stability = -0.03
 			HOL_shell_shocked_spectator_level_down = yes
 			clr_country_flag = hol_war_on_pacifism_in_progress
 		}
@@ -385,7 +381,6 @@ HOL_war_on_pacifism = {
 		available = {
 			NOT = { has_country_flag = hol_war_on_pacifism_in_progress }
 			OR = {
-				has_war_support < 0.8
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
@@ -411,8 +406,8 @@ HOL_war_on_pacifism = {
 		modifier = {
 			war_support_weekly = 0.005
 			political_power_factor = -0.05
-			industrial_capacity_factory = -0.15
-			industrial_capacity_dockyard = -0.15
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
 		}
 
 		visible = {
@@ -421,10 +416,6 @@ HOL_war_on_pacifism = {
 		}
 
 		remove_effect = {
-			add_popularity = {
-			    ideology = communism
-			    popularity = 0.05
-			}
 			HOL_shell_shocked_spectator_level_down = yes
 			clr_country_flag = hol_war_on_pacifism_in_progress
 		}
@@ -446,7 +437,6 @@ HOL_war_on_pacifism = {
 		available = {
 			NOT = { has_country_flag = hol_war_on_pacifism_in_progress }
 			OR = {
-				has_war_support < 0.8
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
@@ -463,7 +453,7 @@ HOL_war_on_pacifism = {
 			}
 		}
 
-		cost = 35
+		cost = 25
 
 		fire_only_once = no
 
@@ -471,7 +461,7 @@ HOL_war_on_pacifism = {
 
 		modifier = {
 			war_support_weekly = 0.005
-			political_power_factor = -0.35
+			political_power_factor = -0.15
 		}
 
 		visible = {
@@ -506,7 +496,7 @@ HOL_secret_staff_talks = {
 
 		}
 
-		targets = { GER ENG FRA }
+		targets = { FRA }
 
 		target_trigger = {
 			ROOT = { 
@@ -540,7 +530,7 @@ HOL_secret_staff_talks = {
 				FROM = {
 					send_equipment = {
 					    equipment = infantry_equipment
-					    amount = 2500
+					    amount = 5000
 					    target = ROOT
 					}
 				}
@@ -550,7 +540,7 @@ HOL_secret_staff_talks = {
 				FROM = {
 					send_equipment = {
 					    equipment = support_equipment
-				    	amount = 250
+				    	amount = 500
 				    	target = ROOT
 					}
 				}
@@ -560,7 +550,7 @@ HOL_secret_staff_talks = {
 				FROM = {
 					send_equipment = {
 					    equipment = artillery_equipment
-				    	amount = 250
+				    	amount = 500
 				    	target = ROOT
 					}
 				}
@@ -579,7 +569,7 @@ HOL_secret_staff_talks = {
 		}
 
 		available = {
-            date < 1938.2.1
+            date < 1938.4.1
 		}
 
 		cost = 50
@@ -594,8 +584,8 @@ HOL_secret_staff_talks = {
 		complete_effect = {
 			set_country_flag = HOL_prepared_evacuation_of_gold_reserves_flag
 			add_ideas = HOL_preparing_evacuation_of_gold_reserves
-			custom_effect_tooltip = HOL_prepare_evacuation_of_gold_reserves_tt
-			custom_effect_tooltip = HOL_prepare_evacuation_of_gold_reserves_tt_2
+			custom_effect_tooltip = HOL_prepare_evacuation_of_gold_reserve_tt
+			custom_effect_tooltip = HOL_prepare_evacuation_of_gold_reserve_tt_2
 		}
 
 	}
@@ -623,7 +613,7 @@ HOL_secret_staff_talks = {
 			}
 		}
 
-		cost = 75
+		cost = 50
 
 		fire_only_once = yes
 
@@ -642,12 +632,12 @@ HOL_secret_staff_talks = {
 
 		complete_effect = {
 			FROM = { country_event = { id = mtg_netherlands.41 hours = 6 } }
-			FROM = { army_experience = -5 }
+			FROM = { army_experience = -15 }
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = HOL_secret_staff_talks
-					bonus = 1.0
-					uses = 1
+					bonus = 1.00
+					uses = 2
 					category = land_doctrine
 				}
 			}
@@ -715,9 +705,7 @@ HOL_request_allied_favors = {
 			has_legitimacy > 80
 		}
 
-		days_remove = 30
-
-		cost = 75
+		days_remove = 10
 
 		fire_only_once = no
 
@@ -781,7 +769,7 @@ HOL_request_allied_favors = {
 			add_equipment_to_stockpile = {
 			    type = fighter_equipment
 			    amount = 50
-			    producer = ENG
+			    producer = FRA
 			}
 		}
 
@@ -822,17 +810,17 @@ HOL_request_allied_favors = {
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
 			    amount = 1000
-			    producer = ENG
+			    producer = FRA
 			}
 			add_equipment_to_stockpile = {
 			    type = support_equipment
 			    amount = 100
-			    producer = ENG
+			    producer = FRA
 			}
 			add_equipment_to_stockpile = {
 			    type = artillery_equipment
 			    amount = 100
-			    producer = ENG
+			    producer = FRA
 			}
 		}
 
@@ -852,16 +840,14 @@ HOL_request_allied_favors = {
 			has_legitimacy > 80
 		}
 
-		days_remove = 60
-
-		cost = 75
+		days_remove = 10
 
 		fire_only_once = no
 
 		visible = {
 			tag = HOL
 			has_completed_focus = HOL_request_allied_favors
-			check_variable = { var = british_industrialists_counter value = 4 compare = less_than }
+			check_variable = { var = british_industrialists_counter value = 3 compare = less_than }
 		}
 
 		modifier = {
@@ -945,6 +931,8 @@ political_actions = {
 		}
 
 		complete_effect = {
+		    add_war_support = 0.1
+			add_stability = 0.1
 			set_capital = 295
 		}
 	}

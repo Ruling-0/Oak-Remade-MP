@@ -158,6 +158,12 @@ political_actions = {
 			NOT = {
 				tag = SOV 
 			}
+			NOT = {
+				tag = HOL
+			}
+			NOT = {
+				tag = MON
+			}
 		}
 	}
 }
@@ -182,6 +188,9 @@ economy_decisions = {
 			}
 			NOT = {
 				tag = POR
+			}
+			NOT = {
+				tag = HOL
 			}
 		}
 	}

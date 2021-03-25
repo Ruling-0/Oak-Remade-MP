@@ -271,7 +271,7 @@ focus_tree = {
 			295 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				if = {
@@ -395,7 +395,7 @@ focus_tree = {
 			538 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				if = {
@@ -436,7 +436,7 @@ focus_tree = {
 			718 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				if = {
@@ -455,6 +455,20 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
+				}
+			}
+			768 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			769 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -508,22 +522,21 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				if = {
-					limit = {
-						295 = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 3
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
+			}
+			768 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			769 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -571,41 +584,11 @@ focus_tree = {
 
 		completion_reward = {
 			295 = {
-				if = {
-					limit = {
-						295 = {
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-					}
-				}
-			}
-			669 = {
-				if = {
-					limit = {
-						669 = {
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-					}
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -626,23 +609,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			669 = {
-				if = {
-					limit = {
-						669 = {
-							free_building_slots = {
-								building = arms_factory
-								size > 3
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
+			538 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			718 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -660,7 +640,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_colonial_shipbuilding
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -684,13 +664,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HOL_prepare_for_our_return
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.05
 			add_manpower = 150000
 			add_ideas = HOL_liberation
 		}
@@ -744,12 +722,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = HOL_continue_the_public_works
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
 			35 = {
 				if = {
 					limit = {
@@ -850,7 +822,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			custom_effect_tooltip = HOL_expand_the_artillerieinrichtingen_tt
+			add_tech_bonus = {
+				name = HOL_continue_the_public_works
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
 			7 = {
 				if = {
 					limit = {
@@ -929,7 +906,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_expand_the_artillerieinrichtingen
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
@@ -957,7 +934,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			HOL_de_crisisjaren_level_down = yes
 			hidden_effect = { news_event = { id = mtg_news.47 days = 1 } }
 		}
 	}
@@ -1081,6 +1057,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		    HOL_de_crisisjaren_level_down = yes
 			7 = {
 				if = {
 					limit = {
@@ -1235,6 +1212,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		    HOL_de_crisisjaren_level_down = yes
 			35 = {
 				if = {
 					limit = {
@@ -1462,7 +1440,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
-		cost = 10
+		cost = 7.16
 		
 		available = {
 			threat > 0.10
@@ -1513,7 +1491,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1556,7 +1534,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = HOL_appoint_new_supreme_commander
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1597,7 +1575,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_appoint_new_supreme_commander
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1623,7 +1601,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = HOL_modernize_our_infantry_equipment
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1677,7 +1655,7 @@ focus_tree = {
 		allow_branch = {
 			always = yes
 		}
-		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }
+		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 1
 		y = 1
@@ -1688,7 +1666,7 @@ focus_tree = {
 				NOT = { has_dlc = "Death or Dishonor" }
 			}
 		}
-		relative_position_id = HOL_modernize_our_infantry_equipment
+		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1716,7 +1694,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = HOL_modernize_our_infantry_equipment
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1764,12 +1742,12 @@ focus_tree = {
 
 	focus = {
 		id = HOL_lessons_from_the_last_war
-		prerequisite = { focus = HOL_light_tanks_for_the_colonies focus = HOL_secret_staff_talks focus = HOL_anti_tank_guns_for_the_continent }
+		prerequisite = { focus = HOL_light_tanks_for_the_colonies focus = HOL_anti_tank_guns_for_the_continent }
 		icon = GFX_goal_generic_army_doctrines
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = HOL_secret_staff_talks
-		cost = 10
+		relative_position_id = HOL_light_tanks_for_the_colonies
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1780,12 +1758,6 @@ focus_tree = {
 			    bonus = 1.0
 			    uses = 1
 			    category = armor
-			}
-			add_tech_bonus = {
-				name = HOL_lessons_from_the_last_war
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
 			}
 		}
 	}
@@ -1850,7 +1822,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_expand_the_mld
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1928,7 +1900,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_expand_the_mld
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1949,7 +1921,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_protect_the_mainland
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
@@ -2008,7 +1980,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = HOL_strategic_bombing_defense
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2069,7 +2041,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_longer_range_models
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
@@ -2257,7 +2229,7 @@ focus_tree = {
 				set_technology = {
 					basic_ship_hull_heavy = 1
 					antiair2 = 1
-					improved_fire_control_system = 1
+					basic_fire_control_system = 1
 					dp_secondary_battery = 1
 				}
 				create_equipment_variant = {
@@ -2265,25 +2237,27 @@ focus_tree = {
 					type = ship_hull_heavy_2
 					parent_version = 0
 					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_battery_slot = ship_heavy_battery_2
 						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 						fixed_ship_radar_slot = empty
 						fixed_ship_engine_slot = heavy_ship_engine_2
 						fixed_ship_secondaries_slot = dp_ship_secondaries
-						fixed_ship_armor_slot = ship_armor_bb_1
-						front_1_custom_slot = ship_heavy_battery_1
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
 						mid_1_custom_slot = ship_anti_air_2
 						mid_2_custom_slot = dp_ship_secondaries
-						rear_1_custom_slot = ship_heavy_battery_1
+						rear_1_custom_slot = ship_heavy_battery_2
 					}
 				}
 			}
 			hidden_effect = {
 	         	set_technology = {
+				    early_ship_hull_heavy = 1
 		          	basic_ship_hull_heavy = 1
+					basic_heavy_armor_scheme = 1
 			      	antiair2 = 1
-			      	improved_fire_control_system = 1
+			      	basic_fire_control_system = 1
 			      	dp_secondary_battery = 1
 		      	}
 		      	create_equipment_variant = {
@@ -2291,17 +2265,17 @@ focus_tree = {
 		      		type = ship_hull_heavy_2
 		      		parent_version = 0
 			      	modules = {
-			      		fixed_ship_battery_slot = ship_heavy_battery_1
-			      		fixed_ship_anti_air_slot = ship_anti_air_2
-			      		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		      			fixed_ship_radar_slot = empty
-			      		fixed_ship_engine_slot = heavy_ship_engine_2
-			      		fixed_ship_secondaries_slot = dp_ship_secondaries
-			      		fixed_ship_armor_slot = ship_armor_bb_1
-			      		front_1_custom_slot = ship_heavy_battery_1
-			      		mid_1_custom_slot = ship_anti_air_2
-			      		mid_2_custom_slot = dp_ship_secondaries
-			      		rear_1_custom_slot = ship_heavy_battery_1
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
+						mid_1_custom_slot = ship_anti_air_2
+						mid_2_custom_slot = dp_ship_secondaries
+						rear_1_custom_slot = ship_heavy_battery_2
 		      		}
 	      		}	
             }				
@@ -2620,7 +2594,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_replace_the_defeatist_government
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -2644,7 +2618,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = HOL_de_vaarplicht
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2728,7 +2702,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HOL_the_singapore_conferences
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2800,7 +2774,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HOL_combined_chiefs_of_staff_representation
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2811,34 +2785,15 @@ focus_tree = {
 						295 = {
 							free_building_slots = {
 								building = dockyard
-								size > 0
+								size > 1
 								include_locked = yes
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 							type = dockyard
-							level = 1
-							instant_build = yes
-					}
-				}
-			}
-			669 = {
-				if = {
-					limit = {
-						669 = {
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = dockyard
-							level = 1
+							level = 2
 							instant_build = yes
 					}
 				}
